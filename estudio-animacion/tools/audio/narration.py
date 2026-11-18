@@ -61,11 +61,15 @@ def load_trim(path):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('--voice', required=True)
+    # por defecto, Episodio 01 (comportamiento original); otros episodios pasan sus rutas
+    ap.add_argument('--src', default=SRC)
+    ap.add_argument('--timing', default=TIMING)
+    ap.add_argument('--out-dir', default=OUT_DIR)
     args = ap.parse_args()
-    spec = json.load(open(SRC, encoding='utf-8'))
+    spec = json.load(open(args.src, encoding='utf-8'))
     total = spec['durationSec']
     cfg = spec['voice']
-    os.makedirs(OUT_DIR, exist_ok=True)
+    os.makedirs(args.out_dir, exist_ok=True)
     track = np.zeros(int(total * SR), dtype=np.float32)
     timing = []
     problems = []
@@ -95,7 +99,7 @@ def main():
     track *= (10 ** (-1 / 20)) / peak
     wav = os.path.join(tmp_dir := tempfile.mkdtemp(), 'narracion.wav')
     sf.write(wav, track, SR)
-    out = os.path.join(OUT_DIR, 'narracion.m4a')
+    out = os.path.join(args.out_dir, 'narracion.m4a')
     subprocess.run(['ffmpeg', '-v', 'error', '-y', '-i', wav, '-c:a', 'aac', '-b:a', '128k', out], check=True)
     speech = sum(t['duration'] for t in timing)
     report = {
@@ -106,7 +110,7 @@ def main():
         'problems': problems,
         'timing': timing,
     }
-    json.dump(report, open(TIMING, 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
+    json.dump(report, open(args.timing, 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
     print(f"\nVoz total {speech:.1f}s de {total}s ({100 * speech / total:.0f}%) → {out}")
     if problems:
         print('PROBLEMAS:\n  ' + '\n  '.join(problems))

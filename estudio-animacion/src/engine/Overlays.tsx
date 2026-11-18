@@ -149,17 +149,25 @@ export const Fade: React.FC<{from: number; to: number; inverse?: boolean}> = ({f
 };
 
 /** Texto final del episodio. */
-export const FinalCard: React.FC<{start: number; question: string; footer?: string}> = ({start, question, footer}) => {
+export const FinalCard: React.FC<{start: number; question: string; footer?: string; accent?: RegExp; accentColor?: string; end?: number}> = ({
+  start,
+  question,
+  footer,
+  accent: accentRe = /CRIATURA/,
+  accentColor = '#ffd27a',
+  end,
+}) => {
   const t = useTime() - start;
   const {width, height} = useVideoConfig();
   if (t < 0) return null;
+  const out = end === undefined ? 1 : clamp((end - start - t) / 0.8);
   const words = question.split(' ');
   return (
-    <div style={{position: 'absolute', left: width * 0.07, right: width * 0.07, top: height * 0.2, textAlign: 'center', fontFamily: FONT_FAMILY}}>
+    <div style={{position: 'absolute', left: width * 0.07, right: width * 0.07, top: height * 0.2, textAlign: 'center', fontFamily: FONT_FAMILY, opacity: out}}>
       <div style={{fontWeight: 900, fontSize: 78, lineHeight: 1.08, color: '#ffffff'}}>
         {words.map((w, i) => {
           const k = easeOut((t - i * 0.09) / 0.5);
-          const accent = /CRIATURA/.test(w);
+          const accent = accentRe.test(w);
           return (
             <span
               key={i}
@@ -168,8 +176,8 @@ export const FinalCard: React.FC<{start: number; question: string; footer?: stri
                 marginRight: 20,
                 opacity: k,
                 transform: `translateY(${(1 - k) * 30}px)`,
-                color: accent ? '#ffd27a' : '#ffffff',
-                textShadow: accent ? '0 0 30px rgba(255,210,122,0.45), 0 5px 18px rgba(0,0,0,0.7)' : '0 5px 18px rgba(0,0,0,0.7)',
+                color: accent ? accentColor : '#ffffff',
+                textShadow: accent ? `0 0 30px ${accentColor === '#ffd27a' ? 'rgba(255,210,122,0.45)' : accentColor + '73'}, 0 5px 18px rgba(0,0,0,0.7)` : '0 5px 18px rgba(0,0,0,0.7)',
               }}
             >
               {w}
@@ -182,4 +190,12 @@ export const FinalCard: React.FC<{start: number; question: string; footer?: stri
       )}
     </div>
   );
+};
+
+/** Fundido a negro y vuelta, centrado en `at` (sólo actúa dentro de su ventana). */
+export const Dip: React.FC<{at: number; down?: number; up?: number}> = ({at, down = 0.6, up = 0.7}) => {
+  const t = useTime();
+  if (t < at - down || t > at + up) return null;
+  const o = t < at ? clamp((t - (at - down)) / down) : clamp(1 - (t - at) / up);
+  return o > 0.001 ? <AbsoluteFill style={{background: `rgba(1,4,12,${o})`}} /> : null;
 };

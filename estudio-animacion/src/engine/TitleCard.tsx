@@ -15,6 +15,7 @@ type Props = {
   /** Iconos decorativos que laten en secuencia (p.ej. 3 corazones). */
   icons?: number;
   iconColor?: string;
+  titleSize?: number;
 };
 
 const Heart: React.FC<{size: number; color: string; beat: number}> = ({size, color, beat}) => (
@@ -25,7 +26,7 @@ const Heart: React.FC<{size: number; color: string; beat: number}> = ({size, col
 );
 
 /** Rótulo cinematográfico: letras que entran escalonadas + barrido de luz + iconos con latido. */
-export const TitleCard: React.FC<Props> = ({start, end, kicker, title, accent = '#ffd27a', centerY = 0.2, icons = 0, iconColor = '#5fd0ff'}) => {
+export const TitleCard: React.FC<Props> = ({start, end, kicker, title, accent = '#ffd27a', centerY = 0.2, icons = 0, iconColor = '#5fd0ff', titleSize = 104}) => {
   const t = useTime() - start;
   const {width, height} = useVideoConfig();
   if (t < 0) return null;
@@ -48,7 +49,7 @@ export const TitleCard: React.FC<Props> = ({start, end, kicker, title, accent = 
       >
         {kicker}
       </div>
-      <div style={{position: 'relative', marginTop: 6, fontWeight: 900, fontSize: 104, lineHeight: 1.0, letterSpacing: 1}}>
+      <div style={{position: 'relative', marginTop: 6, fontWeight: 900, fontSize: titleSize, lineHeight: 1.0, letterSpacing: 1}}>
         {letters.map((ch, i) => {
           const p = easeOut((t - 0.15 - i * 0.035) / 0.45);
           return (

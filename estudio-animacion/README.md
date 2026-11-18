@@ -5,6 +5,8 @@ Remotion, React, SVG y Canvas 2D.
 
 - **Episodio 01 completo**: "El animal con tres corazones", 180 s, 1080×1920, 30 fps,
   5.400 fotogramas. Composición `Ep01Full`.
+- **Episodio 02**: "El monstruo que vive en la oscuridad" (rape abisal *Linophryne arborifera*),
+  180 s, 5.400 fotogramas. Composición `Ep02Full`; documentación en `src/episodes/ep02-pez-abisal/README.md`.
 - **Demo aprobada de 15 s**, conservada intacta. Composición `Ep01Demo`; la copia del vídeo
   está en `entregas/aprobado/`.
 
@@ -59,6 +61,8 @@ estudio-animacion/
     │   ├── MacroArm.tsx          # primer plano macro de ventosas + quimiorrecepción
     │   └── StatesShowcase.tsx    # hoja de control con los 8 estados
     ├── creatures/moray/Moray.tsx # morena (Muraena helena) con ondulación propia
+    ├── creatures/anglerfish/     # Ep. 02: rape abisal hembra, macho (libre/adherido), pez linterna
+    ├── environments/deepsea/     # Ep. 02: océano profundo, descenso, nieve marina, máscara de luz
     └── episodes/ep01-pulpo/
         ├── narration.json        # GUION DEFINITIVO: frases + instante de entrada
         ├── narration-timing.json # tiempos medidos de la locución (generado)
@@ -68,6 +72,7 @@ estudio-animacion/
             ├── timeline.ts       # línea de tiempo maestra de 180 s (datos)
             ├── HeartLens.tsx     # panel del corazón sistémico (65–70 s)
             └── Ep01Full.tsx      # composición del episodio
+    └── episodes/ep02-pez-abisal/ # Ep. 02 completo (narración, timeline, composición, README)
 tools/audio/                      # generadores de narración y banda sonora (Python)
 public/audio/ep01/                # 6 pistas reales generadas (ver tools/audio/README.md)
 entregas/                         # vídeos, informes y copia de la demo aprobada
