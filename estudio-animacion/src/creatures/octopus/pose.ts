@@ -27,6 +27,10 @@ export type OctopusInput = {
   blinks?: number[]; // instantes de parpadeo adicionales
   segments: number;
   seed?: number;
+  /** Brazos dirigidos a un objetivo (manipular objetos, sondear grietas). */
+  reach?: {arm: number; target: Vec; weight: number}[];
+  /** Instantes de corte de plano: los apoyos de la marcha no se buscan al otro lado. */
+  cuts?: number[];
 };
 
 export type ArmPose = {
@@ -129,7 +133,9 @@ export function computeOctopusPose(input: OctopusInput): OctopusPose {
   const L = rig.armLength * sc * (0.7 + 0.3 * s.reach);
   const segLen = L / N;
   const arms: ArmPose[] = [];
-  const heading = Math.atan2(Math.sin(m.rot), Math.cos(m.rot)) + (fs < 0 ? Math.PI : 0);
+  // orientación del manto (local); en natación el manto va delante y los brazos detrás
+  const sway = Math.sin(t * 0.5 + seed) * 0.05 + fbm1(t * 0.4, seed + 9) * 0.04;
+  const dir = -Math.PI / 2 - 0.95 * facing * (1 - s.streamline * 0.2) + sway;
   const contactY = (x: number, z: number) => (ground ? ground(x) : crown.y + 1e4) + z * 16 * sc;
 
   for (let i = 0; i < 8; i++) {
@@ -145,7 +151,7 @@ export function computeOctopusPose(input: OctopusInput): OctopusPose {
     phi = lerpAngle(Math.PI / 2, phi, clamp(s.spread, 0, 1.2));
     phi += rot * 0.6;
     // natación: brazos alineados detrás del manto
-    const trail = heading + Math.PI + z * 0.12 + cx * 0.18;
+    const trail = dir + rot + Math.PI + z * 0.12 + cx * 0.18;
     phi = lerpAngle(phi, trail, s.streamline);
 
     const ph = i * 1.37 + seed;
@@ -181,7 +187,11 @@ export function computeOctopusPose(input: OctopusInput): OctopusPose {
       const f = c - n;
       const reach = rig.armLength * sc * rig.footReach;
       const plant = (cycle: number) => {
-        const tp = (cycle + duty * 0.5 - off) * T;
+        let tp = (cycle + duty * 0.5 - off) * T;
+        for (const cut of input.cuts ?? []) {
+          if (tp < cut && t >= cut) tp = cut;
+          else if (tp >= cut && t < cut) tp = cut - 0.001;
+        }
         const mp = motion(tp);
         const fx = mp.x + cx * reach * (0.85 + 0.15 * Math.abs(cx));
         return {x: fx, y: contactY(fx, z)};
@@ -212,6 +222,14 @@ export function computeOctopusPose(input: OctopusInput): OctopusPose {
       }
       const g = clamp(s.gait);
       pts = wave.map((p, k) => ({x: lerp(p.x, full[k].x, g), y: lerp(p.y, full[k].y, g)}));
+    }
+
+    // --- brazo dirigido a un objetivo (IK de toda la cadena) ---
+    const rc = input.reach?.find((r) => r.arm === i);
+    if (rc && rc.weight > 0.001) {
+      const ik = fabrik(pts, new Array(N).fill(segLen * ext), rc.target, 10);
+      const w = clamp(rc.weight);
+      pts = pts.map((p, k) => ({x: lerp(p.x, ik[k].x, w), y: lerp(p.y, ik[k].y, w)}));
     }
 
     // --- anchos y contacto con el sustrato ---
@@ -245,8 +263,6 @@ export function computeOctopusPose(input: OctopusInput): OctopusPose {
   // ---- Manto -----------------------------------------------------------------
   const flatK = 1 - s.flatten * 0.3;
   const neck = {x: -16 * facing, y: -rig.headOffsetY * flatK - 26};
-  const sway = Math.sin(t * 0.5 + seed) * 0.05 + fbm1(t * 0.4, seed + 9) * 0.04;
-  const dir = -Math.PI / 2 - 0.95 * facing * (1 - s.streamline * 0.2) + sway;
   const Lm = rig.mantleLength * (1 + breathe * s.breath * 0.4) * (1 - s.flatten * 0.15);
   const Wm = rig.mantleWidth * (1 + breathe * s.breath) * (1 + s.flatten * 0.12);
   const bend = Math.sin(t * 0.6 + seed) * 0.08 + facing * 0.1;

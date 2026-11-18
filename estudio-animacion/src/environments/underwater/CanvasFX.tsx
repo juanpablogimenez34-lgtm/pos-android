@@ -103,6 +103,8 @@ export const Caustics: React.FC<{profile: [number, number][]; strength?: number}
     if (!c) return;
     const g = c.getContext('2d');
     if (!g) return;
+    // en primeros planos extremos la red se vería gigante: se desvanece (zoom 2,5 → 4)
+    const zoomFade = 1 - Math.min(1, Math.max(0, (cam.camera.zoom - 2.5) / 1.5));
     const img = g.createImageData(w, h);
     const data = img.data;
     const tl = screenToWorld(cam, 1, {x: 0, y: 0});
@@ -129,7 +131,7 @@ export const Caustics: React.FC<{profile: [number, number][]; strength?: number}
         }
         const v = Math.abs(Math.sin(px) * Math.sin(py * 1.1));
         const line = Math.pow(clamp(1 - v * 3.2), 3);
-        const a = line * mask * 0.55 * strength;
+        const a = line * mask * 0.55 * strength * zoomFade;
         data[o] = 255;
         data[o + 1] = 236;
         data[o + 2] = 180;

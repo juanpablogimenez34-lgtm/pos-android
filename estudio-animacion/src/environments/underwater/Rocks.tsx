@@ -1,5 +1,6 @@
 import React, {useMemo} from 'react';
 import {fbm1, mixColor, profileAt, rng, smoothPath, Vec} from '../../engine/math';
+import {useStyle} from '../../engine/style';
 import {makeRock} from './geometry';
 import {fog, UW} from './palette';
 
@@ -21,6 +22,7 @@ type RockProps = {
 /** Roca ilustrada: degradado de volumen, luz cenital dorada, borde turquesa, poros, grietas e incrustaciones. */
 export const Rock: React.FC<RockProps> = React.memo(({id, x, y, w, h, seed, fogAmt = 0, flip, details = true, darken = 0}) => {
   const g = useMemo(() => makeRock(seed, w, h), [seed, w, h]);
+  const {refined} = useStyle();
   const dk = (c: string) => mixColor(c, '#03060f', darken);
   const lit = dk(fog(UW.rockLit, fogAmt));
   const mid = dk(fog(UW.rockMid, fogAmt));
@@ -40,6 +42,10 @@ export const Rock: React.FC<RockProps> = React.memo(({id, x, y, w, h, seed, fogA
           <stop offset="0.3" stopColor={UW.gold} stopOpacity={0} />
         </linearGradient>
       </defs>
+      {refined && fogAmt < 0.6 && (
+        // oclusión ambiental: la roca "pesa" sobre el sustrato
+        <ellipse cx={0} cy={h * 0.31} rx={w * 0.6} ry={h * 0.11} fill="#05040f" opacity={0.4 * (1 - fogAmt)} />
+      )}
       <path d={g.path} fill={`url(#${id}-b)`} />
       <path d={g.path} fill={`url(#${id}-l)`} />
       {details && (

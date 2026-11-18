@@ -23,12 +23,17 @@ export type SceneScript = {
   sfx?: {t: number; id: string; note: string}[];
 };
 
+export type DuckInterval = {start: number; end: number};
+
 export type AudioTrackSpec = {
   /** Ruta relativa a /public (p.ej. "audio/ep01/narracion.mp3"). Vacío = pista no usada. */
   src?: string;
   volume?: number;
   startFrom?: number; // segundos a saltar del archivo
   at?: number; // segundos en la línea de tiempo donde empieza
+  /** Ducking: baja a `duckTo` (fracción del volumen) dentro de estos intervalos. */
+  duck?: DuckInterval[];
+  duckTo?: number;
 };
 
 export type AudioMix = {

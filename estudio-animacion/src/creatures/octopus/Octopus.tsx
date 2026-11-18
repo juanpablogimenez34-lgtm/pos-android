@@ -1,6 +1,7 @@
 import React, {useMemo} from 'react';
 import {clamp, mixColor, rng, smoothPath, Vec} from '../../engine/math';
 import {useQuality} from '../../engine/quality';
+import {useStyle} from '../../engine/style';
 import {ArmPose, EyePose, OctopusPose} from './pose';
 import {OctopusSkin} from './rig';
 import {StateParams} from './states';
@@ -55,7 +56,7 @@ const lerpNum = (arr: number[], f: number) => {
 // Brazo: volumen con 2 tonos, realce superior, moteado y ventosas que siguen
 // la deformación (se colocan sobre la normal de la curva en cada fotograma).
 // ---------------------------------------------------------------------------
-const Arm: React.FC<{arm: ArmPose; pal: Palette; s: StateParams; suckers: number; id: string}> = ({arm, pal, s, suckers}) => {
+export const Arm: React.FC<{arm: ArmPose; pal: Palette; s: StateParams; suckers: number; id: string; refined?: boolean}> = ({arm, pal, s, suckers, id, refined}) => {
   const {pts, widths, normals, z} = arm;
   const N = pts.length - 1;
   const depthShade = z < 0 ? -0.28 * -z : 0;
@@ -95,8 +96,9 @@ const Arm: React.FC<{arm: ArmPose; pal: Palette; s: StateParams; suckers: number
     const ang = (Math.atan2(n.y, n.x) * 180) / Math.PI + 90;
     suckerEls.push(
       <g key={q} transform={`translate(${cx.toFixed(1)} ${cy.toFixed(1)}) rotate(${ang.toFixed(1)})`}>
-        <ellipse rx={r} ry={r * 0.72} fill={pal.sucker} stroke={pal.suckerRim} strokeWidth={Math.max(0.6, r * 0.22)} />
-        <ellipse rx={r * 0.38} ry={r * 0.26} fill={pal.suckerRim} opacity={0.8} />
+        <ellipse rx={r} ry={r * 0.72} fill={refined ? `url(#${id}-suck)` : pal.sucker} stroke={pal.suckerRim} strokeWidth={Math.max(0.6, r * 0.22)} />
+        <ellipse rx={r * 0.38} ry={r * 0.26} fill={refined ? `url(#${id}-cup)` : pal.suckerRim} opacity={refined ? 1 : 0.8} />
+        {refined && r > 2.2 && <ellipse cx={-r * 0.3} cy={-r * 0.25} rx={r * 0.22} ry={r * 0.12} fill="#ffffff" opacity={0.55} />}
       </g>,
     );
   }
@@ -128,20 +130,31 @@ const Arm: React.FC<{arm: ArmPose; pal: Palette; s: StateParams; suckers: number
       {spots}
       <path d={smoothPath(top.slice(0, Math.round(N * 0.85)))} stroke={pal.highlight} strokeOpacity={0.45} strokeWidth={2.4} fill="none" strokeLinecap="round" />
       <path d={body} fill="none" stroke={pal.shadow} strokeOpacity={0.35} strokeWidth={1} />
+      {refined && <path d={smoothPath(left.slice(1, Math.round(N * 0.9)))} stroke={pal.rim} strokeOpacity={0.3} strokeWidth={1.8} fill="none" strokeLinecap="round" />}
       {suckerEls}
     </g>
   );
 };
 
-const ArmShadow: React.FC<{arm: ArmPose}> = ({arm}) => {
+export const ArmShadow: React.FC<{arm: ArmPose; refined?: boolean}> = ({arm, refined}) => {
   const pts = arm.pts.map((p, k) => ({x: p.x + 4, y: p.y + 9 + arm.widths[k] * 0.3}));
-  return <path d={smoothPath(pts)} stroke="#02040d" strokeOpacity={0.22} strokeWidth={arm.widths[2] * 1.6} strokeLinecap="round" fill="none" />;
+  const d = smoothPath(pts);
+  if (!refined) return <path d={d} stroke="#02040d" strokeOpacity={0.22} strokeWidth={arm.widths[2] * 1.6} strokeLinecap="round" fill="none" />;
+  // sombra suave: penumbra ancha y tenue + núcleo estrecho (sin filtros de desenfoque)
+  const d2 = smoothPath(arm.pts.map((p, k) => ({x: p.x + 7, y: p.y + 14 + arm.widths[k] * 0.4})));
+  return (
+    <g>
+      <path d={d2} stroke="#02040d" strokeOpacity={0.09} strokeWidth={arm.widths[2] * 3.2} strokeLinecap="round" fill="none" />
+      <path d={d2} stroke="#02040d" strokeOpacity={0.1} strokeWidth={arm.widths[2] * 2.2} strokeLinecap="round" fill="none" />
+      <path d={d} stroke="#02040d" strokeOpacity={0.16} strokeWidth={arm.widths[2] * 1.2} strokeLinecap="round" fill="none" />
+    </g>
+  );
 };
 
 // ---------------------------------------------------------------------------
 // Ojo: abultamiento de piel, iris dorado, pupila horizontal, párpado y papilas.
 // ---------------------------------------------------------------------------
-const Eye: React.FC<{eye: EyePose; pal: Palette; s: StateParams; gradId: string; papillae: number}> = ({eye, pal, gradId, papillae}) => {
+const Eye: React.FC<{eye: EyePose; pal: Palette; s: StateParams; gradId: string; papillae: number; refined?: boolean}> = ({eye, pal, gradId, papillae, refined}) => {
   const r = eye.r;
   const R = r * 0.86;
   const lidY = -R + 2 * R * clamp(eye.lid);
@@ -164,6 +177,13 @@ const Eye: React.FC<{eye: EyePose; pal: Palette; s: StateParams; gradId: string;
       <path d={`M${r * 0.15},${-r * 1.12} q${r * 0.1},${-horn * 0.6} ${r * 0.3},${-horn * 0.7}`} stroke={pal.base} strokeWidth={r * 0.22} strokeLinecap="round" fill="none" />
       {/* globo ocular */}
       <circle r={R} fill={`url(#${gradId}-iris)`} />
+      {refined &&
+        Array.from({length: 18}, (_, i) => {
+          const a = (i / 18) * Math.PI * 2;
+          return (
+            <line key={i} x1={Math.cos(a) * R * 0.42} y1={Math.sin(a) * R * 0.42} x2={Math.cos(a) * R * 0.94} y2={Math.sin(a) * R * 0.94} stroke="#7d5a1c" strokeOpacity={0.35} strokeWidth={0.7} />
+          );
+        })}
       <circle r={R} fill="none" stroke="#2a1606" strokeOpacity={0.5} strokeWidth={1.4} />
       {/* pupila horizontal rectangular */}
       <rect x={eye.pupil.x - pw / 2} y={eye.pupil.y - ph / 2} width={pw} height={ph} rx={ph / 2} fill="#07050a" />
@@ -184,10 +204,15 @@ type OctopusProps = {
   skin: OctopusSkin;
   /** y del sustrato bajo el cuerpo (para la sombra de contacto) */
   groundY?: number;
+  /** 0–1: vista "rayos X" (piel translúcida) para las visualizaciones científicas. */
+  xray?: number;
+  /** 0–1: nubes oscuras que recorren el manto (señal de cambio de color). */
+  clouds?: number;
 };
 
-export const Octopus: React.FC<OctopusProps> = ({id, pose, skin, groundY}) => {
+export const Octopus: React.FC<OctopusProps> = ({id, pose, skin, groundY, xray = 0, clouds = 0}) => {
   const q = useQuality();
+  const {refined} = useStyle();
   const s = pose.state;
   const pal = skinPalette(skin, s);
   const spots = useMemo<Spot[]>(() => {
@@ -217,8 +242,21 @@ export const Octopus: React.FC<OctopusProps> = ({id, pose, skin, groundY}) => {
   const contact = groundY !== undefined ? clamp(1 - (groundY - body.y) / 260) : 0;
 
   return (
-    <g>
+    <g opacity={xray > 0 ? 1 - 0.72 * xray : undefined}>
       <defs>
+        {refined && (
+          <>
+            <radialGradient id={`${id}-suck`} cx="0.4" cy="0.35" r="0.72">
+              <stop offset="0" stopColor="#fff4ec" />
+              <stop offset="0.55" stopColor={pal.sucker} />
+              <stop offset="1" stopColor={pal.suckerRim} />
+            </radialGradient>
+            <radialGradient id={`${id}-cup`} cx="0.5" cy="0.6" r="0.6">
+              <stop offset="0" stopColor={mixColor(pal.suckerRim, '#2a0c10', 0.55)} />
+              <stop offset="1" stopColor={pal.suckerRim} />
+            </radialGradient>
+          </>
+        )}
         <radialGradient id={`${id}-mantle`} gradientUnits="userSpaceOnUse" cx={hiC.x - 22} cy={hiC.y - 26} r={130}>
           <stop offset="0" stopColor={pal.highlight} />
           <stop offset="0.45" stopColor={pal.base} />
@@ -265,15 +303,15 @@ export const Octopus: React.FC<OctopusProps> = ({id, pose, skin, groundY}) => {
         <ellipse cx={body.x + 10} cy={groundY + 6} rx={190 * body.scale} ry={30 * body.scale} fill={`url(#${id}-contact)`} opacity={contact} />
       )}
       {pose.arms.map((a) => (
-        <ArmShadow key={a.index} arm={a} />
+        <ArmShadow key={a.index} arm={a} refined={refined} />
       ))}
       {backArms.map((a) => (
-        <Arm key={a.index} arm={a} pal={pal} s={s} suckers={q.suckersPerArm} id={id} />
+        <Arm key={a.index} arm={a} pal={pal} s={s} suckers={q.suckersPerArm} id={id} refined={refined} />
       ))}
       <path d={webPath} fill={mixColor(pal.base, pal.shadow, 0.35)} stroke={pal.shadow} strokeOpacity={0.4} strokeWidth={1.5} />
 
       <g transform={tf}>
-        {eyes[1].behind && <Eye eye={eyes[1]} pal={pal} s={s} gradId={`${id}-bulge`} papillae={s.papillae} />}
+        {eyes[1].behind && <Eye eye={eyes[1]} pal={pal} s={s} gradId={`${id}-bulge`} papillae={s.papillae} refined={refined} />}
         {/* manto */}
         <path d={mantlePath} fill={`url(#${id}-mantle)`} />
         <g clipPath={`url(#${id}-mclip)`}>
@@ -319,6 +357,44 @@ export const Octopus: React.FC<OctopusProps> = ({id, pose, skin, groundY}) => {
             fill="#ffffff"
             opacity={0.14}
           />
+          {refined &&
+            [0, 1, 2].map((k) => {
+              // reflejos de luz del agua que recorren el manto
+              const cxk = hiC.x + Math.sin(pose.t * 0.7 + k * 2.1) * 38;
+              const cyk = hiC.y + Math.cos(pose.t * 0.55 + k * 1.3) * 52;
+              return (
+                <ellipse
+                  key={`c${k}`}
+                  cx={cxk}
+                  cy={cyk}
+                  rx={20 + 6 * Math.sin(pose.t * 1.3 + k)}
+                  ry={8}
+                  transform={`rotate(${(pose.t * 12 + k * 60).toFixed(1)} ${cxk.toFixed(1)} ${cyk.toFixed(1)})`}
+                  fill="#ffe9bf"
+                  opacity={0.09 * (1 - s.camo * 0.6)}
+                />
+              );
+            })}
+          {clouds > 0.01 &&
+            [0, 1, 2].map((k) => {
+              // "nube pasajera": bandas oscuras que viajan por la piel durante el cambio de color
+              const u = (pose.t * 0.55 + k / 3) % 1;
+              const f = u * M;
+              const c = lerpIdx(mantle.axis, f);
+              const hw = lerpNum(mantle.halfW, f);
+              return (
+                <ellipse
+                  key={`n${k}`}
+                  cx={c.x}
+                  cy={c.y}
+                  rx={hw * 1.3}
+                  ry={12 + 10 * Math.sin(u * Math.PI)}
+                  transform={`rotate(${((mantle.dir * 180) / Math.PI + 90).toFixed(1)} ${c.x.toFixed(1)} ${c.y.toFixed(1)})`}
+                  fill={pal.shadow}
+                  opacity={clouds * 0.5 * Math.sin(u * Math.PI)}
+                />
+              );
+            })}
         </g>
         <path d={mantlePath} fill="none" stroke={`url(#${id}-rim)`} strokeWidth={3.5} />
         {/* papilas del contorno */}
@@ -341,12 +417,12 @@ export const Octopus: React.FC<OctopusProps> = ({id, pose, skin, groundY}) => {
             <ellipse cx={siphon.len} cy={0} rx={2.5} ry={4 + siphon.open * 2} fill={pal.shadow} />
           </g>
         )}
-        {!eyes[1].behind && <Eye eye={eyes[1]} pal={pal} s={s} gradId={`${id}-bulge`} papillae={s.papillae} />}
-        <Eye eye={eyes[0]} pal={pal} s={s} gradId={`${id}-bulge`} papillae={s.papillae} />
+        {!eyes[1].behind && <Eye eye={eyes[1]} pal={pal} s={s} gradId={`${id}-bulge`} papillae={s.papillae} refined={refined} />}
+        <Eye eye={eyes[0]} pal={pal} s={s} gradId={`${id}-bulge`} papillae={s.papillae} refined={refined} />
       </g>
 
       {frontArms.map((a) => (
-        <Arm key={a.index} arm={a} pal={pal} s={s} suckers={q.suckersPerArm} id={id} />
+        <Arm key={a.index} arm={a} pal={pal} s={s} suckers={q.suckersPerArm} id={id} refined={refined} />
       ))}
     </g>
   );

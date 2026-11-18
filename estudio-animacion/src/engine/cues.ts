@@ -44,3 +44,41 @@ export function wordsPerSecond(scene: SceneScript) {
   const pauses = scene.narration.reduce((a, l) => a + (l.pauseAfter ?? 0.25), 0);
   return words / (scene.end - scene.start - pauses);
 }
+
+export type TimedLine = {id: string; text: string; start: number; end: number; highlight?: string[]};
+
+/**
+ * Subtítulos a partir de tiempos MEDIDOS sobre la locución (narration-timing.json).
+ * Cada frase se parte en bloques de ≤2 líneas; el bloque dura en proporción a sus
+ * caracteres dentro de la duración real de la frase.
+ */
+export function cuesFromTiming(lines: TimedLine[], maxChars = 32): SubtitleCue[] {
+  const out: SubtitleCue[] = [];
+  for (const line of lines) {
+    const words = line.text.split(/\s+/);
+    const rows: string[] = [];
+    let cur = '';
+    for (const w of words) {
+      if ((cur + ' ' + w).trim().length > maxChars && cur) {
+        rows.push(cur);
+        cur = w;
+      } else cur = (cur + ' ' + w).trim();
+    }
+    if (cur) rows.push(cur);
+    const blocks: string[] = [];
+    for (let i = 0; i < rows.length; i += 2) blocks.push(rows.slice(i, i + 2).join('\n'));
+    const chars = blocks.reduce((a, b) => a + b.length, 0);
+    let t = line.start;
+    const dur = line.end - line.start;
+    blocks.forEach((b, i) => {
+      const d = (b.length / chars) * dur;
+      const last = i === blocks.length - 1;
+      out.push({start: t, end: last ? line.end + 0.25 : t + d, text: b, highlight: line.highlight});
+      t += d;
+    });
+  }
+  return out;
+}
+
+/** Intervalos de voz (para el ducking de la música). */
+export const speechIntervals = (lines: TimedLine[]) => lines.map((l) => ({start: l.start, end: l.end}));

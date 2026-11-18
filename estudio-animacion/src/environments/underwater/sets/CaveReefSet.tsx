@@ -31,11 +31,23 @@ export const CAVE_REEF = {
     [2000, 1262],
     [2300, 1296],
     [2900, 1320],
+    [3400, 1316],
+    [4300, 1330],
   ] as [number, number][],
   caveMouth: {x: 820, y: 1160, rx: 178, ry: 150},
 };
 
 export const groundY = (x: number) => profileAt(CAVE_REEF.ground, x);
+
+/** Perfil con el que se DIBUJA la plataforma original (hasta x = 2900). Se mantiene
+ * separado del perfil físico ampliado para que la demo aprobada no cambie ni un píxel
+ * (la textura procedural depende del rango de este perfil). */
+const SHELF_DRAW = CAVE_REEF.ground.filter(([x]) => x <= 2900);
+/** Ampliación hacia la derecha, muestreada del perfil físico (coincide con los apoyos). */
+const SHELF_EXT: [number, number][] = Array.from({length: 21}, (_, i) => {
+  const x = 2500 + i * 90;
+  return [x, groundY(x)];
+});
 
 /** Planos lejanos y medios (detrás de todo). */
 const Distant: React.FC = () => (
@@ -73,7 +85,7 @@ const Distant: React.FC = () => (
 );
 
 /** Plano principal, por detrás del protagonista. */
-const MainBack: React.FC = () => (
+const MainBack: React.FC<{extra?: React.ReactNode}> = ({extra}) => (
   <ParallaxLayer depth={1}>
     <Rock id="r-p0" x={140} y={1340} w={520} h={420} seed={201} fogAmt={0.15} />
     <Kelp id="k-p1" x={1470} y={1250} height={620} width={17} seed={41} strands={4} />
@@ -81,11 +93,13 @@ const MainBack: React.FC = () => (
     <CaveFormation id="cave" mouth={CAVE_REEF.caveMouth} />
     <BranchCoral x={1290} y={1252} height={220} seed={13} color={UW.coralOrange} />
     <FanCoral x={2060} y={1268} w={230} h={260} seed={14} color={UW.coralViolet} />
-    <RockShelf id="shelf" profile={CAVE_REEF.ground} bottom={2600} />
+    <RockShelf id="shelf" profile={SHELF_DRAW} bottom={2600} />
+    <RockShelf id="shelf-ext" profile={SHELF_EXT} bottom={2600} seed={23} />
     <TubeSponges x={2180} y={1290} seed={15} />
     <Anemone x={1090} y={1278} size={58} seed={3} />
     <Anemone x={1880} y={1240} size={46} seed={5} color="#3fc7b0" tip="#d8fff4" />
     <Urchin x={1580} y={1330} r={18} seed={6} />
+    {extra}
   </ParallaxLayer>
 );
 
@@ -129,7 +143,7 @@ const Foreground: React.FC = () => (
     <Rock id="r-f3" x={2500} y={2080} w={820} h={600} seed={403} darken={0.55} details={false} />
     <Kelp id="k-f1" x={-60} y={2000} height={1150} width={30} seed={51} strands={3} colorA="#06231f" colorB="#1d4d2a" />
     <Kelp id="k-f2" x={2330} y={2050} height={1100} width={30} seed={52} strands={3} colorA="#06231f" colorB="#1d4d2a" />
-    <Kelp id="k-f3" x={3000} y={2050} height={1200} width={30} seed={53} strands={3} colorA="#06231f" colorB="#1d4d2a" />
+    <Kelp id="k-f3" x={3700} y={2050} height={1200} width={30} seed={53} strands={3} colorA="#06231f" colorB="#1d4d2a" />
   </ParallaxLayer>
 );
 
@@ -137,7 +151,14 @@ const Foreground: React.FC = () => (
  * Pila completa de capas del escenario, con un hueco (`hero`) para el protagonista.
  * Orden: lejanos → plano principal → cáusticas → héroe + frontales → partículas → primer plano.
  */
-export const CaveReefStage: React.FC<{hero: React.ReactNode; heroOverlay?: React.ReactNode}> = ({hero, heroOverlay}) => {
+export const CaveReefStage: React.FC<{
+  hero: React.ReactNode;
+  heroOverlay?: React.ReactNode;
+  /** Elementos extra del plano principal por detrás del protagonista (rocas, grietas…). */
+  backProps?: React.ReactNode;
+  /** Capa en coordenadas de mundo por encima del banco frontal (efectos de agua, tinta…). */
+  frontFx?: React.ReactNode;
+}> = ({hero, heroOverlay, backProps, frontFx}) => {
   const {width, height} = useVideoConfig();
   const q = useQuality();
   const vb = `0 0 ${width} ${height}`;
@@ -146,7 +167,7 @@ export const CaveReefStage: React.FC<{hero: React.ReactNode; heroOverlay?: React
       <AbsoluteFill>
         <svg width={width} height={height} viewBox={vb}>
           <Distant />
-          <MainBack />
+          <MainBack extra={backProps} />
         </svg>
       </AbsoluteFill>
       <Caustics profile={CAVE_REEF.ground} />
@@ -158,6 +179,7 @@ export const CaveReefStage: React.FC<{hero: React.ReactNode; heroOverlay?: React
             {heroOverlay}
           </ParallaxLayer>
           <FrontBank />
+          {frontFx && <ParallaxLayer depth={1}>{frontFx}</ParallaxLayer>}
         </svg>
       </AbsoluteFill>
       <Particles lightX={CAVE_REEF.sunX} />

@@ -6,6 +6,7 @@ import {useTime} from './useTime';
 
 type Props = {
   start: number; // segundos
+  end?: number; // fin (con salida suave de 0,6 s)
   kicker: string; // línea pequeña superior
   title: string; // línea principal
   accent?: string;
@@ -24,15 +25,17 @@ const Heart: React.FC<{size: number; color: string; beat: number}> = ({size, col
 );
 
 /** Rótulo cinematográfico: letras que entran escalonadas + barrido de luz + iconos con latido. */
-export const TitleCard: React.FC<Props> = ({start, kicker, title, accent = '#ffd27a', centerY = 0.2, icons = 0, iconColor = '#5fd0ff'}) => {
+export const TitleCard: React.FC<Props> = ({start, end, kicker, title, accent = '#ffd27a', centerY = 0.2, icons = 0, iconColor = '#5fd0ff'}) => {
   const t = useTime() - start;
   const {width, height} = useVideoConfig();
   if (t < 0) return null;
+  const outK = end === undefined ? 1 : clamp((end - start - t) / 0.6);
+  if (outK <= 0) return null;
   const kickIn = easeOut(t / 0.5);
   const sweep = clamp((t - 0.55) / 0.9);
   const letters = title.split('');
   return (
-    <div style={{position: 'absolute', left: 0, width, top: height * centerY, transform: 'translateY(-50%)', textAlign: 'center', fontFamily: FONT_FAMILY}}>
+    <div style={{position: 'absolute', left: 0, width, top: height * centerY, transform: `translateY(-50%) translateY(${(1 - outK) * -20}px)`, opacity: outK, textAlign: 'center', fontFamily: FONT_FAMILY}}>
       <div
         style={{
           fontWeight: 800,
