@@ -1,0 +1,27 @@
+{
+  "name": "documentales-curiosidades",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Serie de mini-documentales 3D verticales (9:16) hechos con Remotion + Three.js",
+  "scripts": {
+    "studio": "remotion studio src/index.ts",
+    "render:demo": "remotion render src/index.ts Ep01Demo15s out/ep01-demo-15s.mp4",
+    "render:demo:preview": "remotion render src/index.ts Ep01Demo15s out/ep01-demo-15s-preview.mp4 --scale=0.5",
+    "still": "remotion still src/index.ts Ep01Demo15s out/still.png --frame=150",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@react-three/fiber": "9.4.0",
+    "@remotion/cli": "4.0.545",
+    "@remotion/three": "4.0.545",
+    "react": "19.2.0",
+    "react-dom": "19.2.0",
+    "remotion": "4.0.545",
+    "three": "0.180.0"
+  },
+  "devDependencies": {
+    "@types/react": "19.2.2",
+    "@types/three": "0.180.0",
+    "typescript": "5.9.3"
+  }
+}
