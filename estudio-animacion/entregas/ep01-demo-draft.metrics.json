@@ -1,0 +1,12 @@
+{
+  "composition": "Ep01Demo",
+  "output": "out/ep01-demo-draft.mp4",
+  "flags": [
+    "--props={\"quality\":\"draft\",\"showSubtitles\":true,\"audio\":{}}",
+    "--scale=0.5",
+    "--concurrency=4"
+  ],
+  "renderSeconds": 25,
+  "peakRssMB": 2823,
+  "fileMB": 5.47
+}

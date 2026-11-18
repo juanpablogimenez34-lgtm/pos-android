@@ -1,0 +1,26 @@
+{
+  "name": "estudio-animacion",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Motor reutilizable de documentales animados 2.5D (Remotion + React + SVG/Canvas)",
+  "scripts": {
+    "studio": "remotion studio src/index.ts",
+    "still": "remotion still src/index.ts Ep01Demo out/frame.png --frame=200",
+    "still:states": "remotion still src/index.ts OctopusStates out/states.png --frame=60",
+    "render": "remotion render src/index.ts Ep01Demo out/ep01-demo.mp4 --codec=h264 --crf=20",
+    "render:draft": "remotion render src/index.ts Ep01Demo out/ep01-demo-draft.mp4 --props=props/draft.json --scale=0.5",
+    "render:measured": "node scripts/render-measured.mjs Ep01Demo out/ep01-demo.mp4 --codec=h264 --crf=20",
+    "render:segments": "node scripts/render-segments.mjs Ep01Demo 5 out/ep01-demo-segmentos.mp4",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.545",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "remotion": "4.0.545"
+  },
+  "devDependencies": {
+    "@types/react": "18.3.12",
+    "typescript": "5.6.3"
+  }
+}
