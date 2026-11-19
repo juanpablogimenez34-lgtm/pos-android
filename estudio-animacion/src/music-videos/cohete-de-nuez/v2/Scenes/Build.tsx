@@ -134,7 +134,7 @@ export const BUILD_SHOTS: Shot[] = [
     kind: 'wide',
     what: 'habitación de mañana; Nico entra saltando',
     r: (t, lt) => {
-      const cam = ck([[0, -420, -1150, 1.7], [1.0, -420, -1000, 1.6], [T.I2 - 0.05, -360, -80, 3.0]], lt);
+      const cam = ck([[0, -420, -1150, 1.7], [0.9, -420, -1000, 1.6], [2.1, -330, -90, 2.7], [T.I2, -290, -90, 2.9]], lt);
       let k = 0;
       ENTRY.forEach((b, i) => (t >= b ? (k = i) : 0));
       const b0 = ENTRY[k];

@@ -44,3 +44,22 @@ Terminado: fichas, cohete, mapa temporal medido sobre el MP3 real, 8 escenas sin
 ```bash
 npm run cohete:analyze && npm run cohete:draft && npm run cohete:final
 ```
+
+## Versión 2.0 (remasterización) — carpeta `v2/`
+
+La v1 (`CoheteVideo`) sigue intacta. La v2 reutiliza el mapa de la canción, los decorados, los efectos
+y el script de render, y añade:
+
+| Carpeta / archivo | Contenido |
+|---|---|
+| `v2/rig.tsx` | Rig 2D: manos con dedos que agarran (el objeto se dibuja en el marco de la mano), ojos con modos, cejas independientes, bocas nuevas, luz de contorno y mechones |
+| `v2/Characters/` | `Nico2`, `Luna2`, `Bip2` (pinzas, brazos telescópicos, propulsores, pantallas nuevas), `Zumi2`, `Fichas2` |
+| `v2/Animation/acting.ts` | Poses clave con curvas (anticipación, sobreimpulso), IK, gestos y coreografías por personaje |
+| `v2/Stages/` | `Rocket2` (textura de nuez), `Space2` (nebulosas, estrellas en capas, asteroides, planetas, Luna de queso con volumen, cometas), `Sets2` (habitación con profundidad, cabina, brazos de plano detalle, IK), `Crew2` |
+| `v2/Scenes/` | `Build`, `Countdown`, `Flight`, `MoonZumi`, `Dance`, `Home`: 83 planos |
+| `v2/Shots/` | Sistema de planos: cada corte cae en un pulso medido |
+| `v2/CoheteVideoV2.tsx` | Composición `CoheteVideoV2` (y `CohetePruebaV2`, los 20 s de prueba) |
+
+```bash
+npm run cohete2:fichas && npm run cohete2:prueba && npm run cohete2:draft && npm run cohete2:final
+```
