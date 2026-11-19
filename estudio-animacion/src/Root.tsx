@@ -27,6 +27,8 @@ import {EP07_DEFAULT_AUDIO} from './episodes/ep07-hongo-hormigas/Audio/sound';
 import {DURATION as EP07_DURATION, FPS as EP07_FPS} from './episodes/ep07-hongo-hormigas/Timeline/timeline';
 import {Ep07Characters} from './episodes/ep07-hongo-hormigas/Characters/Showcase';
 import {CoheteFichas} from './music-videos/cohete-de-nuez/Characters/Fichas';
+import {CoheteVideo} from './music-videos/cohete-de-nuez/CoheteVideo';
+import {SONG_FRAMES} from './music-videos/cohete-de-nuez/MusicSync/songMap';
 
 const demoDefaults: Ep01DemoProps = {quality: 'final', showSubtitles: true, audio: {}};
 const fullDefaults: Ep01FullProps = {quality: 'final', showSubtitles: true, audio: EP01_DEFAULT_AUDIO};
@@ -114,6 +116,8 @@ export const RemotionRoot: React.FC = () => (
     />
     <Composition id="Ep07Characters" component={Ep07Characters} durationInFrames={300} fps={30} width={1080} height={1920} />
     {/* Videoclip 01 "Nuestro cohete de nuez": fichas de personajes y del cohete */}
+    {/* Videoclip 01 completo: la duración sale del MP3 real (4.278 fotogramas a 30 fps) */}
+    <Composition id="CoheteVideo" component={CoheteVideo} durationInFrames={SONG_FRAMES} fps={30} width={1080} height={1920} defaultProps={{withAudio: true}} />
     <Composition id="CoheteFichas" component={CoheteFichas} durationInFrames={300} fps={30} width={1080} height={1920} />
     {/* Ep. 06: fichas de personaje (ajolote rosado, silvestre, Daphnia, etapas de regeneración) */}
     <Composition id="Ep06Characters" component={Ep06Characters} durationInFrames={300} fps={30} width={1080} height={1920} />

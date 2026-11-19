@@ -44,7 +44,12 @@
     "ep07:draft": "node scripts/render-episode.mjs --comp Ep07Full --quality draft --scale 0.5 --seg 30 --out out/ep07-borrador-540x960.mp4",
     "ep07:final": "node scripts/render-episode.mjs --comp Ep07Full --quality final --scale 1 --seg 30 --crf 20 --out out/ep07-final-1080x1920.mp4",
     "audio:score:ep07": "python3 tools/audio/score_ep07.py",
-    "still:ep07": "npx remotion still src/index.ts Ep07Characters out/ep07-fichas.png --frame=10 --scale=0.6"
+    "still:ep07": "npx remotion still src/index.ts Ep07Characters out/ep07-fichas.png --frame=10 --scale=0.6",
+    "cohete:analyze": "python3 src/music-videos/cohete-de-nuez/MusicSync/analyze_song.py public/music/nuestro_cohete_de_nuez.mp3 && python3 src/music-videos/cohete-de-nuez/MusicSync/build_map.py public/music/nuestro_cohete_de_nuez.mp3",
+    "cohete:sheet": "node scripts/contact-sheet.mjs CoheteVideo",
+    "cohete:fichas": "npx remotion still src/index.ts CoheteFichas out/cohete-fichas.png --frame=20 --scale=0.6",
+    "cohete:draft": "node scripts/render-musicvideo.mjs --comp CoheteVideo --quality draft --scale 0.5 --seg 30 --frames 4278 --out out/cohete-borrador-540x960.mp4",
+    "cohete:final": "node scripts/render-musicvideo.mjs --comp CoheteVideo --quality final --scale 1 --seg 30 --crf 20 --frames 4278 --out out/cohete-final-1080x1920.mp4"
   },
   "dependencies": {
     "@remotion/cli": "4.0.545",

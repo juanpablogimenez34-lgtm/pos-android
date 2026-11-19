@@ -13,7 +13,7 @@ export type BipPose = BasePose & {screen: BipScreen; lights: number; antenna: nu
 
 const C = BIP_COLORS;
 
-const Screen: React.FC<{c: Vec2; w: number; h: number; s: BipScreen; blink: number; t: number}> = ({c, w, h, s, blink, t}) => {
+const Screen: React.FC<{c: Vec2; w: number; h: number; s: BipScreen; blink: number; t: number; facing: number}> = ({c, w, h, s, blink, t, facing}) => {
   const eyes = () => {
     const ey = c.y - 4;
     const ex = w * 0.2;
@@ -43,6 +43,7 @@ const Screen: React.FC<{c: Vec2; w: number; h: number; s: BipScreen; blink: numb
         <line key={i} x1={c.x - w / 2 + 8} x2={c.x + w / 2 - 8} y1={c.y - h / 2 + 10 + ((i * 14 + t * 30) % (h - 16))} y2={c.y - h / 2 + 10 + ((i * 14 + t * 30) % (h - 16))} stroke={C.glow} strokeOpacity={0.06} strokeWidth={2} />
       ))}
       {s.mode === 'face' && eyes()}
+      <g transform={`translate(${f1(c.x)} 0) scale(${facing} 1) translate(${f1(-c.x)} 0)`}>
       {s.mode === 'number' && (
         <text x={c.x} y={c.y + 22} textAnchor="middle" fontFamily="Montserrat" fontWeight={900} fontSize={62} fill={C.glow}>
           {s.value}
@@ -53,6 +54,7 @@ const Screen: React.FC<{c: Vec2; w: number; h: number; s: BipScreen; blink: numb
           {s.value}
         </text>
       )}
+      </g>
       {s.mode === 'heart' && <path transform={`translate(${f1(c.x)} ${f1(c.y)}) scale(2)`} d="M0,10 C-18,-4 -10,-18 0,-8 C10,-18 18,-4 0,10Z" fill="#ff7ab0" />}
     </g>
   );
@@ -106,7 +108,7 @@ export const Bip: React.FC<{p: BipPose; id?: string}> = ({p, id = 'bip'}) => {
           <rect x={head.x - 58} y={head.y - 44} width={116} height={88} rx={30} fill={`url(#${id}-body)`} stroke={C.outline} strokeWidth={4} />
           <rect x={head.x - 64} y={head.y - 12} width={12} height={26} rx={5} fill={C.blue} stroke={C.outline} strokeWidth={3} />
           <rect x={head.x + 52} y={head.y - 12} width={12} height={26} rx={5} fill={C.blue} stroke={C.outline} strokeWidth={3} />
-          <Screen c={{x: head.x + 6 * turn, y: head.y + 2}} w={92} h={64} s={p.screen} blink={p.expr.blink} t={p.t} />
+          <Screen c={{x: head.x + 6 * turn, y: head.y + 2}} w={92} h={64} s={p.screen} blink={p.expr.blink} t={p.t} facing={p.facing} />
           <Helmet c={{x: head.x, y: head.y - 4}} r={82} ring="#2f6fd6" k={p.helmet} />
         </g>
         <LimbShape o={{x: 44, y: -104}} limb={p.armR} l1={24} l2={24} w1={11} w2={10} color={'#9fb4d8'} outline={C.outline} end={claw} />
