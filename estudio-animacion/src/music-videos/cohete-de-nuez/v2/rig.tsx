@@ -8,8 +8,8 @@ import {BasePose, basePose, Expression, f1, Limb, NEUTRAL_EXPR, seg, Vec2} from 
 
 export type EyeMode = 'normal' | 'happy' | 'wide' | 'closed' | 'squint';
 export type MouthKind = Expression['mouth'] | 'laugh' | 'worried' | 'ee' | 'tongue';
-export type PropKind = 'none' | 'scissors' | 'tape' | 'tapeStrip' | 'cardboard' | 'fin' | 'window' | 'wrench' | 'camera' | 'colander' | 'star' | 'box' | 'paper';
-export type Hold = {kind: PropKind; rot?: number; s?: number};
+export type PropKind = 'none' | 'scissors' | 'tape' | 'tapeStrip' | 'cardboard' | 'fin' | 'window' | 'wrench' | 'camera' | 'colander' | 'star' | 'box' | 'paper' | 'cone' | 'ship';
+export type Hold = {kind: PropKind; rot?: number; s?: number; c?: string};
 
 export type Expr2 = Omit<Expression, 'mouth'> & {mouth: MouthKind; eyes: EyeMode; browL: number; browR: number};
 export const EXPR2: Expr2 = {...NEUTRAL_EXPR, mouth: 'smile', eyes: 'normal', browL: 0, browR: 0};
@@ -84,7 +84,7 @@ export const PropInHand: React.FC<{h: Hold}> = ({h}) => {
       case 'fin':
         return (
           <g>
-            <path d="M-20,0 Q40,20 50,90 L10,90 Q0,40 -24,24Z" fill="#e8463c" stroke={out} strokeWidth={4} strokeLinejoin="round" />
+            <path d="M-20,0 Q40,20 50,90 L10,90 Q0,40 -24,24Z" fill={h.c ?? '#e8463c'} stroke={out} strokeWidth={4} strokeLinejoin="round" />
             <path d="M14,86 L46,86" stroke="#a82a22" strokeWidth={6} strokeDasharray="3 3" />
             <path d="M-6,14 Q30,30 38,70" stroke="#ffffff" strokeWidth={4} fill="none" opacity={0.35} />
           </g>
@@ -126,6 +126,22 @@ export const PropInHand: React.FC<{h: Hold}> = ({h}) => {
             <path d="M-34,12 L34,12" stroke="#7a5428" strokeWidth={3} />
             <rect x={-18} y={-12} width={10} height={14} fill="#ff9ad5" />
             <rect x={2} y={-16} width={10} height={18} fill="#7ec8ff" />
+          </g>
+        );
+      case 'cone':
+        return (
+          <g>
+            <path d="M-30,0 L30,0 L0,-70Z" fill="#ff9ad5" stroke={out} strokeWidth={3.5} strokeLinejoin="round" />
+            <path d="M-20,-14 L20,-14" stroke="#ffffff" strokeWidth={5} />
+            <path d="M-12,-34 L12,-34" stroke="#ffd23f" strokeWidth={5} />
+            <circle cx={0} cy={-72} r={6} fill="#ffd23f" stroke={out} strokeWidth={2} />
+          </g>
+        );
+      case 'ship':
+        return (
+          <g transform="translate(0 16)">
+            <path d="M-12,-30 Q0,-46 12,-30 L12,10 L-12,10Z" fill="#a8743e" stroke={out} strokeWidth={2.5} />
+            <path d="M-12,4 L-20,14 L-12,10 M12,4 L20,14 L12,10" fill="#e8463c" stroke={out} strokeWidth={2} />
           </g>
         );
       case 'paper':

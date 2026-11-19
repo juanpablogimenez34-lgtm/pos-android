@@ -117,10 +117,11 @@ export function zumi2(t: number, o: PK = {}): Zumi2Pose {
 export const hold = (kind: Hold['kind'], rot = 0, s = 1): Hold => ({kind, rot, s});
 
 // ---------------------------------------------------------------- gestos útiles
-export const reach = (side: 1 | -1, up: number, bend = 0.3): PK => (side === 1 ? {armR: L(-1.57 - up, bend)} : {armL: L(1.57 + up, -bend)});
-export const pointAt = (side: 1 | -1 = 1, up = 0.1): PK => (side === 1 ? {armR: L(-1.7 - up, 0.05), gripR: 0.85} : {armL: L(1.7 + up, -0.05), gripL: 0.85});
-export const waveArm = (t: number, side: 1 | -1 = 1, speed = 10): PK => (side === 1 ? {armR: L(-2.75 + Math.sin(t * speed) * 0.32, -0.55 + Math.sin(t * speed + 0.6) * 0.25), gripR: 0} : {armL: L(2.75 + Math.sin(t * speed) * 0.32, 0.55 - Math.sin(t * speed + 0.6) * 0.25), gripL: 0});
-export const cheer = (t: number): PK => ({armL: L(2.7, 0.25 + 0.1 * Math.sin(t * 9)), armR: L(-2.7, -0.25 - 0.1 * Math.sin(t * 9 + 1)), gripL: 0.9, gripR: 0.9});
+// Convención: el brazo derecho (hombro en +x) se abre hacia fuera con ángulos POSITIVOS; el izquierdo, con negativos.
+export const reach = (side: 1 | -1, up: number, bend = 0.3): PK => (side === 1 ? {armR: L(1.57 + up, -bend)} : {armL: L(-1.57 - up, bend)});
+export const pointAt = (side: 1 | -1 = 1, up = 0.1): PK => (side === 1 ? {armR: L(1.7 + up, -0.05), gripR: 0.85} : {armL: L(-1.7 - up, 0.05), gripL: 0.85});
+export const waveArm = (t: number, side: 1 | -1 = 1, speed = 10): PK => (side === 1 ? {armR: L(2.55 + Math.sin(t * speed) * 0.3, 0.5 + Math.sin(t * speed + 0.6) * 0.3), gripR: 0} : {armL: L(-2.55 - Math.sin(t * speed) * 0.3, -0.5 - Math.sin(t * speed + 0.6) * 0.3), gripL: 0});
+export const cheer = (t: number): PK => ({armL: L(-2.55, -0.3 - 0.12 * Math.sin(t * 9)), armR: L(2.55, 0.3 + 0.12 * Math.sin(t * 9 + 1)), gripL: 0.9, gripR: 0.9});
 export const crouchK = (k: number): PK => ({squash: 0.12 * k, legL: L(0.6 * k, -1.2 * k), legR: L(-0.2 * k, 0.9 * k), bob: 18 * k});
 export const walkCycle = (ph: number, amp = 1): PK => {
   const s = Math.sin(ph * Math.PI * 2);
@@ -131,9 +132,9 @@ export const walkCycle = (ph: number, amp = 1): PK => {
 export function jump(t: number, t0: number, d: number, h: number): PK {
   const u = (t - t0) / d;
   if (u < -0.2 || u > 1.25) return {};
-  if (u < 0) return {...crouchK(-u < 0.1 ? 1 : (0.2 + u) / 0.1), armL: L(-0.3, -0.4), armR: L(0.3, 0.4)};
+  if (u < 0) return {...crouchK(-u < 0.1 ? 1 : (0.2 + u) / 0.1), armL: L(-0.6, 0.2), armR: L(-0.5, 0.3)};
   if (u > 1) return crouchK(1 - (u - 1) / 0.25);
-  return {bob: -4 * h * u * (1 - u), squash: -0.1 * Math.sin(u * Math.PI), legL: L(0.4, -0.9), legR: L(-0.2, 0.6), armL: L(2.4, 0.3), armR: L(-2.4, -0.3)};
+  return {bob: -4 * h * u * (1 - u), squash: -0.1 * Math.sin(u * Math.PI), legL: L(0.4, -0.9), legR: L(-0.2, 0.6), armL: L(-2.4, -0.3), armR: L(2.4, 0.3)};
 }
 
 // ---------------------------------------------------------------- coreografías (estribillos)
@@ -154,8 +155,8 @@ export function nicoDance(t: number, e = 1): PK & {tailK: number} {
     headTilt: 0.12 * sway * e,
     bob: -12 * pump(ph) * e,
     squash: 0.05 * on(ph) * e,
-    armL: alt > 0 ? L(2.5 - 0.5 * (1 - up), 0.35) : L(0.7, -0.9),
-    armR: alt < 0 ? L(-2.5 + 0.5 * (1 - up), -0.35) : L(-0.7, 0.9),
+    armL: alt > 0 ? L(-2.5 + 0.5 * (1 - up), -0.35) : L(-0.5, 1.9),
+    armR: alt < 0 ? L(2.5 - 0.5 * (1 - up), 0.35) : L(0.5, -1.9),
     gripL: 0.6,
     gripR: 0.6,
     legL: L(0.12 * sway, -0.2 * on(ph)),
@@ -178,8 +179,8 @@ export function lunaDance(t: number, e = 1): PK & {earFlop: number} {
     bob: -hopH * air + 6 * land,
     squash: -0.06 * air + 0.1 * land + (spinBeat ? 0.08 * Math.sin(ph * Math.PI) : 0),
     spin,
-    armL: L(1.0 + 0.9 * air + (spinBeat ? 1.2 : 0), -0.6),
-    armR: L(-1.0 - 0.9 * air - (spinBeat ? 1.2 : 0), 0.6),
+    armL: L(-1.0 - 0.9 * air - (spinBeat ? 1.2 : 0), 0.6),
+    armR: L(1.0 + 0.9 * air + (spinBeat ? 1.2 : 0), -0.6),
     gripL: 0.2,
     gripR: 0.2,
     legL: L(0.25 * air, -0.7 * air),
@@ -197,10 +198,10 @@ export function bipDance(t: number, e = 1): PK & {lightsK: number} {
   const k = ease('snap', clamp(ph * 4));
   const pose = i % 4;
   const arms: [Limb, Limb][] = [
-    [L(1.57, -1.57), L(-0.3, 0)],
-    [L(0.3, 0), L(-1.57, 1.57)],
-    [L(2.8, 0), L(-2.8, 0)],
-    [L(1.57, 0), L(-1.57, 0)],
+    [L(-1.57, -1.57), L(0.3, 0)],
+    [L(-0.3, 0), L(1.57, 1.57)],
+    [L(-2.8, 0), L(2.8, 0)],
+    [L(-1.57, 0), L(1.57, 0)],
   ];
   const pa = arms[(pose + 3) % 4];
   const pb = arms[pose];
@@ -228,8 +229,8 @@ export function zumiDance(t: number, e = 1): PK {
     bob: -40 * air * e,
     squash: ph > 0.65 ? 0.12 * Math.sin(((ph - 0.65) / 0.35) * Math.PI) : -0.08 * air,
     spin: spinBeat ? ease('back', ph) * Math.PI * 2 : 0,
-    armL: L(2.2 + 0.5 * air, 0.4),
-    armR: L(-2.2 - 0.5 * air, -0.4),
+    armL: L(-2.2 - 0.5 * air, -0.4),
+    armR: L(2.2 + 0.5 * air, 0.4),
     gripL: 0,
     gripR: 0,
     legL: L(0.3 * air, -0.6 * air),
@@ -242,5 +243,5 @@ export function zumiDance(t: number, e = 1): PK {
 export function unison(t: number): PK {
   const {i, ph} = beatPhase(t);
   const k = i % 2 === 0 ? ease('over', clamp(ph * 3)) : 1 - ease('io', ph);
-  return {armL: L(1.4 + 1.3 * k, -0.6 + 0.5 * k), armR: L(-1.4 - 1.3 * k, 0.6 - 0.5 * k), bob: -14 * Math.sin(ph * Math.PI), squash: 0.06 * on(ph), gripL: 0, gripR: 0};
+  return {armL: L(-1.4 - 1.3 * k, 0.6 - 0.5 * k), armR: L(1.4 + 1.3 * k, -0.6 + 0.5 * k), bob: -14 * Math.sin(ph * Math.PI), squash: 0.06 * on(ph), gripL: 0, gripR: 0};
 }

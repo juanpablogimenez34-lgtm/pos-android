@@ -10,10 +10,18 @@ import {Body} from './common';
 
 export type BipFace2 = 'happy' | 'wow' | 'wink' | 'love' | 'focus' | 'oops' | 'laugh' | 'sleep' | 'stars';
 export type BipScreen2 = {mode: 'face' | 'number' | 'text' | 'heart' | 'camera' | 'radar' | 'photo'; value: string; face: BipFace2};
-export type Bip2Pose = Pose2 & {screen: BipScreen2; lights: number; antenna: number};
+export type Bip2Pose = Pose2 & {screen: BipScreen2; lights: number; antenna: number; jets?: number; power?: number; armLen?: number};
 const C = BIP_COLORS;
 
-const Screen2: React.FC<{c: Vec2; w: number; h: number; s: BipScreen2; blink: number; t: number; facing: number}> = ({c, w, h, s, blink, t, facing}) => {
+const Screen2: React.FC<{c: Vec2; w: number; h: number; s: BipScreen2; blink: number; t: number; facing: number; power: number}> = ({c, w, h, s, blink, t, facing, power}) => {
+  if (power < 0.999)
+    return (
+      <g>
+        <rect x={c.x - w / 2} y={c.y - h / 2} width={w} height={h} rx={22} fill="#0a1222" stroke={C.outline} strokeWidth={4} />
+        <rect x={c.x - (w / 2 - 6) * power} y={c.y - Math.max(2, (h / 2 - 6) * power * power)} width={(w - 12) * power} height={Math.max(4, (h - 12) * power * power)} rx={10} fill={C.glow} opacity={0.8 * power} />
+        <rect x={c.x - w / 2 + 6} y={c.y - h / 2 + 6} width={w - 12} height={h * 0.3} rx={14} fill="#ffffff" opacity={0.06} />
+      </g>
+    );
   const ey = c.y - 4;
   const ex = w * 0.2;
   const eye = (x: number, side: number) => {
@@ -137,8 +145,9 @@ export const Bip2: React.FC<{p: Bip2Pose; id?: string}> = ({p, id = 'bip2'}) => 
   const glowK = 0.5 + 0.5 * p.antenna;
   const foot = (pp: Vec2) => <rect x={pp.x - 16} y={pp.y - 6} width={34} height={14} rx={7} fill={C.blue} stroke={C.outline} strokeWidth={3} />;
   const tw = p.twist * 8;
-  const eL = limbEnd({x: -44 - tw, y: -104}, p.armL, 24, 24);
-  const eR = limbEnd({x: 44 - tw, y: -104}, p.armR, 24, 24);
+  const al = 24 * (p.armLen ?? 1);
+  const eL = limbEnd({x: -44 - tw, y: -104}, p.armL, al, al);
+  const eR = limbEnd({x: 44 - tw, y: -104}, p.armR, al, al);
   const antTip = {x: head.x + 4 + Math.sin(p.t * 3) * 3, y: head.y - 76};
   return (
     <Body p={p} pivot={-40} shadowW={58}>
@@ -146,9 +155,22 @@ export const Bip2: React.FC<{p: Bip2Pose; id?: string}> = ({p, id = 'bip2'}) => 
         <SoftShade id={`${id}-body`} base={C.body} />
         <SoftShade id={`${id}-blue`} base={C.blue} />
       </defs>
+      {(p.jets ?? 0) > 0.01 && (
+        <g opacity={p.jets}>
+          {[-16, 16].map((x) => (
+            <g key={x}>
+              <ellipse cx={x} cy={14} rx={12} ry={26 + 8 * Math.sin(p.t * 30 + x)} fill="#7ff3ff" opacity={0.35} />
+              {[0, 1, 2, 3].map((i) => {
+                const ph = (p.t * 3 + i * 0.25 + x * 0.01) % 1;
+                return <circle key={i} cx={x + Math.sin(i * 2 + p.t * 9) * 6} cy={10 + ph * 60} r={6 * (1 - ph) + 1} fill={['#ffd23f', '#ff9ad5', '#ffffff', '#7ff3ff'][i]} />;
+              })}
+            </g>
+          ))}
+        </g>
+      )}
       <LimbShape o={{x: -16, y: -36}} limb={p.legL} l1={18} l2={16} w1={12} w2={11} color="#9fb4d8" outline={C.outline} end={foot} />
       <LimbShape o={{x: 16, y: -36}} limb={p.legR} l1={18} l2={16} w1={12} w2={11} color="#9fb4d8" outline={C.outline} end={foot} />
-      <LimbShape o={{x: -44 - tw, y: -104}} limb={p.armL} l1={24} l2={24} w1={11} w2={10} color="#9fb4d8" outline={C.outline} />
+      <LimbShape o={{x: -44 - tw, y: -104}} limb={p.armL} l1={al} l2={al} w1={11} w2={10} color="#9fb4d8" outline={C.outline} />
       <circle cx={eL.knee.x} cy={eL.knee.y} r={6} fill={C.blue} stroke={C.outline} strokeWidth={2.5} />
       <Claw p={eL.p} a={eL.a} grip={p.gripL} hold={p.holdL} />
       <ellipse cx={0} cy={-88} rx={52} ry={56} fill={`url(#${id}-body)`} stroke={C.outline} strokeWidth={4} />
@@ -181,10 +203,10 @@ export const Bip2: React.FC<{p: Bip2Pose; id?: string}> = ({p, id = 'bip2'}) => 
         <path d={`M${f1(head.x - 46)},${f1(head.y - 36)} Q${f1(head.x)},${f1(head.y - 46)} ${f1(head.x + 30)},${f1(head.y - 38)}`} stroke={p.rimColor} strokeWidth={5} fill="none" opacity={p.rimK} strokeLinecap="round" />
         <rect x={head.x - 64} y={head.y - 12} width={12} height={26} rx={5} fill={C.blue} stroke={C.outline} strokeWidth={3} />
         <rect x={head.x + 52} y={head.y - 12} width={12} height={26} rx={5} fill={C.blue} stroke={C.outline} strokeWidth={3} />
-        <Screen2 c={{x: head.x + 6 * turn, y: head.y + 2}} w={92} h={64} s={p.screen} blink={p.expr.blink} t={p.t} facing={p.facing * Math.sign(Math.cos(p.spin) || 1)} />
+        <Screen2 power={p.power ?? 1} c={{x: head.x + 6 * turn, y: head.y + 2}} w={92} h={64} s={p.screen} blink={p.expr.blink} t={p.t} facing={p.facing * Math.sign(Math.cos(p.spin) || 1)} />
         <Helmet c={{x: head.x, y: head.y - 4}} r={82} ring="#2f6fd6" k={p.helmet} />
       </g>
-      <LimbShape o={{x: 44 - tw, y: -104}} limb={p.armR} l1={24} l2={24} w1={11} w2={10} color="#9fb4d8" outline={C.outline} />
+      <LimbShape o={{x: 44 - tw, y: -104}} limb={p.armR} l1={al} l2={al} w1={11} w2={10} color="#9fb4d8" outline={C.outline} />
       <circle cx={eR.knee.x} cy={eR.knee.y} r={6} fill={C.blue} stroke={C.outline} strokeWidth={2.5} />
       <Claw p={eR.p} a={eR.a} grip={p.gripR} hold={p.holdR} />
     </Body>
