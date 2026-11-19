@@ -9,6 +9,8 @@ Remotion, React, SVG y Canvas 2D.
   180 s, 5.400 fotogramas. Composición `Ep02Full`; documentación en `src/episodes/ep02-pez-abisal/README.md`.
 - **Episodio 03**: "El animal que sobrevivió al espacio" (tardígrados), 180 s, 5.400 fotogramas.
   Composición `Ep03Full`; documentación en `src/episodes/ep03-tardigrado/README.md`.
+- **Episodio 04**: "El ave que supera los 300 km/h" (halcón peregrino), 180 s, 5.400 fotogramas.
+  Composición `Ep04Full`; documentación en `src/episodes/ep04-halcon-peregrino/README.md`.
 - **Demo aprobada de 15 s**, conservada intacta. Composición `Ep01Demo`; la copia del vídeo
   está en `entregas/aprobado/`.
 
@@ -76,6 +78,7 @@ estudio-animacion/
             └── Ep01Full.tsx      # composición del episodio
     └── episodes/ep02-pez-abisal/ # Ep. 02 completo (narración, timeline, composición, README)
     └── episodes/ep03-tardigrado/ # Ep. 03 completo (guion, timeline, cámaras, escenas, sonido, README)
+    └── episodes/ep04-halcon-peregrino/ # Ep. 04 completo (personaje en creatures/falcon, cielo en environments/sky)
     (entornos nuevos: environments/moss, environments/space, environments/cell; personaje: creatures/tardigrade)
 tools/audio/                      # generadores de narración y banda sonora (Python)
 public/audio/ep01/                # 6 pistas reales generadas (ver tools/audio/README.md)

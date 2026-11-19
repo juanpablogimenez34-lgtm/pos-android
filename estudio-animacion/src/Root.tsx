@@ -1,6 +1,7 @@
 import React from 'react';
 import {Composition} from 'remotion';
 import {StatesShowcase} from './creatures/octopus/StatesShowcase';
+import {FlightShowcase} from './creatures/falcon/FlightShowcase';
 import {DEMO_META} from './episodes/ep01-pulpo/demo.config';
 import {Ep01Demo, Ep01DemoProps} from './episodes/ep01-pulpo/Ep01Demo';
 import {EP01_DEFAULT_AUDIO, Ep01Full, Ep01FullProps} from './episodes/ep01-pulpo/full/Ep01Full';
@@ -10,11 +11,15 @@ import {DURATION as EP02_DURATION, FPS as EP02_FPS} from './episodes/ep02-pez-ab
 import {Ep03Full, Ep03FullProps} from './episodes/ep03-tardigrado/Ep03Full';
 import {EP03_DEFAULT_AUDIO} from './episodes/ep03-tardigrado/sound';
 import {DURATION as EP03_DURATION, FPS as EP03_FPS} from './episodes/ep03-tardigrado/timeline';
+import {Ep04Full, Ep04FullProps} from './episodes/ep04-halcon-peregrino/Ep04Full';
+import {EP04_DEFAULT_AUDIO} from './episodes/ep04-halcon-peregrino/sound';
+import {DURATION as EP04_DURATION, FPS as EP04_FPS} from './episodes/ep04-halcon-peregrino/timeline';
 
 const demoDefaults: Ep01DemoProps = {quality: 'final', showSubtitles: true, audio: {}};
 const fullDefaults: Ep01FullProps = {quality: 'final', showSubtitles: true, audio: EP01_DEFAULT_AUDIO};
 const ep02Defaults: Ep02FullProps = {quality: 'final', showSubtitles: true, audio: EP02_DEFAULT_AUDIO};
 const ep03Defaults: Ep03FullProps = {quality: 'final', showSubtitles: true, audio: EP03_DEFAULT_AUDIO};
+const ep04Defaults: Ep04FullProps = {quality: 'final', showSubtitles: true, audio: EP04_DEFAULT_AUDIO};
 
 export const RemotionRoot: React.FC = () => (
   <>
@@ -48,6 +53,16 @@ export const RemotionRoot: React.FC = () => (
       height={1920}
       defaultProps={ep03Defaults}
     />
+    {/* Episodio 04 completo: halcón peregrino, 180 s × 30 fps = 5.400 fotogramas */}
+    <Composition
+      id="Ep04Full"
+      component={Ep04Full}
+      durationInFrames={EP04_DURATION * EP04_FPS}
+      fps={EP04_FPS}
+      width={1080}
+      height={1920}
+      defaultProps={ep04Defaults}
+    />
     {/* Demo aprobada de 15 s (se conserva intacta) */}
     <Composition
       id="Ep01Demo"
@@ -67,5 +82,6 @@ export const RemotionRoot: React.FC = () => (
       height={1920}
       defaultProps={{quality: 'final' as const}}
     />
+    <Composition id="FalconStates" component={FlightShowcase} durationInFrames={180} fps={30} width={1080} height={1920} />
   </>
 );
