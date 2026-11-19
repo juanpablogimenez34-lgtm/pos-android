@@ -22,6 +22,10 @@ import {Ep06Characters} from './episodes/ep06-ajolote/Characters/Showcase';
 import {Ep06Full, Ep06FullProps} from './episodes/ep06-ajolote/Ep06Full';
 import {EP06_DEFAULT_AUDIO} from './episodes/ep06-ajolote/Audio/sound';
 import {DURATION as EP06_DURATION, FPS as EP06_FPS} from './episodes/ep06-ajolote/Timeline/timeline';
+import {Ep07Full, Ep07FullProps} from './episodes/ep07-hongo-hormigas/Ep07Full';
+import {EP07_DEFAULT_AUDIO} from './episodes/ep07-hongo-hormigas/Audio/sound';
+import {DURATION as EP07_DURATION, FPS as EP07_FPS} from './episodes/ep07-hongo-hormigas/Timeline/timeline';
+import {Ep07Characters} from './episodes/ep07-hongo-hormigas/Characters/Showcase';
 
 const demoDefaults: Ep01DemoProps = {quality: 'final', showSubtitles: true, audio: {}};
 const fullDefaults: Ep01FullProps = {quality: 'final', showSubtitles: true, audio: EP01_DEFAULT_AUDIO};
@@ -30,6 +34,7 @@ const ep03Defaults: Ep03FullProps = {quality: 'final', showSubtitles: true, audi
 const ep04Defaults: Ep04FullProps = {quality: 'final', showSubtitles: true, audio: EP04_DEFAULT_AUDIO};
 const ep05Defaults: Ep05FullProps = {quality: 'final', showSubtitles: true, audio: EP05_DEFAULT_AUDIO};
 const ep06Defaults: Ep06FullProps = {quality: 'final', showSubtitles: true, audio: EP06_DEFAULT_AUDIO};
+const ep07Defaults: Ep07FullProps = {quality: 'final', showSubtitles: true, audio: EP07_DEFAULT_AUDIO};
 
 export const RemotionRoot: React.FC = () => (
   <>
@@ -96,6 +101,17 @@ export const RemotionRoot: React.FC = () => (
       height={1920}
       defaultProps={ep06Defaults}
     />
+    {/* Episodio 07 completo: hongo y hormigas, 180 s × 30 fps = 5.400 fotogramas */}
+    <Composition
+      id="Ep07Full"
+      component={Ep07Full}
+      durationInFrames={EP07_DURATION * EP07_FPS}
+      fps={EP07_FPS}
+      width={1080}
+      height={1920}
+      defaultProps={ep07Defaults}
+    />
+    <Composition id="Ep07Characters" component={Ep07Characters} durationInFrames={300} fps={30} width={1080} height={1920} />
     {/* Ep. 06: fichas de personaje (ajolote rosado, silvestre, Daphnia, etapas de regeneración) */}
     <Composition id="Ep06Characters" component={Ep06Characters} durationInFrames={300} fps={30} width={1080} height={1920} />
     {/* Demo aprobada de 15 s (se conserva intacta) */}
