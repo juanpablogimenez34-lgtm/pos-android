@@ -22,7 +22,7 @@ export const StimulusCounter: React.FC = () => {
   const n = stimuliAt(s);
   const last = [EV.touch1, EV.touch2, ...EV.struggles].filter((x) => s >= x).pop() ?? 0;
   const flash = 1 - clamp((s - last) / 0.6);
-  const note = n === 1 ? 'un estímulo: la trampa sigue abierta' : n === 2 ? 'segundo estímulo: cierre' : 'más estímulos: sellado y digestión';
+  const note = n === 0 ? 'esperando un estímulo…' : n === 1 ? 'un estímulo: la trampa sigue abierta' : n === 2 ? 'segundo estímulo: cierre' : 'más estímulos: sellado y digestión';
   return (
     <div style={{position: 'absolute', left: 60, top: 230, opacity: easeOut(k), ...panel, padding: '16px 24px', transform: `scale(${1 + 0.06 * flash})`, transformOrigin: 'left top'}}>
       <div style={{fontSize: 22, fontWeight: 700, color: '#7ff3ff', letterSpacing: 2}}>ESTÍMULOS DETECTADOS</div>

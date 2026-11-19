@@ -24,10 +24,12 @@ export function groundItems(view: View, t: number, light: Light, detail: number,
         <stop offset="0.8" stopColor={mixColor('#5f7b36', light.haze, 0.3)} stopOpacity={0.7} />
         <stop offset="1" stopColor={mixColor('#6f8a45', light.haze, 0.5)} stopOpacity={0} />
       </radialGradient>
-      <radialGradient id="gr-soft" cx="0.5" cy="0.5" r="0.5">
-        <stop offset="0" stopColor="#ffffff" stopOpacity={1} />
-        <stop offset="1" stopColor="#ffffff" stopOpacity={0} />
-      </radialGradient>
+      {['#a99868', '#2f4a1a', '#86a243'].map((cc, j) => (
+        <radialGradient key={j} id={`gr-soft${j}`} cx="0.5" cy="0.5" r="0.5">
+          <stop offset="0" stopColor={cc} stopOpacity={1} />
+          <stop offset="1" stopColor={cc} stopOpacity={0} />
+        </radialGradient>
+      ))}
     </defs>,
   );
   decor.push(<ellipse key="bed" cx={f1(c.x)} cy={f1(c.y)} rx={3200} ry={Math.max(8, 3200 * sp)} fill="url(#gr-moss)" />);
@@ -37,8 +39,8 @@ export function groundItems(view: View, t: number, light: Light, detail: number,
     const r = 250 + hash1(i * 2.3) * 1600;
     const q = P(view, [Math.cos(a) * r, 0, Math.sin(a) * r * 0.8]);
     const rr = 120 + hash1(i) * 260;
-    const col = i % 4 === 0 ? '#a99868' : i % 2 ? '#2f4a1a' : '#86a243';
-    decor.push(<ellipse key={`s${i}`} cx={f1(q.x)} cy={f1(q.y)} rx={rr} ry={Math.max(3, rr * sp * 0.7)} fill={col} opacity={i % 4 === 0 ? 0.35 : 0.3} />);
+    const j = i % 4 === 0 ? 0 : i % 2 ? 1 : 2;
+    decor.push(<ellipse key={`s${i}`} cx={f1(q.x)} cy={f1(q.y)} rx={rr} ry={Math.max(3, rr * sp * 0.7)} fill={`url(#gr-soft${j})`} opacity={0.35} />);
   }
   // acículas de pino caídas (sabana de pinos)
   for (let i = 0; i < Math.round(60 * detail); i++) {
@@ -75,6 +77,7 @@ export function groundItems(view: View, t: number, light: Light, detail: number,
     const r = 450 + hash1(i * 8.1) * 1300;
     const q = P(view, [Math.cos(a) * r, 0, Math.sin(a) * r]);
     const rr = 18 + hash1(i * 9.9) * 30;
+    if (Math.cos(a) * r < -350 && Math.sin(a) * r > 150) continue; // lejos de la hoja caída
     decor.push(<ellipse key={`p${i}`} cx={f1(q.x)} cy={f1(q.y - rr * 0.3)} rx={rr} ry={rr * Math.max(0.45, sp)} fill="#8d8a7e" stroke="#5e5b52" strokeWidth={1} />);
     decor.push(<ellipse key={`ph${i}`} cx={f1(q.x - rr * 0.3)} cy={f1(q.y - rr * 0.55)} rx={rr * 0.35} ry={rr * 0.18} fill="#ffffff" opacity={0.25} />);
   }

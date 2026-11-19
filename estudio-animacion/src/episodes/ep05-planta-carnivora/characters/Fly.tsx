@@ -256,13 +256,13 @@ export function flyItems(view: View, pose: FlyPose, uid: string, zMap?: (z: numb
       const dir = norm(Wd([-Math.cos(sp), 0.12, Math.sin(sp) * sg]));
       const map = wingAt(dir, 1);
       const outline = WING.map(([l, c]) => map(l, c));
-      const veins = VEINS.map((v, j) => <path key={j} d={smoothPath(v.map(([l, c]) => map(l, c)))} stroke="#2b2b2b" strokeWidth={0.45 * k} fill="none" opacity={0.55} />);
+      const veins = VEINS.map((v, j) => <path key={j} d={smoothPath(v.map(([l, c]) => map(l, c)))} stroke="#24272b" strokeWidth={0.5 * k} fill="none" opacity={0.75} />);
       const cost = WING.slice(0, 5).map(([l, c]) => map(l, c));
       const z = P(add(base, scl(dir, 25 * k))).z + 1.2;
       push(z, `w${sg}`, (
         <g opacity={(1 - clamp(pose.wingBuzz)) * (1 - 0.6 * dry)}>
-          <path d={smoothPath(outline, true, 0.6)} fill="#dfe9f2" fillOpacity={0.3} stroke="#5b6168" strokeWidth={0.4} />
-          <path d={smoothPath(outline, true, 0.6)} fill="url(#flyIri)" fillOpacity={0.18} />
+          <path d={smoothPath(outline, true, 0.6)} fill="#e8f1f8" fillOpacity={0.14} stroke="#3e444b" strokeWidth={0.5} />
+          <path d={smoothPath(outline, true, 0.6)} fill="url(#flyIri)" fillOpacity={0.12} />
           <path d={smoothPath(cost)} stroke="#2b2b2b" strokeWidth={0.8 * k} fill="none" opacity={0.7} />
           {veins}
         </g>

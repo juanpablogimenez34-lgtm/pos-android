@@ -193,7 +193,7 @@ export const ForegroundBlur: React.FC<{zoom: number; light: Light}> = ({zoom, li
     return `M${x - w},${y} Q${x + bend * 0.4},${y - h * 0.6} ${x + bend},${y - h} Q${x + bend * 0.4 + w * 0.4},${y - h * 0.55} ${x + w},${y}Z`;
   });
   return (
-    <AbsoluteFill style={{filter: 'blur(9px)', opacity: 0.75 * k, pointerEvents: 'none'}}>
+    <AbsoluteFill style={{filter: 'blur(9px)', opacity: 0.6 * k, pointerEvents: 'none', WebkitMaskImage: 'radial-gradient(ellipse 48% 42% at 50% 45%, transparent 55%, black 100%)', maskImage: 'radial-gradient(ellipse 48% 42% at 50% 45%, transparent 55%, black 100%)'}}>
       <svg width={width} height={height}>
         <ParallaxLayer depth={1.6}>
           {blades.map((d, i) => (
