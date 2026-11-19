@@ -30,6 +30,8 @@ import {CoheteFichas} from './music-videos/cohete-de-nuez/Characters/Fichas';
 import {CoheteVideo} from './music-videos/cohete-de-nuez/CoheteVideo';
 import {CoheteFichasV2} from './music-videos/cohete-de-nuez/v2/Characters/Fichas2';
 import {CoheteVideoV2} from './music-videos/cohete-de-nuez/v2/CoheteVideoV2';
+import {LobitoFichas} from './music-videos/baile-del-lobito/Characters/Fichas';
+import {LobitoPrueba} from './music-videos/baile-del-lobito/Scenes/Test20';
 import {SONG_FRAMES} from './music-videos/cohete-de-nuez/MusicSync/songMap';
 
 const demoDefaults: Ep01DemoProps = {quality: 'final', showSubtitles: true, audio: {}};
@@ -123,6 +125,8 @@ export const RemotionRoot: React.FC = () => (
     <Composition id="CoheteFichas" component={CoheteFichas} durationInFrames={300} fps={30} width={1080} height={1920} />
     <Composition id="CoheteVideoV2" component={CoheteVideoV2} durationInFrames={SONG_FRAMES} fps={30} width={1080} height={1920} defaultProps={{withAudio: true, offset: 0}} />
     <Composition id="CohetePruebaV2" component={CoheteVideoV2} durationInFrames={600} fps={30} width={1080} height={1920} defaultProps={{withAudio: true, offset: 5.7}} />
+ <Composition id="LobitoPrueba" component={LobitoPrueba} durationInFrames={600} fps={30} width={1080} height={1920} defaultProps={{withAudio: true}} />
+    <Composition id="LobitoFichas" component={LobitoFichas} durationInFrames={300} fps={30} width={1080} height={1920} />
     <Composition id="CoheteFichasV2" component={CoheteFichasV2} durationInFrames={300} fps={30} width={1080} height={1920} />
     {/* Ep. 06: fichas de personaje (ajolote rosado, silvestre, Daphnia, etapas de regeneración) */}
     <Composition id="Ep06Characters" component={Ep06Characters} durationInFrames={300} fps={30} width={1080} height={1920} />
