@@ -146,7 +146,7 @@ export const Cliff: React.FC<{pal: SkyPal}> = React.memo(({pal}) => {
 });
 
 /** Nube estilizada con volumen: racimo de esferas iluminadas desde arriba + base plana. */
-const Cloud: React.FC<{x: number; y: number; s: number; seed: number; pal: SkyPal; op: number}> = ({x, y, s, seed, pal, op}) => {
+export const Cloud: React.FC<{x: number; y: number; s: number; seed: number; pal: SkyPal; op: number}> = ({x, y, s, seed, pal, op}) => {
   const blobs = useMemo(() => {
     const r = rng(seed);
     const n = 12 + Math.floor(r() * 5);

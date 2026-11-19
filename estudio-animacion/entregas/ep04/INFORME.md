@@ -13,6 +13,33 @@
 Los fotogramas se contaron con ffprobe (`-count_packets`). La sonoridad integrada (`ebur128`)
 es de **−14,0 LUFS**.
 
+## Revisión v3: cara del halcón y sensación de velocidad
+
+**Cara (perfil), rediseñada por completo:**
+- Corona más plana y arco superciliar saliente: un **ceño oscuro tapa la parte alta del ojo** y da
+  una mirada intensa (es un recurso de estilo; el ojo se basa en el del halcón real).
+- Ojo con iris pardo muy oscuro, pupila adelantada hacia el pico y un brillo pequeño, en lugar
+  del brillo grande "de dibujo animado". Anillo de piel amarilla más fino.
+- Pico más grande y ganchudo, con **diente tomial**, mandíbula inferior más corta, cera amarilla
+  con narina y comisura amarilla.
+- Bigote malar en cuña afilada, capucha con reflejo azulado y textura de plumas en la nuca.
+- Cabeza un 8 % más pequeña respecto al cuerpo (radio 18 → 16,5) y contorno más fino.
+
+**Picada (95–124 s):**
+- **Nubes que pasan a toda velocidad** junto al ave, estiradas y desenfocadas en la dirección del
+  movimiento, detrás y delante del halcón (las de delante evitan el centro).
+- **Desenfoque de movimiento** direccional en el fondo cercano (montañas cercanas, valle, nubes).
+- Más líneas de velocidad (hasta 64), más largas y visibles, y **estelas de aire** pegadas al
+  cuerpo del ave.
+- **Temblor de cámara** y **vibración de las plumas** (cola y alas) proporcionales a la intensidad.
+- Cámara más cerca del ave en la picada (zoom de 1,6–2,5 en lugar de 1,25–2,0) y encuadre
+  corregido para que no quede cortada arriba.
+- Viñeta de "túnel" en el pico de la picada. La cámara lenta (114–120 s) frena también estos
+  efectos, porque usan el tiempo de animación integrado.
+
+Todo sigue rotulado como **líneas de velocidad estilizadas, no una medición**. Narración, audio,
+subtítulos y datos no cambian.
+
 ## Revisión visual (v2)
 
 Tras la primera entrega el resultado se consideró feo. Se rehízo el aspecto sin tocar la

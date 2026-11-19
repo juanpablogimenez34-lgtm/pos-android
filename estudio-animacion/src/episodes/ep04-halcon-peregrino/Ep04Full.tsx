@@ -14,10 +14,10 @@ import {useTime} from '../../engine/useTime';
 import {Bird, birdPolys, PEREGRINE, PIGEON} from '../../creatures/falcon/Bird';
 import {skyPalette} from '../../environments/sky/Sky';
 import {ANCHOR, cameraFor} from './cameras';
-import {FlowPanel, FocusRing, SpeedLines, WingPanel} from './effects';
+import {BodyTrails, FlowPanel, FocusRing, RushClouds, SpeedLines, WingPanel} from './effects';
 import {ForegroundClouds, Landscape} from './scenes/Landscape';
 import {CUES, SPEECH} from './subtitles';
-import {currents, falconParams, focusBlur, panel, pigeonParams, pigeonVisible, SCENES, speedIntensity, timeScale, tod, wingStretch} from './timeline';
+import {animTime, currents, falconParams, focusBlur, panel, pigeonParams, pigeonVisible, SCENES, speedIntensity, tod, wingStretch} from './timeline';
 
 export type Ep04FullProps = {quality: QualityName; showSubtitles: boolean; audio: AudioMix};
 
@@ -55,33 +55,31 @@ export const Ep04Full: React.FC<Ep04FullProps> = ({quality, showSubtitles, audio
   const panels = panel(t);
   const eyeS = geo.eye ? worldToScreen(ctx, 1, geo.eye) : null;
   const pgS = pg ? worldToScreen(ctx, 1, {x: pg.x, y: pg.y}) : null;
-  // estelas detrás del halcón en la picada (recurso visual)
-  const trail = speed > 0.05 ? Array.from({length: 7}, (_, i) => {
-    const off = (i - 3) * 9 * fp.scale;
-    const L = (140 + (i % 3) * 60) * speed * fp.scale;
-    const nx = -fwd.y;
-    const ny = fwd.x;
-    return {x1: fp.x + nx * off - fwd.x * 40, y1: fp.y + ny * off - fwd.y * 40, x2: fp.x + nx * off - fwd.x * (40 + L), y2: fp.y + ny * off - fwd.y * (40 + L)};
-  }) : [];
+  const tau = animTime(t);
+  // desenfoque de movimiento del fondo cercano en la picada, según la dirección de vuelo
+  const fl = Math.hypot(fwd.x, fwd.y) || 1;
+  const motion = {x: (Math.abs(fwd.x) / fl) * 18 * speed, y: (Math.abs(fwd.y) / fl) * 18 * speed};
   return (
     <QualityProvider quality={quality}>
       <StyleProvider refined>
         <CameraProvider {...ctx}>
           <AbsoluteFill style={{backgroundColor: pal.top}}>
-            <Landscape pal={pal} tod={td} currents={currents(t)} blur={focusBlur(t)} />
+            <Landscape pal={pal} tod={td} currents={currents(t)} blur={focusBlur(t)} motion={motion} />
+            <RushClouds intensity={speed} dir={fwd} tau={tau} pal={pal} />
             <AbsoluteFill>
               <svg width={width} height={height}>
                 <ParallaxLayer depth={1}>
-                  {trail.map((l, i) => (
-                    <line key={i} x1={l.x1} y1={l.y1} x2={l.x2} y2={l.y2} stroke="#ffffff" strokeOpacity={0.35 * speed} strokeWidth={3 * fp.scale} strokeLinecap="round" />
-                  ))}
+                  <BodyTrails intensity={speed} x={fp.x} y={fp.y} dir={fwd} scale={fp.scale} tau={tau} />
                   {pg && <Bird id="pigeon" spec={PIGEON} params={pg} />}
                   <Bird id="falcon" spec={PEREGRINE} params={fp} />
                 </ParallaxLayer>
               </svg>
             </AbsoluteFill>
             <ForegroundClouds pal={pal} zoom={camera.zoom} />
-            <SpeedLines intensity={speed} dir={fwd} slow={timeScale(t)} />
+            <RushClouds intensity={speed} dir={fwd} tau={tau} pal={pal} front />
+            <SpeedLines intensity={speed} dir={fwd} tau={tau} />
+            {/* túnel de velocidad: bordes más oscuros en el pico de la picada */}
+            {speed > 0.05 && <AbsoluteFill style={{background: 'radial-gradient(ellipse 70% 60% at 50% 42%, rgba(0,0,0,0) 55%, rgba(6,14,30,0.5) 100%)', opacity: speed}} />}
             {/* luz cálida del atardecer */}
             <AbsoluteFill style={{background: `radial-gradient(ellipse at 20% 30%, ${pal.light}22 0%, rgba(0,0,0,0) 60%)`, mixBlendMode: 'screen', opacity: clamp(td - 1)}} />
             <AbsoluteFill style={{background: 'radial-gradient(ellipse 80% 65% at 50% 45%, rgba(0,0,0,0) 60%, rgba(4,8,20,0.45) 100%)'}} />

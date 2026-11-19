@@ -71,7 +71,7 @@ export type BirdSpec = {
 export const PEREGRINE: BirdSpec = {
   body: {a: 46, b: 23, c: 21, x: 0},
   neck: {a: 18, b: 16, c: 15, x: 34, y: 8},
-  head: {r: 18, x: 50, y: 12},
+  head: {r: 16.5, x: 51, y: 12},
   beak: 1,
   tail: {x: -38, len: 62, n: 8, spreadMin: 0.22, spreadMax: 1.25, w: 11},
   wing: {shoulder: [16, 12, 15], L1: 32, L2: 46, L3: 42, sec: 42, nSec: 9, prim: [58, 66, 74, 82, 90, 96, 99, 98, 92, 82]},
@@ -478,6 +478,58 @@ export function birdPolys(spec: BirdSpec, p: BirdParams): {polys: Poly[]; head: 
     const fk = clamp((sideK - 0.55) / 0.2);
     const pr: Poly[] = [];
     const isFal = spec.malar;
+    if (isFal) {
+      // ===== halcón: cabeza imponente (corona plana, ceño marcado, pico robusto y ganchudo) =====
+      const gTop = A(0, 1);
+      const gBot = A(0, -1);
+      const lin = (c1: string, c2: string, a: Vec, b: Vec) => `slin:${col(c1)}:${col(c2)}:${a.x.toFixed(1)},${a.y.toFixed(1)},${b.x.toFixed(1)},${b.y.toFixed(1)}`;
+      const hoodDark = '#0d1117';
+      const circle = (c: Vec, r: number) => Array.from({length: 20}, (_, k) => ({x: c.x + Math.cos((k / 20) * Math.PI * 2) * r, y: c.y + Math.sin((k / 20) * Math.PI * 2) * r}));
+      // silueta: frente baja hacia la cera, ceja saliente, corona plana, nuca ancha
+      pr.push({pts: P([[0.8, 0.34], [0.7, 0.6], [0.54, 0.74], [0.1, 0.82], [-0.5, 0.82], [-0.95, 0.5], [-1.08, -0.08], [-0.86, -0.6], [-0.26, -0.88], [0.4, -0.76], [0.75, -0.36], [0.88, 0.02]]), fill: lin('#ffffff', mixColor(C.cheek, '#8f97a3', 0.35), gTop, gBot), stroke: col('#2a303a'), sw: 0.5, z: 0});
+      // capucha + bigote malar en cuña afilada
+      pr.push({pts: P([[0.79, 0.34], [0.7, 0.61], [0.54, 0.75], [0.1, 0.83], [-0.5, 0.83], [-0.96, 0.5], [-1.07, 0.0], [-0.74, 0.0], [-0.46, -0.1], [-0.24, -0.28], [-0.14, -0.54], [-0.04, -0.84], [0.12, -0.8], [0.22, -0.56], [0.34, -0.3], [0.54, -0.1], [0.8, 0.06]]), fill: lin(hoodDark, mixColor(C.hood, C.back, 0.35), gTop, gBot), z: 0.1});
+      // borde emplumado entre el bigote y la mejilla blanca
+      pr.push({pts: P([[-0.46, -0.1], [-0.24, -0.28], [-0.14, -0.54], [-0.04, -0.84]]), fill: 'open', stroke: col(mixColor(C.hood, C.cheek, 0.45)), sw: 1.4 * S, z: 0.105, op: 0.45});
+      // reflejo azulado de la capucha
+      pr.push({pts: P([[0.4, 0.7], [0.02, 0.78], [-0.5, 0.77], [-0.82, 0.5], [-0.5, 0.62], [0.0, 0.66]]), fill: `smooth:${col(mixColor(C.hood, '#7c8ea8', 0.55))}`, z: 0.11, op: 0.45});
+      // ojo: piel desnuda amarilla, iris muy oscuro (en el halcón peregrino el iris es pardo oscuro)
+      const e0 = A(0.33, 0.27);
+      const er = 0.185 * R;
+      const ell = (c: Vec, rx: number, ry: number, n = 22) => Array.from({length: n}, (_, k) => {
+        const a = (k / n) * Math.PI * 2;
+        return A(c.x + Math.cos(a) * rx, c.y + Math.sin(a) * ry);
+      });
+      const eu = {x: 0.33, y: 0.27};
+      pr.push({pts: ell({x: eu.x + 0.015, y: eu.y - 0.015}, 0.235, 0.2), fill: `smooth:${col(C.eyeRing)}`, z: 0.3});
+      pr.push({pts: circle(e0, er), fill: col('#3d2512'), z: 0.31});
+      const pc = A(0.36, 0.26);
+      pr.push({pts: circle(pc, er * 0.62), fill: col('#050302'), z: 0.311});
+      pr.push({pts: [{x: pc.x - er * 0.28, y: pc.y + er * 0.05}], fill: '#ffffff', z: 0.32, op: 0.9 * (1 - sil), stroke: `dot:${(er * 0.14).toFixed(2)}`});
+      if (p.nict > 0.01) pr.push({pts: circle(e0, er * 1.03), fill: '#dce6ee', z: 0.33, op: 0.6 * p.nict});
+      // ceño: arco superciliar que tapa la parte alta del ojo (mirada intensa)
+      pr.push({pts: P([[-0.14, 0.5], [0.1, 0.45], [0.3, 0.39], [0.5, 0.31], [0.66, 0.26], [0.78, 0.36], [0.7, 0.6], [0.4, 0.72], [0.0, 0.7]]), fill: `smooth:${col(hoodDark)}`, z: 0.34});
+      // textura de plumas en la corona y la nuca
+      for (let i = 0; i < 9; i++) {
+        const u0 = 0.3 - i * 0.13;
+        const v0 = 0.66 - Math.pow(i / 8, 2) * 0.5;
+        pr.push({pts: P([[u0, v0], [u0 - 0.12, v0 - 0.05 - i * 0.008]]), fill: 'none', stroke: col(mixColor(C.hood, '#8fa2bd', 0.5)), sw: 0.9 * S, z: 0.115, op: 0.28});
+      }
+      // comisura amarilla bajo el ojo hacia el pico
+      pr.push({pts: P([[0.84, 0.0], [0.7, -0.02], [0.6, 0.02]]), fill: 'open', stroke: col(C.cere), sw: 1.6 * S, z: 0.36});
+      // pico: mandíbula superior ganchuda con diente tomial, inferior más corta
+      const bs = 0.85 + 0.15 * B;
+      const Bk = (u: number, v: number): [number, number] => [0.76 + (u - 0.76) * bs, v];
+      pr.push({pts: P([Bk(0.8, -0.04), Bk(1.02, -0.1), Bk(0.96, -0.18), Bk(0.8, -0.2)]), fill: lin(mixColor(C.beak, '#8e9cac', 0.3), mixColor(C.beak, '#000', 0.45), A(0.8, -0.05), A(1.0, -0.27)), stroke: col('#0e1014'), sw: 0.6, z: 0.38});
+      pr.push({pts: P([Bk(0.76, 0.4), Bk(0.98, 0.42), Bk(1.18, 0.28), Bk(1.31, 0.02), Bk(1.31, -0.2), Bk(1.24, -0.33), Bk(1.2, -0.15), Bk(1.12, -0.07), Bk(1.08, -0.12), Bk(0.96, -0.03), Bk(0.8, -0.01)]), fill: lin(mixColor(C.beak, '#c4d2e2', 0.45), '#0f1217', A(0.85, 0.35), A(1.28, -0.25)), stroke: col('#0b0d10'), sw: 0.7, z: 0.4});
+      pr.push({pts: P([Bk(0.98, 0.38), Bk(1.16, 0.25), Bk(1.25, 0.05)]), fill: 'open', stroke: '#ffffff', sw: 1.2 * S, z: 0.401, op: 0.35});
+      // cera amarilla y narina con tubérculo
+      pr.push({pts: P([[0.75, 0.4], [0.93, 0.4], [0.95, 0.16], [0.79, 0.1]]), fill: `smooth:${col(C.cere)}`, z: 0.41});
+      pr.push({pts: [A(0.86, 0.25)], fill: '#1a1208', z: 0.42, op: 0.9, stroke: `dot:${(0.045 * R).toFixed(2)}`});
+      pr.push({pts: [A(0.86, 0.25)], fill: col(C.cere), z: 0.43, stroke: `dot:${(0.018 * R).toFixed(2)}`});
+      // luz de contorno en la corona y la nuca
+      pr.push({pts: P([[0.54, 0.75], [0.1, 0.83], [-0.5, 0.83], [-0.95, 0.5]]), fill: 'none', stroke: p.rim, sw: 1.3 * S, z: 0.5, op: 0.4});
+    } else {
     // contorno de la cabeza con frente inclinada hacia el pico
     const gTop = A(0, 1);
     const gBot = A(0, -1);
@@ -509,6 +561,7 @@ export function birdPolys(spec: BirdSpec, p: BirdParams): {polys: Poly[]; head: 
     pr.push({pts: [A(0.86, 0.22)], fill: '#1a1208', z: 0.42, op: 0.9, stroke: `dot:${(0.04 * R).toFixed(2)}`});
     // luz de contorno en la corona/nuca
     pr.push({pts: P([[0.55, 0.85], [0.1, 1.02], [-0.45, 0.92], [-0.92, 0.45]]), fill: 'none', stroke: p.rim, sw: 1.6 * S, z: 0.5, op: 0.65});
+    }
     // mezcla suave con el método 3D en el límite de la vista lateral
     const keep = headPolys.filter((q) => q.z === 0);
     headPolys.length = 0;

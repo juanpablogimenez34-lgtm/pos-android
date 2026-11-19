@@ -6,24 +6,28 @@ import {clamp, easeOut, hash1, smoothPath, Vec} from '../../engine/math';
 import {FONT_FAMILY} from '../../engine/fonts';
 import {useTime} from '../../engine/useTime';
 import {Bird, BirdParams, PEREGRINE} from '../../creatures/falcon/Bird';
+import {Cloud, SkyPal} from '../../environments/sky/Sky';
 
 /** Estelas de velocidad en pantalla, alineadas con la dirección de vuelo. */
-export const SpeedLines: React.FC<{intensity: number; dir: Vec; slow?: number}> = ({intensity, dir, slow = 1}) => {
-  const t = useTime();
+export const SpeedLines: React.FC<{intensity: number; dir: Vec; slow?: number; tau?: number}> = ({intensity, dir, slow = 1, tau}) => {
+  const t0 = useTime();
+  const t = tau ?? t0;
+  if (tau !== undefined) slow = 1;
   const {width, height} = useVideoConfig();
   if (intensity <= 0.01) return null;
   const l = Math.hypot(dir.x, dir.y) || 1;
   const dx = -dir.x / l;
   const dy = -dir.y / l;
-  const lines = Array.from({length: 30}, (_, i) => {
-    const ph = ((t * (1.6 + hash1(i) * 1.2) * slow + hash1(i * 3)) % 1 + 1) % 1;
+  const n = Math.round(30 + 34 * intensity);
+  const lines = Array.from({length: n}, (_, i) => {
+    const ph = ((t * (1.8 + hash1(i) * 1.6) * slow + hash1(i * 3)) % 1 + 1) % 1;
     // lejos del centro del encuadre (donde está el ave)
     const side = hash1(i * 17) < 0.5 ? -1 : 1;
-    const off = side * (0.32 + hash1(i * 7) * 0.5);
+    const off = side * (0.2 + hash1(i * 7) * 0.62);
     const cx = width / 2 + -dy * off * width + dx * (ph - 0.5) * height * 1.4;
     const cy = height / 2 + dx * off * width + dy * (ph - 0.5) * height * 1.4;
-    const len = (120 + hash1(i * 11) * 260) * intensity;
-    return {x1: cx, y1: cy, x2: cx + dx * len, y2: cy + dy * len, o: Math.sin(Math.PI * ph) * (0.18 + 0.25 * hash1(i * 5)), w: 1 + hash1(i * 13) * 1.4};
+    const len = (160 + hash1(i * 11) * 520) * intensity;
+    return {x1: cx, y1: cy, x2: cx + dx * len, y2: cy + dy * len, o: Math.sin(Math.PI * ph) * (0.22 + 0.38 * hash1(i * 5)), w: 1.2 + hash1(i * 13) * 2.6};
   });
   return (
     <AbsoluteFill style={{pointerEvents: 'none'}}>
@@ -146,5 +150,82 @@ export const FocusRing: React.FC<{x: number; y: number; k: number}> = ({x, y, k}
         <circle cx={x} cy={y} r={70 + 20 * (1 - k)} fill="none" stroke="#ffffff" strokeOpacity={0.55 * k} strokeWidth={2} />
       </svg>
     </AbsoluteFill>
+  );
+};
+
+/**
+ * Nubes que pasan a gran velocidad junto al ave en la picada (recurso visual estilizado).
+ * `tau`: tiempo de animación integrado (respeta la cámara lenta). `front`: capa delante del ave.
+ */
+export const RushClouds: React.FC<{intensity: number; dir: Vec; tau: number; pal: SkyPal; front?: boolean}> = ({intensity, dir, tau, pal, front = false}) => {
+  const {width, height} = useVideoConfig();
+  if (intensity <= 0.02) return null;
+  const l = Math.hypot(dir.x, dir.y) || 1;
+  // el fondo se desplaza en sentido contrario al vuelo
+  const mx = -dir.x / l;
+  const my = -dir.y / l;
+  const ang = (Math.atan2(my, mx) * 180) / Math.PI - 90;
+  const n = front ? 3 : 8;
+  const period = front ? 1.9 : 1.15;
+  const travel = height + 2200;
+  const items = Array.from({length: n}, (_, i) => {
+    const seed = (front ? 700 : 900) + i;
+    const ph = (((tau / period) * (0.8 + hash1(seed) * 0.5) + hash1(seed * 3)) % 1 + 1) % 1;
+    const cycle = Math.floor((tau / period) * (0.8 + hash1(seed) * 0.5) + hash1(seed * 3));
+    // posición lateral distinta en cada pasada; la capa frontal evita el centro (el ave)
+    const r = hash1(seed * 7 + cycle * 13.1);
+    const lat = front ? (r < 0.5 ? -1 : 1) * (0.42 + hash1(seed + cycle) * 0.35) : (r - 0.5) * 1.5;
+    const along = (ph - 0.5) * travel;
+    const cx = width / 2 + -my * lat * width - mx * along * -1;
+    const cy = height / 2 + mx * lat * width - my * along * -1;
+    const s = (front ? 1.0 : 0.45) + hash1(seed * 5 + cycle) * (front ? 0.5 : 0.45);
+    return {cx, cy, s, seed: seed * 10 + (cycle % 5), o: Math.sin(Math.PI * ph)};
+  });
+  const blur = front ? 14 : 8;
+  return (
+    <AbsoluteFill style={{pointerEvents: 'none'}}>
+      <svg width={width} height={height}>
+        <defs>
+          <filter id={`rush-${front ? 'f' : 'b'}`} x="-50%" y="-50%" width="200%" height="200%">
+            <feGaussianBlur stdDeviation={`${(blur * 0.25 * intensity + 2).toFixed(1)} ${(blur * intensity + 2).toFixed(1)}`} />
+          </filter>
+        </defs>
+        {items.map((c, i) => (
+          <g key={i} transform={`translate(${c.cx.toFixed(1)} ${c.cy.toFixed(1)}) rotate(${ang.toFixed(2)}) scale(${(0.8 * c.s).toFixed(3)} ${(c.s * (1 + 0.9 * intensity)).toFixed(3)})`} filter={`url(#rush-${front ? 'f' : 'b'})`} opacity={Math.min(1, c.o * 1.6) * intensity * (front ? 0.5 : 0.85)}>
+            <g transform="rotate(90)">
+              <Cloud x={0} y={0} s={1} seed={c.seed} pal={pal} op={1} />
+            </g>
+          </g>
+        ))}
+      </svg>
+    </AbsoluteFill>
+  );
+};
+
+/** Estelas de aire pegadas al cuerpo del ave (afiladas, se desvanecen hacia atrás). */
+export const BodyTrails: React.FC<{intensity: number; x: number; y: number; dir: Vec; scale: number; tau: number}> = ({intensity, x, y, dir, scale, tau}) => {
+  if (intensity <= 0.03) return null;
+  const l = Math.hypot(dir.x, dir.y) || 1;
+  const fx = dir.x / l;
+  const fy = dir.y / l;
+  const nx = -fy;
+  const ny = fx;
+  return (
+    <g>
+      {Array.from({length: 11}, (_, i) => {
+        const off = (i - 5) * 11 * scale * (1 + Math.abs(i - 5) * 0.12);
+        const flick = 0.75 + 0.25 * Math.sin(tau * 23 + i * 1.7);
+        const L = (260 + hash1(i * 9) * 340) * intensity * scale * flick;
+        const back = (30 + Math.abs(i - 5) * 10) * scale;
+        const w = (Math.abs(i - 5) < 2 ? 3.2 : 2.2) * scale;
+        const ax = x + nx * off - fx * back;
+        const ay = y + ny * off - fy * back;
+        const bx = ax - fx * L;
+        const by = ay - fy * L;
+        return (
+          <path key={i} d={`M${(ax + nx * w).toFixed(1)},${(ay + ny * w).toFixed(1)} L${bx.toFixed(1)},${by.toFixed(1)} L${(ax - nx * w).toFixed(1)},${(ay - ny * w).toFixed(1)}Z`} fill="#ffffff" opacity={(0.25 + 0.3 * hash1(i * 4)) * intensity} />
+        );
+      })}
+    </g>
   );
 };

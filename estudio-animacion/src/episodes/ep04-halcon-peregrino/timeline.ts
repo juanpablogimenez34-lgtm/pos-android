@@ -27,6 +27,8 @@ const TOD = k([[0, 0], [20, 0.55], [26, 1], [150, 1], [165, 1.75], [173, 2], [18
 export const tod = (t: number) => track(TOD, t);
 /** Escala temporal de la animación (cámara lenta ilustrativa). */
 export const timeScale = (t: number) => (t >= 114 && t < 120 ? 0.3 : t >= 137.4 && t < 139.4 ? 0.5 : 1);
+/** Tiempo de animación integrado (avanza más despacio en la cámara lenta). */
+export const animTime = (t: number) => t - 0.7 * clamp(t - 114, 0, 6) - 0.5 * clamp(t - 137.4, 0, 2);
 
 // ------------------------------------------------------------ ESTADOS DE VUELO
 export const FLIGHT: FlightKey[] = [
@@ -102,6 +104,10 @@ export function falconParams(t: number, rim: string): BirdParams {
   const lookAround = t > 20 && t < 40 ? Math.sin(t * 0.7) * 0.35 + Math.sin(t * 1.9) * 0.08 : 0;
   const lookDown = smoothstep(77, 78.5, t) * (1 - smoothstep(83.5, 85, t)) * -0.55;
   const ts = timeScale(t);
+  // vibración de las plumas por el viento en la picada (recurso visual)
+  const sp = speedIntensity(t);
+  const at = animTime(t);
+  const flutter = sp * (Math.sin(at * 47) * 0.6 + Math.sin(at * 71 + 1.3) * 0.4);
   return {
     t,
     x: track(FX, t) + cx,
@@ -110,11 +116,11 @@ export function falconParams(t: number, rim: string): BirdParams {
     yaw,
     pitch: track(PITCH, t) + fp.bodyPitch,
     roll: track(ROLL, t),
-    flap: flapAngle(fp, phaseAt(t)),
+    flap: flapAngle(fp, phaseAt(t)) + flutter * 0.025,
     fold: fp.fold,
     sweep: fp.sweep,
-    tail: fp.tail + Math.sin(t * 2.3) * 0.05 * ts,
-    tailPitch: fp.tailPitch + Math.sin(t * 1.7) * 0.04,
+    tail: fp.tail + Math.sin(t * 2.3) * 0.05 * ts + flutter * 0.06,
+    tailPitch: fp.tailPitch + Math.sin(t * 1.7) * 0.04 + flutter * 0.05,
     legs: Math.max(fp.legs, pulse(t, 137.2, 138.6, 0.3) * 0.8),
     headYaw: lookAround,
     headPitch: -fp.bodyPitch * 0.75 + lookDown + (t > 90 && t < 124 ? 0 : 0),

@@ -4,7 +4,8 @@ import {ParallaxLayer} from '../../../engine/camera';
 import {AirCurrents, Cliff, CloudLayer, Mountains, SkyDome, SkyPal, Valley} from '../../../environments/sky/Sky';
 
 /** Paisaje de montaña en capas (parallax). `blur`: desenfoque estilizado de fondo en primeros planos. */
-export const Landscape: React.FC<{pal: SkyPal; tod: number; currents: number; blur: number}> = ({pal, tod, currents, blur}) => {
+export const Landscape: React.FC<{pal: SkyPal; tod: number; currents: number; blur: number; motion?: {x: number; y: number}}> = ({pal, tod, currents, blur, motion}) => {
+  const mb = motion && Math.hypot(motion.x, motion.y) > 0.5 ? motion : null;
   const {width, height} = useVideoConfig();
   const sun = tod < 1 ? {x: 900 - tod * 500, y: 300 - tod * 900} : {x: 400 - (tod - 1) * 1100, y: -600 + (tod - 1) * 900};
   return (
@@ -18,6 +19,11 @@ export const Landscape: React.FC<{pal: SkyPal; tod: number; currents: number; bl
               <stop offset="0.25" stopColor={pal.sun} stopOpacity={0.6} />
               <stop offset="1" stopColor={pal.light} stopOpacity={0} />
             </radialGradient>
+            {mb && (
+              <filter id="ls-mb" x="-5%" y="-10%" width="110%" height="120%">
+                <feGaussianBlur stdDeviation={`${mb.x.toFixed(1)} ${mb.y.toFixed(1)}`} />
+              </filter>
+            )}
           </defs>
           <ParallaxLayer depth={0.02}>
             <circle cx={sun.x} cy={sun.y} r={420} fill="url(#ls-sun)" opacity={0.65} />
@@ -30,6 +36,7 @@ export const Landscape: React.FC<{pal: SkyPal; tod: number; currents: number; bl
           <ParallaxLayer depth={0.11}>
             <Mountains seed={7} y={640} amp={210} color={pal.mid2} snow="#e8ecf2" haze={pal.hor} hazeK={0.25} />
           </ParallaxLayer>
+          <g filter={mb ? 'url(#ls-mb)' : undefined}>
           <ParallaxLayer depth={0.2}>
             <Mountains seed={13} y={860} amp={170} color={pal.near} haze={pal.hor} hazeK={0.12} />
           </ParallaxLayer>
@@ -44,6 +51,7 @@ export const Landscape: React.FC<{pal: SkyPal; tod: number; currents: number; bl
           <ParallaxLayer depth={1}>
             <Cliff pal={pal} />
           </ParallaxLayer>
+          </g>
           <AirCurrents intensity={currents} color={pal.light} />
         </svg>
       </AbsoluteFill>

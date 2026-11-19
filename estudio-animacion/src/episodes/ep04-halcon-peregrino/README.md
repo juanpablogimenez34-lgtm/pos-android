@@ -16,7 +16,7 @@ Ep. 01–03 ni del motor; solo registra `Ep04Full` (y la hoja de control `Falcon
 | Timeline (5.400 fotogramas) | `timeline.ts` |
 | Cámaras | `cameras.ts` (plano fijo, seguimiento, seguimiento de la cabeza, encuadre halcón + paloma) |
 | Escenarios | `scenes/Landscape.tsx` + `../../environments/sky/Sky.tsx` |
-| Efectos | `effects.tsx` (líneas de velocidad estilizadas, paneles del ala y del flujo, anillo de enfoque) |
+| Efectos | `effects.tsx` (líneas de velocidad, nubes rápidas y estelas de la picada, paneles del ala y del flujo, anillo de enfoque) |
 | Sonido | `sound.ts` y `../../../tools/audio/score_ep04.py` |
 | Subtítulos | `subtitles.ts` |
 | Composición | `Ep04Full.tsx` |
@@ -29,8 +29,9 @@ Ep. 01–03 ni del motor; solo registra `Ep04Full` (y la hoja de control `Falcon
   coberteras. La cara superior es gris pizarra y la inferior, clara y barreada.
 - **Cola:** en abanico, con apertura e inclinación variables.
 - **Patas:** posadas, recogidas o adelantadas en el ataque.
-- **Cabeza de perfil:** ilustración específica con capucha y bigote negros, mejilla blanca,
-  anillo ocular y cere amarillos, pico ganchudo y membrana nictitante. En vistas no laterales
+- **Cabeza de perfil:** ilustración específica con corona plana y ceño marcado sobre el ojo,
+  capucha y bigote negros, mejilla blanca, anillo ocular y cera amarillos, pico ganchudo con
+  diente tomial y membrana nictitante. En vistas no laterales
   se usan las marcas 3D.
 - **Vistas:** el mismo personaje se ve de perfil, desde arriba, desde atrás, en giro y en
   picada.
