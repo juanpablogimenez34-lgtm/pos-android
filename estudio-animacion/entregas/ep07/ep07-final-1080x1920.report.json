@@ -1,0 +1,72 @@
+{
+  "composition": "Ep07Full",
+  "quality": "final",
+  "scale": 1,
+  "crf": "20",
+  "concurrency": 4,
+  "segmentSeconds": 30,
+  "segments": [
+    {
+      "start": 0,
+      "end": 899,
+      "secs": 102,
+      "peakMB": 2858
+    },
+    {
+      "start": 900,
+      "end": 1799,
+      "secs": 109.9,
+      "peakMB": 2859
+    },
+    {
+      "start": 1800,
+      "end": 2699,
+      "secs": 111.6,
+      "peakMB": 2846
+    },
+    {
+      "start": 2700,
+      "end": 3599,
+      "secs": 102.2,
+      "peakMB": 2915
+    },
+    {
+      "start": 3600,
+      "end": 4499,
+      "secs": 104.9,
+      "peakMB": 2879
+    },
+    {
+      "start": 4500,
+      "end": 5399,
+      "secs": 103.8,
+      "peakMB": 2857
+    }
+  ],
+  "startedAt": "2026-11-19T12:44:04.470Z",
+  "audio": {
+    "secs": 274.6,
+    "peakMB": 1806,
+    "reused": true
+  },
+  "loudness": {
+    "inputLUFS": -16.21,
+    "inputTruePeak": -2.37,
+    "targetLUFS": -14
+  },
+  "wallSecondsThisRun": 651.7,
+  "totalSeconds": 909,
+  "peakRssMB": 2915,
+  "output": {
+    "file": "out/ep07-final-1080x1920.mp4",
+    "sizeMB": 45.35,
+    "width": 1080,
+    "height": 1920,
+    "fps": "30/1",
+    "videoFrames": 5400,
+    "durationSec": 180,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "framesOk": true
+}
