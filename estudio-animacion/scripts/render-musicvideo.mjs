@@ -96,13 +96,11 @@ writeFileSync(path.join(work, 'list.txt'), parts.map((p) => `file '${path.basena
 const video = path.join(work, 'video.mp4');
 execFileSync('npx', ['remotion', 'ffmpeg', '-y', '-v', 'error', '-f', 'concat', '-safe', '0', '-i', path.join(work, 'list.txt'), '-c', 'copy', video]);
 
-// audio: la canción original, solo codificada a AAC 256 kb/s (sin filtros)
-const audioAac = path.join(work, 'song.m4a');
-execFileSync('npx', ['remotion', 'ffmpeg', '-y', '-v', 'error', '-i', AUDIO, '-vn', '-c:a', 'aac', '-b:a', '256k', audioAac]);
+// audio: la canción original, codificada a AAC 256 kb/s DIRECTAMENTE en el MP4 (sin filtros;
+// el contenedor MP4 compensa el retardo inicial del codificador, así no hay desfase)
 report.audio = {source: AUDIO, filters: 'ninguno', codec: 'aac 256k'};
-const audioNorm = audioAac;
 const am = {secs: 0, peakMB: 0};
-execFileSync('npx', ['remotion', 'ffmpeg', '-y', '-v', 'error', '-i', video, '-i', audioNorm, '-map', '0:v:0', '-map', '1:a:0', '-c', 'copy', '-t', String(FRAMES / FPS), '-movflags', '+faststart', OUT]);
+execFileSync('npx', ['remotion', 'ffmpeg', '-y', '-v', 'error', '-i', video, '-i', AUDIO, '-map', '0:v:0', '-map', '1:a:0', '-c:v', 'copy', '-c:a', 'aac', '-b:a', '256k', '-movflags', '+faststart', OUT]);
 
 const info = probe(OUT);
 const v = info.streams.find((s) => s.codec_type === 'video');
