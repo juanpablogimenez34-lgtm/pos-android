@@ -4,9 +4,12 @@ import {SONG_DURATION} from '../../MusicSync/songMap';
 import {BUILD_SHOTS} from '../Scenes/Build';
 import {COUNT_SHOTS} from '../Scenes/Countdown';
 import {FLIGHT_SHOTS} from '../Scenes/Flight';
+import {MOON_SHOTS, ZUMI_SHOTS} from '../Scenes/MoonZumi';
+import {DANCE_SHOTS} from '../Scenes/Dance';
+import {HOME_SHOTS} from '../Scenes/Home';
 import {Shot} from './shot';
 
-export const ALL_SHOTS: Shot[] = [...BUILD_SHOTS, ...COUNT_SHOTS, ...FLIGHT_SHOTS].sort((a, b) => a.t0 - b.t0);
+export const ALL_SHOTS: Shot[] = [...BUILD_SHOTS, ...COUNT_SHOTS, ...FLIGHT_SHOTS, ...MOON_SHOTS, ...ZUMI_SHOTS, ...DANCE_SHOTS, ...HOME_SHOTS].sort((a, b) => a.t0 - b.t0);
 
 export function shotAt(t: number): {shot: Shot; lt: number; dur: number; i: number} {
   let i = 0;

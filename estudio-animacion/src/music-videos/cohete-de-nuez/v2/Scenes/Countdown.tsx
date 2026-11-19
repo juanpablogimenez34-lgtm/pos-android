@@ -165,7 +165,7 @@ export const COUNT_SHOTS: Shot[] = [
       const N = NICO_COLORS;
       const Lc = LUNA_COLORS;
       const press = Math.exp(-Math.max(0, lt - 0.15) * 10) * (lt > 0.15 ? 1 : 0);
-      const cam: Cam = {x: -50, y: 520, zoom: 2.3, roll: 0};
+      const cam: Cam = {x: -100, y: 500, zoom: 2.1, roll: 0};
       return (
         <g>
           <Cockpit2 cam={cam} t={t} view={cockpitView(t, 'sky', lt, 0)} lever={0.1 + 0.2 * clamp(lt / 0.3)} />
