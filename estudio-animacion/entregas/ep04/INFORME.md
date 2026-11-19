@@ -4,13 +4,33 @@
 
 | Archivo | Resolución | Fotogramas | Duración | Tamaño |
 |---|---|---|---|---|
-| `ep04-final-1080x1920.mp4` | 1080×1920, 30 fps, H.264 + AAC | **5.400 / 5.400** | **180,000 s** | **49,35 MB** |
-| `ep04-borrador-540x960.mp4` | 540×960, 30 fps | 5.400 / 5.400 | 180,000 s | 13,76 MB |
-| `hoja-de-contacto.png` | 24 fotogramas del borrador, uno cada 7,5 s | | | |
+| `ep04-final-1080x1920.mp4` | 1080×1920, 30 fps, H.264 + AAC | **5.400 / 5.400** | **180,000 s** | **49,77 MB** |
+| `ep04-borrador-540x960.mp4` | 540×960, 30 fps | 5.400 / 5.400 | 180,000 s | 13,07 MB |
+| `hoja-de-contacto.png` | 10 fotogramas del final (8, 30, 44, 60, 88, 105, 131, 140, 160 y 176 s) | | | |
+| `antes-despues.png` | comparación de la versión anterior (arriba) con la revisada (abajo) | | | |
 | `estados-de-vuelo.png` | los 10 estados de vuelo del mismo rig, en distintas vistas, más la paloma | | | |
 
 Los fotogramas se contaron con ffprobe (`-count_packets`). La sonoridad integrada (`ebur128`)
 es de **−14,0 LUFS**.
+
+## Revisión visual (v2)
+
+Tras la primera entrega el resultado se consideró feo. Se rehízo el aspecto sin tocar la
+animación, la línea de tiempo, las cámaras, la narración ni el audio:
+
+- **Alas:** silueta orgánica continua (borde de ataque → puntas de primarias con escotaduras →
+  secundarias), degradado de base a punta, puntas más oscuras, líneas de plumas suaves, barreado
+  inferior, coberteras festoneadas y brillo en el borde de ataque.
+- **Cola:** abanico redondeado con muescas, degradado, bandas y franja terminal clara.
+- **Cuerpo:** contorno más fino, brillo dorsal y marcas en "V" y festones en lugar de rayas.
+- **Cabeza de perfil:** capucha con degradado y borde suave, mejilla blanca a gris, ojo más grande
+  con iris oscuro y pico con degradado. Se eliminaron las líneas angulosas tipo "casco" (eran
+  contornos abiertos dibujados como polígonos cerrados rectos; ahora son curvas suaves abiertas).
+- **Nubes:** 16–20 cúmulos con degradado radial que se desvanece, sin la base plana.
+- **Montañas:** degradado de la cumbre a la bruma y vetas de volumen.
+- **Líneas de velocidad:** 30 trazos afilados, más finos y translúcidos, que dejan libre el centro.
+
+Los datos científicos y los rótulos no cambian.
 
 ## Render (valores medidos)
 
@@ -18,9 +38,9 @@ Equipo: contenedor Linux con 4 núcleos, 15 GB de RAM y sin GPU; concurrencia 4;
 
 | | Borrador (draft, ×0,5) | Final (final, ×1, CRF 20) |
 |---|---|---|
-| Tramos de vídeo | 29,1 + 29,5 + 29,5 + 28,3 + 30,4 + 32,5 = **179,3 s** | 62,1 + 67,5 + 62,3 + 60,0 + 59,8 + 67,7 = **379,4 s** |
-| Mezcla de audio (6 pistas) | 108,7 s | reutilizada del borrador |
-| Pico de RAM por tramo (node + Chrome) | 2.379 MB | **3.010 MB** |
+| Tramos de vídeo | 31,4 + 32,4 + 31,4 + 30,5 + 32,0 + 35,6 = **193,3 s** | 70,2 + 74,3 + 70,5 + 71,6 + 73,8 + 83,7 = **444,1 s** |
+| Mezcla de audio (6 pistas) | 108,7 s (primera versión; reutilizada en la revisión) | reutilizada |
+| Pico de RAM por tramo (node + Chrome) | 2.465 MB | **2.986 MB** |
 
 ## Verificaciones
 

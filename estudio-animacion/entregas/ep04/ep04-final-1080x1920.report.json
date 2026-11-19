@@ -9,41 +9,41 @@
     {
       "start": 0,
       "end": 899,
-      "secs": 62.1,
-      "peakMB": 2867
+      "secs": 70.2,
+      "peakMB": 2854
     },
     {
       "start": 900,
       "end": 1799,
-      "secs": 67.5,
-      "peakMB": 2673
+      "secs": 74.3,
+      "peakMB": 2849
     },
     {
       "start": 1800,
       "end": 2699,
-      "secs": 62.3,
-      "peakMB": 2829
+      "secs": 70.5,
+      "peakMB": 2771
     },
     {
       "start": 2700,
       "end": 3599,
-      "secs": 60,
-      "peakMB": 3010
+      "secs": 71.6,
+      "peakMB": 2944
     },
     {
       "start": 3600,
       "end": 4499,
-      "secs": 59.8,
-      "peakMB": 2973
+      "secs": 73.8,
+      "peakMB": 2986
     },
     {
       "start": 4500,
       "end": 5399,
-      "secs": 67.7,
-      "peakMB": 2919
+      "secs": 83.7,
+      "peakMB": 2973
     }
   ],
-  "startedAt": "2026-11-19T01:05:41.481Z",
+  "startedAt": "2026-11-19T01:25:23.411Z",
   "audio": {
     "secs": 0,
     "peakMB": 0,
@@ -54,12 +54,12 @@
     "inputTruePeak": -1.02,
     "targetLUFS": -14
   },
-  "wallSecondsThisRun": 395.6,
-  "totalSeconds": 379.4,
-  "peakRssMB": 3010,
+  "wallSecondsThisRun": 460.9,
+  "totalSeconds": 444.1,
+  "peakRssMB": 2986,
   "output": {
     "file": "out/ep04-final-1080x1920.mp4",
-    "sizeMB": 49.35,
+    "sizeMB": 49.77,
     "width": 1080,
     "height": 1920,
     "fps": "30/1",

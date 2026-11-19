@@ -162,7 +162,7 @@ export function birdPolys(spec: BirdSpec, p: BirdParams): {polys: Poly[]; head: 
   const polys: Poly[] = [];
 
   // ---------- elipsoides (silueta exacta por complemento de Schur) ----------
-  const ellipsoid = (cx: number, cy: number, a: number, b: number, c: number, fillTop: string, fillBot: string, z: number) => {
+  const ellipsoid = (cx: number, cy: number, a: number, b: number, c: number, fillTop: string, fillBot: string, z: number, op?: number) => {
     const A = [0, 1, 2].map((i) => [0, 1, 2].map((j) => M[i][0] * M[j][0] / (a * a * S * S) + M[i][1] * M[j][1] / (b * b * S * S) + M[i][2] * M[j][2] / (c * c * S * S)));
     const b11 = A[0][0] - (A[0][2] * A[0][2]) / A[2][2];
     const b12 = A[0][1] - (A[0][2] * A[1][2]) / A[2][2];
@@ -185,7 +185,7 @@ export function birdPolys(spec: BirdSpec, p: BirdParams): {polys: Poly[]; head: 
       const Y = ex * Math.sin(ang) + ey * Math.cos(ang);
       pts.push({x: ctr.x + X, y: ctr.y - Y});
     }
-    polys.push({pts, fill: `grad:${col(fillTop)}:${col(fillBot)}`, z, stroke: col(mixColor(fillTop, '#000000', 0.35)), sw: 1});
+    polys.push({pts, fill: `grad:${col(fillTop)}:${col(fillBot)}`, z, stroke: col(mixColor(fillTop, '#000000', 0.16)), sw: 0.8, op});
   };
   const up = mul(M, [0, 1, 0]);
   // vista: si el dorso mira a la cámara todo es gris; si el vientre mira, todo claro
@@ -195,47 +195,83 @@ export function birdPolys(spec: BirdSpec, p: BirdParams): {polys: Poly[]; head: 
   ellipsoid(spec.body.x, 0, spec.body.a, spec.body.b, spec.body.c, topC, botC, bodyZ);
   ellipsoid(spec.neck.x, spec.neck.y, spec.neck.a, spec.neck.b, spec.neck.c, topC, mixColor(botC, C.cheek, 0.5), bodyZ + 0.01);
   const gradDir: Vec = {x: up[0], y: -up[1]};
+  // brillo suave del dorso (luz cenital)
+  if (up[2] > -0.3) {
+    const sheen = mixColor(topC, '#ffffff', 0.22);
+    ellipsoid(spec.body.x + 4, spec.body.b * 0.45, spec.body.a * 0.72, spec.body.b * 0.38, spec.body.c * 0.66, sheen, topC, bodyZ + 0.015, 0.35);
+  }
 
-  // ---------- barreado del pecho/vientre ----------
-  for (let i = 0; i < 46; i++) {
-    const s = -0.65 + (i % 9) * 0.15;
-    const phi = -Math.PI / 2 + ((Math.floor(i / 9) - 2) / 2.5) * 0.9;
+  // ---------- marcas del plumaje: "V" suaves en el pecho, festones en el dorso ----------
+  for (let i = 0; i < 54; i++) {
+    const row = Math.floor(i / 9);
+    const s = -0.58 + (i % 9) * 0.13 + (row % 2) * 0.065;
+    const phi = -Math.PI / 2 + ((row - 2.5) / 2.5) * 0.95;
     const k = Math.sqrt(Math.max(0, 1 - s * s));
     const pt: V3 = [spec.body.x + spec.body.a * s, spec.body.b * k * Math.sin(phi), spec.body.c * k * Math.cos(phi)];
     const n = mul(M, [pt[0] / spec.body.a ** 2, pt[1] / spec.body.b ** 2, pt[2] / spec.body.c ** 2]);
     const nl = Math.hypot(n[0], n[1], n[2]) || 1;
     const vis = n[2] / nl;
-    if (vis < 0.15 || spec.wingBars) continue;
+    if (vis < 0.2 || spec.wingBars) continue;
+    const tg: V3 = [0, Math.cos(phi) * 3.2, -Math.sin(phi) * 3.2];
+    const fw: V3 = [2.2, 0, 0];
+    polys.push({pts: [scr(add(add(pt, tg), sc(fw, -1))), scr(pt), scr(add(add(pt, sc(tg, -1)), sc(fw, -1)))], fill: 'none', stroke: col(C.bar), sw: 1.25 * S, z: bodyZ + 0.02, op: 0.38 * vis * (0.6 + 0.4 * k)});
+  }
+  for (let i = 0; i < 24; i++) {
+    const s = -0.55 + (i % 8) * 0.13;
+    const phi = Math.PI / 2 + (Math.floor(i / 8) - 1) * 0.45;
+    const k = Math.sqrt(Math.max(0, 1 - s * s));
+    const pt: V3 = [spec.body.x + spec.body.a * s, spec.body.b * k * Math.sin(phi), spec.body.c * k * Math.cos(phi)];
+    const n = mul(M, [pt[0] / spec.body.a ** 2, pt[1] / spec.body.b ** 2, pt[2] / spec.body.c ** 2]);
+    const vis = n[2] / (Math.hypot(n[0], n[1], n[2]) || 1);
+    if (vis < 0.15) continue;
     const tg: V3 = [0, Math.cos(phi) * 4, -Math.sin(phi) * 4];
-    const a1 = scr(add(pt, tg));
-    const a2 = scr(add(pt, sc(tg, -1)));
-    polys.push({pts: [a1, a2], fill: 'none', stroke: col(C.bar), sw: 1.6 * S, z: bodyZ + 0.02, op: 0.55 * vis});
+    polys.push({pts: [scr(add(pt, tg)), scr(add(pt, [-3, 0, 0])), scr(add(pt, sc(tg, -1)))], fill: 'none', stroke: col(mixColor(C.back, '#ffffff', 0.25)), sw: 1 * S, z: bodyZ + 0.02, op: 0.3 * vis});
   }
 
-  // ---------- cola en abanico ----------
+  // ---------- cola: abanico redondeado con bandas y punta clara ----------
   const spread = lerp(spec.tail.spreadMin, spec.tail.spreadMax, clamp(p.tail));
   const tp = p.tailPitch;
-  for (let i = 0; i < spec.tail.n; i++) {
-    const a = (i / (spec.tail.n - 1) - 0.5) * spread;
-    const L = spec.tail.len * (1 - Math.abs(i / (spec.tail.n - 1) - 0.5) * 0.15);
-    const d: V3 = [-Math.cos(a) * Math.cos(tp), Math.sin(tp) * Math.cos(a) * -1, Math.sin(a)];
-    // algo de grosor vertical para que de perfil la cola no sea una línea
-    const perp: V3 = [-Math.sin(a) * 0.85, 0.55, -Math.cos(a) * 0.85];
+  {
+    const n = spec.tail.n;
     const base: V3 = [spec.tail.x, 4, 0];
-    const w = spec.tail.w;
-    const q = (u: number, v: number): V3 => add(add(base, sc(d, u)), sc(perp, v));
-    const pts = [q(0, -w * 0.5), q(L * 0.75, -w * 0.62), q(L, -w * 0.3), q(L, w * 0.3), q(L * 0.75, w * 0.62), q(0, w * 0.5)].map(scr);
-    const tz = depth(q(L * 0.5, 0)) - 0.5;
-    const tailUp = mul(M, [Math.sin(tp), Math.cos(tp), 0]);
-    const upper = tailUp[2] >= 0;
-    polys.push({pts, fill: col(upper ? C.feather : C.under), stroke: col(C.featherTip), sw: 0.8, z: tz});
-    // bandas transversales y punta
-    for (const f of [0.35, 0.6, 0.85]) {
-      polys.push({pts: [scr(q(L * f, -w * 0.55)), scr(q(L * f, w * 0.55))], fill: 'none', stroke: col(upper ? C.featherTip : C.underBar), sw: 1.8 * S, z: tz + 0.001, op: 0.6});
+    const dirs: V3[] = [];
+    const lens: number[] = [];
+    for (let i = 0; i < n; i++) {
+      const a = (i / (n - 1) - 0.5) * spread;
+      dirs.push([-Math.cos(a) * Math.cos(tp), -Math.sin(tp) * Math.cos(a), Math.sin(a)]);
+      lens.push(spec.tail.len * (1 - Math.abs(i / (n - 1) - 0.5) * 0.12));
     }
+    const vert = (i: number) => (i / (n - 1) - 0.5) * 16; // grosor visible de perfil (cuña)
+    const at = (i: number, f: number): V3 => add(add(base, sc(dirs[i], lens[i] * f)), [0, vert(i) * f, 0]);
+    const w = spec.tail.w;
+    const sideA: V3 = add(base, [0, 7, -w * 0.5]);
+    const sideB: V3 = add(base, [0, -6, w * 0.5]);
+    const outline: Vec[] = [scr(sideA)];
+    for (let i = 0; i < n; i++) {
+      outline.push(scr(at(i, 1)));
+      if (i < n - 1) {
+        const m = add(sc(add(at(i, 1), at(i + 1, 1)), 0.5), sc(add(dirs[i], dirs[i + 1]), -lens[i] * 0.03));
+        outline.push(scr(m));
+      }
+    }
+    outline.push(scr(sideB));
+    const tz = depth(at(Math.floor(n / 2), 0.5)) - 0.5;
+    const tailUp = mul(M, [Math.sin(tp), Math.cos(tp), 0]);
+    // de perfil la cola se ve gris (cara superior); sólo desde abajo se ve la cara clara
+    const upper = tailUp[2] >= -0.35;
+    const b0 = scr(base);
+    const tipC = scr(at(Math.floor(n / 2), 1));
+    const c1 = upper ? mixColor(C.feather, '#ffffff', 0.08) : C.under;
+    const c2 = upper ? mixColor(C.feather, C.featherTip, 0.45) : mixColor(C.under, C.underBar, 0.3);
+    polys.push({pts: outline, fill: `slin:${col(c1)}:${col(c2)}:${b0.x.toFixed(1)},${b0.y.toFixed(1)},${tipC.x.toFixed(1)},${tipC.y.toFixed(1)}`, stroke: col(mixColor(c2, '#000000', 0.2)), sw: 0.8, z: tz});
+    for (const f of [0.32, 0.52, 0.72]) {
+      polys.push({pts: Array.from({length: n}, (_, i) => scr(at(i, f))), fill: 'open', stroke: col(upper ? C.featherTip : C.underBar), sw: 2 * S, z: tz + 0.001, op: 0.28});
+    }
+    polys.push({pts: Array.from({length: n}, (_, i) => scr(at(i, 0.95))), fill: 'open', stroke: col('#efe9dc'), sw: 2.4 * S, z: tz + 0.002, op: 0.55});
+    for (let i = 1; i < n - 1; i++) polys.push({pts: [scr(at(i, 0.15)), scr(at(i, 0.97))], fill: 'none', stroke: col(C.featherTip), sw: 0.7 * S, z: tz + 0.003, op: 0.15});
   }
 
-  // ---------- alas ----------
+  // ---------- alas: silueta orgánica única por ala ----------
   const ext = {a1: 0.12, a2: 0.08, a3: 0.28};
   const swp = {a1: 0.55, a2: 0.95, a3: 1.15};
   const fld = {a1: 1.45, a2: -1.35, a3: 1.55};
@@ -249,6 +285,7 @@ export function birdPolys(spec: BirdSpec, p: BirdParams): {polys: Poly[]; head: 
     const back: V3 = [-1, 0, 0];
     const sh: V3 = [spec.wing.shoulder[0], spec.wing.shoulder[1], spec.wing.shoulder[2] * s];
     const P = (u: number, v: number): V3 => add(add(sh, sc(span, u)), sc(back, v));
+    const Q = (q: {u: number; v: number}) => scr(P(q.u, q.v));
     const a1 = ang('a1');
     const a2 = ang('a2');
     const a3 = ang('a3');
@@ -257,67 +294,93 @@ export function birdPolys(spec: BirdSpec, p: BirdParams): {polys: Poly[]; head: 
     const tip = {u: wr.u + spec.wing.L3 * Math.cos(a3), v: wr.v + spec.wing.L3 * Math.sin(a3)};
     const nUp = sc(cross(back, span), s);
     const upper = mul(M, nUp)[2] >= 0;
-    const wp: Poly[] = [];
-    const feather = (bu: number, bv: number, dang: number, L: number, w: number, isPrim: boolean, i: number) => {
-      const du = Math.cos(dang);
-      const dv = Math.sin(dang);
-      const nu = -dv;
-      const nv = du;
-      const q = (k: number, off: number) => P(bu + du * L * k + nu * off, bv + dv * L * k + nv * off);
-      const pts = [q(0, -w * 0.5), q(0.72, -w * 0.62), q(1, -w * 0.12), q(1, w * 0.12), q(0.72, w * 0.5), q(0, w * 0.5)].map(scr);
-      const fz = depth(q(0.5, 0));
-      const base = upper ? C.feather : C.under;
-      wp.push({pts, fill: col(isPrim ? mixColor(base, upper ? C.featherTip : C.underBar, 0.25) : base), stroke: col(upper ? C.featherTip : C.underBar), sw: 0.7, z: fz});
-      if (!upper || isPrim) {
-        // barreado de la cara inferior / puntas oscuras de las primarias
-        for (const f of upper ? [0.82] : [0.3, 0.5, 0.7]) {
-          wp.push({pts: [scr(q(f, -w * 0.5)), scr(q(f, w * 0.5))], fill: 'none', stroke: col(upper ? C.featherTip : C.underBar), sw: (upper ? 3 : 1.4) * S, z: fz + 0.001, op: upper ? 0.7 : 0.6});
-        }
-      }
-      void i;
-    };
-    // primarias: abanico a lo largo de la mano
+    // plumas en coordenadas del plano del ala
+    type F = {b: {u: number; v: number}; d: {u: number; v: number}; L: number; t: {u: number; v: number}};
+    const prim: F[] = [];
     const nP = spec.wing.prim.length;
-    for (let i = nP - 1; i >= 0; i--) {
+    for (let i = 0; i < nP; i++) {
       const f = i / (nP - 1);
-      const bu = wr.u + (tip.u - wr.u) * f * 0.92;
-      const bv = wr.v + (tip.v - wr.v) * f * 0.92;
+      const b = {u: wr.u + (tip.u - wr.u) * f * 0.92, v: wr.v + (tip.v - wr.v) * f * 0.92};
       const fan = lerp(a3 + Math.PI / 2 - 0.25, a3 + 0.06, f);
-      const dang = lerp(fan, a3 + 0.12, fo) + Math.sin(p.t * 3 + i) * 0.03 * (1 - fo);
-      feather(bu, bv, dang, spec.wing.prim[i] * lerp(1, 0.85, fo), 9 - f * 2, true, i);
+      const da = lerp(fan, a3 + 0.12, fo) + Math.sin(p.t * 3 + i) * 0.025 * (1 - fo);
+      const L = spec.wing.prim[i] * lerp(1, 0.85, fo);
+      const d = {u: Math.cos(da), v: Math.sin(da)};
+      prim.push({b, d, L, t: {u: b.u + d.u * L, v: b.v + d.v * L}});
     }
-    // secundarias: a lo largo del antebrazo
-    for (let i = spec.wing.nSec - 1; i >= 0; i--) {
-      const f = 0.05 + (i / (spec.wing.nSec - 1)) * 0.95;
-      const bu = e.u + (wr.u - e.u) * f;
-      const bv = e.v + (wr.v - e.v) * f;
-      const dang = lerp(a2 + Math.PI / 2 - 0.12, Math.PI / 2 + 0.1, fo);
-      feather(bu, bv, dang, spec.wing.sec, 10, false, i);
+    const secs: F[] = [];
+    for (let j = 0; j < spec.wing.nSec; j++) {
+      const f = 0.05 + (j / (spec.wing.nSec - 1)) * 0.95;
+      const b = {u: e.u + (wr.u - e.u) * f, v: e.v + (wr.v - e.v) * f};
+      const da = lerp(a2 + Math.PI / 2 - 0.12, Math.PI / 2 + 0.1, fo);
+      const d = {u: Math.cos(da), v: Math.sin(da)};
+      const L = spec.wing.sec * (0.92 + 0.08 * Math.sin(j * 1.7));
+      secs.push({b, d, L, t: {u: b.u + d.u * L, v: b.v + d.v * L}});
     }
-    // coberteras (cubren la base de las plumas)
-    const cov = [
-      P(0, -3),
-      P(e.u, e.v - 6),
-      P(wr.u, wr.v - 5),
-      P(wr.u + (tip.u - wr.u) * 0.55, wr.v + (tip.v - wr.v) * 0.55 - 2),
-      P(wr.u + (tip.u - wr.u) * 0.5 + 6 * Math.cos(a3 + 1.4), wr.v + (tip.v - wr.v) * 0.5 + 14),
-      P(wr.u + 14 * Math.cos(a2 + 1.5), wr.v + 16),
-      P(e.u + 18 * Math.cos(a2 + 1.5), e.v + 18),
-      P(4, 18),
-    ].map(scr);
-    const cz = depth(P(wr.u, wr.v)) + 0.002;
-    const covCol = upper ? mixColor(C.back, '#ffffff', 0.04) : C.under;
-    wp.push({pts: cov, fill: `smooth:${col(covCol)}`, stroke: col(mixColor(covCol, '#000000', 0.3)), sw: 1, z: cz + 50});
-    if (spec.wingBars && upper) {
-      for (const k of [0.35, 0.6]) {
-        wp.push({pts: [scr(P(e.u * 0.6, e.v + 24 * k + 6)), scr(P(wr.u, wr.v + 22 * k + 8))], fill: 'none', stroke: col(C.bar), sw: 4 * S, z: cz + 51});
+    const mid = (a: {u: number; v: number}, b: {u: number; v: number}, pull: number, dirr: {u: number; v: number}, L: number) => ({u: (a.u + b.u) / 2 - dirr.u * L * pull, v: (a.v + b.v) / 2 - dirr.v * L * pull});
+    // contorno: borde de ataque → puntas de primarias (con "dedos") → secundarias → terciarias
+    const sil: {u: number; v: number}[] = [{u: 0, v: -4}, {u: e.u, v: e.v - 7}, {u: wr.u, v: wr.v - 7}, {u: wr.u + (tip.u - wr.u) * 0.6, v: wr.v + (tip.v - wr.v) * 0.6 - 4}];
+    for (let i = nP - 1; i >= 0; i--) {
+      sil.push(prim[i].t);
+      if (i > 0) sil.push(mid(prim[i].t, prim[i - 1].t, i >= nP - 5 ? 0.16 : 0.05, prim[i].d, prim[i].L));
+    }
+    for (let j = spec.wing.nSec - 1; j >= 0; j--) sil.push(secs[j].t);
+    sil.push({u: 3, v: 22});
+    const silS = sil.map(Q);
+    const lead = Q({u: wr.u * 0.5, v: -6});
+    const trail = Q(secs[Math.floor(spec.wing.nSec / 2)].t);
+    const wp: Poly[] = [];
+    const cA = upper ? mixColor(C.back, '#ffffff', 0.1) : mixColor(C.under, '#ffffff', 0.1);
+    const cB = upper ? mixColor(C.feather, C.featherTip, 0.5) : mixColor(C.under, C.underBar, 0.35);
+    wp.push({pts: silS, fill: `slin:${col(cA)}:${col(cB)}:${lead.x.toFixed(1)},${lead.y.toFixed(1)},${trail.x.toFixed(1)},${trail.y.toFixed(1)}`, stroke: col(mixColor(cB, '#000000', 0.25)), sw: 0.9, z: 0});
+    // puntas de las primarias más oscuras
+    if (upper) {
+      for (let i = 0; i < nP; i++) {
+        const F0 = prim[i];
+        const q = (k: number, off: number) => Q({u: F0.b.u + F0.d.u * F0.L * k - F0.d.v * off, v: F0.b.v + F0.d.v * F0.L * k + F0.d.u * off});
+        wp.push({pts: [q(0.62, -4), q(1, -1.5), q(1, 1.5), q(0.62, 4)], fill: `smooth:${col(C.featherTip)}`, z: 0.001, op: 0.45});
       }
+    }
+    // separaciones entre plumas
+    prim.forEach((F0) => wp.push({pts: [Q({u: F0.b.u + F0.d.u * F0.L * 0.3, v: F0.b.v + F0.d.v * F0.L * 0.3}), Q({u: F0.b.u + F0.d.u * F0.L * 0.96, v: F0.b.v + F0.d.v * F0.L * 0.96})], fill: 'none', stroke: col(upper ? C.featherTip : C.underBar), sw: 1.0 * S, z: 0.002, op: upper ? 0.45 : 0.3}));
+    secs.forEach((F0) => wp.push({pts: [Q({u: F0.b.u + F0.d.u * F0.L * 0.35, v: F0.b.v + F0.d.v * F0.L * 0.35}), Q({u: F0.b.u + F0.d.u * F0.L * 0.95, v: F0.b.v + F0.d.v * F0.L * 0.95})], fill: 'none', stroke: col(upper ? C.featherTip : C.underBar), sw: 0.9 * S, z: 0.002, op: upper ? 0.3 : 0.25}));
+    // barreado de la cara inferior (fino y suave)
+    if (!upper) {
+      [...prim, ...secs].forEach((F0) => {
+        for (const f of [0.35, 0.52, 0.69, 0.86]) {
+          const c0 = {u: F0.b.u + F0.d.u * F0.L * f, v: F0.b.v + F0.d.v * F0.L * f};
+          wp.push({pts: [Q({u: c0.u - F0.d.v * 3.5, v: c0.v + F0.d.u * 3.5}), Q({u: c0.u + F0.d.v * 3.5, v: c0.v - F0.d.u * 3.5})], fill: 'none', stroke: col(C.underBar), sw: 1.3 * S, z: 0.003, op: 0.35});
+        }
+      });
+    }
+    // banda de coberteras con borde festoneado
+    const cov: {u: number; v: number}[] = [{u: 0, v: -4}, {u: e.u, v: e.v - 7}, {u: wr.u, v: wr.v - 7}, {u: wr.u + (tip.u - wr.u) * 0.5, v: wr.v + (tip.v - wr.v) * 0.5 - 3}];
+    for (let i = 4; i >= 0; i--) cov.push({u: prim[i].b.u + prim[i].d.u * prim[i].L * 0.28, v: prim[i].b.v + prim[i].d.v * prim[i].L * 0.28});
+    for (let j = spec.wing.nSec - 1; j >= 0; j--) {
+      const F0 = secs[j];
+      cov.push({u: F0.b.u + F0.d.u * F0.L * 0.42, v: F0.b.v + F0.d.v * F0.L * 0.42});
+      if (j > 0) cov.push({u: (F0.b.u + secs[j - 1].b.u) / 2 + F0.d.u * F0.L * 0.36, v: (F0.b.v + secs[j - 1].b.v) / 2 + F0.d.v * F0.L * 0.36});
+    }
+    cov.push({u: 3, v: 16});
+    const covCol = upper ? mixColor(C.back, '#ffffff', 0.06) : mixColor(C.under, '#ffffff', 0.15);
+    wp.push({pts: cov.map(Q), fill: `smooth:${col(covCol)}`, stroke: col(mixColor(covCol, '#000000', 0.18)), sw: 0.8, z: 0.004});
+    // festones (coberteras menores) y motas de la cara inferior
+    for (let r2 = 0; r2 < 2; r2++) {
+      for (let j = 0; j < spec.wing.nSec; j += 1) {
+        const F0 = secs[j];
+        const c0 = {u: F0.b.u + F0.d.u * F0.L * (0.12 + r2 * 0.14), v: F0.b.v + F0.d.v * F0.L * (0.12 + r2 * 0.14)};
+        const a0 = Q({u: c0.u - F0.d.v * 3, v: c0.v + F0.d.u * 3});
+        const a1b = Q({u: c0.u + F0.d.u * 2.5, v: c0.v + F0.d.v * 2.5});
+        const a2b = Q({u: c0.u + F0.d.v * 3, v: c0.v - F0.d.u * 3});
+        wp.push({pts: [a0, a1b, a2b], fill: 'open', stroke: col(upper ? mixColor(C.featherTip, C.back, 0.4) : C.underBar), sw: 0.9 * S, z: 0.005, op: upper ? 0.35 : 0.3});
+      }
+    }
+    if (spec.wingBars && upper) {
+      for (const kk of [0.35, 0.6]) wp.push({pts: [Q({u: e.u * 0.6, v: e.v + 24 * kk + 6}), Q({u: wr.u, v: wr.v + 22 * kk + 8})], fill: 'none', stroke: col(C.bar), sw: 4 * S, z: 0.006});
     }
     // borde de ataque iluminado
-    wp.push({pts: [scr(P(0, -3)), scr(P(e.u, e.v - 6)), scr(P(wr.u, wr.v - 5)), scr(P(tip.u, tip.v))], fill: 'none', stroke: p.rim, sw: 1.6 * S, z: cz + 52, op: upper ? 0.55 : 0.25});
-    // dentro del ala: plumas por profundidad, coberteras encima (en la cara visible)
-    wp.sort((a, b) => a.z - b.z);
-    wingInfo.push({z: depth(P(wr.u, wr.v)), polys: wp.map((q) => ({...q, z: depth(P(wr.u, wr.v))}))});
+    wp.push({pts: [Q({u: 0, v: -4}), Q({u: e.u, v: e.v - 7}), Q({u: wr.u, v: wr.v - 7}), Q(tip)], fill: 'open', stroke: p.rim, sw: 1.6 * S, z: 0.007, op: upper ? 0.5 : 0.22});
+    const wz = depth(P(wr.u, wr.v));
+    wingInfo.push({z: wz, polys: wp.map((q) => ({...q, z: wz}))});
   }
 
   // ---------- patas ----------
@@ -416,28 +479,31 @@ export function birdPolys(spec: BirdSpec, p: BirdParams): {polys: Poly[]; head: 
     const pr: Poly[] = [];
     const isFal = spec.malar;
     // contorno de la cabeza con frente inclinada hacia el pico
-    pr.push({pts: P([[0.78, 0.38], [0.55, 0.85], [0.1, 1.02], [-0.45, 0.92], [-0.92, 0.45], [-1.02, -0.1], [-0.8, -0.65], [-0.2, -0.95], [0.4, -0.85], [0.75, -0.35], [0.85, 0.05]]), fill: `smooth:${col(C.cheek)}`, stroke: col(mixColor(C.hood, '#000000', 0.2)), sw: 1, z: 0});
+    const gTop = A(0, 1);
+    const gBot = A(0, -1);
+    pr.push({pts: P([[0.78, 0.38], [0.55, 0.85], [0.1, 1.02], [-0.45, 0.92], [-0.92, 0.45], [-1.02, -0.1], [-0.8, -0.65], [-0.2, -0.95], [0.4, -0.85], [0.75, -0.35], [0.85, 0.05]]), fill: `slin:${col('#ffffff')}:${col(mixColor(C.cheek, '#9aa0aa', 0.25))}:${gTop.x.toFixed(1)},${gTop.y.toFixed(1)},${gBot.x.toFixed(1)},${gBot.y.toFixed(1)}`, stroke: col(mixColor(C.cheek, '#5a6270', 0.5)), sw: 0.7, z: 0});
     if (isFal) {
       // capucha + bigote malar: una sola mancha oscura característica
-      pr.push({pts: P([[0.76, 0.36], [0.55, 0.86], [0.1, 1.03], [-0.45, 0.93], [-0.93, 0.45], [-1.0, -0.05], [-0.62, -0.02], [-0.32, -0.28], [-0.05, -0.18], [0.02, -0.55], [0.12, -0.86], [0.38, -0.8], [0.4, -0.3], [0.55, -0.02], [0.74, 0.12]]), fill: `smooth:${col(C.hood)}`, z: 0.1});
-      // reflejo sutil en la corona
-      pr.push({pts: P([[0.3, 0.85], [-0.2, 0.95], [-0.55, 0.78], [-0.1, 0.8]]), fill: `smooth:${col(mixColor(C.hood, '#ffffff', 0.12))}`, z: 0.11, op: 0.3});
+      pr.push({pts: P([[0.76, 0.36], [0.55, 0.86], [0.1, 1.03], [-0.45, 0.93], [-0.93, 0.45], [-1.0, -0.05], [-0.62, -0.02], [-0.32, -0.26], [-0.08, -0.16], [-0.02, -0.5], [0.08, -0.82], [0.32, -0.78], [0.36, -0.3], [0.52, -0.02], [0.74, 0.12]]), fill: `slin:${col('#11151c')}:${col(mixColor(C.hood, C.back, 0.25))}:${gTop.x.toFixed(1)},${gTop.y.toFixed(1)},${gBot.x.toFixed(1)},${gBot.y.toFixed(1)}`, z: 0.1});
+      // plumas finas en el borde del bigote (transición suave)
+      pr.push({pts: P([[0.36, -0.3], [0.32, -0.78], [0.08, -0.82]]), fill: 'open', stroke: col(mixColor(C.hood, C.cheek, 0.5)), sw: 1.2 * S, z: 0.105, op: 0.5});
     } else {
       pr.push({pts: P([[0.76, 0.36], [0.5, 0.86], [-0.5, 0.92], [-1.0, 0.1], [-0.8, -0.65], [0.3, -0.9], [0.8, -0.2]]), fill: `smooth:${col(C.hood)}`, z: 0.1});
       if (C.neckSheen) pr.push({pts: P([[-0.9, -0.2], [-0.2, -0.6], [0.2, -0.95], [-0.7, -0.95]]), fill: `smooth:${col(C.neckSheen)}`, z: 0.12, op: 0.7});
     }
     // ojo con anillo amarillo, iris oscuro y brillo; membrana nictitante
     const e0 = A(0.36, 0.2);
-    const er = 0.21 * R;
+    const er = 0.2 * R;
     const circle = (c: Vec, r: number) => Array.from({length: 18}, (_, k) => ({x: c.x + Math.cos((k / 18) * Math.PI * 2) * r, y: c.y + Math.sin((k / 18) * Math.PI * 2) * r}));
-    pr.push({pts: circle(e0, er * 1.32), fill: col(C.eyeRing), z: 0.3});
-    pr.push({pts: circle(e0, er), fill: col('#140d08'), z: 0.31});
+    pr.push({pts: circle(e0, er * 1.22), fill: col(C.eyeRing), z: 0.3});
+    pr.push({pts: circle(e0, er), fill: col('#3a2414'), z: 0.31});
+    pr.push({pts: circle(e0, er * 0.72), fill: col('#0c0806'), z: 0.311});
     pr.push({pts: [{x: e0.x - er * 0.35, y: e0.y - er * 0.38}], fill: '#ffffff', z: 0.32, op: 1 - sil, stroke: `dot:${(er * 0.3).toFixed(2)}`});
     pr.push({pts: [{x: e0.x + er * 0.3, y: e0.y + er * 0.3}], fill: '#ffffff', z: 0.321, op: 0.5 * (1 - sil), stroke: `dot:${(er * 0.12).toFixed(2)}`});
     if (p.nict > 0.01) pr.push({pts: circle(e0, er * 1.02), fill: '#dce6ee', z: 0.33, op: 0.6 * p.nict});
     // pico ganchudo (cere amarilla), mandíbula inferior
-    const bL = 0.32 * B + 0.18;
-    pr.push({pts: P([[0.74, 0.34], [0.9 + bL * 0.4, 0.33], [0.98 + bL * 0.8, 0.12], [1.0 + bL, -0.14], [0.94 + bL * 0.85, -0.3], [0.9 + bL * 0.7, -0.08], [0.82, -0.02]]), fill: `smooth:${col(C.beak)}`, stroke: col('#101216'), sw: 0.8, z: 0.4});
+    const bL = 0.24 * B + 0.12;
+    pr.push({pts: P([[0.74, 0.34], [0.9 + bL * 0.4, 0.33], [0.98 + bL * 0.8, 0.12], [1.0 + bL, -0.14], [0.94 + bL * 0.85, -0.3], [0.9 + bL * 0.7, -0.08], [0.82, -0.02]]), fill: `slin:${col(mixColor(C.beak, '#9fb0c4', 0.35))}:${col('#15181d')}:${A(0.8, 0.2).x.toFixed(1)},${A(0.8, 0.2).y.toFixed(1)},${A(1.1, -0.2).x.toFixed(1)},${A(1.1, -0.2).y.toFixed(1)}`, stroke: col('#101216'), sw: 0.6, z: 0.4});
     pr.push({pts: P([[0.8, -0.04], [0.9 + bL * 0.6, -0.1], [0.82 + bL * 0.4, -0.24], [0.76, -0.2]]), fill: `smooth:${col(mixColor(C.beak, '#ffffff', 0.15))}`, z: 0.39});
     pr.push({pts: P([[0.72, 0.38], [0.9, 0.36], [0.9, 0.08], [0.76, 0.06]]), fill: `smooth:${col(C.cere)}`, z: 0.41});
     pr.push({pts: [A(0.86, 0.22)], fill: '#1a1208', z: 0.42, op: 0.9, stroke: `dot:${(0.04 * R).toFixed(2)}`});
@@ -511,7 +577,24 @@ export const Bird: React.FC<{id: string; spec: BirdSpec; params: BirdParams}> = 
     const clip = q.stroke === 'clip';
     let fill = q.fill;
     let d: string;
-    if (fill.startsWith('smooth:')) {
+    let open = false;
+    if (fill === 'open' || (fill === 'none' && q.pts.length > 2)) {
+      open = true;
+      d = smoothPath(q.pts, false);
+    } else if (fill.startsWith('slin:')) {
+      // silueta suave con degradado lineal explícito: slin:c1:c2:x1,y1,x2,y2
+      const [, c1, c2, coords] = fill.split(':');
+      const [x1, y1, x2, y2] = coords.split(',').map(Number);
+      const gid = `${id}-l${gi++}`;
+      grads.push(
+        <linearGradient key={gid} id={gid} gradientUnits="userSpaceOnUse" x1={x1} y1={y1} x2={x2} y2={y2}>
+          <stop offset="0" stopColor={c1} />
+          <stop offset="1" stopColor={c2} />
+        </linearGradient>,
+      );
+      fill = `url(#${gid})`;
+      d = smoothPath(q.pts, true, 0.85);
+    } else if (fill.startsWith('smooth:')) {
       fill = fill.slice(7);
       d = smoothPath(q.pts, true);
     } else if (q.pts.length === 2) {
@@ -529,10 +612,10 @@ export const Bird: React.FC<{id: string; spec: BirdSpec; params: BirdParams}> = 
       const gid = `${id}-g${gi++}`;
       grads.push(
         <linearGradient key={gid} id={gid} gradientUnits="userSpaceOnUse" x1={cx + gx * R} y1={cy + gy * R} x2={cx - gx * R} y2={cy - gy * R}>
-          <stop offset="0" stopColor={top} />
-          <stop offset="0.48" stopColor={top} />
-          <stop offset="0.62" stopColor={bot} />
-          <stop offset="1" stopColor={mixColor(bot, '#000000', 0.12)} />
+          <stop offset="0" stopColor={mixColor(top, '#ffffff', 0.08)} />
+          <stop offset="0.38" stopColor={top} />
+          <stop offset="0.72" stopColor={bot} />
+          <stop offset="1" stopColor={mixColor(bot, '#000000', 0.1)} />
         </linearGradient>,
       );
       fill = `url(#${gid})`;
@@ -541,8 +624,8 @@ export const Bird: React.FC<{id: string; spec: BirdSpec; params: BirdParams}> = 
       <path
         key={i}
         d={d}
-        fill={q.pts.length === 2 ? 'none' : fill}
-        stroke={q.pts.length === 2 ? q.stroke : clip ? undefined : q.stroke}
+        fill={q.pts.length === 2 || open ? 'none' : fill}
+        stroke={q.pts.length === 2 || open ? q.stroke : clip ? undefined : q.stroke}
         strokeWidth={q.sw}
         strokeLinecap="round"
         strokeLinejoin="round"

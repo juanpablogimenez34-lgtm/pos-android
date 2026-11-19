@@ -15,20 +15,36 @@ export const SpeedLines: React.FC<{intensity: number; dir: Vec; slow?: number}> 
   const l = Math.hypot(dir.x, dir.y) || 1;
   const dx = -dir.x / l;
   const dy = -dir.y / l;
-  const lines = Array.from({length: 46}, (_, i) => {
+  const lines = Array.from({length: 30}, (_, i) => {
     const ph = ((t * (1.6 + hash1(i) * 1.2) * slow + hash1(i * 3)) % 1 + 1) % 1;
-    const off = (hash1(i * 7) - 0.5) * 1.6;
+    // lejos del centro del encuadre (donde está el ave)
+    const side = hash1(i * 17) < 0.5 ? -1 : 1;
+    const off = side * (0.32 + hash1(i * 7) * 0.5);
     const cx = width / 2 + -dy * off * width + dx * (ph - 0.5) * height * 1.4;
     const cy = height / 2 + dx * off * width + dy * (ph - 0.5) * height * 1.4;
     const len = (120 + hash1(i * 11) * 260) * intensity;
-    return {x1: cx, y1: cy, x2: cx + dx * len, y2: cy + dy * len, o: Math.sin(Math.PI * ph) * (0.25 + 0.35 * hash1(i * 5)), w: 1.5 + hash1(i * 13) * 2.5};
+    return {x1: cx, y1: cy, x2: cx + dx * len, y2: cy + dy * len, o: Math.sin(Math.PI * ph) * (0.18 + 0.25 * hash1(i * 5)), w: 1 + hash1(i * 13) * 1.4};
   });
   return (
     <AbsoluteFill style={{pointerEvents: 'none'}}>
       <svg width={width} height={height}>
-        {lines.map((s, i) => (
-          <line key={i} x1={s.x1} y1={s.y1} x2={s.x2} y2={s.y2} stroke="#ffffff" strokeOpacity={s.o * intensity} strokeWidth={s.w} strokeLinecap="round" />
-        ))}
+        <defs>
+          <linearGradient id="sl-g" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0" stopColor="#ffffff" stopOpacity={0} />
+            <stop offset="0.5" stopColor="#ffffff" stopOpacity={1} />
+            <stop offset="1" stopColor="#ffffff" stopOpacity={0} />
+          </linearGradient>
+        </defs>
+        {lines.map((s, i) => {
+          // trazo afilado: polígono fino que se estrecha en ambos extremos
+          const nx = -(s.y2 - s.y1);
+          const ny = s.x2 - s.x1;
+          const l = Math.hypot(nx, ny) || 1;
+          const w = s.w / 2;
+          const mx = (s.x1 + s.x2) / 2;
+          const my = (s.y1 + s.y2) / 2;
+          return <path key={i} d={`M${s.x1},${s.y1} L${mx + (nx / l) * w},${my + (ny / l) * w} L${s.x2},${s.y2} L${mx - (nx / l) * w},${my - (ny / l) * w}Z`} fill="#ffffff" opacity={s.o * intensity} />;
+        })}
       </svg>
     </AbsoluteFill>
   );

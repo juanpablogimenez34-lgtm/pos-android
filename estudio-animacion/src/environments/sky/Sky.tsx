@@ -38,6 +38,11 @@ export const Mountains: React.FC<{seed: number; y: number; amp: number; color: s
   const pts = useMemo(() => ridge(seed, -6000, 9000, y, amp), [seed, y, amp]);
   const d = smoothPath(pts) + `L9000,${y + 4000}L-6000,${y + 4000}Z`;
   const c = mixColor(color, haze, hazeK);
+  const gid = `mt-${seed}`;
+  const streaks = useMemo(() => {
+    const r = rng(seed + 50);
+    return pts.filter((_, i) => i % 3 === 0).map((p) => ({x: p.x, y: p.y, l: 60 + r() * amp * 0.9, a: (r() - 0.5) * 0.6}));
+  }, [pts, seed, amp]);
   const snowPaths = useMemo(() => {
     if (!snow) return [];
     return pts
@@ -47,7 +52,17 @@ export const Mountains: React.FC<{seed: number; y: number; amp: number; color: s
   }, [pts, snow, y, amp]);
   return (
     <g>
-      <path d={d} fill={c} />
+      <defs>
+        <linearGradient id={gid} gradientUnits="userSpaceOnUse" x1="0" y1={y - amp * 2.2} x2="0" y2={y + 300}>
+          <stop offset="0" stopColor={mixColor(c, '#ffffff', 0.12)} />
+          <stop offset="0.55" stopColor={c} />
+          <stop offset="1" stopColor={mixColor(c, haze, 0.45)} />
+        </linearGradient>
+      </defs>
+      <path d={d} fill={`url(#${gid})`} />
+      {streaks.map((st, i) => (
+        <path key={`s${i}`} d={`M${st.x},${st.y + 8} q${st.l * st.a},${st.l * 0.5} ${st.l * st.a * 1.6},${st.l}`} stroke={mixColor(c, '#000000', 0.2)} strokeOpacity={0.25} strokeWidth={6} fill="none" strokeLinecap="round" />
+      ))}
       {snowPaths.map((sp, i) => (
         <path key={i} d={sp} fill={mixColor(snow!, haze, hazeK * 0.6)} opacity={0.85} />
       ))}
@@ -134,22 +149,34 @@ export const Cliff: React.FC<{pal: SkyPal}> = React.memo(({pal}) => {
 const Cloud: React.FC<{x: number; y: number; s: number; seed: number; pal: SkyPal; op: number}> = ({x, y, s, seed, pal, op}) => {
   const blobs = useMemo(() => {
     const r = rng(seed);
-    return Array.from({length: 7}, (_, i) => ({dx: (i - 3) * 60 + (r() - 0.5) * 40, dy: -Math.sin((i / 6) * Math.PI) * 60 - r() * 30, r: 60 + r() * 50}));
+    const n = 12 + Math.floor(r() * 5);
+    const out = Array.from({length: n}, (_, i) => {
+      const u = i / (n - 1);
+      return {dx: (u - 0.5) * 380 + (r() - 0.5) * 60, dy: -Math.pow(Math.sin(u * Math.PI), 0.8) * (60 + r() * 50) + r() * 20, r: 45 + r() * 65 * Math.sin(u * Math.PI + 0.3)};
+    });
+    // racimo superior más pequeño para un perfil irregular
+    for (let k = 0; k < 4; k++) out.push({dx: (r() - 0.5) * 200, dy: -90 - r() * 50, r: 35 + r() * 35});
+    return out.sort((a, b) => a.dy - b.dy);
   }, [seed]);
   const gid = `cl-${seed}`;
   return (
     <g transform={`translate(${x.toFixed(1)} ${y.toFixed(1)}) scale(${s.toFixed(3)})`} opacity={op}>
       <defs>
-        <radialGradient id={gid} cx="0.45" cy="0.3" r="0.75">
-          <stop offset="0" stopColor={pal.cloud} />
-          <stop offset="0.7" stopColor={mixColor(pal.cloud, pal.shade, 0.45)} />
-          <stop offset="1" stopColor={pal.shade} />
+        <radialGradient id={gid} cx="0.42" cy="0.32" r="0.62">
+          <stop offset="0" stopColor={pal.cloud} stopOpacity={0.98} />
+          <stop offset="0.55" stopColor={mixColor(pal.cloud, pal.shade, 0.3)} stopOpacity={0.9} />
+          <stop offset="0.85" stopColor={pal.shade} stopOpacity={0.55} />
+          <stop offset="1" stopColor={pal.shade} stopOpacity={0} />
+        </radialGradient>
+        <radialGradient id={`${gid}-h`} cx="0.5" cy="0.5" r="0.5">
+          <stop offset="0" stopColor={mixColor(pal.shade, pal.cloud, 0.4)} stopOpacity={0.5} />
+          <stop offset="1" stopColor={pal.shade} stopOpacity={0} />
         </radialGradient>
       </defs>
+      <ellipse cx={0} cy={10} rx={260} ry={60} fill={`url(#${gid}-h)`} />
       {blobs.map((b, i) => (
-        <circle key={i} cx={b.dx} cy={b.dy} r={b.r} fill={`url(#${gid})`} />
+        <circle key={i} cx={b.dx} cy={b.dy} r={b.r * 1.15} fill={`url(#${gid})`} />
       ))}
-      <ellipse cx={0} cy={20} rx={230} ry={36} fill={mixColor(pal.shade, pal.cloud, 0.3)} />
     </g>
   );
 };
