@@ -34,7 +34,12 @@
     "ep05:draft": "node scripts/render-episode.mjs --comp Ep05Full --quality draft --scale 0.5 --seg 30 --out out/ep05-borrador-540x960.mp4",
     "ep05:final": "node scripts/render-episode.mjs --comp Ep05Full --quality final --scale 1 --seg 30 --crf 20 --out out/ep05-final-1080x1920.mp4",
     "audio:score:ep05": "python3 tools/audio/score_ep05.py",
-    "still:ep05": "npx remotion still src/index.ts Ep05Characters out/ep05-planta.png --frame=10 --scale=0.6 && npx remotion still src/index.ts Ep05Creatures out/ep05-mosca-arana.png --frame=10 --scale=0.6"
+    "still:ep05": "npx remotion still src/index.ts Ep05Characters out/ep05-planta.png --frame=10 --scale=0.6 && npx remotion still src/index.ts Ep05Creatures out/ep05-mosca-arana.png --frame=10 --scale=0.6",
+    "ep06:sheet": "node scripts/contact-sheet.mjs Ep06Full",
+    "ep06:draft": "node scripts/render-episode.mjs --comp Ep06Full --quality draft --scale 0.5 --seg 30 --out out/ep06-borrador-540x960.mp4",
+    "ep06:final": "node scripts/render-episode.mjs --comp Ep06Full --quality final --scale 1 --seg 30 --crf 20 --out out/ep06-final-1080x1920.mp4",
+    "audio:score:ep06": "python3 tools/audio/score_ep06.py",
+    "still:ep06": "npx remotion still src/index.ts Ep06Characters out/ep06-fichas.png --frame=10 --scale=0.6"
   },
   "dependencies": {
     "@remotion/cli": "4.0.545",

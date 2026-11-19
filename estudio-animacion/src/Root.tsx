@@ -18,6 +18,10 @@ import {Ep05Characters, Ep05Creatures} from './episodes/ep05-planta-carnivora/ch
 import {Ep05Full, Ep05FullProps} from './episodes/ep05-planta-carnivora/Ep05Full';
 import {EP05_DEFAULT_AUDIO} from './episodes/ep05-planta-carnivora/sound';
 import {DURATION as EP05_DURATION, FPS as EP05_FPS} from './episodes/ep05-planta-carnivora/timeline';
+import {Ep06Characters} from './episodes/ep06-ajolote/Characters/Showcase';
+import {Ep06Full, Ep06FullProps} from './episodes/ep06-ajolote/Ep06Full';
+import {EP06_DEFAULT_AUDIO} from './episodes/ep06-ajolote/Audio/sound';
+import {DURATION as EP06_DURATION, FPS as EP06_FPS} from './episodes/ep06-ajolote/Timeline/timeline';
 
 const demoDefaults: Ep01DemoProps = {quality: 'final', showSubtitles: true, audio: {}};
 const fullDefaults: Ep01FullProps = {quality: 'final', showSubtitles: true, audio: EP01_DEFAULT_AUDIO};
@@ -25,6 +29,7 @@ const ep02Defaults: Ep02FullProps = {quality: 'final', showSubtitles: true, audi
 const ep03Defaults: Ep03FullProps = {quality: 'final', showSubtitles: true, audio: EP03_DEFAULT_AUDIO};
 const ep04Defaults: Ep04FullProps = {quality: 'final', showSubtitles: true, audio: EP04_DEFAULT_AUDIO};
 const ep05Defaults: Ep05FullProps = {quality: 'final', showSubtitles: true, audio: EP05_DEFAULT_AUDIO};
+const ep06Defaults: Ep06FullProps = {quality: 'final', showSubtitles: true, audio: EP06_DEFAULT_AUDIO};
 
 export const RemotionRoot: React.FC = () => (
   <>
@@ -81,6 +86,18 @@ export const RemotionRoot: React.FC = () => (
     {/* Ep. 05: hoja de control de personajes (planta, mosca, araña) */}
     <Composition id="Ep05Characters" component={Ep05Characters} durationInFrames={300} fps={30} width={1080} height={1920} />
     <Composition id="Ep05Creatures" component={Ep05Creatures} durationInFrames={300} fps={30} width={1080} height={1920} />
+    {/* Episodio 06 completo: ajolote, 180 s × 30 fps = 5.400 fotogramas */}
+    <Composition
+      id="Ep06Full"
+      component={Ep06Full}
+      durationInFrames={EP06_DURATION * EP06_FPS}
+      fps={EP06_FPS}
+      width={1080}
+      height={1920}
+      defaultProps={ep06Defaults}
+    />
+    {/* Ep. 06: fichas de personaje (ajolote rosado, silvestre, Daphnia, etapas de regeneración) */}
+    <Composition id="Ep06Characters" component={Ep06Characters} durationInFrames={300} fps={30} width={1080} height={1920} />
     {/* Demo aprobada de 15 s (se conserva intacta) */}
     <Composition
       id="Ep01Demo"
