@@ -1,0 +1,72 @@
+{
+  "composition": "Ep05Full",
+  "quality": "final",
+  "scale": 1,
+  "crf": "20",
+  "concurrency": 4,
+  "segmentSeconds": 30,
+  "segments": [
+    {
+      "start": 0,
+      "end": 899,
+      "secs": 115.7,
+      "peakMB": 3013
+    },
+    {
+      "start": 900,
+      "end": 1799,
+      "secs": 126.4,
+      "peakMB": 2875
+    },
+    {
+      "start": 1800,
+      "end": 2699,
+      "secs": 136.2,
+      "peakMB": 3028
+    },
+    {
+      "start": 2700,
+      "end": 3599,
+      "secs": 134.2,
+      "peakMB": 2899
+    },
+    {
+      "start": 3600,
+      "end": 4499,
+      "secs": 106.4,
+      "peakMB": 3024
+    },
+    {
+      "start": 4500,
+      "end": 5399,
+      "secs": 103.7,
+      "peakMB": 3037
+    }
+  ],
+  "startedAt": "2026-11-19T10:08:31.225Z",
+  "audio": {
+    "secs": 264.4,
+    "peakMB": 1894,
+    "reused": true
+  },
+  "loudness": {
+    "inputLUFS": -16.28,
+    "inputTruePeak": -2.12,
+    "targetLUFS": -14
+  },
+  "wallSecondsThisRun": 740.2,
+  "totalSeconds": 987,
+  "peakRssMB": 3037,
+  "output": {
+    "file": "out/ep05-final-1080x1920.mp4",
+    "sizeMB": 77.96,
+    "width": 1080,
+    "height": 1920,
+    "fps": "30/1",
+    "videoFrames": 5400,
+    "durationSec": 180,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "framesOk": true
+}
