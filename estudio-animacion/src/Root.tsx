@@ -14,12 +14,17 @@ import {DURATION as EP03_DURATION, FPS as EP03_FPS} from './episodes/ep03-tardig
 import {Ep04Full, Ep04FullProps} from './episodes/ep04-halcon-peregrino/Ep04Full';
 import {EP04_DEFAULT_AUDIO} from './episodes/ep04-halcon-peregrino/sound';
 import {DURATION as EP04_DURATION, FPS as EP04_FPS} from './episodes/ep04-halcon-peregrino/timeline';
+import {Ep05Characters, Ep05Creatures} from './episodes/ep05-planta-carnivora/characters/Showcase';
+import {Ep05Full, Ep05FullProps} from './episodes/ep05-planta-carnivora/Ep05Full';
+import {EP05_DEFAULT_AUDIO} from './episodes/ep05-planta-carnivora/sound';
+import {DURATION as EP05_DURATION, FPS as EP05_FPS} from './episodes/ep05-planta-carnivora/timeline';
 
 const demoDefaults: Ep01DemoProps = {quality: 'final', showSubtitles: true, audio: {}};
 const fullDefaults: Ep01FullProps = {quality: 'final', showSubtitles: true, audio: EP01_DEFAULT_AUDIO};
 const ep02Defaults: Ep02FullProps = {quality: 'final', showSubtitles: true, audio: EP02_DEFAULT_AUDIO};
 const ep03Defaults: Ep03FullProps = {quality: 'final', showSubtitles: true, audio: EP03_DEFAULT_AUDIO};
 const ep04Defaults: Ep04FullProps = {quality: 'final', showSubtitles: true, audio: EP04_DEFAULT_AUDIO};
+const ep05Defaults: Ep05FullProps = {quality: 'final', showSubtitles: true, audio: EP05_DEFAULT_AUDIO};
 
 export const RemotionRoot: React.FC = () => (
   <>
@@ -63,6 +68,19 @@ export const RemotionRoot: React.FC = () => (
       height={1920}
       defaultProps={ep04Defaults}
     />
+    {/* Episodio 05 completo: venus atrapamoscas, 180 s × 30 fps = 5.400 fotogramas */}
+    <Composition
+      id="Ep05Full"
+      component={Ep05Full}
+      durationInFrames={EP05_DURATION * EP05_FPS}
+      fps={EP05_FPS}
+      width={1080}
+      height={1920}
+      defaultProps={ep05Defaults}
+    />
+    {/* Ep. 05: hoja de control de personajes (planta, mosca, araña) */}
+    <Composition id="Ep05Characters" component={Ep05Characters} durationInFrames={300} fps={30} width={1080} height={1920} />
+    <Composition id="Ep05Creatures" component={Ep05Creatures} durationInFrames={300} fps={30} width={1080} height={1920} />
     {/* Demo aprobada de 15 s (se conserva intacta) */}
     <Composition
       id="Ep01Demo"

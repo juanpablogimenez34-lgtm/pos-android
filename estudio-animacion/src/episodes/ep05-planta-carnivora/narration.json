@@ -1,0 +1,310 @@
+{
+ "episode": "ep05",
+ "durationSec": 180,
+ "voice": {
+  "engine": "piper",
+  "model": "es_MX-claude-high",
+  "lengthScale": 1.03,
+  "noiseScale": 0.62,
+  "noiseW": 0.5
+ },
+ "lines": [
+  {
+   "id": "a1",
+   "scene": 1,
+   "at": 0.8,
+   "text": "En un rincón húmedo de la naturaleza existe una planta que hace algo extraordinario.",
+   "highlight": [
+    "algo extraordinario"
+   ]
+  },
+  {
+   "id": "a2",
+   "scene": 1,
+   "at": 6.4,
+   "text": "No persigue a sus presas. No necesita correr. Simplemente espera.",
+   "highlight": [
+    "espera"
+   ]
+  },
+  {
+   "id": "a3",
+   "scene": 1,
+   "at": 11.6,
+   "text": "Y cuando un pequeño animal comete el error de entrar en su trampa,",
+   "highlight": [
+    "trampa"
+   ]
+  },
+  {
+   "id": "a4",
+   "scene": 1,
+   "at": 15.8,
+   "text": "todo puede cambiar en una fracción de segundo.",
+   "highlight": [
+    "fracción de segundo"
+   ]
+  },
+  {
+   "id": "b1",
+   "scene": 2,
+   "at": 20.6,
+   "text": "Es la venus atrapamoscas, que crece de forma natural en humedales de las Carolinas, en Estados Unidos.",
+   "highlight": [
+    "venus atrapamoscas"
+   ]
+  },
+  {
+   "id": "b2",
+   "scene": 2,
+   "at": 27.4,
+   "text": "Una mosca explora el entorno buscando alimento.",
+   "highlight": [
+    "mosca"
+   ]
+  },
+  {
+   "id": "b3",
+   "scene": 2,
+   "at": 30.8,
+   "text": "Sus alas se mueven a gran velocidad mientras se desplaza entre las hojas.",
+   "highlight": [
+    "gran velocidad"
+   ]
+  },
+  {
+   "id": "b4",
+   "scene": 2,
+   "at": 35.6,
+   "text": "Al posarse, se limpia con cuidado: con sus patas también percibe sabores.",
+   "highlight": [
+    "percibe sabores"
+   ]
+  },
+  {
+   "id": "b5",
+   "scene": 2,
+   "at": 41.4,
+   "text": "Frente a ella aparece una estructura vegetal abierta.",
+   "highlight": []
+  },
+  {
+   "id": "c1",
+   "scene": 3,
+   "at": 45.4,
+   "text": "Parece inofensiva, pero en su interior existe un mecanismo capaz de reaccionar al contacto.",
+   "highlight": [
+    "reaccionar al contacto"
+   ]
+  },
+  {
+   "id": "c2",
+   "scene": 3,
+   "at": 51.6,
+   "text": "En el interior de la trampa hay pequeños pelos sensitivos, por lo general tres en cada lóbulo.",
+   "highlight": [
+    "pelos sensitivos"
+   ]
+  },
+  {
+   "id": "c3",
+   "scene": 3,
+   "at": 57.8,
+   "text": "Cuando reciben estímulos adecuados, la planta genera señales eléctricas.",
+   "highlight": [
+    "señales eléctricas"
+   ]
+  },
+  {
+   "id": "c4",
+   "scene": 3,
+   "at": 63.0,
+   "text": "Normalmente necesita más de una estimulación en un intervalo breve para activar el cierre.",
+   "highlight": [
+    "más de una estimulación"
+   ]
+  },
+  {
+   "id": "c5",
+   "scene": 3,
+   "at": 68.9,
+   "text": "Así puede evitar gastar energía ante contactos accidentales.",
+   "highlight": [
+    "gastar energía"
+   ]
+  },
+  {
+   "id": "d1",
+   "scene": 4,
+   "at": 73.2,
+   "text": "Un solo toque normalmente no basta.",
+   "highlight": [
+    "Un solo toque"
+   ]
+  },
+  {
+   "id": "d2",
+   "scene": 4,
+   "at": 76.0,
+   "text": "Pero la mosca sigue explorando.",
+   "highlight": []
+  },
+  {
+   "id": "d3",
+   "scene": 4,
+   "at": 78.6,
+   "text": "Entonces ocurre.",
+   "highlight": []
+  },
+  {
+   "id": "d4",
+   "scene": 4,
+   "at": 80.3,
+   "text": "Sus dos lóbulos se cierran con rapidez, en aproximadamente una décima de segundo.",
+   "highlight": [
+    "una décima de segundo"
+   ]
+  },
+  {
+   "id": "d5",
+   "scene": 4,
+   "at": 86.2,
+   "text": "Los dientes de los bordes se entrecruzan y dificultan la salida de una presa grande.",
+   "highlight": [
+    "se entrecruzan"
+   ]
+  },
+  {
+   "id": "d6",
+   "scene": 4,
+   "at": 91.8,
+   "text": "No tiene músculos: todo ocurre por cambios físicos en sus tejidos, y aun así se mueve sorprendentemente rápido.",
+   "highlight": [
+    "No tiene músculos"
+   ]
+  },
+  {
+   "id": "e1",
+   "scene": 5,
+   "at": 99.6,
+   "text": "Si la presa sigue moviéndose y estimulando la trampa, la planta avanza hacia el sellado y la digestión.",
+   "highlight": [
+    "sellado y la digestión"
+   ]
+  },
+  {
+   "id": "e2",
+   "scene": 5,
+   "at": 107.2,
+   "text": "Libera sustancias que ayudan a descomponer los tejidos del animal y absorber nutrientes.",
+   "highlight": [
+    "absorber nutrientes"
+   ]
+  },
+  {
+   "id": "e3",
+   "scene": 5,
+   "at": 112.6,
+   "text": "Este proceso tarda días: aquí lo vemos acelerado.",
+   "highlight": [
+    "tarda días"
+   ]
+  },
+  {
+   "id": "e4",
+   "scene": 5,
+   "at": 116.8,
+   "text": "Después, la trampa vuelve a abrirse y solo quedan restos secos.",
+   "highlight": []
+  },
+  {
+   "id": "f1",
+   "scene": 6,
+   "at": 121.8,
+   "text": "La venus atrapamoscas vive en suelos donde algunos nutrientes son escasos.",
+   "highlight": [
+    "nutrientes son escasos"
+   ]
+  },
+  {
+   "id": "f2",
+   "scene": 6,
+   "at": 126.7,
+   "text": "Son suelos ácidos y arenosos, de los que sus raíces obtienen poco.",
+   "highlight": [
+    "ácidos y arenosos"
+   ]
+  },
+  {
+   "id": "f3",
+   "scene": 6,
+   "at": 131.4,
+   "text": "Obtiene energía del sol mediante la fotosíntesis, y capturar pequeños animales complementa su nutrición.",
+   "highlight": [
+    "fotosíntesis",
+    "complementa su nutrición"
+   ]
+  },
+  {
+   "id": "f4",
+   "scene": 6,
+   "at": 139.0,
+   "text": "Los insectos aportan elementos importantes, como nitrógeno y fósforo.",
+   "highlight": [
+    "nitrógeno y fósforo"
+   ]
+  },
+  {
+   "id": "f5",
+   "scene": 6,
+   "at": 143.9,
+   "text": "No es una planta que haya dejado de utilizar la luz del sol: combina dos estrategias.",
+   "highlight": [
+    "dos estrategias"
+   ]
+  },
+  {
+   "id": "g1",
+   "scene": 7,
+   "at": 150.4,
+   "text": "Una planta inmóvil, una trampa sensible y un mecanismo que parece imposible.",
+   "highlight": [
+    "parece imposible"
+   ]
+  },
+  {
+   "id": "g2",
+   "scene": 7,
+   "at": 156.8,
+   "text": "Mientras una trampa se recupera, otras siguen abiertas, esperando.",
+   "highlight": []
+  },
+  {
+   "id": "g3",
+   "scene": 7,
+   "at": 161.7,
+   "text": "La venus atrapamoscas demuestra que la naturaleza puede desarrollar soluciones extraordinarias.",
+   "highlight": [
+    "soluciones extraordinarias"
+   ]
+  },
+  {
+   "id": "g4",
+   "scene": 7,
+   "at": 167.6,
+   "text": "Sus movimientos son muy distintos a los de los animales, pero su estrategia es igual de fascinante.",
+   "highlight": [
+    "igual de fascinante"
+   ]
+  },
+  {
+   "id": "g5",
+   "scene": 7,
+   "at": 174.2,
+   "text": "¿Conocías esta planta carnívora?",
+   "highlight": [
+    "planta carnívora"
+   ]
+  }
+ ]
+}

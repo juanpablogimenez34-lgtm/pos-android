@@ -29,7 +29,12 @@
     "ep04:sheet": "node scripts/contact-sheet.mjs Ep04Full",
     "ep04:draft": "node scripts/render-episode.mjs --comp Ep04Full --quality draft --scale 0.5 --seg 30 --out out/ep04-borrador-540x960.mp4",
     "ep04:final": "node scripts/render-episode.mjs --comp Ep04Full --quality final --scale 1 --seg 30 --crf 20 --out out/ep04-final-1080x1920.mp4",
-    "audio:score:ep04": "python3 tools/audio/score_ep04.py"
+    "audio:score:ep04": "python3 tools/audio/score_ep04.py",
+    "ep05:sheet": "node scripts/contact-sheet.mjs Ep05Full",
+    "ep05:draft": "node scripts/render-episode.mjs --comp Ep05Full --quality draft --scale 0.5 --seg 30 --out out/ep05-borrador-540x960.mp4",
+    "ep05:final": "node scripts/render-episode.mjs --comp Ep05Full --quality final --scale 1 --seg 30 --crf 20 --out out/ep05-final-1080x1920.mp4",
+    "audio:score:ep05": "python3 tools/audio/score_ep05.py",
+    "still:ep05": "npx remotion still src/index.ts Ep05Characters out/ep05-planta.png --frame=10 --scale=0.6 && npx remotion still src/index.ts Ep05Creatures out/ep05-mosca-arana.png --frame=10 --scale=0.6"
   },
   "dependencies": {
     "@remotion/cli": "4.0.545",
