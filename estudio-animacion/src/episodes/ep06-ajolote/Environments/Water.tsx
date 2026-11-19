@@ -55,10 +55,14 @@ const Trajinera: React.FC<{x: number; y: number; s: number; bob: number}> = ({x,
   </g>
 );
 
-export const AboveWater: React.FC<{k: number}> = ({k}) => {
+export const AboveWater: React.FC<{k: number}> = ({k: k0}) => {
+  let k = k0;
   const {width, height} = useVideoConfig();
   const t = useTime();
   const ctx = useCamera();
+  // solo se ve el paisaje aéreo si la cámara está por encima de la superficie o justo en ella
+  const camY = -ctx.camera.y;
+  k *= clamp((camY - (SURF - 480)) / 220);
   if (k <= 0.01) return null;
   // la superficie (plano del protagonista) recorta todo lo que está por encima del agua
   const wl = worldToScreen(ctx, 1, {x: 0, y: -SURF}).y;
@@ -146,6 +150,15 @@ export const UnderWater: React.FC<{zoom: number; dim: number}> = ({zoom, dim}) =
             <stop offset="1" stopColor="#f4f2c8" stopOpacity={0} />
           </linearGradient>
         </defs>
+        {top > 0 && (
+          <>
+            <linearGradient id="uw-sky" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stopColor={mixColor('#dfeccf', '#0d1a14', dim)} />
+              <stop offset="1" stopColor={mixColor('#9dbb92', '#0d1a14', dim)} />
+            </linearGradient>
+            <rect x={0} y={0} width={width} height={top} fill="url(#uw-sky)" />
+          </>
+        )}
         <rect x={0} y={top} width={width} height={height - top + 2} fill="url(#uw-g)" />
         <g style={blur > 0.3 ? {filter: `blur(${blur.toFixed(1)}px)`} : undefined}>
           <ParallaxLayer depth={0.25}>

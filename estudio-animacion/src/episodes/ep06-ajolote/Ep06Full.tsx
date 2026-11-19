@@ -54,7 +54,7 @@ const Scene: React.FC<{showSubtitles: boolean; audio: AudioMix}> = ({showSubtitl
     pinkHead: add(head, [-60, 60, 0]),
     pinkGills: add(gills, [0, 60, 0]),
     feed: add(psp.pts[0], [80, 40, 0]),
-    surfaceView: [-5200, SURF - 700, 0],
+    surfaceView: [-5200, SURF - 280, 0],
   };
   // pata LF (posición real del rig)
   const axo = axolotlItems(view, pink.spec, pink.pose, 'pk');
