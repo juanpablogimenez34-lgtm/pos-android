@@ -4,9 +4,10 @@
 
 | Archivo | Resolución | Fotogramas | Duración | Tamaño |
 |---|---|---|---|---|
-| `ep04-final-1080x1920.mp4` | 1080×1920, 30 fps, H.264 + AAC | **5.400 / 5.400** | **180,000 s** | **49,77 MB** |
-| `ep04-borrador-540x960.mp4` | 540×960, 30 fps | 5.400 / 5.400 | 180,000 s | 13,07 MB |
-| `hoja-de-contacto.png` | 10 fotogramas del final (8, 30, 44, 60, 88, 105, 131, 140, 160 y 176 s) | | | |
+| `ep04-final-1080x1920.mp4` | 1080×1920, 30 fps, H.264 + AAC | **5.400 / 5.400** | **180,000 s** | **58,33 MB** |
+| `ep04-borrador-540x960.mp4` | 540×960, 30 fps | 5.400 / 5.400 | 180,000 s | 14,59 MB |
+| `hoja-de-contacto.png` | 12 fotogramas (8, 30, 44, 60, 88, 100, 104, 110, 131, 140, 160 y 176 s) | | | |
+| `antes-despues-v3.png` | v2 (arriba) frente a v3 (abajo): cara y picada | | | |
 | `antes-despues.png` | comparación de la versión anterior (arriba) con la revisada (abajo) | | | |
 | `estados-de-vuelo.png` | los 10 estados de vuelo del mismo rig, en distintas vistas, más la paloma | | | |
 
@@ -37,6 +38,7 @@ es de **−14,0 LUFS**.
 - Viñeta de "túnel" en el pico de la picada. La cámara lenta (114–120 s) frena también estos
   efectos, porque usan el tiempo de animación integrado.
 
+Los tramos de 90–150 s tardan unas 2,5 veces más por el desenfoque de las nubes rápidas.
 Todo sigue rotulado como **líneas de velocidad estilizadas, no una medición**. Narración, audio,
 subtítulos y datos no cambian.
 
@@ -65,9 +67,9 @@ Equipo: contenedor Linux con 4 núcleos, 15 GB de RAM y sin GPU; concurrencia 4;
 
 | | Borrador (draft, ×0,5) | Final (final, ×1, CRF 20) |
 |---|---|---|
-| Tramos de vídeo | 31,4 + 32,4 + 31,4 + 30,5 + 32,0 + 35,6 = **193,3 s** | 70,2 + 74,3 + 70,5 + 71,6 + 73,8 + 83,7 = **444,1 s** |
+| Tramos de vídeo | 33,0 + 33,7 + 32,3 + 58,5 + 60,5 + 36,8 = **254,8 s** | 77,8 + 88,3 + 78,1 + 194,8 + 193,8 + 86,8 = **719,6 s** |
 | Mezcla de audio (6 pistas) | 108,7 s (primera versión; reutilizada en la revisión) | reutilizada |
-| Pico de RAM por tramo (node + Chrome) | 2.465 MB | **2.986 MB** |
+| Pico de RAM por tramo (node + Chrome) | 2.785 MB | **3.496 MB** |
 
 ## Verificaciones
 

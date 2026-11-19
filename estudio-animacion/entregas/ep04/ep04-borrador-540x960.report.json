@@ -9,41 +9,41 @@
     {
       "start": 0,
       "end": 899,
-      "secs": 31.4,
-      "peakMB": 2337
+      "secs": 33,
+      "peakMB": 2346
     },
     {
       "start": 900,
       "end": 1799,
-      "secs": 32.4,
-      "peakMB": 2321
+      "secs": 33.7,
+      "peakMB": 2311
     },
     {
       "start": 1800,
       "end": 2699,
-      "secs": 31.4,
-      "peakMB": 2410
+      "secs": 32.3,
+      "peakMB": 2417
     },
     {
       "start": 2700,
       "end": 3599,
-      "secs": 30.5,
-      "peakMB": 2465
+      "secs": 58.5,
+      "peakMB": 2785
     },
     {
       "start": 3600,
       "end": 4499,
-      "secs": 32,
-      "peakMB": 2432
+      "secs": 60.5,
+      "peakMB": 2645
     },
     {
       "start": 4500,
       "end": 5399,
-      "secs": 35.6,
-      "peakMB": 2412
+      "secs": 36.8,
+      "peakMB": 2400
     }
   ],
-  "startedAt": "2026-11-19T01:34:56.185Z",
+  "startedAt": "2026-11-19T08:56:50.045Z",
   "audio": {
     "secs": 0,
     "peakMB": 0,
@@ -54,12 +54,12 @@
     "inputTruePeak": -1.02,
     "targetLUFS": -14
   },
-  "wallSecondsThisRun": 210.3,
-  "totalSeconds": 193.3,
-  "peakRssMB": 2465,
+  "wallSecondsThisRun": 273.3,
+  "totalSeconds": 254.8,
+  "peakRssMB": 2785,
   "output": {
     "file": "out/ep04-borrador-540x960.mp4",
-    "sizeMB": 13.07,
+    "sizeMB": 14.59,
     "width": 540,
     "height": 960,
     "fps": "30/1",
