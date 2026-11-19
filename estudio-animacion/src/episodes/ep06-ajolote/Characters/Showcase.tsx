@@ -25,8 +25,9 @@ const Panel: React.FC<{x: number; y: number; w: number; h: number; title: string
 const Axo: React.FC<{spec: AxolotlSpec; pitch: number; yaw?: number; m: MotionParams; zoom: number; cx: number; cy: number; uid: string; regen?: number; focus?: 'lf'}> = ({spec, pitch, yaw = 0, m, zoom, cx, cy, uid, regen, focus}) => {
   const view = makeView(yaw, pitch);
   const pose = buildPose(spec, m, null, regen !== undefined ? {regen: {r: regen, size: 0.75 + 0.25 * Math.max(0, regen - 5)}} : {});
-  const {items, lfElbow} = axolotlItems(view, spec, pose, uid);
-  const c = focus && lfElbow ? project(view, lfElbow) : project(view, [m.root[0], 120, m.root[2]] as V3);
+  const {items, lfElbow, lfTip} = axolotlItems(view, spec, pose, uid);
+  const fp = lfElbow && lfTip ? ([(lfElbow[0] + lfTip[0]) / 2, (lfElbow[1] + lfTip[1]) / 2, (lfElbow[2] + lfTip[2]) / 2] as V3) : lfElbow;
+  const c = focus && fp ? project(view, fp) : project(view, [m.root[0], 120, m.root[2]] as V3);
   return <g transform={`translate(${cx} ${cy}) scale(${zoom}) translate(${-c.x} ${-c.y})`}>{sortItems(items).map((i) => i.node)}</g>;
 };
 
@@ -46,7 +47,7 @@ export const Ep06Characters: React.FC = () => (
         <g key={r}>
           <svg x={4 + i * 152} y={90} width={148} height={310} overflow="hidden">
             <rect width={148} height={310} fill="#1d2e25" />
-            <Axo spec={PINK} pitch={1.05} m={M({})} zoom={1.6} cx={64} cy={150} uid={`r${i}`} regen={r} focus="lf" />
+            <Axo spec={PINK} pitch={1.05} m={M({})} zoom={1.05} cx={74} cy={130} uid={`r${i}`} regen={r} focus="lf" />
           </svg>
           <text x={80 + i * 152} y={440} textAnchor="middle" fill="#fff" fontFamily={FONT_FAMILY} fontWeight={800} fontSize={24}>
             {`STAGE ${r}`}
