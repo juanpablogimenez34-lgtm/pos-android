@@ -6,13 +6,20 @@ composición `CoheteFichas` en `src/Root.tsx`.
 
 ## Estado
 
-| Parte | Estado |
+Terminado: fichas, cohete, mapa temporal medido sobre el MP3 real, 8 escenas sincronizadas, borrador
+540×960 y final 1080×1920 con la canción original sin modificar. Ver `entregas/cohete-de-nuez/INFORME.md`.
+
+| Carpeta | Contenido |
 |---|---|
-| Fichas de personajes (`Characters/`) | **Hecho.** Nico, Luna, Bip y Zumi con rig propio y animación secundaria (cola, orejas, antenas, pantalla y luces) |
-| Cohete de nuez (`Rocket/NutRocket.tsx`) | **Hecho.** Construcción por piezas, vibración, motor imaginario de chispas y resplandor |
-| Analizador del audio (`MusicSync/analyze_song.py`) | **Hecho y probado.** Duración exacta, tempo, pulsos, compases, fronteras de sección y tramos de voz |
-| Mapa temporal de la canción | **Pendiente:** falta el archivo `nuestro_cohete_de_nuez.mp3` (no está en el proyecto) |
-| Escenas, cámaras, sincronización y render | **Pendiente:** dependen del mapa temporal real; no se inventan marcas de tiempo |
+| `Characters/` | `Nico.tsx`, `Luna.tsx`, `Bip.tsx`, `Zumi.tsx`, `parts.tsx` (rig común), `Fichas.tsx` |
+| `Rocket/` | `NutRocket.tsx` (construcción por piezas, vibración, motor imaginario) |
+| `Environments/` | `Room.tsx`, `Space.tsx`, `Cockpit.tsx` |
+| `Animation/` | `moves.ts` (caminar, saltar, bailar, flotar, saludar…), `cast.ts` (animación secundaria) |
+| `MusicSync/` | `analyze_song.py`, `build_map.py`, `song-map.json`, `songMap.ts` |
+| `Scenes/` | `RoomScene.tsx`, `CountdownScene.tsx`, `SpaceScenes.tsx`, `crew.tsx` |
+| `Camera/` | `cam2d.ts` (cámara 2D con parallax y pulso de compás) |
+| `Effects/` | `Fx.tsx` (corazones, flash, chispas, iris de estrella, viñeta) |
+| `Timeline/` | `timeline.ts` (escenas sobre las secciones reales, cuenta regresiva, construcción) |
 
 ## Fichas (continuidad)
 
@@ -32,13 +39,8 @@ composición `CoheteFichas` en `src/Root.tsx`.
   punta de papel decorado, ventana con aro de cartón (con interior), cinta adhesiva, lucecitas y
   estrellas pegadas. Vuela solo en la fantasía: el motor es de chispas mágicas, no de fuego realista.
 
-## Cuando llegue el audio
+## Comandos
 
 ```bash
-# 1) copiar la canción al proyecto
-cp nuestro_cohete_de_nuez.mp3 public/music/
-# 2) analizarla (opcional: letra con secciones entre corchetes, p. ej. [cuenta regresiva])
-python3 src/music-videos/cohete-de-nuez/MusicSync/analyze_song.py public/music/nuestro_cohete_de_nuez.mp3 [letra.txt]
-# 3) revisar las fichas
-npx remotion still src/index.ts CoheteFichas out/fichas.png --frame=20 --scale=0.6
+npm run cohete:analyze && npm run cohete:draft && npm run cohete:final
 ```
