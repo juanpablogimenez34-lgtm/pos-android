@@ -1,0 +1,72 @@
+{
+  "composition": "Ep03Full",
+  "quality": "final",
+  "scale": 1,
+  "crf": "20",
+  "concurrency": 4,
+  "segmentSeconds": 30,
+  "segments": [
+    {
+      "start": 0,
+      "end": 899,
+      "secs": 52,
+      "peakMB": 3376
+    },
+    {
+      "start": 900,
+      "end": 1799,
+      "secs": 49.6,
+      "peakMB": 3083
+    },
+    {
+      "start": 1800,
+      "end": 2699,
+      "secs": 45,
+      "peakMB": 3101
+    },
+    {
+      "start": 2700,
+      "end": 3599,
+      "secs": 43.1,
+      "peakMB": 2907
+    },
+    {
+      "start": 3600,
+      "end": 4499,
+      "secs": 53.6,
+      "peakMB": 3616
+    },
+    {
+      "start": 4500,
+      "end": 5399,
+      "secs": 57.2,
+      "peakMB": 3445
+    }
+  ],
+  "startedAt": "2026-11-19T00:01:58.623Z",
+  "audio": {
+    "secs": 0,
+    "peakMB": 0,
+    "reused": true
+  },
+  "loudness": {
+    "inputLUFS": -16.28,
+    "inputTruePeak": -0.82,
+    "targetLUFS": -14
+  },
+  "wallSecondsThisRun": 319.3,
+  "totalSeconds": 300.5,
+  "peakRssMB": 3616,
+  "output": {
+    "file": "out/ep03-final-1080x1920.mp4",
+    "sizeMB": 45.99,
+    "width": 1080,
+    "height": 1920,
+    "fps": "30/1",
+    "videoFrames": 5400,
+    "durationSec": 180,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "framesOk": true
+}

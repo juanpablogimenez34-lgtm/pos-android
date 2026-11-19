@@ -7,6 +7,8 @@ Remotion, React, SVG y Canvas 2D.
   5.400 fotogramas. Composición `Ep01Full`.
 - **Episodio 02**: "El monstruo que vive en la oscuridad" (rape abisal *Linophryne arborifera*),
   180 s, 5.400 fotogramas. Composición `Ep02Full`; documentación en `src/episodes/ep02-pez-abisal/README.md`.
+- **Episodio 03**: "El animal que sobrevivió al espacio" (tardígrados), 180 s, 5.400 fotogramas.
+  Composición `Ep03Full`; documentación en `src/episodes/ep03-tardigrado/README.md`.
 - **Demo aprobada de 15 s**, conservada intacta. Composición `Ep01Demo`; la copia del vídeo
   está en `entregas/aprobado/`.
 
@@ -73,6 +75,8 @@ estudio-animacion/
             ├── HeartLens.tsx     # panel del corazón sistémico (65–70 s)
             └── Ep01Full.tsx      # composición del episodio
     └── episodes/ep02-pez-abisal/ # Ep. 02 completo (narración, timeline, composición, README)
+    └── episodes/ep03-tardigrado/ # Ep. 03 completo (guion, timeline, cámaras, escenas, sonido, README)
+    (entornos nuevos: environments/moss, environments/space, environments/cell; personaje: creatures/tardigrade)
 tools/audio/                      # generadores de narración y banda sonora (Python)
 public/audio/ep01/                # 6 pistas reales generadas (ver tools/audio/README.md)
 entregas/                         # vídeos, informes y copia de la demo aprobada
