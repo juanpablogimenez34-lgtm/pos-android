@@ -33,6 +33,10 @@ import {CoheteVideoV2} from './music-videos/cohete-de-nuez/v2/CoheteVideoV2';
 import {LobitoFichas} from './music-videos/baile-del-lobito/Characters/Fichas';
 import {Ep08Full, Ep08FullProps} from './episodes/ep08-medusa-inmortal/Ep08Full';
 import {EP08_DEFAULT_AUDIO} from './episodes/ep08-medusa-inmortal/Audio/sound';
+import {LeopardSheet} from './episodes/ep09-leopardo/characters/LeopardSheet';
+import {EP04Leopardo, EP04LeopardoProps} from './episodes/ep09-leopardo/EP04Leopardo';
+import {EP04_LEOPARDO_AUDIO} from './episodes/ep09-leopardo/audio/SoundDesign';
+const leopardoDefaults: EP04LeopardoProps = {quality: 'final', showSubtitles: true, audio: EP04_LEOPARDO_AUDIO};
 const ep08Defaults: Ep08FullProps = {quality: 'final', showSubtitles: true, audio: EP08_DEFAULT_AUDIO};
 import {LobitoPrueba} from './music-videos/baile-del-lobito/Scenes/Test20';
 import {SONG_FRAMES} from './music-videos/cohete-de-nuez/MusicSync/songMap';
@@ -128,6 +132,8 @@ export const RemotionRoot: React.FC = () => (
     <Composition id="CoheteFichas" component={CoheteFichas} durationInFrames={300} fps={30} width={1080} height={1920} />
     <Composition id="CoheteVideoV2" component={CoheteVideoV2} durationInFrames={SONG_FRAMES} fps={30} width={1080} height={1920} defaultProps={{withAudio: true, offset: 0}} />
     <Composition id="CohetePruebaV2" component={CoheteVideoV2} durationInFrames={600} fps={30} width={1080} height={1920} defaultProps={{withAudio: true, offset: 5.7}} />
+    <Composition id="EP04Leopardo" component={EP04Leopardo} durationInFrames={180 * 30} fps={30} width={1080} height={1920} defaultProps={leopardoDefaults} />
+    <Composition id="EP04LeopardoFicha" component={LeopardSheet} durationInFrames={300} fps={30} width={1080} height={1920} />
     <Composition id="Ep08Full" component={Ep08Full} durationInFrames={180 * 30} fps={30} width={1080} height={1920} defaultProps={ep08Defaults} />
     <Composition id="Ep08Demo" component={Ep08Full} durationInFrames={15 * 30} fps={30} width={1080} height={1920} defaultProps={ep08Defaults} />
  <Composition id="LobitoPrueba" component={LobitoPrueba} durationInFrames={600} fps={30} width={1080} height={1920} defaultProps={{withAudio: true}} />
