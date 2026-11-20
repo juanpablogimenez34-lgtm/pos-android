@@ -15,7 +15,7 @@ export const SCENES = [
 ];
 export const sceneAt = (t: number) => SCENES.find((s) => t >= s.start && t < s.end) ?? SCENES[SCENES.length - 1];
 /** Escenas ya implementadas (las demás se construyen tras aprobar la demo). */
-export const IMPLEMENTED = 2;
+export const IMPLEMENTED = 9;
 export const EV = {
   title: 4.4, // "¿PUEDE REJUVENECER?" (golpe sonoro en tools/audio/score_ep08.py)
   tease: 5.6, // empieza a transformarse (adelanto)

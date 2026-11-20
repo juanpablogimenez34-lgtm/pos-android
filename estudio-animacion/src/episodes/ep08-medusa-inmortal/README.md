@@ -4,9 +4,8 @@ Composición independiente (`Ep08Full`, 180 s, y `Ep08Demo`, 15 s). No modifica 
 anterior ni el motor: solo añade dos composiciones en `src/Root.tsx`.
 
 ## Estado
-Escenas 1 y 2 implementadas; las escenas 3–9 se construyen tras aprobar la demo. Hasta entonces, más allá de los 25 s la
-composición completa muestra un aviso de "pendiente de producción".
-La narración (180 s, 29 frases) y la banda sonora completa ya están generadas.
+Terminado: 9 escenas (180 s), narración, banda sonora, borrador 540×960 y final 1080×1920.
+Ver `entregas/ep08/INFORME.md`.
 
 | Carpeta | Contenido |
 |---|---|
@@ -15,7 +14,7 @@ La narración (180 s, 29 frases) y la banda sonora completa ya están generadas.
 | `Lighting/` | `CinematicLighting.tsx` |
 | `Animation/` | `jellyMotion.ts` (nado por chorro, contracción, corriente, peligro) |
 | `Camera/` | `cam.ts` (cámara 2D con parallax) |
-| `Scenes/` | `Opening.tsx` (escenas 1 y 2) |
+| `Scenes/` | `Opening.tsx` (escenas 1–2), `Middle.tsx` (3–5), `Late.tsx` (6–9) |
 | `Script/` | `narration.json` (guion ampliado), `narration-timing.json` (tiempos medidos) |
 | `Audio/`, `Subtitles/`, `Timeline/` | mezcla, subtítulos con ducking, escenas |
 

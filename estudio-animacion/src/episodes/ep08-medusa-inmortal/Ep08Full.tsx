@@ -12,6 +12,8 @@ import {Subtitles} from '../../engine/Subtitles';
 import {AudioMix} from '../../engine/types';
 import {useTime} from '../../engine/useTime';
 import {scene1, scene2} from './Scenes/Opening';
+import {scene3, scene4, scene5} from './Scenes/Middle';
+import {scene6, scene7, scene8, scene9} from './Scenes/Late';
 import {CUES, SPEECH} from './Subtitles/subtitles';
 import {IMPLEMENTED, SCENES, sceneAt} from './Timeline/timeline';
 
@@ -20,7 +22,8 @@ export type Ep08FullProps = {quality: QualityName; showSubtitles: boolean; audio
 const Scene: React.FC<{showSubtitles: boolean; audio: AudioMix}> = ({showSubtitles, audio}) => {
   const t = useTime();
   const sc = sceneAt(t);
-  const out = sc.n === 1 ? scene1(t) : scene2(Math.min(t, 24.99));
+  const fns = [scene1, scene2, scene3, scene4, scene5, scene6, scene7, scene8, scene9];
+  const out = fns[sc.n - 1](t);
   const mix: AudioMix = {...audio, music: audio.music ? {...audio.music, duck: SPEECH} : undefined};
   return (
     <AbsoluteFill style={{backgroundColor: '#02030f'}}>
@@ -28,7 +31,7 @@ const Scene: React.FC<{showSubtitles: boolean; audio: AudioMix}> = ({showSubtitl
         <svg width={1080} height={1920}>{out.svg}</svg>
       </AbsoluteFill>
       {out.overlay}
-      {SCENES.slice(1, IMPLEMENTED).map((s) => (
+      {SCENES.slice(1, 8).map((s) => (
         <ChapterTag key={s.n} start={s.start + 0.6} num={`0${s.n}`} label={s.title} />
       ))}
       {sc.n > IMPLEMENTED && (

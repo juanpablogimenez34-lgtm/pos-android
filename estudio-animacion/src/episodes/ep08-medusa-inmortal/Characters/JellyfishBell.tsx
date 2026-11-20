@@ -172,14 +172,14 @@ export const BellFront: React.FC<{s: BellShape; uid: string; t: number; glow: nu
         })}
       </g>
       {/* borde: canal circular, velo y bulbos tentaculares */}
-      <ellipse cx={0} cy={0} rx={R * 0.97} ry={ry} fill="none" stroke={JELLY.rim} strokeWidth={2.6} opacity={0.75 * inner} />
+      <ellipse cx={0} cy={0} rx={R * 0.97} ry={ry} fill="none" stroke={JELLY.rim} strokeWidth={2.6} opacity={0.75 * inner * inner} />
       <path d={`M${f1(-R * 0.82)},${f1(ry * 0.3)} Q0,${f1(ry * 1.9)} ${f1(R * 0.82)},${f1(ry * 0.3)}`} stroke={JELLY.rim} strokeWidth={6} fill="none" opacity={0.18 * inner} />
       {/* contorno con efecto Fresnel (más luz en los bordes) */}
       <path d={path(s.outer, tissue > 0.5)} fill="none" stroke={mixColor(JELLY.rim, '#ffd8c0', tissue)} strokeWidth={9} opacity={0.12 + 0.12 * glow} />
       <path d={path(s.outer, tissue > 0.5)} fill="none" stroke={mixColor(JELLY.rim, '#ffd8c0', tissue)} strokeWidth={2.4} opacity={0.85} />
       {/* brillo especular */}
-      <path d={`M${f1(-R * 0.62)},${f1(-H * 0.55)} Q${f1(-R * 0.45)},${f1(-H * 0.92)} ${f1(-R * 0.05)},${f1(-H * 0.97)}`} stroke="#ffffff" strokeWidth={5} opacity={0.55} fill="none" strokeLinecap="round" />
-      <ellipse cx={R * 0.38} cy={-H * 0.72} rx={R * 0.08} ry={H * 0.04} fill="#ffffff" opacity={0.4} />
+      <path d={`M${f1(-R * 0.62)},${f1(-H * 0.55)} Q${f1(-R * 0.45)},${f1(-H * 0.92)} ${f1(-R * 0.05)},${f1(-H * 0.97)}`} stroke="#ffffff" strokeWidth={5} opacity={0.55 * inner * inner} fill="none" strokeLinecap="round" />
+      <ellipse cx={R * 0.38} cy={-H * 0.72} rx={R * 0.08} ry={H * 0.04} fill="#ffffff" opacity={0.4 * inner * inner} />
     </g>
   );
 };
