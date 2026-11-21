@@ -1,0 +1,274 @@
+{
+ "episode": "ep05-dragon-azul",
+ "durationSec": 180,
+ "voice": {
+  "engine": "piper",
+  "model": "es_MX-claude-high",
+  "lengthScale": 0.97,
+  "noiseScale": 0.66,
+  "noiseW": 0.55
+ },
+ "lines": [
+  {
+   "id": "d011",
+   "scene": 1,
+   "at": 0.25,
+   "text": "¡Este dragón existe de verdad!",
+   "highlight": [
+    "existe de verdad"
+   ]
+  },
+  {
+   "id": "d012",
+   "scene": 1,
+   "at": 2.2,
+   "text": "Mide apenas unos centímetros…",
+   "highlight": [
+    "unos centímetros"
+   ]
+  },
+  {
+   "id": "d013",
+   "scene": 1,
+   "at": 4.9,
+   "text": "¡Y puede usar las armas urticantes de sus presas!",
+   "highlight": [
+    "armas urticantes"
+   ]
+  },
+  {
+   "id": "d014",
+   "scene": 1,
+   "at": 8.8,
+   "text": "Parece una criatura de otro planeta, pero es un pequeño animal muy real.",
+   "highlight": [
+    "otro planeta"
+   ]
+  },
+  {
+   "id": "d021",
+   "scene": 2,
+   "at": 15.4,
+   "text": "Su nombre científico es Glaucus atlanticus.",
+   "highlight": [
+    "Glaucus atlanticus"
+   ]
+  },
+  {
+   "id": "d022",
+   "scene": 2,
+   "at": 18.6,
+   "text": "Aunque parece un ser fantástico, es una babosa marina: un molusco gasterópodo. Sus extensiones ramificadas le dan su aspecto de pequeño dragón.",
+   "highlight": [
+    "babosa marina",
+    "molusco"
+   ]
+  },
+  {
+   "id": "d031",
+   "scene": 3,
+   "at": 30.4,
+   "text": "Este pequeño viajero vive en la superficie del mar.",
+   "highlight": [
+    "superficie"
+   ]
+  },
+  {
+   "id": "d032",
+   "scene": 3,
+   "at": 34.0,
+   "text": "Traga una burbuja de aire que guarda en el estómago. Así flota boca abajo y se deja llevar por el viento y las corrientes.",
+   "highlight": [
+    "burbuja de aire",
+    "boca abajo"
+   ]
+  },
+  {
+   "id": "d041",
+   "scene": 4,
+   "at": 45.4,
+   "text": "Sus colores también son camuflaje.",
+   "highlight": [
+    "camuflaje"
+   ]
+  },
+  {
+   "id": "d042",
+   "scene": 4,
+   "at": 48.0,
+   "text": "Visto desde arriba, su lado azul se confunde con el océano. Desde abajo, su lado plateado se mezcla con el brillo de la superficie.",
+   "highlight": [
+    "azul",
+    "plateado"
+   ]
+  },
+  {
+   "id": "d051",
+   "scene": 5,
+   "at": 60.4,
+   "text": "Una de sus presas más conocidas es la carabela portuguesa: un organismo colonial cuyos tentáculos producen picaduras dolorosas.",
+   "highlight": [
+    "carabela portuguesa"
+   ]
+  },
+  {
+   "id": "d052",
+   "scene": 5,
+   "at": 68.6,
+   "text": "Para muchos animales es un peligro. Para el dragón azul, es alimento.",
+   "highlight": [
+    "alimento"
+   ]
+  },
+  {
+   "id": "d061",
+   "scene": 6,
+   "at": 75.4,
+   "text": "Aquí está su habilidad más extraordinaria.",
+   "highlight": [
+    "más extraordinaria"
+   ]
+  },
+  {
+   "id": "d062",
+   "scene": 6,
+   "at": 78.4,
+   "text": "Al alimentarse, conserva las células urticantes de su presa y las almacena en las puntas de sus ceratas. Reutiliza una defensa que pertenecía a otro organismo.",
+   "highlight": [
+    "células urticantes",
+    "ceratas"
+   ]
+  },
+  {
+   "id": "d071",
+   "scene": 7,
+   "at": 90.4,
+   "text": "Su tamaño engaña. Aunque parece delicado, tocarlo puede causar una picadura dolorosa.",
+   "highlight": [
+    "picadura dolorosa"
+   ]
+  },
+  {
+   "id": "d072",
+   "scene": 7,
+   "at": 96.4,
+   "text": "Si encuentras uno en la playa, lo más seguro es observarlo sin tocarlo.",
+   "highlight": [
+    "sin tocarlo"
+   ]
+  },
+  {
+   "id": "d081",
+   "scene": 8,
+   "at": 105.4,
+   "text": "El dragón azul vive a merced del viento y las corrientes.",
+   "highlight": [
+    "viento",
+    "corrientes"
+   ]
+  },
+  {
+   "id": "d082",
+   "scene": 8,
+   "at": 109.4,
+   "text": "Puede recorrer grandes distancias flotando, junto a otros organismos de la superficie, como carabelas y velelas.",
+   "highlight": [
+    "grandes distancias"
+   ]
+  },
+  {
+   "id": "d091",
+   "scene": 9,
+   "at": 120.4,
+   "text": "Esas estructuras que parecen alas no sirven para volar. Se llaman ceratas.",
+   "highlight": [
+    "ceratas"
+   ]
+  },
+  {
+   "id": "d092",
+   "scene": 9,
+   "at": 125.4,
+   "text": "Dentro tienen ramificaciones de su sistema digestivo, y en sus puntas guarda las defensas urticantes.",
+   "highlight": [
+    "sistema digestivo",
+    "puntas"
+   ]
+  },
+  {
+   "id": "d101",
+   "scene": 10,
+   "at": 135.4,
+   "text": "Como otros nudibranquios, es hermafrodita: cada individuo tiene órganos masculinos y femeninos.",
+   "highlight": [
+    "hermafrodita"
+   ]
+  },
+  {
+   "id": "d102",
+   "scene": 10,
+   "at": 142.4,
+   "text": "Aun así, necesita aparearse con otro para reproducirse, y después pone cadenas de huevos.",
+   "highlight": [
+    "aparearse",
+    "huevos"
+   ]
+  },
+  {
+   "id": "d111",
+   "scene": 11,
+   "at": 150.4,
+   "text": "En el océano, la belleza no siempre significa fragilidad.",
+   "highlight": [
+    "fragilidad"
+   ]
+  },
+  {
+   "id": "d112",
+   "scene": 11,
+   "at": 154.2,
+   "text": "Este pequeño molusco combina camuflaje, flotación y defensas prestadas: soluciones de la evolución que parecen imposibles.",
+   "highlight": [
+    "defensas prestadas",
+    "evolución"
+   ]
+  },
+  {
+   "id": "d121",
+   "scene": 12,
+   "at": 164.8,
+   "text": "Un dragón diminuto, azul como el océano y armado con las defensas de sus presas.",
+   "highlight": [
+    "dragón diminuto"
+   ]
+  },
+  {
+   "id": "d122",
+   "scene": 12,
+   "at": 170.5,
+   "text": "La naturaleza sigue superando a la fantasía.",
+   "highlight": [
+    "naturaleza"
+   ]
+  },
+  {
+   "id": "d123",
+   "scene": 12,
+   "at": 173.4,
+   "text": "¿Te atreverías a acercarte? Cuéntanos en los comentarios.",
+   "highlight": [
+    "acercarte",
+    "comentarios"
+   ]
+  },
+  {
+   "id": "d124",
+   "scene": 12,
+   "at": 177.1,
+   "text": "Mundo Insólito Documentales.",
+   "highlight": [
+    "Mundo Insólito"
+   ]
+  }
+ ]
+}
