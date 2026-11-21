@@ -45,6 +45,10 @@ import {EP05V2_AUDIO} from './episodes/ep12-dragon-azul-v2/audio/SoundDesign';
 import {SharkSheet} from './episodes/ep13-tiburon-duende/character/SharkSheet';
 import {TiburonDuende, TiburonDuendeProps} from './episodes/ep13-tiburon-duende/TiburonDuende';
 import {GOBLIN_AUDIO} from './episodes/ep13-tiburon-duende/audio/SoundDesign';
+import {OarfishSheet} from './episodes/ep14-pez-remo/components/OarfishSheet';
+import {PezRemoDocumentary, PezRemoProps} from './episodes/ep14-pez-remo/Documentary';
+import {OARFISH_AUDIO} from './episodes/ep14-pez-remo/audio/SoundDesign';
+const oarfishDefaults: PezRemoProps = {quality: 'final', showSubtitles: true, audio: OARFISH_AUDIO};
 const goblinDefaults: TiburonDuendeProps = {quality: 'final', showSubtitles: true, audio: GOBLIN_AUDIO};
 const dragonV2Defaults: EP05V2Props = {quality: 'final', showSubtitles: true, audio: EP05V2_AUDIO};
 const dragonDefaults: EP05DragonProps = {quality: 'final', showSubtitles: true, audio: EP05_DRAGON_AUDIO};
@@ -149,6 +153,8 @@ export const RemotionRoot: React.FC = () => (
     <Composition id="CohetePruebaV2" component={CoheteVideoV2} durationInFrames={600} fps={30} width={1080} height={1920} defaultProps={{withAudio: true, offset: 5.7}} />
     <Composition id="EP04Leopardo" component={EP04Leopardo} durationInFrames={180 * 30} fps={30} width={1080} height={1920} defaultProps={leopardoDefaults} />
     <Composition id="EP04-MantisShrimp-Premium" component={EP04MantisShrimp} durationInFrames={180 * 30} fps={30} width={1080} height={1920} defaultProps={mantisDefaults} />
+    <Composition id="EP07PezRemo" component={PezRemoDocumentary} durationInFrames={180 * 30} fps={30} width={1080} height={1920} defaultProps={oarfishDefaults} />
+    <Composition id="PezRemoFicha" component={OarfishSheet} durationInFrames={300} fps={30} width={1080} height={1920} />
     <Composition id="TiburonDuende" component={TiburonDuende} durationInFrames={180 * 30} fps={30} width={1080} height={1920} defaultProps={goblinDefaults} />
     <Composition id="TiburonDuendeFicha" component={SharkSheet} durationInFrames={300} fps={30} width={1080} height={1920} />
     <Composition id="EP05DragonAzulV2" component={EP05DragonAzulV2} durationInFrames={180 * 30} fps={30} width={1080} height={1920} defaultProps={dragonV2Defaults} />

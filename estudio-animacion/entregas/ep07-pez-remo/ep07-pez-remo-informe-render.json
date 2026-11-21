@@ -1,0 +1,71 @@
+{
+  "composition": "EP07PezRemo",
+  "quality": "final",
+  "scale": 1,
+  "crf": "20",
+  "concurrency": 4,
+  "segmentSeconds": 30,
+  "segments": [
+    {
+      "start": 0,
+      "end": 899,
+      "secs": 235.2,
+      "peakMB": 3812
+    },
+    {
+      "start": 900,
+      "end": 1799,
+      "secs": 204.4,
+      "peakMB": 3437
+    },
+    {
+      "start": 1800,
+      "end": 2699,
+      "secs": 189,
+      "peakMB": 3488
+    },
+    {
+      "start": 2700,
+      "end": 3599,
+      "secs": 104.8,
+      "peakMB": 3361
+    },
+    {
+      "start": 3600,
+      "end": 4499,
+      "secs": 195,
+      "peakMB": 3475
+    },
+    {
+      "start": 4500,
+      "end": 5399,
+      "secs": 245.6,
+      "peakMB": 3765
+    }
+  ],
+  "startedAt": "2026-11-21T20:12:40.419Z",
+  "audio": {
+    "secs": 252.8,
+    "peakMB": 2793
+  },
+  "loudness": {
+    "inputLUFS": -17.17,
+    "inputTruePeak": -2.03,
+    "targetLUFS": -14
+  },
+  "wallSecondsThisRun": 1443.1,
+  "totalSeconds": 1426.8,
+  "peakRssMB": 3812,
+  "output": {
+    "file": "out/ep07-pez-remo-final.mp4",
+    "sizeMB": 34.57,
+    "width": 1080,
+    "height": 1920,
+    "fps": "30/1",
+    "videoFrames": 5400,
+    "durationSec": 180,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "framesOk": true
+}
