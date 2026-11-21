@@ -42,6 +42,10 @@ import {EP05DragonAzul, EP05DragonProps} from './episodes/ep11-dragon-azul/EP05D
 import {EP05_DRAGON_AUDIO} from './episodes/ep11-dragon-azul/audio/SoundDesign';
 import {EP05DragonAzulV2, EP05V2Props} from './episodes/ep12-dragon-azul-v2/EP05DragonAzulV2';
 import {EP05V2_AUDIO} from './episodes/ep12-dragon-azul-v2/audio/SoundDesign';
+import {SharkSheet} from './episodes/ep13-tiburon-duende/character/SharkSheet';
+import {TiburonDuende, TiburonDuendeProps} from './episodes/ep13-tiburon-duende/TiburonDuende';
+import {GOBLIN_AUDIO} from './episodes/ep13-tiburon-duende/audio/SoundDesign';
+const goblinDefaults: TiburonDuendeProps = {quality: 'final', showSubtitles: true, audio: GOBLIN_AUDIO};
 const dragonV2Defaults: EP05V2Props = {quality: 'final', showSubtitles: true, audio: EP05V2_AUDIO};
 const dragonDefaults: EP05DragonProps = {quality: 'final', showSubtitles: true, audio: EP05_DRAGON_AUDIO};
 const mantisDefaults: EP04MantisProps = {quality: 'final', showSubtitles: true, audio: EP04_MANTIS_AUDIO};
@@ -145,6 +149,8 @@ export const RemotionRoot: React.FC = () => (
     <Composition id="CohetePruebaV2" component={CoheteVideoV2} durationInFrames={600} fps={30} width={1080} height={1920} defaultProps={{withAudio: true, offset: 5.7}} />
     <Composition id="EP04Leopardo" component={EP04Leopardo} durationInFrames={180 * 30} fps={30} width={1080} height={1920} defaultProps={leopardoDefaults} />
     <Composition id="EP04-MantisShrimp-Premium" component={EP04MantisShrimp} durationInFrames={180 * 30} fps={30} width={1080} height={1920} defaultProps={mantisDefaults} />
+    <Composition id="TiburonDuende" component={TiburonDuende} durationInFrames={180 * 30} fps={30} width={1080} height={1920} defaultProps={goblinDefaults} />
+    <Composition id="TiburonDuendeFicha" component={SharkSheet} durationInFrames={300} fps={30} width={1080} height={1920} />
     <Composition id="EP05DragonAzulV2" component={EP05DragonAzulV2} durationInFrames={180 * 30} fps={30} width={1080} height={1920} defaultProps={dragonV2Defaults} />
     <Composition id="EP05DragonAzul" component={EP05DragonAzul} durationInFrames={180 * 30} fps={30} width={1080} height={1920} defaultProps={dragonDefaults} />
     <Composition id="EP05DragonAzulFicha" component={DragonSheet} durationInFrames={300} fps={30} width={1080} height={1920} />

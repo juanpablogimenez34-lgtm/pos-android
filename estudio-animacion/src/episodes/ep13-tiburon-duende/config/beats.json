@@ -1,0 +1,224 @@
+{
+ "duration": 180,
+ "hook": {
+  "action": [
+   0,
+   1
+  ],
+  "question": [
+   1,
+   3
+  ],
+  "promise": [
+   2.6,
+   5.0
+  ]
+ },
+ "segments": [
+  [
+   0,
+   8
+  ],
+  [
+   8,
+   22
+  ],
+  [
+   22,
+   38
+  ],
+  [
+   38,
+   54
+  ],
+  [
+   54,
+   70
+  ],
+  [
+   70,
+   88
+  ],
+  [
+   88,
+   104
+  ],
+  [
+   104,
+   120
+  ],
+  [
+   120,
+   136
+  ],
+  [
+   136,
+   152
+  ],
+  [
+   152,
+   168
+  ],
+  [
+   168,
+   180
+  ]
+ ],
+ "beats": [
+  {
+   "t": 0,
+   "kind": "action",
+   "note": "ojo en la oscuridad y proyección de mandíbula"
+  },
+  {
+   "t": 2.6,
+   "kind": "perspective",
+   "note": "silueta completa en la oscuridad"
+  },
+  {
+   "t": 8.6,
+   "kind": "transition",
+   "note": "descenso desde aguas iluminadas"
+  },
+  {
+   "t": 15,
+   "kind": "scale",
+   "note": "escala de profundidad"
+  },
+  {
+   "t": 19.5,
+   "kind": "discovery",
+   "note": "silueta lejana del tiburón"
+  },
+  {
+   "t": 22.5,
+   "kind": "action",
+   "note": "entra desde la oscuridad, rodeo con parallax"
+  },
+  {
+   "t": 29,
+   "kind": "anatomy",
+   "note": "primer plano del hocico"
+  },
+  {
+   "t": 33.5,
+   "kind": "anatomy",
+   "note": "dientes finos"
+  },
+  {
+   "t": 38.5,
+   "kind": "anatomy",
+   "note": "poros del hocico: ampollas de Lorenzini"
+  },
+  {
+   "t": 44,
+   "kind": "science",
+   "note": "visualización del campo eléctrico de una presa"
+  },
+  {
+   "t": 54.5,
+   "kind": "action",
+   "note": "persecución: plano lateral"
+  },
+  {
+   "t": 58,
+   "kind": "perspective",
+   "note": "plano de la presa"
+  },
+  {
+   "t": 61,
+   "kind": "perspective",
+   "note": "primer plano del tiburón"
+  },
+  {
+   "t": 64,
+   "kind": "perspective",
+   "note": "plano bajo de ambos"
+  },
+  {
+   "t": 67,
+   "kind": "action",
+   "note": "la boca empieza a abrirse"
+  },
+  {
+   "t": 74.6,
+   "kind": "action",
+   "note": "ataque a velocidad real"
+  },
+  {
+   "t": 78.4,
+   "kind": "science",
+   "note": "repetición a cámara lenta"
+  },
+  {
+   "t": 84.4,
+   "kind": "anatomy",
+   "note": "vista lateral anatómica"
+  },
+  {
+   "t": 88.6,
+   "kind": "science",
+   "note": "ilustración del mecanismo paso a paso"
+  },
+  {
+   "t": 96,
+   "kind": "science",
+   "note": "proyección y retorno de las mandíbulas"
+  },
+  {
+   "t": 104.5,
+   "kind": "perspective",
+   "note": "cazador en la oscuridad con peces, cefalópodos y crustáceos"
+  },
+  {
+   "t": 112,
+   "kind": "action",
+   "note": "paso cercano del tiburón"
+  },
+  {
+   "t": 120.5,
+   "kind": "anatomy",
+   "note": "primer plano de los dientes"
+  },
+  {
+   "t": 125,
+   "kind": "scale",
+   "note": "la cámara retrocede"
+  },
+  {
+   "t": 130,
+   "kind": "comparison",
+   "note": "comparación de tamaño con una persona"
+  },
+  {
+   "t": 136.5,
+   "kind": "science",
+   "note": "línea temporal del linaje"
+  },
+  {
+   "t": 145,
+   "kind": "comparison",
+   "note": "siluetas de parientes antiguos"
+  },
+  {
+   "t": 152.5,
+   "kind": "action",
+   "note": "nada hacia la oscuridad"
+  },
+  {
+   "t": 160,
+   "kind": "discovery",
+   "note": "luz lejana"
+  },
+  {
+   "t": 168.5,
+   "kind": "perspective",
+   "note": "se aleja y desaparece"
+  },
+  {
+   "t": 174.6,
+   "kind": "transition",
+   "note": "logotipo y lema"
+  }
+ ]
+}

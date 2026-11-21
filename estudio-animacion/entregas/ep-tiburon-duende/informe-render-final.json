@@ -1,0 +1,71 @@
+{
+  "composition": "TiburonDuende",
+  "quality": "final",
+  "scale": 1,
+  "crf": "20",
+  "concurrency": 4,
+  "segmentSeconds": 30,
+  "segments": [
+    {
+      "start": 0,
+      "end": 899,
+      "secs": 157.1,
+      "peakMB": 3495
+    },
+    {
+      "start": 900,
+      "end": 1799,
+      "secs": 140.4,
+      "peakMB": 3542
+    },
+    {
+      "start": 1800,
+      "end": 2699,
+      "secs": 139.3,
+      "peakMB": 3232
+    },
+    {
+      "start": 2700,
+      "end": 3599,
+      "secs": 120,
+      "peakMB": 3220
+    },
+    {
+      "start": 3600,
+      "end": 4499,
+      "secs": 137.6,
+      "peakMB": 3427
+    },
+    {
+      "start": 4500,
+      "end": 5399,
+      "secs": 134.6,
+      "peakMB": 3328
+    }
+  ],
+  "startedAt": "2026-11-21T19:42:03.839Z",
+  "audio": {
+    "secs": 165.6,
+    "peakMB": 2222
+  },
+  "loudness": {
+    "inputLUFS": -17.19,
+    "inputTruePeak": -1.02,
+    "targetLUFS": -14
+  },
+  "wallSecondsThisRun": 1011.9,
+  "totalSeconds": 994.6,
+  "peakRssMB": 3542,
+  "output": {
+    "file": "out/ep-tiburon-duende-final-1080x1920.mp4",
+    "sizeMB": 29.63,
+    "width": 1080,
+    "height": 1920,
+    "fps": "30/1",
+    "videoFrames": 5400,
+    "durationSec": 180,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "framesOk": true
+}
