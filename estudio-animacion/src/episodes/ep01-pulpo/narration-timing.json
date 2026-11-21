@@ -1,0 +1,488 @@
+{
+ "voice": {
+  "engine": "piper",
+  "model": "es_MX-claude-high",
+  "lengthScale": 1.06,
+  "noiseScale": 0.6,
+  "noiseW": 0.5
+ },
+ "lines": 36,
+ "speechSeconds": 145.13,
+ "coverage": 0.806,
+ "problems": [],
+ "timing": [
+  {
+   "id": "s1a",
+   "scene": 1,
+   "at": 1.0,
+   "text": "En las profundidades del océano vive una criatura extraordinaria.",
+   "highlight": [
+    "extraordinaria"
+   ],
+   "drift": 0.0,
+   "start": 1.0,
+   "end": 4.987,
+   "duration": 3.987
+  },
+  {
+   "id": "s1b",
+   "scene": 1,
+   "at": 5.6,
+   "text": "Tiene ocho brazos, una inteligencia sorprendente, y algo que parece imposible: tres corazones.",
+   "highlight": [
+    "ocho brazos",
+    "tres corazones"
+   ],
+   "drift": 0.0,
+   "start": 5.6,
+   "end": 12.42,
+   "duration": 6.82
+  },
+  {
+   "id": "s1c",
+   "scene": 1,
+   "at": 12.6,
+   "text": "Es el pulpo común.",
+   "highlight": [
+    "pulpo común"
+   ],
+   "drift": 0.07,
+   "start": 12.67,
+   "end": 14.039,
+   "duration": 1.369
+  },
+  {
+   "id": "s1d",
+   "scene": 1,
+   "at": 15.6,
+   "text": "Pero lo más extraño ocurre cuando empieza a nadar.",
+   "highlight": [
+    "nadar"
+   ],
+   "drift": 0.0,
+   "start": 15.6,
+   "end": 18.755,
+   "duration": 3.155
+  },
+  {
+   "id": "s2a",
+   "scene": 2,
+   "at": 20.6,
+   "text": "Para entender este misterio, hay que mirar en su interior.",
+   "highlight": [
+    "interior"
+   ],
+   "drift": 0.0,
+   "start": 20.6,
+   "end": 24.062,
+   "duration": 3.462
+  },
+  {
+   "id": "s2b",
+   "scene": 2,
+   "at": 25.0,
+   "text": "Bajo su manto, se esconde un sistema circulatorio único.",
+   "highlight": [
+    "sistema circulatorio"
+   ],
+   "drift": 0.0,
+   "start": 25.0,
+   "end": 28.989,
+   "duration": 3.989
+  },
+  {
+   "id": "s2c",
+   "scene": 2,
+   "at": 29.6,
+   "text": "Dos de sus corazones, los branquiales, bombean la sangre hacia las branquias, donde se oxigena.",
+   "highlight": [
+    "branquiales",
+    "branquias"
+   ],
+   "drift": 0.0,
+   "start": 29.6,
+   "end": 36.487,
+   "duration": 6.887
+  },
+  {
+   "id": "s2d",
+   "scene": 2,
+   "at": 37.1,
+   "text": "El tercero, el sistémico, la reparte por todo el cuerpo.",
+   "highlight": [
+    "sistémico"
+   ],
+   "drift": 0.0,
+   "start": 37.1,
+   "end": 41.189,
+   "duration": 4.089
+  },
+  {
+   "id": "s2e",
+   "scene": 2,
+   "at": 41.2,
+   "text": "Y su sangre es azul: usa hemocianina, una proteína con cobre.",
+   "highlight": [
+    "azul",
+    "hemocianina",
+    "cobre"
+   ],
+   "lengthScale": 0.98,
+   "drift": 0.239,
+   "start": 41.439,
+   "end": 45.714,
+   "duration": 4.275
+  },
+  {
+   "id": "s3a",
+   "scene": 3,
+   "at": 46.6,
+   "text": "Cuando se desplaza por el fondo, utiliza sus ocho brazos.",
+   "highlight": [
+    "ocho brazos"
+   ],
+   "drift": 0.0,
+   "start": 46.6,
+   "end": 50.097,
+   "duration": 3.497
+  },
+  {
+   "id": "s3b",
+   "scene": 3,
+   "at": 51.4,
+   "text": "Pero si necesita velocidad, cambia de estrategia.",
+   "highlight": [
+    "velocidad"
+   ],
+   "drift": 0.0,
+   "start": 51.4,
+   "end": 54.959,
+   "duration": 3.559
+  },
+  {
+   "id": "s3c",
+   "scene": 3,
+   "at": 56.4,
+   "text": "Llena su manto de agua, la expulsa con fuerza por el sifón, y se impulsa hacia atrás.",
+   "highlight": [
+    "sifón"
+   ],
+   "drift": 0.0,
+   "start": 56.4,
+   "end": 62.014,
+   "duration": 5.614
+  },
+  {
+   "id": "s3d",
+   "scene": 3,
+   "at": 63.4,
+   "text": "Durante la natación, la actividad de su corazón sistémico puede detenerse temporalmente.",
+   "highlight": [
+    "detenerse"
+   ],
+   "drift": 0.0,
+   "start": 63.4,
+   "end": 68.736,
+   "duration": 5.336
+  },
+  {
+   "id": "s3e",
+   "scene": 3,
+   "at": 69.2,
+   "text": "Por eso, nadar le resulta agotador.",
+   "highlight": [
+    "agotador"
+   ],
+   "drift": 0.0,
+   "start": 69.2,
+   "end": 71.778,
+   "duration": 2.578
+  },
+  {
+   "id": "s4a",
+   "scene": 4,
+   "at": 72.4,
+   "text": "Su piel esconde otro poder extraordinario.",
+   "highlight": [
+    "piel"
+   ],
+   "drift": 0.0,
+   "start": 72.4,
+   "end": 74.986,
+   "duration": 2.586
+  },
+  {
+   "id": "s4b",
+   "scene": 4,
+   "at": 76.6,
+   "text": "Miles de células de pigmento, los cromatóforos, se expanden o se contraen en fracciones de segundo.",
+   "highlight": [
+    "cromatóforos"
+   ],
+   "drift": 0.0,
+   "start": 76.6,
+   "end": 82.802,
+   "duration": 6.202
+  },
+  {
+   "id": "s4c",
+   "scene": 4,
+   "at": 84.0,
+   "text": "Cambia de color, modifica sus patrones, y levanta pequeñas papilas que alteran su textura.",
+   "highlight": [
+    "papilas"
+   ],
+   "drift": 0.0,
+   "start": 84.0,
+   "end": 90.218,
+   "duration": 6.218
+  },
+  {
+   "id": "s4d",
+   "scene": 4,
+   "at": 90.7,
+   "text": "Así se confunde con las rocas, y desaparece ante los ojos de sus enemigos.",
+   "highlight": [
+    "desaparece"
+   ],
+   "drift": 0.0,
+   "start": 90.7,
+   "end": 95.447,
+   "duration": 4.747
+  },
+  {
+   "id": "s5a",
+   "scene": 5,
+   "at": 96.0,
+   "text": "Pero incluso este maestro del camuflaje tiene enemigos.",
+   "highlight": [
+    "enemigos"
+   ],
+   "drift": 0.0,
+   "start": 96.0,
+   "end": 99.431,
+   "duration": 3.431
+  },
+  {
+   "id": "s5b",
+   "scene": 5,
+   "at": 99.8,
+   "text": "Las morenas buscan alimento entre las grietas del arrecife.",
+   "highlight": [
+    "morenas"
+   ],
+   "drift": 0.0,
+   "start": 99.8,
+   "end": 103.237,
+   "duration": 3.437
+  },
+  {
+   "id": "s5c",
+   "scene": 5,
+   "at": 104.0,
+   "text": "El pulpo percibe el peligro.",
+   "highlight": [
+    "peligro"
+   ],
+   "drift": 0.0,
+   "start": 104.0,
+   "end": 106.284,
+   "duration": 2.284
+  },
+  {
+   "id": "s5d",
+   "scene": 5,
+   "at": 107.2,
+   "text": "Cuando el depredador se acerca demasiado, libera una nube de tinta que dificulta su detección.",
+   "highlight": [
+    "tinta"
+   ],
+   "drift": 0.0,
+   "start": 107.2,
+   "end": 113.117,
+   "duration": 5.917
+  },
+  {
+   "id": "s5e",
+   "scene": 5,
+   "at": 113.6,
+   "text": "Mientras su enemigo pierde de vista el objetivo, el pulpo aprovecha para escapar.",
+   "highlight": [
+    "escapar"
+   ],
+   "drift": 0.0,
+   "start": 113.6,
+   "end": 118.667,
+   "duration": 5.067
+  },
+  {
+   "id": "s6a",
+   "scene": 6,
+   "at": 120.6,
+   "text": "Los brazos del pulpo son mucho más que extremidades.",
+   "highlight": [
+    "brazos"
+   ],
+   "drift": 0.0,
+   "start": 120.6,
+   "end": 123.936,
+   "duration": 3.336
+  },
+  {
+   "id": "s6b",
+   "scene": 6,
+   "at": 124.5,
+   "text": "Sus ventosas sienten el tacto, y también detectan sustancias químicas.",
+   "highlight": [
+    "ventosas",
+    "sustancias químicas"
+   ],
+   "drift": 0.0,
+   "start": 124.5,
+   "end": 129.136,
+   "duration": 4.636
+  },
+  {
+   "id": "s6c",
+   "scene": 6,
+   "at": 129.2,
+   "text": "Con ellas puede sujetar, girar y examinar objetos, como esta concha.",
+   "highlight": [
+    "concha"
+   ],
+   "drift": 0.186,
+   "start": 129.386,
+   "end": 134.266,
+   "duration": 4.88
+  },
+  {
+   "id": "s6d",
+   "scene": 6,
+   "at": 135.2,
+   "text": "Cada brazo puede realizar un movimiento diferente, con una coordinación sorprendente.",
+   "highlight": [
+    "coordinación"
+   ],
+   "drift": 0.0,
+   "start": 135.2,
+   "end": 140.44,
+   "duration": 5.24
+  },
+  {
+   "id": "s6e",
+   "scene": 6,
+   "at": 142.2,
+   "text": "Tiene unos quinientos millones de neuronas, y cerca de dos tercios están en sus brazos.",
+   "highlight": [
+    "quinientos millones",
+    "dos tercios"
+   ],
+   "drift": 0.0,
+   "start": 142.2,
+   "end": 147.57,
+   "duration": 5.37
+  },
+  {
+   "id": "s7a",
+   "scene": 7,
+   "at": 150.6,
+   "text": "Al terminar su recorrido, regresa a su refugio.",
+   "highlight": [
+    "refugio"
+   ],
+   "drift": 0.0,
+   "start": 150.6,
+   "end": 153.747,
+   "duration": 3.147
+  },
+  {
+   "id": "s7b",
+   "scene": 7,
+   "at": 154.2,
+   "text": "Su vida es breve: el pulpo común suele vivir uno o dos años.",
+   "highlight": [
+    "uno o dos años"
+   ],
+   "drift": 0.0,
+   "start": 154.2,
+   "end": 158.469,
+   "duration": 4.269
+  },
+  {
+   "id": "s7c",
+   "scene": 7,
+   "at": 158.9,
+   "text": "Tres corazones.",
+   "highlight": [
+    "Tres corazones"
+   ],
+   "drift": 0.0,
+   "start": 158.9,
+   "end": 159.942,
+   "duration": 1.042
+  },
+  {
+   "id": "s7d",
+   "scene": 7,
+   "at": 160.6,
+   "text": "Sangre azul.",
+   "highlight": [
+    "Sangre azul"
+   ],
+   "drift": 0.0,
+   "start": 160.6,
+   "end": 161.669,
+   "duration": 1.069
+  },
+  {
+   "id": "s7e",
+   "scene": 7,
+   "at": 162.1,
+   "text": "Ocho brazos extraordinarios.",
+   "highlight": [
+    "Ocho brazos"
+   ],
+   "drift": 0.0,
+   "start": 162.1,
+   "end": 164.004,
+   "duration": 1.904
+  },
+  {
+   "id": "s7f",
+   "scene": 7,
+   "at": 165.4,
+   "text": "El pulpo demuestra que la naturaleza puede crear formas de vida realmente sorprendentes.",
+   "highlight": [
+    "sorprendentes"
+   ],
+   "drift": 0.0,
+   "start": 165.4,
+   "end": 170.568,
+   "duration": 5.168
+  },
+  {
+   "id": "s7g",
+   "scene": 7,
+   "at": 170.9,
+   "text": "Y mientras desaparece entre las rocas, queda una pregunta:",
+   "highlight": [],
+   "drift": 0.0,
+   "start": 170.9,
+   "end": 174.496,
+   "duration": 3.596
+  },
+  {
+   "id": "s7h",
+   "scene": 7,
+   "at": 174.8,
+   "text": "¿Qué otros secretos siguen escondidos bajo el océano?",
+   "highlight": [
+    "secretos"
+   ],
+   "drift": 0.0,
+   "start": 174.8,
+   "end": 177.772,
+   "duration": 2.972
+  }
+ ]
+}

@@ -1,0 +1,423 @@
+{
+ "voice": {
+  "engine": "piper",
+  "model": "es_MX-claude-high",
+  "lengthScale": 1.03,
+  "noiseScale": 0.62,
+  "noiseW": 0.5
+ },
+ "lines": 32,
+ "speechSeconds": 157.7,
+ "coverage": 0.876,
+ "problems": [],
+ "timing": [
+  {
+   "id": "a1",
+   "scene": 1,
+   "at": 0.8,
+   "text": "En los canales de Xochimilco, en México, vive una criatura extraordinaria.",
+   "highlight": [
+    "criatura extraordinaria"
+   ],
+   "drift": 0.0,
+   "start": 0.8,
+   "end": 6.297,
+   "duration": 5.497
+  },
+  {
+   "id": "a2",
+   "scene": 1,
+   "at": 5.8,
+   "text": "Parece conservar para siempre el aspecto juvenil de una salamandra.",
+   "highlight": [
+    "aspecto juvenil"
+   ],
+   "drift": 0.747,
+   "start": 6.547,
+   "end": 10.659,
+   "duration": 4.112
+  },
+  {
+   "id": "a3",
+   "scene": 1,
+   "at": 10.3,
+   "text": "Tiene branquias externas, una cola que le permite nadar",
+   "highlight": [
+    "branquias externas"
+   ],
+   "drift": 0.609,
+   "start": 10.909,
+   "end": 14.423,
+   "duration": 3.514
+  },
+  {
+   "id": "a4",
+   "scene": 1,
+   "at": 14.3,
+   "text": "y una capacidad biológica que ha fascinado a científicos de todo el mundo.",
+   "highlight": [
+    "científicos de todo el mundo"
+   ],
+   "drift": 0.373,
+   "start": 14.673,
+   "end": 19.54,
+   "duration": 4.867
+  },
+  {
+   "id": "b1",
+   "scene": 2,
+   "at": 20.6,
+   "text": "Este es el ajolote mexicano.",
+   "highlight": [
+    "ajolote mexicano"
+   ],
+   "drift": 0.0,
+   "start": 20.6,
+   "end": 22.651,
+   "duration": 2.051
+  },
+  {
+   "id": "b2",
+   "scene": 2,
+   "at": 23.1,
+   "text": "En estado silvestre suele ser oscuro; este ejemplar rosado es leucístico.",
+   "highlight": [
+    "leucístico"
+   ],
+   "drift": 0.0,
+   "start": 23.1,
+   "end": 28.036,
+   "duration": 4.936
+  },
+  {
+   "id": "b3",
+   "scene": 2,
+   "at": 29.1,
+   "text": "A diferencia de muchas salamandras, conserva rasgos juveniles de adulto: es la neotenia.",
+   "highlight": [
+    "neotenia"
+   ],
+   "drift": 0.0,
+   "start": 29.1,
+   "end": 35.344,
+   "duration": 6.244
+  },
+  {
+   "id": "b4",
+   "scene": 2,
+   "at": 35.6,
+   "text": "Respira con sus tres pares de branquias, y también a través de la piel y de sus pulmones.",
+   "highlight": [
+    "tres pares de branquias"
+   ],
+   "drift": 0.0,
+   "start": 35.6,
+   "end": 41.039,
+   "duration": 5.439
+  },
+  {
+   "id": "b5",
+   "scene": 2,
+   "at": 41.6,
+   "text": "Pero lo más sorprendente de este animal tiene que ver con la regeneración.",
+   "highlight": [
+    "regeneración"
+   ],
+   "drift": 0.0,
+   "start": 41.6,
+   "end": 45.88,
+   "duration": 4.28
+  },
+  {
+   "id": "c1",
+   "scene": 3,
+   "at": 46.2,
+   "text": "Explora el fondo en busca de pequeños animales y los atrapa por succión al abrir la boca.",
+   "highlight": [
+    "succión"
+   ],
+   "drift": 0.0,
+   "start": 46.2,
+   "end": 51.834,
+   "duration": 5.634
+  },
+  {
+   "id": "c2",
+   "scene": 3,
+   "at": 52.4,
+   "text": "En la naturaleza, los ajolotes pueden sufrir lesiones.",
+   "highlight": [],
+   "drift": 0.0,
+   "start": 52.4,
+   "end": 56.079,
+   "duration": 3.679
+  },
+  {
+   "id": "c3",
+   "scene": 3,
+   "at": 56.2,
+   "text": "Una extremidad puede resultar dañada o perderse.",
+   "highlight": [],
+   "drift": 0.129,
+   "start": 56.329,
+   "end": 59.47,
+   "duration": 3.141
+  },
+  {
+   "id": "c4",
+   "scene": 3,
+   "at": 59.8,
+   "text": "Para muchos vertebrados, una pérdida así tendría consecuencias permanentes.",
+   "highlight": [
+    "consecuencias permanentes"
+   ],
+   "drift": 0.0,
+   "start": 59.8,
+   "end": 64.612,
+   "duration": 4.812
+  },
+  {
+   "id": "c5",
+   "scene": 3,
+   "at": 64.8,
+   "text": "Pero el ajolote puede regenerar una extremidad completa.",
+   "highlight": [
+    "regenerar una extremidad completa"
+   ],
+   "drift": 0.062,
+   "start": 64.862,
+   "end": 68.629,
+   "duration": 3.767
+  },
+  {
+   "id": "d1",
+   "scene": 4,
+   "at": 70.4,
+   "text": "Tras la lesión, en cuestión de horas, células de la piel migran y cubren la herida.",
+   "highlight": [
+    "cubren la herida"
+   ],
+   "drift": 0.0,
+   "start": 70.4,
+   "end": 75.28,
+   "duration": 4.88
+  },
+  {
+   "id": "d2",
+   "scene": 4,
+   "at": 76.6,
+   "text": "Se forma el epitelio de la herida y comienza una compleja comunicación entre tejidos.",
+   "highlight": [
+    "epitelio de la herida"
+   ],
+   "drift": 0.0,
+   "start": 76.6,
+   "end": 82.651,
+   "duration": 6.051
+  },
+  {
+   "id": "d3",
+   "scene": 4,
+   "at": 82.2,
+   "text": "Debajo aparece el blastema: un grupo de células capaces de participar en la reconstrucción.",
+   "highlight": [
+    "blastema"
+   ],
+   "drift": 0.701,
+   "start": 82.901,
+   "end": 88.69,
+   "duration": 5.789
+  },
+  {
+   "id": "d4",
+   "scene": 4,
+   "at": 88.3,
+   "text": "Muchas conservan una memoria de su origen: las de cartílago tienden a formar cartílago.",
+   "highlight": [
+    "memoria de su origen"
+   ],
+   "drift": 0.64,
+   "start": 88.94,
+   "end": 94.583,
+   "duration": 5.643
+  },
+  {
+   "id": "e1",
+   "scene": 5,
+   "at": 95.0,
+   "text": "Estas células reciben señales que organizan el crecimiento de la nueva extremidad.",
+   "highlight": [
+    "señales"
+   ],
+   "drift": 0.0,
+   "start": 95.0,
+   "end": 99.841,
+   "duration": 4.841
+  },
+  {
+   "id": "e2",
+   "scene": 5,
+   "at": 100.2,
+   "text": "Con el paso de las semanas, la estructura crece y comienza a tomar forma.",
+   "highlight": [
+    "semanas"
+   ],
+   "drift": 0.0,
+   "start": 100.2,
+   "end": 105.275,
+   "duration": 5.075
+  },
+  {
+   "id": "e3",
+   "scene": 5,
+   "at": 105.0,
+   "text": "Los tejidos se organizan y, poco a poco, se desarrollan los dedos.",
+   "highlight": [
+    "los dedos"
+   ],
+   "drift": 0.525,
+   "start": 105.525,
+   "end": 109.521,
+   "duration": 3.996
+  },
+  {
+   "id": "e4",
+   "scene": 5,
+   "at": 111.4,
+   "text": "El proceso puede tardar semanas o meses, según las condiciones y el animal.",
+   "highlight": [
+    "semanas o meses"
+   ],
+   "drift": 0.0,
+   "start": 111.4,
+   "end": 116.428,
+   "duration": 5.028
+  },
+  {
+   "id": "e5",
+   "scene": 5,
+   "at": 116.4,
+   "text": "No ocurre de manera instantánea.",
+   "highlight": [
+    "No ocurre de manera instantánea"
+   ],
+   "drift": 0.278,
+   "start": 116.678,
+   "end": 118.735,
+   "duration": 2.057
+  },
+  {
+   "id": "f1",
+   "scene": 6,
+   "at": 120.8,
+   "text": "Los nervios son esenciales: sin una inervación suficiente, la regeneración no avanza.",
+   "highlight": [
+    "Los nervios"
+   ],
+   "drift": 0.0,
+   "start": 120.8,
+   "end": 126.851,
+   "duration": 6.051
+  },
+  {
+   "id": "f2",
+   "scene": 6,
+   "at": 126.6,
+   "text": "Los científicos estudian cómo coordina células, nervios y señales para reconstruir estructuras complejas.",
+   "highlight": [
+    "células, nervios y señales"
+   ],
+   "drift": 0.501,
+   "start": 127.101,
+   "end": 134.362,
+   "duration": 7.261
+  },
+  {
+   "id": "f3",
+   "scene": 6,
+   "at": 134.7,
+   "text": "La nueva pata tiene esqueleto, músculos y nervios, y normalmente no deja cicatriz visible.",
+   "highlight": [
+    "no deja cicatriz visible"
+   ],
+   "drift": 0.0,
+   "start": 134.7,
+   "end": 141.105,
+   "duration": 6.405
+  },
+  {
+   "id": "f4",
+   "scene": 6,
+   "at": 140.8,
+   "text": "Su capacidad ofrece pistas para comprender la reparación de tejidos.",
+   "highlight": [
+    "reparación de tejidos"
+   ],
+   "drift": 0.555,
+   "start": 141.355,
+   "end": 145.452,
+   "duration": 4.097
+  },
+  {
+   "id": "f5",
+   "scene": 6,
+   "at": 145.2,
+   "text": "Sin embargo, todavía no podemos reproducirla por completo en los seres humanos.",
+   "highlight": [
+    "todavía no"
+   ],
+   "drift": 0.502,
+   "start": 145.702,
+   "end": 150.963,
+   "duration": 5.261
+  },
+  {
+   "id": "g1",
+   "scene": 7,
+   "at": 150.6,
+   "text": "El ajolote puede reconstruir partes de su cuerpo de una manera que todavía intentamos comprender.",
+   "highlight": [],
+   "drift": 0.613,
+   "start": 151.213,
+   "end": 156.77,
+   "duration": 5.557
+  },
+  {
+   "id": "g2",
+   "scene": 7,
+   "at": 156.8,
+   "text": "Pero existe una paradoja: en su hábitat natural, la especie está en peligro crítico de extinción.",
+   "highlight": [
+    "peligro crítico de extinción"
+   ],
+   "drift": 0.22,
+   "start": 157.02,
+   "end": 163.363,
+   "duration": 6.343
+  },
+  {
+   "id": "g3",
+   "scene": 7,
+   "at": 165.4,
+   "text": "La urbanización, la contaminación del agua y los peces introducidos amenazan sus canales.",
+   "highlight": [],
+   "drift": 0.0,
+   "start": 165.4,
+   "end": 171.287,
+   "duration": 5.887
+  },
+  {
+   "id": "g4",
+   "scene": 7,
+   "at": 171.8,
+   "text": "Proteger sus ecosistemas es conservar una de las criaturas más extraordinarias del planeta.",
+   "highlight": [
+    "Proteger sus ecosistemas"
+   ],
+   "drift": 0.0,
+   "start": 171.8,
+   "end": 177.304,
+   "duration": 5.504
+  }
+ ]
+}

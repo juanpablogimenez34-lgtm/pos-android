@@ -1,0 +1,412 @@
+{
+ "voice": {
+  "engine": "piper",
+  "model": "es_MX-claude-high",
+  "lengthScale": 1.03,
+  "noiseScale": 0.62,
+  "noiseW": 0.5
+ },
+ "lines": 31,
+ "speechSeconds": 155.74,
+ "coverage": 0.865,
+ "problems": [],
+ "timing": [
+  {
+   "id": "a1",
+   "scene": 1,
+   "at": 0.8,
+   "text": "En una selva tropical, miles de pequeños animales trabajan cada día por sus colonias.",
+   "highlight": [
+    "por sus colonias"
+   ],
+   "drift": 0.0,
+   "start": 0.8,
+   "end": 6.338,
+   "duration": 5.538
+  },
+  {
+   "id": "a2",
+   "scene": 1,
+   "at": 7.2,
+   "text": "Entre ellos, las hormigas recorren ramas y hojas buscando alimento.",
+   "highlight": [],
+   "drift": 0.0,
+   "start": 7.2,
+   "end": 12.211,
+   "duration": 5.011
+  },
+  {
+   "id": "a3",
+   "scene": 1,
+   "at": 11.8,
+   "text": "Esta es una hormiga carpintera: Camponotus rufipes.",
+   "highlight": [
+    "Camponotus rufipes"
+   ],
+   "drift": 0.661,
+   "start": 12.461,
+   "end": 16.866,
+   "duration": 4.405
+  },
+  {
+   "id": "a4",
+   "scene": 1,
+   "at": 16.8,
+   "text": "Pero en este bosque existe un enemigo diminuto que puede alterar el comportamiento de algunas de ellas.",
+   "highlight": [
+    "enemigo diminuto"
+   ],
+   "drift": 0.316,
+   "start": 17.116,
+   "end": 23.037,
+   "duration": 5.921
+  },
+  {
+   "id": "b1",
+   "scene": 2,
+   "at": 23.4,
+   "text": "El peligro puede comenzar con una espora microscópica.",
+   "highlight": [
+    "espora microscópica"
+   ],
+   "drift": 0.0,
+   "start": 23.4,
+   "end": 26.688,
+   "duration": 3.288
+  },
+  {
+   "id": "b2",
+   "scene": 2,
+   "at": 27.4,
+   "text": "Algunos hongos del género Ophiocordyceps infectan especies concretas de hormigas.",
+   "highlight": [
+    "Ophiocordyceps"
+   ],
+   "drift": 0.0,
+   "start": 27.4,
+   "end": 32.117,
+   "duration": 4.717
+  },
+  {
+   "id": "b3",
+   "scene": 2,
+   "at": 33.0,
+   "text": "Esta hormiga es hospedadora de una de ellas, descrita en la Mata Atlántica de Brasil.",
+   "highlight": [
+    "Mata Atlántica"
+   ],
+   "drift": 0.0,
+   "start": 33.0,
+   "end": 38.678,
+   "duration": 5.678
+  },
+  {
+   "id": "b4",
+   "scene": 2,
+   "at": 39.2,
+   "text": "Si una espora se adhiere a la cutícula de un hospedador susceptible, puede germinar y atravesarla.",
+   "highlight": [
+    "atravesarla"
+   ],
+   "drift": 0.0,
+   "start": 39.2,
+   "end": 45.263,
+   "duration": 6.063
+  },
+  {
+   "id": "c1",
+   "scene": 3,
+   "at": 46.2,
+   "text": "Una vez dentro, comienza una infección que se desarrolla durante varios días.",
+   "highlight": [
+    "varios días"
+   ],
+   "drift": 0.0,
+   "start": 46.2,
+   "end": 51.111,
+   "duration": 4.911
+  },
+  {
+   "id": "c2",
+   "scene": 3,
+   "at": 51.6,
+   "text": "Al principio, la hormiga parece normal y sigue trabajando con su colonia.",
+   "highlight": [
+    "parece normal"
+   ],
+   "drift": 0.0,
+   "start": 51.6,
+   "end": 56.352,
+   "duration": 4.752
+  },
+  {
+   "id": "c3",
+   "scene": 3,
+   "at": 56.4,
+   "text": "El hongo crece dentro de su cuerpo y, con el tiempo, se extiende por diferentes tejidos.",
+   "highlight": [
+    "diferentes tejidos"
+   ],
+   "drift": 0.202,
+   "start": 56.602,
+   "end": 61.84,
+   "duration": 5.238
+  },
+  {
+   "id": "c4",
+   "scene": 3,
+   "at": 62.0,
+   "text": "En algunos estudios se observaron redes de células del hongo entre las fibras musculares.",
+   "highlight": [
+    "fibras musculares"
+   ],
+   "drift": 0.09,
+   "start": 62.09,
+   "end": 67.305,
+   "duration": 5.215
+  },
+  {
+   "id": "c5",
+   "scene": 3,
+   "at": 67.4,
+   "text": "Cómo afecta exactamente al comportamiento todavía no se comprende por completo.",
+   "highlight": [
+    "todavía no se comprende"
+   ],
+   "drift": 0.155,
+   "start": 67.555,
+   "end": 72.487,
+   "duration": 4.932
+  },
+  {
+   "id": "d1",
+   "scene": 4,
+   "at": 72.4,
+   "text": "En ciertas infecciones, el comportamiento de la hormiga cambia de forma extraordinaria.",
+   "highlight": [
+    "cambia"
+   ],
+   "drift": 0.337,
+   "start": 72.737,
+   "end": 77.996,
+   "duration": 5.259
+  },
+  {
+   "id": "d2",
+   "scene": 4,
+   "at": 77.8,
+   "text": "Puede abandonar sus rutas habituales y trepar por la vegetación.",
+   "highlight": [
+    "trepar"
+   ],
+   "drift": 0.446,
+   "start": 78.246,
+   "end": 82.359,
+   "duration": 4.113
+  },
+  {
+   "id": "d3",
+   "scene": 4,
+   "at": 82.2,
+   "text": "Su marcha se vuelve irregular, con pausas y pequeños tropiezos.",
+   "highlight": [
+    "irregular"
+   ],
+   "drift": 0.409,
+   "start": 82.609,
+   "end": 86.894,
+   "duration": 4.285
+  },
+  {
+   "id": "d4",
+   "scene": 4,
+   "at": 86.6,
+   "text": "Estos movimientos pueden llevarla a lugares cuya humedad y temperatura favorecen el desarrollo posterior del hongo.",
+   "highlight": [
+    "humedad y temperatura"
+   ],
+   "drift": 0.544,
+   "start": 87.144,
+   "end": 94.097,
+   "duration": 6.953
+  },
+  {
+   "id": "e1",
+   "scene": 5,
+   "at": 95.6,
+   "text": "En algunas de estas asociaciones, la hormiga termina fijándose a una hoja, a menudo por su envés, mediante sus mandíbulas.",
+   "highlight": [
+    "mediante sus mandíbulas"
+   ],
+   "drift": 0.0,
+   "start": 95.6,
+   "end": 104.283,
+   "duration": 8.683
+  },
+  {
+   "id": "e2",
+   "scene": 5,
+   "at": 104.0,
+   "text": "Sus mandíbulas quedan firmemente sujetas a la nervadura.",
+   "highlight": [
+    "nervadura"
+   ],
+   "drift": 0.533,
+   "start": 104.533,
+   "end": 108.026,
+   "duration": 3.493
+  },
+  {
+   "id": "e3",
+   "scene": 5,
+   "at": 108.2,
+   "text": "Después, la hormiga muere.",
+   "highlight": [],
+   "drift": 0.076,
+   "start": 108.276,
+   "end": 110.337,
+   "duration": 2.061
+  },
+  {
+   "id": "e4",
+   "scene": 5,
+   "at": 111.0,
+   "text": "Esa posición puede favorecer el crecimiento y la dispersión de las estructuras reproductivas del hongo.",
+   "highlight": [
+    "estructuras reproductivas"
+   ],
+   "drift": 0.0,
+   "start": 111.0,
+   "end": 117.393,
+   "duration": 6.393
+  },
+  {
+   "id": "f1",
+   "scene": 6,
+   "at": 121.0,
+   "text": "Días después, el hongo puede seguir desarrollándose.",
+   "highlight": [
+    "Días después"
+   ],
+   "drift": 0.0,
+   "start": 121.0,
+   "end": 124.43,
+   "duration": 3.43
+  },
+  {
+   "id": "f2",
+   "scene": 6,
+   "at": 125.0,
+   "text": "Primero, filamentos blancos salen por las articulaciones y pueden ayudar a sujetar el cuerpo a la hoja.",
+   "highlight": [
+    "filamentos blancos"
+   ],
+   "drift": 0.0,
+   "start": 125.0,
+   "end": 131.697,
+   "duration": 6.697
+  },
+  {
+   "id": "f3",
+   "scene": 6,
+   "at": 131.6,
+   "text": "Luego, un tallo emerge de la parte posterior de la cabeza y crece lentamente.",
+   "highlight": [
+    "un tallo"
+   ],
+   "drift": 0.347,
+   "start": 131.947,
+   "end": 137.392,
+   "duration": 5.445
+  },
+  {
+   "id": "f4",
+   "scene": 6,
+   "at": 137.0,
+   "text": "En uno de sus lados se forma una estructura donde se producen las esporas.",
+   "highlight": [
+    "se producen las esporas"
+   ],
+   "drift": 0.642,
+   "start": 137.642,
+   "end": 141.85,
+   "duration": 4.208
+  },
+  {
+   "id": "f5",
+   "scene": 6,
+   "at": 142.2,
+   "text": "Así el hongo puede generar y dispersar esporas, una parte fundamental de su ciclo de vida.",
+   "highlight": [
+    "ciclo de vida"
+   ],
+   "drift": 0.0,
+   "start": 142.2,
+   "end": 148.372,
+   "duration": 6.172
+  },
+  {
+   "id": "g1",
+   "scene": 7,
+   "at": 150.6,
+   "text": "Las esporas caen al ambiente, a menudo sobre el suelo que recorren otras hormigas.",
+   "highlight": [
+    "caen al ambiente"
+   ],
+   "drift": 0.0,
+   "start": 150.6,
+   "end": 155.476,
+   "duration": 4.876
+  },
+  {
+   "id": "g2",
+   "scene": 7,
+   "at": 156.2,
+   "text": "El ciclo puede comenzar de nuevo si encuentran un hospedador adecuado.",
+   "highlight": [],
+   "drift": 0.0,
+   "start": 156.2,
+   "end": 160.158,
+   "duration": 3.958
+  },
+  {
+   "id": "g3",
+   "scene": 7,
+   "at": 160.8,
+   "text": "Lo que parece ciencia ficción es una relación biológica real entre un hongo y un insecto.",
+   "highlight": [
+    "relación biológica real"
+   ],
+   "drift": 0.0,
+   "start": 160.8,
+   "end": 166.573,
+   "duration": 5.773
+  },
+  {
+   "id": "g4",
+   "scene": 7,
+   "at": 166.8,
+   "text": "La naturaleza está llena de estrategias extraordinarias, y muchas guardan secretos que la ciencia intenta descubrir.",
+   "highlight": [
+    "guardan secretos"
+   ],
+   "drift": 0.023,
+   "start": 166.823,
+   "end": 173.667,
+   "duration": 6.844
+  },
+  {
+   "id": "g5",
+   "scene": 7,
+   "at": 174.6,
+   "text": "¿Conocías este hongo?",
+   "highlight": [
+    "este hongo"
+   ],
+   "drift": 0.0,
+   "start": 174.6,
+   "end": 176.026,
+   "duration": 1.426
+  }
+ ]
+}

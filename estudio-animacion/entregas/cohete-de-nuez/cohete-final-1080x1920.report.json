@@ -1,0 +1,61 @@
+{
+  "composition": "CoheteVideo",
+  "quality": "final",
+  "scale": 1,
+  "crf": "20",
+  "concurrency": 4,
+  "segmentSeconds": 30,
+  "segments": [
+    {
+      "start": 0,
+      "end": 899,
+      "secs": 51.6,
+      "peakMB": 2848
+    },
+    {
+      "start": 900,
+      "end": 1799,
+      "secs": 73.8,
+      "peakMB": 3544
+    },
+    {
+      "start": 1800,
+      "end": 2699,
+      "secs": 69.1,
+      "peakMB": 2980
+    },
+    {
+      "start": 2700,
+      "end": 3599,
+      "secs": 80.4,
+      "peakMB": 3246
+    },
+    {
+      "start": 3600,
+      "end": 4277,
+      "secs": 53,
+      "peakMB": 2896
+    }
+  ],
+  "startedAt": "2026-11-19T14:34:02.982Z",
+  "audio": {
+    "source": "public/music/nuestro_cohete_de_nuez.mp3",
+    "filters": "ninguno",
+    "codec": "aac 256k"
+  },
+  "wallSecondsThisRun": 336.9,
+  "totalSeconds": 327.9,
+  "peakRssMB": 3544,
+  "output": {
+    "file": "out/cohete-final-1080x1920.mp4",
+    "sizeMB": 57.03,
+    "width": 1080,
+    "height": 1920,
+    "fps": "30/1",
+    "videoFrames": 4278,
+    "durationSec": 142.6,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "framesOk": true
+}

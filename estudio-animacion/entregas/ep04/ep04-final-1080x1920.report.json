@@ -1,0 +1,76 @@
+{
+  "composition": "Ep04Full",
+  "quality": "final",
+  "scale": 1,
+  "crf": "20",
+  "concurrency": 4,
+  "segmentSeconds": 30,
+  "segments": [
+    {
+      "start": 0,
+      "end": 899,
+      "secs": 77.8,
+      "peakMB": 2866,
+      "reused": true
+    },
+    {
+      "start": 900,
+      "end": 1799,
+      "secs": 88.3,
+      "peakMB": 2756,
+      "reused": true
+    },
+    {
+      "start": 1800,
+      "end": 2699,
+      "secs": 78.1,
+      "peakMB": 2804,
+      "reused": true
+    },
+    {
+      "start": 2700,
+      "end": 3599,
+      "secs": 194.8,
+      "peakMB": 3496,
+      "reused": true
+    },
+    {
+      "start": 3600,
+      "end": 4499,
+      "secs": 193.8,
+      "peakMB": 3375
+    },
+    {
+      "start": 4500,
+      "end": 5399,
+      "secs": 86.8,
+      "peakMB": 2904
+    }
+  ],
+  "startedAt": "2026-11-19T09:11:44.091Z",
+  "audio": {
+    "secs": 0,
+    "peakMB": 0,
+    "reused": true
+  },
+  "loudness": {
+    "inputLUFS": -16.23,
+    "inputTruePeak": -1.02,
+    "targetLUFS": -14
+  },
+  "wallSecondsThisRun": 298,
+  "totalSeconds": 719.6,
+  "peakRssMB": 3496,
+  "output": {
+    "file": "out/ep04-final-1080x1920.mp4",
+    "sizeMB": 58.33,
+    "width": 1080,
+    "height": 1920,
+    "fps": "30/1",
+    "videoFrames": 5400,
+    "durationSec": 180,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "framesOk": true
+}

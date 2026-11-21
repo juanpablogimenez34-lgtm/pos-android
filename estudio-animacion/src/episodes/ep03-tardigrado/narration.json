@@ -1,0 +1,317 @@
+{
+  "episode": "ep03",
+  "durationSec": 180,
+  "voice": {
+    "engine": "piper",
+    "model": "es_MX-claude-high",
+    "lengthScale": 1.04,
+    "noiseScale": 0.62,
+    "noiseW": 0.5
+  },
+  "lines": [
+    {
+      "id": "a1",
+      "scene": 1,
+      "at": 0.9,
+      "text": "Debajo de nuestros pies existe un mundo que casi nunca vemos.",
+      "highlight": [
+        "casi nunca vemos"
+      ]
+    },
+    {
+      "id": "a2",
+      "scene": 1,
+      "at": 5.4,
+      "text": "Entre gotas de agua y diminutas plantas, vive una criatura extraordinaria.",
+      "highlight": [
+        "criatura extraordinaria"
+      ]
+    },
+    {
+      "id": "a3",
+      "scene": 1,
+      "at": 10.4,
+      "text": "La mayoría mide menos de un milímetro.",
+      "highlight": [
+        "menos de un milímetro"
+      ]
+    },
+    {
+      "id": "a4",
+      "scene": 1,
+      "at": 13.6,
+      "text": "Para verla bien, necesitamos un microscopio. Pero esconde una capacidad que parece imposible.",
+      "highlight": [
+        "imposible"
+      ]
+    },
+    {
+      "id": "b1",
+      "scene": 2,
+      "at": 20.6,
+      "text": "Se llama tardígrado, aunque muchos lo conocen como oso de agua.",
+      "highlight": [
+        "tardígrado",
+        "oso de agua"
+      ]
+    },
+    {
+      "id": "b2",
+      "scene": 2,
+      "at": 25.0,
+      "text": "Su nombre significa caminante lento.",
+      "highlight": [
+        "caminante lento"
+      ]
+    },
+    {
+      "id": "b3",
+      "scene": 2,
+      "at": 28.2,
+      "text": "Tiene ocho patas cortas, terminadas en pequeñas garras, y un cuerpo que parece de otro planeta.",
+      "highlight": [
+        "ocho patas",
+        "garras"
+      ]
+    },
+    {
+      "id": "b4",
+      "scene": 2,
+      "at": 34.8,
+      "text": "Se conocen más de mil especies, que viven en musgos, suelos, lagos y océanos.",
+      "highlight": [
+        "más de mil especies"
+      ]
+    },
+    {
+      "id": "b5",
+      "scene": 2,
+      "at": 40.2,
+      "text": "Y algunas resisten condiciones que serían mortales para casi cualquier otro animal.",
+      "highlight": [
+        "algunas"
+      ]
+    },
+    {
+      "id": "c1",
+      "scene": 3,
+      "at": 45.8,
+      "text": "Pero el musgo no siempre está húmedo, y el tardígrado necesita agua para moverse.",
+      "highlight": [
+        "necesita agua"
+      ]
+    },
+    {
+      "id": "c2",
+      "scene": 3,
+      "at": 51.4,
+      "text": "Cuando el agua desaparece, algunas especies se preparan.",
+      "highlight": [
+        "algunas especies"
+      ]
+    },
+    {
+      "id": "c3",
+      "scene": 3,
+      "at": 55.4,
+      "text": "Retraen la cabeza y las patas, pierden casi toda el agua de su cuerpo, y forman un pequeño tonel.",
+      "highlight": [
+        "tonel"
+      ]
+    },
+    {
+      "id": "c4",
+      "scene": 3,
+      "at": 62.2,
+      "text": "Su metabolismo se reduce tanto, que apenas puede detectarse.",
+      "highlight": [
+        "apenas puede detectarse"
+      ]
+    },
+    {
+      "id": "c5",
+      "scene": 3,
+      "at": 66.2,
+      "text": "No está muerto: es un estado llamado criptobiosis.",
+      "highlight": [
+        "criptobiosis"
+      ]
+    },
+    {
+      "id": "d1",
+      "scene": 4,
+      "at": 70.6,
+      "text": "En este estado, algunos han soportado condiciones extremas en el laboratorio.",
+      "highlight": [
+        "en laboratorio"
+      ]
+    },
+    {
+      "id": "d2",
+      "scene": 4,
+      "at": 76.0,
+      "text": "Han resistido el frío del nitrógeno líquido: casi doscientos grados bajo cero.",
+      "highlight": [
+        "nitrógeno líquido"
+      ]
+    },
+    {
+      "id": "d3",
+      "scene": 4,
+      "at": 81.4,
+      "text": "En 2016, se reactivaron tardígrados de un musgo antártico congelado por más de treinta años.",
+      "highlight": [
+        "más de treinta años"
+      ]
+    },
+    {
+      "id": "d4",
+      "scene": 4,
+      "at": 88.6,
+      "text": "Frente al calor, su resistencia es breve y limitada.",
+      "highlight": [
+        "breve y limitada"
+      ]
+    },
+    {
+      "id": "d5",
+      "scene": 4,
+      "at": 92.8,
+      "text": "No son invencibles.",
+      "highlight": [
+        "No son invencibles"
+      ]
+    },
+    {
+      "id": "e1",
+      "scene": 5,
+      "at": 95.6,
+      "text": "En 2007, la misión FOTON-M3 llevó tardígrados deshidratados a la órbita.",
+      "highlight": [
+        "2007"
+      ]
+    },
+    {
+      "id": "e2",
+      "scene": 5,
+      "at": 101.4,
+      "text": "Durante diez días, quedaron expuestos al vacío, y algunos, también a la radiación solar.",
+      "highlight": [
+        "diez días"
+      ]
+    },
+    {
+      "id": "e3",
+      "scene": 5,
+      "at": 107.6,
+      "text": "Muchos de los expuestos solo al vacío se recuperaron al regresar.",
+      "highlight": [
+        "solo al vacío"
+      ]
+    },
+    {
+      "id": "e4",
+      "scene": 5,
+      "at": 112.2,
+      "text": "Pero la radiación ultravioleta redujo muchísimo su supervivencia.",
+      "highlight": [
+        "radiación ultravioleta"
+      ]
+    },
+    {
+      "id": "e5",
+      "scene": 5,
+      "at": 116.6,
+      "text": "Resistir el espacio no es vivir en él.",
+      "highlight": []
+    },
+    {
+      "id": "f1",
+      "scene": 6,
+      "at": 120.8,
+      "text": "¿Cómo lo logran? Parte de la respuesta está en sus células.",
+      "highlight": [
+        "células"
+      ]
+    },
+    {
+      "id": "f2",
+      "scene": 6,
+      "at": 124.8,
+      "text": "Al secarse, algunas especies producen proteínas que forman un gel protector.",
+      "highlight": [
+        "gel protector"
+      ]
+    },
+    {
+      "id": "f3",
+      "scene": 6,
+      "at": 130.6,
+      "text": "Otra, llamada Dsup, ayudó en experimentos a proteger el ADN de células humanas.",
+      "highlight": [
+        "Dsup"
+      ]
+    },
+    {
+      "id": "f4",
+      "scene": 6,
+      "at": 136.8,
+      "text": "No hay un único secreto: son varios mecanismos, y todavía se investigan.",
+      "highlight": [
+        "varios mecanismos"
+      ]
+    },
+    {
+      "id": "f5",
+      "scene": 6,
+      "at": 142.8,
+      "text": "Lo que aprendamos podría ayudar, algún día, a conservar medicamentos.",
+      "highlight": [
+        "podría"
+      ]
+    },
+    {
+      "id": "g1",
+      "scene": 7,
+      "at": 150.8,
+      "text": "Hasta que, un día, una gota de agua cae sobre el musgo seco.",
+      "highlight": [
+        "gota de agua"
+      ]
+    },
+    {
+      "id": "g2",
+      "scene": 7,
+      "at": 155.6,
+      "text": "Al rehidratarse, el tardígrado recupera poco a poco su forma.",
+      "highlight": [
+        "recupera"
+      ]
+    },
+    {
+      "id": "g3",
+      "scene": 7,
+      "at": 160.0,
+      "text": "En minutos u horas, sus patas vuelven a moverse.",
+      "highlight": []
+    },
+    {
+      "id": "g4",
+      "scene": 7,
+      "at": 164.0,
+      "text": "Una criatura microscópica nos demuestra que la vida puede resistir de formas extraordinarias.",
+      "highlight": [
+        "extraordinarias"
+      ]
+    },
+    {
+      "id": "g5",
+      "scene": 7,
+      "at": 170.0,
+      "text": "Y pensar que un mundo así se esconde en un poco de musgo.",
+      "highlight": [
+        "un poco de musgo"
+      ]
+    }
+  ]
+}

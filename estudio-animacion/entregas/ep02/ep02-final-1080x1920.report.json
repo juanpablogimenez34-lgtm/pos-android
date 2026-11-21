@@ -1,0 +1,72 @@
+{
+  "composition": "Ep02Full",
+  "quality": "final",
+  "scale": 1,
+  "crf": "20",
+  "concurrency": 4,
+  "segmentSeconds": 30,
+  "segments": [
+    {
+      "start": 0,
+      "end": 899,
+      "secs": 75.9,
+      "peakMB": 3762
+    },
+    {
+      "start": 900,
+      "end": 1799,
+      "secs": 85,
+      "peakMB": 3169
+    },
+    {
+      "start": 1800,
+      "end": 2699,
+      "secs": 84.4,
+      "peakMB": 3498
+    },
+    {
+      "start": 2700,
+      "end": 3599,
+      "secs": 79.5,
+      "peakMB": 3255
+    },
+    {
+      "start": 3600,
+      "end": 4499,
+      "secs": 76.7,
+      "peakMB": 3202
+    },
+    {
+      "start": 4500,
+      "end": 5399,
+      "secs": 85.4,
+      "peakMB": 3454
+    }
+  ],
+  "startedAt": "2026-11-18T22:04:36.610Z",
+  "audio": {
+    "secs": 0,
+    "peakMB": 0,
+    "reused": true
+  },
+  "loudness": {
+    "inputLUFS": -16.69,
+    "inputTruePeak": 0,
+    "targetLUFS": -14
+  },
+  "wallSecondsThisRun": 503.2,
+  "totalSeconds": 486.9,
+  "peakRssMB": 3762,
+  "output": {
+    "file": "out/ep02-final-1080x1920.mp4",
+    "sizeMB": 41.13,
+    "width": 1080,
+    "height": 1920,
+    "fps": "30/1",
+    "videoFrames": 5400,
+    "durationSec": 180,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "framesOk": true
+}
