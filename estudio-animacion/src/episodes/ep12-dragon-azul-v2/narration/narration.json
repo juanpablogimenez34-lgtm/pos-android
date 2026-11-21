@@ -1,0 +1,245 @@
+{
+ "episode": "ep05-dragon-azul-v2",
+ "durationSec": 180,
+ "voice": {
+  "engine": "piper",
+  "model": "es_MX-claude-high",
+  "lengthScale": 0.98,
+  "noiseScale": 0.67,
+  "noiseW": 0.6
+ },
+ "lines": [
+  {
+   "id": "v101",
+   "scene": 1,
+   "at": 0.6,
+   "text": "Se está comiendo a una carabela portuguesa.",
+   "highlight": [
+    "carabela portuguesa"
+   ]
+  },
+  {
+   "id": "v102",
+   "scene": 1,
+   "at": 3.0,
+   "text": "¿Y sus armas? Las guarda para él.",
+   "highlight": [
+    "las guarda"
+   ]
+  },
+  {
+   "id": "v201",
+   "scene": 2,
+   "at": 5.6,
+   "text": "Mide unos tres centímetros, poco más que una moneda.",
+   "highlight": [
+    "tres centímetros"
+   ]
+  },
+  {
+   "id": "v202",
+   "scene": 2,
+   "at": 9.6,
+   "text": "Vive flotando boca abajo en mar abierto y se alimenta de animales cuyo contacto quema.",
+   "highlight": [
+    "boca abajo",
+    "quema"
+   ]
+  },
+  {
+   "id": "v203",
+   "scene": 2,
+   "at": 15.8,
+   "text": "¿Cómo puede comérselos… y salir ganando?",
+   "highlight": [
+    "salir ganando"
+   ]
+  },
+  {
+   "id": "v301",
+   "scene": 3,
+   "at": 20.4,
+   "text": "Primera revelación: no es un dragón ni un pez. Es un nudibranquio, una babosa marina: Glaucus atlanticus.",
+   "highlight": [
+    "nudibranquio",
+    "babosa marina"
+   ]
+  },
+  {
+   "id": "v302",
+   "scene": 3,
+   "at": 28.4,
+   "text": "Traga una burbuja de aire y la guarda en el estómago. Gracias a ella, flota boca abajo, pegado a la superficie.",
+   "highlight": [
+    "burbuja de aire"
+   ]
+  },
+  {
+   "id": "v303",
+   "scene": 3,
+   "at": 37.0,
+   "text": "Y sus colores lo esconden: el pie azul mira al cielo y el dorso plateado, al fondo.",
+   "highlight": [
+    "azul",
+    "plateado"
+   ]
+  },
+  {
+   "id": "v401",
+   "scene": 4,
+   "at": 45.6,
+   "text": "Ahora, mira de cerca.",
+   "highlight": [
+    "mira de cerca"
+   ]
+  },
+  {
+   "id": "v402",
+   "scene": 4,
+   "at": 47.8,
+   "text": "Cuando encuentra una carabela, se acerca despacio y muerde sus tentáculos con mandíbulas pequeñas y duras.",
+   "highlight": [
+    "mandíbulas"
+   ]
+  },
+  {
+   "id": "v403",
+   "scene": 4,
+   "at": 55.6,
+   "text": "¿Por qué no lo detienen las picaduras? Aún no se sabe del todo. Se cree que su mucosa y sus tejidos lo protegen.",
+   "highlight": [
+    "se cree"
+   ]
+  },
+  {
+   "id": "v404",
+   "scene": 4,
+   "at": 64.4,
+   "text": "Lo que sí está comprobado es lo que hace después.",
+   "highlight": [
+    "comprobado"
+   ]
+  },
+  {
+   "id": "v501",
+   "scene": 5,
+   "at": 70.6,
+   "text": "Segunda sorpresa: no digiere todas las células urticantes.",
+   "highlight": [
+    "Segunda sorpresa"
+   ]
+  },
+  {
+   "id": "v502",
+   "scene": 5,
+   "at": 74.8,
+   "text": "Las deja intactas, sin disparar, y las transporta por su sistema digestivo hasta las puntas de sus ceratas.",
+   "highlight": [
+    "sin disparar",
+    "ceratas"
+   ]
+  },
+  {
+   "id": "v503",
+   "scene": 5,
+   "at": 83.0,
+   "text": "Allí las almacena en pequeños sacos llamados cnidosacos. Son armas prestadas, listas para defenderlo.",
+   "highlight": [
+    "cnidosacos",
+    "armas prestadas"
+   ]
+  },
+  {
+   "id": "v601",
+   "scene": 6,
+   "at": 95.6,
+   "text": "¿Cómo funcionan esas armas?",
+   "highlight": [
+    "armas"
+   ]
+  },
+  {
+   "id": "v602",
+   "scene": 6,
+   "at": 97.8,
+   "text": "Cada nematocisto es una cápsula con un filamento enrollado. Ante un estímulo, el filamento se dispara en una fracción de segundo e inyecta toxinas.",
+   "highlight": [
+    "nematocisto",
+    "se dispara"
+   ]
+  },
+  {
+   "id": "v603",
+   "scene": 6,
+   "at": 107.8,
+   "text": "Algunos estudios indican que el dragón azul acumula sobre todo los nematocistos más grandes, quizá los más eficaces.",
+   "highlight": [
+    "Algunos estudios"
+   ]
+  },
+  {
+   "id": "v701",
+   "scene": 7,
+   "at": 120.6,
+   "text": "Y ahora, un dato extraordinario.",
+   "highlight": [
+    "dato extraordinario"
+   ]
+  },
+  {
+   "id": "v702",
+   "scene": 7,
+   "at": 122.8,
+   "text": "Apenas puede nadar por sí mismo. Viaja con el viento, junto a carabelas y velelas: una flota azul a la deriva.",
+   "highlight": [
+    "flota azul"
+   ]
+  },
+  {
+   "id": "v703",
+   "scene": 7,
+   "at": 131.4,
+   "text": "Cuando el viento sopla hacia la costa, cientos de ellos pueden aparecer varados en la playa.",
+   "highlight": [
+    "varados"
+   ]
+  },
+  {
+   "id": "v801",
+   "scene": 8,
+   "at": 145.6,
+   "text": "Esta es la revelación final: su picadura no es suya.",
+   "highlight": [
+    "no es suya"
+   ]
+  },
+  {
+   "id": "v802",
+   "scene": 8,
+   "at": 149.8,
+   "text": "Es la de sus presas, reciclada. Por eso, aunque esté varado o parezca muerto, tocarlo puede causar una picadura dolorosa.",
+   "highlight": [
+    "reciclada",
+    "picadura dolorosa"
+   ]
+  },
+  {
+   "id": "v901",
+   "scene": 9,
+   "at": 165.6,
+   "text": "Un animal diminuto que convierte el arma de otro en su escudo.",
+   "highlight": [
+    "su escudo"
+   ]
+  },
+  {
+   "id": "v902",
+   "scene": 9,
+   "at": 170.6,
+   "text": "Si lo encontraras en la playa, ¿lo dejarías tranquilo o lo fotografiarías desde lejos? Cuéntanos.",
+   "highlight": [
+    "Cuéntanos"
+   ]
+  }
+ ]
+}

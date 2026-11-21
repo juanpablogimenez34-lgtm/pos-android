@@ -40,6 +40,9 @@ import {EP04_MANTIS_AUDIO} from './episodes/ep10-camaron-mantis/audio/SoundDesig
 import {DragonSheet} from './episodes/ep11-dragon-azul/character/DragonSheet';
 import {EP05DragonAzul, EP05DragonProps} from './episodes/ep11-dragon-azul/EP05DragonAzul';
 import {EP05_DRAGON_AUDIO} from './episodes/ep11-dragon-azul/audio/SoundDesign';
+import {EP05DragonAzulV2, EP05V2Props} from './episodes/ep12-dragon-azul-v2/EP05DragonAzulV2';
+import {EP05V2_AUDIO} from './episodes/ep12-dragon-azul-v2/audio/SoundDesign';
+const dragonV2Defaults: EP05V2Props = {quality: 'final', showSubtitles: true, audio: EP05V2_AUDIO};
 const dragonDefaults: EP05DragonProps = {quality: 'final', showSubtitles: true, audio: EP05_DRAGON_AUDIO};
 const mantisDefaults: EP04MantisProps = {quality: 'final', showSubtitles: true, audio: EP04_MANTIS_AUDIO};
 import {EP04Leopardo, EP04LeopardoProps} from './episodes/ep09-leopardo/EP04Leopardo';
@@ -142,6 +145,7 @@ export const RemotionRoot: React.FC = () => (
     <Composition id="CohetePruebaV2" component={CoheteVideoV2} durationInFrames={600} fps={30} width={1080} height={1920} defaultProps={{withAudio: true, offset: 5.7}} />
     <Composition id="EP04Leopardo" component={EP04Leopardo} durationInFrames={180 * 30} fps={30} width={1080} height={1920} defaultProps={leopardoDefaults} />
     <Composition id="EP04-MantisShrimp-Premium" component={EP04MantisShrimp} durationInFrames={180 * 30} fps={30} width={1080} height={1920} defaultProps={mantisDefaults} />
+    <Composition id="EP05DragonAzulV2" component={EP05DragonAzulV2} durationInFrames={180 * 30} fps={30} width={1080} height={1920} defaultProps={dragonV2Defaults} />
     <Composition id="EP05DragonAzul" component={EP05DragonAzul} durationInFrames={180 * 30} fps={30} width={1080} height={1920} defaultProps={dragonDefaults} />
     <Composition id="EP05DragonAzulFicha" component={DragonSheet} durationInFrames={300} fps={30} width={1080} height={1920} />
     <Composition id="EP04-MantisShrimp-Ficha" component={MantisSheet} durationInFrames={300} fps={30} width={1080} height={1920} />

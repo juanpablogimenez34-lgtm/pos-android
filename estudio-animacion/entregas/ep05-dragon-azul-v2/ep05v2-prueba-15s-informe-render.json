@@ -1,0 +1,41 @@
+{
+  "composition": "EP05DragonAzulV2",
+  "quality": "final",
+  "scale": 1,
+  "crf": "20",
+  "concurrency": 4,
+  "segmentSeconds": 15,
+  "segments": [
+    {
+      "start": 0,
+      "end": 449,
+      "secs": 130.9,
+      "peakMB": 4124
+    }
+  ],
+  "startedAt": "2026-11-21T15:03:15.420Z",
+  "audio": {
+    "secs": 286,
+    "peakMB": 3616
+  },
+  "loudness": {
+    "inputLUFS": -16.87,
+    "inputTruePeak": -2.13,
+    "targetLUFS": -14
+  },
+  "wallSecondsThisRun": 430.5,
+  "totalSeconds": 416.9,
+  "peakRssMB": 4124,
+  "output": {
+    "file": "out/ep05v2-prueba-15s-1080x1920.mp4",
+    "sizeMB": 11.02,
+    "width": 1080,
+    "height": 1920,
+    "fps": "30/1",
+    "videoFrames": 450,
+    "durationSec": 15.018667,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "framesOk": true
+}
