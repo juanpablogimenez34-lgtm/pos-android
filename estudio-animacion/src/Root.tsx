@@ -34,6 +34,10 @@ import {LobitoFichas} from './music-videos/baile-del-lobito/Characters/Fichas';
 import {Ep08Full, Ep08FullProps} from './episodes/ep08-medusa-inmortal/Ep08Full';
 import {EP08_DEFAULT_AUDIO} from './episodes/ep08-medusa-inmortal/Audio/sound';
 import {LeopardSheet} from './episodes/ep09-leopardo/characters/LeopardSheet';
+import {MantisSheet} from './episodes/ep10-camaron-mantis/characters/MantisSheet';
+import {EP04MantisProps, EP04MantisShrimp} from './episodes/ep10-camaron-mantis/EP04MantisShrimp';
+import {EP04_MANTIS_AUDIO} from './episodes/ep10-camaron-mantis/audio/SoundDesign';
+const mantisDefaults: EP04MantisProps = {quality: 'final', showSubtitles: true, audio: EP04_MANTIS_AUDIO};
 import {EP04Leopardo, EP04LeopardoProps} from './episodes/ep09-leopardo/EP04Leopardo';
 import {EP04_LEOPARDO_AUDIO} from './episodes/ep09-leopardo/audio/SoundDesign';
 const leopardoDefaults: EP04LeopardoProps = {quality: 'final', showSubtitles: true, audio: EP04_LEOPARDO_AUDIO};
@@ -133,6 +137,8 @@ export const RemotionRoot: React.FC = () => (
     <Composition id="CoheteVideoV2" component={CoheteVideoV2} durationInFrames={SONG_FRAMES} fps={30} width={1080} height={1920} defaultProps={{withAudio: true, offset: 0}} />
     <Composition id="CohetePruebaV2" component={CoheteVideoV2} durationInFrames={600} fps={30} width={1080} height={1920} defaultProps={{withAudio: true, offset: 5.7}} />
     <Composition id="EP04Leopardo" component={EP04Leopardo} durationInFrames={180 * 30} fps={30} width={1080} height={1920} defaultProps={leopardoDefaults} />
+    <Composition id="EP04-MantisShrimp-Premium" component={EP04MantisShrimp} durationInFrames={180 * 30} fps={30} width={1080} height={1920} defaultProps={mantisDefaults} />
+    <Composition id="EP04-MantisShrimp-Ficha" component={MantisSheet} durationInFrames={300} fps={30} width={1080} height={1920} />
     <Composition id="EP04LeopardoFicha" component={LeopardSheet} durationInFrames={300} fps={30} width={1080} height={1920} />
     <Composition id="Ep08Full" component={Ep08Full} durationInFrames={180 * 30} fps={30} width={1080} height={1920} defaultProps={ep08Defaults} />
     <Composition id="Ep08Demo" component={Ep08Full} durationInFrames={15 * 30} fps={30} width={1080} height={1920} defaultProps={ep08Defaults} />
