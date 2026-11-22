@@ -48,6 +48,8 @@ import {GOBLIN_AUDIO} from './episodes/ep13-tiburon-duende/audio/SoundDesign';
 import {OarfishSheet} from './episodes/ep14-pez-remo/components/OarfishSheet';
 import {PezRemoDocumentary, PezRemoProps} from './episodes/ep14-pez-remo/Documentary';
 import {OARFISH_AUDIO} from './episodes/ep14-pez-remo/audio/SoundDesign';
+import {OarfishDemo} from './episodes/ep15-pez-remo-personaje/demo/OarfishDemo';
+import {LayerSheet as OarfishLayerSheet} from './episodes/ep15-pez-remo-personaje/demo/LayerSheet';
 const oarfishDefaults: PezRemoProps = {quality: 'final', showSubtitles: true, audio: OARFISH_AUDIO};
 const goblinDefaults: TiburonDuendeProps = {quality: 'final', showSubtitles: true, audio: GOBLIN_AUDIO};
 const dragonV2Defaults: EP05V2Props = {quality: 'final', showSubtitles: true, audio: EP05V2_AUDIO};
@@ -153,6 +155,8 @@ export const RemotionRoot: React.FC = () => (
     <Composition id="CohetePruebaV2" component={CoheteVideoV2} durationInFrames={600} fps={30} width={1080} height={1920} defaultProps={{withAudio: true, offset: 5.7}} />
     <Composition id="EP04Leopardo" component={EP04Leopardo} durationInFrames={180 * 30} fps={30} width={1080} height={1920} defaultProps={leopardoDefaults} />
     <Composition id="EP04-MantisShrimp-Premium" component={EP04MantisShrimp} durationInFrames={180 * 30} fps={30} width={1080} height={1920} defaultProps={mantisDefaults} />
+    <Composition id="PezRemoPersonajeDemo" component={OarfishDemo} durationInFrames={240} fps={30} width={1080} height={1920} />
+    <Composition id="PezRemoPersonajeCapas" component={OarfishLayerSheet} durationInFrames={60} fps={30} width={1080} height={1920} />
     <Composition id="EP07PezRemo" component={PezRemoDocumentary} durationInFrames={180 * 30} fps={30} width={1080} height={1920} defaultProps={oarfishDefaults} />
     <Composition id="PezRemoFicha" component={OarfishSheet} durationInFrames={300} fps={30} width={1080} height={1920} />
     <Composition id="TiburonDuende" component={TiburonDuende} durationInFrames={180 * 30} fps={30} width={1080} height={1920} defaultProps={goblinDefaults} />
