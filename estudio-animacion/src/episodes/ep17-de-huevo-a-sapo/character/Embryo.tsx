@@ -6,6 +6,7 @@
 //    esbozo de cabeza y ojo → renacuajo enroscado que se contrae dentro de la cápsula.
 import React from 'react';
 import {clamp, hash1, lerp} from '../../../engine/math';
+import {closedSpline} from '../../../lifecycle/stages';
 import {SoftFilter} from '../../oarfish-cinematic-v2/character/filters';
 
 const f1 = (n: number) => (Number.isFinite(n) ? n : 0).toFixed(1);
@@ -54,7 +55,7 @@ export const EggString: React.FC<{pts: Pt[]; t: number; uid: string; width?: num
 };
 
 /** Huevo en primer plano. r = radio de la cápsula gelatinosa (unidades de mundo). */
-export const EmbryoEgg: React.FC<{x: number; y: number; r: number; e: number; t: number; open?: number; uid: string}> = ({x, y, r, e, t, open = 0, uid}) => {
+export const EmbryoEgg: React.FC<{x: number; y: number; r: number; e: number; t: number; open?: number; uid: string; refined?: boolean}> = ({x, y, r, e, t, open = 0, uid, refined = false}) => {
   const twitch = e > 0.7 ? Math.sin(t * 9) * 0.06 * clamp((e - 0.7) / 0.3) + (Math.sin(t * 2.3) > 0.85 ? 0.12 : 0) : 0;
   const elong = clamp(e / 0.55); // 0 esfera … 1 alargado
   const curl = clamp((e - 0.45) / 0.45); // se curva y se forma la cola
@@ -63,19 +64,48 @@ export const EmbryoEgg: React.FC<{x: number; y: number; r: number; e: number; t:
   // eje del embrión: recta que se curva en arco (radio decreciente) a medida que crece la cola
   const span = 0.15 + curl * 2.5 + twitch * 2; // ángulo total del arco (rad)
   const R = L / span;
-  const axis = Array.from({length: 11}, (_, i) => {
-    const a = (i / 10 - 0.5) * span;
+  // refined (documental completo): más puntos, cola más fina y contorno suavizado (sin aristas)
+  const NA = refined ? 20 : 10;
+  const axisN = Array.from({length: NA + 1}, (_, i) => {
+    const a = (i / NA - 0.5) * span;
     return {x: Math.sin(a) * R, y: R - Math.cos(a) * R - (R - Math.cos(span / 2) * R) * 0.5};
   }).reverse();
-  const width = (i: number) => {
-    const u = i / 10;
+  const axis = refined ? axisN.filter((_, i) => i % 2 === 0) : axisN;
+  const widthU = (u: number) => {
     const headK = lerp(0.95, 1.15, curl) * Math.exp(-Math.pow((u - 0.18) / lerp(0.45, 0.25, curl), 2));
+    if (refined) {
+      // fase temprana: forma de judía (néurula/brote caudal); después, perfil de renacuajo
+      const bean = H * 1.05 * Math.pow(Math.sin(Math.PI * (0.03 + 0.94 * u)), 0.55) * (1 + 0.3 * (0.5 - u));
+      const headR = 1.2 * Math.exp(-Math.pow((u - 0.17) / 0.2, 2));
+      const tailK = lerp(0.42, 0.16, curl) * Math.pow(1 - u, 1.2) + 0.03;
+      const nose = Math.pow(Math.sin((Math.PI / 2) * clamp(u / 0.15)), 0.6); // hocico redondeado
+      const tad = H * Math.max(headR, tailK) * nose * (u > 0.85 ? Math.max(0.15, (1 - u) / 0.15) : 1);
+      return lerp(bean, tad, Math.pow(curl, 0.7));
+    }
     const tailK = lerp(0.55, 0.12, curl) * (1 - u) + 0.05;
     return H * Math.max(headK, tailK) * (u > 0.9 ? (1 - u) * 10 * 0.6 + 0.4 : 1);
   };
+  const width = (i: number) => widthU(i / 10);
   const top = axis.map((p, i) => ({x: p.x, y: p.y - width(i)}));
   const bot = axis.map((p, i) => ({x: p.x, y: p.y + width(i) * 0.9}));
-  const bodyPath = `M${top.map((p) => `${f1(p.x)},${f1(p.y)}`).join(' L')} L${bot.reverse().map((p) => `${f1(p.x)},${f1(p.y)}`).join(' L')}Z`;
+  // contorno desplazado según la NORMAL del eje (no en vertical): en el arco cerrado la cabeza
+  // conserva su volumen en lugar de aplastarse
+  const nrm = axisN.map((_, i) => {
+    const a0 = axisN[Math.max(0, i - 1)];
+    const b0 = axisN[Math.min(NA, i + 1)];
+    const dx = b0.x - a0.x;
+    const dy = b0.y - a0.y;
+    const l = Math.hypot(dx, dy) || 1;
+    return {x: dy / l, y: -dx / l};
+  });
+  const side = nrm[Math.round(NA / 2)].y > 0 ? -1 : 1; // +1 = lado dorsal (arriba)
+  const bodyPath = refined
+    ? closedSpline([...axisN.map((p, i) => ({x: p.x + nrm[i].x * side * widthU(i / NA), y: p.y + nrm[i].y * side * widthU(i / NA)})), ...axisN.map((p, i) => ({x: p.x - nrm[i].x * side * widthU(i / NA) * 0.9, y: p.y - nrm[i].y * side * widthU(i / NA) * 0.9})).reverse()], 1)
+    : `M${top.map((p) => `${f1(p.x)},${f1(p.y)}`).join(' L')} L${bot.reverse().map((p) => `${f1(p.x)},${f1(p.y)}`).join(' L')}Z`;
+  // contornos de referencia para los detalles (11 puntos, desplazados según la normal en refined)
+  const topR = refined ? axis.map((p, i) => ({x: p.x + nrm[i * 2].x * side * width(i), y: p.y + nrm[i * 2].y * side * width(i)})) : top;
+  const botR = refined ? axis.map((p, i) => ({x: p.x - nrm[i * 2].x * side * width(i) * 0.9, y: p.y - nrm[i * 2].y * side * width(i) * 0.9})) : bot;
+  const inward = (q: {x: number; y: number}, i: number, k: number) => (refined ? {x: q.x - nrm[i * 2].x * side * width(i) * k, y: q.y - nrm[i * 2].y * side * width(i) * k} : {x: q.x, y: q.y + width(i) * k});
   const sphere = 1 - clamp(e / 0.25);
   const eyeK = clamp((e - 0.6) / 0.25);
   const head = axis[1];
@@ -111,12 +141,12 @@ export const EmbryoEgg: React.FC<{x: number; y: number; r: number; e: number; t:
         <g opacity={clamp((e - 0.18) / 0.12)} transform={`rotate(${f1(twitch * 30)})`}>
           <path d={bodyPath} fill={`url(#emb-${uid})`} />
           {/* pliegues neurales / línea dorsal */}
-          <path d={top.slice(1, 9).map((p, i) => `${i ? 'L' : 'M'}${f1(p.x)},${f1(p.y + width(i + 1) * 0.35)}`).join(' ')} stroke="#8a7a68" strokeWidth={r * 0.015} fill="none" opacity={0.6 * clamp((e - 0.25) / 0.2)} />
+          <path d={topR.slice(1, 9).map((p, i) => inward(p, i + 1, 0.35)).map((p, i) => `${i ? 'L' : 'M'}${f1(p.x)},${f1(p.y)}`).join(' ')} stroke="#8a7a68" strokeWidth={r * 0.015} fill="none" opacity={0.6 * clamp((e - 0.25) / 0.2)} />
           {/* yema (vientre claro) */}
-          <path d={bot.slice(1, 6).map((p, i) => `${i ? 'L' : 'M'}${f1(p.x)},${f1(p.y)}`).join(' ')} stroke="#c8b088" strokeWidth={r * 0.06} fill="none" opacity={0.5 * (1 - curl * 0.5)} strokeLinecap="round" />
+          <path d={(refined ? botR.slice(1, 6).map((p, i) => inward(p, i + 1, -0.25)) : bot.slice(1, 6)).map((p, i) => `${i ? 'L' : 'M'}${f1(p.x)},${f1(p.y)}`).join(' ')} stroke="#c8b088" strokeWidth={r * 0.06} fill="none" opacity={0.5 * (1 - curl * 0.5)} strokeLinecap="round" />
           {eyeK > 0.01 && <ellipse cx={head.x + r * 0.04} cy={head.y - width(1) * 0.2} rx={r * 0.05} ry={r * 0.045} fill="#050302" opacity={eyeK} />}
           {/* esbozos de branquias externas */}
-          {e > 0.75 && [0, 1].map((i) => <path key={i} d={`M${f1(axis[2].x)},${f1(axis[2].y - width(2) * 0.6)} q${f1(-r * 0.05)},${f1(-r * 0.08)} ${f1(-r * 0.1 - i * r * 0.03)},${f1(-r * 0.06)}`} stroke="#c87a5a" strokeWidth={r * 0.02} fill="none" opacity={clamp((e - 0.75) * 4)} />)}
+          {e > 0.75 && [0, 1].map((i) => <path key={i} d={`M${f1(refined ? inward(topR[2], 2, 0.4).x : axis[2].x)},${f1(refined ? inward(topR[2], 2, 0.4).y : axis[2].y - width(2) * 0.6)} q${f1(-r * 0.05)},${f1(-r * 0.08)} ${f1(-r * 0.1 - i * r * 0.03)},${f1(-r * 0.06)}`} stroke="#c87a5a" strokeWidth={r * 0.02} fill="none" opacity={clamp((e - 0.75) * 4)} />)}
         </g>
       )}
       {/* reflejos de la gelatina */}

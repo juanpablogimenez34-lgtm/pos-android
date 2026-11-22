@@ -72,3 +72,63 @@ npx remotion ffmpeg -y -i entregas/de-huevo-a-sapo/de-huevo-a-sapo-demo-15s-1080
   entregas/de-huevo-a-sapo/de-huevo-a-sapo-demo-15s-narrado-1080x1920.mp4
 ```
 El texto y los tiempos de cada frase están en `tools/audio/narration_ep17.py` (`LINES`) y en `narracion-timing.json`.
+
+---
+
+# Documental completo — 180 s (`DeHuevoASapo`)
+
+*DE HUEVO A SAPO: UNA TRANSFORMACIÓN INCREÍBLE* · 1080×1920 · 30 fps · 5.400 fotogramas · siete escenas.
+
+```
+src/episodes/ep17-de-huevo-a-sapo/
+├─ full/
+│  ├─ Documentary.tsx            carcasa del Estudio 2.0: escenas, subtítulos, mezcla de 6 pistas
+│  ├─ data/timeline.ts           escenas, pista de crecimiento GROWTH (time-lapse) y eventos EV
+│  ├─ data/narration.json        guion locutado (texto, instante, palabras resaltadas)
+│  ├─ data/narration-timing.json tiempos MEDIDOS de la voz (los usan subtítulos y ducking)
+│  ├─ components/shared.tsx      rótulos de escena y etapa, viñetas, curvas
+│  └─ scenes/Scene1…7.tsx, eggs.tsx
+├─ character/Toad.tsx            + marcha (pares diagonales), lengua protráctil y mirada
+├─ character/Embryo.tsx          + modo `refined` (contorno según la normal del eje)
+├─ character/Ant.tsx             presa: hormiga con marcha en trípode
+├─ environment/Shallows.tsx      orilla en toma partida (bajo/sobre el agua) con ondas
+└─ environment/Forest.tsx        + opciones wide / season / light / fall (por defecto = demo)
+```
+
+| Escena | Tiempo | Contenido |
+|---|---|---|
+| 1 | 0–20 s | gancho de metamorfosis continua → sapo adulto y título → inmersión → huevos y embrión |
+| 2 | 20–45 s | puesta, acercamiento, desarrollo embrionario (días), preparación para eclosionar |
+| 3 | 45–70 s | eclosión, primeros impulsos, natación entre plantas, macro de la cola |
+| 4 | 70–95 s | crecimiento raspando el sedimento (semanas), patas posteriores, anteriores, nueva anatomía |
+| 5 | 95–120 s | cuatro patas, reabsorción de la cola (días), aguas someras, salida a la orilla |
+| 6 | 120–150 s | sapo joven en la piedra, primeros pasos y saltito, exploración, caza con la lengua |
+| 7 | 150–180 s | años condensados (estaciones), el adulto camina, primeros planos, pregunta final |
+
+## Audio (todo local, sin APIs de pago)
+
+```bash
+# 1) locución (Piper es_MX) → public/audio/ep17-de-huevo-a-sapo-180/narracion.m4a + tiempos medidos
+python3 tools/audio/narration.py --voice /ruta/es_MX-claude-high.onnx \
+  --src src/episodes/ep17-de-huevo-a-sapo/full/data/narration.json \
+  --timing src/episodes/ep17-de-huevo-a-sapo/full/data/narration-timing.json \
+  --out-dir public/audio/ep17-de-huevo-a-sapo-180
+# 2) banda sonora y efectos originales (música, ambiente agua/bosque, movimiento, revelación, transiciones)
+python3 tools/audio/score_ep17_sapo.py
+# 3) subtítulos .srt (mismos bloques que en pantalla)
+node scripts/export-srt.mjs src/episodes/ep17-de-huevo-a-sapo/full/data/narration-timing.json \
+  entregas/de-huevo-a-sapo/documental-180s/de-huevo-a-sapo-180s.srt 28
+```
+
+## Vista previa y render
+
+```bash
+export REMOTION_BROWSER=/opt/pw-browsers/chromium_headless_shell-1243/chrome-headless-shell-linux64/chrome-headless-shell
+npx remotion studio src/index.ts                       # elegir DeHuevoASapo
+node scripts/contact-sheet.mjs DeHuevoASapo out/sapo-hoja.png 5,30,55,80,105,130,160 0.3
+# borrador rápido (540×960)
+node scripts/render-episode.mjs --comp DeHuevoASapo --quality draft --scale 0.5 --seg 30 --out out/de-huevo-a-sapo-borrador.mp4
+# final por tramos de 30 s + audio mezclado + normalización −14 LUFS + informe .report.json
+node scripts/render-episode.mjs --comp DeHuevoASapo --quality final --scale 1 --seg 30 --crf 20 \
+  --out out/de-huevo-a-sapo-180s-final-1080x1920.mp4
+```

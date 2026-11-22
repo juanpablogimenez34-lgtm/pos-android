@@ -11,7 +11,7 @@ import {Stone} from './Pond';
 const f1 = (n: number) => (Number.isFinite(n) ? n : 0).toFixed(1);
 export const BANK = {ground: 0, waterEdge: -260};
 
-const Leaf: React.FC<{x: number; y: number; s: number; rot: number; c: string; t?: number}> = ({x, y, s, rot, c, t = 0}) => (
+export const Leaf: React.FC<{x: number; y: number; s: number; rot: number; c: string; t?: number}> = ({x, y, s, rot, c, t = 0}) => (
   <g transform={`translate(${f1(x)} ${f1(y)}) rotate(${f1(rot + Math.sin(t * 0.8 + x) * 2)}) scale(${f1(s)})`}>
     <path d="M0,0 C14,-18 46,-20 70,0 C46,18 14,16 0,0Z" fill={c} />
     <path d="M2,0 L66,0" stroke={mixColor(c, '#000', 0.35)} strokeWidth={1.4} />
@@ -22,7 +22,7 @@ const Leaf: React.FC<{x: number; y: number; s: number; rot: number; c: string; t
   </g>
 );
 
-const Fern: React.FC<{x: number; base: number; h: number; t: number; seed: number; c: string; dir?: number}> = ({x, base, h, t, seed, c, dir = 1}) => {
+export const Fern: React.FC<{x: number; base: number; h: number; t: number; seed: number; c: string; dir?: number}> = ({x, base, h, t, seed, c, dir = 1}) => {
   const n = 12;
   const pts = Array.from({length: n + 1}, (_, i) => {
     const u = i / n;
@@ -46,7 +46,7 @@ const Fern: React.FC<{x: number; base: number; h: number; t: number; seed: numbe
   );
 };
 
-const Mushroom: React.FC<{x: number; y: number; s: number}> = ({x, y, s}) => (
+export const Mushroom: React.FC<{x: number; y: number; s: number}> = ({x, y, s}) => (
   <g transform={`translate(${f1(x)} ${f1(y)}) scale(${f1(s)})`}>
     <path d="M-6,0 C-7,-20 -5,-40 -3,-52 L5,-52 C7,-40 8,-20 7,0Z" fill="#e8dcc0" />
     <path d="M-34,-50 C-30,-74 30,-76 36,-50 C20,-44 -18,-44 -34,-50Z" fill="#b8642a" />
@@ -56,7 +56,7 @@ const Mushroom: React.FC<{x: number; y: number; s: number}> = ({x, y, s}) => (
   </g>
 );
 
-const Moss: React.FC<{x: number; y: number; w: number; seed: number}> = ({x, y, w, seed}) => (
+export const Moss: React.FC<{x: number; y: number; w: number; seed: number}> = ({x, y, w, seed}) => (
   <g>
     <path d={`M${f1(x - w / 2)},${f1(y)} C${f1(x - w * 0.35)},${f1(y - 30)} ${f1(x + w * 0.35)},${f1(y - 34)} ${f1(x + w / 2)},${f1(y)}Z`} fill="#4a7a2a" />
     {Array.from({length: Math.round(w / 6)}, (_, i) => {
@@ -67,7 +67,14 @@ const Moss: React.FC<{x: number; y: number; w: number; seed: number}> = ({x, y, 
   </g>
 );
 
-export const ForestBack: React.FC<{cam: Cam; t: number; children?: React.ReactNode}> = ({cam, t, children}) => (
+/** Opciones del documental completo (por defecto, idéntico a la demo):
+ *  wide: el bosque continúa hacia la derecha (x 1400–3600) para recorridos largos;
+ *  season: 0 verano … 1 otoño (color de la hojarasca); light: 1 sol … 0 penumbra fría;
+ *  fall: hojas que caen (0 … 1). */
+export type ForestOpts = {wide?: boolean; season?: number; light?: number; fall?: number};
+const autumn = (c: string, season: number) => (season > 0 ? mixColor(c, '#c8641e', 0.55 * season) : c);
+
+export const ForestBack: React.FC<{cam: Cam; t: number; children?: React.ReactNode} & ForestOpts> = ({cam, t, children, wide = false, season = 0, light = 1, fall = 0}) => (
   <g>
     <defs>
       <linearGradient id="forestAir" x1="0" y1="0" x2="0" y2="1">
@@ -100,7 +107,7 @@ export const ForestBack: React.FC<{cam: Cam; t: number; children?: React.ReactNo
       <SoftFilter id="forestRays" radius={24} />
     </defs>
     <rect width={1080} height={1920} fill="url(#forestAir)" />
-    <rect width={1080} height={1920} fill="url(#forestSun)" />
+    <rect width={1080} height={1920} fill="url(#forestSun)" opacity={light} />
     {/* troncos lejanos */}
     <g transform={layerT(cam, 0.3)} filter="url(#forestFar)" opacity={0.6}>
       {Array.from({length: 8}, (_, i) => {
@@ -109,7 +116,7 @@ export const ForestBack: React.FC<{cam: Cam; t: number; children?: React.ReactNo
         return <rect key={i} x={x} y={-1500} width={w} height={2200} fill={i % 2 ? '#1e2a16' : '#283620'} />;
       })}
     </g>
-    <g transform={layerT(cam, 0.2)} filter="url(#forestRays)" opacity={0.75}>
+    <g transform={layerT(cam, 0.2)} filter="url(#forestRays)" opacity={0.75 * light}>
       {Array.from({length: 6}, (_, i) => {
         const x = cam.x * 0.2 - 400 + i * 230 + Math.sin(t * 0.25 + i) * 30;
         return <path key={i} d={`M${f1(x + 300)},-1500 L${f1(x + 380)},-1500 L${f1(x - 160)},900 L${f1(x - 300)},900Z`} fill="url(#forestRay)" opacity={0.35 + 0.25 * Math.sin(t * 0.5 + i * 1.7)} />;
@@ -129,7 +136,15 @@ export const ForestBack: React.FC<{cam: Cam; t: number; children?: React.ReactNo
       {Array.from({length: 9}, (_, i) => (
         <path key={`w${i}`} d={`M${-1600 + i * 150},${BANK.ground + 26 + (i % 3) * 8} q40,${f1(-3 + Math.sin(t * 1.5 + i) * 3)} 80,0`} stroke="#c8e8d0" strokeWidth={1.6} fill="none" opacity={0.35} />
       ))}
-      <path d={`M${BANK.waterEdge - 40},${BANK.ground + 20} C${BANK.waterEdge + 80},${BANK.ground - 14} 600,${BANK.ground - 8} 2400,${BANK.ground - 4} L2400,1200 L${BANK.waterEdge - 40},1200Z`} fill="url(#forestSoil)" />
+      {/* reflejos del bosque y destellos en el agua del estanque */}
+      {Array.from({length: 14}, (_, i) => (
+        <rect key={`rf${i}`} x={-2200 + i * 150 + hash1(i * 7) * 60} y={BANK.ground + 30} width={18 + hash1(i * 3) * 30} height={120 + hash1(i * 5) * 160} fill="#0e2a20" opacity={0.18} rx={9} />
+      ))}
+      {Array.from({length: 18}, (_, i) => (
+        <path key={`sp${i}`} d={`M${f1(-2300 + hash1(i * 11) * 2000)},${f1(BANK.ground + 40 + hash1(i * 13) * 380)} l${f1(30 + hash1(i) * 50)},0`} stroke="#e8f8e8" strokeWidth={2} opacity={0.18 + 0.15 * Math.sin(t * 2 + i)} />
+      ))}
+      <path d={`M${BANK.waterEdge - 40},${BANK.ground + 20} C${BANK.waterEdge + 80},${BANK.ground - 14} 600,${BANK.ground - 8} 2400,${BANK.ground - 4} L2400,1200 L${BANK.waterEdge - 760},1200 C${BANK.waterEdge - 420},700 ${BANK.waterEdge - 160},200 ${BANK.waterEdge - 40},${BANK.ground + 20}Z`} fill="url(#forestSoil)" />
+      <path d={`M${BANK.waterEdge - 760},1200 C${BANK.waterEdge - 420},700 ${BANK.waterEdge - 160},200 ${BANK.waterEdge - 40},${BANK.ground + 20}`} stroke="#2a4a3a" strokeWidth={10} fill="none" opacity={0.5} />
       <path d={`M${BANK.waterEdge - 40},${BANK.ground + 20} C${BANK.waterEdge + 80},${BANK.ground - 14} 600,${BANK.ground - 8} 2400,${BANK.ground - 4}`} stroke="#6a5a3a" strokeWidth={3} fill="none" opacity={0.6} />
       {/* textura del suelo: guijarros, ramitas, hojas caídas y humedad */}
       {Array.from({length: 70}, (_, i) => {
@@ -146,7 +161,7 @@ export const ForestBack: React.FC<{cam: Cam; t: number; children?: React.ReactNo
         return <path key={`tw${i}`} d={`M${f1(x)},${f1(y)} l${f1(Math.cos(a) * L)},${f1(Math.sin(a) * L)} m${f1(-Math.cos(a) * L * 0.5)},${f1(-Math.sin(a) * L * 0.5)} l${f1(12)},${f1(-10)}`} stroke="#2e2214" strokeWidth={3 + hash1(i) * 2} strokeLinecap="round" fill="none" />;
       })}
       {Array.from({length: 18}, (_, i) => (
-        <Leaf key={`gl${i}`} x={-250 + hash1(i * 23) * 1600} y={BANK.ground + 40 + hash1(i * 29) * 480} s={0.7 + hash1(i * 31) * 0.7} rot={hash1(i * 37) * 360} c={['#7a5a24', '#94682a', '#5a4a20', '#8a3e1a'][i % 4]} />
+        <Leaf key={`gl${i}`} x={-250 + hash1(i * 23) * 1600} y={BANK.ground + 40 + hash1(i * 29) * 480} s={0.7 + hash1(i * 31) * 0.7} rot={hash1(i * 37) * 360} c={autumn(['#7a5a24', '#94682a', '#5a4a20', '#8a3e1a'][i % 4], season)} />
       ))}
       {Array.from({length: 12}, (_, i) => (
         <ellipse key={`wet${i}`} cx={-150 + hash1(i * 41) * 1400} cy={BANK.ground + 60 + hash1(i * 43) * 420} rx={20 + hash1(i) * 40} ry={4 + hash1(i * 2) * 5} fill="#9ab8a8" opacity={0.12} />
@@ -160,9 +175,10 @@ export const ForestBack: React.FC<{cam: Cam; t: number; children?: React.ReactNo
       <Mushroom x={660} y={BANK.ground - 4} s={1.1} />
       <Mushroom x={735} y={BANK.ground - 2} s={0.7} />
       {Array.from({length: 16}, (_, i) => (
-        <Leaf key={`l${i}`} x={220 + i * 85 + hash1(i) * 40} y={BANK.ground - 2 - hash1(i * 3) * 6} s={0.8 + hash1(i * 5) * 0.6} rot={-10 + hash1(i * 7) * 20} c={['#8a6a2a', '#a8782a', '#6a5a24', '#9a4a1e'][i % 4]} t={t} />
+        <Leaf key={`l${i}`} x={220 + i * 85 + hash1(i) * 40} y={BANK.ground - 2 - hash1(i * 3) * 6} s={0.8 + hash1(i * 5) * 0.6} rot={-10 + hash1(i * 7) * 20} c={autumn(['#8a6a2a', '#a8782a', '#6a5a24', '#9a4a1e'][i % 4], season)} t={t} />
       ))}
       <Fern x={980} base={BANK.ground} h={300} t={t} seed={8} c="#3a6a28" dir={-1} />
+      {wide && <ForestWide t={t} season={season} />}
       {children}
       {/* gotas que caen y salpican */}
       {[0, 1].map((i) => {
@@ -177,12 +193,25 @@ export const ForestBack: React.FC<{cam: Cam; t: number; children?: React.ReactNo
         );
       })}
     </g>
+    {/* hojas que caen (paso de las estaciones) */}
+    {fall > 0.01 && (
+      <g transform={layerT(cam, 0.95)} opacity={Math.min(1, fall * 1.5)}>
+        {Array.from({length: 10}, (_, i) => {
+          const per = 3.2 + hash1(i * 5) * 2.4;
+          const ph = (((t + hash1(i) * per) / per) % 1 + 1) % 1;
+          const x = cam.x * 0.95 - 520 + hash1(i * 9) * 1040 + Math.sin(t * 1.4 + i) * 40;
+          const y = cam.y * 0.95 - 1000 + ph * 1900;
+          return <Leaf key={i} x={x} y={y} s={0.55 + hash1(i * 3) * 0.4} rot={t * 90 * (i % 2 ? 1 : -1) + i * 40} c={autumn(['#a8782a', '#9a4a1e', '#c8902a'][i % 3], Math.max(season, 0.5))} />;
+        })}
+      </g>
+    )}
     {/* insectos diminutos */}
     <g transform={layerT(cam, 0.9)}>
       {Array.from({length: 7}, (_, i) => (
         <circle key={i} cx={cam.x * 0.9 + Math.sin(t * (1.3 + i * 0.2) + i) * 160 + (i - 3) * 90} cy={cam.y * 0.9 - 200 + Math.cos(t * (1.7 + i * 0.3) + i) * 80} r={1.6} fill="#1a1408" />
       ))}
     </g>
+    {light < 0.999 && <rect width={1080} height={1920} fill="#0a1626" opacity={(1 - light) * 0.5} />}
   </g>
 );
 
@@ -199,4 +228,37 @@ export const ForestFront: React.FC<{cam: Cam; t: number}> = ({cam, t}) => (
       ))}
     </g>
   </svg>
+);
+
+/** Continuación del bosque hacia la derecha (documental completo): suelo con textura, tronco caído,
+ *  piedras húmedas, musgo, hongos, helechos y hojarasca. */
+const ForestWide: React.FC<{t: number; season: number}> = ({t, season}) => (
+  <g>
+    {Array.from({length: 80}, (_, i) => {
+      const x = 1400 + hash1(i * 3.7 + 100) * 2300;
+      const y = BANK.ground + 14 + Math.pow(hash1(i * 5.3 + 100), 0.8) * 520;
+      const r = 3 + hash1(i * 7.1 + 100) * 9;
+      return <path key={`wp${i}`} d={`M${f1(x - r)},${f1(y)} q${f1(r * 0.3)},${f1(-r * 0.8)} ${f1(r)},${f1(-r * 0.7)} q${f1(r * 0.8)},${f1(r * 0.1)} ${f1(r)},${f1(r * 0.7)} q${f1(-r)},${f1(r * 0.4)} ${f1(-r * 2)},0Z`} fill={['#5a4a34', '#6a5a40', '#3e3020', '#7a6a4a'][i % 4]} opacity={0.85} />;
+    })}
+    {Array.from({length: 22}, (_, i) => (
+      <Leaf key={`wg${i}`} x={1400 + hash1(i * 23 + 200) * 2300} y={BANK.ground + 40 + hash1(i * 29 + 200) * 480} s={0.7 + hash1(i * 31 + 200) * 0.7} rot={hash1(i * 37 + 200) * 360} c={autumn(['#7a5a24', '#94682a', '#5a4a20', '#8a3e1a'][i % 4], season)} />
+    ))}
+    {/* tronco caído cubierto de musgo (lejos, detrás del recorrido) */}
+    <path d={`M2050,${BANK.ground - 6} C2200,-130 2700,-150 3050,-60 L3060,${BANK.ground - 4}Z`} fill="#3a2a1a" />
+    <path d="M2080,-40 C2250,-128 2680,-146 3040,-66" stroke="#5a8a2a" strokeWidth={14} fill="none" strokeLinecap="round" opacity={0.85} />
+    {Array.from({length: 9}, (_, i) => <path key={`bk${i}`} d={`M${2140 + i * 100},${-70 - Math.sin(i / 8 * Math.PI) * 50} l20,40`} stroke="#22180e" strokeWidth={3} opacity={0.6} />)}
+    <Stone x={1900} y={BANK.ground + 4} w={190} h={52} seed={13} c="#525e4c" moss={0.6} />
+    <Stone x={3300} y={BANK.ground + 4} w={240} h={64} seed={17} c="#4a564a" moss={0.5} />
+    <Moss x={1650} y={BANK.ground - 2} w={220} seed={6} />
+    <Moss x={2500} y={BANK.ground - 2} w={300} seed={8} />
+    <Mushroom x={2150} y={BANK.ground - 4} s={0.9} />
+    <Mushroom x={2210} y={BANK.ground - 2} s={0.6} />
+    <Mushroom x={3120} y={BANK.ground - 4} s={1.2} />
+    {Array.from({length: 22}, (_, i) => (
+      <Leaf key={`wl${i}`} x={1520 + i * 92 + hash1(i + 50) * 40} y={BANK.ground - 2 - hash1(i * 3 + 50) * 6} s={0.8 + hash1(i * 5 + 50) * 0.6} rot={-10 + hash1(i * 7 + 50) * 20} c={autumn(['#8a6a2a', '#a8782a', '#6a5a24', '#9a4a1e'][i % 4], season)} t={t} />
+    ))}
+    <Fern x={1780} base={BANK.ground} h={280} t={t} seed={11} c="#3a6a28" dir={1} />
+    <Fern x={2900} base={BANK.ground} h={340} t={t} seed={13} c="#36622a" dir={-1} />
+    <Fern x={3500} base={BANK.ground} h={300} t={t} seed={15} c="#3a6a28" dir={1} />
+  </g>
 );

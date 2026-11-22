@@ -145,9 +145,13 @@ export const PondBack: React.FC<{cam: Cam; t: number; children?: React.ReactNode
     </g>
     {/* plano del personaje */}
     <g transform={layerT(cam, 1)}>
-      <path d={`M-3000,${POND.floor} ${Array.from({length: 30}, (_, i) => `Q${-2900 + i * 200},${POND.floor - 14 + Math.sin(i * 1.7) * 10} ${-2800 + i * 200},${POND.floor}`).join(' ')} L3000,2200 L-3000,2200Z`} fill="url(#pondSand)" />
+      <path d={`M-3000,${POND.floor} ${Array.from({length: 60}, (_, i) => `Q${-2900 + i * 200},${POND.floor - 14 + Math.sin(i * 1.7) * 10} ${-2800 + i * 200},${POND.floor}`).join(' ')} L9000,2200 L-3000,2200Z`} fill="url(#pondSand)" />
       {Array.from({length: 70}, (_, i) => (
         <ellipse key={`g${i}`} cx={-1500 + hash1(i * 3) * 3000} cy={POND.floor + 10 + hash1(i * 5) * 120} rx={2 + hash1(i) * 5} ry={1.5 + hash1(i * 2) * 2} fill={i % 3 ? '#a89868' : '#4a4028'} opacity={0.7} />
+      ))}
+      {/* el fondo continúa hacia la derecha (recorridos largos del documental) */}
+      {Array.from({length: 90}, (_, i) => (
+        <ellipse key={`g2${i}`} cx={1500 + hash1(i * 3 + 500) * 4500} cy={POND.floor + 10 + hash1(i * 5 + 500) * 120} rx={2 + hash1(i + 500) * 5} ry={1.5 + hash1(i * 2 + 500) * 2} fill={i % 3 ? '#a89868' : '#4a4028'} opacity={0.7} />
       ))}
       {/* raíces que bajan desde la orilla */}
       {[0, 1, 2].map((i) => (

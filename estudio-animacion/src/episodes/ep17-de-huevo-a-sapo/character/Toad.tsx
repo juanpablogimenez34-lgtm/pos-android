@@ -39,9 +39,15 @@ export type ToadPose = {
   blink: number; // 0 abierto … 1 cerrado
   inWater: boolean;
   light: number;
+  walk: number; // amplitud de la marcha terrestre (0 = quieto)
+  walkPhase: number; // fase de la marcha (rad): pares diagonales alternos
+  tongue: number; // lengua: 0 recogida … 1 extendida
+  tongueLen: number; // alcance de la lengua (unidades locales)
+  tongueAng: number; // dirección de la lengua (rad, local)
+  look: number; // mirada horizontal (-1 atrás … 1 adelante)
 };
 
-export const toadPose = (o: Partial<ToadPose> = {}): ToadPose => ({x: 0, y: 0, scale: 1, angle: 0, t: 0, swimPhase: 0, swimAmp: 0.6, curl: 0, fold: 1, armReach: 0, crouch: 0, breath: 0, blink: 0, inWater: true, light: 1, ...o});
+export const toadPose = (o: Partial<ToadPose> = {}): ToadPose => ({x: 0, y: 0, scale: 1, angle: 0, t: 0, swimPhase: 0, swimAmp: 0.6, curl: 0, fold: 1, armReach: 0, crouch: 0, breath: 0, blink: 0, inWater: true, light: 1, walk: 0, walkPhase: 0, tongue: 0, tongueLen: 120, tongueAng: 0.15, look: 0, ...o});
 
 const taperPath = (pts: Pt[], w0: number, w1: number) => {
   const n = pts.length;
@@ -138,18 +144,30 @@ export const Toad: React.FC<{s: ToadParams; p: ToadPose; uid: string}> = ({s, p,
   const hip = P(lerp(-30, -58, k), lerp(17, 18, k) * crouchY);
   const kick = p.inWater ? Math.sin(p.t * 3.1) * 0.12 : 0;
   const fold = clamp(p.fold + kick);
-  const hindSegs = (far: boolean) => [
-    {len: 64 * hindK, deg: lerp(165, 28, fold) + (far ? -6 : 0), w0: 30 * hindK + 2, w1: 18 * hindK + 1.5},
-    {len: 60 * hindK, deg: lerp(175, 168, fold) + (far ? 4 : 0), w0: 17 * hindK + 1.5, w1: 11 * hindK + 1},
-    {len: 34 * hindK, deg: lerp(182, 4, fold), w0: 10 * hindK + 1, w1: 8 * hindK + 1},
-  ];
+  // marcha: pares diagonales (posterior cercana + anterior lejana) alternos con el otro par
+  const W = p.walk;
+  const sw = (ph: number) => W * Math.sin(ph);
+  const lift = (ph: number) => W * Math.max(0, Math.cos(ph));
+  const phN = p.walkPhase;
+  const phF = p.walkPhase + Math.PI;
+  const hindSegs = (far: boolean) => {
+    const ph = far ? phF : phN;
+    return [
+      {len: 64 * hindK, deg: lerp(165, 28, fold) + (far ? -6 : 0) + 22 * sw(ph) - 10 * lift(ph), w0: 30 * hindK + 2, w1: 18 * hindK + 1.5},
+      {len: 60 * hindK, deg: lerp(175, 168, fold) + (far ? 4 : 0) + 18 * lift(ph), w0: 17 * hindK + 1.5, w1: 11 * hindK + 1},
+      {len: 34 * hindK, deg: lerp(182, 4, fold) + 10 * lift(ph), w0: 10 * hindK + 1, w1: 8 * hindK + 1},
+    ];
+  };
   const foreK = clamp((s.fore - 0.1) / 0.9) * lerp(0.7, 1, k);
   const sh = P(lerp(30, 46, k), lerp(20, 24, k) * crouchY);
-  const foreSegs = (far: boolean) => [
-    {len: 34 * foreK, deg: lerp(lerp(140, 112, k), 40, p.armReach) + (far ? 8 : 0), w0: 17 * foreK + 1, w1: 12 * foreK + 1},
-    {len: 32 * foreK, deg: lerp(lerp(150, 70, k), 18, p.armReach) + (far ? 6 : 0), w0: 12 * foreK + 1, w1: 9 * foreK + 1},
-    {len: 14 * foreK, deg: lerp(lerp(160, 4, k), 10, p.armReach), w0: 9 * foreK + 1, w1: 7 * foreK + 1},
-  ];
+  const foreSegs = (far: boolean) => {
+    const ph = far ? phN : phF;
+    return [
+      {len: 34 * foreK, deg: lerp(lerp(140, 112, k), 40, p.armReach) + (far ? 8 : 0) - 20 * sw(ph) - 12 * lift(ph), w0: 17 * foreK + 1, w1: 12 * foreK + 1},
+      {len: 32 * foreK, deg: lerp(lerp(150, 70, k), 18, p.armReach) + (far ? 6 : 0) - 16 * sw(ph) - 22 * lift(ph), w0: 12 * foreK + 1, w1: 9 * foreK + 1},
+      {len: 14 * foreK, deg: lerp(lerp(160, 4, k), 10, p.armReach) - 8 * lift(ph), w0: 9 * foreK + 1, w1: 7 * foreK + 1},
+    ];
+  };
   const hindNear = limb(hip, hindSegs(false), 5, 26 * hindK);
   const hindFar = limb(P(hip.x + 6, hip.y - 4), hindSegs(true), 5, 24 * hindK);
   const foreNear = limb(sh, foreSegs(false), 4, 16 * foreK);
@@ -270,13 +288,27 @@ export const Toad: React.FC<{s: ToadParams; p: ToadPose; uid: string}> = ({s, p,
               const a = (i / 10) * Math.PI * 2;
               return <path key={i} d={`M${f1(Math.cos(a) * er * 0.45)},${f1(Math.sin(a) * er * 0.45)} L${f1(Math.cos(a + 0.2) * er * 0.92)},${f1(Math.sin(a + 0.2) * er * 0.86)}`} stroke="#6a3a14" strokeWidth={0.6} opacity={0.7} />;
             })}
-            <ellipse rx={er * 0.55} ry={er * 0.22} fill="#050302" />
+            <ellipse cx={er * 0.22 * p.look} rx={er * 0.55} ry={er * 0.22} fill="#050302" />
           </g>
         )}
         {s.eyeBulge <= 0.2 && <ellipse rx={er * 0.55} ry={er * 0.5} fill="#050302" />}
         <path d={`M${f1(-er * 0.45)},${f1(-er * 0.5)} q${f1(er * 0.3)},${f1(-er * 0.25)} ${f1(er * 0.6)},${f1(-er * 0.1)}`} stroke="#ffffff" strokeWidth={Math.max(0.8, er * 0.12)} strokeLinecap="round" opacity={0.85} />
         {p.blink > 0.02 && <path d={`M${f1(-er * 1.05)},0 C${f1(-er)},${f1(-er * 1.1 + p.blink * er * 1.9)} ${f1(er)},${f1(-er * 1.1 + p.blink * er * 1.9)} ${f1(er * 1.05)},0 C${f1(er)},${f1(-er * 1.2)} ${f1(-er)},${f1(-er * 1.2)} ${f1(-er * 1.05)},0Z`} fill={back} />}
       </g>
+      {/* lengua protráctil (sapo): sale de la boca, se pega a la presa y se recoge */}
+      {p.tongue > 0.01 && k > 0.8 && (() => {
+        const m = P(lerp(70, 98, k) - 6, 9 * crouchY);
+        const Lt = p.tongueLen * p.tongue;
+        const tip = P(m.x + Math.cos(p.tongueAng) * Lt, m.y + Math.sin(p.tongueAng) * Lt);
+        const mid = P((m.x + tip.x) / 2, (m.y + tip.y) / 2 + Lt * 0.06);
+        return (
+          <g>
+            <path d={`M${f1(m.x - 8)},${f1(m.y - 3)} L${f1(m.x + 6)},${f1(m.y)} L${f1(m.x - 8)},${f1(m.y + 5 * p.tongue)}Z`} fill="#2a0e10" />
+            <path d={taperPath([m, mid, tip], 7, 4)} fill="#d8707a" />
+            <ellipse cx={tip.x} cy={tip.y} rx={6} ry={5} fill="#e88a92" stroke="#b04a56" strokeWidth={0.8} />
+          </g>
+        );
+      })()}
       {/* patas del lado cercano (esbozo → pata articulada) */}
       {bud && <path d={`M${f1(hip.x - 2)},${f1(hip.y - 3)} q-${f1(10 * s.hind * 3)},4 -${f1(8 * s.hind * 3)},${f1(10 * s.hind * 2.5)} q6,2 10,-6Z`} fill={limbCol} />}
       {hindK > 0.02 && <g filter={`url(#tl-${uid})`}>{hindNear.paths.map((d, i) => <path key={`hn${i}`} d={d} fill={limbCol} />)}</g>}
