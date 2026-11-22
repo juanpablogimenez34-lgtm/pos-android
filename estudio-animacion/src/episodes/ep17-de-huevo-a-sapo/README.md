@@ -60,3 +60,15 @@ npx remotion ffprobe -v error -count_frames \
   -show_entries stream=width,height,r_frame_rate,nb_read_frames -show_entries format=duration \
   entregas/de-huevo-a-sapo/de-huevo-a-sapo-demo-15s-1080x1920.mp4
 ```
+
+## Narración (añadida después)
+
+```bash
+pip install piper-tts==1.3.0 numpy soundfile
+python3 tools/audio/narration_ep17.py --voice /ruta/es_MX-claude-high.onnx   # → public/audio/ep17-de-huevo-a-sapo/
+npx remotion ffmpeg -y -i entregas/de-huevo-a-sapo/de-huevo-a-sapo-demo-15s-1080x1920.mp4 \
+  -i public/audio/ep17-de-huevo-a-sapo/mezcla.wav -map 0:v -map 1:a -c:v copy \
+  -af "loudnorm=I=-14:TP=-1.5:LRA=11" -c:a aac -b:a 192k -ar 48000 -t 15 \
+  entregas/de-huevo-a-sapo/de-huevo-a-sapo-demo-15s-narrado-1080x1920.mp4
+```
+El texto y los tiempos de cada frase están en `tools/audio/narration_ep17.py` (`LINES`) y en `narracion-timing.json`.

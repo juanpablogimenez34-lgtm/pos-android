@@ -1,0 +1,56 @@
+[
+ {
+  "at": 0.3,
+  "end": 2.316,
+  "lengthScale": 1.0,
+  "text": "Todo empieza en un cordón de huevos."
+ },
+ {
+  "at": 2.5,
+  "end": 4.8,
+  "lengthScale": 0.84,
+  "text": "En diez días, el embrión se forma"
+ },
+ {
+  "at": 5.1,
+  "end": 6.338,
+  "lengthScale": 0.8,
+  "text": "y nace un renacuajo."
+ },
+ {
+  "at": 6.5,
+  "end": 8.229,
+  "lengthScale": 0.8,
+  "text": "Semanas nadando y creciendo."
+ },
+ {
+  "at": 8.4,
+  "end": 9.682,
+  "lengthScale": 1.0,
+  "text": "Le salen las patas."
+ },
+ {
+  "at": 10.35,
+  "end": 11.316,
+  "lengthScale": 0.8,
+  "text": "Adiós a la cola."
+ },
+ {
+  "at": 11.4,
+  "end": 12.543,
+  "lengthScale": 1.0,
+  "text": "Su primer salto."
+ },
+ {
+  "at": 12.95,
+  "end": 13.813,
+  "lengthScale": 0.8,
+  "text": "Años después."
+ },
+ {
+  "at": 13.95,
+  "end": 14.918,
+  "lengthScale": 0.8,
+  "text": "De huevo a sapo."
+ }
+]
