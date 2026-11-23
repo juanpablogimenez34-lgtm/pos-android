@@ -55,6 +55,9 @@ import {RefHead as OarfishV2RefHead, RefSide as OarfishV2RefSide, RefWide as Oar
 import {StageSheet as ToadStageSheet} from './episodes/ep17-de-huevo-a-sapo/character/StageSheet';
 import {SapoDemo} from './episodes/ep17-de-huevo-a-sapo/SapoDemo';
 import {MixinoSheet} from './episodes/ep18-mixino/character/Sheet';
+import {EelSheet} from './episodes/ep19-anguila-electrica/character/Sheet';
+import {EEL_AUDIO, EelDocProps, EelDocumentary} from './episodes/ep19-anguila-electrica/Documentary';
+const eelDefaults: EelDocProps = {quality: 'final', showSubtitles: true, audio: EEL_AUDIO, extraTracks: true};
 import {MIXINO_AUDIO, MixinoProps, MixinoWithSlime} from './episodes/ep18-mixino/Documentary';
 const mixinoDefaults: MixinoProps = {quality: 'final', showSubtitles: true, audio: MIXINO_AUDIO, slimeTrack: true};
 import {SAPO_AUDIO, SapoDocProps, SapoDocumentary} from './episodes/ep17-de-huevo-a-sapo/full/Documentary';
@@ -167,6 +170,8 @@ export const RemotionRoot: React.FC = () => (
     <Composition id="DeHuevoASapoDemo" component={SapoDemo} durationInFrames={450} fps={30} width={1080} height={1920} />
     <Composition id="DeHuevoASapo" component={SapoDocumentary} durationInFrames={180 * 30} fps={30} width={1080} height={1920} defaultProps={sapoDefaults} />
     <Composition id="EP-Mixino" component={MixinoWithSlime} durationInFrames={180 * 30} fps={30} width={1080} height={1920} defaultProps={mixinoDefaults} />
+    <Composition id="EP-AnguilaElectrica" component={EelDocumentary} durationInFrames={180 * 30} fps={30} width={1080} height={1920} defaultProps={eelDefaults} />
+    <Composition id="AnguilaFicha" component={EelSheet} durationInFrames={60} fps={30} width={1080} height={1920} />
     <Composition id="MixinoFicha" component={MixinoSheet} durationInFrames={60} fps={30} width={1080} height={1920} />
     <Composition id="SapoEtapasFicha" component={ToadStageSheet} durationInFrames={60} fps={30} width={1080} height={1920} />
     <Composition id="OarfishV2RefHead" component={OarfishV2RefHead} durationInFrames={1} fps={30} width={1080} height={1920} />

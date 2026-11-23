@@ -1,0 +1,248 @@
+{
+ "episode": "ep19-anguila-electrica",
+ "durationSec": 180,
+ "voice": {
+  "engine": "piper",
+  "model": "es_MX-claude-high",
+  "lengthScale": 1.0,
+  "noiseScale": 0.62,
+  "noiseW": 0.55
+ },
+ "lines": [
+  {
+   "id": "a0100",
+   "scene": 1,
+   "at": 0.3,
+   "text": "¡Este animal puede generar hasta ochocientos sesenta voltios…",
+   "highlight": [
+    "ochocientos sesenta voltios"
+   ]
+  },
+  {
+   "id": "a0101",
+   "scene": 1,
+   "at": 4.4,
+   "text": "…sin cables, sin baterías y sin tocar a su presa!",
+   "highlight": [
+    "sin tocar a su presa"
+   ]
+  },
+  {
+   "id": "a0102",
+   "scene": 1,
+   "at": 8.3,
+   "text": "En los ríos de Sudamérica vive un depredador capaz de detectar presas escondidas y atacarlas sin necesidad de tocarlas.",
+   "highlight": [
+    "presas escondidas"
+   ]
+  },
+  {
+   "id": "a0203",
+   "scene": 2,
+   "at": 15.5,
+   "text": "Aunque la conocemos como anguila eléctrica, en realidad no es una anguila: pertenece al grupo de los peces cuchillo.",
+   "highlight": [
+    "peces cuchillo"
+   ]
+  },
+  {
+   "id": "a0204",
+   "scene": 2,
+   "at": 23.6,
+   "text": "Su cuerpo esconde un sistema biológico que funciona como una poderosa fuente de electricidad.",
+   "highlight": [
+    "fuente de electricidad"
+   ]
+  },
+  {
+   "id": "a0305",
+   "scene": 3,
+   "at": 30.5,
+   "text": "Gran parte de su cuerpo está ocupada por órganos eléctricos, formados por miles de células especializadas llamadas electrocitos.",
+   "highlight": [
+    "electrocitos"
+   ]
+  },
+  {
+   "id": "a0306",
+   "scene": 3,
+   "at": 38.3,
+   "text": "Cada una produce un voltaje pequeño. Pero cuando se activan a la vez, sus voltajes se suman.",
+   "highlight": [
+    "se suman"
+   ]
+  },
+  {
+   "id": "a0407",
+   "scene": 4,
+   "at": 45.5,
+   "text": "Una especie, Electrophorus voltai, ha registrado descargas de hasta ochocientos sesenta voltios.",
+   "highlight": [
+    "Electrophorus voltai"
+   ]
+  },
+  {
+   "id": "a0408",
+   "scene": 4,
+   "at": 52.2,
+   "text": "Es uno de los valores más altos documentados en un animal capaz de producir electricidad.",
+   "highlight": [
+    "más altos documentados"
+   ]
+  },
+  {
+   "id": "a0509",
+   "scene": 5,
+   "at": 60.5,
+   "text": "Pero la electricidad no solo sirve para atacar.",
+   "highlight": [
+    "no solo sirve para atacar"
+   ]
+  },
+  {
+   "id": "a0510",
+   "scene": 5,
+   "at": 63.8,
+   "text": "También emite señales débiles que le permiten percibir su entorno, incluso cuando el agua está tan turbia que apenas puede ver.",
+   "highlight": [
+    "señales débiles"
+   ]
+  },
+  {
+   "id": "a0611",
+   "scene": 6,
+   "at": 75.5,
+   "text": "Una presa puede quedarse inmóvil entre la vegetación, pero eso no garantiza que esté a salvo.",
+   "highlight": [
+    "no garantiza"
+   ]
+  },
+  {
+   "id": "a0612",
+   "scene": 6,
+   "at": 81.8,
+   "text": "Con sus señales eléctricas, la anguila obtiene información del entorno y localiza posibles objetivos.",
+   "highlight": [
+    "localiza"
+   ]
+  },
+  {
+   "id": "a0713",
+   "scene": 7,
+   "at": 90.5,
+   "text": "Cuando llega el momento de atacar, emite descargas de alto voltaje.",
+   "highlight": [
+    "alto voltaje"
+   ]
+  },
+  {
+   "id": "a0714",
+   "scene": 7,
+   "at": 97.8,
+   "text": "Provocan contracciones musculares involuntarias que inmovilizan a pequeños animales y facilitan su captura.",
+   "highlight": [
+    "contracciones musculares involuntarias"
+   ]
+  },
+  {
+   "id": "a0815",
+   "scene": 8,
+   "at": 105.5,
+   "text": "Su forma de nadar también es extraordinaria.",
+   "highlight": [
+    "extraordinaria"
+   ]
+  },
+  {
+   "id": "a0816",
+   "scene": 8,
+   "at": 108.6,
+   "text": "Una larga aleta bajo el cuerpo produce ondas que le permiten avanzar, retroceder y maniobrar con precisión entre raíces y obstáculos.",
+   "highlight": [
+    "avanzar",
+    "retroceder"
+   ]
+  },
+  {
+   "id": "a0917",
+   "scene": 9,
+   "at": 120.5,
+   "text": "Aunque vive bajo el agua, necesita subir a la superficie para respirar aire.",
+   "highlight": [
+    "respirar aire"
+   ]
+  },
+  {
+   "id": "a0918",
+   "scene": 9,
+   "at": 127.2,
+   "text": "Así puede vivir en aguas donde hay muy poco oxígeno disuelto.",
+   "highlight": [
+    "poco oxígeno"
+   ]
+  },
+  {
+   "id": "a1019",
+   "scene": 10,
+   "at": 135.5,
+   "text": "Sus descargas también le sirven de defensa.",
+   "highlight": [
+    "defensa"
+   ]
+  },
+  {
+   "id": "a1020",
+   "scene": 10,
+   "at": 139.2,
+   "text": "Ante una amenaza, puede usar electricidad de alto voltaje para disuadir a otros animales y protegerse.",
+   "highlight": [
+    "disuadir"
+   ]
+  },
+  {
+   "id": "a1121",
+   "scene": 11,
+   "at": 150.5,
+   "text": "No necesita una batería externa: su propio organismo transforma procesos biológicos en señales eléctricas.",
+   "highlight": [
+    "batería externa"
+   ]
+  },
+  {
+   "id": "a1122",
+   "scene": 11,
+   "at": 158.2,
+   "text": "Una sola adaptación que reúne percepción, caza y defensa.",
+   "highlight": [
+    "percepción, caza y defensa"
+   ]
+  },
+  {
+   "id": "a1223",
+   "scene": 12,
+   "at": 165.3,
+   "text": "Un depredador que percibe su mundo con electricidad, respira aire y produce descargas extraordinarias.",
+   "highlight": [
+    "con electricidad"
+   ]
+  },
+  {
+   "id": "a1224",
+   "scene": 12,
+   "at": 171.9,
+   "text": "La naturaleza creó una auténtica maravilla viviente.",
+   "highlight": [
+    "maravilla viviente"
+   ]
+  },
+  {
+   "id": "a1225",
+   "scene": 12,
+   "at": 175.2,
+   "text": "¿Qué otro animal imposible te gustaría descubrir?",
+   "highlight": [
+    "animal imposible"
+   ]
+  }
+ ]
+}
