@@ -10,50 +10,57 @@
       "start": 0,
       "end": 899,
       "secs": 126.9,
-      "peakMB": 3930
+      "peakMB": 3930,
+      "reused": true
     },
     {
       "start": 900,
       "end": 1799,
       "secs": 129.1,
-      "peakMB": 3476
+      "peakMB": 3476,
+      "reused": true
     },
     {
       "start": 1800,
       "end": 2699,
       "secs": 105.4,
-      "peakMB": 3446
+      "peakMB": 3446,
+      "reused": true
     },
     {
       "start": 2700,
       "end": 3599,
       "secs": 108,
-      "peakMB": 3389
+      "peakMB": 3389,
+      "reused": true
     },
     {
       "start": 3600,
       "end": 4499,
       "secs": 124.2,
-      "peakMB": 3378
+      "peakMB": 3378,
+      "reused": true
     },
     {
       "start": 4500,
       "end": 5399,
       "secs": 131.4,
-      "peakMB": 3302
+      "peakMB": 3302,
+      "reused": true
     }
   ],
-  "startedAt": "2026-11-23T21:10:25.155Z",
+  "startedAt": "2026-11-23T23:04:13.873Z",
   "audio": {
     "secs": 242.7,
-    "peakMB": 2308
+    "peakMB": 2308,
+    "reused": true
   },
   "loudness": {
     "inputLUFS": -16.76,
     "inputTruePeak": -2.18,
     "targetLUFS": -14
   },
-  "wallSecondsThisRun": 985.4,
+  "wallSecondsThisRun": 20.6,
   "totalSeconds": 967.7,
   "peakRssMB": 3930,
   "output": {
