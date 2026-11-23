@@ -1,0 +1,240 @@
+{
+ "episode": "ep18-mixino",
+ "durationSec": 180,
+ "voice": {
+  "engine": "piper",
+  "model": "es_MX-claude-high",
+  "lengthScale": 0.97,
+  "noiseScale": 0.62,
+  "noiseW": 0.55
+ },
+ "lines": [
+  {
+   "id": "m0100",
+   "scene": 1,
+   "at": 0.4,
+   "text": "Imagina atacar a un animal y descubrir que, en segundos, el agua a tu alrededor se convierte en una trampa gelatinosa.",
+   "highlight": [
+    "trampa gelatinosa"
+   ]
+  },
+  {
+   "id": "m0101",
+   "scene": 1,
+   "at": 8.6,
+   "text": "Eso es lo que puede ocurrir cuando un depredador intenta comerse a un mixino.",
+   "highlight": [
+    "mixino"
+   ]
+  },
+  {
+   "id": "m0202",
+   "scene": 2,
+   "at": 15.5,
+   "text": "Este extraño habitante del océano parece una anguila, pero pertenece a un grupo muy diferente: los vertebrados sin mandíbulas.",
+   "highlight": [
+    "vertebrados sin mandíbulas"
+   ]
+  },
+  {
+   "id": "m0203",
+   "scene": 2,
+   "at": 23.6,
+   "text": "Su aspecto es discreto. Su mecanismo de defensa, en cambio, es extraordinario.",
+   "highlight": [
+    "extraordinario"
+   ]
+  },
+  {
+   "id": "m0304",
+   "scene": 3,
+   "at": 30.5,
+   "text": "A lo largo de su cuerpo posee numerosas glándulas especializadas, que se abren al exterior por pequeños poros.",
+   "highlight": [
+    "glándulas",
+    "poros"
+   ]
+  },
+  {
+   "id": "m0305",
+   "scene": 3,
+   "at": 38.0,
+   "text": "Cuando se siente amenazado, liberan sustancias que se expanden rápidamente al entrar en contacto con el agua de mar.",
+   "highlight": [
+    "se expanden"
+   ]
+  },
+  {
+   "id": "m0406",
+   "scene": 4,
+   "at": 45.5,
+   "text": "La defensa combina mucinas y filamentos proteicos extremadamente finos, enrollados como diminutas madejas.",
+   "highlight": [
+    "mucinas",
+    "filamentos proteicos"
+   ]
+  },
+  {
+   "id": "m0407",
+   "scene": 4,
+   "at": 52.6,
+   "text": "Al dispersarse en el agua, se despliegan y forman una red mucosa capaz de ocupar un volumen sorprendente.",
+   "highlight": [
+    "volumen sorprendente"
+   ]
+  },
+  {
+   "id": "m0508",
+   "scene": 5,
+   "at": 60.5,
+   "text": "Para un depredador que respira haciendo pasar agua por sus branquias…",
+   "highlight": [
+    "branquias"
+   ]
+  },
+  {
+   "id": "m0509",
+   "scene": 5,
+   "at": 66.0,
+   "text": "…encontrarse con esta sustancia puede convertirse en un problema serio.",
+   "highlight": [
+    "problema serio"
+   ]
+  },
+  {
+   "id": "m0610",
+   "scene": 6,
+   "at": 75.5,
+   "text": "La mucosidad puede interferir con el flujo de agua a través de las branquias.",
+   "highlight": [
+    "flujo de agua"
+   ]
+  },
+  {
+   "id": "m0611",
+   "scene": 6,
+   "at": 80.6,
+   "text": "El atacante necesita liberarse de ella, y esa distracción puede darle al mixino una oportunidad para escapar.",
+   "highlight": [
+    "oportunidad para escapar"
+   ]
+  },
+  {
+   "id": "m0712",
+   "scene": 7,
+   "at": 90.5,
+   "text": "Pero su defensa tiene otra parte sorprendente.",
+   "highlight": [
+    "sorprendente"
+   ]
+  },
+  {
+   "id": "m0713",
+   "scene": 7,
+   "at": 93.8,
+   "text": "Este animal puede formar nudos con su propio cuerpo, una habilidad que utiliza para ayudarse a retirar mucosidad y manipular su posición.",
+   "highlight": [
+    "nudos"
+   ]
+  },
+  {
+   "id": "m0814",
+   "scene": 8,
+   "at": 105.5,
+   "text": "Gracias a su flexibilidad, el mixino puede deslizar el nudo a lo largo de su cuerpo.",
+   "highlight": [
+    "deslizar el nudo"
+   ]
+  },
+  {
+   "id": "m0815",
+   "scene": 8,
+   "at": 111.6,
+   "text": "Es un movimiento extraño, pero muy útil para un animal que vive entre sedimentos y restos del fondo marino.",
+   "highlight": [
+    "muy útil"
+   ]
+  },
+  {
+   "id": "m0916",
+   "scene": 9,
+   "at": 120.5,
+   "text": "Los mixinos también cumplen una función ecológica importante.",
+   "highlight": [
+    "función ecológica"
+   ]
+  },
+  {
+   "id": "m0917",
+   "scene": 9,
+   "at": 124.6,
+   "text": "Muchas especies consumen animales muertos y otros recursos del fondo, participando en el reciclaje de materia orgánica.",
+   "highlight": [
+    "reciclaje"
+   ]
+  },
+  {
+   "id": "m1018",
+   "scene": 10,
+   "at": 135.5,
+   "text": "Los mixinos pertenecen a un linaje de vertebrados sin mandíbulas con una historia evolutiva muy antigua.",
+   "highlight": [
+    "historia evolutiva"
+   ]
+  },
+  {
+   "id": "m1019",
+   "scene": 10,
+   "at": 142.4,
+   "text": "Las especies actuales también han evolucionado, pero su anatomía ofrece pistas valiosas sobre los primeros vertebrados.",
+   "highlight": [
+    "pistas valiosas"
+   ]
+  },
+  {
+   "id": "m1120",
+   "scene": 11,
+   "at": 150.5,
+   "text": "Sin grandes mandíbulas ni una armadura protectora, ha desarrollado otras estrategias para sobrevivir.",
+   "highlight": [
+    "otras estrategias"
+   ]
+  },
+  {
+   "id": "m1121",
+   "scene": 11,
+   "at": 157.4,
+   "text": "Su cuerpo flexible, sus sentidos y su extraordinaria defensa mucosa forman una combinación fascinante.",
+   "highlight": [
+    "combinación fascinante"
+   ]
+  },
+  {
+   "id": "m1222",
+   "scene": 12,
+   "at": 165.3,
+   "text": "Una criatura extraña, una defensa casi increíble y un océano lleno de secretos.",
+   "highlight": [
+    "océano lleno de secretos"
+   ]
+  },
+  {
+   "id": "m1223",
+   "scene": 12,
+   "at": 171.0,
+   "text": "La naturaleza puede sorprendernos de maneras inesperadas.",
+   "highlight": [
+    "sorprendernos"
+   ]
+  },
+  {
+   "id": "m1224",
+   "scene": 12,
+   "at": 175.0,
+   "text": "¿Te atreverías a tocar esa mucosidad?",
+   "highlight": [
+    "mucosidad"
+   ]
+  }
+ ]
+}
