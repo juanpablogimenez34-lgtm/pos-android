@@ -213,10 +213,11 @@ export const GiantSquid: React.FC<{pose: SquidPose; uid: string; x: number; y: n
       {/* chorro del sifón (estela de agua desplazada y partículas finas) */}
       {jet > 0.01 && (
         <g opacity={jet}>
-          {[0, 1, 2].map((k) => <path key={k} d={`M${f1(sTip.x)},${f1(sTip.y)} q${f1(sdir * 80)},${f1(6 + k * 6)} ${f1(sdir * (160 + k * 60))},${f1(14 + k * 16 + Math.sin(t * 9 + k) * 8)}`} stroke="#bfe8ff" strokeWidth={10 - k * 3} fill="none" opacity={0.18} strokeLinecap="round" />)}
-          {Array.from({length: 10}, (_, k) => {
+          <path d={`M${f1(sTip.x)},${f1(sTip.y - 8)} Q${f1(sTip.x + sdir * 200)},${f1(sTip.y - 30)} ${f1(sTip.x + sdir * 420)},${f1(sTip.y - 50 + Math.sin(t * 7) * 10)} L${f1(sTip.x + sdir * 420)},${f1(sTip.y + 90 + Math.sin(t * 7) * 10)} Q${f1(sTip.x + sdir * 200)},${f1(sTip.y + 50)} ${f1(sTip.x)},${f1(sTip.y + 8)}Z`} fill="#bfe8ff" opacity={0.1} />
+          {[0, 1, 2].map((k) => <path key={k} d={`M${f1(sTip.x)},${f1(sTip.y)} q${f1(sdir * 110)},${f1(6 + k * 6)} ${f1(sdir * (240 + k * 80))},${f1(14 + k * 16 + Math.sin(t * 9 + k) * 8)}`} stroke="#d8f2ff" strokeWidth={12 - k * 3} fill="none" opacity={0.3} strokeLinecap="round" />)}
+          {Array.from({length: 16}, (_, k) => {
             const u = ((t * 2.4 + k / 10) % 1);
-            return <circle key={`j${k}`} cx={sTip.x + sdir * u * 260} cy={sTip.y + u * 30 + Math.sin(k * 3 + t * 5) * 10 * u} r={1.4 + u} fill="#dff4ff" opacity={0.6 * (1 - u)} />;
+            return <circle key={`j${k}`} cx={sTip.x + sdir * u * 420} cy={sTip.y + u * 40 + Math.sin(k * 3 + t * 5) * 14 * u} r={2.2 + 2 * u} fill="#dff4ff" opacity={0.75 * (1 - u)} />;
           })}
         </g>
       )}

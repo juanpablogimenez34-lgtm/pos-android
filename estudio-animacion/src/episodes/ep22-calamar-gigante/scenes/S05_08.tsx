@@ -179,19 +179,23 @@ export function scene08(t: number): SceneOut {
   const a = lerp(0, -1.1, seg(t, 115, 119));
   const b = burst(t);
   // retrocede con el manto por delante (cada impulso del sifón empuja ≈ 120 unidades)
-  const dist = b * 120;
+  const dist = b * 260;
   const px = 200 - dist * Math.cos(a * 0.5);
   const py = 300 - dist * Math.sin(a * 0.5) * 0.6;
   const pulseBoost = EV.jets.reduce((acc, tj) => Math.max(acc, clamp(1 - Math.abs(t - tj - 0.15) / 0.35)), 0);
   const pose = poseFrom(TR8, t, {pulse: lerp(0.15, 0.95, pulseBoost), jet: pulseBoost, siphon: t < 115 ? 1 : lerp(1, -0.2, seg(t, 115, 117)), tone: 0.2, rim: 0.7});
   const siphonW = toWorld({x: 40, y: 56}, px, py, a, 0.85);
-  let c: Cam = cam(px - 120, py, 0.9);
+  // cámara fija durante los primeros impulsos (el desplazamiento se ve contra el fondo), luego sigue al animal
+  const c0 = cam(-280, 300, 0.58);
+  let c: Cam = t < 109 ? c0 : shot(t, 109, 110, c0, cam(px - 120, py, 0.9), 'cine');
   if (t >= 110) c = shot(t, 110, 111.5, cam(px - 120, py, 0.9), cam(siphonW.x, siphonW.y, 2.0), 'cine');
   if (t >= 111.5) c = cam(siphonW.x, siphonW.y, 2.0);
   if (t >= 114.5) c = shot(t, 114.5, 116.5, cam(siphonW.x, siphonW.y, 2.0), cam(px - 100, py - 100, 0.75), 'cine');
   if (t >= 116.5) c = cam(px - 100, py - 100, 0.75);
   c = breathe(c, t, 0.25);
   const ss = toScreen(c, siphonW.x, siphonW.y);
+  const mW = toWorld({x: -260, y: 0}, px, py, a, 0.85);
+  const ms = toScreen(c, mW.x, mW.y);
   return {
     svg: (
       <OceanBack cam={c} t={t} depth={0.85}>
@@ -202,7 +206,7 @@ export function scene08(t: number): SceneOut {
       <>
         <OceanFront cam={c} t={t} />
         <Vignette />
-        <Callout k={win(t, 105.8, 109.6)} x={540} y={960} tx={160} ty={560} text="el manto se contrae" />
+        <Callout k={win(t, 105.8, 109.6)} x={ms.x} y={ms.y} tx={160} ty={560} text="el manto se contrae" />
         <Callout k={win(t, 111.6, 114.4)} x={ss.x} y={ss.y} tx={160} ty={560} text="sifón: expulsa el agua" />
         <Brand />
       </>

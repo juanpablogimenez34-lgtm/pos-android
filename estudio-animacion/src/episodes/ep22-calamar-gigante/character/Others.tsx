@@ -46,7 +46,8 @@ export const SpermWhale: React.FC<{x: number; y: number; t: number; scale?: numb
       <circle cx={-643} cy={57} r={3} fill="#c8d0d8" opacity={0.6 * (1 - tone)} />
       {/* aleta pectoral */}
       <path d={`M-760,170 q-60,${f1(80 + beat * 10)} -170,${f1(110 + beat * 12)} q60,-60 110,-120Z`} fill={C('#2a3038')} />
-      <path d={top.map((q, i) => `${i ? 'L' : 'M'}${f1(q.x)},${f1(q.y + 30)}`).join(' ')} stroke="#9ab8d0" strokeWidth={10} fill="none" opacity={0.12 * (1 - tone)} />
+      <path d={top.map((q, i) => `${i ? 'L' : 'M'}${f1(q.x)},${f1(q.y + 30)}`).join(' ')} stroke="#9ab8d0" strokeWidth={14} fill="none" opacity={0.22 * (1 - tone * 0.6)} />
+      <path d={bot.map((q, i) => `${i ? 'L' : 'M'}${f1(q.x)},${f1(q.y - 24)}`).join(' ')} stroke="#6a7a8a" strokeWidth={10} fill="none" opacity={0.18 * (1 - tone * 0.6)} />
     </g>
   );
 };
