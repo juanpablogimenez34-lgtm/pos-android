@@ -1,0 +1,71 @@
+{
+  "composition": "EP-PezErizo",
+  "quality": "final",
+  "scale": 1,
+  "crf": "20",
+  "concurrency": 4,
+  "segmentSeconds": 30,
+  "segments": [
+    {
+      "start": 0,
+      "end": 899,
+      "secs": 162.7,
+      "peakMB": 3419
+    },
+    {
+      "start": 900,
+      "end": 1799,
+      "secs": 147,
+      "peakMB": 3344
+    },
+    {
+      "start": 1800,
+      "end": 2699,
+      "secs": 153.2,
+      "peakMB": 3358
+    },
+    {
+      "start": 2700,
+      "end": 3599,
+      "secs": 149.1,
+      "peakMB": 3442
+    },
+    {
+      "start": 3600,
+      "end": 4499,
+      "secs": 150.9,
+      "peakMB": 3441
+    },
+    {
+      "start": 4500,
+      "end": 5399,
+      "secs": 155,
+      "peakMB": 3401
+    }
+  ],
+  "startedAt": "2026-11-23T15:35:16.311Z",
+  "audio": {
+    "secs": 517.7,
+    "peakMB": 2210
+  },
+  "loudness": {
+    "inputLUFS": -16.74,
+    "inputTruePeak": -1.99,
+    "targetLUFS": -14
+  },
+  "wallSecondsThisRun": 1454.2,
+  "totalSeconds": 1435.6,
+  "peakRssMB": 3442,
+  "output": {
+    "file": "out/ep-pez-globo-final-1080x1920.mp4",
+    "sizeMB": 74.89,
+    "width": 1080,
+    "height": 1920,
+    "fps": "30/1",
+    "videoFrames": 5400,
+    "durationSec": 180,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "framesOk": true
+}
