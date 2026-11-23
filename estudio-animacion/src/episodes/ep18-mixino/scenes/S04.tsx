@@ -37,7 +37,8 @@ export function scene04(t: number): SceneOut {
           return <path key={`n${i}`} d={`M${f1(a.x)},${f1(a.y)} Q${f1((a.x + b.x) / 2 + Math.sin(i + t) * 60)},${f1((a.y + b.y) / 2 + Math.cos(i * 1.3 + t) * 60)} ${f1(b.x)},${f1(b.y)}`} stroke="#d8f8ee" strokeWidth={1.2} fill="none" opacity={0.28 * net} />;
         })}
       {/* vesículas de mucina: se hinchan y estallan en un velo */}
-      {VES.map((v, i) => {
+      {VES.map((v0, i) => {
+        const v = {...v0, x: v0.x + Math.sin(t * 0.45 + i) * 18, y: v0.y + Math.cos(t * 0.38 + i * 1.7) * 14 - (t - 45) * 3};
         const t0 = EV.microBurst + v.d;
         const sw = seg(t, 46 + v.d * 0.5, t0);
         const burst = clamp((t - t0) / 1.6);
@@ -54,14 +55,20 @@ export function scene04(t: number): SceneOut {
         );
       })}
       {/* madejas: espiral que se deshace mientras crece una fibra ondulada */}
-      {SKEINS.map((s, i) => {
+      {SKEINS.map((s0, i) => {
+        const s = {...s0, x: s0.x + Math.sin(t * 0.5 + i * 2) * 16, y: s0.y + Math.cos(t * 0.42 + i) * 12 - (t - 45) * 4};
+        const rot = t * 0.9 + i;
         const u = seg(t, EV.microUnravel + s.d, EV.microUnravel + s.d + 4.5);
         let coil = '';
         const loops = 9 * (1 - u) + 0.3;
         for (let k = 0; k <= 60; k++) {
           const q = k / 60;
           const ang = q * Math.PI * 2 * loops;
-          coil += `${k ? 'L' : 'M'}${f1(s.x + Math.cos(ang) * 30 + q * 0)},${f1(s.y + Math.sin(ang) * 18 + (q - 0.5) * 50 * (1 - u))} `;
+          const lx = Math.cos(ang) * 30;
+          const ly = Math.sin(ang) * 18 + (q - 0.5) * 50 * (1 - u);
+          const ca = Math.cos(rot * 0.3);
+          const sa = Math.sin(rot * 0.3);
+          coil += `${k ? 'L' : 'M'}${f1(s.x + lx * ca - ly * sa)},${f1(s.y + lx * sa + ly * ca)} `;
         }
         let fib = '';
         const L = u * 1100;

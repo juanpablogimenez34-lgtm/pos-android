@@ -8,7 +8,7 @@ import {clamp, hash1} from '../../../engine/math';
 import {breathe, cam, Cam, SceneOut, shot, toScreen} from '../../../studio2';
 import {Hagfish} from '../character/Hagfish';
 import {SlimeCloud, SlimeDefs} from '../character/Slime';
-import {Callout, seg, Vignette, win} from '../components/common';
+import {Callout, seg, Vignette, Wash, win} from '../components/common';
 import {EV} from '../data/timeline';
 import {DeepBack, DeepFront} from '../environment/Deep';
 import {crawl, pathOf, poresAt} from './rig';
@@ -125,6 +125,7 @@ export function scene03(t: number): SceneOut {
         <Callout k={win(t, 33.0, 44.4)} x={lens.x} y={lens.y - R * 0.6} tx={820} ty={lens.y - R - 60} text="poro" />
         <Callout k={win(t, 34.2, 44.4)} x={lens.x + R * 0.55} y={lens.y + R * 0.3} tx={860} ty={lens.y + R + 70} text="glándula mucosa" align="right" />
         <Callout k={win(t, 35.4, 44.4)} x={lens.x - R * 0.3} y={lens.y + R * 0.1} tx={120} ty={lens.y - R - 40} text="células de filamento" />
+        <Wash k={0.9 * seg(t, 44.4, 45)} color="#010708" />
         <Callout k={win(t, 36.6, 44.4)} x={lens.x - R * 0.1} y={lens.y + R * 0.45} tx={130} ty={lens.y + R + 60} text="células mucosas" />
       </>
     ),
