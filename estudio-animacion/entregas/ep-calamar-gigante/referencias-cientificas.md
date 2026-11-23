@@ -38,4 +38,7 @@ Consulta: 23-11-2026, desde el entorno de producción (red con los cuatro domini
   - ningún coral tropical;
   - ningún diente de tiburón (el pico es córneo, como el de un loro);
   - ninguna cicatriz de ventosas en el cachalote, porque ese dato no se verificó.
-- **Escala** (escena 2): persona de 1,8 m frente a un animal de unos 10 m. El rótulo indica el máximo documentado («al menos 15 m»).
+- **Escala** (escena 2): persona de 1,8 m frente a un animal de unos 10 m. El rótulo dice «ejemplar más grande registrado: unos 17 m de longitud total».
+  - Esa cifra se cambió **a petición de la producción** (antes decía «al menos 15 m», tomado del Australian Museum).
+  - Las dos fuentes leídas no dan los 17 m: el Australian Museum dice «al menos 15 m» y Kubodera y Mori hablan de más de 8 m.
+  - Las cifras de 17–18 m suelen proceder de ejemplares antiguos, y los tentáculos pueden estirarse al medirlos.

@@ -87,7 +87,7 @@ export function scene02(t: number): SceneOut {
         {k > 0.01 && (
           <div style={{position: 'absolute', left: 60, right: 60, top: 1260, textAlign: 'center', fontFamily: FONT_FAMILY, opacity: k}}>
             <div style={{color: '#ffd8a8', fontWeight: 800, fontSize: 30}}>Escala aproximada · persona de 1,8 m</div>
-            <div style={{color: '#cfe0f0', fontWeight: 700, fontSize: 24}}>longitud total documentada: al menos 15 m (Australian Museum)</div>
+            <div style={{color: '#cfe0f0', fontWeight: 700, fontSize: 24}}>ejemplar más grande registrado: unos 17 m de longitud total</div>
           </div>
         )}
         <Callout k={win(t, 20.4, 22.8)} x={540} y={960} tx={160} ty={560} text="manto musculoso" />
