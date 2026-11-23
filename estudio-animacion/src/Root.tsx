@@ -58,8 +58,11 @@ import {MixinoSheet} from './episodes/ep18-mixino/character/Sheet';
 import {EelSheet} from './episodes/ep19-anguila-electrica/character/Sheet';
 import {PufferSheet} from './episodes/ep20-pez-erizo/character/Sheet';
 import {ArcherSheet} from './episodes/ep21-pez-arquero/character/Sheet';
+import {SquidSheet} from './episodes/ep22-calamar-gigante/character/Sheet';
 import {ARCHER_AUDIO, ArcherDocProps, ArcherDocumentary} from './episodes/ep21-pez-arquero/Documentary';
 const archerDefaults: ArcherDocProps = {quality: 'final', showSubtitles: true, audio: ARCHER_AUDIO, extraTracks: true};
+import {SQUID_AUDIO, SquidDocProps, SquidDocumentary} from './episodes/ep22-calamar-gigante/Documentary';
+const squidDefaults: SquidDocProps = {quality: 'final', showSubtitles: true, audio: SQUID_AUDIO, extraTracks: true};
 import {PUFFER_AUDIO, PufferDocProps, PufferDocumentary} from './episodes/ep20-pez-erizo/Documentary';
 const pufferDefaults: PufferDocProps = {quality: 'final', showSubtitles: true, audio: PUFFER_AUDIO, extraTracks: true};
 import {EEL_AUDIO, EelDocProps, EelDocumentary} from './episodes/ep19-anguila-electrica/Documentary';
@@ -179,6 +182,8 @@ export const RemotionRoot: React.FC = () => (
     <Composition id="EP-AnguilaElectrica" component={EelDocumentary} durationInFrames={180 * 30} fps={30} width={1080} height={1920} defaultProps={eelDefaults} />
     <Composition id="EP-PezErizo" component={PufferDocumentary} durationInFrames={180 * 30} fps={30} width={1080} height={1920} defaultProps={pufferDefaults} />
     <Composition id="EP-PezArquero" component={ArcherDocumentary} durationInFrames={180 * 30} fps={30} width={1080} height={1920} defaultProps={archerDefaults} />
+    <Composition id="EP-CalamarGigante" component={SquidDocumentary} durationInFrames={180 * 30} fps={30} width={1080} height={1920} defaultProps={squidDefaults} />
+    <Composition id="CalamarFicha" component={SquidSheet} durationInFrames={60} fps={30} width={1080} height={1920} />
     <Composition id="PezArqueroFicha" component={ArcherSheet} durationInFrames={60} fps={30} width={1080} height={1920} />
     <Composition id="PezErizoFicha" component={PufferSheet} durationInFrames={60} fps={30} width={1080} height={1920} />
     <Composition id="AnguilaFicha" component={EelSheet} durationInFrames={60} fps={30} width={1080} height={1920} />

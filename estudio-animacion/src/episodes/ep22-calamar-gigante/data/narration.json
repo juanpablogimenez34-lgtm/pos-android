@@ -1,0 +1,284 @@
+{
+ "episode": "ep22-calamar-gigante",
+ "durationSec": 180,
+ "voice": {
+  "engine": "piper",
+  "model": "es_MX-claude-high",
+  "lengthScale": 1.02,
+  "noiseScale": 0.62,
+  "noiseW": 0.55
+ },
+ "lines": [
+  {
+   "id": "c0100",
+   "scene": 1,
+   "at": 0.3,
+   "text": "¡Durante siglos parecía una leyenda… pero este monstruo marino existe de verdad!",
+   "highlight": [
+    "existe de verdad"
+   ]
+  },
+  {
+   "id": "c0101",
+   "scene": 1,
+   "at": 6.0,
+   "text": "Los marineros imaginaban criaturas de enormes tentáculos surgiendo de la oscuridad.",
+   "highlight": [
+    "enormes tentáculos"
+   ]
+  },
+  {
+   "id": "c0102",
+   "scene": 1,
+   "at": 11.4,
+   "text": "Pero hay un calamar real que parece salido de esas historias.",
+   "highlight": [
+    "calamar real"
+   ]
+  },
+  {
+   "id": "c0203",
+   "scene": 2,
+   "at": 15.5,
+   "text": "Se llama calamar gigante: Architeuthis dux.",
+   "highlight": [
+    "calamar gigante"
+   ]
+  },
+  {
+   "id": "c0204",
+   "scene": 2,
+   "at": 19.4,
+   "text": "Puede superar los diez metros de longitud total, y unos dos tercios corresponden a sus dos larguísimos tentáculos de alimentación.",
+   "highlight": [
+    "diez metros"
+   ]
+  },
+  {
+   "id": "c0305",
+   "scene": 3,
+   "at": 30.5,
+   "text": "Vive en aguas profundas y oscuras del océano abierto. Se han capturado ejemplares entre unos cuatrocientos y ochocientos metros.",
+   "highlight": [
+    "aguas profundas"
+   ]
+  },
+  {
+   "id": "c0306",
+   "scene": 3,
+   "at": 39.0,
+   "text": "Por eso, verlo vivo en su ambiente ha sido uno de los grandes retos de la exploración marina.",
+   "highlight": [
+    "grandes retos"
+   ]
+  },
+  {
+   "id": "c0407",
+   "scene": 4,
+   "at": 45.5,
+   "text": "Sus ojos están entre los más grandes del reino animal.",
+   "highlight": [
+    "más grandes"
+   ]
+  },
+  {
+   "id": "c0408",
+   "scene": 4,
+   "at": 49.6,
+   "text": "Son mucho mayores que los nuestros, y le ayudan a detectar señales de luz muy débiles en la oscuridad.",
+   "highlight": [
+    "señales de luz"
+   ]
+  },
+  {
+   "id": "c0409",
+   "scene": 4,
+   "at": 56.0,
+   "text": "Lo que ves es una visualización: el ojo capta luz, no la emite.",
+   "highlight": [
+    "visualización"
+   ]
+  },
+  {
+   "id": "c0510",
+   "scene": 5,
+   "at": 60.5,
+   "text": "Tiene ocho brazos y dos tentáculos de alimentación mucho más largos.",
+   "highlight": [
+    "ocho brazos",
+    "dos tentáculos"
+   ]
+  },
+  {
+   "id": "c0511",
+   "scene": 5,
+   "at": 65.4,
+   "text": "Los tentáculos terminan en mazas de cerca de un metro, con grandes ventosas armadas con anillos dentados.",
+   "highlight": [
+    "anillos dentados"
+   ]
+  },
+  {
+   "id": "c0512",
+   "scene": 5,
+   "at": 72.2,
+   "text": "Así sujeta a sus presas.",
+   "highlight": [
+    "sujeta"
+   ]
+  },
+  {
+   "id": "c0613",
+   "scene": 6,
+   "at": 75.5,
+   "text": "Es un depredador. En el estómago de algunos ejemplares se han hallado restos de peces grandes y de otros calamares.",
+   "highlight": [
+    "depredador"
+   ]
+  },
+  {
+   "id": "c0614",
+   "scene": 6,
+   "at": 83.4,
+   "text": "En esta recreación, los tentáculos atrapan la presa y los brazos ayudan a sujetarla.",
+   "highlight": [
+    "recreación"
+   ]
+  },
+  {
+   "id": "c0715",
+   "scene": 7,
+   "at": 90.5,
+   "text": "En el centro de los brazos se esconde un pico duro y afilado.",
+   "highlight": [
+    "pico"
+   ]
+  },
+  {
+   "id": "c0716",
+   "scene": 7,
+   "at": 95.4,
+   "text": "Junto con una lengua dentada, la rádula, desgarra el alimento en pequeños trozos.",
+   "highlight": [
+    "rádula"
+   ]
+  },
+  {
+   "id": "c0717",
+   "scene": 7,
+   "at": 101.4,
+   "text": "Una estructura dura en un cuerpo casi totalmente blando.",
+   "highlight": [
+    "casi totalmente blando"
+   ]
+  },
+  {
+   "id": "c0818",
+   "scene": 8,
+   "at": 105.5,
+   "text": "Como otros calamares, se impulsa expulsando agua por su sifón.",
+   "highlight": [
+    "sifón"
+   ]
+  },
+  {
+   "id": "c0819",
+   "scene": 8,
+   "at": 110.4,
+   "text": "Al contraer el manto, el chorro le permite maniobrar y cambiar de velocidad, mientras las aletas ayudan a estabilizarlo.",
+   "highlight": [
+    "contraer el manto"
+   ]
+  },
+  {
+   "id": "c0920",
+   "scene": 9,
+   "at": 120.5,
+   "text": "Pero incluso un gigante tiene enemigos.",
+   "highlight": [
+    "enemigos"
+   ]
+  },
+  {
+   "id": "c0921",
+   "scene": 9,
+   "at": 123.8,
+   "text": "Los cachalotes se alimentan de calamares gigantes:",
+   "highlight": [
+    "cachalotes"
+   ]
+  },
+  {
+   "id": "c0922",
+   "scene": 9,
+   "at": 127.6,
+   "text": "en el estómago de cachalotes varados se han encontrado sus picos.",
+   "highlight": [
+    "sus picos"
+   ]
+  },
+  {
+   "id": "c1023",
+   "scene": 10,
+   "at": 135.5,
+   "text": "En la oscuridad pueden coincidir un enorme mamífero que busca alimento y un cefalópodo de brazos poderosos.",
+   "highlight": [
+    "un enorme mamífero"
+   ]
+  },
+  {
+   "id": "c1024",
+   "scene": 10,
+   "at": 143.6,
+   "text": "Lo que ocurre en esos encuentros sigue siendo muy difícil de observar.",
+   "highlight": [
+    "difícil de observar"
+   ]
+  },
+  {
+   "id": "c1125",
+   "scene": 11,
+   "at": 150.5,
+   "text": "Durante mucho tiempo se conoció sobre todo por ejemplares muertos.",
+   "highlight": [
+    "ejemplares muertos"
+   ]
+  },
+  {
+   "id": "c1126",
+   "scene": 11,
+   "at": 155.4,
+   "text": "En 2004, una cámara suspendida a novecientos metros fotografió por primera vez a un calamar gigante vivo, atacando un cebo con sus tentáculos.",
+   "highlight": [
+    "por primera vez"
+   ]
+  },
+  {
+   "id": "c1227",
+   "scene": 12,
+   "at": 165.5,
+   "text": "Ojos enormes, diez apéndices y una vida escondida en las profundidades.",
+   "highlight": [
+    "diez apéndices"
+   ]
+  },
+  {
+   "id": "c1228",
+   "scene": 12,
+   "at": 171.0,
+   "text": "El calamar gigante nos recuerda cuánto queda por conocer del océano.",
+   "highlight": [
+    "cuánto queda por conocer"
+   ]
+  },
+  {
+   "id": "c1229",
+   "scene": 12,
+   "at": 175.6,
+   "text": "¿Qué otro misterio marino te gustaría descubrir?",
+   "highlight": [
+    "misterio marino"
+   ]
+  }
+ ]
+}
