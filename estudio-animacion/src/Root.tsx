@@ -56,6 +56,9 @@ import {StageSheet as ToadStageSheet} from './episodes/ep17-de-huevo-a-sapo/char
 import {SapoDemo} from './episodes/ep17-de-huevo-a-sapo/SapoDemo';
 import {MixinoSheet} from './episodes/ep18-mixino/character/Sheet';
 import {EelSheet} from './episodes/ep19-anguila-electrica/character/Sheet';
+import {PufferSheet} from './episodes/ep20-pez-erizo/character/Sheet';
+import {PUFFER_AUDIO, PufferDocProps, PufferDocumentary} from './episodes/ep20-pez-erizo/Documentary';
+const pufferDefaults: PufferDocProps = {quality: 'final', showSubtitles: true, audio: PUFFER_AUDIO, extraTracks: true};
 import {EEL_AUDIO, EelDocProps, EelDocumentary} from './episodes/ep19-anguila-electrica/Documentary';
 const eelDefaults: EelDocProps = {quality: 'final', showSubtitles: true, audio: EEL_AUDIO, extraTracks: true};
 import {MIXINO_AUDIO, MixinoProps, MixinoWithSlime} from './episodes/ep18-mixino/Documentary';
@@ -171,6 +174,8 @@ export const RemotionRoot: React.FC = () => (
     <Composition id="DeHuevoASapo" component={SapoDocumentary} durationInFrames={180 * 30} fps={30} width={1080} height={1920} defaultProps={sapoDefaults} />
     <Composition id="EP-Mixino" component={MixinoWithSlime} durationInFrames={180 * 30} fps={30} width={1080} height={1920} defaultProps={mixinoDefaults} />
     <Composition id="EP-AnguilaElectrica" component={EelDocumentary} durationInFrames={180 * 30} fps={30} width={1080} height={1920} defaultProps={eelDefaults} />
+    <Composition id="EP-PezErizo" component={PufferDocumentary} durationInFrames={180 * 30} fps={30} width={1080} height={1920} defaultProps={pufferDefaults} />
+    <Composition id="PezErizoFicha" component={PufferSheet} durationInFrames={60} fps={30} width={1080} height={1920} />
     <Composition id="AnguilaFicha" component={EelSheet} durationInFrames={60} fps={30} width={1080} height={1920} />
     <Composition id="MixinoFicha" component={MixinoSheet} durationInFrames={60} fps={30} width={1080} height={1920} />
     <Composition id="SapoEtapasFicha" component={ToadStageSheet} durationInFrames={60} fps={30} width={1080} height={1920} />

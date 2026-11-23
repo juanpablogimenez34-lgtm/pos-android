@@ -1,0 +1,379 @@
+{
+ "voice": {
+  "engine": "piper",
+  "model": "es_MX-claude-high",
+  "lengthScale": 1.0,
+  "noiseScale": 0.62,
+  "noiseW": 0.55
+ },
+ "lines": 28,
+ "speechSeconds": 141.05,
+ "coverage": 0.784,
+ "problems": [],
+ "timing": [
+  {
+   "id": "p0100",
+   "scene": 1,
+   "at": 0.3,
+   "text": "¡Este pez puede transformarse en una bola de espinas para sobrevivir!",
+   "highlight": [
+    "bola de espinas"
+   ],
+   "drift": 0.0,
+   "start": 0.3,
+   "end": 4.565,
+   "duration": 4.265
+  },
+  {
+   "id": "p0101",
+   "scene": 1,
+   "at": 5.4,
+   "text": "Cuando aparece un depredador, convierte su cuerpo en una esfera cubierta de espinas.",
+   "highlight": [
+    "esfera cubierta de espinas"
+   ],
+   "drift": 0.0,
+   "start": 5.4,
+   "end": 10.4,
+   "duration": 5.0
+  },
+  {
+   "id": "p0102",
+   "scene": 1,
+   "at": 11.0,
+   "text": "Y no necesita ningún truco: utiliza su propia anatomía.",
+   "highlight": [
+    "su propia anatomía"
+   ],
+   "drift": 0.0,
+   "start": 11.0,
+   "end": 14.865,
+   "duration": 3.865
+  },
+  {
+   "id": "p0203",
+   "scene": 2,
+   "at": 15.5,
+   "text": "Nuestro protagonista es el pez erizo de espinas largas, un pariente cercano de los peces globo.",
+   "highlight": [
+    "pez erizo de espinas largas"
+   ],
+   "drift": 0.0,
+   "start": 15.5,
+   "end": 21.111,
+   "duration": 5.611
+  },
+  {
+   "id": "p0204",
+   "scene": 2,
+   "at": 22.6,
+   "text": "En condiciones normales nada con un cuerpo compacto. Pero cuando se siente amenazado, su apariencia cambia por completo.",
+   "highlight": [
+    "cambia por completo"
+   ],
+   "drift": 0.0,
+   "start": 22.6,
+   "end": 30.116,
+   "duration": 7.516
+  },
+  {
+   "id": "p0305",
+   "scene": 3,
+   "at": 30.5,
+   "text": "Para inflarse, bombea agua por la boca hacia una región muy expansible de su sistema digestivo.",
+   "highlight": [
+    "bombea agua"
+   ],
+   "drift": 0.0,
+   "start": 30.5,
+   "end": 36.984,
+   "duration": 6.484
+  },
+  {
+   "id": "p0306",
+   "scene": 3,
+   "at": 37.6,
+   "text": "Así aumenta rápidamente su volumen, y una presa aparentemente fácil se convierte en un objetivo mucho más difícil.",
+   "highlight": [
+    "mucho más difícil"
+   ],
+   "drift": 0.0,
+   "start": 37.6,
+   "end": 46.228,
+   "duration": 8.628
+  },
+  {
+   "id": "p0407",
+   "scene": 4,
+   "at": 45.5,
+   "text": "Su organismo posee adaptaciones especiales que permiten esa expansión.",
+   "highlight": [
+    "adaptaciones especiales"
+   ],
+   "drift": 0.978,
+   "start": 46.478,
+   "end": 50.631,
+   "duration": 4.153
+  },
+  {
+   "id": "p0408",
+   "scene": 4,
+   "at": 50.4,
+   "text": "El estómago soporta cambios de volumen enormes, mientras todo el cuerpo adopta una forma redondeada.",
+   "highlight": [
+    "estómago"
+   ],
+   "drift": 0.481,
+   "start": 50.881,
+   "end": 57.261,
+   "duration": 6.38
+  },
+  {
+   "id": "p0509",
+   "scene": 5,
+   "at": 60.5,
+   "text": "Pero hacerse grande no es su única defensa.",
+   "highlight": [
+    "no es su única defensa"
+   ],
+   "drift": 0.0,
+   "start": 60.5,
+   "end": 63.091,
+   "duration": 2.591
+  },
+  {
+   "id": "p0510",
+   "scene": 5,
+   "at": 64.0,
+   "text": "En esta especie, las espinas se levantan cuando el cuerpo se infla: una barrera que puede hacer que el depredador renuncie a tragárselo.",
+   "highlight": [
+    "las espinas se levantan"
+   ],
+   "drift": 0.0,
+   "start": 64.0,
+   "end": 72.291,
+   "duration": 8.291
+  },
+  {
+   "id": "p0611",
+   "scene": 6,
+   "at": 75.5,
+   "text": "En un arrecife, el peligro puede aparecer desde cualquier dirección.",
+   "highlight": [
+    "cualquier dirección"
+   ],
+   "drift": 0.0,
+   "start": 75.5,
+   "end": 79.655,
+   "duration": 4.155
+  },
+  {
+   "id": "p0612",
+   "scene": 6,
+   "at": 80.8,
+   "text": "Frente a un depredador grande, el pez erizo aumenta su tamaño aparente y despliega sus espinas.",
+   "highlight": [
+    "tamaño aparente"
+   ],
+   "drift": 0.0,
+   "start": 80.8,
+   "end": 87.773,
+   "duration": 6.973
+  },
+  {
+   "id": "p0713",
+   "scene": 7,
+   "at": 90.5,
+   "text": "Su expansión puede ser considerable.",
+   "highlight": [
+    "considerable"
+   ],
+   "drift": 0.0,
+   "start": 90.5,
+   "end": 92.824,
+   "duration": 2.324
+  },
+  {
+   "id": "p0714",
+   "scene": 7,
+   "at": 93.6,
+   "text": "No se trata de hinchar las mejillas: el cambio afecta a buena parte del cuerpo.",
+   "highlight": [
+    "buena parte del cuerpo"
+   ],
+   "drift": 0.0,
+   "start": 93.6,
+   "end": 98.664,
+   "duration": 5.064
+  },
+  {
+   "id": "p0715",
+   "scene": 7,
+   "at": 99.8,
+   "text": "La forma que le servía para nadar se convierte en una defensa extraordinaria.",
+   "highlight": [
+    "defensa extraordinaria"
+   ],
+   "drift": 0.0,
+   "start": 99.8,
+   "end": 104.576,
+   "duration": 4.776
+  },
+  {
+   "id": "p0816",
+   "scene": 8,
+   "at": 105.5,
+   "text": "Pero esta defensa no es algo que pueda usar constantemente.",
+   "highlight": [
+    "constantemente"
+   ],
+   "drift": 0.0,
+   "start": 105.5,
+   "end": 109.051,
+   "duration": 3.551
+  },
+  {
+   "id": "p0817",
+   "scene": 8,
+   "at": 110.2,
+   "text": "Inflarse exige un esfuerzo importante. Cuando la amenaza desaparece, expulsa el agua acumulada.",
+   "highlight": [
+    "expulsa el agua"
+   ],
+   "drift": 0.0,
+   "start": 110.2,
+   "end": 117.093,
+   "duration": 6.893
+  },
+  {
+   "id": "p0918",
+   "scene": 9,
+   "at": 120.5,
+   "text": "Ahora ocurre otra transformación fascinante.",
+   "highlight": [
+    "otra transformación"
+   ],
+   "drift": 0.0,
+   "start": 120.5,
+   "end": 123.345,
+   "duration": 2.845
+  },
+  {
+   "id": "p0919",
+   "scene": 9,
+   "at": 124.2,
+   "text": "Poco a poco el cuerpo se desinfla, las espinas vuelven a plegarse, y la silueta vuelve a ser la de un pez.",
+   "highlight": [
+    "se desinfla"
+   ],
+   "drift": 0.0,
+   "start": 124.2,
+   "end": 130.973,
+   "duration": 6.773
+  },
+  {
+   "id": "p1020",
+   "scene": 10,
+   "at": 135.5,
+   "text": "Fuera del peligro, lleva una vida muy distinta.",
+   "highlight": [
+    "vida muy distinta"
+   ],
+   "drift": 0.0,
+   "start": 135.5,
+   "end": 139.029,
+   "duration": 3.529
+  },
+  {
+   "id": "p1021",
+   "scene": 10,
+   "at": 139.4,
+   "text": "Explora el arrecife en busca de invertebrados de concha dura, como caracoles y cangrejos.",
+   "highlight": [
+    "concha dura"
+   ],
+   "drift": 0.0,
+   "start": 139.4,
+   "end": 145.261,
+   "duration": 5.861
+  },
+  {
+   "id": "p1022",
+   "scene": 10,
+   "at": 145.8,
+   "text": "Su pico de dientes fusionados le permite triturarlos.",
+   "highlight": [
+    "dientes fusionados"
+   ],
+   "drift": 0.0,
+   "start": 145.8,
+   "end": 148.994,
+   "duration": 3.194
+  },
+  {
+   "id": "p1123",
+   "scene": 11,
+   "at": 150.5,
+   "text": "Su defensa es el resultado de adaptaciones extraordinarias: cuerpo, piel y espinas funcionan juntos.",
+   "highlight": [
+    "funcionan juntos"
+   ],
+   "drift": 0.0,
+   "start": 150.5,
+   "end": 157.199,
+   "duration": 6.699
+  },
+  {
+   "id": "p1124",
+   "scene": 11,
+   "at": 157.8,
+   "text": "Parece una defensa imposible, pero es completamente natural.",
+   "highlight": [
+    "completamente natural"
+   ],
+   "drift": 0.0,
+   "start": 157.8,
+   "end": 162.375,
+   "duration": 4.575
+  },
+  {
+   "id": "p1225",
+   "scene": 12,
+   "at": 165.5,
+   "text": "Un pez pequeño que puede convertirse en una esfera cubierta de espinas.",
+   "highlight": [
+    "esfera cubierta de espinas"
+   ],
+   "drift": 0.0,
+   "start": 165.5,
+   "end": 170.086,
+   "duration": 4.586
+  },
+  {
+   "id": "p1226",
+   "scene": 12,
+   "at": 170.6,
+   "text": "La naturaleza no necesita magia para crear algo extraordinario.",
+   "highlight": [
+    "no necesita magia"
+   ],
+   "drift": 0.0,
+   "start": 170.6,
+   "end": 174.828,
+   "duration": 4.228
+  },
+  {
+   "id": "p1227",
+   "scene": 12,
+   "at": 175.0,
+   "text": "¿Conocías esta increíble defensa?",
+   "highlight": [
+    "increíble defensa"
+   ],
+   "drift": 0.078,
+   "start": 175.078,
+   "end": 177.318,
+   "duration": 2.24
+  }
+ ]
+}
