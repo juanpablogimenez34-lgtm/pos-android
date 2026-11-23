@@ -1,0 +1,71 @@
+{
+  "composition": "EP-PezArquero",
+  "quality": "final",
+  "scale": 1,
+  "crf": "20",
+  "concurrency": 4,
+  "segmentSeconds": 30,
+  "segments": [
+    {
+      "start": 0,
+      "end": 899,
+      "secs": 145.1,
+      "peakMB": 3612
+    },
+    {
+      "start": 900,
+      "end": 1799,
+      "secs": 168.1,
+      "peakMB": 3201
+    },
+    {
+      "start": 1800,
+      "end": 2699,
+      "secs": 170.3,
+      "peakMB": 3588
+    },
+    {
+      "start": 2700,
+      "end": 3599,
+      "secs": 180,
+      "peakMB": 3344
+    },
+    {
+      "start": 3600,
+      "end": 4499,
+      "secs": 182.6,
+      "peakMB": 3617
+    },
+    {
+      "start": 4500,
+      "end": 5399,
+      "secs": 198.5,
+      "peakMB": 3657
+    }
+  ],
+  "startedAt": "2026-11-23T18:39:05.765Z",
+  "audio": {
+    "secs": 509.8,
+    "peakMB": 2203
+  },
+  "loudness": {
+    "inputLUFS": -16.88,
+    "inputTruePeak": -1.79,
+    "targetLUFS": -14
+  },
+  "wallSecondsThisRun": 1571.8,
+  "totalSeconds": 1554.4,
+  "peakRssMB": 3657,
+  "output": {
+    "file": "out/ep-pez-arquero-final-1080x1920.mp4",
+    "sizeMB": 58.52,
+    "width": 1080,
+    "height": 1920,
+    "fps": "30/1",
+    "videoFrames": 5400,
+    "durationSec": 180,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "framesOk": true
+}
