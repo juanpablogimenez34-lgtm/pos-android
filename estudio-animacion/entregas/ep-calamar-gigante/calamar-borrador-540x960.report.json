@@ -1,0 +1,71 @@
+{
+  "composition": "EP-CalamarGigante",
+  "quality": "draft",
+  "scale": 0.5,
+  "crf": "24",
+  "concurrency": 4,
+  "segmentSeconds": 30,
+  "segments": [
+    {
+      "start": 0,
+      "end": 899,
+      "secs": 44.9,
+      "peakMB": 2933
+    },
+    {
+      "start": 900,
+      "end": 1799,
+      "secs": 43.7,
+      "peakMB": 2700
+    },
+    {
+      "start": 1800,
+      "end": 2699,
+      "secs": 37.7,
+      "peakMB": 2707
+    },
+    {
+      "start": 2700,
+      "end": 3599,
+      "secs": 39.2,
+      "peakMB": 2679
+    },
+    {
+      "start": 3600,
+      "end": 4499,
+      "secs": 43.5,
+      "peakMB": 2680
+    },
+    {
+      "start": 4500,
+      "end": 5399,
+      "secs": 45.1,
+      "peakMB": 2782
+    }
+  ],
+  "startedAt": "2026-11-23T20:58:42.009Z",
+  "audio": {
+    "secs": 245,
+    "peakMB": 2305
+  },
+  "loudness": {
+    "inputLUFS": -16.76,
+    "inputTruePeak": -2.18,
+    "targetLUFS": -14
+  },
+  "wallSecondsThisRun": 518.8,
+  "totalSeconds": 499.1,
+  "peakRssMB": 2933,
+  "output": {
+    "file": "out/ep-calamar-gigante-borrador-540x960.mp4",
+    "sizeMB": 10.36,
+    "width": 540,
+    "height": 960,
+    "fps": "30/1",
+    "videoFrames": 5400,
+    "durationSec": 180,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "framesOk": true
+}
