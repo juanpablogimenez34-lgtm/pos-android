@@ -1,0 +1,406 @@
+{
+ "voice": {
+  "engine": "piper",
+  "model": "es_MX-claude-high",
+  "lengthScale": 1.0,
+  "noiseScale": 0.62,
+  "noiseW": 0.55
+ },
+ "lines": 30,
+ "speechSeconds": 137.22,
+ "coverage": 0.762,
+ "problems": [],
+ "timing": [
+  {
+   "id": "q0100",
+   "scene": 1,
+   "at": 0.3,
+   "text": "¡Este pez dispara agua para cazar insectos que están fuera del río!",
+   "highlight": [
+    "dispara agua"
+   ],
+   "drift": 0.0,
+   "start": 0.3,
+   "end": 4.041,
+   "duration": 3.741
+  },
+  {
+   "id": "q0101",
+   "scene": 1,
+   "at": 5.0,
+   "text": "Apunta, dispara un chorro y espera a que su presa caiga.",
+   "highlight": [
+    "apunta",
+    "dispara"
+   ],
+   "drift": 0.0,
+   "start": 5.0,
+   "end": 8.857,
+   "duration": 3.857
+  },
+  {
+   "id": "q0102",
+   "scene": 1,
+   "at": 9.6,
+   "text": "Parece imposible, pero es una estrategia real de caza.",
+   "highlight": [
+    "estrategia real"
+   ],
+   "drift": 0.0,
+   "start": 9.6,
+   "end": 13.32,
+   "duration": 3.72
+  },
+  {
+   "id": "q0203",
+   "scene": 2,
+   "at": 15.5,
+   "text": "Su nombre es pez arquero. Vive en aguas tropicales del Indo-Pacífico, incluidos manglares y aguas salobres.",
+   "highlight": [
+    "pez arquero"
+   ],
+   "drift": 0.0,
+   "start": 15.5,
+   "end": 23.04,
+   "duration": 7.54
+  },
+  {
+   "id": "q0204",
+   "scene": 2,
+   "at": 23.6,
+   "text": "Su cuerpo es pequeño, pero su manera de conseguir alimento es extraordinaria.",
+   "highlight": [
+    "extraordinaria"
+   ],
+   "drift": 0.0,
+   "start": 23.6,
+   "end": 28.203,
+   "duration": 4.603
+  },
+  {
+   "id": "q0305",
+   "scene": 3,
+   "at": 30.5,
+   "text": "Para encontrar alimento, observa con atención lo que ocurre por encima de la superficie.",
+   "highlight": [
+    "por encima de la superficie"
+   ],
+   "drift": 0.0,
+   "start": 30.5,
+   "end": 35.604,
+   "duration": 5.104
+  },
+  {
+   "id": "q0306",
+   "scene": 3,
+   "at": 37.0,
+   "text": "Sus ojos detectan pequeños objetivos entre hojas y ramas.",
+   "highlight": [
+    "pequeños objetivos"
+   ],
+   "drift": 0.0,
+   "start": 37.0,
+   "end": 40.859,
+   "duration": 3.859
+  },
+  {
+   "id": "q0307",
+   "scene": 3,
+   "at": 41.3,
+   "text": "Pero mirar desde el agua tiene un problema.",
+   "highlight": [
+    "un problema"
+   ],
+   "drift": 0.0,
+   "start": 41.3,
+   "end": 44.058,
+   "duration": 2.758
+  },
+  {
+   "id": "q0408",
+   "scene": 4,
+   "at": 45.5,
+   "text": "Cuando la luz atraviesa la superficie, cambia de dirección.",
+   "highlight": [
+    "cambia de dirección"
+   ],
+   "drift": 0.0,
+   "start": 45.5,
+   "end": 49.214,
+   "duration": 3.714
+  },
+  {
+   "id": "q0409",
+   "scene": 4,
+   "at": 50.0,
+   "text": "Por eso, desde el agua, los objetos parecen estar en otro lugar.",
+   "highlight": [
+    "en otro lugar"
+   ],
+   "drift": 0.0,
+   "start": 50.0,
+   "end": 54.339,
+   "duration": 4.339
+  },
+  {
+   "id": "q0410",
+   "scene": 4,
+   "at": 54.6,
+   "text": "Aun así, el pez arquero orienta sus disparos con una precisión sorprendente.",
+   "highlight": [
+    "precisión sorprendente"
+   ],
+   "drift": 0.0,
+   "start": 54.6,
+   "end": 59.286,
+   "duration": 4.686
+  },
+  {
+   "id": "q0511",
+   "scene": 5,
+   "at": 60.5,
+   "text": "Su boca forma parte de un mecanismo especializado.",
+   "highlight": [
+    "mecanismo especializado"
+   ],
+   "drift": 0.0,
+   "start": 60.5,
+   "end": 63.657,
+   "duration": 3.157
+  },
+  {
+   "id": "q0512",
+   "scene": 5,
+   "at": 64.6,
+   "text": "La lengua y una ranura del paladar forman un tubo estrecho; al cerrar con fuerza las branquias, el agua sale disparada.",
+   "highlight": [
+    "tubo estrecho"
+   ],
+   "drift": 0.0,
+   "start": 64.6,
+   "end": 72.189,
+   "duration": 7.589
+  },
+  {
+   "id": "q0613",
+   "scene": 6,
+   "at": 75.5,
+   "text": "El chorro no es un simple salpicón.",
+   "highlight": [
+    "simple salpicón"
+   ],
+   "drift": 0.0,
+   "start": 75.5,
+   "end": 77.798,
+   "duration": 2.298
+  },
+  {
+   "id": "q0614",
+   "scene": 6,
+   "at": 78.4,
+   "text": "El agua que sale al final viaja más rápido y alcanza a la primera, de modo que se concentra cerca del objetivo.",
+   "highlight": [
+    "se concentra"
+   ],
+   "drift": 0.0,
+   "start": 78.4,
+   "end": 85.613,
+   "duration": 7.213
+  },
+  {
+   "id": "q0615",
+   "scene": 6,
+   "at": 86.0,
+   "text": "Así, poca agua basta para desprender a un insecto.",
+   "highlight": [
+    "poca agua"
+   ],
+   "drift": 0.0,
+   "start": 86.0,
+   "end": 89.22,
+   "duration": 3.22
+  },
+  {
+   "id": "q0716",
+   "scene": 7,
+   "at": 90.5,
+   "text": "Cuando el disparo alcanza al insecto, puede hacerle perder el equilibrio.",
+   "highlight": [
+    "perder el equilibrio"
+   ],
+   "drift": 0.0,
+   "start": 90.5,
+   "end": 94.554,
+   "duration": 4.054
+  },
+  {
+   "id": "q0717",
+   "scene": 7,
+   "at": 95.6,
+   "text": "Entonces comienza otra carrera: el pez debe llegar a donde caerá su presa antes que otro animal.",
+   "highlight": [
+    "otra carrera"
+   ],
+   "drift": 0.0,
+   "start": 95.6,
+   "end": 101.962,
+   "duration": 6.362
+  },
+  {
+   "id": "q0818",
+   "scene": 8,
+   "at": 105.5,
+   "text": "No basta con acertar. También debe reaccionar con rapidez.",
+   "highlight": [
+    "con rapidez"
+   ],
+   "drift": 0.0,
+   "start": 105.5,
+   "end": 109.215,
+   "duration": 3.715
+  },
+  {
+   "id": "q0819",
+   "scene": 8,
+   "at": 110.0,
+   "text": "Otros peces pueden aprovechar la caída de un insecto, así que cada segundo cuenta.",
+   "highlight": [
+    "cada segundo cuenta"
+   ],
+   "drift": 0.0,
+   "start": 110.0,
+   "end": 115.16,
+   "duration": 5.16
+  },
+  {
+   "id": "q0920",
+   "scene": 9,
+   "at": 120.5,
+   "text": "Aunque su habilidad es extraordinaria, no siempre acierta.",
+   "highlight": [
+    "no siempre acierta"
+   ],
+   "drift": 0.0,
+   "start": 120.5,
+   "end": 124.484,
+   "duration": 3.984
+  },
+  {
+   "id": "q0921",
+   "scene": 9,
+   "at": 125.0,
+   "text": "La distancia, el ángulo y las condiciones del entorno pueden desviar sus disparos.",
+   "highlight": [
+    "desviar"
+   ],
+   "drift": 0.0,
+   "start": 125.0,
+   "end": 130.679,
+   "duration": 5.679
+  },
+  {
+   "id": "q0922",
+   "scene": 9,
+   "at": 130.8,
+   "text": "Por eso su comportamiento interesa tanto a los científicos.",
+   "highlight": [
+    "científicos"
+   ],
+   "drift": 0.129,
+   "start": 130.929,
+   "end": 134.436,
+   "duration": 3.507
+  },
+  {
+   "id": "q1023",
+   "scene": 10,
+   "at": 135.5,
+   "text": "Los investigadores han estudiado cómo estos peces ajustan sus movimientos y sus disparos.",
+   "highlight": [
+    "ajustan"
+   ],
+   "drift": 0.0,
+   "start": 135.5,
+   "end": 140.956,
+   "duration": 5.456
+  },
+  {
+   "id": "q1024",
+   "scene": 10,
+   "at": 142.0,
+   "text": "Su forma de responder a los cambios revela un control motor más sofisticado de lo que parece.",
+   "highlight": [
+    "control motor"
+   ],
+   "drift": 0.0,
+   "start": 142.0,
+   "end": 147.477,
+   "duration": 5.477
+  },
+  {
+   "id": "q1125",
+   "scene": 11,
+   "at": 150.5,
+   "text": "En los manglares, el agua y la vegetación forman un mundo lleno de oportunidades.",
+   "highlight": [
+    "manglares"
+   ],
+   "drift": 0.0,
+   "start": 150.5,
+   "end": 155.758,
+   "duration": 5.258
+  },
+  {
+   "id": "q1126",
+   "scene": 11,
+   "at": 156.6,
+   "text": "El pez arquero aprovecha alimento que está fuera de su alcance, con una técnica de caza poco común.",
+   "highlight": [
+    "técnica de caza poco común"
+   ],
+   "drift": 0.0,
+   "start": 156.6,
+   "end": 162.687,
+   "duration": 6.087
+  },
+  {
+   "id": "q1227",
+   "scene": 12,
+   "at": 165.5,
+   "text": "Un pez que observa fuera del agua, ajusta sus disparos y derriba presas con precisión.",
+   "highlight": [
+    "con precisión"
+   ],
+   "drift": 0.0,
+   "start": 165.5,
+   "end": 171.085,
+   "duration": 5.585
+  },
+  {
+   "id": "q1228",
+   "scene": 12,
+   "at": 172.0,
+   "text": "La naturaleza tiene inventos realmente extraordinarios.",
+   "highlight": [
+    "inventos"
+   ],
+   "drift": 0.0,
+   "start": 172.0,
+   "end": 175.811,
+   "duration": 3.811
+  },
+  {
+   "id": "q1229",
+   "scene": 12,
+   "at": 175.6,
+   "text": "¿Conocías al pez arquero?",
+   "highlight": [
+    "pez arquero"
+   ],
+   "drift": 0.461,
+   "start": 176.061,
+   "end": 177.753,
+   "duration": 1.692
+  }
+ ]
+}
