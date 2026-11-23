@@ -1,0 +1,71 @@
+{
+  "composition": "EP-PezErizo",
+  "quality": "draft",
+  "scale": 0.5,
+  "crf": "24",
+  "concurrency": 4,
+  "segmentSeconds": 30,
+  "segments": [
+    {
+      "start": 0,
+      "end": 899,
+      "secs": 55.2,
+      "peakMB": 2493
+    },
+    {
+      "start": 900,
+      "end": 1799,
+      "secs": 49.5,
+      "peakMB": 2563
+    },
+    {
+      "start": 1800,
+      "end": 2699,
+      "secs": 53.9,
+      "peakMB": 2822
+    },
+    {
+      "start": 2700,
+      "end": 3599,
+      "secs": 49.7,
+      "peakMB": 2564
+    },
+    {
+      "start": 3600,
+      "end": 4499,
+      "secs": 51.5,
+      "peakMB": 2804
+    },
+    {
+      "start": 4500,
+      "end": 5399,
+      "secs": 52.4,
+      "peakMB": 2811
+    }
+  ],
+  "startedAt": "2026-11-23T15:19:31.120Z",
+  "audio": {
+    "secs": 529.6,
+    "peakMB": 2222
+  },
+  "loudness": {
+    "inputLUFS": -16.74,
+    "inputTruePeak": -1.99,
+    "targetLUFS": -14
+  },
+  "wallSecondsThisRun": 860.6,
+  "totalSeconds": 841.8,
+  "peakRssMB": 2822,
+  "output": {
+    "file": "out/pez-globo-borrador-540x960.mp4",
+    "sizeMB": 17.92,
+    "width": 540,
+    "height": 960,
+    "fps": "30/1",
+    "videoFrames": 5400,
+    "durationSec": 180,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "framesOk": true
+}
