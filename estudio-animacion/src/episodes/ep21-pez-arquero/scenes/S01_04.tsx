@@ -49,7 +49,7 @@ export function scene01(t: number): SceneOut {
       <>
         <MangroveFront cam={c} t={T} />
         <Vignette />
-        <BigTitle k={win(t, EV.hookText, 7.2, 0.4)} lines={['¡UN PEZ', 'FRANCOTIRADOR!']} top={300} size={90} />
+        <BigTitle k={win(t, EV.hookText, 7.2, 0.4)} lines={['¡UN PEZ', 'FRANCOTIRADOR!']} top={1150} size={90} />
         <Brand k={clamp((t - 8) / 1)} />
       </>
     ),
