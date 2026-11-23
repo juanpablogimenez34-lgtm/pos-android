@@ -1,0 +1,71 @@
+{
+  "composition": "EP-AnguilaElectrica",
+  "quality": "draft",
+  "scale": 0.5,
+  "crf": "24",
+  "concurrency": 4,
+  "segmentSeconds": 30,
+  "segments": [
+    {
+      "start": 0,
+      "end": 899,
+      "secs": 77.9,
+      "peakMB": 2898
+    },
+    {
+      "start": 900,
+      "end": 1799,
+      "secs": 101.6,
+      "peakMB": 2618
+    },
+    {
+      "start": 1800,
+      "end": 2699,
+      "secs": 68.4,
+      "peakMB": 2861
+    },
+    {
+      "start": 2700,
+      "end": 3599,
+      "secs": 65.9,
+      "peakMB": 2781
+    },
+    {
+      "start": 3600,
+      "end": 4499,
+      "secs": 61.7,
+      "peakMB": 2844
+    },
+    {
+      "start": 4500,
+      "end": 5399,
+      "secs": 80,
+      "peakMB": 2626
+    }
+  ],
+  "startedAt": "2026-11-23T12:49:34.286Z",
+  "audio": {
+    "secs": 575.4,
+    "peakMB": 2437
+  },
+  "loudness": {
+    "inputLUFS": -16.88,
+    "inputTruePeak": -0.87,
+    "targetLUFS": -14
+  },
+  "wallSecondsThisRun": 1049.3,
+  "totalSeconds": 1030.9,
+  "peakRssMB": 2898,
+  "output": {
+    "file": "out/anguila-borrador-540x960.mp4",
+    "sizeMB": 13.53,
+    "width": 540,
+    "height": 960,
+    "fps": "30/1",
+    "videoFrames": 5400,
+    "durationSec": 180,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "framesOk": true
+}
