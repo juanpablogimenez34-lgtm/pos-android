@@ -1,0 +1,487 @@
+{
+ "voice": {
+  "engine": "piper",
+  "model": "es_MX-claude-high",
+  "lengthScale": 1.02,
+  "noiseScale": 0.62,
+  "noiseW": 0.55
+ },
+ "lines": 36,
+ "speechSeconds": 148.81,
+ "coverage": 0.827,
+ "problems": [],
+ "timing": [
+  {
+   "id": "o0100",
+   "scene": 1,
+   "at": 0.2,
+   "text": "¡Este mamífero pone huevos, detecta electricidad y hasta puede inyectar veneno!",
+   "highlight": [
+    "pone huevos",
+    "detecta electricidad"
+   ],
+   "drift": 0.05,
+   "start": 0.25,
+   "end": 5.276,
+   "duration": 5.026
+  },
+  {
+   "id": "o0101",
+   "scene": 1,
+   "at": 5.4,
+   "text": "Tiene pico, patas palmeadas y una cola ancha y aplanada.",
+   "highlight": [
+    "patas palmeadas"
+   ],
+   "drift": 0.126,
+   "start": 5.526,
+   "end": 9.62,
+   "duration": 4.094
+  },
+  {
+   "id": "o0102",
+   "scene": 1,
+   "at": 9.6,
+   "text": "Parece una combinación imposible, pero existe de verdad: es el ornitorrinco.",
+   "highlight": [
+    "ornitorrinco"
+   ],
+   "drift": 0.27,
+   "start": 9.87,
+   "end": 14.823,
+   "duration": 4.953
+  },
+  {
+   "id": "o0200",
+   "scene": 2,
+   "at": 15.4,
+   "text": "Vive en ríos y arroyos del este de Australia y de Tasmania.",
+   "highlight": [
+    "este de Australia",
+    "Tasmania"
+   ],
+   "drift": 0.0,
+   "start": 15.4,
+   "end": 19.664,
+   "duration": 4.264
+  },
+  {
+   "id": "o0201",
+   "scene": 2,
+   "at": 19.8,
+   "text": "Su pelaje denso e impermeable lo adapta a la tierra y al agua.",
+   "highlight": [
+    "pelaje denso e impermeable"
+   ],
+   "drift": 0.114,
+   "start": 19.914,
+   "end": 24.772,
+   "duration": 4.858
+  },
+  {
+   "id": "o0202",
+   "scene": 2,
+   "at": 25.0,
+   "text": "Al nadar, apenas asoman la cabeza, la espalda y la cola.",
+   "highlight": [
+    "cabeza, la espalda y la cola"
+   ],
+   "drift": 0.022,
+   "start": 25.022,
+   "end": 29.612,
+   "duration": 4.59
+  },
+  {
+   "id": "o0300",
+   "scene": 3,
+   "at": 30.4,
+   "text": "A diferencia de casi todos los mamíferos, el ornitorrinco pone huevos.",
+   "highlight": [
+    "pone huevos"
+   ],
+   "drift": 0.0,
+   "start": 30.4,
+   "end": 34.823,
+   "duration": 4.423
+  },
+  {
+   "id": "o0301",
+   "scene": 3,
+   "at": 34.8,
+   "text": "La hembra prepara un nido en una madriguera, con hojas húmedas,",
+   "highlight": [
+    "madriguera"
+   ],
+   "drift": 0.273,
+   "start": 35.073,
+   "end": 39.415,
+   "duration": 4.342
+  },
+  {
+   "id": "o0302",
+   "scene": 3,
+   "at": 39.4,
+   "text": "y suele poner dos pequeños huevos, que abraza con la cola.",
+   "highlight": [
+    "dos pequeños huevos"
+   ],
+   "drift": 0.265,
+   "start": 39.665,
+   "end": 43.174,
+   "duration": 3.509
+  },
+  {
+   "id": "o0400",
+   "scene": 4,
+   "at": 45.4,
+   "text": "Tras unos diez días, las crías rompen la cáscara blanda.",
+   "highlight": [
+    "diez días"
+   ],
+   "drift": 0.0,
+   "start": 45.4,
+   "end": 49.492,
+   "duration": 4.092
+  },
+  {
+   "id": "o0401",
+   "scene": 4,
+   "at": 50.0,
+   "text": "Nacen diminutas, con los ojos cerrados y sin pelaje.",
+   "highlight": [
+    "ojos cerrados",
+    "sin pelaje"
+   ],
+   "drift": 0.0,
+   "start": 50.0,
+   "end": 53.508,
+   "duration": 3.508
+  },
+  {
+   "id": "o0402",
+   "scene": 4,
+   "at": 54.8,
+   "text": "La madre permanece junto a ellas en el nido.",
+   "highlight": [
+    "madre"
+   ],
+   "drift": 0.0,
+   "start": 54.8,
+   "end": 57.616,
+   "duration": 2.816
+  },
+  {
+   "id": "o0500",
+   "scene": 5,
+   "at": 60.4,
+   "text": "Otra rareza: aunque pone huevos, alimenta a sus crías con leche.",
+   "highlight": [
+    "con leche"
+   ],
+   "drift": 0.0,
+   "start": 60.4,
+   "end": 64.894,
+   "duration": 4.494
+  },
+  {
+   "id": "o0501",
+   "scene": 5,
+   "at": 65.0,
+   "text": "Pero la madre no tiene pezones.",
+   "highlight": [
+    "no tiene pezones"
+   ],
+   "drift": 0.144,
+   "start": 65.144,
+   "end": 67.075,
+   "duration": 1.931
+  },
+  {
+   "id": "o0502",
+   "scene": 5,
+   "at": 67.8,
+   "text": "La leche brota en dos zonas del vientre, y las crías la toman de la piel.",
+   "highlight": [
+    "dos zonas del vientre"
+   ],
+   "drift": 0.0,
+   "start": 67.8,
+   "end": 72.11,
+   "duration": 4.31
+  },
+  {
+   "id": "o0600",
+   "scene": 6,
+   "at": 75.4,
+   "text": "Durante tres o cuatro meses, las crías crecen en la madriguera.",
+   "highlight": [
+    "tres o cuatro meses"
+   ],
+   "drift": 0.0,
+   "start": 75.4,
+   "end": 79.477,
+   "duration": 4.077
+  },
+  {
+   "id": "o0601",
+   "scene": 6,
+   "at": 80.0,
+   "text": "Les sale el pelaje, se abren sus ojos y sus patas se fortalecen.",
+   "highlight": [
+    "pelaje"
+   ],
+   "drift": 0.0,
+   "start": 80.0,
+   "end": 84.659,
+   "duration": 4.659
+  },
+  {
+   "id": "o0602",
+   "scene": 6,
+   "at": 84.6,
+   "text": "Al final del verano, salen por primera vez al mundo exterior.",
+   "highlight": [
+    "mundo exterior"
+   ],
+   "drift": 0.309,
+   "start": 84.909,
+   "end": 88.697,
+   "duration": 3.788
+  },
+  {
+   "id": "o0700",
+   "scene": 7,
+   "at": 90.4,
+   "text": "Sus patas delanteras funcionan como remos:",
+   "highlight": [
+    "remos"
+   ],
+   "drift": 0.0,
+   "start": 90.4,
+   "end": 93.144,
+   "duration": 2.744
+  },
+  {
+   "id": "o0701",
+   "scene": 7,
+   "at": 93.2,
+   "text": "las membranas se despliegan y lo impulsan bajo el agua,",
+   "highlight": [
+    "membranas"
+   ],
+   "drift": 0.194,
+   "start": 93.394,
+   "end": 97.413,
+   "duration": 4.019
+  },
+  {
+   "id": "o0702",
+   "scene": 7,
+   "at": 97.6,
+   "text": "mientras las patas traseras y la cola le ayudan a dirigirse y a estabilizarse.",
+   "highlight": [
+    "dirigirse"
+   ],
+   "drift": 0.063,
+   "start": 97.663,
+   "end": 102.796,
+   "duration": 5.133
+  },
+  {
+   "id": "o0800",
+   "scene": 8,
+   "at": 105.4,
+   "text": "Lo más increíble ocurre al buscar alimento: al sumergirse cierra los ojos, los oídos y las narinas.",
+   "highlight": [
+    "cierra los ojos"
+   ],
+   "drift": 0.0,
+   "start": 105.4,
+   "end": 112.316,
+   "duration": 6.916
+  },
+  {
+   "id": "o0801",
+   "scene": 8,
+   "at": 112.4,
+   "text": "Entonces usa su pico, con receptores que detectan la presión del agua",
+   "highlight": [
+    "receptores"
+   ],
+   "drift": 0.166,
+   "start": 112.566,
+   "end": 116.596,
+   "duration": 4.03
+  },
+  {
+   "id": "o0802",
+   "scene": 8,
+   "at": 116.0,
+   "text": "y las débiles señales eléctricas de los músculos de sus presas.",
+   "highlight": [
+    "señales eléctricas"
+   ],
+   "drift": 0.846,
+   "start": 116.846,
+   "end": 120.618,
+   "duration": 3.772
+  },
+  {
+   "id": "o0900",
+   "scene": 9,
+   "at": 120.4,
+   "text": "No tiene dientes funcionales.",
+   "highlight": [
+    "dientes"
+   ],
+   "drift": 0.468,
+   "start": 120.868,
+   "end": 122.668,
+   "duration": 1.8
+  },
+  {
+   "id": "o0901",
+   "scene": 9,
+   "at": 122.4,
+   "text": "Bucea entre medio minuto y dos minutos, y guarda larvas en sus abazones.",
+   "highlight": [
+    "abazones"
+   ],
+   "drift": 0.518,
+   "start": 122.918,
+   "end": 127.812,
+   "duration": 4.894
+  },
+  {
+   "id": "o0902",
+   "scene": 9,
+   "at": 129.6,
+   "text": "En la superficie los tritura con placas córneas de la boca.",
+   "highlight": [
+    "placas córneas"
+   ],
+   "drift": 0.0,
+   "start": 129.6,
+   "end": 132.897,
+   "duration": 3.297
+  },
+  {
+   "id": "o1000",
+   "scene": 10,
+   "at": 135.4,
+   "text": "Pero aún guarda otro secreto.",
+   "highlight": [
+    "otro secreto"
+   ],
+   "drift": 0.0,
+   "start": 135.4,
+   "end": 137.296,
+   "duration": 1.896
+  },
+  {
+   "id": "o1001",
+   "scene": 10,
+   "at": 137.6,
+   "text": "Los machos tienen un espolón en el tobillo de cada pata trasera, unido a una glándula de veneno.",
+   "highlight": [
+    "espolón",
+    "glándula de veneno"
+   ],
+   "drift": 0.0,
+   "start": 137.6,
+   "end": 143.502,
+   "duration": 5.902
+  },
+  {
+   "id": "o1002",
+   "scene": 10,
+   "at": 144.2,
+   "text": "Su veneno causa un dolor intenso y parece importante en la competencia entre machos.",
+   "highlight": [
+    "dolor intenso"
+   ],
+   "drift": 0.0,
+   "start": 144.2,
+   "end": 150.022,
+   "duration": 5.822
+  },
+  {
+   "id": "o1100",
+   "scene": 11,
+   "at": 150.4,
+   "text": "El ornitorrinco es un monotrema: un pequeño grupo de mamíferos que ponen huevos.",
+   "highlight": [
+    "monotrema"
+   ],
+   "drift": 0.0,
+   "start": 150.4,
+   "end": 155.813,
+   "duration": 5.413
+  },
+  {
+   "id": "o1101",
+   "scene": 11,
+   "at": 156.0,
+   "text": "Comparte ese rasgo con los equidnas.",
+   "highlight": [
+    "equidnas"
+   ],
+   "drift": 0.063,
+   "start": 156.063,
+   "end": 158.3,
+   "duration": 2.237
+  },
+  {
+   "id": "o1102",
+   "scene": 11,
+   "at": 158.8,
+   "text": "No es una mezcla de animales, sino un linaje muy antiguo y lleno de adaptaciones únicas.",
+   "highlight": [
+    "linaje muy antiguo"
+   ],
+   "drift": 0.0,
+   "start": 158.8,
+   "end": 165.083,
+   "duration": 6.283
+  },
+  {
+   "id": "o1200",
+   "scene": 12,
+   "at": 165.4,
+   "text": "Nace de un huevo, toma leche, encuentra presas por señales eléctricas… y los machos tienen veneno.",
+   "highlight": [
+    "señales eléctricas"
+   ],
+   "drift": 0.0,
+   "start": 165.4,
+   "end": 171.787,
+   "duration": 6.387
+  },
+  {
+   "id": "o1201",
+   "scene": 12,
+   "at": 172.4,
+   "text": "La naturaleza supera nuestra imaginación.",
+   "highlight": [
+    "supera nuestra imaginación"
+   ],
+   "drift": 0.0,
+   "start": 172.4,
+   "end": 174.958,
+   "duration": 2.558
+  },
+  {
+   "id": "o1202",
+   "scene": 12,
+   "at": 175.4,
+   "text": "¿Conocías todos sus secretos?",
+   "highlight": [
+    "secretos"
+   ],
+   "drift": 0.0,
+   "start": 175.4,
+   "end": 177.375,
+   "duration": 1.975
+  }
+ ]
+}

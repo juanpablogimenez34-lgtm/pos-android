@@ -63,6 +63,9 @@ import {ARCHER_AUDIO, ArcherDocProps, ArcherDocumentary} from './episodes/ep21-p
 const archerDefaults: ArcherDocProps = {quality: 'final', showSubtitles: true, audio: ARCHER_AUDIO, extraTracks: true};
 import {WhaleSheet} from './episodes/ep23-cachalote/character/Sheet';
 import {VenomSheet} from './episodes/ep25-animales-venenosos/character/Sheet';
+import {PlatypusSheet} from './episodes/ep12-ornitorrinco/character/Sheet';
+import {PLATY_AUDIO, PlatyDocProps, PlatyDocumentary} from './episodes/ep12-ornitorrinco/Documentary';
+const platyDefaults: PlatyDocProps = {quality: 'final', showSubtitles: true, audio: PLATY_AUDIO, extraTracks: true};
 import {VENOM_AUDIO, VenomDocProps, VenomDocumentary} from './episodes/ep25-animales-venenosos/Documentary';
 const venomDefaults: VenomDocProps = {quality: 'final', showSubtitles: true, audio: VENOM_AUDIO, extraTracks: true};
 import {SharkSheet as GreenlandSheet} from './episodes/ep24-tiburon-groenlandia/character/Sheet';
@@ -195,6 +198,8 @@ export const RemotionRoot: React.FC = () => (
     <Composition id="EP-Cachalote" component={WhaleDocumentary} durationInFrames={180 * 30} fps={30} width={1080} height={1920} defaultProps={whaleDefaults} />
     <Composition id="EP-TiburonGroenlandia" component={GSharkDocumentary} durationInFrames={180 * 30} fps={30} width={1080} height={1920} defaultProps={gsharkDefaults} />
     <Composition id="EP-AnimalesVenenosos" component={VenomDocumentary} durationInFrames={180 * 30} fps={30} width={1080} height={1920} defaultProps={venomDefaults} />
+    <Composition id="EP-Ornitorrinco" component={PlatyDocumentary} durationInFrames={180 * 30} fps={30} width={1080} height={1920} defaultProps={platyDefaults} />
+    <Composition id="OrnitorrincoFicha" component={PlatypusSheet} durationInFrames={60} fps={30} width={1080} height={1920} />
     <Composition id="VenenososFicha" component={VenomSheet} durationInFrames={60} fps={30} width={1080} height={1920} />
     <Composition id="TiburonGroenlandiaFicha" component={GreenlandSheet} durationInFrames={60} fps={30} width={1080} height={1920} />
     <Composition id="CachaloteFicha" component={WhaleSheet} durationInFrames={60} fps={30} width={1080} height={1920} />
