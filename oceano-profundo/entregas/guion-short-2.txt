@@ -1,0 +1,11 @@
+SHORT 2 · 65 s
+  [00.25] Este pez tiene colmillos tan largos que no caben dentro de su boca.
+  [04.96] Es el pez víbora, un cazador de la zona de medianoche.
+  [09.24] Mide hasta unos treinta centímetros, pero su arma principal está en la cabeza.
+  [14.41] Con la boca cerrada, sus colmillos sobresalen por fuera de la cabeza.
+  [19.41] Cuando ataca, levanta la cabeza y abre la mandíbula de forma extrema.
+  [26.26] Los colmillos funcionan como una jaula: la presa ya no puede escapar.
+  [31.50] Además, tiene hileras de órganos luminosos en el vientre, que pueden ayudarle a disimular su silueta, y un pequeño señuelo en la punta de una espina dorsal.
+  [42.20] Muchos suben de noche a aguas menos profundas para alimentarse, y regresan a la oscuridad durante el día.
+  [49.73] En un mundo donde la comida escasea, no puede dejar escapar ninguna oportunidad.
+  [56.05] ¿Quieres conocer a los otros cazadores de las profundidades? Mira el documental completo.

@@ -10,7 +10,7 @@ export const CONFIG = {
   },
   /** Volúmenes de mezcla (0–1). La música se atenúa automáticamente durante la voz (duck). */
   audio: {narration: 1, music: 0.3, musicDuck: 0.32, ambience: 0.45, sfx: 0.55, duckAttack: 0.25, duckRelease: 0.6},
-  subtitles: {maxChars: 42, maxCharsShort: 28, maxLines: 2},
+  subtitles: {maxChars: 42, maxCharsShort: 26, maxLines: 2},
   seed: 20261124,
 };
 export type QualityName = keyof typeof CONFIG.quality;

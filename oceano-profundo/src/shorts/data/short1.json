@@ -1,0 +1,72 @@
+{
+ "title": "short1",
+ "voice": {
+  "engine": "piper",
+  "model": "es_MX-claude-high",
+  "lengthScale": 0.97,
+  "noiseScale": 0.6,
+  "noiseW": 0.6
+ },
+ "durationSec": 71,
+ "gap": 0.65,
+ "scenes": [
+  {
+   "n": 1,
+   "start": 0,
+   "end": 71,
+   "lead": 0.25,
+   "lines": [
+    {
+     "id": "100",
+     "text": "¿Una luz en la oscuridad total? Cuidado: es una trampa."
+    },
+    {
+     "id": "101",
+     "text": "Esto es un pez pescador abisal, y vive donde la luz del sol nunca llega."
+    },
+    {
+     "id": "102",
+     "text": "Sobre su cabeza tiene una espina modificada que termina en un señuelo luminoso."
+    },
+    {
+     "id": "103",
+     "text": "Para un pez que vive en la negrura, esa pequeña luz es irresistible."
+    },
+    {
+     "id": "104",
+     "text": "En muchas especies, esa luz la producen bacterias que viven dentro del señuelo."
+    },
+    {
+     "id": "105",
+     "text": "Un pequeño pez se acerca, atraído por el brillo…"
+    },
+    {
+     "id": "106",
+     "text": "y en una fracción de segundo, desaparece.",
+     "pause": 1.4
+    },
+    {
+     "id": "107",
+     "text": "Sus dientes, curvados hacia adentro, impiden que la presa escape, y su estómago puede estirarse para tragar presas sorprendentemente grandes."
+    },
+    {
+     "id": "108",
+     "text": "Y lo más extraño: en algunas especies, el macho, diminuto, se fusiona para siempre con la hembra."
+    },
+    {
+     "id": "109",
+     "text": "Pese a su aspecto, muchos caben en la palma de una mano."
+    },
+    {
+     "id": "110",
+     "text": "En las profundidades, la luz no siempre significa seguridad."
+    },
+    {
+     "id": "111",
+     "text": "Conoce a los demás monstruos reales de las profundidades en nuestro documental completo.",
+     "pause": 0.6
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,10 @@
+SHORT 5 · 64 s
+  [00.25] Calamar gigante contra calamar colosal: ¿cuál es más grande? Depende de cómo lo midas.
+  [06.69] El calamar gigante es largo y esbelto. Con sus tentáculos, los ejemplares mejor medidos rondan los doce o trece metros.
+  [15.12] El calamar colosal es más corto, pero mucho más robusto. El ejemplar más pesado documentado pesaba cerca de quinientos kilos.
+  [23.81] El gigante tiene ventosas con anillos dentados. El colosal, además de ventosas, tiene ganchos afilados, y algunos pueden girar.
+  [33.05] El gigante vive en muchos océanos del mundo. El colosal, en las aguas heladas que rodean la Antártida.
+  [39.93] Ambos tienen ojos enormes, y ambos son presas del cachalote.
+  [44.48] Y aún queda mucho por descubrir: ninguno de los dos se ha estudiado a fondo en su hábitat.
+  [50.52] Así que el más largo es el gigante, y el más pesado, el colosal.
+  [56.61] Compáralos en movimiento en nuestro documental completo.

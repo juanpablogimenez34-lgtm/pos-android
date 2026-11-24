@@ -1,0 +1,109 @@
+{
+ "voice": {
+  "engine": "piper",
+  "model": "es_MX-claude-high",
+  "lengthScale": 0.97,
+  "noiseScale": 0.6,
+  "noiseW": 0.6,
+  "engineUsed": "piper"
+ },
+ "lines": 10,
+ "words": 144,
+ "speechSeconds": 53.62,
+ "coverage": 0.825,
+ "scenes": [
+  {
+   "n": 1,
+   "start": 0,
+   "end": 65,
+   "voiceStart": 0.25,
+   "voiceEnd": 61.32,
+   "room": 3.28
+  }
+ ],
+ "problems": [],
+ "timing": [
+  {
+   "id": "200",
+   "text": "Este pez tiene colmillos tan largos que no caben dentro de su boca.",
+   "scene": 1,
+   "start": 0.25,
+   "end": 4.306,
+   "duration": 4.056
+  },
+  {
+   "id": "201",
+   "text": "Es el pez víbora, un cazador de la zona de medianoche.",
+   "scene": 1,
+   "start": 4.956,
+   "end": 8.588,
+   "duration": 3.631
+  },
+  {
+   "id": "202",
+   "text": "Mide hasta unos treinta centímetros, pero su arma principal está en la cabeza.",
+   "scene": 1,
+   "start": 9.238,
+   "end": 13.758,
+   "duration": 4.52
+  },
+  {
+   "id": "203",
+   "text": "Con la boca cerrada, sus colmillos sobresalen por fuera de la cabeza.",
+   "scene": 1,
+   "start": 14.408,
+   "end": 18.756,
+   "duration": 4.348
+  },
+  {
+   "id": "204",
+   "text": "Cuando ataca, levanta la cabeza y abre la mandíbula de forma extrema.",
+   "scene": 1,
+   "start": 19.406,
+   "end": 24.609,
+   "duration": 5.204
+  },
+  {
+   "id": "205",
+   "text": "Los colmillos funcionan como una jaula: la presa ya no puede escapar.",
+   "pause": 1.0,
+   "scene": 1,
+   "start": 26.259,
+   "end": 30.854,
+   "duration": 4.595
+  },
+  {
+   "id": "206",
+   "text": "Además, tiene hileras de órganos luminosos en el vientre, que pueden ayudarle a disimular su silueta, y un pequeño señuelo en la punta de una espina dorsal.",
+   "scene": 1,
+   "start": 31.504,
+   "end": 41.554,
+   "duration": 10.05
+  },
+  {
+   "id": "207",
+   "text": "Muchos suben de noche a aguas menos profundas para alimentarse, y regresan a la oscuridad durante el día.",
+   "scene": 1,
+   "start": 42.204,
+   "end": 49.078,
+   "duration": 6.874
+  },
+  {
+   "id": "208",
+   "text": "En un mundo donde la comida escasea, no puede dejar escapar ninguna oportunidad.",
+   "scene": 1,
+   "start": 49.728,
+   "end": 54.798,
+   "duration": 5.069
+  },
+  {
+   "id": "209",
+   "text": "¿Quieres conocer a los otros cazadores de las profundidades? Mira el documental completo.",
+   "pause": 0.6,
+   "scene": 1,
+   "start": 56.048,
+   "end": 61.324,
+   "duration": 5.276
+  }
+ ]
+}

@@ -20,12 +20,16 @@ export function cuesFrom(timing: TimedLine[], max: number, maxLines = 2): Cue[] 
   const out: Cue[] = [];
   for (const l of timing) {
     const lines = wrap(l.text, max);
-    // evitar bloques finales de una sola palabra suelta: reequilibrar
     const blocks: string[][] = [];
     for (let i = 0; i < lines.length; i += maxLines) blocks.push(lines.slice(i, i + maxLines));
+    // evitar bloques finales de una sola palabra: fusionar si cabe en 2 líneas; si no, pasar la última línea del
+    // bloque anterior al bloque final (nunca se pierde ninguna palabra)
     if (blocks.length > 1 && blocks[blocks.length - 1].join(' ').split(' ').length < 2) {
-      const last = blocks.pop()!;
-      blocks[blocks.length - 1] = wrap(blocks[blocks.length - 1].join(' ') + ' ' + last.join(' '), max + 6).slice(0, maxLines);
+      const prev = blocks[blocks.length - 2];
+      const last = blocks[blocks.length - 1];
+      const merged = wrap(prev.join(' ') + ' ' + last.join(' '), max + 6);
+      if (merged.length <= maxLines) blocks.splice(blocks.length - 2, 2, merged);
+      else if (prev.length > 1) blocks.splice(blocks.length - 2, 2, prev.slice(0, -1), wrap(prev[prev.length - 1] + ' ' + last.join(' '), max));
     }
     const total = blocks.reduce((a, b) => a + b.join(' ').length, 0);
     let t = l.start;

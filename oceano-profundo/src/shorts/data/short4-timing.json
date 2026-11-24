@@ -1,0 +1,117 @@
+{
+ "voice": {
+  "engine": "piper",
+  "model": "es_MX-claude-high",
+  "lengthScale": 0.97,
+  "noiseScale": 0.6,
+  "noiseW": 0.6,
+  "engineUsed": "piper"
+ },
+ "lines": 11,
+ "words": 140,
+ "speechSeconds": 56.38,
+ "coverage": 0.817,
+ "scenes": [
+  {
+   "n": 1,
+   "start": 0,
+   "end": 69,
+   "voiceStart": 0.25,
+   "voiceEnd": 64.73,
+   "room": 3.87
+  }
+ ],
+ "problems": [],
+ "timing": [
+  {
+   "id": "400",
+   "text": "¿Cómo caza un animal en completa oscuridad, a más de mil metros de profundidad?",
+   "scene": 1,
+   "start": 0.25,
+   "end": 5.611,
+   "duration": 5.361
+  },
+  {
+   "id": "401",
+   "text": "El cachalote, el mayor depredador con dientes del planeta, toma aire en la superficie y se sumerge.",
+   "scene": 1,
+   "start": 6.261,
+   "end": 12.904,
+   "duration": 6.643
+  },
+  {
+   "id": "402",
+   "text": "Puede permanecer bajo el agua una hora o más.",
+   "scene": 1,
+   "start": 13.554,
+   "end": 16.432,
+   "duration": 2.878
+  },
+  {
+   "id": "403",
+   "text": "Allí abajo no necesita ver: emite chasquidos muy potentes y escucha sus ecos.",
+   "scene": 1,
+   "start": 17.082,
+   "end": 22.338,
+   "duration": 5.256
+  },
+  {
+   "id": "404",
+   "text": "Sus chasquidos están entre los sonidos más potentes producidos por un animal.",
+   "scene": 1,
+   "start": 22.988,
+   "end": 27.752,
+   "duration": 4.764
+  },
+  {
+   "id": "405",
+   "text": "Es la ecolocalización. Los ecos le revelan dónde está su presa.",
+   "scene": 1,
+   "start": 28.402,
+   "end": 32.447,
+   "duration": 4.045
+  },
+  {
+   "id": "406",
+   "text": "Al acercarse, los chasquidos se aceleran hasta convertirse en un zumbido.",
+   "pause": 1.0,
+   "scene": 1,
+   "start": 34.097,
+   "end": 38.442,
+   "duration": 4.346
+  },
+  {
+   "id": "407",
+   "text": "Entre sus presas hay calamares, incluso calamares gigantes: en estómagos de cachalotes se han hallado sus picos.",
+   "scene": 1,
+   "start": 39.092,
+   "end": 46.426,
+   "duration": 7.334
+  },
+  {
+   "id": "408",
+   "text": "Esta escena es una reconstrucción ilustrativa: nadie ha filmado todavía un enfrentamiento entre ambos.",
+   "scene": 1,
+   "start": 47.076,
+   "end": 54.388,
+   "duration": 7.312
+  },
+  {
+   "id": "409",
+   "text": "Los calamares son una parte fundamental de su dieta.",
+   "scene": 1,
+   "start": 55.038,
+   "end": 58.201,
+   "duration": 3.164
+  },
+  {
+   "id": "410",
+   "text": "Sumérgete en el documental completo para conocer a los monstruos reales del océano.",
+   "pause": 0.6,
+   "scene": 1,
+   "start": 59.451,
+   "end": 64.73,
+   "duration": 5.278
+  }
+ ]
+}

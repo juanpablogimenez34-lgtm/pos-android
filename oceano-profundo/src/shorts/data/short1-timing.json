@@ -1,0 +1,125 @@
+{
+ "voice": {
+  "engine": "piper",
+  "model": "es_MX-claude-high",
+  "lengthScale": 0.97,
+  "noiseScale": 0.6,
+  "noiseW": 0.6,
+  "engineUsed": "piper"
+ },
+ "lines": 12,
+ "words": 151,
+ "speechSeconds": 57.14,
+ "coverage": 0.805,
+ "scenes": [
+  {
+   "n": 1,
+   "start": 0,
+   "end": 71,
+   "voiceStart": 0.25,
+   "voiceEnd": 66.54,
+   "room": 4.06
+  }
+ ],
+ "problems": [],
+ "timing": [
+  {
+   "id": "100",
+   "text": "¿Una luz en la oscuridad total? Cuidado: es una trampa.",
+   "scene": 1,
+   "start": 0.25,
+   "end": 4.268,
+   "duration": 4.018
+  },
+  {
+   "id": "101",
+   "text": "Esto es un pez pescador abisal, y vive donde la luz del sol nunca llega.",
+   "scene": 1,
+   "start": 4.918,
+   "end": 9.371,
+   "duration": 4.453
+  },
+  {
+   "id": "102",
+   "text": "Sobre su cabeza tiene una espina modificada que termina en un señuelo luminoso.",
+   "scene": 1,
+   "start": 10.021,
+   "end": 14.763,
+   "duration": 4.742
+  },
+  {
+   "id": "103",
+   "text": "Para un pez que vive en la negrura, esa pequeña luz es irresistible.",
+   "scene": 1,
+   "start": 15.413,
+   "end": 20.65,
+   "duration": 5.236
+  },
+  {
+   "id": "104",
+   "text": "En muchas especies, esa luz la producen bacterias que viven dentro del señuelo.",
+   "scene": 1,
+   "start": 21.3,
+   "end": 26.062,
+   "duration": 4.762
+  },
+  {
+   "id": "105",
+   "text": "Un pequeño pez se acerca, atraído por el brillo…",
+   "scene": 1,
+   "start": 26.712,
+   "end": 29.758,
+   "duration": 3.047
+  },
+  {
+   "id": "106",
+   "text": "y en una fracción de segundo, desaparece.",
+   "pause": 1.4,
+   "scene": 1,
+   "start": 31.808,
+   "end": 34.564,
+   "duration": 2.756
+  },
+  {
+   "id": "107",
+   "text": "Sus dientes, curvados hacia adentro, impiden que la presa escape, y su estómago puede estirarse para tragar presas sorprendentemente grandes.",
+   "scene": 1,
+   "start": 35.214,
+   "end": 43.828,
+   "duration": 8.614
+  },
+  {
+   "id": "108",
+   "text": "Y lo más extraño: en algunas especies, el macho, diminuto, se fusiona para siempre con la hembra.",
+   "scene": 1,
+   "start": 44.478,
+   "end": 51.538,
+   "duration": 7.059
+  },
+  {
+   "id": "109",
+   "text": "Pese a su aspecto, muchos caben en la palma de una mano.",
+   "scene": 1,
+   "start": 52.188,
+   "end": 55.752,
+   "duration": 3.565
+  },
+  {
+   "id": "110",
+   "text": "En las profundidades, la luz no siempre significa seguridad.",
+   "scene": 1,
+   "start": 56.402,
+   "end": 60.432,
+   "duration": 4.03
+  },
+  {
+   "id": "111",
+   "text": "Conoce a los demás monstruos reales de las profundidades en nuestro documental completo.",
+   "pause": 0.6,
+   "scene": 1,
+   "start": 61.682,
+   "end": 66.544,
+   "duration": 4.862
+  }
+ ]
+}

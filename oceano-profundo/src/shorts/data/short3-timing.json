@@ -1,0 +1,109 @@
+{
+ "voice": {
+  "engine": "piper",
+  "model": "es_MX-claude-high",
+  "lengthScale": 0.97,
+  "noiseScale": 0.6,
+  "noiseW": 0.6,
+  "engineUsed": "piper"
+ },
+ "lines": 10,
+ "words": 147,
+ "speechSeconds": 55.98,
+ "coverage": 0.836,
+ "scenes": [
+  {
+   "n": 1,
+   "start": 0,
+   "end": 67,
+   "voiceStart": 0.25,
+   "voiceEnd": 63.68,
+   "room": 2.92
+  }
+ ],
+ "problems": [],
+ "timing": [
+  {
+   "id": "300",
+   "text": "Estos son algunos de los ojos más grandes del reino animal.",
+   "scene": 1,
+   "start": 0.25,
+   "end": 3.884,
+   "duration": 3.634
+  },
+  {
+   "id": "301",
+   "text": "Pertenecen al calamar gigante, que vive a cientos de metros de profundidad.",
+   "scene": 1,
+   "start": 4.534,
+   "end": 9.022,
+   "duration": 4.489
+  },
+  {
+   "id": "302",
+   "text": "Es un animal real, aunque durante siglos inspiró leyendas de monstruos marinos.",
+   "scene": 1,
+   "start": 9.672,
+   "end": 14.664,
+   "duration": 4.991
+  },
+  {
+   "id": "303",
+   "text": "Pueden medir alrededor de veintisiete centímetros de diámetro: más que un balón de fútbol.",
+   "scene": 1,
+   "start": 15.314,
+   "end": 20.705,
+   "duration": 5.391
+  },
+  {
+   "id": "304",
+   "text": "¿Para qué necesita unos ojos tan grandes, en un lugar casi sin luz?",
+   "pause": 1.0,
+   "scene": 1,
+   "start": 22.355,
+   "end": 26.808,
+   "duration": 4.452
+  },
+  {
+   "id": "305",
+   "text": "Algunos investigadores proponen que le servirían para detectar a gran distancia el brillo que provoca un gran depredador, como el cachalote, al moverse entre organismos luminosos.",
+   "scene": 1,
+   "start": 27.458,
+   "end": 38.06,
+   "duration": 10.602
+  },
+  {
+   "id": "306",
+   "text": "Ver ese destello a tiempo podría darle la oportunidad de escapar.",
+   "scene": 1,
+   "start": 38.71,
+   "end": 42.975,
+   "duration": 4.265
+  },
+  {
+   "id": "307",
+   "text": "Y su cuerpo es igual de impresionante: los ejemplares mejor medidos rondan los doce o trece metros, incluidos sus largos tentáculos.",
+   "scene": 1,
+   "start": 43.625,
+   "end": 52.056,
+   "duration": 8.431
+  },
+  {
+   "id": "308",
+   "text": "Aún sabemos muy poco de su vida, porque rara vez se le ha observado vivo en su hábitat.",
+   "scene": 1,
+   "start": 52.706,
+   "end": 58.384,
+   "duration": 5.679
+  },
+  {
+   "id": "309",
+   "text": "Descubre más sobre este gigante en nuestro documental completo.",
+   "pause": 0.6,
+   "scene": 1,
+   "start": 59.634,
+   "end": 63.679,
+   "duration": 4.045
+  }
+ ]
+}

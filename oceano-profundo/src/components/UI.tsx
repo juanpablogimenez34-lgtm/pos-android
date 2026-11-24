@@ -21,7 +21,7 @@ export const Subtitles: React.FC<{cues: Cue[]; t: number; highlight?: string[]}>
   const c = cues.find((q) => t >= q.start && t < q.end);
   if (!c) return null;
   const k = clamp((t - c.start) / 0.12) * clamp((c.end - t) / 0.12);
-  const size = vertical ? 50 : 40;
+  const size = vertical ? 46 : 40;
   const mark = (line: string) =>
     line.split(' ').map((wd, i) => {
       const hit = highlight.some((x) => wd.toLowerCase().replace(/[^a-záéíóúñü]/g, '').startsWith(x));

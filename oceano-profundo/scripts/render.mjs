@@ -76,6 +76,9 @@ function run(args, label) {
 const probe = (file) =>
   JSON.parse(execFileSync('npx', ['remotion', 'ffprobe', '-v', 'error', '-count_packets', '-show_entries', 'stream=codec_type,codec_name,width,height,nb_read_packets,r_frame_rate', '-show_entries', 'format=duration,size', '-of', 'json', file]).toString());
 
+// el código se empaqueta UNA vez al empezar: editar src/ durante el render no afecta a los tramos pendientes
+const bundleDir = path.join(work, 'bundle');
+execFileSync('npx', ['remotion', 'bundle', 'src/index.ts', '--out-dir', bundleDir, '--log=error'], {stdio: 'inherit'});
 const report = {composition: COMP, quality: QUALITY, scale: SCALE, crf: CRF, concurrency: Number(CONC), segmentSeconds: SEG, segments: [], startedAt: new Date().toISOString()};
 const T0 = Date.now();
 const parts = [];
@@ -91,7 +94,7 @@ for (let start = FROM; start < TO; start += SEG * FPS) {
   }
   process.stdout.write(`> tramo ${start}-${end} (${(start / FPS).toFixed(0)}–${((end + 1) / FPS).toFixed(0)} s)… `);
   const m = await run(
-    ['remotion', 'render', 'src/index.ts', COMP, file, `--frames=${start}-${end}`, '--muted', `--props=${propsFile}`, `--scale=${SCALE}`, '--codec=h264', `--crf=${CRF}`, `--concurrency=${CONC}`, '--log=error'],
+    ['remotion', 'render', bundleDir, COMP, file, `--frames=${start}-${end}`, '--muted', `--props=${propsFile}`, `--scale=${SCALE}`, '--codec=h264', `--crf=${CRF}`, `--concurrency=${CONC}`, '--log=error'],
     `tramo ${start}`,
   );
   console.log(`${m.secs} s, pico ${m.peakMB} MB`);
@@ -108,7 +111,7 @@ let am = existsSync(audio + '.json') ? {...JSON.parse(readFileSync(audio + '.jso
 if (process.env.AUDIO_FROM && !existsSync(audio)) execFileSync('cp', [process.env.AUDIO_FROM, audio]);
 if (!existsSync(audio) || process.env.FORCE) {
   process.stdout.write('> audio (voz, música con ducking, ambiente, efectos, transiciones)… ');
-  am = await run(['remotion', 'render', 'src/index.ts', COMP, audio, '--codec=aac', `--frames=${FROM}-${TO - 1}`, `--props=${propsFile}`, '--log=error'], 'audio');
+  am = await run(['remotion', 'render', bundleDir, COMP, audio, '--codec=aac', `--frames=${FROM}-${TO - 1}`, `--props=${propsFile}`, '--log=error'], 'audio');
   console.log(`${am.secs} s`);
   writeFileSync(audio + '.json', JSON.stringify(am));
 } else console.log('= audio reutilizado');

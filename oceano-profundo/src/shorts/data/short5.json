@@ -1,0 +1,59 @@
+{
+ "title": "short5",
+ "voice": {
+  "engine": "piper",
+  "model": "es_MX-claude-high",
+  "lengthScale": 0.97,
+  "noiseScale": 0.6,
+  "noiseW": 0.6
+ },
+ "durationSec": 64,
+ "gap": 0.65,
+ "scenes": [
+  {
+   "n": 1,
+   "start": 0,
+   "end": 64,
+   "lead": 0.25,
+   "lines": [
+    {
+     "id": "500",
+     "text": "Calamar gigante contra calamar colosal: ¿cuál es más grande? Depende de cómo lo midas."
+    },
+    {
+     "id": "501",
+     "text": "El calamar gigante es largo y esbelto. Con sus tentáculos, los ejemplares mejor medidos rondan los doce o trece metros."
+    },
+    {
+     "id": "502",
+     "text": "El calamar colosal es más corto, pero mucho más robusto. El ejemplar más pesado documentado pesaba cerca de quinientos kilos."
+    },
+    {
+     "id": "503",
+     "text": "El gigante tiene ventosas con anillos dentados. El colosal, además de ventosas, tiene ganchos afilados, y algunos pueden girar."
+    },
+    {
+     "id": "504",
+     "text": "El gigante vive en muchos océanos del mundo. El colosal, en las aguas heladas que rodean la Antártida."
+    },
+    {
+     "id": "505",
+     "text": "Ambos tienen ojos enormes, y ambos son presas del cachalote."
+    },
+    {
+     "id": "506",
+     "text": "Y aún queda mucho por descubrir: ninguno de los dos se ha estudiado a fondo en su hábitat."
+    },
+    {
+     "id": "507",
+     "text": "Así que el más largo es el gigante, y el más pesado, el colosal."
+    },
+    {
+     "id": "508",
+     "text": "Compáralos en movimiento en nuestro documental completo.",
+     "pause": 0.6
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,100 @@
+{
+ "voice": {
+  "engine": "piper",
+  "model": "es_MX-claude-high",
+  "lengthScale": 0.97,
+  "noiseScale": 0.6,
+  "noiseW": 0.6,
+  "engineUsed": "piper"
+ },
+ "lines": 9,
+ "words": 140,
+ "speechSeconds": 53.64,
+ "coverage": 0.838,
+ "scenes": [
+  {
+   "n": 1,
+   "start": 0,
+   "end": 64,
+   "voiceStart": 0.25,
+   "voiceEnd": 59.69,
+   "room": 3.91
+  }
+ ],
+ "problems": [],
+ "timing": [
+  {
+   "id": "500",
+   "text": "Calamar gigante contra calamar colosal: ¿cuál es más grande? Depende de cómo lo midas.",
+   "scene": 1,
+   "start": 0.25,
+   "end": 6.037,
+   "duration": 5.787
+  },
+  {
+   "id": "501",
+   "text": "El calamar gigante es largo y esbelto. Con sus tentáculos, los ejemplares mejor medidos rondan los doce o trece metros.",
+   "scene": 1,
+   "start": 6.687,
+   "end": 14.468,
+   "duration": 7.78
+  },
+  {
+   "id": "502",
+   "text": "El calamar colosal es más corto, pero mucho más robusto. El ejemplar más pesado documentado pesaba cerca de quinientos kilos.",
+   "scene": 1,
+   "start": 15.118,
+   "end": 23.162,
+   "duration": 8.044
+  },
+  {
+   "id": "503",
+   "text": "El gigante tiene ventosas con anillos dentados. El colosal, además de ventosas, tiene ganchos afilados, y algunos pueden girar.",
+   "scene": 1,
+   "start": 23.812,
+   "end": 32.405,
+   "duration": 8.593
+  },
+  {
+   "id": "504",
+   "text": "El gigante vive en muchos océanos del mundo. El colosal, en las aguas heladas que rodean la Antártida.",
+   "scene": 1,
+   "start": 33.055,
+   "end": 39.277,
+   "duration": 6.223
+  },
+  {
+   "id": "505",
+   "text": "Ambos tienen ojos enormes, y ambos son presas del cachalote.",
+   "scene": 1,
+   "start": 39.927,
+   "end": 43.825,
+   "duration": 3.898
+  },
+  {
+   "id": "506",
+   "text": "Y aún queda mucho por descubrir: ninguno de los dos se ha estudiado a fondo en su hábitat.",
+   "scene": 1,
+   "start": 44.475,
+   "end": 49.873,
+   "duration": 5.398
+  },
+  {
+   "id": "507",
+   "text": "Así que el más largo es el gigante, y el más pesado, el colosal.",
+   "scene": 1,
+   "start": 50.523,
+   "end": 55.356,
+   "duration": 4.832
+  },
+  {
+   "id": "508",
+   "text": "Compáralos en movimiento en nuestro documental completo.",
+   "pause": 0.6,
+   "scene": 1,
+   "start": 56.606,
+   "end": 59.692,
+   "duration": 3.086
+  }
+ ]
+}
