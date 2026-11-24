@@ -1,0 +1,667 @@
+{
+ "voice": {
+  "engine": "piper",
+  "model": "es_MX-claude-high",
+  "lengthScale": 1.0,
+  "noiseScale": 0.6,
+  "noiseW": 0.6,
+  "engineUsed": "piper"
+ },
+ "lines": 71,
+ "words": 1216,
+ "speechSeconds": 476.34,
+ "coverage": 0.794,
+ "scenes": [
+  {
+   "n": 1,
+   "start": 0,
+   "end": 30,
+   "voiceStart": 1.2,
+   "voiceEnd": 28.24,
+   "room": 1.36
+  },
+  {
+   "n": 2,
+   "start": 30,
+   "end": 80,
+   "voiceStart": 31.0,
+   "voiceEnd": 77.13,
+   "room": 2.47
+  },
+  {
+   "n": 3,
+   "start": 80,
+   "end": 155,
+   "voiceStart": 82.0,
+   "voiceEnd": 145.42,
+   "room": 9.18
+  },
+  {
+   "n": 4,
+   "start": 155,
+   "end": 225,
+   "voiceStart": 156.5,
+   "voiceEnd": 216.31,
+   "room": 8.29
+  },
+  {
+   "n": 5,
+   "start": 225,
+   "end": 320,
+   "voiceStart": 226.5,
+   "voiceEnd": 312.64,
+   "room": 6.96
+  },
+  {
+   "n": 6,
+   "start": 320,
+   "end": 415,
+   "voiceStart": 321.5,
+   "voiceEnd": 400.46,
+   "room": 14.14
+  },
+  {
+   "n": 7,
+   "start": 415,
+   "end": 500,
+   "voiceStart": 416.5,
+   "voiceEnd": 488.08,
+   "room": 11.52
+  },
+  {
+   "n": 8,
+   "start": 500,
+   "end": 570,
+   "voiceStart": 501.5,
+   "voiceEnd": 559.46,
+   "room": 10.14
+  },
+  {
+   "n": 9,
+   "start": 570,
+   "end": 600,
+   "voiceStart": 570.8,
+   "voiceEnd": 596.7,
+   "room": 2.9
+  }
+ ],
+ "problems": [],
+ "timing": [
+  {
+   "id": "s01a",
+   "text": "Debajo de la superficie del océano existe un mundo donde la luz desaparece, la presión aumenta y criaturas extraordinarias han desarrollado habilidades que parecen imposibles.",
+   "scene": 1,
+   "start": 1.2,
+   "end": 12.128,
+   "duration": 10.928
+  },
+  {
+   "id": "s01b",
+   "text": "Algunas poseen ojos gigantescos.",
+   "pause": 0.3,
+   "scene": 1,
+   "start": 12.928,
+   "end": 15.172,
+   "duration": 2.244
+  },
+  {
+   "id": "s01c",
+   "text": "Otras producen su propia luz.",
+   "scene": 1,
+   "start": 15.672,
+   "end": 17.47,
+   "duration": 1.798
+  },
+  {
+   "id": "s01d",
+   "text": "Y unas pocas son capaces de enfrentarse a los mayores depredadores del planeta.",
+   "scene": 1,
+   "start": 17.97,
+   "end": 22.554,
+   "duration": 4.584
+  },
+  {
+   "id": "s01e",
+   "text": "Hoy descenderemos hasta las profundidades para descubrir los monstruos reales del océano.",
+   "pause": 0.3,
+   "scene": 1,
+   "start": 23.354,
+   "end": 28.241,
+   "duration": 4.887
+  },
+  {
+   "id": "s02a",
+   "text": "En los primeros doscientos metros, la zona iluminada, la luz del sol alimenta a las algas microscópicas que sostienen casi toda la vida del océano.",
+   "scene": 2,
+   "start": 31.0,
+   "end": 40.5,
+   "duration": 9.5
+  },
+  {
+   "id": "s02b",
+   "text": "Más abajo, hasta los mil metros, se extiende la zona crepuscular: un azul cada vez más tenue, donde la luz ya no alcanza para la fotosíntesis.",
+   "scene": 2,
+   "start": 41.0,
+   "end": 51.033,
+   "duration": 10.033
+  },
+  {
+   "id": "s02c",
+   "text": "Después comienza la zona de medianoche. Aquí, la luz del sol no llega nunca.",
+   "scene": 2,
+   "start": 51.533,
+   "end": 56.503,
+   "duration": 4.97
+  },
+  {
+   "id": "s02d",
+   "text": "Y por debajo de los cuatro mil metros se abren las regiones abisales.",
+   "scene": 2,
+   "start": 57.003,
+   "end": 60.883,
+   "duration": 3.88
+  },
+  {
+   "id": "s02e",
+   "text": "La presión aumenta una atmósfera cada diez metros. A cuatro mil metros, es unas cuatrocientas veces mayor que en la superficie.",
+   "scene": 2,
+   "start": 61.383,
+   "end": 69.759,
+   "duration": 8.375
+  },
+  {
+   "id": "s02f",
+   "text": "El agua está casi helada y el alimento es escaso. Pero la vida no ha desaparecido: se ha transformado.",
+   "scene": 2,
+   "start": 70.259,
+   "end": 77.133,
+   "duration": 6.874
+  },
+  {
+   "id": "s03a",
+   "text": "En la oscuridad total, una pequeña luz se balancea.",
+   "scene": 3,
+   "start": 82.0,
+   "end": 85.865,
+   "duration": 3.865
+  },
+  {
+   "id": "s03b",
+   "text": "Parece una presa fácil… pero es una trampa.",
+   "pause": 0.4,
+   "scene": 3,
+   "start": 86.765,
+   "end": 89.977,
+   "duration": 3.212
+  },
+  {
+   "id": "s03c",
+   "text": "Es un pez pescador abisal. Sobre su cabeza lleva una espina modificada que termina en un señuelo luminoso.",
+   "scene": 3,
+   "start": 90.477,
+   "end": 97.218,
+   "duration": 6.741
+  },
+  {
+   "id": "s03d",
+   "text": "En muchas especies, esa luz la producen bacterias bioluminiscentes que viven dentro del señuelo.",
+   "scene": 3,
+   "start": 97.718,
+   "end": 103.511,
+   "duration": 5.793
+  },
+  {
+   "id": "s03e",
+   "text": "Su boca es enorme, y sus dientes, largos y curvados hacia adentro, impiden que la presa escape.",
+   "pause": 4.0,
+   "scene": 3,
+   "start": 108.011,
+   "end": 114.557,
+   "duration": 6.546
+  },
+  {
+   "id": "s03f",
+   "text": "Su estómago puede estirarse para tragar presas sorprendentemente grandes. Donde las comidas son raras, no puede desperdiciar ninguna oportunidad.",
+   "scene": 3,
+   "start": 115.057,
+   "end": 123.796,
+   "duration": 8.739
+  },
+  {
+   "id": "s03g",
+   "text": "Su reproducción es igual de extraordinaria.",
+   "scene": 3,
+   "start": 124.296,
+   "end": 126.853,
+   "duration": 2.557
+  },
+  {
+   "id": "s03h",
+   "text": "En algunas especies, el macho es diminuto. Al encontrar a una hembra, se adhiere a su cuerpo y puede quedar unido a ella para siempre, compartiendo incluso su circulación sanguínea.",
+   "scene": 3,
+   "start": 127.353,
+   "end": 139.111,
+   "duration": 11.758
+  },
+  {
+   "id": "s03i",
+   "text": "Y pese a su aspecto aterrador, muchos peces pescadores abisales caben en la palma de una mano.",
+   "scene": 3,
+   "start": 139.611,
+   "end": 145.421,
+   "duration": 5.81
+  },
+  {
+   "id": "s04a",
+   "text": "En la misma oscuridad acecha otro cazador: el pez víbora.",
+   "scene": 4,
+   "start": 156.5,
+   "end": 160.338,
+   "duration": 3.838
+  },
+  {
+   "id": "s04b",
+   "text": "Su cuerpo es largo y delgado, y sus colmillos son tan grandes que no caben dentro de la boca cerrada.",
+   "scene": 4,
+   "start": 160.838,
+   "end": 167.564,
+   "duration": 6.727
+  },
+  {
+   "id": "s04c",
+   "text": "Funcionan como una jaula: cuando atrapa a una presa, ya no la deja escapar.",
+   "pause": 3.0,
+   "scene": 4,
+   "start": 171.064,
+   "end": 176.535,
+   "duration": 5.471
+  },
+  {
+   "id": "s04d",
+   "text": "Para engullirla, puede abrir la mandíbula en un ángulo extraordinario.",
+   "scene": 4,
+   "start": 177.035,
+   "end": 181.601,
+   "duration": 4.566
+  },
+  {
+   "id": "s04e",
+   "text": "A lo largo de su vientre tiene hileras de pequeños órganos luminosos, llamados fotóforos.",
+   "scene": 4,
+   "start": 182.101,
+   "end": 188.093,
+   "duration": 5.992
+  },
+  {
+   "id": "s04e2",
+   "text": "Incluso lleva un pequeño órgano luminoso en la punta de una larga espina de su aleta dorsal.",
+   "scene": 4,
+   "start": 188.593,
+   "end": 195.072,
+   "duration": 6.48
+  },
+  {
+   "id": "s04f",
+   "text": "Esa luz tenue puede ayudarle a disimular su silueta frente al débil resplandor que llega desde arriba.",
+   "scene": 4,
+   "start": 195.572,
+   "end": 201.4,
+   "duration": 5.828
+  },
+  {
+   "id": "s04g",
+   "text": "Muchos peces víbora suben de noche hacia aguas menos profundas para alimentarse, y regresan a la oscuridad durante el día.",
+   "scene": 4,
+   "start": 201.9,
+   "end": 210.401,
+   "duration": 8.501
+  },
+  {
+   "id": "s04h",
+   "text": "Donde el alimento escasea, estar siempre listo para atacar marca la diferencia.",
+   "scene": 4,
+   "start": 210.901,
+   "end": 216.312,
+   "duration": 5.411
+  },
+  {
+   "id": "s05a",
+   "text": "A cientos de metros de profundidad nada uno de los animales más legendarios de la Tierra: el calamar gigante, Architeuthis dux.",
+   "scene": 5,
+   "start": 226.5,
+   "end": 235.658,
+   "duration": 9.158
+  },
+  {
+   "id": "s05b",
+   "text": "Durante siglos inspiró historias de monstruos marinos. Hoy sabemos que es un animal real… y fascinante.",
+   "scene": 5,
+   "start": 236.158,
+   "end": 242.659,
+   "duration": 6.501
+  },
+  {
+   "id": "s05c",
+   "text": "Tiene ocho brazos y dos tentáculos mucho más largos, que usa para atrapar presas a distancia. Sus ventosas tienen anillos dentados que le ayudan a sujetarlas.",
+   "scene": 5,
+   "start": 243.159,
+   "end": 253.278,
+   "duration": 10.119
+  },
+  {
+   "id": "s05d",
+   "text": "Se impulsa expulsando agua a presión por su sifón, y se estabiliza con las aletas del manto.",
+   "scene": 5,
+   "start": 253.778,
+   "end": 259.364,
+   "duration": 5.587
+  },
+  {
+   "id": "s05d2",
+   "text": "Su cuerpo es blando y no tiene esqueleto: su parte más dura es un pico afilado, parecido al de un loro, oculto entre sus brazos.",
+   "scene": 5,
+   "start": 259.864,
+   "end": 269.186,
+   "duration": 9.321
+  },
+  {
+   "id": "s05e",
+   "text": "Pero su rasgo más asombroso son sus ojos.",
+   "pause": 0.6,
+   "scene": 5,
+   "start": 270.286,
+   "end": 272.904,
+   "duration": 2.619
+  },
+  {
+   "id": "s05f",
+   "text": "Pueden medir alrededor de veintisiete centímetros de diámetro: están entre los ojos más grandes del reino animal.",
+   "scene": 5,
+   "start": 273.404,
+   "end": 280.265,
+   "duration": 6.861
+  },
+  {
+   "id": "s05g",
+   "text": "Algunos investigadores proponen que unos ojos así le permitirían detectar a gran distancia la luz que provoca un gran depredador al moverse entre organismos luminosos.",
+   "scene": 5,
+   "start": 280.765,
+   "end": 291.336,
+   "duration": 10.57
+  },
+  {
+   "id": "s05h",
+   "text": "¿Y su tamaño? Los ejemplares mejor medidos rondan los doce o trece metros de longitud total, incluidos los tentáculos.",
+   "scene": 5,
+   "start": 291.836,
+   "end": 299.547,
+   "duration": 7.711
+  },
+  {
+   "id": "s05i",
+   "text": "Se han citado cifras cercanas a diecisiete metros, pero son más difíciles de verificar, porque los tentáculos se estiran tras la muerte.",
+   "scene": 5,
+   "start": 300.047,
+   "end": 307.927,
+   "duration": 7.88
+  },
+  {
+   "id": "s05j",
+   "text": "Aun así, junto a un ser humano, es un verdadero gigante.",
+   "scene": 5,
+   "start": 308.427,
+   "end": 312.641,
+   "duration": 4.214
+  },
+  {
+   "id": "s06a",
+   "text": "Pero incluso un calamar gigante tiene enemigos.",
+   "scene": 6,
+   "start": 321.5,
+   "end": 324.513,
+   "duration": 3.013
+  },
+  {
+   "id": "s06b",
+   "text": "El cachalote es el mayor depredador con dientes del planeta. Un macho adulto puede superar los quince metros de longitud.",
+   "scene": 6,
+   "start": 325.013,
+   "end": 332.386,
+   "duration": 7.373
+  },
+  {
+   "id": "s06b2",
+   "text": "Su enorme cabeza, que puede ocupar cerca de un tercio de su cuerpo, alberga el órgano del espermaceti, clave en la producción de sus sonidos.",
+   "scene": 6,
+   "start": 332.886,
+   "end": 341.386,
+   "duration": 8.5
+  },
+  {
+   "id": "s06c",
+   "text": "Toma aire en la superficie y desciende con potentes golpes de su cola. Puede bucear a más de mil metros y permanecer sumergido durante una hora o más.",
+   "scene": 6,
+   "start": 341.886,
+   "end": 351.746,
+   "duration": 9.861
+  },
+  {
+   "id": "s06d",
+   "text": "Allí abajo no necesita ver. Emite chasquidos muy potentes y escucha sus ecos.",
+   "pause": 0.5,
+   "scene": 6,
+   "start": 352.746,
+   "end": 358.042,
+   "duration": 5.295
+  },
+  {
+   "id": "s06e",
+   "text": "Con esta ecolocalización puede localizar presas en completa oscuridad.",
+   "scene": 6,
+   "start": 358.542,
+   "end": 362.621,
+   "duration": 4.079
+  },
+  {
+   "id": "s06e2",
+   "text": "Al acercarse a su presa, los chasquidos se aceleran hasta convertirse en un zumbido.",
+   "scene": 6,
+   "start": 363.121,
+   "end": 368.07,
+   "duration": 4.949
+  },
+  {
+   "id": "s06f",
+   "text": "En estómagos de cachalotes se han hallado picos de calamares gigantes, y en su piel, cicatrices circulares dejadas por ventosas.",
+   "scene": 6,
+   "start": 368.57,
+   "end": 376.49,
+   "duration": 7.92
+  },
+  {
+   "id": "s06g",
+   "text": "Lo que vemos ahora es una reconstrucción basada en esas evidencias. Nadie ha filmado todavía un enfrentamiento entre ambos.",
+   "pause": 0.5,
+   "scene": 6,
+   "start": 377.49,
+   "end": 385.702,
+   "duration": 8.212
+  },
+  {
+   "id": "s06h",
+   "text": "El cachalote se acerca guiado por sus ecos. El calamar, tal vez alertado por los destellos del plancton agitado, intenta escapar.",
+   "scene": 6,
+   "start": 386.202,
+   "end": 394.561,
+   "duration": 8.359
+  },
+  {
+   "id": "s06i",
+   "text": "En estas profundidades, los calamares son una parte fundamental de la dieta del cachalote.",
+   "scene": 6,
+   "start": 395.061,
+   "end": 400.46,
+   "duration": 5.399
+  },
+  {
+   "id": "s07a",
+   "text": "Mucho más al sur, en las aguas heladas que rodean la Antártida, vive otro coloso: el calamar colosal, Mesonychoteuthis hamiltoni.",
+   "scene": 7,
+   "start": 416.5,
+   "end": 425.114,
+   "duration": 8.614
+  },
+  {
+   "id": "s07b",
+   "text": "No es tan largo como el calamar gigante, pero es mucho más robusto.",
+   "scene": 7,
+   "start": 425.614,
+   "end": 430.386,
+   "duration": 4.772
+  },
+  {
+   "id": "s07c",
+   "text": "El ejemplar más pesado documentado, capturado en dos mil siete, pesaba cerca de quinientos kilos. Es el invertebrado más pesado que se conoce.",
+   "scene": 7,
+   "start": 430.886,
+   "end": 440.739,
+   "duration": 9.853
+  },
+  {
+   "id": "s07d",
+   "text": "Su manto es ancho y voluminoso, y sus ojos están entre los más grandes jamás medidos.",
+   "scene": 7,
+   "start": 441.239,
+   "end": 447.265,
+   "duration": 6.026
+  },
+  {
+   "id": "s07e",
+   "text": "Además de ventosas, sus brazos y tentáculos tienen ganchos afilados, y algunos pueden girar.",
+   "scene": 7,
+   "start": 447.765,
+   "end": 454.193,
+   "duration": 6.428
+  },
+  {
+   "id": "s07e2",
+   "text": "Entre sus presas probables hay peces de gran tamaño, como la merluza negra. Y él mismo es alimento de cachalotes.",
+   "scene": 7,
+   "start": 454.693,
+   "end": 462.041,
+   "duration": 7.348
+  },
+  {
+   "id": "s07f",
+   "text": "Comparémoslos. El calamar gigante es más largo y esbelto. El calamar colosal es más corto, pero mucho más pesado.",
+   "scene": 7,
+   "start": 462.541,
+   "end": 471.088,
+   "duration": 8.547
+  },
+  {
+   "id": "s07g",
+   "text": "Su comportamiento sigue siendo casi un misterio. Se ha propuesto que sería un cazador pausado, que espera a sus presas, pero hay muy pocas observaciones para afirmarlo.",
+   "scene": 7,
+   "start": 471.588,
+   "end": 481.89,
+   "duration": 10.302
+  },
+  {
+   "id": "s07h",
+   "text": "Recién en dos mil veinticinco se filmó por primera vez un ejemplar joven vivo en su hábitat.",
+   "scene": 7,
+   "start": 482.39,
+   "end": 488.077,
+   "duration": 5.686
+  },
+  {
+   "id": "s08a",
+   "text": "Las profundidades siguen siendo uno de los lugares menos explorados de la Tierra.",
+   "scene": 8,
+   "start": 501.5,
+   "end": 506.098,
+   "duration": 4.598
+  },
+  {
+   "id": "s08b",
+   "text": "Para llegar hasta aquí se necesitan vehículos capaces de resistir presiones enormes, iluminar la oscuridad y trabajar a kilómetros de la superficie.",
+   "scene": 8,
+   "start": 506.598,
+   "end": 515.397,
+   "duration": 8.798
+  },
+  {
+   "id": "s08c",
+   "text": "Con robots como este, los científicos observan a los animales sin sacarlos de su hogar.",
+   "scene": 8,
+   "start": 515.897,
+   "end": 521.211,
+   "duration": 5.314
+  },
+  {
+   "id": "s08c2",
+   "text": "Sus brazos mecánicos recogen muestras, y sus cámaras registran comportamientos que nunca antes se habían visto.",
+   "scene": 8,
+   "start": 521.711,
+   "end": 528.663,
+   "duration": 6.952
+  },
+  {
+   "id": "s08d",
+   "text": "Y lo que encuentran es asombroso: en estudios con cámaras frente a California, cerca de tres de cada cuatro animales observados podían producir luz.",
+   "scene": 8,
+   "start": 529.163,
+   "end": 538.509,
+   "duration": 9.346
+  },
+  {
+   "id": "s08e",
+   "text": "Cada año se describen nuevas especies de las profundidades, y gran parte del fondo marino aún no ha sido cartografiada en detalle.",
+   "scene": 8,
+   "start": 539.009,
+   "end": 546.995,
+   "duration": 7.986
+  },
+  {
+   "id": "s08e2",
+   "text": "En la zona de medianoche, la luz es el lenguaje de la vida: sirve para cazar, para esconderse y para encontrar pareja.",
+   "scene": 8,
+   "start": 547.495,
+   "end": 555.116,
+   "duration": 7.622
+  },
+  {
+   "id": "s08f",
+   "text": "Aquí abajo, todavía hay más preguntas que respuestas.",
+   "scene": 8,
+   "start": 555.616,
+   "end": 559.459,
+   "duration": 3.843
+  },
+  {
+   "id": "s09a",
+   "text": "Estas criaturas no son monstruos de leyenda. Son el resultado de millones de años de evolución en uno de los ambientes más extremos de nuestro planeta.",
+   "scene": 9,
+   "start": 570.8,
+   "end": 579.611,
+   "duration": 8.811
+  },
+  {
+   "id": "s09b",
+   "text": "Y mientras seguimos explorando las profundidades, una pregunta permanece abierta: ¿qué otras criaturas extraordinarias esperan ser descubiertas?",
+   "scene": 9,
+   "start": 580.111,
+   "end": 588.901,
+   "duration": 8.79
+  },
+  {
+   "id": "s09c",
+   "text": "Si quieres seguir explorando los secretos de la naturaleza, suscríbete y acompáñanos en nuestro próximo documental.",
+   "scene": 9,
+   "start": 589.401,
+   "end": 596.695,
+   "duration": 7.293
+  }
+ ]
+}

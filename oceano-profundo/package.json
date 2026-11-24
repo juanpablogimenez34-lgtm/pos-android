@@ -1,0 +1,29 @@
+{
+  "name": "oceano-profundo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Los monstruos reales de las profundidades del océano — documental animado de 10 min (Remotion + React + SVG/Canvas)",
+  "scripts": {
+    "studio": "remotion studio src/index.ts",
+    "typecheck": "tsc --noEmit",
+    "audio:narration": "python3 scripts/audio/narration.py",
+    "audio:score": "python3 scripts/audio/score.py",
+    "sheet": "node scripts/contact-sheet.mjs",
+    "sample": "node scripts/render.mjs --comp Documental --quality preview --scale 0.5 --from 0 --to 600 --out out/muestra-20s.mp4",
+    "render:preview": "node scripts/render.mjs --comp Documental --quality preview --scale 0.5 --out out/oceano-profundo-preview-960x540.mp4",
+    "render:final": "node scripts/render.mjs --comp Documental --quality premium --scale 1 --crf 20 --out out/oceano-profundo-documental-10min-1080p.mp4",
+    "render:shorts": "node scripts/render-shorts.mjs"
+  },
+  "dependencies": {
+    "@remotion/bundler": "4.0.545",
+    "@remotion/cli": "4.0.545",
+    "@remotion/renderer": "4.0.545",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "remotion": "4.0.545"
+  },
+  "devDependencies": {
+    "@types/react": "18.3.12",
+    "typescript": "5.6.3"
+  }
+}
