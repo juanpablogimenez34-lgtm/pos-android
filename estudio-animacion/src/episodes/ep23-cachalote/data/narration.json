@@ -1,0 +1,304 @@
+{
+ "episode": "ep23-cachalote",
+ "durationSec": 180,
+ "voice": {
+  "engine": "piper",
+  "model": "es_MX-claude-high",
+  "lengthScale": 1.02,
+  "noiseScale": 0.62,
+  "noiseW": 0.55
+ },
+ "lines": [
+  {
+   "id": "k0100",
+   "scene": 1,
+   "at": 0.3,
+   "text": "¡Este gigante puede encontrar presas en la oscuridad utilizando sonidos!",
+   "highlight": [
+    "utilizando sonidos"
+   ]
+  },
+  {
+   "id": "k0101",
+   "scene": 1,
+   "at": 5.3,
+   "text": "En las profundidades vive un cazador que explora la oscuridad con poderosos clics.",
+   "highlight": [
+    "poderosos clics"
+   ]
+  },
+  {
+   "id": "k0102",
+   "scene": 1,
+   "at": 11.2,
+   "text": "Es el cachalote, uno de los animales más extraordinarios del planeta.",
+   "highlight": [
+    "cachalote"
+   ]
+  },
+  {
+   "id": "k0200",
+   "scene": 2,
+   "at": 15.5,
+   "text": "El cachalote es el más grande de los cetáceos con dientes.",
+   "highlight": [
+    "cetáceos con dientes"
+   ]
+  },
+  {
+   "id": "k0201",
+   "scene": 2,
+   "at": 19.4,
+   "text": "Los machos miden hasta unos dieciséis metros; las hembras, unos doce.",
+   "highlight": [
+    "dieciséis metros"
+   ]
+  },
+  {
+   "id": "k0202",
+   "scene": 2,
+   "at": 25.4,
+   "text": "Y su cabeza ocupa cerca de un tercio del cuerpo.",
+   "highlight": [
+    "un tercio"
+   ]
+  },
+  {
+   "id": "k0300",
+   "scene": 3,
+   "at": 30.5,
+   "text": "Dentro de esa enorme cabeza está el cerebro más pesado conocido entre los animales.",
+   "highlight": [
+    "cerebro más pesado"
+   ]
+  },
+  {
+   "id": "k0301",
+   "scene": 3,
+   "at": 36.0,
+   "text": "Pero gran parte la ocupa el órgano del espermaceti, una bolsa de aceite que ayuda a enfocar el sonido.",
+   "highlight": [
+    "órgano del espermaceti",
+    "enfocar el sonido"
+   ]
+  },
+  {
+   "id": "k0400",
+   "scene": 4,
+   "at": 45.5,
+   "text": "Para alimentarse realiza inmersiones profundas: con frecuencia baja a unos seiscientos metros y permanece hasta unos cuarenta y cinco minutos.",
+   "highlight": [
+    "seiscientos metros",
+    "cuarenta y cinco minutos"
+   ]
+  },
+  {
+   "id": "k0401",
+   "scene": 4,
+   "at": 54.2,
+   "text": "Antes de sumergirse respira, levanta la cola y desciende hacia la oscuridad.",
+   "highlight": [
+    "levanta la cola"
+   ]
+  },
+  {
+   "id": "k0500",
+   "scene": 5,
+   "at": 60.5,
+   "text": "Allí abajo usa la ecolocalización.",
+   "highlight": [
+    "ecolocalización"
+   ]
+  },
+  {
+   "id": "k0501",
+   "scene": 5,
+   "at": 63.4,
+   "text": "Emite clics y escucha los ecos que regresan cuando el sonido choca con presas u obstáculos.",
+   "highlight": [
+    "ecos"
+   ]
+  },
+  {
+   "id": "k0502",
+   "scene": 5,
+   "at": 69.6,
+   "text": "Estas ondas son solo una visualización: el sonido no se ve.",
+   "highlight": [
+    "visualización"
+   ]
+  },
+  {
+   "id": "k0600",
+   "scene": 6,
+   "at": 75.5,
+   "text": "Su dieta incluye calamares, peces, tiburones y rayas de aguas profundas.",
+   "highlight": [
+    "calamares"
+   ]
+  },
+  {
+   "id": "k0601",
+   "scene": 6,
+   "at": 80.6,
+   "text": "Al acercarse a una presa, los clics se aceleran hasta formar un zumbido rápido.",
+   "highlight": [
+    "zumbido rápido"
+   ]
+  },
+  {
+   "id": "k0602",
+   "scene": 6,
+   "at": 86.0,
+   "text": "Los científicos lo han medido con sensores colocados en los propios cachalotes.",
+   "highlight": [
+    "sensores"
+   ]
+  },
+  {
+   "id": "k0700",
+   "scene": 7,
+   "at": 90.5,
+   "text": "Entre sus presas también está el calamar gigante.",
+   "highlight": [
+    "calamar gigante"
+   ]
+  },
+  {
+   "id": "k0701",
+   "scene": 7,
+   "at": 94.6,
+   "text": "En el estómago de cachalotes varados se han encontrado picos de estos enormes cefalópodos.",
+   "highlight": [
+    "picos"
+   ]
+  },
+  {
+   "id": "k0702",
+   "scene": 7,
+   "at": 100.6,
+   "text": "Lo que ves aquí es una reconstrucción cinematográfica.",
+   "highlight": [
+    "reconstrucción"
+   ]
+  },
+  {
+   "id": "k0800",
+   "scene": 8,
+   "at": 105.5,
+   "text": "Algunos cachalotes presentan marcas circulares que se atribuyen a ventosas de calamar.",
+   "highlight": [
+    "marcas circulares"
+   ]
+  },
+  {
+   "id": "k0801",
+   "scene": 8,
+   "at": 111.2,
+   "text": "Pero estos encuentros, a cientos de metros de profundidad, siguen siendo muy difíciles de observar directamente.",
+   "highlight": [
+    "difíciles de observar"
+   ]
+  },
+  {
+   "id": "k0900",
+   "scene": 9,
+   "at": 120.5,
+   "text": "A pesar de todo, el cachalote es un mamífero y necesita respirar aire.",
+   "highlight": [
+    "respirar aire"
+   ]
+  },
+  {
+   "id": "k0901",
+   "scene": 9,
+   "at": 125.6,
+   "text": "Tras una inmersión larga, sube a la superficie a recuperarse.",
+   "highlight": [
+    "superficie"
+   ]
+  },
+  {
+   "id": "k0902",
+   "scene": 9,
+   "at": 130.4,
+   "text": "Su espiráculo está a la izquierda de la cabeza; por eso el soplo sale inclinado.",
+   "highlight": [
+    "a la izquierda"
+   ]
+  },
+  {
+   "id": "k1000",
+   "scene": 10,
+   "at": 135.5,
+   "text": "Además, no vive solo.",
+   "highlight": [
+    "no vive solo"
+   ]
+  },
+  {
+   "id": "k1001",
+   "scene": 10,
+   "at": 137.4,
+   "text": "Las hembras forman unidades de unas doce adultas con sus crías, y suelen permanecer juntas toda la vida.",
+   "highlight": [
+    "toda la vida"
+   ]
+  },
+  {
+   "id": "k1002",
+   "scene": 10,
+   "at": 144.9,
+   "text": "Los machos jóvenes abandonan el grupo y viajan con otros machos.",
+   "highlight": [
+    "machos jóvenes"
+   ]
+  },
+  {
+   "id": "k1100",
+   "scene": 11,
+   "at": 150.5,
+   "text": "Para comunicarse usan codas: secuencias de clics con ritmos característicos.",
+   "highlight": [
+    "codas"
+   ]
+  },
+  {
+   "id": "k1101",
+   "scene": 11,
+   "at": 156.4,
+   "text": "Distintos clanes tienen sus propios estilos, y los científicos todavía estudian qué significan.",
+   "highlight": [
+    "clanes",
+    "todavía estudian"
+   ]
+  },
+  {
+   "id": "k1200",
+   "scene": 12,
+   "at": 165.5,
+   "text": "Bucea en la oscuridad, caza con sonido y mantiene lazos sociales sorprendentes.",
+   "highlight": [
+    "caza con sonido"
+   ]
+  },
+  {
+   "id": "k1201",
+   "scene": 12,
+   "at": 171.0,
+   "text": "Un gigante que nos recuerda cuánto queda por descubrir.",
+   "highlight": [
+    "cuánto queda por descubrir"
+   ]
+  },
+  {
+   "id": "k1202",
+   "scene": 12,
+   "at": 175.4,
+   "text": "¿Qué otro misterio del océano te gustaría conocer?",
+   "highlight": [
+    "misterio del océano"
+   ]
+  }
+ ]
+}
