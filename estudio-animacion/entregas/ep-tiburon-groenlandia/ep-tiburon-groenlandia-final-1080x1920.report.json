@@ -1,0 +1,71 @@
+{
+  "composition": "EP-TiburonGroenlandia",
+  "quality": "final",
+  "scale": 1,
+  "crf": "20",
+  "concurrency": 4,
+  "segmentSeconds": 30,
+  "segments": [
+    {
+      "start": 0,
+      "end": 899,
+      "secs": 143.6,
+      "peakMB": 3788
+    },
+    {
+      "start": 900,
+      "end": 1799,
+      "secs": 133.5,
+      "peakMB": 3575
+    },
+    {
+      "start": 1800,
+      "end": 2699,
+      "secs": 202.5,
+      "peakMB": 3511
+    },
+    {
+      "start": 2700,
+      "end": 3599,
+      "secs": 188,
+      "peakMB": 3585
+    },
+    {
+      "start": 3600,
+      "end": 4499,
+      "secs": 55.5,
+      "peakMB": 3232
+    },
+    {
+      "start": 4500,
+      "end": 5399,
+      "secs": 182.3,
+      "peakMB": 3761
+    }
+  ],
+  "startedAt": "2026-11-24T16:06:33.576Z",
+  "audio": {
+    "secs": 271.7,
+    "peakMB": 2489
+  },
+  "loudness": {
+    "inputLUFS": -16.28,
+    "inputTruePeak": -2.44,
+    "targetLUFS": -14
+  },
+  "wallSecondsThisRun": 1194.6,
+  "totalSeconds": 1177.1,
+  "peakRssMB": 3788,
+  "output": {
+    "file": "out/ep-tiburon-groenlandia-final-1080x1920.mp4",
+    "sizeMB": 39.02,
+    "width": 1080,
+    "height": 1920,
+    "fps": "30/1",
+    "videoFrames": 5400,
+    "durationSec": 180,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "framesOk": true
+}
