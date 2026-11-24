@@ -56,8 +56,9 @@ export function scene05(t: number): SceneOut {
     };
   }
   const nurse = poseFrom([[60, 'NURSING']], t);
-  let c: Cam = cam(80, 50, 1.6);
+  let c: Cam = cam(80 + Math.sin(t * 0.4) * 30, 50, 1.6 + (t - 60) * 0.05);
   if (t >= 72) c = shot(t, 72, 73.5, cam(40, 60, 2.2), cam(80, 50, 1.6), 'cine');
+  if (t >= 73.5) c = cam(80 - (t - 73.5) * 50, 50 + (t - 73.5) * 10, 1.6 + (t - 73.5) * 0.15);
   c = breathe(c, t, 0.1);
   return {
     svg: (
@@ -77,6 +78,15 @@ export function scene05(t: number): SceneOut {
 
 // ---------------- ESCENA 6 ----------------
 export function scene06(t: number): SceneOut {
+  if (t >= 86.6 && t < 87.4) {
+    const k = (t - 86.6) / 0.8;
+    const a = scene06Inner(86.59);
+    const b = scene06Inner(87.4);
+    return {svg: <g><g opacity={1 - k}>{a.svg}</g><g opacity={k}>{b.svg}</g></g>, overlay: k < 0.5 ? a.overlay : b.overlay};
+  }
+  return scene06Inner(t);
+}
+function scene06Inner(t: number): SceneOut {
   const g = seg(t, EV.growth[0], EV.growth[1]);
   if (t < 87) {
     const baby = lerp(0.95, 0.3, g);

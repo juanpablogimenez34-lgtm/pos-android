@@ -113,6 +113,12 @@ export function scene01(t: number): SceneOut {
 
 // ---------------- ESCENA 2 ----------------
 export function scene02(t: number): SceneOut {
+  if (t >= 18.6 && t < 19.4) {
+    const k = (t - 18.6) / 0.8;
+    const a = scene02(18.59);
+    const b = scene02(19.4);
+    return {svg: <g><g opacity={1 - k}>{scene02Forest(t)}</g><g opacity={k}>{b.svg}</g></g>, overlay: a.overlay};
+  }
   if (t < 19) {
     const c = breathe(cam(-300 + (t - 15) * 60, -700, 0.5), t, 0.15);
     return {
@@ -150,6 +156,8 @@ export function scene02(t: number): SceneOut {
     ),
   };
 }
+
+const scene02Forest = (t: number) => <ForestScene cam={breathe(cam(-300 + (t - 15) * 60, -700, 0.5), t, 0.15)} t={t} warm={0.8} />;
 
 // ---------------- ESCENA 3 ----------------
 export function scene03(t: number): SceneOut {
@@ -211,6 +219,7 @@ export function scene04(t: number): SceneOut {
   const out = seg(t, 53, 56);
   let c: Cam = cam(0, 60, 3.0);
   if (t >= 57) c = shot(t, 57, 58.6, cam(0, 60, 3.0), cam(60, 40, 1.4), 'cine');
+  if (t >= 58.6) c = cam(60 + (t - 58.6) * 40, 40 - (t - 58.6) * 14, 1.4 + (t - 58.6) * 0.12);
   c = breathe(c, t, 0.08);
   const mom = poseFrom([[45, 'EGG_HATCHING']], t);
   return {
