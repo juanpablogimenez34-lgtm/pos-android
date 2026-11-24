@@ -47,6 +47,7 @@ const Seg: React.FC<{a: V; b: V; w: number; col: string; dark: string}> = ({a, b
 export const Shrimp: React.FC<{pose: ShrimpPose; x: number; y: number; scale?: number; dir?: 1 | -1; angle?: number; tone?: number}> = ({pose, x, y, scale = 1, dir = 1, angle = 0, tone = 0}) => {
   const K = (c: string) => mixColor(c, '#06101a', tone * 0.7);
   const t = pose.t;
+  const g = `t${Math.round(tone * 100)}`;
   const open = clamp(pose.open ?? 0);
   const flex = pose.flex ?? 0.25;
   const fan = clamp(pose.fan ?? 0.6);
@@ -132,13 +133,13 @@ export const Shrimp: React.FC<{pose: ShrimpPose; x: number; y: number; scale?: n
       <g transform="translate(62 12)">
         {/* palma (própodo) voluminosa */}
         <defs>
-          <linearGradient id="palmG" x1="0" y1="0" x2="0" y2="1">
+          <linearGradient id={`palmG${g}`} x1="0" y1="0" x2="0" y2="1">
             <stop offset="0" stopColor={K(C.clawLight)} />
             <stop offset="0.55" stopColor={K(C.claw)} />
             <stop offset="1" stopColor={K(C.band)} />
           </linearGradient>
         </defs>
-        <path d="M0,-18 Q20,-34 70,-30 Q104,-26 118,-12 L120,6 Q104,26 66,28 Q20,30 0,18Z" fill="url(#palmG)" stroke={K(C.dark)} strokeWidth={2} />
+        <path d="M0,-18 Q20,-34 70,-30 Q104,-26 118,-12 L120,6 Q104,26 66,28 Q20,30 0,18Z" fill={`url(#palmG${g})`} stroke={K(C.dark)} strokeWidth={2} />
         {Array.from({length: 18}, (_, i) => <circle key={i} cx={14 + hash1(i * 3) * 96} cy={-20 + hash1(i * 5) * 40} r={1.6 + hash1(i) * 1.6} fill={K(C.dark)} opacity={0.35} />)}
         <path d="M14,-20 Q60,-30 108,-18" stroke="#ffe8d0" strokeWidth={4} fill="none" opacity={0.35} />
         <path d="M30,22 Q70,26 110,10" stroke={K(C.band)} strokeWidth={3} fill="none" opacity={0.6} />
@@ -188,7 +189,7 @@ export const Shrimp: React.FC<{pose: ShrimpPose; x: number; y: number; scale?: n
   return (
     <g transform={`translate(${f1(x)} ${f1(y)}) rotate(${f1((angle * 180) / Math.PI)}) scale(${f1(scale * dir)} ${f1(scale)})`}>
       <defs>
-        <linearGradient id="shrG" x1="0" y1="0" x2="0" y2="1">
+        <linearGradient id={`shrG${g}`} x1="0" y1="0" x2="0" y2="1">
           <stop offset="0" stopColor={K(C.light)} />
           <stop offset="0.5" stopColor={K(C.body)} />
           <stop offset="1" stopColor={K(C.band)} />
@@ -205,7 +206,7 @@ export const Shrimp: React.FC<{pose: ShrimpPose; x: number; y: number; scale?: n
         {[-1, 0, 1].map((k) => <path key={k} d={`M0,0 Q-24,${f1(k * fanW * 0.4)} -46,${f1(k * fanW)} Q-52,${f1(k * fanW * 0.6)} -50,${f1(k * fanW * 0.2 + (k === 0 ? 8 : 0))}Z`} fill={K(k === 0 ? C.body : mixColor(C.clear, C.body, 0.45))} stroke={K(C.dark)} strokeWidth={1.5} opacity={k === 0 ? 1 : 0.9} />)}
         {[-1, 1].map((k) => <path key={`e${k}`} d={`M-40,${f1(k * fanW * 0.9)} Q-50,${f1(k * fanW * 0.6)} -50,${f1(k * fanW * 0.25)}`} stroke={K(C.band)} strokeWidth={4} fill="none" opacity={0.8} />)}
       </g>
-      <path d={abdPath} fill="url(#shrG)" stroke={K(C.dark)} strokeWidth={2} />
+      <path d={abdPath} fill={`url(#shrG${g})`} stroke={K(C.dark)} strokeWidth={2} />
       {/* pleuras y bandas de cada segmento */}
       {abd.map((s, i) => (
         <g key={`ab${i}`}>
@@ -214,7 +215,7 @@ export const Shrimp: React.FC<{pose: ShrimpPose; x: number; y: number; scale?: n
         </g>
       ))}
       {pleo}
-      <path d={carapace} fill="url(#shrG)" stroke={K(C.dark)} strokeWidth={2} />
+      <path d={carapace} fill={`url(#shrG${g})`} stroke={K(C.dark)} strokeWidth={2} />
       <path d="M56,-14 L80,-8 L58,-6Z" fill={K(C.body)} stroke={K(C.dark)} strokeWidth={1.2} />
       <path d={carapace} fill="none" stroke={K(C.clear)} strokeWidth={5} opacity={0.35} />
       <ellipse cx={-50} cy={-2} rx={46} ry={18} fill={K('#7a2a18')} opacity={0.22} />

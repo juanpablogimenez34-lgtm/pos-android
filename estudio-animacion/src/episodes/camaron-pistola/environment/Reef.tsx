@@ -35,13 +35,14 @@ const ALGAE = Array.from({length: 22}, (_, i) => ({x: -2400 + i * 230 + hash1(i 
 
 export const Reef: React.FC<{cam: Cam; t: number; floorY?: number; children?: React.ReactNode; dim?: number; front?: boolean}> = ({cam, t, floorY = 500, children, dim = 0, front = true}) => {
   const z = cam.zoom;
+  const k = `d${Math.round(dim * 100)}`;
   const top = mixColor('#3ab8c0', '#0a2030', dim);
   const mid = mixColor(PAL.petrol, '#061620', dim);
   const bot = mixColor('#08303e', '#020a10', dim);
   return (
     <g>
       <defs>
-        <linearGradient id="rfW" x1="0" y1="0" x2="0" y2="1">
+        <linearGradient id={`rfW${k}`} x1="0" y1="0" x2="0" y2="1">
           <stop offset="0" stopColor={top} />
           <stop offset="0.55" stopColor={mid} />
           <stop offset="1" stopColor={bot} />
@@ -50,7 +51,7 @@ export const Reef: React.FC<{cam: Cam; t: number; floorY?: number; children?: Re
           <stop offset="0" stopColor="#e8fff0" stopOpacity={0.5} />
           <stop offset="1" stopColor="#e8fff0" stopOpacity={0} />
         </linearGradient>
-        <linearGradient id="rfSand" x1="0" y1="0" x2="0" y2="1">
+        <linearGradient id={`rfSand${k}`} x1="0" y1="0" x2="0" y2="1">
           <stop offset="0" stopColor={mixColor('#d8c08a', '#2a2a30', dim * 0.8)} />
           <stop offset="1" stopColor={mixColor('#8a7a5a', '#101418', dim * 0.8)} />
         </linearGradient>
@@ -58,7 +59,7 @@ export const Reef: React.FC<{cam: Cam; t: number; floorY?: number; children?: Re
         <filter id="rfB2" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation={14} /></filter>
         <filter id="rfRays" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation={18} /></filter>
       </defs>
-      <rect width={1080} height={1920} fill="url(#rfW)" />
+      <rect width={1080} height={1920} fill={`url(#rfW${k})`} />
       {/* rayos de sol (pantalla) */}
       <g filter="url(#rfRays)" opacity={0.55 * (1 - dim)} style={{mixBlendMode: 'screen'}}>
         {Array.from({length: 7}, (_, i) => {
@@ -92,7 +93,7 @@ export const Reef: React.FC<{cam: Cam; t: number; floorY?: number; children?: Re
         <path d={`M${f1(cam.x - 3000)},${floorY + 2400} L${f1(cam.x - 3000)},${floorY} ${Array.from({length: 61}, (_, i) => {
           const x = Math.floor(cam.x / 100) * 100 - 3000 + i * 100;
           return `L${x},${f1(floorY + Math.sin(x * 0.004) * 10 + Math.sin(x * 0.013) * 4)}`;
-        }).join(' ')} L${f1(cam.x + 3100)},${floorY + 2400}Z`} fill="url(#rfSand)" />
+        }).join(' ')} L${f1(cam.x + 3100)},${floorY + 2400}Z`} fill={`url(#rfSand${k})`} />
         {/* ondulaciones de la arena */}
         {Array.from({length: 26}, (_, i) => {
           const x0 = Math.floor(cam.x / 260) * 260 - 1800 + (i % 13) * 280;
