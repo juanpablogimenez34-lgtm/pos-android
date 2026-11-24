@@ -1,0 +1,71 @@
+{
+  "composition": "EP-AnimalesVenenosos",
+  "quality": "draft",
+  "scale": 0.5,
+  "crf": "24",
+  "concurrency": 4,
+  "segmentSeconds": 30,
+  "segments": [
+    {
+      "start": 0,
+      "end": 899,
+      "secs": 39.2,
+      "peakMB": 2950
+    },
+    {
+      "start": 900,
+      "end": 1799,
+      "secs": 30.7,
+      "peakMB": 2685
+    },
+    {
+      "start": 1800,
+      "end": 2699,
+      "secs": 29,
+      "peakMB": 2757
+    },
+    {
+      "start": 2700,
+      "end": 3599,
+      "secs": 56.4,
+      "peakMB": 2911
+    },
+    {
+      "start": 3600,
+      "end": 4499,
+      "secs": 58.9,
+      "peakMB": 2793
+    },
+    {
+      "start": 4500,
+      "end": 5399,
+      "secs": 42.1,
+      "peakMB": 2891
+    }
+  ],
+  "startedAt": "2026-11-24T17:24:29.395Z",
+  "audio": {
+    "secs": 286.9,
+    "peakMB": 2560
+  },
+  "loudness": {
+    "inputLUFS": -16.98,
+    "inputTruePeak": -2.23,
+    "targetLUFS": -14
+  },
+  "wallSecondsThisRun": 563,
+  "totalSeconds": 543.2,
+  "peakRssMB": 2950,
+  "output": {
+    "file": "out/ep20-animales-venenosos-borrador-540x960.mp4",
+    "sizeMB": 16.64,
+    "width": 540,
+    "height": 960,
+    "fps": "30/1",
+    "videoFrames": 5400,
+    "durationSec": 180,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "framesOk": true
+}

@@ -28,7 +28,7 @@ const SPEECH = speechIntervals(TIMING);
 // transiciones entre animales: hojas (hábitats húmedos), polvo (desiertos), burbujas (agua)
 const WIPES: [number, 'leaf' | 'dust' | 'bubble'][] = [
   [10, 'leaf'], [18, 'dust'], [26, 'dust'], [34, 'leaf'], [42, 'dust'], [50, 'dust'], [58, 'dust'], [66, 'dust'], [74, 'leaf'], [82, 'leaf'], [90, 'leaf'],
-  [98, 'bubble'], [106, 'bubble'], [114, 'bubble'], [122, 'bubble'], [130, 'bubble'], [138, 'bubble'], [146, 'dust'], [154, 'bubble'], [162, 'leaf'], [170, 'leaf'],
+  [98, 'bubble'], [99.6, 'bubble'], [106, 'bubble'], [114, 'bubble'], [122, 'bubble'], [130, 'bubble'], [138, 'bubble'], [146, 'dust'], [154, 'bubble'], [162, 'leaf'], [170, 'leaf'],
 ];
 const Wipes: React.FC<{t: number}> = ({t}) => (
   <>
