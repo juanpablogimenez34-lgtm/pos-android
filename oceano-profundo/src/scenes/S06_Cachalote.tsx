@@ -173,8 +173,16 @@ const encounter: SceneFn = (t) => {
   const w = along([[377, -2600, 100], [386, -1300, 40], [392, -300, -20], [402, 1500, -100], [415, 3200, -200]], t);
   const sq = along([[377, 500, 40], [389.5, 420, 30], [392, 1100, -80], [402, 2600, -260], [415, 4000, -400]], t);
   const head = {x: w.x + 10, y: w.y - 40};
-  const mid = {x: (w.x + 300 + sq.x) / 2, y: (w.y + sq.y) / 2};
-  const c = breathe(cam(mid.x, mid.y, lerp(0.5, 0.4, clamp((t - 395) / 15))), t, 0.6);
+  const midAt = (tt: number) => {
+    const a = along([[377, -2600, 100], [386, -1300, 40], [392, -300, -20], [402, 1500, -100], [415, 3200, -200]], tt);
+    const b = along([[377, 500, 40], [389.5, 420, 30], [392, 1100, -80], [402, 2600, -260], [415, 4000, -400]], tt);
+    return {x: (a.x + 300 + b.x) / 2, y: (a.y + b.y) / 2};
+  };
+  // hasta 400 s la cámara acompaña el encuentro; después se queda atrás y empuja despacio: los animales cruzan
+  // el cuadro y se pierden en la oscuridad
+  const m0 = midAt(Math.min(t, 400));
+  const mid = t <= 400 ? m0 : {x: m0.x + (midAt(t).x - m0.x) * 0.3, y: m0.y + (midAt(t).y - m0.y) * 0.3};
+  const c = breathe(cam(mid.x, mid.y, t <= 400 ? lerp(0.5, 0.44, clamp((t - 395) / 5)) : lerp(0.44, 0.56, clamp((t - 400) / 15))), t, 0.6);
   const clicks = CLICKS.map((x) => x + 30).filter((x) => x < 395);
   const jetPulse = flee * (0.5 + 0.5 * Math.sin(t * 7));
   return {

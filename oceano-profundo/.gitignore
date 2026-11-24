@@ -1,2 +1,4 @@
 node_modules/
 out/
+# vídeos finales > 100 MB (límite de GitHub): se entregan aparte
+entregas/*.mp4

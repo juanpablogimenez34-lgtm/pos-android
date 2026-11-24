@@ -225,14 +225,14 @@ export const Grade: React.FC<{t: number; vignette?: number; tint?: string; tintK
 };
 
 /** Fundido «orgánico»: velo de partículas/agua que cubre un cambio de plano. u: −1…1 (0 = cubierto). */
-export const WaterVeil: React.FC<{u: number; color?: string}> = ({u, color = '#02070f'}) => {
+export const WaterVeil: React.FC<{u: number; color?: string; max?: number}> = ({u, color = '#02070f', max = 0.92}) => {
   const {w, h} = useView();
   if (u <= -1 || u >= 1) return null;
   const k = 1 - Math.abs(u);
   const e = k * k * (3 - 2 * k);
   return (
     <AbsoluteFill style={{pointerEvents: 'none'}}>
-      <AbsoluteFill style={{background: color, opacity: e * 0.92}} />
+      <AbsoluteFill style={{background: color, opacity: e * max}} />
       <svg width={w} height={h} style={{position: 'absolute', inset: 0}}>
         {Array.from({length: 60}, (_, i) => {
           const x = hash1(i * 5) * w;

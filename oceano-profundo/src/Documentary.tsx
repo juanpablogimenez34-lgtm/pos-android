@@ -52,7 +52,7 @@ export const Documentary: React.FC<DocProps> = ({quality, showSubtitles, audio})
         {sc.overlay}
         {n !== 2 && n !== 1 && n !== 9 && sc.depth !== undefined && <DepthGauge k={0.9} depth={sc.depth} compact />}
         {/* velos orgánicos de agua en los cambios de especie */}
-        {SCENES.slice(1).map((s) => <WaterVeil key={s.n} u={(t - s.start + 0.6) / 1.0} />)}
+        {SCENES.slice(1).map((s) => <WaterVeil key={s.n} u={(t - s.start + 0.6) / 1.0} max={s.n === 3 || s.n === 4 ? 0.5 : 0.92} />)}
         {showSubtitles && <Subtitles cues={DOC_CUES} t={t} highlight={HIGHLIGHT} />}
         {audio && (
           <AudioMix narration="audio/documental/narracion.m4a" music="audio/documental/musica.m4a" speech={SPEECH} others={[
