@@ -1,0 +1,473 @@
+{
+ "voice": {
+  "engine": "piper",
+  "model": "es_MX-claude-high",
+  "lengthScale": 1.02,
+  "noiseScale": 0.62,
+  "noiseW": 0.55
+ },
+ "lines": 35,
+ "speechSeconds": 152.74,
+ "coverage": 0.849,
+ "problems": [],
+ "timing": [
+  {
+   "id": "g0100",
+   "scene": 1,
+   "at": 0.25,
+   "text": "¡Este tiburón podría llevar cuatro siglos nadando!",
+   "highlight": [
+    "cuatro siglos"
+   ],
+   "drift": 0.0,
+   "start": 0.25,
+   "end": 3.453,
+   "duration": 3.203
+  },
+  {
+   "id": "g0101",
+   "scene": 1,
+   "at": 3.9,
+   "text": "Imagina un animal que nació cuando los barcos de madera dominaban los océanos… y que todavía podría seguir vivo.",
+   "highlight": [
+    "barcos de madera"
+   ],
+   "drift": 0.0,
+   "start": 3.9,
+   "end": 10.789,
+   "duration": 6.889
+  },
+  {
+   "id": "g0102",
+   "scene": 1,
+   "at": 11.0,
+   "text": "No es una leyenda: es el tiburón de Groenlandia.",
+   "highlight": [
+    "tiburón de Groenlandia"
+   ],
+   "drift": 0.039,
+   "start": 11.039,
+   "end": 14.308,
+   "duration": 3.269
+  },
+  {
+   "id": "g0200",
+   "scene": 2,
+   "at": 15.4,
+   "text": "En las frías aguas del Ártico y del Atlántico Norte habita uno de los tiburones más misteriosos del planeta.",
+   "highlight": [
+    "Ártico",
+    "Atlántico Norte"
+   ],
+   "drift": 0.0,
+   "start": 15.4,
+   "end": 22.468,
+   "duration": 7.068
+  },
+  {
+   "id": "g0201",
+   "scene": 2,
+   "at": 22.6,
+   "text": "Puede superar los cinco metros de longitud y pasa gran parte de su vida en aguas oscuras y extremadamente frías.",
+   "highlight": [
+    "cinco metros"
+   ],
+   "drift": 0.118,
+   "start": 22.718,
+   "end": 29.897,
+   "duration": 7.179
+  },
+  {
+   "id": "g0300",
+   "scene": 3,
+   "at": 30.4,
+   "text": "Imaginemos el comienzo de una vida que podría durar varios siglos.",
+   "highlight": [
+    "varios siglos"
+   ],
+   "drift": 0.0,
+   "start": 30.4,
+   "end": 34.371,
+   "duration": 3.971
+  },
+  {
+   "id": "g0301",
+   "scene": 3,
+   "at": 34.6,
+   "text": "Desde sus primeras etapas debe sobrevivir en un ambiente frío y exigente.",
+   "highlight": [
+    "frío y exigente"
+   ],
+   "drift": 0.021,
+   "start": 34.621,
+   "end": 39.447,
+   "duration": 4.826
+  },
+  {
+   "id": "g0302",
+   "scene": 3,
+   "at": 39.0,
+   "text": "Su desarrollo es extraordinariamente lento, y aún sabemos poco sobre su reproducción.",
+   "highlight": [
+    "extraordinariamente lento"
+   ],
+   "drift": 0.697,
+   "start": 39.697,
+   "end": 45.519,
+   "duration": 5.822
+  },
+  {
+   "id": "g0400",
+   "scene": 4,
+   "at": 45.4,
+   "text": "Durante siglos, el mundo de la superficie podría transformarse por completo.",
+   "highlight": [
+    "transformarse"
+   ],
+   "drift": 0.369,
+   "start": 45.769,
+   "end": 50.744,
+   "duration": 4.975
+  },
+  {
+   "id": "g0401",
+   "scene": 4,
+   "at": 50.6,
+   "text": "Las velas darían paso al vapor y, después, a los barcos modernos.",
+   "highlight": [
+    "vapor"
+   ],
+   "drift": 0.394,
+   "start": 50.994,
+   "end": 55.549,
+   "duration": 4.555
+  },
+  {
+   "id": "g0402",
+   "scene": 4,
+   "at": 55.4,
+   "text": "Y nuestro tiburón imaginario seguiría creciendo bajo el océano.",
+   "highlight": [
+    "tiburón imaginario"
+   ],
+   "drift": 0.399,
+   "start": 55.799,
+   "end": 59.434,
+   "duration": 3.635
+  },
+  {
+   "id": "g0500",
+   "scene": 5,
+   "at": 60.4,
+   "text": "Se mueve despacio, con un metabolismo adaptado al frío.",
+   "highlight": [
+    "metabolismo"
+   ],
+   "drift": 0.0,
+   "start": 60.4,
+   "end": 64.328,
+   "duration": 3.928
+  },
+  {
+   "id": "g0501",
+   "scene": 5,
+   "at": 64.6,
+   "text": "Su crecimiento pausado podría estar relacionado con su longevidad,",
+   "highlight": [
+    "crecimiento pausado"
+   ],
+   "drift": 0.0,
+   "start": 64.6,
+   "end": 68.753,
+   "duration": 4.153
+  },
+  {
+   "id": "g0502",
+   "scene": 5,
+   "at": 69.0,
+   "text": "aunque todavía se investiga qué le permite vivir tanto.",
+   "highlight": [
+    "todavía se investiga"
+   ],
+   "drift": 0.003,
+   "start": 69.003,
+   "end": 72.358,
+   "duration": 3.355
+  },
+  {
+   "id": "g0600",
+   "scene": 6,
+   "at": 75.4,
+   "text": "Crece tan despacio que se estima que las hembras maduran alrededor de los ciento cincuenta años.",
+   "highlight": [
+    "ciento cincuenta años"
+   ],
+   "drift": 0.0,
+   "start": 75.4,
+   "end": 81.137,
+   "duration": 5.737
+  },
+  {
+   "id": "g0601",
+   "scene": 6,
+   "at": 84.0,
+   "text": "Para entonces, varias generaciones humanas habrían nacido y desaparecido.",
+   "highlight": [
+    "varias generaciones"
+   ],
+   "drift": 0.0,
+   "start": 84.0,
+   "end": 88.954,
+   "duration": 4.954
+  },
+  {
+   "id": "g0700",
+   "scene": 7,
+   "at": 90.4,
+   "text": "Aunque parece tranquilo, es un depredador y también aprovecha animales muertos.",
+   "highlight": [
+    "depredador",
+    "animales muertos"
+   ],
+   "drift": 0.0,
+   "start": 90.4,
+   "end": 95.493,
+   "duration": 5.093
+  },
+  {
+   "id": "g0701",
+   "scene": 7,
+   "at": 96.2,
+   "text": "Come peces y otros organismos marinos,",
+   "highlight": [
+    "peces"
+   ],
+   "drift": 0.0,
+   "start": 96.2,
+   "end": 98.844,
+   "duration": 2.644
+  },
+  {
+   "id": "g0702",
+   "scene": 7,
+   "at": 99.2,
+   "text": "pero muchos detalles de cómo caza siguen siendo difíciles de observar.",
+   "highlight": [
+    "difíciles de observar"
+   ],
+   "drift": 0.0,
+   "start": 99.2,
+   "end": 103.33,
+   "duration": 4.13
+  },
+  {
+   "id": "g0800",
+   "scene": 8,
+   "at": 105.4,
+   "text": "Algunos tiburones de Groenlandia llevan pequeños parásitos adheridos a los ojos.",
+   "highlight": [
+    "parásitos"
+   ],
+   "drift": 0.0,
+   "start": 105.4,
+   "end": 110.126,
+   "duration": 4.726
+  },
+  {
+   "id": "g0801",
+   "scene": 8,
+   "at": 110.6,
+   "text": "Este copépodo puede dañar la córnea y afectar la visión.",
+   "highlight": [
+    "copépodo"
+   ],
+   "drift": 0.0,
+   "start": 110.6,
+   "end": 114.45,
+   "duration": 3.85
+  },
+  {
+   "id": "g0802",
+   "scene": 8,
+   "at": 114.8,
+   "text": "Aun así, estos tiburones siguen viviendo en las profundidades.",
+   "highlight": [
+    "siguen viviendo"
+   ],
+   "drift": 0.0,
+   "start": 114.8,
+   "end": 118.737,
+   "duration": 3.937
+  },
+  {
+   "id": "g0900",
+   "scene": 9,
+   "at": 120.4,
+   "text": "Saber la edad de estos tiburones no es sencillo.",
+   "highlight": [
+    "edad"
+   ],
+   "drift": 0.0,
+   "start": 120.4,
+   "end": 123.294,
+   "duration": 2.894
+  },
+  {
+   "id": "g0901",
+   "scene": 9,
+   "at": 123.6,
+   "text": "En un estudio publicado en dos mil dieciséis, los científicos dataron con radiocarbono las proteínas del cristalino de sus ojos,",
+   "highlight": [
+    "radiocarbono",
+    "cristalino"
+   ],
+   "drift": 0.0,
+   "start": 123.6,
+   "end": 131.473,
+   "duration": 7.873
+  },
+  {
+   "id": "g0902",
+   "scene": 9,
+   "at": 131.0,
+   "text": "que se forman antes del nacimiento.",
+   "highlight": [
+    "antes del nacimiento"
+   ],
+   "drift": 0.723,
+   "start": 131.723,
+   "end": 133.821,
+   "duration": 2.098
+  },
+  {
+   "id": "g1000",
+   "scene": 10,
+   "at": 135.4,
+   "text": "El resultado fue sorprendente.",
+   "highlight": [
+    "sorprendente"
+   ],
+   "drift": 0.0,
+   "start": 135.4,
+   "end": 137.461,
+   "duration": 2.061
+  },
+  {
+   "id": "g1001",
+   "scene": 10,
+   "at": 137.6,
+   "text": "El ejemplar más grande del estudio tenía una edad estimada de unos trescientos noventa y dos años…",
+   "highlight": [
+    "trescientos noventa y dos años"
+   ],
+   "drift": 0.111,
+   "start": 137.711,
+   "end": 144.395,
+   "duration": 6.684
+  },
+  {
+   "id": "g1002",
+   "scene": 10,
+   "at": 144.6,
+   "text": "con un margen de ciento veinte años.",
+   "highlight": [
+    "ciento veinte años"
+   ],
+   "drift": 0.045,
+   "start": 144.645,
+   "end": 146.97,
+   "duration": 2.325
+  },
+  {
+   "id": "g1003",
+   "scene": 10,
+   "at": 147.0,
+   "text": "Algunos podrían superar los cuatro siglos.",
+   "highlight": [
+    "cuatro siglos"
+   ],
+   "drift": 0.22,
+   "start": 147.22,
+   "end": 149.878,
+   "duration": 2.658
+  },
+  {
+   "id": "g1100",
+   "scene": 11,
+   "at": 150.3,
+   "text": "Una vida tan larga los hace vulnerables.",
+   "highlight": [
+    "vulnerables"
+   ],
+   "drift": 0.0,
+   "start": 150.3,
+   "end": 153.378,
+   "duration": 3.078
+  },
+  {
+   "id": "g1101",
+   "scene": 11,
+   "at": 153.4,
+   "text": "La captura accidental y los cambios ambientales afectan a una especie que tarda muchísimo en reproducirse.",
+   "highlight": [
+    "captura accidental"
+   ],
+   "drift": 0.228,
+   "start": 153.628,
+   "end": 160.558,
+   "duration": 6.93
+  },
+  {
+   "id": "g1102",
+   "scene": 11,
+   "at": 160.8,
+   "text": "Protegerlos es conservar uno de los grandes misterios del océano.",
+   "highlight": [
+    "Protegerlos"
+   ],
+   "drift": 0.008,
+   "start": 160.808,
+   "end": 164.637,
+   "duration": 3.829
+  },
+  {
+   "id": "g1200",
+   "scene": 12,
+   "at": 165.4,
+   "text": "Los imperios cambian y las generaciones pasan…",
+   "highlight": [
+    "generaciones"
+   ],
+   "drift": 0.0,
+   "start": 165.4,
+   "end": 168.72,
+   "duration": 3.32
+  },
+  {
+   "id": "g1201",
+   "scene": 12,
+   "at": 169.0,
+   "text": "pero en las profundidades, un tiburón podría seguir nadando durante siglos.",
+   "highlight": [
+    "durante siglos"
+   ],
+   "drift": 0.0,
+   "start": 169.0,
+   "end": 173.744,
+   "duration": 4.744
+  },
+  {
+   "id": "g1202",
+   "scene": 12,
+   "at": 174.6,
+   "text": "¿Te imaginas todo lo que habría vivido?",
+   "highlight": [
+    "todo lo que habría vivido"
+   ],
+   "drift": 0.0,
+   "start": 174.6,
+   "end": 176.946,
+   "duration": 2.346
+  }
+ ]
+}
