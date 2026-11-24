@@ -1,0 +1,77 @@
+{
+  "composition": "EP-Ornitorrinco",
+  "quality": "final",
+  "scale": 1,
+  "crf": "20",
+  "concurrency": 4,
+  "segmentSeconds": 30,
+  "segments": [
+    {
+      "start": 0,
+      "end": 899,
+      "secs": 75.5,
+      "peakMB": 3572,
+      "reused": true
+    },
+    {
+      "start": 900,
+      "end": 1799,
+      "secs": 51.4,
+      "peakMB": 3179,
+      "reused": true
+    },
+    {
+      "start": 1800,
+      "end": 2699,
+      "secs": 50.7,
+      "peakMB": 3129,
+      "reused": true
+    },
+    {
+      "start": 2700,
+      "end": 3599,
+      "secs": 56.2,
+      "peakMB": 3056,
+      "reused": true
+    },
+    {
+      "start": 3600,
+      "end": 4499,
+      "secs": 74,
+      "peakMB": 3526,
+      "reused": true
+    },
+    {
+      "start": 4500,
+      "end": 5399,
+      "secs": 68.4,
+      "peakMB": 4080
+    }
+  ],
+  "startedAt": "2026-11-24T19:06:40.965Z",
+  "audio": {
+    "secs": 87,
+    "peakMB": 3276,
+    "reused": true
+  },
+  "loudness": {
+    "inputLUFS": -16.07,
+    "inputTruePeak": -2.22,
+    "targetLUFS": -14
+  },
+  "wallSecondsThisRun": 86.6,
+  "totalSeconds": 463.2,
+  "peakRssMB": 4080,
+  "output": {
+    "file": "out/ep12-ornitorrinco-final-1080x1920.mp4",
+    "sizeMB": 45.23,
+    "width": 1080,
+    "height": 1920,
+    "fps": "30/1",
+    "videoFrames": 5400,
+    "durationSec": 180,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "framesOk": true
+}

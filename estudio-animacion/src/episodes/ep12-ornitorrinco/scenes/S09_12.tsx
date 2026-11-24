@@ -139,7 +139,7 @@ export function scene11(t: number): SceneOut {
     const swimming = t < 154;
     const pose = poseFrom([[150, 'UNDERWATER_SWIMMING']], t);
     const x = -300 + (t - 150) * 130;
-    const c = swimming ? breathe(cam(x + 60, 380, 1.0), t, 0.12) : breathe(cam(200 + (t - 162) * 30, -600, 0.5), t, 0.12);
+    const c = swimming ? breathe(cam(x + 60, 380, 1.0), t, 0.12) : breathe(cam(200 + (t - 162) * 110, -600 + (t - 162) * 40, 0.5 + (t - 162) * 0.05), t, 0.12);
     return {
       svg: swimming ? (
         <RiverWorld cam={c} t={t} floorY={800} bubbles={Array.from({length: 4}, (_, i) => ({x: x - 50 - i * 40, y: 360 - ((t * 80 + i * 50) % 300)}))}>
