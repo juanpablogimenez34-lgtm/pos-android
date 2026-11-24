@@ -6,14 +6,23 @@ import React from 'react';
 import {Audio, staticFile} from 'remotion';
 import {cuesFromTiming, speechIntervals, TimedLine} from '../../engine/cues';
 import {AudioMix} from '../../engine/types';
-import {BubbleCurtain, EpisodeShell, SceneDef, ShellProps} from '../../studio2';
+import {BubbleCurtain, EpisodeShell, SceneDef, SceneOut, ShellProps} from '../../studio2';
 import {SceneTag} from './components/common';
 import narration from './data/narration-timing.json';
 import {SCENES} from './data/timeline';
 import {scene1, scene2, scene3, scene4} from './scenes/S1_4';
 import {scene5, scene6, scene7, scene8} from './scenes/S5_8';
 
-const FNS = [scene1, scene2, scene3, scene4, scene5, scene6, scene7, scene8];
+/** Fundido encadenado: durante `d` s al inicio de `next` se dibujan ambas escenas (sin cortes bruscos de luz). */
+const xfade = (prev: (t: number) => SceneOut, next: (t: number) => SceneOut, at: number, d: number) => (t: number): SceneOut => {
+  const u = (t - at) / d;
+  if (u >= 1) return next(t);
+  const e = u * u * (3 - 2 * u);
+  const A = prev(t);
+  const B = next(t);
+  return {svg: <g>{A.svg}<g opacity={e}>{B.svg}</g></g>, overlay: <>{e < 0.5 && A.overlay}{e >= 0.5 && B.overlay}</>};
+};
+const FNS = [scene1, scene2, scene3, xfade(scene3, scene4, 20, 0.7), scene5, xfade(scene5, scene6, 40, 0.7), scene7, scene8];
 const DEFS: SceneDef[] = SCENES.map((s, i) => ({start: s.start, end: s.end, render: FNS[i]}));
 const TIMING = (narration as unknown as {timing: TimedLine[]}).timing;
 export const SHRIMP_CUES = cuesFromTiming(TIMING, 32);
