@@ -1,0 +1,72 @@
+20 ANIMALES VENENOSOS QUE PARECEN DE OTRO PLANETA — GUION NARRADO DEFINITIVO (180 s, 22 secuencias)
+Voz: Piper es_MX-claude-high (local; la voz aprobada). Tiempos reales de public/audio/ep25-animales-venenosos/narracion.m4a
+
+INTRODUCCIÓN (0–10 s)
+    0.25–  3.87  Veinte animales poseen armas químicas extraordinarias.
+    4.12–  9.96  Algunos parecen inofensivos, otros se esconden a plena vista… ¡y uno es incluso un mamífero!
+
+Cobra real (10–18 s)
+   10.30– 16.78  La cobra real se alza y despliega su capucha como advertencia. Se alimenta sobre todo de otras serpientes.
+
+Mamba negra (18–26 s)
+   18.30– 23.80  La mamba negra debe su nombre al interior oscuro de su boca, no al color de sus escamas.
+
+Taipán del interior (26–34 s)
+   26.30– 33.24  El taipán del interior tiene un veneno extraordinariamente potente, pero es tímido y evita a las personas.
+
+Víbora de Gabón (34–42 s)
+   34.30– 39.56  La víbora de Gabón se oculta entre las hojas y tiene colmillos excepcionalmente largos.
+
+Cascabel diamante occidental (42–50 s)
+   42.30– 46.74  La serpiente de cascabel hace sonar su cola para advertir antes de defenderse.
+
+Escorpión amarillo (50–58 s)
+   50.30– 55.54  El escorpión amarillo usa su aguijón para inmovilizar pequeñas presas y protegerse.
+
+Escorpión de cola gruesa (58–66 s)
+   58.30– 63.95  El escorpión de cola gruesa destaca por su cola robusta, terminada en un aguijón venenoso.
+
+Escorpión de Arizona (66–74 s)
+   66.30– 72.11  El escorpión de Arizona trepa por superficies rugosas y se esconde en grietas durante el día.
+
+Viuda negra (74–82 s)
+   74.30– 79.44  La viuda negra siente las vibraciones de su tela y usa su veneno para capturar insectos.
+
+Araña de embudo de Sídney (82–90 s)
+   82.30– 87.66  La araña de embudo de Sídney vive en refugios de seda y puede alzarse mostrando sus colmillos.
+
+Araña errante brasileña (90–98 s)
+   90.30– 95.61  La araña errante no teje redes de captura: recorre la vegetación buscando sus presas.
+
+Avispa de mar (98–106 s)
+   98.30–103.05  La avispa de mar captura presas con tentáculos cargados de células urticantes.
+
+Pulpo de anillos azules (106–114 s)
+  106.30–111.89  Si se siente amenazado, este pequeño pulpo muestra anillos azules que advierten de su veneno.
+
+Pez piedra (114–122 s)
+  114.30–119.36  El pez piedra parece una roca, pero sus espinas dorsales pueden inyectar veneno.
+
+Caracol cono geográfico (122–130 s)
+  122.30–128.52  El caracol cono parece inofensivo, pero dispara un diente en forma de arpón para inyectar veneno.
+
+Pez león (130–138 s)
+  130.30–135.99  El pez león despliega aletas espectaculares; sus espinas dorsales son venenosas.
+
+Raya común (138–146 s)
+  138.30–144.10  La raya se esconde bajo la arena y usa el aguijón de su cola sobre todo para defenderse.
+
+Monstruo de Gila (146–154 s)
+  146.30–152.88  El monstruo de Gila es uno de los pocos lagartos venenosos, con llamativos dibujos negros y naranjas.
+
+Ornitorrinco (macho) (154–162 s)
+  154.30–160.79  Y aunque parece adorable, el ornitorrinco macho tiene espolones venenosos en las patas traseras.
+
+Ciempiés gigante (162–170 s)
+  162.30–168.22  El ciempiés gigante inyecta veneno con forcípulas: su primer par de patas, transformado.
+
+CIERRE (170–180 s)
+  170.30–173.25  Veinte animales, veinte formas de sobrevivir.
+  173.50–177.62  La naturaleza nunca deja de sorprendernos. ¿Cuál te impresionó más?
+
+Total: 336 palabras

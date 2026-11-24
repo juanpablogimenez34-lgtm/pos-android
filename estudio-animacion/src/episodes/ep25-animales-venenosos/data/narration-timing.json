@@ -1,0 +1,329 @@
+{
+ "voice": {
+  "engine": "piper",
+  "model": "es_MX-claude-high",
+  "lengthScale": 1.0,
+  "noiseScale": 0.62,
+  "noiseW": 0.55
+ },
+ "lines": 24,
+ "speechSeconds": 129.77,
+ "coverage": 0.721,
+ "problems": [],
+ "timing": [
+  {
+   "id": "v0000",
+   "scene": 1,
+   "at": 0.2,
+   "text": "Veinte animales poseen armas químicas extraordinarias.",
+   "highlight": [
+    "armas químicas"
+   ],
+   "drift": 0.05,
+   "start": 0.25,
+   "end": 3.874,
+   "duration": 3.624
+  },
+  {
+   "id": "v0001",
+   "scene": 1,
+   "at": 3.6,
+   "text": "Algunos parecen inofensivos, otros se esconden a plena vista… ¡y uno es incluso un mamífero!",
+   "highlight": [
+    "un mamífero"
+   ],
+   "drift": 0.524,
+   "start": 4.124,
+   "end": 9.957,
+   "duration": 5.833
+  },
+  {
+   "id": "v0100",
+   "scene": 2,
+   "at": 10.3,
+   "text": "La cobra real se alza y despliega su capucha como advertencia. Se alimenta sobre todo de otras serpientes.",
+   "highlight": [
+    "capucha",
+    "otras serpientes"
+   ],
+   "drift": 0.0,
+   "start": 10.3,
+   "end": 16.779,
+   "duration": 6.479
+  },
+  {
+   "id": "v0200",
+   "scene": 3,
+   "at": 18.3,
+   "text": "La mamba negra debe su nombre al interior oscuro de su boca, no al color de sus escamas.",
+   "highlight": [
+    "interior oscuro"
+   ],
+   "drift": 0.0,
+   "start": 18.3,
+   "end": 23.805,
+   "duration": 5.505
+  },
+  {
+   "id": "v0300",
+   "scene": 4,
+   "at": 26.3,
+   "text": "El taipán del interior tiene un veneno extraordinariamente potente, pero es tímido y evita a las personas.",
+   "highlight": [
+    "extraordinariamente potente",
+    "tímido"
+   ],
+   "drift": 0.0,
+   "start": 26.3,
+   "end": 33.244,
+   "duration": 6.944
+  },
+  {
+   "id": "v0400",
+   "scene": 5,
+   "at": 34.3,
+   "text": "La víbora de Gabón se oculta entre las hojas y tiene colmillos excepcionalmente largos.",
+   "highlight": [
+    "colmillos"
+   ],
+   "drift": 0.0,
+   "start": 34.3,
+   "end": 39.561,
+   "duration": 5.261
+  },
+  {
+   "id": "v0500",
+   "scene": 6,
+   "at": 42.3,
+   "text": "La serpiente de cascabel hace sonar su cola para advertir antes de defenderse.",
+   "highlight": [
+    "advertir"
+   ],
+   "drift": 0.0,
+   "start": 42.3,
+   "end": 46.74,
+   "duration": 4.44
+  },
+  {
+   "id": "v0600",
+   "scene": 7,
+   "at": 50.3,
+   "text": "El escorpión amarillo usa su aguijón para inmovilizar pequeñas presas y protegerse.",
+   "highlight": [
+    "aguijón"
+   ],
+   "drift": 0.0,
+   "start": 50.3,
+   "end": 55.541,
+   "duration": 5.241
+  },
+  {
+   "id": "v0700",
+   "scene": 8,
+   "at": 58.3,
+   "text": "El escorpión de cola gruesa destaca por su cola robusta, terminada en un aguijón venenoso.",
+   "highlight": [
+    "cola robusta"
+   ],
+   "drift": 0.0,
+   "start": 58.3,
+   "end": 63.951,
+   "duration": 5.651
+  },
+  {
+   "id": "v0800",
+   "scene": 9,
+   "at": 66.3,
+   "text": "El escorpión de Arizona trepa por superficies rugosas y se esconde en grietas durante el día.",
+   "highlight": [
+    "trepa"
+   ],
+   "drift": 0.0,
+   "start": 66.3,
+   "end": 72.111,
+   "duration": 5.811
+  },
+  {
+   "id": "v0900",
+   "scene": 10,
+   "at": 74.3,
+   "text": "La viuda negra siente las vibraciones de su tela y usa su veneno para capturar insectos.",
+   "highlight": [
+    "vibraciones"
+   ],
+   "drift": 0.0,
+   "start": 74.3,
+   "end": 79.443,
+   "duration": 5.143
+  },
+  {
+   "id": "v1000",
+   "scene": 11,
+   "at": 82.3,
+   "text": "La araña de embudo de Sídney vive en refugios de seda y puede alzarse mostrando sus colmillos.",
+   "highlight": [
+    "refugios de seda"
+   ],
+   "drift": 0.0,
+   "start": 82.3,
+   "end": 87.664,
+   "duration": 5.364
+  },
+  {
+   "id": "v1100",
+   "scene": 12,
+   "at": 90.3,
+   "text": "La araña errante no teje redes de captura: recorre la vegetación buscando sus presas.",
+   "highlight": [
+    "buscando sus presas"
+   ],
+   "drift": 0.0,
+   "start": 90.3,
+   "end": 95.612,
+   "duration": 5.312
+  },
+  {
+   "id": "v1200",
+   "scene": 13,
+   "at": 98.3,
+   "text": "La avispa de mar captura presas con tentáculos cargados de células urticantes.",
+   "highlight": [
+    "células urticantes"
+   ],
+   "drift": 0.0,
+   "start": 98.3,
+   "end": 103.049,
+   "duration": 4.749
+  },
+  {
+   "id": "v1300",
+   "scene": 14,
+   "at": 106.3,
+   "text": "Si se siente amenazado, este pequeño pulpo muestra anillos azules que advierten de su veneno.",
+   "highlight": [
+    "anillos azules"
+   ],
+   "drift": 0.0,
+   "start": 106.3,
+   "end": 111.895,
+   "duration": 5.595
+  },
+  {
+   "id": "v1400",
+   "scene": 15,
+   "at": 114.3,
+   "text": "El pez piedra parece una roca, pero sus espinas dorsales pueden inyectar veneno.",
+   "highlight": [
+    "espinas dorsales"
+   ],
+   "drift": 0.0,
+   "start": 114.3,
+   "end": 119.356,
+   "duration": 5.056
+  },
+  {
+   "id": "v1500",
+   "scene": 16,
+   "at": 122.3,
+   "text": "El caracol cono parece inofensivo, pero dispara un diente en forma de arpón para inyectar veneno.",
+   "highlight": [
+    "arpón"
+   ],
+   "drift": 0.0,
+   "start": 122.3,
+   "end": 128.516,
+   "duration": 6.216
+  },
+  {
+   "id": "v1600",
+   "scene": 17,
+   "at": 130.3,
+   "text": "El pez león despliega aletas espectaculares; sus espinas dorsales son venenosas.",
+   "highlight": [
+    "espinas"
+   ],
+   "drift": 0.0,
+   "start": 130.3,
+   "end": 135.987,
+   "duration": 5.687
+  },
+  {
+   "id": "v1700",
+   "scene": 18,
+   "at": 138.3,
+   "text": "La raya se esconde bajo la arena y usa el aguijón de su cola sobre todo para defenderse.",
+   "highlight": [
+    "defenderse"
+   ],
+   "drift": 0.0,
+   "start": 138.3,
+   "end": 144.097,
+   "duration": 5.797
+  },
+  {
+   "id": "v1800",
+   "scene": 19,
+   "at": 146.3,
+   "text": "El monstruo de Gila es uno de los pocos lagartos venenosos, con llamativos dibujos negros y naranjas.",
+   "highlight": [
+    "lagartos venenosos"
+   ],
+   "drift": 0.0,
+   "start": 146.3,
+   "end": 152.883,
+   "duration": 6.583
+  },
+  {
+   "id": "v1900",
+   "scene": 20,
+   "at": 154.3,
+   "text": "Y aunque parece adorable, el ornitorrinco macho tiene espolones venenosos en las patas traseras.",
+   "highlight": [
+    "espolones venenosos"
+   ],
+   "drift": 0.0,
+   "start": 154.3,
+   "end": 160.79,
+   "duration": 6.49
+  },
+  {
+   "id": "v2000",
+   "scene": 21,
+   "at": 162.3,
+   "text": "El ciempiés gigante inyecta veneno con forcípulas: su primer par de patas, transformado.",
+   "highlight": [
+    "forcípulas"
+   ],
+   "drift": 0.0,
+   "start": 162.3,
+   "end": 168.223,
+   "duration": 5.923
+  },
+  {
+   "id": "v2100",
+   "scene": 22,
+   "at": 170.3,
+   "text": "Veinte animales, veinte formas de sobrevivir.",
+   "highlight": [
+    "veinte formas"
+   ],
+   "drift": 0.0,
+   "start": 170.3,
+   "end": 173.253,
+   "duration": 2.953
+  },
+  {
+   "id": "v2101",
+   "scene": 22,
+   "at": 173.4,
+   "text": "La naturaleza nunca deja de sorprendernos. ¿Cuál te impresionó más?",
+   "highlight": [
+    "te impresionó más"
+   ],
+   "drift": 0.103,
+   "start": 173.503,
+   "end": 177.62,
+   "duration": 4.117
+  }
+ ]
+}
