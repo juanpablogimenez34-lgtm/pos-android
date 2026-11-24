@@ -1,0 +1,71 @@
+{
+  "composition": "EP-Cachalote",
+  "quality": "final",
+  "scale": 1,
+  "crf": "20",
+  "concurrency": 4,
+  "segmentSeconds": 30,
+  "segments": [
+    {
+      "start": 0,
+      "end": 899,
+      "secs": 188.5,
+      "peakMB": 3534
+    },
+    {
+      "start": 900,
+      "end": 1799,
+      "secs": 149.5,
+      "peakMB": 3581
+    },
+    {
+      "start": 1800,
+      "end": 2699,
+      "secs": 171.9,
+      "peakMB": 3281
+    },
+    {
+      "start": 2700,
+      "end": 3599,
+      "secs": 174.9,
+      "peakMB": 3612
+    },
+    {
+      "start": 3600,
+      "end": 4499,
+      "secs": 116.8,
+      "peakMB": 3079
+    },
+    {
+      "start": 4500,
+      "end": 5399,
+      "secs": 75.2,
+      "peakMB": 3357
+    }
+  ],
+  "startedAt": "2026-11-24T14:36:34.125Z",
+  "audio": {
+    "secs": 270.4,
+    "peakMB": 2362
+  },
+  "loudness": {
+    "inputLUFS": -16.39,
+    "inputTruePeak": -1.91,
+    "targetLUFS": -14
+  },
+  "wallSecondsThisRun": 1165.4,
+  "totalSeconds": 1147.2,
+  "peakRssMB": 3612,
+  "output": {
+    "file": "out/ep-cachalote-final-1080x1920.mp4",
+    "sizeMB": 37.21,
+    "width": 1080,
+    "height": 1920,
+    "fps": "30/1",
+    "videoFrames": 5400,
+    "durationSec": 180,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "framesOk": true
+}
