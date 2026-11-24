@@ -30,6 +30,7 @@ export function scene05(t: number): SceneOut {
   if (t >= 67.6) c = shot(t, 67.6, 68.6, cam(tail.x, tail.y, 1.8), cam(gills.x, gills.y, 2.4), 'cine');
   if (t >= 68.6) c = cam(gills.x, gills.y, 2.4);
   if (t >= 70) c = shot(t, 70, 71.2, cam(gills.x, gills.y, 2.4), cam(mid.x, mid.y + 260, 0.62), 'cine');
+  if (t >= 71.2) c = cam(mid.x - (t - 71.2) * 45, mid.y + 260, 0.62 + (t - 71.2) * 0.02);
   c = breathe(c, t, 0.18);
   const gS = toScreen(c, gills.x, gills.y);
   const tS = toScreen(c, tail.x, tail.y);
@@ -103,7 +104,7 @@ export function scene06(t: number): SceneOut {
   const P = {x: -200 + (t - 80) * 40, y: 1000, a: 0.02};
   const pose = poseFrom(TR6, t, {age: lerp(0.32, 0.9, g), rim: 0.75, tone: 0.15}, 2.6);
   const mid = toWorld({x: -0.42 * SL, y: 0}, P.x, P.y, P.a, s);
-  const c = breathe(cam(mid.x + 40, mid.y - (t > EV.maturity ? 260 : 0) * seg(t, EV.maturity - 0.5, EV.maturity + 0.5), lerp(1.3, 0.66, g)), t, 0.2);
+  const c = breathe(cam(mid.x + 40 - (t - 80) * 35, mid.y - (t > EV.maturity ? 260 : 0) * seg(t, EV.maturity - 0.5, EV.maturity + 0.5), lerp(1.3, 0.66, g)), t, 0.2);
   return {
     svg: (
       <DeepOcean cam={c} t={t} depth={0.62} glow={0.15} violet={0.12}>

@@ -51,6 +51,7 @@ export function scene01(t: number): SceneOut {
   const pose2 = poseFrom(TR1b, Math.max(t, 10), {age: 0.95, rim: 0.6}, 1.4);
   let c2: Cam = cam(shipX + 60, -300, 0.58);
   if (t >= EV.backDown) c2 = shot(t, EV.backDown, 13.4, cam(shipX + 60, -300, 0.58), cam(P2.x - 380, P2.y + 30, 0.66), 'cine');
+  if (t >= 13.4) c2 = cam(P2.x - 380 - (t - 13.4) * 60, P2.y + 30, 0.66 + (t - 13.4) * 0.03);
   c2 = breathe(c2, t, 0.2);
   const surface = (
     <SurfaceWorld cam={c2} t={t}>

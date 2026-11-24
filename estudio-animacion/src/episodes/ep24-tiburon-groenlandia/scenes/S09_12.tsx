@@ -40,7 +40,7 @@ export function scene09(t: number): SceneOut {
       <>
         <Lab t={t} t0={EV.lab} pan={seg(t, EV.lab, EV.lens)} />
         {t >= EV.lens - 0.2 && <LensDiagram t={t} t0={EV.lens} />}
-        <Wash k={1 - clamp((t - EV.lab) / 0.5)} />
+        <Wash k={0.5 * (1 - clamp((t - EV.lab) / 0.5))} />
         <Tag k={win(t, 125.3, 134.8, 0.4)} text="LABORATORIO ILUSTRADO" color="#9ff0ff" />
       </>
     ),
@@ -50,8 +50,8 @@ export function scene09(t: number): SceneOut {
 // ---------------- ESCENA 10 ----------------
 export function scene10(t: number): SceneOut {
   const s = 0.72;
-  const P = {x: 360, y: 1180, a: 0};
-  const pose = poseFrom([[135, 'SCIENTIFIC_REVEAL']], t, {age: 1, rim: 0.9}, 1.2);
+  const P = {x: 360 + (t - 142.5) * 14, y: 1180 + Math.sin(t * 0.5) * 14, a: Math.sin(t * 0.4) * 0.03};
+  const pose = poseFrom([[135, 'SLOW_SWIM']], t, {age: 1, rim: 0.9}, 1.2);
   const nose = toWorld({x: 0, y: 0}, P.x, P.y, 0, s);
   const tailX = P.x - 1.05 * SL * s;
   return {
@@ -60,8 +60,8 @@ export function scene10(t: number): SceneOut {
         <rect width={1080} height={1920} fill="#0c2430" />
         {Array.from({length: 24}, (_, i) => <line key={`v${i}`} x1={i * 48} y1={0} x2={i * 48} y2={1920} stroke="#1c3c48" strokeWidth={1} />)}
         {Array.from({length: 40}, (_, i) => <line key={`h${i}`} x1={0} y1={i * 48} x2={1080} y2={i * 48} stroke="#1c3c48" strokeWidth={1} />)}
-        <g transform={`translate(${(540 - (nose.x + tailX) / 2).toFixed(1)} 0)`}>
-          <GreenlandShark uid="s10" pose={pose} x={P.x} y={P.y} scale={s} />
+        <g transform={`translate(${(540 - (360 + 360 - 1.05 * SL * s) / 2).toFixed(1)} 0)`}>
+          <GreenlandShark uid="s10" pose={pose} x={P.x} y={P.y} angle={P.a} scale={s} />
           <line x1={tailX} y1={P.y + 150} x2={nose.x} y2={P.y + 150} stroke="#ffd870" strokeWidth={3} />
           <line x1={tailX} y1={P.y + 136} x2={tailX} y2={P.y + 164} stroke="#ffd870" strokeWidth={3} />
           <line x1={nose.x} y1={P.y + 136} x2={nose.x} y2={P.y + 164} stroke="#ffd870" strokeWidth={3} />
@@ -165,9 +165,9 @@ export function scene12(t: number): SceneOut {
   }
   const late = t >= 175;
   const P = late ? {x: 100 + (t - 175) * 80, y: 400 + (t - 175) * 70, a: 0.25} : {x: -500 + (t - 165) * 60, y: 420, a: 0.02};
-  const pose = poseFrom(TR12, t, {age: 1, tone: late ? lerp(0.3, 0.85, seg(t, 175, 179)) : 0.15, rim: late ? 0.4 : 0.85}, 0.2);
+  const pose = poseFrom(TR12, t, {age: 1, tone: late ? lerp(0.3, 0.72, seg(t, 175, 179)) : 0.15, rim: late ? 0.4 : 0.85}, 0.2);
   const mid = toWorld({x: -0.45 * SL, y: 0}, P.x, P.y, P.a, 0.9);
-  const c = late ? breathe(cam(200, 500, 0.5), t, 0.2) : breathe(cam(mid.x + 100, 380, lerp(0.75, 0.6, seg(t, 165, 170))), t, 0.2);
+  const c = late ? breathe(cam(200 + (t - 175) * 40, 500 + (t - 175) * 30, 0.5 - (t - 175) * 0.012), t, 0.2) : breathe(cam(mid.x + 100, 380, lerp(0.75, 0.6, seg(t, 165, 170))), t, 0.2);
   return {
     svg: (
       <DeepOcean cam={c} t={t} depth={late ? lerp(0.8, 1, seg(t, 175, 179)) : 0.55} glow={0.35} violet={0.18}>
