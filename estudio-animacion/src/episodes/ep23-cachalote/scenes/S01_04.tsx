@@ -10,7 +10,7 @@ import {breathe, cam, Cam, SceneOut, shot, toScreen} from '../../../studio2';
 import {GiantSquid} from '../../ep22-calamar-gigante/character/GiantSquid';
 import {poseFrom as squidPose} from '../../ep22-calamar-gigante/components/common';
 import {L, SOUND_ORIGIN, SpermWhale} from '../character/SpermWhale';
-import {BigTitle, Brand, Callout, Diver, Note, poseFrom, seg, toWorld, Vignette, Wash, win, WTrack} from '../components/common';
+import {BigTitle, Brand, Callout, Diver, Note, poseFrom, seg, toWorld, Vignette, win, WTrack} from '../components/common';
 import {EV} from '../data/timeline';
 import {ClickFlash, ClickWaves, DeepOcean, OceanFront, SurfaceWorld} from '../environment/Ocean';
 
@@ -56,7 +56,6 @@ export function scene01(t: number): SceneOut {
         <Vignette />
         <BigTitle k={win(t, EV.hookText, 7.2, 0.35)} lines={['¡EL GIGANTE QUE', 'CAZA CON SONIDO!']} top={300} size={84} />
         <Note k={win(t, 1.4, 14.6, 0.4)} text="Visualización educativa: el sonido no se ve" top={1700} />
-        <Wash k={1 - clamp(t / 0.35)} />
       </>
     ),
   };

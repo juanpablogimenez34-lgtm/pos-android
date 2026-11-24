@@ -7,7 +7,7 @@ import React from 'react';
 import {Audio, staticFile} from 'remotion';
 import {cuesFromTiming, speechIntervals, TimedLine} from '../../engine/cues';
 import {AudioMix} from '../../engine/types';
-import {EpisodeShell, SceneDef, ShellProps} from '../../studio2';
+import {BubbleCurtain, EpisodeShell, SceneDef, ShellProps} from '../../studio2';
 import {SceneTag} from './components/common';
 import narration from './data/narration-timing.json';
 import {SCENES} from './data/timeline';
@@ -35,7 +35,15 @@ export type WhaleDocProps = ShellProps & {extraTracks?: boolean};
 
 export const WhaleDocumentary: React.FC<WhaleDocProps> = ({extraTracks = true, ...props}) => (
   <>
-    <EpisodeShell {...props} scenes={DEFS} cues={WHALE_CUES} speech={SPEECH} background="#04101e" extra={(t) => <SceneTag t={t} />} />
+    <EpisodeShell {...props} scenes={DEFS} cues={WHALE_CUES} speech={SPEECH} background="#04101e" extra={(t) => (
+        <>
+          <SceneTag t={t} />
+          {/* transiciones motivadas: superficie ↔ profundidad (sin cortes bruscos de luz) */}
+          <BubbleCurtain u={(t - 44.4) / 1.2} />
+          <BubbleCurtain u={(t - 54.4) / 1.2} />
+          <BubbleCurtain u={(t - 129.4) / 1.2} />
+        </>
+      )} />
     {extraTracks && props.audio.narration && (
       <>
         <Audio src={staticFile(`${DIR}/respiracion.m4a`)} volume={0.5} />

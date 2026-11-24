@@ -138,10 +138,10 @@ function encounter(t: number) {
   const u = seg(t, 91, 101);
   const turn = seg(t, 110, 116);
   const P = {x: lerp(-1700, -320, u) + turn * 300, y: lerp(-500, -140, u) - turn * 500, a: lerp(0.22, 0.06, u) - turn * 0.55};
-  const pose = poseFrom(TRW, t, {tone: lerp(0.4, 0.25, u) + seg(t, 114, 120) * 0.5, rim: 0.7, jaw: win(t, 101, 109, 1) * 0.3}, 2.9);
+  const pose = poseFrom(TRW, t, {tone: lerp(0.4, 0.25, u) + seg(t, 114, 120) * 0.3, rim: 0.7, jaw: win(t, 101, 109, 1) * 0.3}, 2.9);
   const sqx = SQ.x + seg(t, 112, 120) * 380;
   const sqy = SQ.y + seg(t, 112, 120) * 300 + Math.sin(t * 0.5) * 16;
-  const sp = squidPose(SQT, t, {tone: 0.35 + seg(t, 114, 120) * 0.5, rim: 0.5, look: {x: -900, y: -300}});
+  const sp = squidPose(SQT, t, {tone: 0.35 + seg(t, 114, 120) * 0.3, rim: 0.5, look: {x: -900, y: -300}});
   return {s, P, pose, sp, sqx, sqy};
 }
 export function scene07(t: number): SceneOut {
@@ -195,7 +195,7 @@ export function scene08(t: number): SceneOut {
           </svg>
         )}
         <Callout k={rk} x={rings[2].x} y={rings[2].y - 30} tx={140} ty={560} text="marcas circulares atribuidas a ventosas" />
-        <Wash k={0.45 * seg(t, 116, 120)} />
+        <Wash k={0.25 * seg(t, 116, 120)} />
         <RecTag k={win(t, 105.3, 119.8, 0.4)} />
         <Brand />
       </>
