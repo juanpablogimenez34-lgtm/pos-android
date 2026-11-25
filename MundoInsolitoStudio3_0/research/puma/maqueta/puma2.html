@@ -12,6 +12,13 @@ body{margin:0;background:#1d2420;font-family:DejaVu Sans,sans-serif}
   <linearGradient id="furFar" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6e4e32"/><stop offset="1" stop-color="#a88a66"/></linearGradient>
   <linearGradient id="tail2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#9c7450"/><stop offset="1" stop-color="#b8916a"/></linearGradient>
   <linearGradient id="tail" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#a77d52"/><stop offset="0.78" stop-color="#b8916a"/><stop offset="0.86" stop-color="#3a281b"/><stop offset="1" stop-color="#241810"/></linearGradient>
+  <radialGradient id="iris2" cx="0.5" cy="0.5" r="0.55"><stop offset="0" stop-color="#d8c470"/><stop offset="0.35" stop-color="#c9a24e"/><stop offset="0.75" stop-color="#a87430"/><stop offset="1" stop-color="#5a3812"/></radialGradient>
+  <linearGradient id="headG" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#000"/><stop offset="1" stop-color="#fff"/></linearGradient>
+  <mask id="noHead" maskUnits="userSpaceOnUse" x="0" y="0" width="1600" height="1000"><rect width="1600" height="1000" fill="#fff"/><rect x="1080" y="200" width="320" height="230" fill="#000"/><rect x="1050" y="200" width="30" height="230" fill="url(#headGi)"/></mask>
+  <linearGradient id="headGi" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#fff"/><stop offset="1" stop-color="#000"/></linearGradient>
+  <radialGradient id="muz" cx="0.45" cy="0.4" r="0.6"><stop offset="0" stop-color="#fdfaf3"/><stop offset="0.6" stop-color="#efe4d0"/><stop offset="1" stop-color="#e6d9c2"/></radialGradient>
+  <radialGradient id="noseG" cx="0.4" cy="0.3" r="0.7"><stop offset="0" stop-color="#b9736a"/><stop offset="0.6" stop-color="#8a4a44"/><stop offset="1" stop-color="#5a2c28"/></radialGradient>
+  <mask id="headM" maskUnits="userSpaceOnUse" x="0" y="0" width="1600" height="1000"><rect x="1050" y="200" width="60" height="260" fill="url(#headG)"/><rect x="1110" y="200" width="300" height="260" fill="#fff"/></mask>
   <radialGradient id="iris" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#d9c25a"/><stop offset="0.7" stop-color="#c98f2c"/><stop offset="1" stop-color="#7a4f1a"/></radialGradient>
   <filter id="paint" x="-5%" y="-5%" width="110%" height="110%">
     <feTurbulence type="fractalNoise" baseFrequency="0.035 0.09" numOctaves="3" seed="4" result="n"/>
@@ -24,10 +31,10 @@ body{margin:0;background:#1d2420;font-family:DejaVu Sans,sans-serif}
   <clipPath id="sil"><path d="M440 362
     C520 328 640 345 720 350 C800 354 862 330 920 326
     C960 326 990 342 1030 334 C1045 330 1055 316 1062 300
-    C1074 264 1110 244 1150 248 C1182 251 1203 268 1218 292
-    C1228 306 1244 312 1258 316 C1270 320 1274 332 1270 344
-    C1266 356 1256 362 1244 368 C1238 380 1226 390 1208 394
-    C1180 400 1150 398 1128 396 C1100 405 1078 430 1060 468
+    C1074 262 1108 244 1146 246 C1176 248 1196 258 1210 272
+    C1224 286 1242 298 1258 304 C1270 309 1277 318 1276 330
+    C1275 342 1268 352 1262 360 C1256 368 1248 373 1240 375
+    C1240 384 1234 394 1222 398 C1196 404 1160 403 1128 398 C1100 405 1078 430 1060 468
     C1042 505 1022 545 1000 585
     C988 610 980 640 984 690 C986 720 982 745 990 766
     C996 776 1012 778 1022 786 C1030 794 1022 800 1006 800
@@ -60,7 +67,7 @@ body{margin:0;background:#1d2420;font-family:DejaVu Sans,sans-serif}
 <g id="grassBack"></g>
 <ellipse cx="760" cy="792" rx="470" ry="22" fill="#2a2a1a" opacity="0.45" filter="url(#soft)"/>
 
-<g stroke="#2e1d10" stroke-width="3" stroke-linejoin="round" stroke-linecap="round">
+<g stroke="#3a2414" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round">
   <!-- patas lejanas (en sombra, paso de marcha) -->
   <path d="M915 590 C918 640 912 700 910 745 C909 765 916 778 940 782 C955 786 950 796 935 796 L878 796 C866 796 864 786 870 778 C866 745 858 700 852 650 C848 625 852 600 862 585 Z" fill="url(#furFar)"/>
   <path d="M612 540 C645 585 660 630 650 672 C644 700 630 722 628 748 C627 768 640 780 658 784 C672 788 668 797 652 797 L600 797 C588 797 587 788 594 780 C590 750 592 720 596 695 C600 662 572 620 552 580 Z" fill="url(#furFar)"/>
@@ -74,10 +81,10 @@ body{margin:0;background:#1d2420;font-family:DejaVu Sans,sans-serif}
   <path d="M440 362
     C520 328 640 345 720 350 C800 354 862 330 920 326
     C960 326 990 342 1030 334 C1045 330 1055 316 1062 300
-    C1074 264 1110 244 1150 248 C1182 251 1203 268 1218 292
-    C1228 306 1244 312 1258 316 C1270 320 1274 332 1270 344
-    C1266 356 1256 362 1244 368 C1238 380 1226 390 1208 394
-    C1180 400 1150 398 1128 396 C1100 405 1078 430 1060 468
+    C1074 262 1108 244 1146 246 C1176 248 1196 258 1210 272
+    C1224 286 1242 298 1258 304 C1270 309 1277 318 1276 330
+    C1275 342 1268 352 1262 360 C1256 368 1248 373 1240 375
+    C1240 384 1234 394 1222 398 C1196 404 1160 403 1128 398 C1100 405 1078 430 1060 468
     C1042 505 1022 545 1000 585
     C988 610 980 640 984 690 C986 720 982 745 990 766
     C996 776 1012 778 1022 786 C1030 794 1022 800 1006 800
@@ -88,11 +95,13 @@ body{margin:0;background:#1d2420;font-family:DejaVu Sans,sans-serif}
     C524 745 528 762 542 772 C552 778 566 782 570 790 C572 798 562 801 548 801
     L494 801 C482 801 480 792 486 784 C484 762 480 735 470 708
     C462 690 455 660 448 620 C440 580 418 550 410 490
-    C404 440 414 395 440 362 Z" fill="url(#fur)" filter="url(#paint)"/>
+    C404 440 414 395 440 362 Z" fill="url(#fur)" filter="url(#paint)" stroke="none"/>
 
   <!-- oreja: pequeña, redondeada; dorso oscuro y centro claro -->
-  <path d="M1128 256 C1124 236 1130 222 1142 220 C1152 220 1156 236 1152 256 Z" fill="#3a2c22"/>
-  <path d="M1076 282 C1066 252 1074 222 1098 210 C1112 205 1126 222 1134 256 Z" fill="#45362b"/>
+  <path d="M1128 256 C1124 236 1130 222 1142 220 C1152 220 1156 236 1152 256 Z" fill="#3a2c22" stroke="none"/>
+  <path d="M1076 282 C1066 252 1074 222 1098 210 C1112 205 1126 222 1134 256 Z" fill="#45362b" stroke="none"/>
+  <g stroke="#efe2cc" stroke-width="0.9" opacity="0.75" stroke-linecap="round"><path d="M1096 262 l3 -14"/><path d="M1100 262 l4 -16"/><path d="M1104 262 l3 -12"/><path d="M1108 260 l4 -10"/><path d="M1094 250 l5 -10"/></g>
+  <path d="M1078 270 C1074 246 1084 220 1100 213" fill="none" stroke="#a88a6e" stroke-width="2" opacity="0.6"/>
   <path d="M1088 268 C1084 246 1090 228 1102 222 C1112 222 1120 238 1124 258 Z" fill="#d6bfa2" stroke="none"/>
   <path d="M1094 262 C1092 248 1096 236 1103 232 C1108 236 1112 246 1114 258 Z" fill="#b89a7c" stroke="none" opacity="0.7"/>
 </g>
@@ -111,7 +120,7 @@ body{margin:0;background:#1d2420;font-family:DejaVu Sans,sans-serif}
   <path d="M912 622 C905 600 900 585 905 570"/>
   <path d="M470 400 C520 440 565 490 592 560"/>
   <path d="M560 600 C570 620 572 640 568 655"/>
-  <path d="M1080 330 C1090 360 1108 380 1128 392"/>
+  
 </g>
 
 <g id="furTail" clip-path="url(#tailc)"></g>
@@ -120,10 +129,10 @@ body{margin:0;background:#1d2420;font-family:DejaVu Sans,sans-serif}
 <g clip-path="url(#sil)" mask="url(#rimM)"><path d="M440 362
     C520 328 640 345 720 350 C800 354 862 330 920 326
     C960 326 990 342 1030 334 C1045 330 1055 316 1062 300
-    C1074 264 1110 244 1150 248 C1182 251 1203 268 1218 292
-    C1228 306 1244 312 1258 316 C1270 320 1274 332 1270 344
-    C1266 356 1256 362 1244 368 C1238 380 1226 390 1208 394
-    C1180 400 1150 398 1128 396 C1100 405 1078 430 1060 468
+    C1074 262 1108 244 1146 246 C1176 248 1196 258 1210 272
+    C1224 286 1242 298 1258 304 C1270 309 1277 318 1276 330
+    C1275 342 1268 352 1262 360 C1256 368 1248 373 1240 375
+    C1240 384 1234 394 1222 398 C1196 404 1160 403 1128 398 C1100 405 1078 430 1060 468
     C1042 505 1022 545 1000 585
     C988 610 980 640 984 690 C986 720 982 745 990 766
     C996 776 1012 778 1022 786 C1030 794 1022 800 1006 800
@@ -136,47 +145,102 @@ body{margin:0;background:#1d2420;font-family:DejaVu Sans,sans-serif}
     C462 690 455 660 448 620 C440 580 418 550 410 490
     C404 440 414 395 440 362 Z" fill="none" stroke="#ffd08a" stroke-width="14" opacity="0.55" filter="url(#soft2)"/></g>
 <g clip-path="url(#tailc)"><path d="M445 365 C385 395 335 470 322 560 C310 640 325 705 368 732 C395 748 430 742 440 718 C446 702 434 692 420 697 C392 705 368 682 362 645 C354 585 372 505 408 455 C428 425 450 410 470 402 Z" fill="none" stroke="#ffcf8a" stroke-width="10" opacity="0.35" filter="url(#soft2)"/></g>
+<path d="M440 362
+    C520 328 640 345 720 350 C800 354 862 330 920 326
+    C960 326 990 342 1030 334 C1045 330 1055 316 1062 300
+    C1074 262 1108 244 1146 246 C1176 248 1196 258 1210 272
+    C1224 286 1242 298 1258 304 C1270 309 1277 318 1276 330
+    C1275 342 1268 352 1262 360 C1256 368 1248 373 1240 375
+    C1240 384 1234 394 1222 398 C1196 404 1160 403 1128 398 C1100 405 1078 430 1060 468
+    C1042 505 1022 545 1000 585
+    C988 610 980 640 984 690 C986 720 982 745 990 766
+    C996 776 1012 778 1022 786 C1030 794 1022 800 1006 800
+    L944 800 C930 800 928 790 934 780 C938 760 936 735 932 700
+    C928 665 920 640 912 622
+    C866 620 795 604 725 588 C672 576 632 560 604 548
+    C596 580 592 615 575 650 C562 680 540 700 530 725
+    C524 745 528 762 542 772 C552 778 566 782 570 790 C572 798 562 801 548 801
+    L494 801 C482 801 480 792 486 784 C484 762 480 735 470 708
+    C462 690 455 660 448 620 C440 580 418 550 410 490
+    C404 440 414 395 440 362 Z" fill="none" stroke="#3a2414" stroke-width="2.6" mask="url(#noHead)"/>
+<g clip-path="url(#sil)" mask="url(#headM)"><path d="M440 362
+    C520 328 640 345 720 350 C800 354 862 330 920 326
+    C960 326 990 342 1030 334 C1045 330 1055 316 1062 300
+    C1074 262 1108 244 1146 246 C1176 248 1196 258 1210 272
+    C1224 286 1242 298 1258 304 C1270 309 1277 318 1276 330
+    C1275 342 1268 352 1262 360 C1256 368 1248 373 1240 375
+    C1240 384 1234 394 1222 398 C1196 404 1160 403 1128 398 C1100 405 1078 430 1060 468
+    C1042 505 1022 545 1000 585
+    C988 610 980 640 984 690 C986 720 982 745 990 766
+    C996 776 1012 778 1022 786 C1030 794 1022 800 1006 800
+    L944 800 C930 800 928 790 934 780 C938 760 936 735 932 700
+    C928 665 920 640 912 622
+    C866 620 795 604 725 588 C672 576 632 560 604 548
+    C596 580 592 615 575 650 C562 680 540 700 530 725
+    C524 745 528 762 542 772 C552 778 566 782 570 790 C572 798 562 801 548 801
+    L494 801 C482 801 480 792 486 784 C484 762 480 735 470 708
+    C462 690 455 660 448 620 C440 580 418 550 410 490
+    C404 440 414 395 440 362 Z" fill="none" stroke="#3a2414" stroke-width="7" opacity="0.45" filter="url(#soft2)"/></g>
 <!-- cara (detallada) -->
 <g id="face">
-  <!-- mejilla en sombra y mechones de la mejilla -->
-  <ellipse cx="1150" cy="350" rx="40" ry="28" fill="#4a2e18" opacity="0.18" filter="url(#soft)"/>
-  <g stroke="#f0e2c6" stroke-width="2" opacity="0.75" stroke-linecap="round" fill="none">
-    <path d="M1124 336 l-8 10"/><path d="M1122 350 l-9 9"/><path d="M1124 364 l-10 8"/><path d="M1128 378 l-10 6"/><path d="M1134 390 l-9 5"/>
+  <!-- VOLUMEN de la cabeza: luces y sombras suaves recortadas a la silueta -->
+  <g clip-path="url(#sil)" mask="url(#headM)">
+    <ellipse cx="1150" cy="262" rx="60" ry="22" fill="#e9c896" opacity="0.45" filter="url(#soft)"/>
+    <ellipse cx="1200" cy="300" rx="34" ry="12" fill="#3a2414" opacity="0.35" filter="url(#soft)"/>
+    <ellipse cx="1160" cy="335" rx="42" ry="20" fill="#d8b486" opacity="0.4" filter="url(#soft)"/>
+    <ellipse cx="1150" cy="385" rx="60" ry="22" fill="#3a2414" opacity="0.35" filter="url(#soft)"/>
+    <path d="M1205 285 C1225 292 1245 305 1262 316" stroke="#f0d2a0" stroke-width="9" opacity="0.45" fill="none" filter="url(#soft2)"/>
+    <g id="faceFur"></g>
   </g>
-  <!-- hocico blanco: bordes suaves + núcleo -->
-  <path d="M1210 324 C1236 314 1262 320 1274 336 C1276 352 1264 364 1248 370 C1238 388 1214 398 1190 396 C1176 380 1184 346 1210 324Z" fill="#f3ead9" filter="url(#soft2)"/>
-  <path d="M1216 330 C1238 322 1258 326 1268 338 C1268 350 1258 360 1244 366 C1234 382 1216 390 1198 388 C1190 374 1196 348 1216 330Z" fill="#f8f2e6"/>
-  <path d="M1184 398 C1162 404 1140 400 1128 397 C1140 414 1166 418 1192 409Z" fill="#efe5d2" filter="url(#soft2)"/>
-  <!-- mancha oscura en la base de los bigotes -->
-  <ellipse cx="1226" cy="342" rx="15" ry="9" fill="#2e2016" opacity="0.8" filter="url(#soft2)"/>
-  <g fill="#3a2a1e" opacity="0.75"><circle cx="1214" cy="348" r="1.5"/><circle cx="1222" cy="352" r="1.5"/><circle cx="1230" cy="350" r="1.5"/><circle cx="1238" cy="348" r="1.5"/><circle cx="1218" cy="357" r="1.5"/><circle cx="1227" cy="359" r="1.5"/><circle cx="1236" cy="356" r="1.5"/></g>
-  <!-- nariz rosada oscura con brillo -->
-  <path d="M1250 319 C1258 312 1273 314 1277 325 C1278 334 1270 341 1261 342 C1252 341 1246 330 1250 319Z" fill="#96534e" stroke="#2e1d10" stroke-width="2"/>
-  <ellipse cx="1262" cy="320" rx="6" ry="2.6" fill="#d9a097" opacity="0.8"/>
-  <path d="M1262 337 C1265 339 1269 339 1272 336" fill="none" stroke="#3a1f1a" stroke-width="2"/>
-  <path d="M1263 342 C1262 348 1258 354 1252 358" fill="none" stroke="#6a4a3c" stroke-width="1.8"/>
-  <path d="M1248 368 C1236 377 1218 381 1202 378" fill="none" stroke="#2e1d10" stroke-width="2.5" stroke-linecap="round"/>
-  <!-- ojo grande: parche claro, delineado oscuro, iris ámbar, pupila redonda -->
-  <ellipse cx="1190" cy="296" rx="26" ry="14" fill="#f4e6cc" opacity="0.75" filter="url(#soft2)"/>
-  <path d="M1166 291 C1176 278 1200 276 1214 286 C1204 300 1180 304 1166 291Z" fill="#1d130b"/>
-  <path d="M1170 291 C1179 281 1199 280 1210 287 C1201 297 1182 300 1170 291Z" fill="url(#iris)"/>
-  <circle cx="1191" cy="289" r="5.2" fill="#0c0806"/>
-  <circle cx="1195" cy="286" r="2" fill="#fff"/>
-  <circle cx="1185" cy="293" r="1" fill="#fff" opacity="0.7"/>
-  <path d="M1170 289 C1180 281 1198 280 1209 286" fill="none" stroke="#5a3a1c" stroke-width="2.5" opacity="0.55"/>
-  <path d="M1212 288 C1220 296 1226 310 1230 324" fill="none" stroke="#2e2016" stroke-width="3.2" opacity="0.6" stroke-linecap="round"/>
-  <path d="M1164 292 C1158 296 1154 300 1150 302" fill="none" stroke="#1d130b" stroke-width="2.4" stroke-linecap="round"/>
-  <path d="M1162 272 C1176 264 1196 264 1212 272" fill="none" stroke="#f2e2c4" stroke-width="3.5" opacity="0.75" stroke-linecap="round"/>
-  <g stroke="#f4e8d2" stroke-width="1.2" opacity="0.85" stroke-linecap="round" fill="none"><path d="M1196 268 C1200 250 1210 238 1222 232"/><path d="M1190 268 C1192 252 1198 242 1206 236"/></g>
-  <!-- bigotes largos y finos -->
-  <g stroke="#fbf6ec" fill="none" opacity="0.9" stroke-linecap="round">
-    <path d="M1218 346 C1180 342 1146 348 1112 360" stroke-width="1.6"/>
-    <path d="M1220 351 C1186 354 1154 364 1124 380" stroke-width="1.5"/>
-    <path d="M1222 356 C1196 366 1170 382 1150 402" stroke-width="1.4"/>
-    <path d="M1224 360 C1206 374 1192 392 1182 412" stroke-width="1.2"/>
-    <path d="M1236 346 C1272 336 1306 338 1334 346" stroke-width="1.5"/>
-    <path d="M1238 352 C1272 354 1302 364 1326 380" stroke-width="1.4"/>
-    <path d="M1238 357 C1266 366 1290 382 1306 400" stroke-width="1.2"/>
+  <!-- máscara facial del puma: zona clara sobre y bajo el ojo -->
+  <ellipse cx="1182" cy="276" rx="22" ry="6" fill="#f1e1c2" opacity="0.65" filter="url(#soft2)"/>
+  <ellipse cx="1196" cy="306" rx="20" ry="7" fill="#f1e4ca" opacity="0.6" filter="url(#soft2)"/>
+  <!-- mejilla: mechones -->
+  <g stroke="#ecdcbe" stroke-width="1.4" opacity="0.7" stroke-linecap="round" fill="none">
+    <path d="M1122 334 q-6 5 -9 11"/><path d="M1120 346 q-6 4 -10 10"/><path d="M1122 358 q-7 4 -11 9"/><path d="M1125 370 q-7 3 -11 8"/><path d="M1130 382 q-7 2 -11 6"/><path d="M1136 392 q-6 2 -10 5"/>
+  </g>
+  <!-- hocico: almohadilla blanca con volumen (degradado, bordes suaves) -->
+  <path d="M1212 322 C1236 312 1262 318 1272 336 C1274 352 1264 364 1246 372 C1236 386 1214 396 1192 394 C1178 378 1186 344 1212 322Z" fill="#f1e8d8" filter="url(#soft)" opacity="0.85"/>
+  <path d="M1216 330 C1240 322 1262 330 1268 344 C1266 356 1256 365 1242 370 C1232 382 1216 388 1200 386 C1192 372 1196 346 1216 330Z" fill="url(#muz)" filter="url(#soft2)"/>
+  <path d="M1240 376 C1238 386 1230 394 1218 396 C1196 400 1170 398 1146 396 C1160 410 1196 412 1222 404 C1234 400 1240 390 1240 376Z" fill="#ece2cf" filter="url(#soft2)"/>
+  <ellipse cx="1170" cy="406" rx="40" ry="6" fill="#9c876a" opacity="0.45" filter="url(#soft2)"/>
+  <!-- mancha oscura de los bigotes (suave, como pelo) -->
+  <path d="M1210 343 C1217 336 1233 334 1244 339 C1240 347 1229 352 1217 352 C1212 350 1208 347 1210 343Z" fill="#20150d" opacity="0.55" filter="url(#soft2)"/>
+  <g id="padFur" clip-path="url(#sil)"></g>
+  <g fill="#3a2a1e" opacity="0.8"><circle cx="1216" cy="355" r="1.1"/><circle cx="1223" cy="357" r="1.1"/><circle cx="1230" cy="356" r="1.1"/><circle cx="1237" cy="353" r="1.1"/><circle cx="1219" cy="361" r="1"/><circle cx="1227" cy="362" r="1"/><circle cx="1235" cy="359" r="1"/><circle cx="1243" cy="356" r="1"/></g>
+  <!-- nariz integrada en el frente del hocico: cuero rosado, orificio, surco -->
+  <path d="M1250 305 C1261 303 1271 309 1275 318 C1277 326 1273 333 1265 336 C1261 330 1259 322 1256 316 C1254 311 1252 308 1250 305Z" fill="url(#noseG)"/>
+  <path d="M1254 306 C1262 306 1269 310 1272 316" fill="none" stroke="#dba69c" stroke-width="1.4" opacity="0.6"/>
+  <path d="M1266 330 C1269 329 1272 326 1273 322 C1273 329 1270 333 1265 335Z" fill="#241210" opacity="0.85"/>
+  <path d="M1260 334 C1260 344 1258 352 1255 358" fill="none" stroke="#6a4a3c" stroke-width="1.3" opacity="0.8"/>
+  <!-- labios: línea oscura que baja hacia la comisura -->
+  <path d="M1254 368 C1244 375 1226 379 1210 377 C1203 376 1198 374 1194 371" fill="none" stroke="#1e130b" stroke-width="2" stroke-linecap="round" opacity="0.9"/>
+  <!-- ojo realista -->
+  <path d="M1165 292 C1173 280 1198 276 1213 286 C1205 299 1180 304 1165 292Z" fill="#2a1a0e"/>
+  <path d="M1168 284 C1180 276 1198 275 1210 281" fill="none" stroke="#4a301a" stroke-width="1.5" opacity="0.6"/>
+  <path d="M1168 291 C1177 281 1198 279 1210 287 C1202 297 1181 300 1168 291Z" fill="url(#iris2)"/>
+  <g stroke="#7a4c18" stroke-width="0.7" opacity="0.6"><path d="M1190 289 l-9 -6"/><path d="M1190 289 l-12 2"/><path d="M1190 289 l12 -4"/><path d="M1190 289 l10 6"/><path d="M1190 289 l-4 8"/><path d="M1190 289 l4 -9"/></g>
+  <circle cx="1190" cy="289" r="5.6" fill="#050302"/>
+  <path d="M1168 291 C1177 281 1198 279 1210 287 C1200 284 1180 284 1168 291Z" fill="#1c1006" opacity="0.55"/>
+  <path d="M1194 284.5 C1196 284 1198 284.5 1199 286 C1197 286 1195.5 286.5 1194 286.5Z" fill="#fffaf0" opacity="0.9"/>
+  <circle cx="1184" cy="294" r="0.9" fill="#fff" opacity="0.6"/>
+  <path d="M1172 296 C1182 300 1198 299 1207 292" fill="none" stroke="#e9d6b4" stroke-width="1.4" opacity="0.6"/>
+  <path d="M1166 292 C1160 296 1155 298 1150 299" fill="none" stroke="#140d07" stroke-width="1.6" stroke-linecap="round" opacity="0.8"/>
+  <!-- lagrimal: franja oscura del ojo hacia el hocico -->
+  <path d="M1212 288 C1218 296 1222 306 1225 316" fill="none" stroke="#24180f" stroke-width="3.4" opacity="0.55" stroke-linecap="round" filter="url(#soft2)"/>
+  <path d="M1212 288 C1217 295 1220 302 1222 310" fill="none" stroke="#1e140d" stroke-width="1.5" opacity="0.7" stroke-linecap="round"/>
+  <!-- arco superciliar y vibrisas -->
+  <path d="M1164 276 C1178 270 1196 270 1212 278" fill="none" stroke="#6a4626" stroke-width="2.6" opacity="0.55" stroke-linecap="round"/>
+  <g stroke="#f4e8d2" stroke-width="1" opacity="0.85" stroke-linecap="round" fill="none"><path d="M1198 270 C1202 252 1212 240 1224 234"/><path d="M1192 270 C1194 254 1200 244 1208 238"/><path d="M1204 271 C1210 258 1220 250 1232 246"/></g>
+  <!-- bigotes: finos, largos y que se afinan -->
+  <g fill="none" stroke-linecap="round">
+    <path d="M1216 355 C1180 350 1146 356 1110 368" stroke="#fbf7ef" stroke-width="1" opacity="0.8"/>
+    <path d="M1218 359 C1186 362 1154 372 1122 388" stroke="#fbf7ef" stroke-width="0.9" opacity="0.85"/>
+    <path d="M1220 362 C1194 372 1170 388 1150 408" stroke="#fbf7ef" stroke-width="0.8" opacity="0.8"/>
+    <path d="M1224 364 C1206 378 1192 396 1182 416" stroke="#fbf7ef" stroke-width="1" opacity="0.75"/>
+    <path d="M1236 354 C1272 344 1308 346 1338 354" stroke="#fbf7ef" stroke-width="0.9" opacity="0.85"/>
+    <path d="M1238 358 C1272 360 1304 370 1330 386" stroke="#fbf7ef" stroke-width="0.8" opacity="0.8"/>
+    <path d="M1238 362 C1266 372 1290 388 1306 406" stroke="#fbf7ef" stroke-width="1" opacity="0.75"/>
   </g>
 </g>
 <g fill="none" stroke="#5a3e28" stroke-width="2" stroke-linecap="round">
@@ -225,12 +289,41 @@ function colAt(x, y) {
 const fur = document.getElementById("furBody");
 for (let i = 0; i < 9000; i++) {
   const x = 400 + R() * 880, y = 240 + R() * 565;
+  if (x > 1070 && y < 405) { R(); R(); R(); R(); R(); R(); continue; }
   const a = (dirAt(x, y) + (R() - 0.5) * 18) * Math.PI / 180;
   const L = 9 + R() * 12, bend = (R() - 0.5) * 5;
   const dx = Math.cos(a) * L, dy = Math.sin(a) * L;
   const light = R();
   const c = light < 0.45 ? mix(colAt(x, y), '#3a2414', 0.35) : light < 0.85 ? colAt(x, y) : mix(colAt(x, y), '#fff1d4', 0.5);
   add(fur, `M${x} ${y} q${dx / 2 - dy * bend / L} ${dy / 2 + dx * bend / L} ${dx} ${dy}`, c, 1 + R() * 1.4, 0.32 + R() * 0.3);
+}
+const fF = document.getElementById('faceFur');
+for (let i = 0; i < 6000; i++) {
+  const x = 1055 + R() * 230, y = 235 + R() * 180;
+  let ang;
+  if (x > 1205 && y < 330) ang = 200 + (y - 300) * 0.4;           // puente nasal: hacia la frente
+  else if (y < 280) ang = 190;                                     // frente y cráneo
+  else if (x > 1195 && y > 330) ang = 120;                         // hocico: hacia abajo
+  else ang = 160 + (y - 320) * 0.25;                               // mejilla: hacia atrás y abajo
+  const a = (ang + (R() - 0.5) * 20) * Math.PI / 180, L = 3 + R() * 5;
+  const base = y > 360 ? '#cdb08a' : y < 270 ? '#8a6240' : '#a77d55';
+  const c = R() < 0.4 ? mixA(base, '#2e1c10', 0.45) : R() < 0.75 ? hx(base) : mixA(base, '#fff2d8', 0.55);
+  add(fF, `M${x} ${y} l${Math.cos(a) * L} ${Math.sin(a) * L}`, c, 0.45 + R() * 0.6, 0.4 + R() * 0.3);
+}
+const pf = document.getElementById('padFur');
+for (let i = 0; i < 180; i++) {           // mancha de los bigotes hecha de pelo oscuro
+  const x = 1210 + R() * 34, y = 336 + R() * 16;
+  const dx = (x - 1227) / 17, dy = (y - 344) / 8;
+  if (dx * dx + dy * dy > 1) continue;
+  const a = (115 + (R() - 0.5) * 30) * Math.PI / 180, L = 2.5 + R() * 3;
+  add(pf, `M${x} ${y} l${Math.cos(a) * L * 0.7} ${Math.sin(a) * L * 0.7}`, R() < 0.7 ? '#2a1c12' : '#6a5040', 0.5 + R() * 0.4, 0.45);
+}
+for (let i = 0; i < 500; i++) {           // pelo blanco del hocico y la barbilla
+  const x = 1190 + R() * 80, y = 330 + R() * 75;
+  const dx = (x - 1232) / 40, dy = (y - 365) / 34;
+  if (dx * dx + dy * dy > 1) continue;
+  const a = (100 + (R() - 0.5) * 30) * Math.PI / 180, L = 2.5 + R() * 4;
+  add(pf, `M${x} ${y} l${Math.cos(a) * L} ${Math.sin(a) * L}`, R() < 0.7 ? '#ffffff' : '#cdbda4', 0.5 + R() * 0.6, 0.6);
 }
 const ff = document.getElementById('furFarG');
 for (let i = 0; i < 1200; i++) {
