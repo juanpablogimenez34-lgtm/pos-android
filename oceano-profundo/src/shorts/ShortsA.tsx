@@ -136,7 +136,7 @@ const vShot = (camF: (t: number, v: ReturnType<typeof viper>) => Cam, o: {hook?:
         {o.school && <Title k={win(t, 26.6, 31, 0.4)} lines={['UNA JAULA', 'DE COLMILLOS']} size={70} top={300} />}
         {o.photos && (
           <>
-            <Label x={belly.x} y={belly.y} tx={620} ty={belly.y + 300} text="Fotóforos ventrales" k={win(t, 31.8, 41.4, 0.4)} />
+            <Label x={belly.x} y={belly.y} tx={Math.min(520, belly.x + 120)} ty={belly.y - 480} text="Fotóforos ventrales" k={win(t, 31.8, 41.4, 0.4)} />
             <Label x={toScreen(c, VV, v.x + lure.x * S, v.y + lure.y * S).x} y={toScreen(c, VV, v.x + lure.x * S, v.y + lure.y * S).y - 120} tx={700} ty={460} text="Señuelo dorsal" k={win(t, 36.5, 41.4, 0.4)} color="#9ff0ff" />
           </>
         )}

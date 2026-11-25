@@ -1,4 +1,4 @@
 node_modules/
 out/
-# vídeos finales > 100 MB (límite de GitHub): se entregan aparte
-entregas/*.mp4
+# documental final (220 MB > límite de 100 MB de GitHub): se entrega aparte
+entregas/oceano-profundo-documental-10min-1080p.mp4

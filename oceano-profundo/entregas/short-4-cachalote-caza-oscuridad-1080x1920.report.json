@@ -1,0 +1,53 @@
+{
+  "composition": "Short4",
+  "quality": "premium",
+  "scale": 1,
+  "crf": "20",
+  "concurrency": 4,
+  "segmentSeconds": 30,
+  "segments": [
+    {
+      "start": 0,
+      "end": 899,
+      "secs": 154.8,
+      "peakMB": 3360
+    },
+    {
+      "start": 900,
+      "end": 1799,
+      "secs": 132.4,
+      "peakMB": 3407
+    },
+    {
+      "start": 1800,
+      "end": 2069,
+      "secs": 41.3,
+      "peakMB": 2930
+    }
+  ],
+  "startedAt": "2026-11-25T00:10:18.741Z",
+  "audio": {
+    "secs": 98.6,
+    "peakMB": 1866
+  },
+  "loudness": {
+    "inputLUFS": -17.05,
+    "inputTruePeak": -2.88,
+    "targetLUFS": -14
+  },
+  "wallSecondsThisRun": 436.7,
+  "totalSeconds": 427.1,
+  "peakRssMB": 3407,
+  "output": {
+    "file": "out/short-4-cachalote-caza-oscuridad-1080x1920.mp4",
+    "sizeMB": 15.58,
+    "width": 1080,
+    "height": 1920,
+    "fps": "30/1",
+    "videoFrames": 2070,
+    "durationSec": 69,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "framesOk": true
+}

@@ -1,0 +1,56 @@
+{
+  "composition": "Short2",
+  "quality": "premium",
+  "scale": 1,
+  "crf": "20",
+  "concurrency": 4,
+  "segmentSeconds": 30,
+  "segments": [
+    {
+      "start": 0,
+      "end": 899,
+      "secs": 141.6,
+      "peakMB": 3120,
+      "reused": true
+    },
+    {
+      "start": 900,
+      "end": 1799,
+      "secs": 119.6,
+      "peakMB": 3105
+    },
+    {
+      "start": 1800,
+      "end": 1949,
+      "secs": 24.9,
+      "peakMB": 2878,
+      "reused": true
+    }
+  ],
+  "startedAt": "2026-11-25T00:28:21.876Z",
+  "audio": {
+    "secs": 77,
+    "peakMB": 1620,
+    "reused": true
+  },
+  "loudness": {
+    "inputLUFS": -17.16,
+    "inputTruePeak": -3.49,
+    "targetLUFS": -14
+  },
+  "wallSecondsThisRun": 128.5,
+  "totalSeconds": 363.1,
+  "peakRssMB": 3120,
+  "output": {
+    "file": "out/short-2-dientes-pez-vibora-1080x1920.mp4",
+    "sizeMB": 18.33,
+    "width": 1080,
+    "height": 1920,
+    "fps": "30/1",
+    "videoFrames": 1950,
+    "durationSec": 65,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "framesOk": true
+}

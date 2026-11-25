@@ -1,0 +1,53 @@
+{
+  "composition": "Short3",
+  "quality": "premium",
+  "scale": 1,
+  "crf": "20",
+  "concurrency": 4,
+  "segmentSeconds": 30,
+  "segments": [
+    {
+      "start": 0,
+      "end": 899,
+      "secs": 136.2,
+      "peakMB": 3097
+    },
+    {
+      "start": 900,
+      "end": 1799,
+      "secs": 136.9,
+      "peakMB": 3109
+    },
+    {
+      "start": 1800,
+      "end": 2009,
+      "secs": 30.2,
+      "peakMB": 2944
+    }
+  ],
+  "startedAt": "2026-11-25T00:03:40.837Z",
+  "audio": {
+    "secs": 82.5,
+    "peakMB": 1670
+  },
+  "loudness": {
+    "inputLUFS": -16.86,
+    "inputTruePeak": -3.08,
+    "targetLUFS": -14
+  },
+  "wallSecondsThisRun": 394.4,
+  "totalSeconds": 385.8,
+  "peakRssMB": 3109,
+  "output": {
+    "file": "out/short-3-ojos-calamar-gigante-1080x1920.mp4",
+    "sizeMB": 19.16,
+    "width": 1080,
+    "height": 1920,
+    "fps": "30/1",
+    "videoFrames": 2010,
+    "durationSec": 67,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "framesOk": true
+}
