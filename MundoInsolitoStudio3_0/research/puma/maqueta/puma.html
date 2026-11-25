@@ -1,0 +1,133 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><style>
+body{margin:0;background:#1d2420;font-family:DejaVu Sans,sans-serif}
+</style></head><body>
+<svg width="1600" height="1000" viewBox="0 0 1600 1000" xmlns="http://www.w3.org/2000/svg">
+<defs>
+  <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e9c48a"/><stop offset="0.55" stop-color="#c98f5a"/><stop offset="1" stop-color="#6d6a48"/></linearGradient>
+  <linearGradient id="fur" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8f6640"/><stop offset="0.35" stop-color="#b48a5c"/><stop offset="0.72" stop-color="#c9a67c"/><stop offset="1" stop-color="#ece0c8"/></linearGradient>
+  <linearGradient id="furFar" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6e4e32"/><stop offset="1" stop-color="#a88a66"/></linearGradient>
+  <linearGradient id="tail2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#9c7450"/><stop offset="1" stop-color="#b8916a"/></linearGradient>
+  <linearGradient id="tail" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#a77d52"/><stop offset="0.78" stop-color="#b8916a"/><stop offset="0.86" stop-color="#3a281b"/><stop offset="1" stop-color="#241810"/></linearGradient>
+  <radialGradient id="iris" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#d9c25a"/><stop offset="0.7" stop-color="#c98f2c"/><stop offset="1" stop-color="#7a4f1a"/></radialGradient>
+  <filter id="paint" x="-5%" y="-5%" width="110%" height="110%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.035 0.09" numOctaves="3" seed="4" result="n"/>
+    <feColorMatrix in="n" type="matrix" values="0 0 0 0 0.5  0 0 0 0 0.4  0 0 0 0 0.3  0 0 0 0.4 -0.1" result="nn"/>
+    <feComposite in="nn" in2="SourceGraphic" operator="in" result="tex"/>
+    <feBlend in="SourceGraphic" in2="tex" mode="multiply"/>
+  </filter>
+  <clipPath id="sil"><path d="M440 362
+    C520 328 640 345 720 350 C800 354 862 330 920 326
+    C960 326 990 342 1030 334 C1045 330 1055 316 1062 300
+    C1074 264 1110 244 1150 248 C1182 251 1203 268 1218 292
+    C1228 306 1244 312 1258 316 C1270 320 1274 332 1270 344
+    C1266 356 1256 362 1244 368 C1238 380 1226 390 1208 394
+    C1180 400 1150 398 1128 396 C1100 405 1078 430 1060 468
+    C1042 505 1022 545 1000 585
+    C988 610 980 640 984 690 C986 720 982 745 990 766
+    C996 776 1012 778 1022 786 C1030 794 1022 800 1006 800
+    L944 800 C930 800 928 790 934 780 C938 760 936 735 932 700
+    C928 665 920 640 912 622
+    C866 620 795 604 725 588 C672 576 632 560 604 548
+    C596 580 592 615 575 650 C562 680 540 700 530 725
+    C524 745 528 762 542 772 C552 778 566 782 570 790 C572 798 562 801 548 801
+    L494 801 C482 801 480 792 486 784 C484 762 480 735 470 708
+    C462 690 455 660 448 620 C440 580 418 550 410 490
+    C404 440 414 395 440 362 Z"/></clipPath>
+  <filter id="soft"><feGaussianBlur stdDeviation="6"/></filter>
+  <filter id="soft2"><feGaussianBlur stdDeviation="2.5"/></filter>
+</defs>
+
+<!-- fondo: atardecer pintado y suelo -->
+<rect width="1600" height="1000" fill="url(#sky)"/>
+<path d="M0 560 C200 500 380 540 560 500 C760 455 950 520 1150 480 C1320 450 1480 500 1600 470 L1600 1000 L0 1000Z" fill="#7d7a52" opacity="0.55"/>
+<path d="M0 760 C300 740 700 770 1000 750 C1250 735 1450 760 1600 750 L1600 1000 L0 1000Z" fill="#5b5a3a"/>
+<ellipse cx="760" cy="792" rx="470" ry="22" fill="#2a2a1a" opacity="0.45" filter="url(#soft)"/>
+
+<g stroke="#2e1d10" stroke-width="3" stroke-linejoin="round" stroke-linecap="round">
+  <!-- patas lejanas (en sombra, paso de marcha) -->
+  <path d="M915 590 C918 640 912 700 910 745 C909 765 916 778 940 782 C955 786 950 796 935 796 L878 796 C866 796 864 786 870 778 C866 745 858 700 852 650 C848 625 852 600 862 585 Z" fill="url(#furFar)"/>
+  <path d="M612 540 C645 585 660 630 650 672 C644 700 630 722 628 748 C627 768 640 780 658 784 C672 788 668 797 652 797 L600 797 C588 797 587 788 594 780 C590 750 592 720 596 695 C600 662 572 620 552 580 Z" fill="url(#furFar)"/>
+
+  <!-- cola en J: gruesa hasta la punta -->
+  <path d="M445 365 C385 395 335 470 322 560 C310 640 325 705 368 732 C395 748 430 742 440 718 C446 702 434 692 420 697 C392 705 368 682 362 645 C354 585 372 505 408 455 C428 425 450 410 470 402 Z" fill="url(#tail2)" filter="url(#paint)"/>
+  <path d="M368 732 C395 748 430 742 440 718 C446 702 434 692 420 697 C405 702 388 698 376 688 C360 700 356 720 368 732Z" fill="#2c1e14"/>
+
+  <!-- silueta completa: cuerpo, cuello, cabeza, pata delantera y trasera cercanas -->
+  <path d="M440 362
+    C520 328 640 345 720 350 C800 354 862 330 920 326
+    C960 326 990 342 1030 334 C1045 330 1055 316 1062 300
+    C1074 264 1110 244 1150 248 C1182 251 1203 268 1218 292
+    C1228 306 1244 312 1258 316 C1270 320 1274 332 1270 344
+    C1266 356 1256 362 1244 368 C1238 380 1226 390 1208 394
+    C1180 400 1150 398 1128 396 C1100 405 1078 430 1060 468
+    C1042 505 1022 545 1000 585
+    C988 610 980 640 984 690 C986 720 982 745 990 766
+    C996 776 1012 778 1022 786 C1030 794 1022 800 1006 800
+    L944 800 C930 800 928 790 934 780 C938 760 936 735 932 700
+    C928 665 920 640 912 622
+    C866 620 795 604 725 588 C672 576 632 560 604 548
+    C596 580 592 615 575 650 C562 680 540 700 530 725
+    C524 745 528 762 542 772 C552 778 566 782 570 790 C572 798 562 801 548 801
+    L494 801 C482 801 480 792 486 784 C484 762 480 735 470 708
+    C462 690 455 660 448 620 C440 580 418 550 410 490
+    C404 440 414 395 440 362 Z" fill="url(#fur)" filter="url(#paint)"/>
+
+  <!-- oreja: pequeña, redondeada; dorso oscuro y centro claro -->
+  <path d="M1088 272 C1076 246 1080 220 1098 214 C1116 210 1128 232 1130 258 Z" fill="#43342a"/>
+  <path d="M1096 262 C1090 244 1093 230 1102 227 C1111 225 1117 240 1118 256 Z" fill="#cdb79c" stroke="none"/>
+</g>
+
+<!-- volumen pintado -->
+<g clip-path="url(#sil)"><g filter="url(#soft)">
+  <path d="M460 420 C500 470 560 520 590 560 C560 600 520 640 500 700 C480 640 450 560 440 480Z" fill="#5a3a20" opacity="0.18"/>
+  <path d="M880 360 C930 420 950 520 930 600 C915 560 885 470 860 380Z" fill="#fff2d6" opacity="0.28"/>
+  <path d="M500 345 C600 336 700 352 800 345 L800 362 C700 368 600 356 500 365Z" fill="#fff2d6" opacity="0.3"/>
+  <path d="M640 585 C720 602 820 612 905 616 L905 628 C820 626 720 616 640 600Z" fill="#4a2e18" opacity="0.25"/>
+  <path d="M1070 420 C1050 470 1030 520 1010 570 L1030 570 C1050 520 1070 470 1090 430Z" fill="#fff6e6" opacity="0.5"/>
+</g></g>
+<!-- líneas anatómicas finas: hombro, codo, muslo, rodilla, mejilla -->
+<g fill="none" stroke="#5e3f24" stroke-width="2.4" opacity="0.65" stroke-linecap="round">
+  <path d="M905 400 C930 450 935 520 918 590"/>
+  <path d="M912 622 C905 600 900 585 905 570"/>
+  <path d="M470 400 C520 440 565 490 592 560"/>
+  <path d="M560 600 C570 620 572 640 568 655"/>
+  <path d="M1080 330 C1090 360 1108 380 1128 392"/>
+</g>
+
+<!-- cara -->
+<path d="M1206 330 C1228 322 1252 326 1268 340 C1268 354 1254 364 1242 370 C1232 386 1212 394 1190 394 C1180 378 1186 348 1206 330Z" fill="#efe6d6"/>
+<path d="M1182 396 C1160 400 1140 398 1128 396 C1136 412 1162 416 1188 408Z" fill="#ece2d0"/>
+<ellipse cx="1228" cy="343" rx="13" ry="8" fill="#33241a" opacity="0.85" filter="url(#soft2)"/>
+<path d="M1252 318 C1262 314 1274 320 1272 330 C1270 338 1262 340 1254 337 C1248 333 1246 323 1252 318Z" fill="#94554f" stroke="#2e1d10" stroke-width="2"/>
+<path d="M1244 368 C1232 376 1216 380 1200 378" fill="none" stroke="#2e1d10" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M1160 288 C1170 276 1192 274 1204 284 C1196 297 1174 300 1160 288Z" fill="#f2e8d6" opacity="0.85"/>
+<path d="M1164 288 C1173 279 1190 278 1200 285 C1192 294 1176 296 1164 288Z" fill="url(#iris)" stroke="#1d130b" stroke-width="2.6"/>
+<circle cx="1183" cy="287" r="4.4" fill="#0c0806"/>
+<circle cx="1186.5" cy="284.5" r="1.6" fill="#fff"/>
+<path d="M1202 288 C1210 296 1216 308 1220 322" fill="none" stroke="#3a2a1e" stroke-width="3" opacity="0.55" stroke-linecap="round"/>
+<path d="M1156 272 C1170 265 1188 265 1202 272" fill="none" stroke="#ecdcc0" stroke-width="3" opacity="0.75" stroke-linecap="round"/>
+<g stroke="#fbf6ec" stroke-width="1.4" fill="none" opacity="0.9" stroke-linecap="round">
+  <path d="M1220 346 C1185 344 1155 350 1125 360"/>
+  <path d="M1222 352 C1190 356 1162 366 1136 380"/>
+  <path d="M1224 357 C1200 368 1178 384 1160 400"/>
+  <path d="M1234 348 C1268 340 1298 342 1324 350"/>
+  <path d="M1236 354 C1268 356 1296 366 1318 380"/>
+</g>
+<g fill="none" stroke="#5a3e28" stroke-width="2" stroke-linecap="round">
+  <path d="M990 790 L994 799"/><path d="M1004 788 L1009 799"/>
+  <path d="M530 790 L533 800"/><path d="M545 790 L549 800"/>
+</g>
+
+<!-- rótulos de la hoja -->
+<g font-size="26" fill="#1e1a12">
+  <text x="40" y="60" font-size="40" font-weight="bold">PUMA (Puma concolor): maqueta de estilo</text>
+  <text x="40" y="100" font-size="24">Ilustración 2D pintada · macho adulto · vista lateral · para aprobación</text>
+</g>
+<g font-size="20" fill="#f4ead8">
+  <text x="60" y="870">· Orejas pequeñas y redondeadas, dorso oscuro · nariz rosada oscura · hocico blanco con manchas en la base de los bigotes</text>
+  <text x="60" y="905">· Pelaje leonado uniforme sin manchas, vientre claro · cola larga y gruesa con la punta oscura · sin melena</text>
+  <text x="60" y="940">· Patas traseras largas y potentes · digitígrado, garras retraídas · ojos ámbar con pupila redonda</text>
+</g>
+</svg>
+</body></html>
