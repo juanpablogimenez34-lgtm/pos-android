@@ -1,3 +1,5 @@
+import {DOLPHIN_AUDIO, DolphinDocProps, DolphinDocumentary} from "./episodes/delfin-rosado/Documentary";
+import {PinkDolphinSheet} from "./episodes/delfin-rosado/character/Sheet";
 import {SHRIMP_AUDIO, ShrimpDocProps, ShrimpDocumentary} from './episodes/camaron-pistola/Documentary';
 import {ShrimpSheet} from './episodes/camaron-pistola/character/Sheet';
 import React from 'react';
@@ -67,6 +69,7 @@ import {WhaleSheet} from './episodes/ep23-cachalote/character/Sheet';
 import {VenomSheet} from './episodes/ep25-animales-venenosos/character/Sheet';
 import {PlatypusSheet} from './episodes/ep12-ornitorrinco/character/Sheet';
 import {PLATY_AUDIO, PlatyDocProps, PlatyDocumentary} from './episodes/ep12-ornitorrinco/Documentary';
+const dolphinDefaults: DolphinDocProps = {quality: 'final', showSubtitles: true, audio: DOLPHIN_AUDIO, extraTracks: true};
 const shrimpDefaults: ShrimpDocProps = {quality: 'final', showSubtitles: true, audio: SHRIMP_AUDIO, extraTracks: true};
 const platyDefaults: PlatyDocProps = {quality: 'final', showSubtitles: true, audio: PLATY_AUDIO, extraTracks: true};
 import {VENOM_AUDIO, VenomDocProps, VenomDocumentary} from './episodes/ep25-animales-venenosos/Documentary';
@@ -203,6 +206,8 @@ export const RemotionRoot: React.FC = () => (
     <Composition id="EP-AnimalesVenenosos" component={VenomDocumentary} durationInFrames={180 * 30} fps={30} width={1080} height={1920} defaultProps={venomDefaults} />
     <Composition id="EP-Ornitorrinco" component={PlatyDocumentary} durationInFrames={180 * 30} fps={30} width={1080} height={1920} defaultProps={platyDefaults} />
     <Composition id="EP-CamaronPistola" component={ShrimpDocumentary} durationInFrames={60 * 30} fps={30} width={1080} height={1920} defaultProps={shrimpDefaults} />
+    <Composition id="EP-DelfinRosado" component={DolphinDocumentary} durationInFrames={60 * 30} fps={30} width={1080} height={1920} defaultProps={dolphinDefaults} />
+    <Composition id="DelfinRosadoFicha" component={PinkDolphinSheet} durationInFrames={60} fps={30} width={1080} height={1920} />
     <Composition id="CamaronPistolaFicha" component={ShrimpSheet} durationInFrames={60} fps={30} width={1080} height={1920} />
     <Composition id="OrnitorrincoFicha" component={PlatypusSheet} durationInFrames={60} fps={30} width={1080} height={1920} />
     <Composition id="VenenososFicha" component={VenomSheet} durationInFrames={60} fps={30} width={1080} height={1920} />
