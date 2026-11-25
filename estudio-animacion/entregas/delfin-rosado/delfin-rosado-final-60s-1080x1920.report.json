@@ -1,0 +1,47 @@
+{
+  "composition": "EP-DelfinRosado",
+  "quality": "final",
+  "scale": 1,
+  "crf": "20",
+  "concurrency": 4,
+  "segmentSeconds": 30,
+  "segments": [
+    {
+      "start": 0,
+      "end": 899,
+      "secs": 263.1,
+      "peakMB": 4173
+    },
+    {
+      "start": 900,
+      "end": 1799,
+      "secs": 310.6,
+      "peakMB": 4673
+    }
+  ],
+  "startedAt": "2026-11-25T09:39:39.322Z",
+  "audio": {
+    "secs": 218.5,
+    "peakMB": 2772
+  },
+  "loudness": {
+    "inputLUFS": -16.74,
+    "inputTruePeak": -2.43,
+    "targetLUFS": -14
+  },
+  "wallSecondsThisRun": 800.9,
+  "totalSeconds": 792.2,
+  "peakRssMB": 4673,
+  "output": {
+    "file": "out/delfin-rosado-final-60s-1080x1920.mp4",
+    "sizeMB": 25.42,
+    "width": 1080,
+    "height": 1920,
+    "fps": "30/1",
+    "videoFrames": 1800,
+    "durationSec": 60,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "framesOk": true
+}
