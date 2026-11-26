@@ -56,18 +56,18 @@ export const DepthHUD: React.FC<{d: number; k: number; info: number}> = ({d, k, 
         <path d="M1700 470l14 -8l0 16Z" fill="#ffd23f" />
       </svg>
       {/* cifra principal */}
-      <div style={{position: 'absolute', right: 230, top: 432, textAlign: 'right', whiteSpace: 'nowrap'}}>
-        <div style={{color: '#ffffff', fontWeight: 900, fontSize: 54, lineHeight: 1, textShadow: '0 3px 14px rgba(0,0,0,0.8)', fontVariantNumeric: 'tabular-nums'}}>−{fmt(d)} m</div>
-        <div style={{color: '#8fe8ff', fontWeight: 800, fontSize: 16, letterSpacing: 2.5, marginTop: 6, textShadow: '0 2px 8px rgba(0,0,0,0.9)'}}>{z.name}</div>
+      <div style={{position: 'absolute', right: 70, top: 222, textAlign: 'right', whiteSpace: 'nowrap'}}>
+        <div style={{color: '#ffffff', fontWeight: 900, fontSize: 50, lineHeight: 1, textShadow: '0 3px 14px rgba(0,0,0,0.8)', fontVariantNumeric: 'tabular-nums'}}>−{fmt(d)} m</div>
+        <div style={{color: '#8fe8ff', fontWeight: 800, fontSize: 14, letterSpacing: 2, marginTop: 6, textShadow: '0 2px 8px rgba(0,0,0,0.9)'}}>{z.name}</div>
       </div>
       {info > 0.01 && (
-        <div style={{position: 'absolute', right: 230, top: 530, textAlign: 'right', opacity: info, color: '#d8f4ff', fontWeight: 700, fontSize: 19, lineHeight: 1.55, textShadow: '0 2px 8px rgba(0,0,0,0.9)', whiteSpace: 'nowrap'}}>
+        <div style={{position: 'absolute', right: 70, top: 640, textAlign: 'right', opacity: info, color: '#d8f4ff', fontWeight: 700, fontSize: 19, lineHeight: 1.55, textShadow: '0 2px 8px rgba(0,0,0,0.9)', whiteSpace: 'nowrap'}}>
           <div>Presión ≈ {fmt(pressureAtm(d))} atm</div>
           <div>Temperatura ≈ {tempAt(d).toFixed(1).replace('.', ',')} °C</div>
           <div style={{color: '#8fb8cc', fontSize: 14}}>valores aproximados</div>
         </div>
       )}
-      <div style={{position: 'absolute', right: 60, top: 128, color: '#cfefff', opacity: 0.55, fontWeight: 800, fontSize: 13, letterSpacing: 2}}>DESCENSO ACELERADO · REPRESENTACIÓN</div>
+      <div style={{position: 'absolute', right: 70, top: 180, color: '#cfefff', opacity: 0.5, fontWeight: 800, fontSize: 13, letterSpacing: 2}}>DESCENSO ACELERADO · REPRESENTACIÓN</div>
     </div>
   );
 };

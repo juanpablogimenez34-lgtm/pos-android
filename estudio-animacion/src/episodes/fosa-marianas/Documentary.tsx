@@ -36,7 +36,7 @@ export type FosaProps = {quality: QualityName; showSubtitles: boolean; audio: Au
 const Hud: React.FC = () => {
   const t = useTime();
   const d = depthAt(t);
-  const k = Math.max(0, Math.min(1, (t - 30.4) / 0.8));
+  const k = Math.max(0, Math.min(1, (t - 30.4) / 0.8, (588 - t) / 0.8));
   const info = INFO.reduce((a, [s, e]) => Math.max(a, win(t, s, e)), 0);
   return <DepthHUD d={d} k={k} info={info} />;
 };
