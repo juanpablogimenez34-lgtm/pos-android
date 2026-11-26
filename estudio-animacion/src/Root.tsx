@@ -39,6 +39,9 @@ import {Ep08Full, Ep08FullProps} from './episodes/ep08-medusa-inmortal/Ep08Full'
 import {EP08_DEFAULT_AUDIO} from './episodes/ep08-medusa-inmortal/Audio/sound';
 import {LeopardSheet} from './episodes/ep09-leopardo/characters/LeopardSheet';
 import {PumaViews} from './episodes/puma-cazador-silencioso/tests/PumaViews';
+import {CamaleonFicha} from './episodes/camaleon-maestro-transformacion/components/Ficha';
+import {CamaleonPreview} from './episodes/camaleon-maestro-transformacion/components/Preview';
+import {ChameleonDocumentary, CHAM_AUDIO, ChamDocProps} from './episodes/camaleon-maestro-transformacion/Documentary';
 import {PumaMotionTest} from './episodes/puma-cazador-silencioso/tests/PumaMotionTest';
 import {MantisSheet} from './episodes/ep10-camaron-mantis/characters/MantisSheet';
 import {EP04MantisProps, EP04MantisShrimp} from './episodes/ep10-camaron-mantis/EP04MantisShrimp';
@@ -264,6 +267,9 @@ export const RemotionRoot: React.FC = () => (
     />
     <Composition id="FalconStates" component={FlightShowcase} durationInFrames={180} fps={30} width={1080} height={1920} />
       <Composition id="PumaPruebaMovimiento" component={PumaMotionTest} durationInFrames={450} fps={30} width={1080} height={1920} />
+    <Composition id="EP-Camaleon" component={ChameleonDocumentary as React.FC<ChamDocProps>} durationInFrames={5400} fps={30} width={1080} height={1920} defaultProps={{quality: 'final', showSubtitles: true, audio: CHAM_AUDIO} as ChamDocProps} />
+    <Composition id="CamaleonPreview" component={CamaleonPreview as React.FC<{n: number}>} durationInFrames={5400} fps={30} width={1080} height={1920} defaultProps={{n: 0}} />
+    <Composition id="CamaleonFicha" component={CamaleonFicha} durationInFrames={300} fps={30} width={1080} height={1920} />
     <Composition id="PumaVistas" component={PumaViews} durationInFrames={1} fps={30} width={1080} height={1920} />
   </>
 );

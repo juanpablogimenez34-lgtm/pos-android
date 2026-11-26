@@ -1,0 +1,274 @@
+{
+ "voice": {
+  "engine": "piper",
+  "model": "es_MX-claude-high",
+  "lengthScale": 0.95,
+  "noiseScale": 0.62,
+  "noiseW": 0.55
+ },
+ "durationSec": 180,
+ "lines": [
+  {
+   "id": "c01",
+   "scene": 1,
+   "at": 0.3,
+   "text": "Existe un animal capaz de mirar en dos direcciones a la vez, transformar los colores de su piel y capturar una presa en una fracción de segundo.",
+   "highlight": [
+    "dos direcciones",
+    "colores"
+   ]
+  },
+  {
+   "id": "c02",
+   "scene": 1,
+   "at": 9.6,
+   "text": "Parece tener superpoderes, pero todos ellos son reales.",
+   "highlight": [
+    "superpoderes"
+   ]
+  },
+  {
+   "id": "c03",
+   "scene": 1,
+   "at": 13.6,
+   "text": "Este es el extraordinario camaleón pantera.",
+   "highlight": [
+    "camaleón pantera"
+   ]
+  },
+  {
+   "id": "c04",
+   "scene": 2,
+   "at": 20.4,
+   "text": "El camaleón pantera nace de un huevo que su madre entierra en un túnel bajo el suelo.",
+   "highlight": [
+    "huevo"
+   ]
+  },
+  {
+   "id": "c05",
+   "scene": 2,
+   "at": 26.4,
+   "text": "Allí pasa meses, hasta que la cría rompe la cáscara.",
+   "highlight": [
+    "meses"
+   ]
+  },
+  {
+   "id": "c06",
+   "scene": 2,
+   "at": 31.0,
+   "text": "Al nacer, debe enfrentarse al mundo sin la protección de sus padres.",
+   "highlight": [
+    "sin la protección"
+   ]
+  },
+  {
+   "id": "c07",
+   "scene": 2,
+   "at": 36.2,
+   "text": "Desde el primer momento, sus patas, sus ojos y su lengua le permiten explorar y buscar alimento.",
+   "highlight": [
+    "explorar"
+   ]
+  },
+  {
+   "id": "c08",
+   "scene": 3,
+   "at": 45.2,
+   "text": "A diferencia de nosotros, los camaleones pueden mover sus ojos de manera ampliamente independiente.",
+   "highlight": [
+    "independiente"
+   ]
+  },
+  {
+   "id": "c09",
+   "scene": 3,
+   "at": 52.4,
+   "text": "Cada ojo gira dentro de una torreta de escamas, con una pequeña abertura para la pupila.",
+   "highlight": [
+    "torreta"
+   ]
+  },
+  {
+   "id": "c10",
+   "scene": 3,
+   "at": 58.8,
+   "text": "Así pueden vigilar casi todo su alrededor sin mover la cabeza.",
+   "highlight": [
+    "casi todo su alrededor"
+   ]
+  },
+  {
+   "id": "c11",
+   "scene": 3,
+   "at": 62.9,
+   "text": "Cuando localizan una presa, coordinan ambos ojos y enfocan para calcular la distancia.",
+   "highlight": [
+    "ambos ojos"
+   ]
+  },
+  {
+   "id": "c12",
+   "scene": 4,
+   "at": 70.4,
+   "text": "Su lengua es una herramienta de caza extraordinaria.",
+   "highlight": [
+    "lengua"
+   ]
+  },
+  {
+   "id": "c13",
+   "scene": 4,
+   "at": 74.2,
+   "text": "En reposo está comprimida sobre un hueso de la garganta, como un resorte.",
+   "highlight": [
+    "resorte"
+   ]
+  },
+  {
+   "id": "c14",
+   "scene": 4,
+   "at": 79.4,
+   "text": "Un músculo la tensa y unas fundas elásticas acumulan energía que se libera de golpe, como una catapulta.",
+   "highlight": [
+    "energía",
+    "catapulta"
+   ]
+  },
+  {
+   "id": "c15",
+   "scene": 4,
+   "at": 86.6,
+   "text": "Puede superar la longitud de su cuerpo, y su punta pegajosa atrapa al insecto en un instante.",
+   "highlight": [
+    "punta pegajosa"
+   ]
+  },
+  {
+   "id": "c16",
+   "scene": 5,
+   "at": 95.0,
+   "text": "Pero su habilidad más famosa es el color.",
+   "highlight": [
+    "color"
+   ]
+  },
+  {
+   "id": "c17",
+   "scene": 5,
+   "at": 98.0,
+   "text": "Bajo su piel, células llamadas iridóforos contienen diminutos cristales ordenados.",
+   "highlight": [
+    "iridóforos",
+    "cristales"
+   ]
+  },
+  {
+   "id": "c18",
+   "scene": 5,
+   "at": 103.73,
+   "text": "Relajado, los cristales están muy juntos y reflejan sobre todo luz azul.",
+   "highlight": [
+    "luz azul"
+   ]
+  },
+  {
+   "id": "c19",
+   "scene": 5,
+   "at": 108.92,
+   "text": "Excitado, la red se expande y la piel refleja amarillos, naranjas o rojos.",
+   "highlight": [
+    "se expande"
+   ]
+  },
+  {
+   "id": "c20",
+   "scene": 5,
+   "at": 114.94,
+   "text": "Así se comunica, responde a la temperatura y expresa su estado: no es solo camuflaje.",
+   "highlight": [
+    "no es solo camuflaje"
+   ]
+  },
+  {
+   "id": "c21",
+   "scene": 6,
+   "at": 121.0,
+   "text": "Sus dedos forman dos grupos opuestos que funcionan como pinzas sobre las ramas.",
+   "highlight": [
+    "pinzas"
+   ]
+  },
+  {
+   "id": "c22",
+   "scene": 6,
+   "at": 125.9,
+   "text": "Su cola prensil se enrolla como un apoyo adicional.",
+   "highlight": [
+    "cola prensil"
+   ]
+  },
+  {
+   "id": "c23",
+   "scene": 6,
+   "at": 130.4,
+   "text": "Avanza despacio, balanceándose; algunos investigadores creen que así imita una hoja movida por el viento.",
+   "highlight": [
+    "balanceándose"
+   ]
+  },
+  {
+   "id": "c24",
+   "scene": 6,
+   "at": 137.8,
+   "text": "Si aparece un ave, se desliza al lado oculto de la rama y permanece inmóvil.",
+   "highlight": [
+    "lado oculto"
+   ]
+  },
+  {
+   "id": "c25",
+   "scene": 6,
+   "at": 144.2,
+   "text": "Cada detalle de su cuerpo está relacionado con la supervivencia.",
+   "highlight": [
+    "supervivencia"
+   ]
+  },
+  {
+   "id": "c26",
+   "scene": 7,
+   "at": 150.6,
+   "text": "Ojos independientes, una lengua relámpago y una piel que transforma sus colores.",
+   "highlight": [
+    "lengua relámpago"
+   ]
+  },
+  {
+   "id": "c27",
+   "scene": 7,
+   "at": 156.4,
+   "text": "El camaleón demuestra que la naturaleza ha creado mecanismos dignos de la ciencia ficción.",
+   "highlight": [
+    "ciencia ficción"
+   ]
+  },
+  {
+   "id": "c28",
+   "scene": 7,
+   "at": 163.0,
+   "text": "Y mientras lo observamos, sus ojos siguen buscando la próxima presa.",
+   "highlight": []
+  },
+  {
+   "id": "c29",
+   "scene": 7,
+   "at": 170.4,
+   "text": "¿Qué otro animal extraordinario te gustaría descubrir?",
+   "highlight": [
+    "te gustaría descubrir"
+   ]
+  }
+ ]
+}
