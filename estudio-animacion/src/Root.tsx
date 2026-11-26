@@ -42,6 +42,9 @@ import {PumaViews} from './episodes/puma-cazador-silencioso/tests/PumaViews';
 import {CamaleonFicha} from './episodes/camaleon-maestro-transformacion/components/Ficha';
 import {OrcaFicha} from './episodes/orca-reina-oceanos/components/Ficha';
 import {NarvalFicha} from './episodes/narval-unicornio-oceano/components/Ficha';
+import {FosaFicha} from './episodes/fosa-marianas/components/Ficha';
+import {FosaPreview} from './episodes/fosa-marianas/components/Preview';
+import {FosaDocumentary, FOSA_AUDIO, FosaProps} from './episodes/fosa-marianas/Documentary';
 import {NarvalPreview} from './episodes/narval-unicornio-oceano/components/Preview';
 import {NarvalDocumentary, NARVAL_AUDIO, NarvalDocProps} from './episodes/narval-unicornio-oceano/Documentary';
 import {OrcaPreview} from './episodes/orca-reina-oceanos/components/Preview';
@@ -277,6 +280,9 @@ export const RemotionRoot: React.FC = () => (
     <Composition id="CamaleonPreview" component={CamaleonPreview as React.FC<{n: number}>} durationInFrames={5400} fps={30} width={1080} height={1920} defaultProps={{n: 0}} />
     <Composition id="EP-Orca" component={OrcaDocumentary as React.FC<OrcaDocProps>} durationInFrames={5400} fps={30} width={1080} height={1920} defaultProps={{quality: 'final', showSubtitles: true, audio: ORCA_AUDIO} as OrcaDocProps} />
     <Composition id="OrcaPreview" component={OrcaPreview as React.FC<{n: number}>} durationInFrames={5400} fps={30} width={1080} height={1920} defaultProps={{n: 0}} />
+    <Composition id="EP-Fosa" component={FosaDocumentary as React.FC<FosaProps>} durationInFrames={18000} fps={30} width={1920} height={1080} defaultProps={{quality: 'final', showSubtitles: true, audio: FOSA_AUDIO} as FosaProps} />
+    <Composition id="FosaPreview" component={FosaPreview} durationInFrames={18000} fps={30} width={1920} height={1080} />
+    <Composition id="FosaFicha" component={FosaFicha} durationInFrames={300} fps={30} width={1920} height={1080} />
     <Composition id="EP-Narval" component={NarvalDocumentary as React.FC<NarvalDocProps>} durationInFrames={5400} fps={30} width={1080} height={1920} defaultProps={{quality: 'final', showSubtitles: true, audio: NARVAL_AUDIO} as NarvalDocProps} />
     <Composition id="NarvalPreview" component={NarvalPreview as React.FC<{n: number}>} durationInFrames={5400} fps={30} width={1080} height={1920} defaultProps={{n: 0}} />
     <Composition id="NarvalFicha" component={NarvalFicha} durationInFrames={300} fps={30} width={1080} height={1920} />
