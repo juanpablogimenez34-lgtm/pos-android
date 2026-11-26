@@ -1,0 +1,71 @@
+{
+  "composition": "EP-Camaleon",
+  "quality": "draft",
+  "scale": 0.5,
+  "crf": "24",
+  "concurrency": 4,
+  "segmentSeconds": 30,
+  "segments": [
+    {
+      "start": 0,
+      "end": 899,
+      "secs": 45.3,
+      "peakMB": 2515
+    },
+    {
+      "start": 900,
+      "end": 1799,
+      "secs": 44.9,
+      "peakMB": 3403
+    },
+    {
+      "start": 1800,
+      "end": 2699,
+      "secs": 48.8,
+      "peakMB": 2702
+    },
+    {
+      "start": 2700,
+      "end": 3599,
+      "secs": 49.6,
+      "peakMB": 3257
+    },
+    {
+      "start": 3600,
+      "end": 4499,
+      "secs": 46.1,
+      "peakMB": 3281
+    },
+    {
+      "start": 4500,
+      "end": 5399,
+      "secs": 51.2,
+      "peakMB": 3207
+    }
+  ],
+  "startedAt": "2026-11-26T10:32:46.175Z",
+  "audio": {
+    "secs": 160.6,
+    "peakMB": 2104
+  },
+  "loudness": {
+    "inputLUFS": -16.58,
+    "inputTruePeak": -0.48,
+    "targetLUFS": -14
+  },
+  "wallSecondsThisRun": 463.4,
+  "totalSeconds": 446.5,
+  "peakRssMB": 3403,
+  "output": {
+    "file": "out/camaleon-borrador-540x960.mp4",
+    "sizeMB": 19.1,
+    "width": 540,
+    "height": 960,
+    "fps": "30/1",
+    "videoFrames": 5400,
+    "durationSec": 180,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "framesOk": true
+}
