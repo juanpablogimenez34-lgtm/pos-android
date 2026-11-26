@@ -1,0 +1,59 @@
+{
+  "composition": "Battle01Complete",
+  "quality": "draft",
+  "scale": 0.5,
+  "crf": "24",
+  "concurrency": 4,
+  "segmentSeconds": 35,
+  "segments": [
+    {
+      "start": 0,
+      "end": 1049,
+      "secs": 65.1,
+      "peakMB": 3296
+    },
+    {
+      "start": 1050,
+      "end": 2099,
+      "secs": 61.4,
+      "peakMB": 3074
+    },
+    {
+      "start": 2100,
+      "end": 3149,
+      "secs": 60.1,
+      "peakMB": 3368
+    },
+    {
+      "start": 3150,
+      "end": 4199,
+      "secs": 55.4,
+      "peakMB": 3343
+    }
+  ],
+  "startedAt": "2026-11-26T21:40:15.802Z",
+  "audio": {
+    "secs": 187.4,
+    "peakMB": 3386
+  },
+  "loudness": {
+    "inputLUFS": -16.77,
+    "inputTruePeak": -1.86,
+    "targetLUFS": -14
+  },
+  "wallSecondsThisRun": 445.4,
+  "totalSeconds": 429.4,
+  "peakRssMB": 3386,
+  "output": {
+    "file": "out/batalla-borrador-540x960.mp4",
+    "sizeMB": 12.79,
+    "width": 540,
+    "height": 960,
+    "fps": "30/1",
+    "videoFrames": 4200,
+    "durationSec": 140,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "framesOk": true
+}

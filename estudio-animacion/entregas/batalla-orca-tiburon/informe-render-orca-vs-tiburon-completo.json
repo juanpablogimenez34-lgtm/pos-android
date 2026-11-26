@@ -1,0 +1,60 @@
+{
+  "composition": "Battle01Complete",
+  "quality": "final",
+  "scale": 1,
+  "crf": "20",
+  "concurrency": 4,
+  "segmentSeconds": 35,
+  "segments": [
+    {
+      "start": 0,
+      "end": 1049,
+      "secs": 156.4,
+      "peakMB": 4358
+    },
+    {
+      "start": 1050,
+      "end": 2099,
+      "secs": 165.9,
+      "peakMB": 4189
+    },
+    {
+      "start": 2100,
+      "end": 3149,
+      "secs": 158.1,
+      "peakMB": 4253
+    },
+    {
+      "start": 3150,
+      "end": 4199,
+      "secs": 145.3,
+      "peakMB": 4097
+    }
+  ],
+  "startedAt": "2026-11-26T21:48:53.791Z",
+  "audio": {
+    "secs": 0,
+    "peakMB": 0,
+    "reused": true
+  },
+  "loudness": {
+    "inputLUFS": -16.77,
+    "inputTruePeak": -1.86,
+    "targetLUFS": -14
+  },
+  "wallSecondsThisRun": 640.3,
+  "totalSeconds": 625.7,
+  "peakRssMB": 4358,
+  "output": {
+    "file": "out/orca-vs-tiburon-completo.mp4",
+    "sizeMB": 49.06,
+    "width": 1080,
+    "height": 1920,
+    "fps": "30/1",
+    "videoFrames": 4200,
+    "durationSec": 140,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "framesOk": true
+}

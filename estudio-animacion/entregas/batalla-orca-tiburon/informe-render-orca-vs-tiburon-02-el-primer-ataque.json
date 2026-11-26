@@ -1,0 +1,41 @@
+{
+  "composition": "Battle01Episode02",
+  "quality": "final",
+  "scale": 1,
+  "crf": "20",
+  "concurrency": 4,
+  "segmentSeconds": 35,
+  "segments": [
+    {
+      "start": 0,
+      "end": 1049,
+      "secs": 172.5,
+      "peakMB": 4220
+    }
+  ],
+  "startedAt": "2026-11-26T22:03:05.202Z",
+  "audio": {
+    "secs": 59.7,
+    "peakMB": 3404
+  },
+  "loudness": {
+    "inputLUFS": -17.03,
+    "inputTruePeak": -2.94,
+    "targetLUFS": -14
+  },
+  "wallSecondsThisRun": 239.4,
+  "totalSeconds": 232.2,
+  "peakRssMB": 4220,
+  "output": {
+    "file": "out/orca-vs-tiburon-02-el-primer-ataque.mp4",
+    "sizeMB": 13.13,
+    "width": 1080,
+    "height": 1920,
+    "fps": "30/1",
+    "videoFrames": 1050,
+    "durationSec": 35,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "framesOk": true
+}
