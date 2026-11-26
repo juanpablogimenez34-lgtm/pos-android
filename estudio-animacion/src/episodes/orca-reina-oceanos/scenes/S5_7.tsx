@@ -104,7 +104,8 @@ export function scene6(t: number): SceneOut {
           <Orca pose={orca} uid="o6" />
           <GreatWhite p={shark} uid="gw" />
         </Sea>
-        <Card k={comp} title="DOS FORMAS DE NADAR" y={1060} h={620}>
+        <Card k={comp} title="DOS FORMAS DE NADAR" y={400} h={620}>
+          <g transform="translate(0 -660)">
           {/* vista cenital esquemática: cola de la orca (horizontal, sube y baja) frente a cola del tiburón (vertical, de lado a lado) */}
           <g transform="translate(300 1340)">
             <path d="M0 -150C40 -120 50 -20 40 60C30 110 10 150 0 170C-10 150 -30 110 -40 60C-50 -20 -40 -120 0 -150Z" fill="#1a2028" stroke="#9fe0ff" strokeWidth={3} />
@@ -120,6 +121,7 @@ export function scene6(t: number): SceneOut {
             <path d="M-120 200l-60 0m16 -14l-16 14l16 14M120 200l60 0m-16 -14l16 14l-16 14" stroke="#ffd23f" strokeWidth={7} fill="none" />
             <Txt x={0} y={300} a="middle" s={30} c="#9fe0ff">TIBURÓN BLANCO</Txt>
             <Txt x={0} y={336} a="middle" s={22} c="#eef8ff" w={700}>cola vertical ↔ · branquias</Txt>
+          </g>
           </g>
         </Card>
       </g>

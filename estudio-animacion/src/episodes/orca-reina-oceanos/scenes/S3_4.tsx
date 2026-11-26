@@ -62,7 +62,8 @@ export function scene3(t: number): SceneOut {
             </g>
           )}
         </Sea>
-        <Card k={diag} title="ECOLOCALIZACIÓN" y={1080} h={560}>
+        <Card k={diag} title="ECOLOCALIZACIÓN" y={420} h={560}>
+          <g transform="translate(0 -660)">
           {/* cabeza en corte: labios fónicos → melón → clics; ecos → mandíbula → oído */}
           <path d="M170 1380C200 1250 380 1190 560 1210C700 1225 820 1280 860 1340C820 1400 700 1440 560 1450C380 1460 220 1440 170 1380Z" fill="#132a38" stroke="#7ad8ff" strokeWidth={3} />
           <ellipse cx={760} cy={1300} rx={80} ry={52} fill="#f2c860" opacity={0.85} />
@@ -74,6 +75,7 @@ export function scene3(t: number): SceneOut {
           <Txt x={760} y={1500} a="middle" s={26} c="#f2c860">melón (enfoca los clics)</Txt>
           <Txt x={360} y={1540} a="middle" s={26} c="#9ff0ff">mandíbula → oído (ecos)</Txt>
           <Txt x={540} y={1600} a="middle" s={24} c="#c8e8f8" w={700}>visualización científica: el sonido no es visible</Txt>
+          </g>
         </Card>
         {echo > 0.01 && <circle cx={s0.x} cy={s0.y} r={8} fill="#9ff0ff" opacity={echo} />}
       </g>
