@@ -84,7 +84,7 @@ python3 tools/audio/score_narval.py
 npx remotion studio src/index.ts                       # EP-Narval, NarvalPreview, NarvalFicha
 node scripts/render-episode.mjs --comp EP-Narval --quality draft --scale 0.5 --out out/narval-borrador-540x960.mp4
 node scripts/render-episode.mjs --comp EP-Narval --quality final --scale 1 --out out/narval-unicornio-oceano-180s-1080x1920.mp4
-node scripts/export-srt.mjs src/episodes/narval-unicornio-oceano/data/narration-timing.json ../entregas/narval/narval-unicornio-oceano.srt 32
+node scripts/export-srt.mjs src/episodes/narval-unicornio-oceano/data/narration-timing.json entregas/narval/narval-unicornio-oceano.srt 32
 PROPS='{"n":3}' node scripts/contact-sheet.mjs NarvalPreview out/hoja.png 71,80,88,94 0.25 draft
 ```
 
