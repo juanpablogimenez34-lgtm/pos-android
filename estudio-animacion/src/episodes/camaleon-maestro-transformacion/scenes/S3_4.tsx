@@ -35,7 +35,7 @@ export function scene3(t: number): SceneOut {
   const farScan = scanEye(t + 4, 17);
   P.eyeF = {yaw: lerp(farScan.yaw, 1.0, lock), pitch: lerp(farScan.pitch, -0.2, lock)};
   P.headPitch = lock * 0.04;
-  const c = breatheCam(t < 58 ? shot(t, 45, 49, cam(eyeW.x - 60, eyeW.y + 20, 2.2), cam(eyeW.x - 20, eyeW.y + 10, 2.9)) : shot(t, 63.5, 66.5, cam(eyeW.x - 20, eyeW.y + 10, 2.9), cam(eyeW.x + 120, eyeW.y + 60, 1.8)), t, 0.3);
+  const c = breatheCam(t < 58 ? shot(t, 45, 49, cam(eyeW.x - 60, eyeW.y + 20, 2.2), cam(eyeW.x - 20, eyeW.y + 10, 2.9)) : shot(t, 63.5, 66.5, cam(eyeW.x - 20, eyeW.y + 10, 2.9), cam(eyeW.x + 150, eyeW.y + 80, 1.45)), t, 0.3);
   const es = toScreen(c, eyeW.x, eyeW.y);
   const dim = win(t, 58.4, 64.4, 0.6);
   const main = (
@@ -97,7 +97,7 @@ export function scene4(t: number): SceneOut {
   if (st.ext > 0) P.tongue = {ext: st.ext, target: tgt, bulge: st.bulge, prey: st.caught ? <Cricket x={0} y={6} t={t} s={1.2} caught facing={-1} /> : undefined};
   const diag = win(t, 74.0, 86.6, 0.6);
   const k = t < 79.4 ? seg(t, 74.5, 79.2) * 0.5 : t < 82.2 ? 0.5 : t < 85.8 ? lerp(0.5, 0.84, seg(t, 82.2, 83.2)) : lerp(0.84, 1, seg(t, 85.4, 86.4));
-  const c = breatheCam(t < 86 ? shot(t, 70, 76, cam(w.x + 300, 1010, 1.2), cam(w.x + 330, 1000, 1.22)) : shot(t, 86, 88.6, cam(w.x + 330, 1000, 1.22), cam(w.x + 520, 990, 1.3)), t, 0.4);
+  const c = breatheCam(t < 86 ? shot(t, 70, 76, cam(w.x + 300, 1010, 1.2), cam(w.x + 330, 1000, 1.22)) : shot(t, 86, 88.6, cam(w.x + 330, 1000, 1.22), cam((w.x + cr.x) / 2 + 40, 990, 1.0)), t, 0.4);
   const slow = win(t, 88.6, 92.4, 0.3);
   const main = (
     <g>
