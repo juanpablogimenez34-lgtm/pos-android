@@ -30,7 +30,7 @@ export const Brand: React.FC = () => (
   <div style={{position: 'absolute', left: 54, top: 70, fontFamily: FONT_FAMILY, fontWeight: 900, fontSize: 22, letterSpacing: 4, color: '#eaf6ff', opacity: 0.45, textShadow: '0 2px 6px rgba(0,0,0,0.6)'}}>MUNDO INSÓLITO</div>
 );
 export const Tag: React.FC<{k: number; text: string; top?: number; color?: string}> = ({k, text, top = 330, color = '#9fe8ff'}) =>
-  k > 0.01 ? <div style={{position: 'absolute', left: 30, right: 30, top, textAlign: 'center', fontFamily: FONT_FAMILY, fontWeight: 800, fontSize: 30, letterSpacing: 3, color, opacity: k, textShadow: '0 2px 10px rgba(0,0,0,0.9)'}}>{text}</div> : null;
+  k > 0.01 ? <div style={{position: 'absolute', left: 30, right: 30, top, textAlign: 'center', fontFamily: FONT_FAMILY, opacity: k}}><span style={{display: 'inline-block', padding: '6px 18px', borderRadius: 24, background: 'rgba(2,18,30,0.62)', fontWeight: 800, fontSize: 30, letterSpacing: 3, color, textShadow: '0 2px 10px rgba(0,0,0,0.9)'}}>{text}</span></div> : null;
 export const Wash: React.FC<{k: number; color?: string}> = ({k, color = '#000'}) => (k > 0.002 ? <div style={{position: 'absolute', inset: 0, background: color, opacity: k}} /> : null);
 export const Card: React.FC<{k: number; title: string; x?: number; y?: number; w?: number; h?: number; children: React.ReactNode}> = ({k, title, x = 60, y = 330, w = 960, h = 1100, children}) => {
   if (k <= 0.01) return null;

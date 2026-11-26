@@ -57,7 +57,7 @@ const DeepFill: React.FC<{c: Cam; depthDark: number}> = ({c, depthDark}) => {
   const sy = toScreen(c, c.x, 0).y;
   const camDepth = clamp((c.y - 400) / 2600) * depthDark;
   const y0 = sy + 2360;
-  const dark = 0.5 * clamp((c.y - 1100) / 1900);
+  const dark = 0.3 * clamp((c.y - 1100) / 1900);
   return (
     <g>
       {y0 < 1920 && <rect x={-40} y={y0 - 1} width={1160} height={1960 - y0} fill={MOOD.polar.tint} opacity={0.32 + camDepth * 0.25} />}
@@ -140,7 +140,7 @@ export function scene6(t: number): SceneOut {
   if (t < 137.6) {
     const members = GROUP.map((m, i) => {
       const k: Key[] = LEAD6.map(([tt, x, y]) => [tt + i * 0.25, x + m.dx * (y < 100 ? 0.45 : 1), Math.max(y < 100 ? 10 + i * 6 : 120, y + m.dy * (y < 100 ? 0.1 : 1))]);
-      const p = nswim(k, t, {kind: m.kind, scale: m.s, seed: 30 + i, tusk: m.tusk, maxPitch: 0.6, age: m.kind === 'calf' ? 0.1 : 1});
+      const p = nswim(k, t, {kind: m.kind, scale: m.s, seed: 30 + i, tusk: m.tusk, maxPitch: 0.3, age: m.kind === 'calf' ? 0.1 : 1});
       const atSurf = win(t, 127 + i * 0.25, 129.8 + i * 0.25, 0.4);
       p.under = 1 - atSurf * 0.6;
       p.blow = win(t, 127.6 + i * 0.4, 128.6 + i * 0.4, 0.2);
