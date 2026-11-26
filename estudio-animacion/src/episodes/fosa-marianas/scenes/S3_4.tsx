@@ -131,8 +131,8 @@ export function scene4(t: number): Frame {
       <g>
         <Env d={d} t={t} />
         <ParallaxLayer depth={1}>
-          {(t < 199 || t > 222) && <GiantSquid pose={squidPose} uid="gs" x={sq.x} y={sq.y} scale={t > 222 ? 0.6 : 0.75} dir={-1} angle={escape * 0.4} />}
-          {t > 209 && <SpermWhale pose={whale} uid="cw" x={wx} y={wy} scale={0.55} dir={-1} angle={-0.28} />}
+          {(t < 211 || t > 222) && <GiantSquid pose={squidPose} uid="gs" x={sq.x} y={sq.y} scale={t > 222 ? 0.6 : 0.75} dir={-1} angle={escape * 0.4} />}
+          {t > 205 && <SpermWhale pose={whale} uid="cw" x={wx} y={wy} scale={0.55} dir={-1} angle={-0.28} />}
         </ParallaxLayer>
         {t > 225 && <Sub p={sub} />}
       </g>

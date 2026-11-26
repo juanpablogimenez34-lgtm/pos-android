@@ -1,0 +1,161 @@
+{
+  "composition": "EP-Fosa",
+  "quality": "draft",
+  "scale": 0.5,
+  "crf": "24",
+  "concurrency": 4,
+  "segmentSeconds": 30,
+  "segments": [
+    {
+      "start": 0,
+      "end": 899,
+      "secs": 34,
+      "peakMB": 2923,
+      "reused": true
+    },
+    {
+      "start": 900,
+      "end": 1799,
+      "secs": 39.5,
+      "peakMB": 3086,
+      "reused": true
+    },
+    {
+      "start": 1800,
+      "end": 2699,
+      "secs": 42,
+      "peakMB": 3469,
+      "reused": true
+    },
+    {
+      "start": 2700,
+      "end": 3599,
+      "secs": 34.5,
+      "peakMB": 2972,
+      "reused": true
+    },
+    {
+      "start": 3600,
+      "end": 4499,
+      "secs": 35.3,
+      "peakMB": 3257,
+      "reused": true
+    },
+    {
+      "start": 4500,
+      "end": 5399,
+      "secs": 35,
+      "peakMB": 3028,
+      "reused": true
+    },
+    {
+      "start": 5400,
+      "end": 6299,
+      "secs": 30.3,
+      "peakMB": 3335
+    },
+    {
+      "start": 6300,
+      "end": 7199,
+      "secs": 31.7,
+      "peakMB": 2902
+    },
+    {
+      "start": 7200,
+      "end": 8099,
+      "secs": 30.5,
+      "peakMB": 3318
+    },
+    {
+      "start": 8100,
+      "end": 8999,
+      "secs": 30.2,
+      "peakMB": 2878
+    },
+    {
+      "start": 9000,
+      "end": 9899,
+      "secs": 30.8,
+      "peakMB": 3344
+    },
+    {
+      "start": 9900,
+      "end": 10799,
+      "secs": 31.6,
+      "peakMB": 2875
+    },
+    {
+      "start": 10800,
+      "end": 11699,
+      "secs": 28.8,
+      "peakMB": 3295
+    },
+    {
+      "start": 11700,
+      "end": 12599,
+      "secs": 33.4,
+      "peakMB": 2897
+    },
+    {
+      "start": 12600,
+      "end": 13499,
+      "secs": 32.9,
+      "peakMB": 3257
+    },
+    {
+      "start": 13500,
+      "end": 14399,
+      "secs": 33.1,
+      "peakMB": 2891
+    },
+    {
+      "start": 14400,
+      "end": 15299,
+      "secs": 32.4,
+      "peakMB": 3351
+    },
+    {
+      "start": 15300,
+      "end": 16199,
+      "secs": 32.6,
+      "peakMB": 2868
+    },
+    {
+      "start": 16200,
+      "end": 17099,
+      "secs": 34,
+      "peakMB": 3236
+    },
+    {
+      "start": 17100,
+      "end": 17999,
+      "secs": 32.9,
+      "peakMB": 2921
+    }
+  ],
+  "startedAt": "2026-11-26T19:25:50.980Z",
+  "audio": {
+    "secs": 275.7,
+    "peakMB": 2873
+  },
+  "loudness": {
+    "inputLUFS": -16.83,
+    "inputTruePeak": -2.91,
+    "targetLUFS": -14
+  },
+  "wallSecondsThisRun": 771.2,
+  "totalSeconds": 941.2,
+  "peakRssMB": 3469,
+  "output": {
+    "file": "out/fosa-borrador-960x540.mp4",
+    "sizeMB": 38.5,
+    "width": 960,
+    "height": 540,
+    "fps": "30/1",
+    "videoFrames": 18000,
+    "durationSec": 600,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "framesOk": true
+}
