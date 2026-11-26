@@ -1,0 +1,268 @@
+{
+ "voice": {
+  "engine": "piper",
+  "model": "es_MX-claude-high",
+  "lengthScale": 0.95,
+  "noiseScale": 0.62,
+  "noiseW": 0.55
+ },
+ "durationSec": 180,
+ "lines": [
+  {
+   "id": "s1l1",
+   "scene": 1,
+   "at": 0.6,
+   "text": "Bajo la superficie, algo observa en silencio.",
+   "highlight": []
+  },
+  {
+   "id": "s1l2",
+   "scene": 1,
+   "at": 5.41,
+   "text": "Una sombra sube a toda velocidad desde la oscuridad.",
+   "highlight": [
+    "toda velocidad"
+   ]
+  },
+  {
+   "id": "s1l3",
+   "scene": 1,
+   "at": 10.2,
+   "text": "Y entonces, el océano estalla.",
+   "highlight": []
+  },
+  {
+   "id": "s1l4",
+   "scene": 1,
+   "at": 14.14,
+   "text": "Este es el tiburón blanco, uno de los grandes depredadores del planeta.",
+   "highlight": [
+    "tiburón blanco"
+   ]
+  },
+  {
+   "id": "s2l1",
+   "scene": 2,
+   "at": 20.6,
+   "text": "Puede superar los seis metros de longitud, y las hembras suelen ser más grandes que los machos.",
+   "highlight": [
+    "seis metros",
+    "hembras"
+   ]
+  },
+  {
+   "id": "s2l2",
+   "scene": 2,
+   "at": 26.76,
+   "text": "Su lomo gris se confunde con el fondo visto desde arriba, y su vientre blanco, con la luz vista desde abajo.",
+   "highlight": [
+    "lomo gris",
+    "vientre blanco"
+   ]
+  },
+  {
+   "id": "s2l3",
+   "scene": 2,
+   "at": 33.71,
+   "text": "Su cuerpo en forma de torpedo y su potente cola le permiten acelerar con gran fuerza.",
+   "highlight": [
+    "torpedo"
+   ]
+  },
+  {
+   "id": "s2l4",
+   "scene": 2,
+   "at": 39.54,
+   "text": "Tiene cientos de dientes aserrados, ordenados en varias filas, que se reemplazan durante toda su vida.",
+   "highlight": [
+    "dientes aserrados"
+   ]
+  },
+  {
+   "id": "s3l1",
+   "scene": 3,
+   "at": 45.6,
+   "text": "Sus sentidos son extraordinarios.",
+   "highlight": []
+  },
+  {
+   "id": "s3l2",
+   "scene": 3,
+   "at": 49.12,
+   "text": "En el hocico tiene pequeños poros llamados ampollas de Lorenzini, que detectan los débiles campos eléctricos de otros animales.",
+   "highlight": [
+    "ampollas de Lorenzini"
+   ]
+  },
+  {
+   "id": "s3l3",
+   "scene": 3,
+   "at": 57.8,
+   "text": "La línea lateral percibe las vibraciones del agua, y su olfato es muy sensible.",
+   "highlight": [
+    "línea lateral",
+    "olfato"
+   ]
+  },
+  {
+   "id": "s3l4",
+   "scene": 3,
+   "at": 64.16,
+   "text": "Además, sus ojos tienen una capa reflectante que le ayuda a ver con poca luz.",
+   "highlight": [
+    "capa reflectante"
+   ]
+  },
+  {
+   "id": "s4l1",
+   "scene": 4,
+   "at": 70.6,
+   "text": "A diferencia de la mayoría de los peces, puede mantener partes de su cuerpo más calientes que el agua que lo rodea.",
+   "highlight": [
+    "más calientes"
+   ]
+  },
+  {
+   "id": "s4l2",
+   "scene": 4,
+   "at": 77.48,
+   "text": "Un sistema de vasos sanguíneos conserva el calor de sus músculos.",
+   "highlight": [
+    "conserva el calor"
+   ]
+  },
+  {
+   "id": "s4l3",
+   "scene": 4,
+   "at": 82.0,
+   "text": "Gracias a ello recorre enormes distancias: una hembra marcada viajó de Sudáfrica a Australia y regresó en menos de un año.",
+   "highlight": [
+    "Sudáfrica a Australia"
+   ]
+  },
+  {
+   "id": "s4l4",
+   "scene": 4,
+   "at": 90.42,
+   "text": "En el Pacífico, muchos pasan meses en mar abierto, en una zona apodada el café del tiburón blanco.",
+   "highlight": [
+    "café del tiburón blanco"
+   ]
+  },
+  {
+   "id": "s5l1",
+   "scene": 5,
+   "at": 95.6,
+   "text": "Para cazar focas, suele atacar desde abajo, aprovechando que su silueta destaca contra la luz.",
+   "highlight": [
+    "desde abajo"
+   ]
+  },
+  {
+   "id": "s5l2",
+   "scene": 5,
+   "at": 103.33,
+   "text": "Acelera hacia la superficie y, a veces, sale del agua por completo.",
+   "highlight": [
+    "sale del agua"
+   ]
+  },
+  {
+   "id": "s5l3",
+   "scene": 5,
+   "at": 110.28,
+   "text": "Al morder, su mandíbula superior se desplaza hacia delante.",
+   "highlight": [
+    "mandíbula superior"
+   ]
+  },
+  {
+   "id": "s5l4",
+   "scene": 5,
+   "at": 115.66,
+   "text": "Pero muchos intentos fracasan: la presa logra escapar.",
+   "highlight": [
+    "fracasan"
+   ]
+  },
+  {
+   "id": "s6l1",
+   "scene": 6,
+   "at": 121.6,
+   "text": "Incluso este gran depredador tiene a quien temer.",
+   "highlight": []
+  },
+  {
+   "id": "s6l2",
+   "scene": 6,
+   "at": 126.16,
+   "text": "En Sudáfrica y en California se ha documentado que algunas orcas cazan tiburones blancos.",
+   "highlight": [
+    "orcas"
+   ]
+  },
+  {
+   "id": "s6l3",
+   "scene": 6,
+   "at": 133.47,
+   "text": "Cuando las orcas aparecen, los tiburones abandonan la zona y pueden tardar meses en regresar.",
+   "highlight": [
+    "abandonan la zona"
+   ]
+  },
+  {
+   "id": "s6l4",
+   "scene": 6,
+   "at": 140.83,
+   "text": "Las orcas buscan sobre todo su hígado, un órgano muy rico en grasas.",
+   "highlight": [
+    "hígado"
+   ]
+  },
+  {
+   "id": "s7l1",
+   "scene": 7,
+   "at": 150.6,
+   "text": "El tiburón blanco crece despacio, madura tarde y tiene pocas crías.",
+   "highlight": [
+    "madura tarde"
+   ]
+  },
+  {
+   "id": "s7l2",
+   "scene": 7,
+   "at": 156.54,
+   "text": "Las hembras tardan unos treinta años en madurar, y pueden vivir alrededor de setenta.",
+   "highlight": [
+    "treinta años",
+    "setenta"
+   ]
+  },
+  {
+   "id": "s7l3",
+   "scene": 7,
+   "at": 162.65,
+   "text": "Hoy está catalogado como vulnerable, y los mordiscos a personas son muy poco frecuentes.",
+   "highlight": [
+    "vulnerable",
+    "muy poco frecuentes"
+   ]
+  },
+  {
+   "id": "s7l4",
+   "scene": 7,
+   "at": 169.21,
+   "text": "Protegerlo es proteger el equilibrio del océano.",
+   "highlight": [
+    "equilibrio del océano"
+   ]
+  },
+  {
+   "id": "s7l5",
+   "scene": 7,
+   "at": 173.02,
+   "text": "¿Qué otro animal extraordinario te gustaría descubrir?",
+   "highlight": []
+  }
+ ]
+}

@@ -43,6 +43,9 @@ import {CamaleonFicha} from './episodes/camaleon-maestro-transformacion/componen
 import {OrcaFicha} from './episodes/orca-reina-oceanos/components/Ficha';
 import {NarvalFicha} from './episodes/narval-unicornio-oceano/components/Ficha';
 import {FosaFicha} from './episodes/fosa-marianas/components/Ficha';
+import {TiburonFicha} from './episodes/tiburon-blanco/components/Ficha';
+import {TiburonPreview} from './episodes/tiburon-blanco/components/Preview';
+import {TiburonDocumentary, TIB_AUDIO, TibDocProps} from './episodes/tiburon-blanco/Documentary';
 import {FosaPreview} from './episodes/fosa-marianas/components/Preview';
 import {FosaDocumentary, FOSA_AUDIO, FosaProps} from './episodes/fosa-marianas/Documentary';
 import {NarvalPreview} from './episodes/narval-unicornio-oceano/components/Preview';
@@ -280,6 +283,9 @@ export const RemotionRoot: React.FC = () => (
     <Composition id="CamaleonPreview" component={CamaleonPreview as React.FC<{n: number}>} durationInFrames={5400} fps={30} width={1080} height={1920} defaultProps={{n: 0}} />
     <Composition id="EP-Orca" component={OrcaDocumentary as React.FC<OrcaDocProps>} durationInFrames={5400} fps={30} width={1080} height={1920} defaultProps={{quality: 'final', showSubtitles: true, audio: ORCA_AUDIO} as OrcaDocProps} />
     <Composition id="OrcaPreview" component={OrcaPreview as React.FC<{n: number}>} durationInFrames={5400} fps={30} width={1080} height={1920} defaultProps={{n: 0}} />
+    <Composition id="EP-TiburonBlanco" component={TiburonDocumentary as React.FC<TibDocProps>} durationInFrames={5400} fps={30} width={1080} height={1920} defaultProps={{quality: 'final', showSubtitles: true, audio: TIB_AUDIO} as TibDocProps} />
+    <Composition id="TiburonPreview" component={TiburonPreview as React.FC<{n: number}>} durationInFrames={5400} fps={30} width={1080} height={1920} defaultProps={{n: 0}} />
+    <Composition id="TiburonFicha" component={TiburonFicha} durationInFrames={300} fps={30} width={1080} height={1920} />
     <Composition id="EP-Fosa" component={FosaDocumentary as React.FC<FosaProps>} durationInFrames={18000} fps={30} width={1920} height={1080} defaultProps={{quality: 'final', showSubtitles: true, audio: FOSA_AUDIO} as FosaProps} />
     <Composition id="FosaPreview" component={FosaPreview} durationInFrames={18000} fps={30} width={1920} height={1080} />
     <Composition id="FosaFicha" component={FosaFicha} durationInFrames={300} fps={30} width={1920} height={1080} />
