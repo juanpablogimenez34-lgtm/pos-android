@@ -1,0 +1,72 @@
+{
+  "composition": "EP-TiburonBlanco",
+  "quality": "final",
+  "scale": 1,
+  "crf": "20",
+  "concurrency": 4,
+  "segmentSeconds": 30,
+  "segments": [
+    {
+      "start": 0,
+      "end": 899,
+      "secs": 90.1,
+      "peakMB": 3887
+    },
+    {
+      "start": 900,
+      "end": 1799,
+      "secs": 145,
+      "peakMB": 4402
+    },
+    {
+      "start": 1800,
+      "end": 2699,
+      "secs": 132.7,
+      "peakMB": 4252
+    },
+    {
+      "start": 2700,
+      "end": 3599,
+      "secs": 94.1,
+      "peakMB": 3720
+    },
+    {
+      "start": 3600,
+      "end": 4499,
+      "secs": 142,
+      "peakMB": 4171
+    },
+    {
+      "start": 4500,
+      "end": 5399,
+      "secs": 113.8,
+      "peakMB": 4586
+    }
+  ],
+  "startedAt": "2026-11-26T20:53:57.442Z",
+  "audio": {
+    "secs": 0,
+    "peakMB": 0,
+    "reused": true
+  },
+  "loudness": {
+    "inputLUFS": -16.81,
+    "inputTruePeak": -1.98,
+    "targetLUFS": -14
+  },
+  "wallSecondsThisRun": 736,
+  "totalSeconds": 717.7,
+  "peakRssMB": 4586,
+  "output": {
+    "file": "out/tiburon-blanco-180s-1080x1920.mp4",
+    "sizeMB": 50.72,
+    "width": 1080,
+    "height": 1920,
+    "fps": "30/1",
+    "videoFrames": 5400,
+    "durationSec": 180,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "framesOk": true
+}
