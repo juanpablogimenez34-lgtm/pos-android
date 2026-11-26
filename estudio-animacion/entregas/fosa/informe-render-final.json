@@ -1,0 +1,156 @@
+{
+  "composition": "EP-Fosa",
+  "quality": "final",
+  "scale": 1,
+  "crf": "20",
+  "concurrency": 4,
+  "segmentSeconds": 30,
+  "segments": [
+    {
+      "start": 0,
+      "end": 899,
+      "secs": 60.8,
+      "peakMB": 3442
+    },
+    {
+      "start": 900,
+      "end": 1799,
+      "secs": 67.1,
+      "peakMB": 3444
+    },
+    {
+      "start": 1800,
+      "end": 2699,
+      "secs": 69.6,
+      "peakMB": 3983
+    },
+    {
+      "start": 2700,
+      "end": 3599,
+      "secs": 60.9,
+      "peakMB": 3492
+    },
+    {
+      "start": 3600,
+      "end": 4499,
+      "secs": 66.8,
+      "peakMB": 4226
+    },
+    {
+      "start": 4500,
+      "end": 5399,
+      "secs": 63.8,
+      "peakMB": 3710
+    },
+    {
+      "start": 5400,
+      "end": 6299,
+      "secs": 58.4,
+      "peakMB": 4309
+    },
+    {
+      "start": 6300,
+      "end": 7199,
+      "secs": 59.9,
+      "peakMB": 3619
+    },
+    {
+      "start": 7200,
+      "end": 8099,
+      "secs": 58.8,
+      "peakMB": 4183
+    },
+    {
+      "start": 8100,
+      "end": 8999,
+      "secs": 60.5,
+      "peakMB": 3559
+    },
+    {
+      "start": 9000,
+      "end": 9899,
+      "secs": 63.6,
+      "peakMB": 4255
+    },
+    {
+      "start": 9900,
+      "end": 10799,
+      "secs": 65.6,
+      "peakMB": 3506
+    },
+    {
+      "start": 10800,
+      "end": 11699,
+      "secs": 56.6,
+      "peakMB": 4320
+    },
+    {
+      "start": 11700,
+      "end": 12599,
+      "secs": 62,
+      "peakMB": 3536
+    },
+    {
+      "start": 12600,
+      "end": 13499,
+      "secs": 63.9,
+      "peakMB": 4429
+    },
+    {
+      "start": 13500,
+      "end": 14399,
+      "secs": 64.5,
+      "peakMB": 3559
+    },
+    {
+      "start": 14400,
+      "end": 15299,
+      "secs": 67.7,
+      "peakMB": 4279
+    },
+    {
+      "start": 15300,
+      "end": 16199,
+      "secs": 63.9,
+      "peakMB": 3596
+    },
+    {
+      "start": 16200,
+      "end": 17099,
+      "secs": 61.8,
+      "peakMB": 4370
+    },
+    {
+      "start": 17100,
+      "end": 17999,
+      "secs": 61.7,
+      "peakMB": 3623
+    }
+  ],
+  "startedAt": "2026-11-26T19:40:23.158Z",
+  "audio": {
+    "secs": 0,
+    "peakMB": 0,
+    "reused": true
+  },
+  "loudness": {
+    "inputLUFS": -16.83,
+    "inputTruePeak": -2.91,
+    "targetLUFS": -14
+  },
+  "wallSecondsThisRun": 1308.9,
+  "totalSeconds": 1257.9,
+  "peakRssMB": 4429,
+  "output": {
+    "file": "out/fosa-marianas-viaje-al-abismo-600s-1920x1080.mp4",
+    "sizeMB": 121.85,
+    "width": 1920,
+    "height": 1080,
+    "fps": "30/1",
+    "videoFrames": 18000,
+    "durationSec": 600,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "framesOk": true
+}
