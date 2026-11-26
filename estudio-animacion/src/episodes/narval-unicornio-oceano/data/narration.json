@@ -1,0 +1,272 @@
+{
+ "voice": {
+  "engine": "piper",
+  "model": "es_MX-claude-high",
+  "lengthScale": 0.95,
+  "noiseScale": 0.62,
+  "noiseW": 0.55
+ },
+ "durationSec": 180,
+ "lines": [
+  {
+   "id": "n01",
+   "scene": 1,
+   "at": 0.4,
+   "text": "Durante siglos, los humanos imaginaron criaturas con poderes extraordinarios.",
+   "highlight": []
+  },
+  {
+   "id": "n02",
+   "scene": 1,
+   "at": 5.0,
+   "text": "Pero en las heladas aguas del Ártico vive un animal que parece salido de una leyenda.",
+   "highlight": [
+    "Ártico"
+   ]
+  },
+  {
+   "id": "n03",
+   "scene": 1,
+   "at": 10.4,
+   "text": "Tiene un enorme colmillo en espiral, y ha sido observado usándolo para golpear peces.",
+   "highlight": [
+    "colmillo en espiral"
+   ]
+  },
+  {
+   "id": "n04",
+   "scene": 1,
+   "at": 15.8,
+   "text": "Este es el narval, el verdadero unicornio del océano.",
+   "highlight": [
+    "narval"
+   ]
+  },
+  {
+   "id": "n05",
+   "scene": 2,
+   "at": 20.5,
+   "text": "El narval nace sin el enorme colmillo que distingue a muchos adultos.",
+   "highlight": [
+    "sin el enorme colmillo"
+   ]
+  },
+  {
+   "id": "n06",
+   "scene": 2,
+   "at": 25.4,
+   "text": "La cría depende de su madre para alimentarse y sobrevivir en las aguas heladas.",
+   "highlight": [
+    "su madre"
+   ]
+  },
+  {
+   "id": "n07",
+   "scene": 2,
+   "at": 31.0,
+   "text": "Con los años, su piel pasa de un gris azulado a un tono moteado.",
+   "highlight": [
+    "moteado"
+   ]
+  },
+  {
+   "id": "n08",
+   "scene": 2,
+   "at": 36.4,
+   "text": "Y en la mayoría de los machos, un diente comienza a crecer de una forma extraordinaria.",
+   "highlight": [
+    "un diente"
+   ]
+  },
+  {
+   "id": "n09",
+   "scene": 3,
+   "at": 45.4,
+   "text": "Aunque parece un cuerno, es un diente: el canino izquierdo de la mandíbula superior, que crece hacia delante.",
+   "highlight": [
+    "es un diente"
+   ]
+  },
+  {
+   "id": "n10",
+   "scene": 3,
+   "at": 52.8,
+   "text": "Puede superar los dos metros de longitud.",
+   "highlight": [
+    "dos metros"
+   ]
+  },
+  {
+   "id": "n11",
+   "scene": 3,
+   "at": 56.0,
+   "text": "Su superficie contiene millones de diminutos conductos conectados con nervios, y se ha propuesto que detecta cambios en el agua.",
+   "highlight": [
+    "conductos",
+    "nervios"
+   ]
+  },
+  {
+   "id": "n12",
+   "scene": 3,
+   "at": 64.0,
+   "text": "También interviene en la interacción social, y su función aún se investiga.",
+   "highlight": [
+    "aún se investiga"
+   ]
+  },
+  {
+   "id": "n13",
+   "scene": 4,
+   "at": 70.5,
+   "text": "Durante mucho tiempo, los científicos se preguntaron si el colmillo servía para conseguir alimento.",
+   "highlight": [
+    "alimento"
+   ]
+  },
+  {
+   "id": "n14",
+   "scene": 4,
+   "at": 76.6,
+   "text": "Grabaciones aéreas con drones documentaron narvales golpeando peces con él.",
+   "highlight": [
+    "drones"
+   ]
+  },
+  {
+   "id": "n15",
+   "scene": 4,
+   "at": 81.6,
+   "text": "Parece servirles para aturdir algunas presas antes de comerlas, aunque no todos lo hacen.",
+   "highlight": [
+    "aturdir"
+   ]
+  },
+  {
+   "id": "n16",
+   "scene": 4,
+   "at": 88.0,
+   "text": "Esta escena es una reconstrucción animada de ese comportamiento.",
+   "highlight": [
+    "reconstrucción animada"
+   ]
+  },
+  {
+   "id": "n17",
+   "scene": 5,
+   "at": 95.4,
+   "text": "El narval es además un extraordinario buceador.",
+   "highlight": [
+    "buceador"
+   ]
+  },
+  {
+   "id": "n18",
+   "scene": 5,
+   "at": 99.0,
+   "text": "Desciende a grandes profundidades en busca de bacalaos, fletanes y calamares.",
+   "highlight": [
+    "grandes profundidades"
+   ]
+  },
+  {
+   "id": "n19",
+   "scene": 5,
+   "at": 104.6,
+   "text": "Donde apenas llega la luz, utiliza la ecolocalización para explorar su entorno.",
+   "highlight": [
+    "ecolocalización"
+   ]
+  },
+  {
+   "id": "n20",
+   "scene": 5,
+   "at": 110.2,
+   "text": "Pero respira aire: no tiene branquias y siempre debe volver a la superficie.",
+   "highlight": [
+    "respira aire"
+   ]
+  },
+  {
+   "id": "n21",
+   "scene": 6,
+   "at": 121.2,
+   "text": "Vivir en el Ártico significa enfrentarse a condiciones extremas.",
+   "highlight": [
+    "condiciones extremas"
+   ]
+  },
+  {
+   "id": "n22",
+   "scene": 6,
+   "at": 125.4,
+   "text": "Los narvales buscan grietas y aberturas en el hielo para respirar.",
+   "highlight": [
+    "aberturas en el hielo"
+   ]
+  },
+  {
+   "id": "n23",
+   "scene": 6,
+   "at": 130.4,
+   "text": "También deben evitar a depredadores como las orcas, y a menudo se refugian cerca del hielo.",
+   "highlight": [
+    "orcas"
+   ]
+  },
+  {
+   "id": "n24",
+   "scene": 6,
+   "at": 137.6,
+   "text": "Además, los cambios en el hielo marino están transformando su hogar.",
+   "highlight": [
+    "hielo marino"
+   ]
+  },
+  {
+   "id": "n24b",
+   "scene": 6,
+   "at": 142.6,
+   "text": "Por eso, estudiar a los narvales también ayuda a comprender cómo está cambiando el Ártico.",
+   "highlight": [
+    "cómo está cambiando"
+   ]
+  },
+  {
+   "id": "n25",
+   "scene": 7,
+   "at": 150.6,
+   "text": "Un diente que supera los dos metros, una enorme capacidad para bucear y una vida adaptada a uno de los lugares más extremos del planeta.",
+   "highlight": [
+    "dos metros"
+   ]
+  },
+  {
+   "id": "n26",
+   "scene": 7,
+   "at": 160.4,
+   "text": "El narval demuestra que la realidad puede superar a las leyendas.",
+   "highlight": [
+    "la realidad"
+   ]
+  },
+  {
+   "id": "n26b",
+   "scene": 7,
+   "at": 164.6,
+   "text": "Y mientras la ciencia descubre sus secretos, el unicornio del océano sigue recorriendo el Ártico.",
+   "highlight": [
+    "unicornio del océano"
+   ]
+  },
+  {
+   "id": "n27",
+   "scene": 7,
+   "at": 171.2,
+   "text": "¿Qué otro animal extraordinario te gustaría descubrir?",
+   "highlight": [
+    "te gustaría descubrir"
+   ]
+  }
+ ]
+}
