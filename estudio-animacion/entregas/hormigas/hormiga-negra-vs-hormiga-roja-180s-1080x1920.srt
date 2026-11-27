@@ -1,0 +1,245 @@
+1
+00:00:00,400 --> 00:00:04,523
+Una posee mandíbulas poderosas.
+La otra lleva un aguijón capaz
+
+2
+00:00:04,523 --> 00:00:06,236
+de administrar veneno.
+
+3
+00:00:06,290 --> 00:00:10,152
+Aunque parecen pequeñas, tienen
+defensas extraordinarias.
+
+4
+00:00:10,190 --> 00:00:13,748
+Si una hormiga negra y una
+hormiga roja se enfrentaran,
+
+5
+00:00:13,748 --> 00:00:16,651
+¿cuál tendría más posibilidades
+de ganar?
+
+6
+00:00:16,820 --> 00:00:20,206
+Elige tu favorita antes de
+conocer el resultado.
+
+7
+00:00:20,400 --> 00:00:23,822
+La hormiga carpintera negra
+posee un cuerpo robusto y
+
+8
+00:00:23,822 --> 00:00:27,438
+mandíbulas fuertes para
+transportar alimento, defenderse
+
+9
+00:00:27,438 --> 00:00:29,044
+y trabajar la madera.
+
+10
+00:00:29,170 --> 00:00:32,862
+Excava galerías en madera blanda
+o húmeda para construir su nido,
+
+11
+00:00:32,862 --> 00:00:35,725
+pero no se alimenta de ella como
+las termitas.
+
+12
+00:00:36,140 --> 00:00:39,565
+Algunas obreras son mucho más
+grandes que otras.
+
+13
+00:00:39,700 --> 00:00:43,483
+No tiene aguijón: se defiende
+mordiendo y rociando secreciones
+
+14
+00:00:43,483 --> 00:00:44,831
+con ácido fórmico.
+
+15
+00:00:45,400 --> 00:00:49,374
+La hormiga de fuego roja tiene
+una combinación de armas muy
+
+16
+00:00:49,374 --> 00:00:50,298
+diferente.
+
+17
+00:00:50,660 --> 00:00:53,653
+Puede sujetarse con sus
+mandíbulas y usar un aguijón
+
+18
+00:00:53,653 --> 00:00:55,284
+para administrar veneno.
+
+19
+00:00:55,700 --> 00:00:59,405
+Sus antenas terminan en una
+pequeña maza, y su cintura tiene
+
+20
+00:00:59,405 --> 00:01:00,519
+dos segmentos.
+
+21
+00:01:00,930 --> 00:01:05,633
+Además, las obreras responden en
+grupo ante una amenaza, y la
+
+22
+00:01:05,633 --> 00:01:09,660
+colonia se convierte en un
+adversario formidable.
+
+23
+00:01:10,400 --> 00:01:14,737
+En nuestro duelo individual, la
+negra tiene ventaja de tamaño:
+
+24
+00:01:14,737 --> 00:01:17,156
+diez milímetros frente a cinco.
+
+25
+00:01:17,830 --> 00:01:21,139
+Pero la hormiga roja dispone de
+un aguijón funcional.
+
+26
+00:01:21,940 --> 00:01:26,053
+Ambas exploran con sus antenas y
+se comunican mediante señales
+
+27
+00:01:26,053 --> 00:01:26,900
+químicas.
+
+28
+00:01:27,800 --> 00:01:31,778
+La fuerza no siempre decide un
+encuentro: la posición, la
+
+29
+00:01:31,778 --> 00:01:34,820
+movilidad y la defensa también
+importan.
+
+30
+00:01:35,400 --> 00:01:38,635
+Las dos se acercan a la misma
+fuente de alimento, y se
+
+31
+00:01:38,635 --> 00:01:39,424
+detectan.
+
+32
+00:01:39,660 --> 00:01:43,669
+En un enfrentamiento individual
+entre estos dos ejemplares, la
+
+33
+00:01:43,669 --> 00:01:47,605
+diferencia de tamaño podría
+favorecer a la hormiga negra.
+
+34
+00:01:47,850 --> 00:01:51,739
+Sin embargo, la hormiga roja
+sigue siendo peligrosa gracias a
+
+35
+00:01:51,739 --> 00:01:52,690
+su aguijón.
+
+36
+00:01:52,990 --> 00:01:56,663
+Nuestra simulación favorece a la
+obrera más grande, aunque un
+
+37
+00:01:56,663 --> 00:01:59,683
+encuentro real podría terminar
+de otra manera.
+
+38
+00:02:00,400 --> 00:02:03,831
+Pero entre las hormigas, una
+batalla individual no cuenta
+
+39
+00:02:03,831 --> 00:02:05,104
+toda la historia.
+
+40
+00:02:06,610 --> 00:02:10,241
+Las hormigas de fuego dejan
+rastros químicos que reclutan a
+
+41
+00:02:10,241 --> 00:02:11,414
+muchas obreras.
+
+42
+00:02:13,110 --> 00:02:16,612
+Una colonia puede reunir decenas
+de miles de individuos.
+
+43
+00:02:18,150 --> 00:02:21,403
+Con una clara superioridad
+numérica, esa respuesta
+
+44
+00:02:21,403 --> 00:02:24,972
+colectiva podría cambiar por
+completo el resultado.
+
+45
+00:02:30,400 --> 00:02:34,389
+Entonces, ¿quién ganaría? Uno
+contra uno, la hormiga negra
+
+46
+00:02:34,389 --> 00:02:36,564
+tiene ventaja por su tamaño.
+
+47
+00:02:36,810 --> 00:02:40,597
+Pero en grupo, el número y la
+coordinación de las hormigas
+
+48
+00:02:40,597 --> 00:02:42,675
+rojas pueden cambiarlo todo.
+
+49
+00:02:42,950 --> 00:02:47,159
+No existe un vencedor universal:
+depende de las especies, el
+
+50
+00:02:47,159 --> 00:02:50,145
+tamaño, el número y las
+circunstancias.
+
+51
+00:02:50,400 --> 00:02:54,148
+¿Acertaste? Elige la próxima
+batalla: ¿escorpión contra
+
+52
+00:02:54,148 --> 00:02:57,396
+tarántula, o avispa contra
+mantis religiosa?

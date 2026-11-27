@@ -1,0 +1,388 @@
+{
+ "voice": {
+  "engine": "piper",
+  "model": "es_MX-claude-high",
+  "lengthScale": 0.95,
+  "noiseScale": 0.62,
+  "noiseW": 0.55
+ },
+ "lines": 28,
+ "speechSeconds": 150.97,
+ "coverage": 0.839,
+ "problems": [],
+ "timing": [
+  {
+   "id": "s1l1",
+   "scene": 1,
+   "at": 0.4,
+   "text": "Una posee mandíbulas poderosas. La otra lleva un aguijón capaz de administrar veneno.",
+   "highlight": [
+    "mandíbulas",
+    "veneno"
+   ],
+   "drift": 0.0,
+   "start": 0.4,
+   "end": 5.986,
+   "duration": 5.586
+  },
+  {
+   "id": "s1l2",
+   "scene": 1,
+   "at": 6.29,
+   "text": "Aunque parecen pequeñas, tienen defensas extraordinarias.",
+   "highlight": [
+    "defensas extraordinarias"
+   ],
+   "drift": 0.0,
+   "start": 6.29,
+   "end": 9.902,
+   "duration": 3.612
+  },
+  {
+   "id": "s1l3",
+   "scene": 1,
+   "at": 10.19,
+   "text": "Si una hormiga negra y una hormiga roja se enfrentaran, ¿cuál tendría más posibilidades de ganar?",
+   "highlight": [
+    "hormiga negra",
+    "hormiga roja"
+   ],
+   "drift": 0.0,
+   "start": 10.19,
+   "end": 16.401,
+   "duration": 6.211
+  },
+  {
+   "id": "s1l4",
+   "scene": 1,
+   "at": 16.82,
+   "text": "Elige tu favorita antes de conocer el resultado.",
+   "highlight": [
+    "Elige tu favorita"
+   ],
+   "drift": 0.0,
+   "start": 16.82,
+   "end": 19.956,
+   "duration": 3.136
+  },
+  {
+   "id": "s2l1",
+   "scene": 2,
+   "at": 20.4,
+   "text": "La hormiga carpintera negra posee un cuerpo robusto y mandíbulas fuertes para transportar alimento, defenderse y trabajar la madera.",
+   "highlight": [
+    "hormiga carpintera negra",
+    "mandíbulas fuertes"
+   ],
+   "drift": 0.0,
+   "start": 20.4,
+   "end": 28.794,
+   "duration": 8.394
+  },
+  {
+   "id": "s2l2",
+   "scene": 2,
+   "at": 29.17,
+   "text": "Excava galerías en madera blanda o húmeda para construir su nido, pero no se alimenta de ella como las termitas.",
+   "highlight": [
+    "no se alimenta de ella"
+   ],
+   "drift": 0.0,
+   "start": 29.17,
+   "end": 35.475,
+   "duration": 6.305
+  },
+  {
+   "id": "s2l3",
+   "scene": 2,
+   "at": 36.14,
+   "text": "Algunas obreras son mucho más grandes que otras.",
+   "highlight": [
+    "más grandes"
+   ],
+   "drift": 0.0,
+   "start": 36.14,
+   "end": 39.315,
+   "duration": 3.175
+  },
+  {
+   "id": "s2l4",
+   "scene": 2,
+   "at": 39.7,
+   "text": "No tiene aguijón: se defiende mordiendo y rociando secreciones con ácido fórmico.",
+   "highlight": [
+    "ácido fórmico"
+   ],
+   "drift": 0.0,
+   "start": 39.7,
+   "end": 44.581,
+   "duration": 4.881
+  },
+  {
+   "id": "s3l1",
+   "scene": 3,
+   "at": 45.4,
+   "text": "La hormiga de fuego roja tiene una combinación de armas muy diferente.",
+   "highlight": [
+    "hormiga de fuego roja"
+   ],
+   "drift": 0.0,
+   "start": 45.4,
+   "end": 50.048,
+   "duration": 4.648
+  },
+  {
+   "id": "s3l2",
+   "scene": 3,
+   "at": 50.66,
+   "text": "Puede sujetarse con sus mandíbulas y usar un aguijón para administrar veneno.",
+   "highlight": [
+    "aguijón",
+    "veneno"
+   ],
+   "drift": 0.0,
+   "start": 50.66,
+   "end": 55.034,
+   "duration": 4.374
+  },
+  {
+   "id": "s3l3",
+   "scene": 3,
+   "at": 55.7,
+   "text": "Sus antenas terminan en una pequeña maza, y su cintura tiene dos segmentos.",
+   "highlight": [
+    "dos segmentos"
+   ],
+   "drift": 0.0,
+   "start": 55.7,
+   "end": 60.269,
+   "duration": 4.569
+  },
+  {
+   "id": "s3l4",
+   "scene": 3,
+   "at": 60.93,
+   "text": "Además, las obreras responden en grupo ante una amenaza, y la colonia se convierte en un adversario formidable.",
+   "highlight": [
+    "en grupo",
+    "colonia"
+   ],
+   "drift": 0.0,
+   "start": 60.93,
+   "end": 69.41,
+   "duration": 8.48
+  },
+  {
+   "id": "s4l1",
+   "scene": 4,
+   "at": 70.4,
+   "text": "En nuestro duelo individual, la negra tiene ventaja de tamaño: diez milímetros frente a cinco.",
+   "highlight": [
+    "ventaja de tamaño",
+    "diez milímetros frente a cinco"
+   ],
+   "drift": 0.0,
+   "start": 70.4,
+   "end": 76.906,
+   "duration": 6.506
+  },
+  {
+   "id": "s4l2",
+   "scene": 4,
+   "at": 77.83,
+   "text": "Pero la hormiga roja dispone de un aguijón funcional.",
+   "highlight": [
+    "aguijón funcional"
+   ],
+   "drift": 0.0,
+   "start": 77.83,
+   "end": 80.889,
+   "duration": 3.059
+  },
+  {
+   "id": "s4l3",
+   "scene": 4,
+   "at": 81.94,
+   "text": "Ambas exploran con sus antenas y se comunican mediante señales químicas.",
+   "highlight": [
+    "señales químicas"
+   ],
+   "drift": 0.0,
+   "start": 81.94,
+   "end": 86.65,
+   "duration": 4.71
+  },
+  {
+   "id": "s4l4",
+   "scene": 4,
+   "at": 87.8,
+   "text": "La fuerza no siempre decide un encuentro: la posición, la movilidad y la defensa también importan.",
+   "highlight": [
+    "posición",
+    "movilidad"
+   ],
+   "drift": 0.0,
+   "start": 87.8,
+   "end": 94.57,
+   "duration": 6.77
+  },
+  {
+   "id": "s5l1",
+   "scene": 5,
+   "at": 95.4,
+   "text": "Las dos se acercan a la misma fuente de alimento, y se detectan.",
+   "highlight": [
+    "se detectan"
+   ],
+   "drift": 0.0,
+   "start": 95.4,
+   "end": 99.174,
+   "duration": 3.774
+  },
+  {
+   "id": "s5l2",
+   "scene": 5,
+   "at": 99.66,
+   "text": "En un enfrentamiento individual entre estos dos ejemplares, la diferencia de tamaño podría favorecer a la hormiga negra.",
+   "highlight": [
+    "diferencia de tamaño"
+   ],
+   "drift": 0.0,
+   "start": 99.66,
+   "end": 107.355,
+   "duration": 7.695
+  },
+  {
+   "id": "s5l3",
+   "scene": 5,
+   "at": 107.85,
+   "text": "Sin embargo, la hormiga roja sigue siendo peligrosa gracias a su aguijón.",
+   "highlight": [
+    "peligrosa"
+   ],
+   "drift": 0.0,
+   "start": 107.85,
+   "end": 112.44,
+   "duration": 4.59
+  },
+  {
+   "id": "s5l4",
+   "scene": 5,
+   "at": 112.99,
+   "text": "Nuestra simulación favorece a la obrera más grande, aunque un encuentro real podría terminar de otra manera.",
+   "highlight": [
+    "obrera más grande",
+    "otra manera"
+   ],
+   "drift": 0.0,
+   "start": 112.99,
+   "end": 119.433,
+   "duration": 6.443
+  },
+  {
+   "id": "s6l1",
+   "scene": 6,
+   "at": 120.4,
+   "text": "Pero entre las hormigas, una batalla individual no cuenta toda la historia.",
+   "highlight": [
+    "toda la historia"
+   ],
+   "drift": 0.0,
+   "start": 120.4,
+   "end": 124.854,
+   "duration": 4.454
+  },
+  {
+   "id": "s6l2",
+   "scene": 6,
+   "at": 126.61,
+   "text": "Las hormigas de fuego dejan rastros químicos que reclutan a muchas obreras.",
+   "highlight": [
+    "rastros químicos"
+   ],
+   "drift": 0.0,
+   "start": 126.61,
+   "end": 131.164,
+   "duration": 4.554
+  },
+  {
+   "id": "s6l3",
+   "scene": 6,
+   "at": 133.11,
+   "text": "Una colonia puede reunir decenas de miles de individuos.",
+   "highlight": [
+    "decenas de miles"
+   ],
+   "drift": 0.0,
+   "start": 133.11,
+   "end": 136.362,
+   "duration": 3.252
+  },
+  {
+   "id": "s6l4",
+   "scene": 6,
+   "at": 138.15,
+   "text": "Con una clara superioridad numérica, esa respuesta colectiva podría cambiar por completo el resultado.",
+   "highlight": [
+    "superioridad numérica"
+   ],
+   "drift": 0.0,
+   "start": 138.15,
+   "end": 144.722,
+   "duration": 6.572
+  },
+  {
+   "id": "s7l1",
+   "scene": 7,
+   "at": 150.4,
+   "text": "Entonces, ¿quién ganaría? Uno contra uno, la hormiga negra tiene ventaja por su tamaño.",
+   "highlight": [
+    "Uno contra uno"
+   ],
+   "drift": 0.0,
+   "start": 150.4,
+   "end": 156.314,
+   "duration": 5.914
+  },
+  {
+   "id": "s7l2",
+   "scene": 7,
+   "at": 156.81,
+   "text": "Pero en grupo, el número y la coordinación de las hormigas rojas pueden cambiarlo todo.",
+   "highlight": [
+    "en grupo"
+   ],
+   "drift": 0.0,
+   "start": 156.81,
+   "end": 162.425,
+   "duration": 5.615
+  },
+  {
+   "id": "s7l3",
+   "scene": 7,
+   "at": 162.95,
+   "text": "No existe un vencedor universal: depende de las especies, el tamaño, el número y las circunstancias.",
+   "highlight": [
+    "vencedor universal"
+   ],
+   "drift": 0.0,
+   "start": 162.95,
+   "end": 169.895,
+   "duration": 6.945
+  },
+  {
+   "id": "s7l4",
+   "scene": 7,
+   "at": 170.4,
+   "text": "¿Acertaste? Elige la próxima batalla: ¿escorpión contra tarántula, o avispa contra mantis religiosa?",
+   "highlight": [
+    "escorpión contra tarántula",
+    "avispa contra mantis"
+   ],
+   "drift": 0.0,
+   "start": 170.4,
+   "end": 177.146,
+   "duration": 6.746
+  }
+ ]
+}

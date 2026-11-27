@@ -41,9 +41,12 @@ import {LeopardSheet} from './episodes/ep09-leopardo/characters/LeopardSheet';
 import {PumaViews} from './episodes/puma-cazador-silencioso/tests/PumaViews';
 import {CamaleonFicha} from './episodes/camaleon-maestro-transformacion/components/Ficha';
 import {OrcaFicha} from './episodes/orca-reina-oceanos/components/Ficha';
+import {HormigasPreview} from './episodes/batalla-hormigas/components/Preview';
+import {HormigasDocumentary, HORMIGAS_AUDIO, HormigasDocProps} from './episodes/batalla-hormigas/Documentary';
 import {NarvalFicha} from './episodes/narval-unicornio-oceano/components/Ficha';
 import {FosaFicha} from './episodes/fosa-marianas/components/Ficha';
 import {TiburonFicha} from './episodes/tiburon-blanco/components/Ficha';
+import {HormigasFicha} from './episodes/batalla-hormigas/components/Ficha';
 import {Battle01, Battle01Episode, battleAudio, BattleProps} from './episodes/batalla-orca-tiburon/Battle01';
 import {TiburonPreview} from './episodes/tiburon-blanco/components/Preview';
 import {TiburonDocumentary, TIB_AUDIO, TibDocProps} from './episodes/tiburon-blanco/Documentary';
@@ -290,10 +293,13 @@ export const RemotionRoot: React.FC = () => (
     {[1, 2, 3, 4].map((n) => (
       <Composition key={n} id={`Battle01Episode0${n}`} component={Battle01Episode as React.FC<BattleProps & {n: number}>} durationInFrames={1050} fps={30} width={1080} height={1920} defaultProps={{quality: 'final', showSubtitles: true, audio: battleAudio('episodios'), variant: 'episodios', n} as BattleProps & {n: number}} />
     ))}
+    <Composition id="HormigasFicha" component={HormigasFicha} durationInFrames={300} fps={30} width={1080} height={1920} />
     <Composition id="TiburonFicha" component={TiburonFicha} durationInFrames={300} fps={30} width={1080} height={1920} />
     <Composition id="EP-Fosa" component={FosaDocumentary as React.FC<FosaProps>} durationInFrames={18000} fps={30} width={1920} height={1080} defaultProps={{quality: 'final', showSubtitles: true, audio: FOSA_AUDIO} as FosaProps} />
     <Composition id="FosaPreview" component={FosaPreview} durationInFrames={18000} fps={30} width={1920} height={1080} />
     <Composition id="FosaFicha" component={FosaFicha} durationInFrames={300} fps={30} width={1920} height={1080} />
+    <Composition id="EP-Hormigas" component={HormigasDocumentary as React.FC<HormigasDocProps>} durationInFrames={5400} fps={30} width={1080} height={1920} defaultProps={{quality: 'final', showSubtitles: true, audio: HORMIGAS_AUDIO} as HormigasDocProps} />
+    <Composition id="HormigasPreview" component={HormigasPreview as React.FC<{n: number}>} durationInFrames={5400} fps={30} width={1080} height={1920} defaultProps={{n: 0}} />
     <Composition id="EP-Narval" component={NarvalDocumentary as React.FC<NarvalDocProps>} durationInFrames={5400} fps={30} width={1080} height={1920} defaultProps={{quality: 'final', showSubtitles: true, audio: NARVAL_AUDIO} as NarvalDocProps} />
     <Composition id="NarvalPreview" component={NarvalPreview as React.FC<{n: number}>} durationInFrames={5400} fps={30} width={1080} height={1920} defaultProps={{n: 0}} />
     <Composition id="NarvalFicha" component={NarvalFicha} durationInFrames={300} fps={30} width={1080} height={1920} />
