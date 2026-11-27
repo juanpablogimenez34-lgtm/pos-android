@@ -218,7 +218,7 @@ export function scene3(t: number): SceneOut {
     <>
       <Brand />
       <Tag k={win(t, 45.4, 49.8, 0.4)} text="MONTÍCULO Y TÚNELES · CORTE ILUSTRADO" top={250} color="#ffe2b0" />
-      <Keyword k={win(t, 51, 54, 0.4)} text="VENENO" color="#ff9a6a" top={1460} />
+      <Keyword k={win(t, 51, 54, 0.4)} text="VENENO" color="#ff9a6a" top={395} />
       <Tag k={win(t, 61, 64.4, 0.4)} text="ANTENAS Y SEÑALES QUÍMICAS (REPRESENTACIÓN)" top={250} color="#ffe2b0" />
       <Keyword k={win(t, 61.4, 63.8, 0.4)} text="COMUNICACIÓN" />
       <Tag k={win(t, 64.6, 69.4, 0.4)} text="CRÍA: HUEVOS, LARVAS Y PUPAS · REINA" top={250} color="#ffe9c8" />
