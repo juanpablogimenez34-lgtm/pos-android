@@ -1,0 +1,77 @@
+{
+  "composition": "EP-Hormigas",
+  "quality": "final",
+  "scale": 1,
+  "crf": "20",
+  "concurrency": 4,
+  "segmentSeconds": 30,
+  "segments": [
+    {
+      "start": 0,
+      "end": 899,
+      "secs": 84.6,
+      "peakMB": 3982,
+      "reused": true
+    },
+    {
+      "start": 900,
+      "end": 1799,
+      "secs": 60.6,
+      "peakMB": 3769
+    },
+    {
+      "start": 1800,
+      "end": 2699,
+      "secs": 57.1,
+      "peakMB": 3212,
+      "reused": true
+    },
+    {
+      "start": 2700,
+      "end": 3599,
+      "secs": 67.9,
+      "peakMB": 3199,
+      "reused": true
+    },
+    {
+      "start": 3600,
+      "end": 4499,
+      "secs": 62.3,
+      "peakMB": 3338,
+      "reused": true
+    },
+    {
+      "start": 4500,
+      "end": 5399,
+      "secs": 60.6,
+      "peakMB": 3218,
+      "reused": true
+    }
+  ],
+  "startedAt": "2026-11-27T10:08:32.048Z",
+  "audio": {
+    "secs": 84.7,
+    "peakMB": 2410,
+    "reused": true
+  },
+  "loudness": {
+    "inputLUFS": -16.53,
+    "inputTruePeak": -2.32,
+    "targetLUFS": -14
+  },
+  "wallSecondsThisRun": 79,
+  "totalSeconds": 477.8,
+  "peakRssMB": 3982,
+  "output": {
+    "file": "out/hormiga-negra-vs-hormiga-roja-180s-1080x1920.mp4",
+    "sizeMB": 56.74,
+    "width": 1080,
+    "height": 1920,
+    "fps": "30/1",
+    "videoFrames": 5400,
+    "durationSec": 180,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "framesOk": true
+}

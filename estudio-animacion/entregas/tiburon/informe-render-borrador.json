@@ -1,0 +1,71 @@
+{
+  "composition": "EP-TiburonBlanco",
+  "quality": "draft",
+  "scale": 0.5,
+  "crf": "24",
+  "concurrency": 4,
+  "segmentSeconds": 30,
+  "segments": [
+    {
+      "start": 0,
+      "end": 899,
+      "secs": 37.9,
+      "peakMB": 3252
+    },
+    {
+      "start": 900,
+      "end": 1799,
+      "secs": 53,
+      "peakMB": 2993
+    },
+    {
+      "start": 1800,
+      "end": 2699,
+      "secs": 47.8,
+      "peakMB": 3248
+    },
+    {
+      "start": 2700,
+      "end": 3599,
+      "secs": 38.5,
+      "peakMB": 3117
+    },
+    {
+      "start": 3600,
+      "end": 4499,
+      "secs": 50.6,
+      "peakMB": 3147
+    },
+    {
+      "start": 4500,
+      "end": 5399,
+      "secs": 41.5,
+      "peakMB": 3095
+    }
+  ],
+  "startedAt": "2026-11-26T20:45:42.861Z",
+  "audio": {
+    "secs": 175.8,
+    "peakMB": 3431
+  },
+  "loudness": {
+    "inputLUFS": -16.81,
+    "inputTruePeak": -1.98,
+    "targetLUFS": -14
+  },
+  "wallSecondsThisRun": 462.7,
+  "totalSeconds": 445.1,
+  "peakRssMB": 3431,
+  "output": {
+    "file": "out/tiburon-borrador-540x960.mp4",
+    "sizeMB": 14.25,
+    "width": 540,
+    "height": 960,
+    "fps": "30/1",
+    "videoFrames": 5400,
+    "durationSec": 180,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "framesOk": true
+}

@@ -1,0 +1,172 @@
+1
+00:00:00,300 --> 00:00:03,315
+¿Qué pasaría si estos dos
+gigantes del océano se
+
+2
+00:00:03,315 --> 00:00:04,319
+enfrentaran?
+
+3
+00:00:04,600 --> 00:00:08,537
+El tiburón blanco tiene dientes
+diseñados para cortar. La orca
+
+4
+00:00:08,537 --> 00:00:12,601
+combina una enorme fuerza física
+con extraordinarias capacidades
+
+5
+00:00:12,601 --> 00:00:13,550
+cognitivas.
+
+6
+00:00:13,730 --> 00:00:17,879
+Aquí, la orca tiene ventaja de
+tamaño. Pero el tiburón posee
+
+7
+00:00:17,879 --> 00:00:21,863
+una poderosa mandíbula y una
+sorprendente aceleración.
+
+8
+00:00:22,500 --> 00:00:26,187
+Los dos se aproximan. Antes del
+primer movimiento, tienes que
+
+9
+00:00:26,187 --> 00:00:26,921
+decidir.
+
+10
+00:00:29,500 --> 00:00:32,748
+¿Quién dará el primer paso?
+Observa con atención.
+
+11
+00:00:35,300 --> 00:00:37,598
+¡El tiburón blanco ataca
+primero!
+
+12
+00:00:38,300 --> 00:00:42,323
+Su cuerpo hidrodinámico le
+permite acelerar rápidamente, y
+
+13
+00:00:42,323 --> 00:00:44,932
+sus dientes son una seria
+amenaza.
+
+14
+00:00:46,500 --> 00:00:49,832
+Pero la orca no se queda
+inmóvil: con sus aletas y su
+
+15
+00:00:49,832 --> 00:00:53,477
+poderosa cola cambia de
+trayectoria y evita el choque.
+
+16
+00:00:56,500 --> 00:01:00,480
+El tiburón conserva su capacidad
+de ataque, pero la orca tiene
+
+17
+00:01:00,480 --> 00:01:03,169
+una ventaja que podría cambiarlo
+todo.
+
+18
+00:01:04,500 --> 00:01:08,433
+¿Bastaría una sola mordida? La
+orca prepara su estrategia.
+
+19
+00:01:10,300 --> 00:01:14,198
+La orca tiene una ventaja que el
+tiburón no puede ignorar.
+
+20
+00:01:14,350 --> 00:01:18,039
+Es muy inteligente, y usa la
+ecolocalización para obtener
+
+21
+00:01:18,039 --> 00:01:20,296
+información de lo que la rodea.
+
+22
+00:01:22,000 --> 00:01:25,637
+Algunos tiburones pueden quedar
+inmóviles temporalmente en
+
+23
+00:01:25,637 --> 00:01:28,897
+ciertas posiciones. Y se han
+observado orcas cazando
+
+24
+00:01:28,897 --> 00:01:30,276
+tiburones blancos.
+
+25
+00:01:32,000 --> 00:01:35,820
+Llega el momento decisivo: la
+potencia del tiburón contra la
+
+26
+00:01:35,820 --> 00:01:38,617
+mayor masa y maniobrabilidad de
+la orca.
+
+27
+00:01:40,000 --> 00:01:43,051
+Los dos aceleran. El choque es
+inevitable.
+
+28
+00:01:45,300 --> 00:01:47,899
+¡Llegó el momento de descubrir
+al vencedor!
+
+29
+00:01:49,140 --> 00:01:53,297
+La orca embiste con su enorme
+masa y desvía al tiburón.
+
+30
+00:01:54,640 --> 00:01:58,421
+En nuestra simulación, el
+tiburón se retira. La mayor masa
+
+31
+00:01:58,421 --> 00:02:02,203
+de la orca y su maniobrabilidad
+inclinan el resultado a su
+
+32
+00:02:02,203 --> 00:02:02,844
+favor.
+
+33
+00:02:04,130 --> 00:02:08,345
+Existen casos reales de orcas
+cazando tiburones blancos. Cada
+
+34
+00:02:08,345 --> 00:02:12,326
+encuentro es distinto, pero la
+orca sería la favorita.
+
+35
+00:02:13,470 --> 00:02:17,592
+¿Acertaste? Elige la próxima
+batalla: ¿león contra tigre, o
+
+36
+00:02:17,592 --> 00:02:19,658
+cocodrilo contra anaconda?

@@ -1,0 +1,30 @@
+{
+  "name": "mundo-insolito-studio-3",
+  "version": "3.0.0",
+  "private": true,
+  "description": "Mundo Insólito Studio 3.0 — personajes volumétricos 3D procedurales (Three.js + React Three Fiber) compuestos con Remotion",
+  "scripts": {
+    "studio": "remotion studio src/index.ts",
+    "typecheck": "tsc --noEmit",
+    "sheet": "node scripts/model-sheet.mjs",
+    "turntable": "node scripts/render.mjs --comp Turntable --frames 300 --out entregas/character-turntable-10s.mp4",
+    "motion": "node scripts/render.mjs --comp MotionTest --frames 300 --out entregas/character-motion-test-10s.mp4",
+    "cinematic": "node scripts/render.mjs --comp CinematicTest --frames 450 --out entregas/cinematic-quality-test-15s.mp4"
+  },
+  "dependencies": {
+    "@react-three/fiber": "8.17.10",
+    "@remotion/bundler": "4.0.545",
+    "@remotion/cli": "4.0.545",
+    "@remotion/renderer": "4.0.545",
+    "@remotion/three": "4.0.545",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "remotion": "4.0.545",
+    "three": "0.169.0"
+  },
+  "devDependencies": {
+    "@types/react": "18.3.12",
+    "@types/three": "0.169.0",
+    "typescript": "5.6.3"
+  }
+}

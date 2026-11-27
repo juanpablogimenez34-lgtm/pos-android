@@ -1,0 +1,12 @@
+{
+  "composition": "Ep01Demo",
+  "output": "out/ep01-demo.mp4",
+  "flags": [
+    "--codec=h264",
+    "--crf=20",
+    "--concurrency=4"
+  ],
+  "renderSeconds": 68.1,
+  "peakRssMB": 3684,
+  "fileMB": 11.05
+}

@@ -1,0 +1,232 @@
+{
+ "episode": "ep07-pez-remo",
+ "durationSec": 180,
+ "voice": {
+  "engine": "piper",
+  "model": "es_MX-claude-high",
+  "lengthScale": 1.02,
+  "noiseScale": 0.62,
+  "noiseW": 0.55
+ },
+ "lines": [
+  {
+   "id": "r011",
+   "scene": 1,
+   "at": 0.6,
+   "text": "¡Parece un dragón marino… pero existe de verdad!",
+   "highlight": [
+    "dragón marino"
+   ]
+  },
+  {
+   "id": "r012",
+   "scene": 1,
+   "at": 4.2,
+   "text": "En las profundidades del océano habita una criatura tan extraña que, durante siglos, pudo alimentar historias sobre serpientes gigantes.",
+   "highlight": [
+    "serpientes gigantes"
+   ]
+  },
+  {
+   "id": "r021",
+   "scene": 2,
+   "at": 15.5,
+   "text": "Se llama pez remo gigante. Su nombre científico es Regalecus glesne, y es uno de los peces óseos más largos que conocemos.",
+   "highlight": [
+    "pez remo gigante",
+    "Regalecus glesne"
+   ]
+  },
+  {
+   "id": "r022",
+   "scene": 2,
+   "at": 25.6,
+   "text": "Su apariencia parece sacada de una leyenda.",
+   "highlight": [
+    "leyenda"
+   ]
+  },
+  {
+   "id": "r031",
+   "scene": 3,
+   "at": 30.5,
+   "text": "Se han documentado ejemplares de varios metros de longitud.",
+   "highlight": [
+    "varios metros"
+   ]
+  },
+  {
+   "id": "r032",
+   "scene": 3,
+   "at": 34.6,
+   "text": "Su cuerpo es tan delgado y alargado que parece una cinta plateada flotando en el agua.",
+   "highlight": [
+    "cinta plateada"
+   ]
+  },
+  {
+   "id": "r041",
+   "scene": 4,
+   "at": 45.5,
+   "text": "Habita principalmente aguas oceánicas profundas, donde la luz disminuye y los encuentros con seres humanos son poco frecuentes.",
+   "highlight": [
+    "aguas oceánicas profundas"
+   ]
+  },
+  {
+   "id": "r042",
+   "scene": 4,
+   "at": 53.6,
+   "text": "Por eso, gran parte de su vida sigue siendo difícil de observar.",
+   "highlight": [
+    "difícil de observar"
+   ]
+  },
+  {
+   "id": "r051",
+   "scene": 5,
+   "at": 60.5,
+   "text": "Pero lo más sorprendente es cómo se mueve.",
+   "highlight": [
+    "cómo se mueve"
+   ]
+  },
+  {
+   "id": "r052",
+   "scene": 5,
+   "at": 63.6,
+   "text": "En lugar de nadar como muchos otros peces, puede desplazarse mediante ondas que recorren su larguísima aleta dorsal.",
+   "highlight": [
+    "ondas",
+    "aleta dorsal"
+   ]
+  },
+  {
+   "id": "r061",
+   "scene": 6,
+   "at": 75.5,
+   "text": "Aunque su aspecto parece intimidante, no es un monstruo que persigue grandes presas.",
+   "highlight": [
+    "no es un monstruo"
+   ]
+  },
+  {
+   "id": "r062",
+   "scene": 6,
+   "at": 81.4,
+   "text": "Su alimentación incluye pequeños organismos marinos, como el kril y otros crustáceos.",
+   "highlight": [
+    "kril"
+   ]
+  },
+  {
+   "id": "r071",
+   "scene": 7,
+   "at": 90.5,
+   "text": "Imagina encontrar una criatura así en medio del mar.",
+   "highlight": [
+    "Imagina"
+   ]
+  },
+  {
+   "id": "r072",
+   "scene": 7,
+   "at": 94.4,
+   "text": "No resulta extraño que animales de apariencia semejante hayan sido relacionados con las antiguas historias de serpientes marinas.",
+   "highlight": [
+    "serpientes marinas"
+   ]
+  },
+  {
+   "id": "r081",
+   "scene": 8,
+   "at": 105.5,
+   "text": "En Japón, el pez remo también aparece asociado a creencias sobre terremotos.",
+   "highlight": [
+    "terremotos"
+   ]
+  },
+  {
+   "id": "r082",
+   "scene": 8,
+   "at": 111.0,
+   "text": "Algunas historias afirman que verlo cerca de la superficie podría anunciar un desastre.",
+   "highlight": [
+    "historias"
+   ]
+  },
+  {
+   "id": "r091",
+   "scene": 9,
+   "at": 120.5,
+   "text": "Pero la ciencia no ha encontrado pruebas sólidas de que estos peces puedan predecir terremotos.",
+   "highlight": [
+    "ciencia",
+    "pruebas sólidas"
+   ]
+  },
+  {
+   "id": "r092",
+   "scene": 9,
+   "at": 126.8,
+   "text": "Un estudio con registros de Japón no halló relación entre sus apariciones y los sismos.",
+   "highlight": [
+    "no halló relación"
+   ]
+  },
+  {
+   "id": "r101",
+   "scene": 10,
+   "at": 135.5,
+   "text": "Encontrarlo vivo en su ambiente natural es una oportunidad poco común.",
+   "highlight": [
+    "poco común"
+   ]
+  },
+  {
+   "id": "r102",
+   "scene": 10,
+   "at": 140.2,
+   "text": "En algunas grabaciones con vehículos submarinos se lo ha visto nadar casi en vertical. Cada observación nos ayuda a comprenderlo mejor.",
+   "highlight": [
+    "casi en vertical"
+   ]
+  },
+  {
+   "id": "r111",
+   "scene": 11,
+   "at": 150.5,
+   "text": "Lo verdaderamente extraordinario no es ninguna leyenda.",
+   "highlight": [
+    "no es ninguna leyenda"
+   ]
+  },
+  {
+   "id": "r112",
+   "scene": 11,
+   "at": 154.4,
+   "text": "Es que nuestro planeta alberga animales tan sorprendentes que todavía parecen criaturas de otro mundo.",
+   "highlight": [
+    "otro mundo"
+   ]
+  },
+  {
+   "id": "r121",
+   "scene": 12,
+   "at": 165.5,
+   "text": "Y mientras exploramos apenas una parte del inmenso océano, criaturas como el pez remo nos recuerdan cuánto queda por descubrir.",
+   "highlight": [
+    "cuánto queda por descubrir"
+   ]
+  },
+  {
+   "id": "r122",
+   "scene": 12,
+   "at": 174.2,
+   "text": "¿Qué otro misterio se esconde en las profundidades?",
+   "highlight": [
+    "misterio"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,96 @@
+{
+ "voice": {
+  "engine": "piper",
+  "model": "es_MX-claude-high",
+  "lengthScale": 0.95,
+  "noiseScale": 0.62,
+  "noiseW": 0.55
+ },
+ "durationSec": 60,
+ "lines": [
+  {
+   "id": "d0100",
+   "scene": 1,
+   "at": 0.15,
+   "text": "¡Existe un delfín rosado que nada entre los árboles de la selva!",
+   "highlight": [
+    "delfín rosado"
+   ]
+  },
+  {
+   "id": "d0200",
+   "scene": 2,
+   "at": 5.0,
+   "text": "Vive en ríos de Sudamérica y, cuando el Amazonas se desborda, explora auténticos bosques sumergidos.",
+   "highlight": [
+    "Amazonas",
+    "bosques sumergidos"
+   ]
+  },
+  {
+   "id": "d0300",
+   "scene": 3,
+   "at": 12.0,
+   "text": "Al nacer suele ser gris.",
+   "highlight": []
+  },
+  {
+   "id": "d0301",
+   "scene": 3,
+   "at": 14.2,
+   "text": "Al crecer, muchos ejemplares adquieren tonos rosados, relacionados con la edad, la pigmentación y las cicatrices.",
+   "highlight": [
+    "tonos rosados"
+   ]
+  },
+  {
+   "id": "d0400",
+   "scene": 4,
+   "at": 22.1,
+   "text": "A diferencia de muchos delfines oceánicos, tiene un cuello muy flexible: puede mover la cabeza y maniobrar entre raíces sumergidas.",
+   "highlight": [
+    "cuello muy flexible"
+   ]
+  },
+  {
+   "id": "d0500",
+   "scene": 5,
+   "at": 32.1,
+   "text": "En aguas turbias, sus ojos no bastan.",
+   "highlight": []
+  },
+  {
+   "id": "d0501",
+   "scene": 5,
+   "at": 34.6,
+   "text": "Usa la ecolocalización: emite sonidos y analiza sus ecos para detectar obstáculos y localizar peces.",
+   "highlight": [
+    "ecolocalización"
+   ]
+  },
+  {
+   "id": "d0600",
+   "scene": 6,
+   "at": 42.4,
+   "text": "Su largo hocico y su gran movilidad le permiten buscar alimento donde otros grandes animales tendrían dificultades para entrar.",
+   "highlight": []
+  },
+  {
+   "id": "d0700",
+   "scene": 7,
+   "at": 51.1,
+   "text": "Un mamífero de agua dulce que parece de leyenda, pero existe.",
+   "highlight": []
+  },
+  {
+   "id": "d0800",
+   "scene": 8,
+   "at": 56.0,
+   "text": "¿Sabías que existía un delfín rosado en el Amazonas?",
+   "highlight": [
+    "delfín rosado",
+    "Amazonas"
+   ]
+  }
+ ]
+}

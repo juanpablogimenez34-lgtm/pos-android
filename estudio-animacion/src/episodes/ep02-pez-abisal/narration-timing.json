@@ -1,0 +1,459 @@
+{
+ "voice": {
+  "engine": "piper",
+  "model": "es_MX-claude-high",
+  "lengthScale": 1.08,
+  "noiseScale": 0.6,
+  "noiseW": 0.5
+ },
+ "lines": 35,
+ "speechSeconds": 151.01,
+ "coverage": 0.839,
+ "problems": [],
+ "timing": [
+  {
+   "id": "a1",
+   "scene": 1,
+   "at": 0.8,
+   "text": "Imagina descender cientos de metros bajo la superficie del océano.",
+   "highlight": [
+    "cientos de metros"
+   ],
+   "drift": 0.0,
+   "start": 0.8,
+   "end": 4.755,
+   "duration": 3.955
+  },
+  {
+   "id": "a2",
+   "scene": 1,
+   "at": 5.8,
+   "text": "La luz del sol se desvanece. Por debajo de los mil metros, ya no llega nada.",
+   "highlight": [
+    "mil metros"
+   ],
+   "drift": 0.0,
+   "start": 5.8,
+   "end": 11.1,
+   "duration": 5.3
+  },
+  {
+   "id": "a3",
+   "scene": 1,
+   "at": 11.2,
+   "text": "El agua es fría y oscura. Solo cae, lentamente, la nieve marina.",
+   "highlight": [
+    "nieve marina"
+   ],
+   "drift": 0.15,
+   "start": 11.35,
+   "end": 16.921,
+   "duration": 5.571
+  },
+  {
+   "id": "a4",
+   "scene": 1,
+   "at": 16.4,
+   "text": "Pero aquí abajo vive una criatura sorprendente.",
+   "highlight": [
+    "criatura sorprendente"
+   ],
+   "drift": 0.771,
+   "start": 17.171,
+   "end": 21.244,
+   "duration": 4.073
+  },
+  {
+   "id": "b1",
+   "scene": 2,
+   "at": 21.2,
+   "text": "En medio de la oscuridad aparece una luz diminuta.",
+   "highlight": [
+    "luz diminuta"
+   ],
+   "drift": 0.294,
+   "start": 21.494,
+   "end": 24.526,
+   "duration": 3.032
+  },
+  {
+   "id": "b2",
+   "scene": 2,
+   "at": 25.0,
+   "text": "Se mueve lentamente, como si invitara a acercarse.",
+   "highlight": [],
+   "drift": 0.0,
+   "start": 25.0,
+   "end": 28.506,
+   "duration": 3.506
+  },
+  {
+   "id": "b3",
+   "scene": 2,
+   "at": 29.0,
+   "text": "No es una estrella, ni una lámpara perdida en el fondo del mar.",
+   "highlight": [],
+   "drift": 0.0,
+   "start": 29.0,
+   "end": 33.649,
+   "duration": 4.649
+  },
+  {
+   "id": "b4",
+   "scene": 2,
+   "at": 34.2,
+   "text": "Es parte de un animal.",
+   "highlight": [
+    "animal"
+   ],
+   "drift": 0.0,
+   "start": 34.2,
+   "end": 35.702,
+   "duration": 1.502
+  },
+  {
+   "id": "b5",
+   "scene": 2,
+   "at": 37.4,
+   "text": "Y detrás de ese pequeño brillo, se esconde una boca llena de dientes.",
+   "highlight": [
+    "dientes"
+   ],
+   "drift": 0.0,
+   "start": 37.4,
+   "end": 41.675,
+   "duration": 4.275
+  },
+  {
+   "id": "c1",
+   "scene": 3,
+   "at": 45.8,
+   "text": "Es una hembra de rape abisal, de la especie Linophryne arborifera.",
+   "highlight": [
+    "rape abisal"
+   ],
+   "drift": 0.0,
+   "start": 45.8,
+   "end": 50.397,
+   "duration": 4.597
+  },
+  {
+   "id": "c2",
+   "scene": 3,
+   "at": 50.6,
+   "text": "Los rapes de aguas profundas forman un grupo de más de un centenar de especies.",
+   "highlight": [
+    "más de un centenar"
+   ],
+   "drift": 0.047,
+   "start": 50.647,
+   "end": 55.36,
+   "duration": 4.713
+  },
+  {
+   "id": "c3",
+   "scene": 3,
+   "at": 55.8,
+   "text": "Sus dientes, largos y curvados, se inclinan hacia el interior de la boca, para que la presa no pueda escapar.",
+   "highlight": [
+    "hacia el interior"
+   ],
+   "drift": 0.0,
+   "start": 55.8,
+   "end": 63.064,
+   "duration": 7.264
+  },
+  {
+   "id": "c4",
+   "scene": 3,
+   "at": 62.4,
+   "text": "Sus ojos son diminutos.",
+   "highlight": [
+    "diminutos"
+   ],
+   "drift": 0.914,
+   "start": 63.314,
+   "end": 65.006,
+   "duration": 1.692
+  },
+  {
+   "id": "c5",
+   "scene": 3,
+   "at": 64.6,
+   "text": "Y sobre la cabeza lleva una caña: una espina de su aleta dorsal, transformada en señuelo.",
+   "highlight": [
+    "señuelo"
+   ],
+   "drift": 0.656,
+   "start": 65.256,
+   "end": 71.356,
+   "duration": 6.1
+  },
+  {
+   "id": "d1",
+   "scene": 4,
+   "at": 71.0,
+   "text": "En la punta brilla la esca. Su luz la producen bacterias que viven en su interior.",
+   "highlight": [
+    "esca",
+    "bacterias"
+   ],
+   "drift": 0.606,
+   "start": 71.606,
+   "end": 77.238,
+   "duration": 5.632
+  },
+  {
+   "id": "d2",
+   "scene": 4,
+   "at": 77.2,
+   "text": "En lugar de perseguir a sus presas, este depredador aprovecha la oscuridad: espera, y mueve su señuelo.",
+   "highlight": [
+    "espera"
+   ],
+   "drift": 0.288,
+   "start": 77.488,
+   "end": 84.582,
+   "duration": 7.094
+  },
+  {
+   "id": "d3",
+   "scene": 4,
+   "at": 84.6,
+   "text": "Para un pequeño pez linterna, ese brillo puede parecer alimento.",
+   "highlight": [
+    "pez linterna"
+   ],
+   "drift": 0.232,
+   "start": 84.832,
+   "end": 89.163,
+   "duration": 4.331
+  },
+  {
+   "id": "d4",
+   "scene": 4,
+   "at": 89.6,
+   "text": "La luz parece inofensiva. Pero forma parte de una trampa.",
+   "highlight": [
+    "trampa"
+   ],
+   "drift": 0.0,
+   "start": 89.6,
+   "end": 93.644,
+   "duration": 4.044
+  },
+  {
+   "id": "e1",
+   "scene": 5,
+   "at": 95.8,
+   "text": "La presa se acerca un poco más.",
+   "highlight": [],
+   "drift": 0.0,
+   "start": 95.8,
+   "end": 98.114,
+   "duration": 2.314
+  },
+  {
+   "id": "e2",
+   "scene": 5,
+   "at": 99.6,
+   "text": "Bajo la mandíbula, esta especie tiene además una barbilla ramificada que también brilla.",
+   "highlight": [
+    "barbilla ramificada"
+   ],
+   "drift": 0.0,
+   "start": 99.6,
+   "end": 106.023,
+   "duration": 6.423
+  },
+  {
+   "id": "e3",
+   "scene": 5,
+   "at": 105.6,
+   "text": "Cuando la presa está lo bastante cerca…",
+   "highlight": [],
+   "drift": 0.673,
+   "start": 106.273,
+   "end": 108.51,
+   "duration": 2.237
+  },
+  {
+   "id": "e4",
+   "scene": 5,
+   "at": 109.6,
+   "text": "abre su enorme boca y la captura en una fracción de segundo.",
+   "highlight": [
+    "fracción de segundo"
+   ],
+   "drift": 0.0,
+   "start": 109.6,
+   "end": 113.627,
+   "duration": 4.027
+  },
+  {
+   "id": "e5",
+   "scene": 5,
+   "at": 114.0,
+   "text": "Su estómago puede estirarse. En la oscuridad, cada presa cuenta.",
+   "highlight": [
+    "estirarse"
+   ],
+   "drift": 0.0,
+   "start": 114.0,
+   "end": 118.667,
+   "duration": 4.667
+  },
+  {
+   "id": "f1",
+   "scene": 6,
+   "at": 120.6,
+   "text": "Pero su reproducción es aún más extraordinaria.",
+   "highlight": [
+    "reproducción"
+   ],
+   "drift": 0.0,
+   "start": 120.6,
+   "end": 123.625,
+   "duration": 3.025
+  },
+  {
+   "id": "f2",
+   "scene": 6,
+   "at": 123.6,
+   "text": "En esta especie, los machos son mucho más pequeños que las hembras, y no tienen señuelo.",
+   "highlight": [
+    "mucho más pequeños"
+   ],
+   "drift": 0.275,
+   "start": 123.875,
+   "end": 130.026,
+   "duration": 6.151
+  },
+  {
+   "id": "f3",
+   "scene": 6,
+   "at": 129.6,
+   "text": "Con su gran olfato, el macho busca a una hembra en la inmensa oscuridad.",
+   "highlight": [
+    "olfato"
+   ],
+   "drift": 0.676,
+   "start": 130.276,
+   "end": 135.369,
+   "duration": 5.093
+  },
+  {
+   "id": "f4",
+   "scene": 6,
+   "at": 136.8,
+   "text": "Cuando la encuentra, se aferra a ella con la boca… y ya no la suelta.",
+   "highlight": [
+    "ya no la suelta"
+   ],
+   "drift": 0.0,
+   "start": 136.8,
+   "end": 140.908,
+   "duration": 4.108
+  },
+  {
+   "id": "f5",
+   "scene": 6,
+   "at": 140.4,
+   "text": "Sus tejidos se fusionan, y llegan a compartir la circulación sanguínea.",
+   "highlight": [
+    "se fusionan"
+   ],
+   "drift": 0.758,
+   "start": 141.158,
+   "end": 145.632,
+   "duration": 4.474
+  },
+  {
+   "id": "f6",
+   "scene": 6,
+   "at": 146.2,
+   "text": "Este parasitismo sexual ocurre solo en algunas especies de rape abisal.",
+   "highlight": [
+    "solo en algunas especies"
+   ],
+   "drift": 0.0,
+   "start": 146.2,
+   "end": 151.192,
+   "duration": 4.992
+  },
+  {
+   "id": "g1",
+   "scene": 7,
+   "at": 151.0,
+   "text": "Una luz en la oscuridad.",
+   "highlight": [],
+   "drift": 0.442,
+   "start": 151.442,
+   "end": 153.031,
+   "duration": 1.589
+  },
+  {
+   "id": "g2",
+   "scene": 7,
+   "at": 153.6,
+   "text": "Una boca diseñada para no dejar escapar oportunidades.",
+   "highlight": [],
+   "drift": 0.0,
+   "start": 153.6,
+   "end": 157.042,
+   "duration": 3.442
+  },
+  {
+   "id": "g3",
+   "scene": 7,
+   "at": 157.8,
+   "text": "Y una forma de reproducción que parece ciencia ficción.",
+   "highlight": [
+    "ciencia ficción"
+   ],
+   "drift": 0.0,
+   "start": 157.8,
+   "end": 161.191,
+   "duration": 3.391
+  },
+  {
+   "id": "g4",
+   "scene": 7,
+   "at": 162.0,
+   "text": "Aunque parece un monstruo, esta hembra mide apenas unos centímetros.",
+   "highlight": [
+    "unos centímetros"
+   ],
+   "drift": 0.0,
+   "start": 162.0,
+   "end": 166.792,
+   "duration": 4.792
+  },
+  {
+   "id": "g5",
+   "scene": 7,
+   "at": 166.6,
+   "text": "El océano profundo es uno de los ambientes más extensos del planeta, y uno de los menos explorados.",
+   "highlight": [
+    "menos explorados"
+   ],
+   "drift": 0.442,
+   "start": 167.042,
+   "end": 173.51,
+   "duration": 6.468
+  },
+  {
+   "id": "g6",
+   "scene": 7,
+   "at": 173.0,
+   "text": "¿Qué otro secreto se esconde allá abajo?",
+   "highlight": [
+    "secreto"
+   ],
+   "drift": 0.76,
+   "start": 173.76,
+   "end": 176.251,
+   "duration": 2.491
+  }
+ ]
+}

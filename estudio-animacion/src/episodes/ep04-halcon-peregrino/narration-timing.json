@@ -1,0 +1,440 @@
+{
+ "voice": {
+  "engine": "piper",
+  "model": "es_MX-claude-high",
+  "lengthScale": 1.03,
+  "noiseScale": 0.62,
+  "noiseW": 0.5
+ },
+ "lines": 33,
+ "speechSeconds": 152.04,
+ "coverage": 0.845,
+ "problems": [],
+ "timing": [
+  {
+   "id": "a1",
+   "scene": 1,
+   "at": 0.9,
+   "text": "En lo alto del cielo, un cazador observa el mundo desde las alturas.",
+   "highlight": [
+    "cazador"
+   ],
+   "drift": 0.0,
+   "start": 0.9,
+   "end": 5.174,
+   "duration": 4.274
+  },
+  {
+   "id": "a2",
+   "scene": 1,
+   "at": 5.6,
+   "text": "Parece tranquilo, casi inmóvil.",
+   "highlight": [],
+   "drift": 0.0,
+   "start": 5.6,
+   "end": 8.092,
+   "duration": 2.492
+  },
+  {
+   "id": "a3",
+   "scene": 1,
+   "at": 8.8,
+   "text": "Pero cuando descubre una presa y se lanza en picada, se convierte en el animal más rápido del planeta.",
+   "highlight": [
+    "el animal más rápido"
+   ],
+   "drift": 0.0,
+   "start": 8.8,
+   "end": 15.795,
+   "duration": 6.995
+  },
+  {
+   "id": "a4",
+   "scene": 1,
+   "at": 15.6,
+   "text": "Su arma más extraordinaria no son sus garras: es su velocidad.",
+   "highlight": [
+    "velocidad"
+   ],
+   "drift": 0.445,
+   "start": 16.045,
+   "end": 20.144,
+   "duration": 4.099
+  },
+  {
+   "id": "b1",
+   "scene": 2,
+   "at": 20.8,
+   "text": "Es el halcón peregrino.",
+   "highlight": [
+    "halcón peregrino"
+   ],
+   "drift": 0.0,
+   "start": 20.8,
+   "end": 22.254,
+   "duration": 1.454
+  },
+  {
+   "id": "b2",
+   "scene": 2,
+   "at": 23.0,
+   "text": "Vive en todos los continentes salvo la Antártida, de los acantilados a los rascacielos.",
+   "highlight": [
+    "todos los continentes"
+   ],
+   "drift": 0.0,
+   "start": 23.0,
+   "end": 28.648,
+   "duration": 5.648
+  },
+  {
+   "id": "b3",
+   "scene": 2,
+   "at": 29.4,
+   "text": "Caza sobre todo otras aves, y las atrapa en pleno vuelo.",
+   "highlight": [
+    "en pleno vuelo"
+   ],
+   "drift": 0.0,
+   "start": 29.4,
+   "end": 33.2,
+   "duration": 3.8
+  },
+  {
+   "id": "b4",
+   "scene": 2,
+   "at": 33.6,
+   "text": "Las hembras son bastante más grandes que los machos.",
+   "highlight": [
+    "hembras"
+   ],
+   "drift": 0.0,
+   "start": 33.6,
+   "end": 37.097,
+   "duration": 3.497
+  },
+  {
+   "id": "b5",
+   "scene": 2,
+   "at": 37.4,
+   "text": "Y sus alas puntiagudas y su cuerpo compacto lo convierten en un especialista de la velocidad.",
+   "highlight": [
+    "especialista de la velocidad"
+   ],
+   "drift": 0.0,
+   "start": 37.4,
+   "end": 42.87,
+   "duration": 5.47
+  },
+  {
+   "id": "c1",
+   "scene": 3,
+   "at": 45.8,
+   "text": "Su cuerpo está diseñado para moverse con eficiencia por el aire.",
+   "highlight": [
+    "eficiencia"
+   ],
+   "drift": 0.0,
+   "start": 45.8,
+   "end": 49.581,
+   "duration": 3.781
+  },
+  {
+   "id": "c2",
+   "scene": 3,
+   "at": 50.2,
+   "text": "Las alas, largas y puntiagudas, reducen la resistencia, y la cola funciona como un timón.",
+   "highlight": [
+    "timón"
+   ],
+   "drift": 0.0,
+   "start": 50.2,
+   "end": 56.727,
+   "duration": 6.527
+  },
+  {
+   "id": "c3",
+   "scene": 3,
+   "at": 56.6,
+   "text": "En cada momento ajusta las alas y la cola para controlar su trayectoria.",
+   "highlight": [
+    "controlar su trayectoria"
+   ],
+   "drift": 0.377,
+   "start": 56.977,
+   "end": 62.102,
+   "duration": 5.125
+  },
+  {
+   "id": "c4",
+   "scene": 3,
+   "at": 61.6,
+   "text": "Y cuando pliega las alas en una picada, aprovecha la gravedad para acelerar como muy pocos animales pueden hacerlo.",
+   "highlight": [
+    "gravedad"
+   ],
+   "drift": 0.752,
+   "start": 62.352,
+   "end": 71.029,
+   "duration": 8.677
+  },
+  {
+   "id": "d1",
+   "scene": 4,
+   "at": 71.0,
+   "text": "Desde las alturas, el halcón vigila el valle. Su vista es excepcional.",
+   "highlight": [
+    "vista"
+   ],
+   "drift": 0.279,
+   "start": 71.279,
+   "end": 75.972,
+   "duration": 4.693
+  },
+  {
+   "id": "d2",
+   "scene": 4,
+   "at": 76.8,
+   "text": "A gran distancia, distingue una paloma en vuelo.",
+   "highlight": [
+    "paloma"
+   ],
+   "drift": 0.0,
+   "start": 76.8,
+   "end": 79.992,
+   "duration": 3.192
+  },
+  {
+   "id": "d3",
+   "scene": 4,
+   "at": 80.6,
+   "text": "Se coloca por encima, calcula su trayectoria, y prepara una maniobra impresionante.",
+   "highlight": [
+    "trayectoria"
+   ],
+   "drift": 0.0,
+   "start": 80.6,
+   "end": 86.269,
+   "duration": 5.669
+  },
+  {
+   "id": "d4",
+   "scene": 4,
+   "at": 86.6,
+   "text": "Recoge parcialmente las alas, y orienta el cuerpo hacia abajo.",
+   "highlight": [
+    "Recoge parcialmente las alas"
+   ],
+   "drift": 0.0,
+   "start": 86.6,
+   "end": 90.652,
+   "duration": 4.052
+  },
+  {
+   "id": "d5",
+   "scene": 4,
+   "at": 91.0,
+   "text": "Lo que va a ocurrir dura apenas unos segundos.",
+   "highlight": [
+    "unos segundos"
+   ],
+   "drift": 0.0,
+   "start": 91.0,
+   "end": 93.707,
+   "duration": 2.707
+  },
+  {
+   "id": "e1",
+   "scene": 5,
+   "at": 95.8,
+   "text": "En una picada de caza, el halcón peregrino puede superar los trescientos kilómetros por hora.",
+   "highlight": [
+    "trescientos kilómetros por hora"
+   ],
+   "drift": 0.0,
+   "start": 95.8,
+   "end": 101.4,
+   "duration": 5.6
+  },
+  {
+   "id": "e2",
+   "scene": 5,
+   "at": 101.8,
+   "text": "Con halcones entrenados, se han registrado picadas de más de trescientos ochenta.",
+   "highlight": [
+    "más de trescientos ochenta"
+   ],
+   "drift": 0.0,
+   "start": 101.8,
+   "end": 106.697,
+   "duration": 4.897
+  },
+  {
+   "id": "e3",
+   "scene": 5,
+   "at": 107.0,
+   "text": "Pero no es una caída: es un vuelo dirigido, con el cuerpo en forma de gota.",
+   "highlight": [
+    "vuelo dirigido"
+   ],
+   "drift": 0.0,
+   "start": 107.0,
+   "end": 112.245,
+   "duration": 5.245
+  },
+  {
+   "id": "e4",
+   "scene": 5,
+   "at": 112.2,
+   "text": "Una membrana transparente protege sus ojos durante la picada.",
+   "highlight": [
+    "membrana transparente"
+   ],
+   "drift": 0.295,
+   "start": 112.495,
+   "end": 116.549,
+   "duration": 4.054
+  },
+  {
+   "id": "e5",
+   "scene": 5,
+   "at": 116.8,
+   "text": "En vuelo horizontal, es mucho más lento.",
+   "highlight": [
+    "vuelo horizontal"
+   ],
+   "drift": 0.0,
+   "start": 116.8,
+   "end": 119.795,
+   "duration": 2.995
+  },
+  {
+   "id": "f1",
+   "scene": 6,
+   "at": 120.8,
+   "text": "Abajo, la paloma cruza el valle a toda velocidad.",
+   "highlight": [],
+   "drift": 0.0,
+   "start": 120.8,
+   "end": 124.691,
+   "duration": 3.891
+  },
+  {
+   "id": "f2",
+   "scene": 6,
+   "at": 124.6,
+   "text": "Corrige su trayectoria en pleno descenso, con pequeños ajustes de alas y cola.",
+   "highlight": [
+    "corrige su trayectoria"
+   ],
+   "drift": 0.341,
+   "start": 124.941,
+   "end": 129.979,
+   "duration": 5.038
+  },
+  {
+   "id": "f3",
+   "scene": 6,
+   "at": 131.2,
+   "text": "Sale de la picada, se acerca por detrás, e intenta interceptarla…",
+   "highlight": [
+    "interceptarla"
+   ],
+   "drift": 0.0,
+   "start": 131.2,
+   "end": 135.719,
+   "duration": 4.519
+  },
+  {
+   "id": "f4",
+   "scene": 6,
+   "at": 137.4,
+   "text": "pero la paloma esquiva en el último instante.",
+   "highlight": [
+    "esquiva"
+   ],
+   "drift": 0.0,
+   "start": 137.4,
+   "end": 140.614,
+   "duration": 3.214
+  },
+  {
+   "id": "f5",
+   "scene": 6,
+   "at": 141.0,
+   "text": "La caza no siempre termina con éxito: la velocidad, por sí sola, no basta.",
+   "highlight": [
+    "no siempre termina con éxito"
+   ],
+   "drift": 0.0,
+   "start": 141.0,
+   "end": 146.597,
+   "duration": 5.597
+  },
+  {
+   "id": "f6",
+   "scene": 6,
+   "at": 146.4,
+   "text": "El halcón frena, abre las alas, y recupera altura.",
+   "highlight": [
+    "frena"
+   ],
+   "drift": 0.447,
+   "start": 146.847,
+   "end": 150.566,
+   "duration": 3.719
+  },
+  {
+   "id": "g1",
+   "scene": 7,
+   "at": 150.8,
+   "text": "En el siglo veinte, el pesticida DDT lo hizo desaparecer de muchas regiones.",
+   "highlight": [
+    "DDT"
+   ],
+   "drift": 0.016,
+   "start": 150.816,
+   "end": 156.135,
+   "duration": 5.319
+  },
+  {
+   "id": "g2",
+   "scene": 7,
+   "at": 156.4,
+   "text": "Gracias a su prohibición y a la conservación, hoy ha vuelto a muchos de sus antiguos cielos.",
+   "highlight": [
+    "conservación"
+   ],
+   "drift": 0.0,
+   "start": 156.4,
+   "end": 161.848,
+   "duration": 5.448
+  },
+  {
+   "id": "g3",
+   "scene": 7,
+   "at": 162.8,
+   "text": "Velocidad, precisión y control: el halcón peregrino transforma el cielo en su territorio.",
+   "highlight": [
+    "Velocidad, precisión y control"
+   ],
+   "drift": 0.0,
+   "start": 162.8,
+   "end": 168.831,
+   "duration": 6.031
+  },
+  {
+   "id": "g4",
+   "scene": 7,
+   "at": 169.0,
+   "text": "Y ahora dime: ¿qué otro animal extraordinario te gustaría descubrir?",
+   "highlight": [
+    "animal extraordinario"
+   ],
+   "drift": 0.081,
+   "start": 169.081,
+   "end": 173.404,
+   "duration": 4.323
+  }
+ ]
+}

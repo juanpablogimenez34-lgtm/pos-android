@@ -1,0 +1,78 @@
+{
+  "composition": "Ep01Full",
+  "quality": "draft",
+  "scale": 0.5,
+  "crf": "24",
+  "concurrency": 4,
+  "segmentSeconds": 30,
+  "segments": [
+    {
+      "start": 0,
+      "end": 899,
+      "secs": 57.4,
+      "peakMB": 3890,
+      "reused": true
+    },
+    {
+      "start": 900,
+      "end": 1799,
+      "secs": 47.4,
+      "peakMB": 3159,
+      "reused": true
+    },
+    {
+      "start": 1800,
+      "end": 2699,
+      "secs": 45.3,
+      "peakMB": 3129,
+      "reused": true
+    },
+    {
+      "start": 2700,
+      "end": 3599,
+      "secs": 48.2,
+      "peakMB": 3053,
+      "reused": true
+    },
+    {
+      "start": 3600,
+      "end": 4499,
+      "secs": 42.6,
+      "peakMB": 3002,
+      "reused": true
+    },
+    {
+      "start": 4500,
+      "end": 5399,
+      "secs": 47.6,
+      "peakMB": 3048,
+      "reused": true
+    }
+  ],
+  "startedAt": "2026-11-18T21:26:28.697Z",
+  "audio": {
+    "secs": 191.1,
+    "peakMB": 0,
+    "reused": true
+  },
+  "loudness": {
+    "inputLUFS": -16.38,
+    "inputTruePeak": -0.45,
+    "targetLUFS": -14
+  },
+  "wallSecondsThisRun": 15.9,
+  "totalSeconds": 479.6,
+  "peakRssMB": 3890,
+  "output": {
+    "file": "out/ep01-borrador-540x960.mp4",
+    "sizeMB": 27.42,
+    "width": 540,
+    "height": 960,
+    "fps": "30/1",
+    "videoFrames": 5400,
+    "durationSec": 180,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "framesOk": true
+}

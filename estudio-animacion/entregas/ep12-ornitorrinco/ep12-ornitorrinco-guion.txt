@@ -1,0 +1,64 @@
+EL ORNITORRINCO: EL ANIMAL QUE PARECE IMPOSIBLE — GUION NARRADO DEFINITIVO (180 s)
+Voz: Piper es_MX-claude-high (local; la voz aprobada). Tiempos reales de public/audio/ep12-ornitorrinco/narracion.m4a
+
+ESCENA 1 (0–15 s) — El animal imposible
+    0.25–  5.28  ¡Este mamífero pone huevos, detecta electricidad y hasta puede inyectar veneno!
+    5.53–  9.62  Tiene pico, patas palmeadas y una cola ancha y aplanada.
+    9.87– 14.82  Parece una combinación imposible, pero existe de verdad: es el ornitorrinco.
+
+ESCENA 2 (15–30 s) — Su extraordinario hogar
+   15.40– 19.66  Vive en ríos y arroyos del este de Australia y de Tasmania.
+   19.91– 24.77  Su pelaje denso e impermeable lo adapta a la tierra y al agua.
+   25.02– 29.61  Al nadar, apenas asoman la cabeza, la espalda y la cola.
+
+ESCENA 3 (30–45 s) — Un mamífero que pone huevos
+   30.40– 34.82  A diferencia de casi todos los mamíferos, el ornitorrinco pone huevos.
+   35.07– 39.41  La hembra prepara un nido en una madriguera, con hojas húmedas,
+   39.66– 43.17  y suele poner dos pequeños huevos, que abraza con la cola.
+
+ESCENA 4 (45–60 s) — El nacimiento
+   45.40– 49.49  Tras unos diez días, las crías rompen la cáscara blanda.
+   50.00– 53.51  Nacen diminutas, con los ojos cerrados y sin pelaje.
+   54.80– 57.62  La madre permanece junto a ellas en el nido.
+
+ESCENA 5 (60–75 s) — Leche sin pezones
+   60.40– 64.89  Otra rareza: aunque pone huevos, alimenta a sus crías con leche.
+   65.14– 67.08  Pero la madre no tiene pezones.
+   67.80– 72.11  La leche brota en dos zonas del vientre, y las crías la toman de la piel.
+
+ESCENA 6 (75–90 s) — El crecimiento
+   75.40– 79.48  Durante tres o cuatro meses, las crías crecen en la madriguera.
+   80.00– 84.66  Les sale el pelaje, se abren sus ojos y sus patas se fortalecen.
+   84.91– 88.70  Al final del verano, salen por primera vez al mundo exterior.
+
+ESCENA 7 (90–105 s) — Su primera gran inmersión
+   90.40– 93.14  Sus patas delanteras funcionan como remos:
+   93.39– 97.41  las membranas se despliegan y lo impulsan bajo el agua,
+   97.66–102.80  mientras las patas traseras y la cola le ayudan a dirigirse y a estabilizarse.
+
+ESCENA 8 (105–120 s) — El sexto sentido
+  105.40–112.32  Lo más increíble ocurre al buscar alimento: al sumergirse cierra los ojos, los oídos y las narinas.
+  112.57–116.60  Entonces usa su pico, con receptores que detectan la presión del agua
+  116.85–120.62  y las débiles señales eléctricas de los músculos de sus presas.
+
+ESCENA 9 (120–135 s) — Un cazador sin dientes
+  120.87–122.67  No tiene dientes funcionales.
+  122.92–127.81  Bucea entre medio minuto y dos minutos, y guarda larvas en sus abazones.
+  129.60–132.90  En la superficie los tritura con placas córneas de la boca.
+
+ESCENA 10 (135–150 s) — El mamífero venenoso
+  135.40–137.30  Pero aún guarda otro secreto.
+  137.60–143.50  Los machos tienen un espolón en el tobillo de cada pata trasera, unido a una glándula de veneno.
+  144.20–150.02  Su veneno causa un dolor intenso y parece importante en la competencia entre machos.
+
+ESCENA 11 (150–165 s) — Un superviviente extraordinario
+  150.40–155.81  El ornitorrinco es un monotrema: un pequeño grupo de mamíferos que ponen huevos.
+  156.06–158.30  Comparte ese rasgo con los equidnas.
+  158.80–165.08  No es una mezcla de animales, sino un linaje muy antiguo y lleno de adaptaciones únicas.
+
+ESCENA 12 (165–180 s) — La naturaleza supera la imaginación
+  165.40–171.79  Nace de un huevo, toma leche, encuentra presas por señales eléctricas… y los machos tienen veneno.
+  172.40–174.96  La naturaleza supera nuestra imaginación.
+  175.40–177.38  ¿Conocías todos sus secretos?
+
+Total: 392 palabras

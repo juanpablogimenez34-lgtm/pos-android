@@ -1,0 +1,68 @@
+{
+ "title": "short4",
+ "voice": {
+  "engine": "piper",
+  "model": "es_MX-claude-high",
+  "lengthScale": 0.97,
+  "noiseScale": 0.6,
+  "noiseW": 0.6
+ },
+ "durationSec": 69,
+ "gap": 0.65,
+ "scenes": [
+  {
+   "n": 1,
+   "start": 0,
+   "end": 69,
+   "lead": 0.25,
+   "lines": [
+    {
+     "id": "400",
+     "text": "¿Cómo caza un animal en completa oscuridad, a más de mil metros de profundidad?"
+    },
+    {
+     "id": "401",
+     "text": "El cachalote, el mayor depredador con dientes del planeta, toma aire en la superficie y se sumerge."
+    },
+    {
+     "id": "402",
+     "text": "Puede permanecer bajo el agua una hora o más."
+    },
+    {
+     "id": "403",
+     "text": "Allí abajo no necesita ver: emite chasquidos muy potentes y escucha sus ecos."
+    },
+    {
+     "id": "404",
+     "text": "Sus chasquidos están entre los sonidos más potentes producidos por un animal."
+    },
+    {
+     "id": "405",
+     "text": "Es la ecolocalización. Los ecos le revelan dónde está su presa."
+    },
+    {
+     "id": "406",
+     "text": "Al acercarse, los chasquidos se aceleran hasta convertirse en un zumbido.",
+     "pause": 1.0
+    },
+    {
+     "id": "407",
+     "text": "Entre sus presas hay calamares, incluso calamares gigantes: en estómagos de cachalotes se han hallado sus picos."
+    },
+    {
+     "id": "408",
+     "text": "Esta escena es una reconstrucción ilustrativa: nadie ha filmado todavía un enfrentamiento entre ambos."
+    },
+    {
+     "id": "409",
+     "text": "Los calamares son una parte fundamental de su dieta."
+    },
+    {
+     "id": "410",
+     "text": "Sumérgete en el documental completo para conocer a los monstruos reales del océano.",
+     "pause": 0.6
+    }
+   ]
+  }
+ ]
+}

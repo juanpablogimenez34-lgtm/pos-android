@@ -1,0 +1,22 @@
+EL PEZ REMO GIGANTE — EL DRAGÓN DE LAS PROFUNDIDADES · informe de verificación técnica
+Archivo: entregas/ep07-pez-remo/ep07-pez-remo-final.mp4
+
+FFprobe (ejecutado sobre el archivo entregado):
+  video: H.264 (High) · 1080×1920 · 30/1 fps · 5400 fotogramas contados
+  audio: AAC LC · 48 kHz · estéreo
+  duración: 180,000 s · tamaño: 36.250.752 bytes (34,6 MB)
+
+Audio:
+  sonoridad de entrada −17,2 LUFS → normalizado a −14 LUFS (pico real −2,0 dBTP)
+  audio 179.99 s | env corr 0.669 (lag 1 x0.1s) | RMS -17.0 dBFS | peak 0.845 | clipped 0 | silent 0.1s windows 0
+frames@1fps 182 | dark(<8) secs [] | low-motion secs [1, 135, 180] | lum min 8.3 max 132.5
+
+Lectura:
+  - Sin fotogramas negros inesperados (solo el fundido final de 0,55 s).
+  - Movimiento bajo solo en 1 s (silueta en la oscuridad del gancho), 135 s (entrada en la escena
+    oscura del ROV) y 180 s (fundido final); en ningún momento hay un fotograma congelado.
+  - Voz sincronizada (correlación de envolventes 0,67, desfase ≤ 0,1 s); sin recortes (0 muestras saturadas).
+
+Render: 6 tramos de 30 s + mezcla de 6 pistas; tiempo total 1.427 s; pico de RAM 3.812 MB.
+Proyectos anteriores: verificados sin cambios con git (entregas y episodios previos intactos);
+el único archivo existente modificado es src/Root.tsx (registro de las composiciones EP07PezRemo y PezRemoFicha).

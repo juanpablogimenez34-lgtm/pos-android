@@ -1,0 +1,393 @@
+{
+ "voice": {
+  "engine": "piper",
+  "model": "es_MX-claude-high",
+  "lengthScale": 1.03,
+  "noiseScale": 0.62,
+  "noiseW": 0.5
+ },
+ "lines": 29,
+ "speechSeconds": 156.95,
+ "coverage": 0.872,
+ "problems": [],
+ "timing": [
+  {
+   "id": "a1",
+   "scene": 1,
+   "at": 0.6,
+   "text": "¿Y si existiera un animal capaz de volver a ser joven?",
+   "highlight": [
+    "volver a ser joven"
+   ],
+   "drift": 0.0,
+   "start": 0.6,
+   "end": 4.062,
+   "duration": 3.462
+  },
+  {
+   "id": "a2",
+   "scene": 1,
+   "at": 4.6,
+   "text": "Existe. Y es más pequeño que una uña.",
+   "highlight": [
+    "más pequeño que una uña"
+   ],
+   "drift": 0.0,
+   "start": 4.6,
+   "end": 8.129,
+   "duration": 3.529
+  },
+  {
+   "id": "b1",
+   "scene": 2,
+   "at": 8.3,
+   "text": "En nuestros océanos vive una diminuta medusa con una capacidad que parece sacada de la ciencia ficción.",
+   "highlight": [
+    "ciencia ficción"
+   ],
+   "drift": 0.079,
+   "start": 8.379,
+   "end": 14.549,
+   "duration": 6.17
+  },
+  {
+   "id": "b2",
+   "scene": 2,
+   "at": 15.4,
+   "text": "Se llama Turritopsis dohrnii, y su campana mide apenas unos cuatro o cinco milímetros.",
+   "highlight": [
+    "Turritopsis dohrnii"
+   ],
+   "drift": 0.0,
+   "start": 15.4,
+   "end": 21.081,
+   "duration": 5.681
+  },
+  {
+   "id": "b3",
+   "scene": 2,
+   "at": 21.2,
+   "text": "A través de su cuerpo transparente se distingue un estómago de color rojo intenso.",
+   "highlight": [
+    "rojo intenso"
+   ],
+   "drift": 0.131,
+   "start": 21.331,
+   "end": 25.999,
+   "duration": 4.668
+  },
+  {
+   "id": "c1",
+   "scene": 3,
+   "at": 26.0,
+   "text": "De adulta, nada contrayendo la campana y caza plancton con decenas de tentáculos.",
+   "highlight": [
+    "plancton"
+   ],
+   "drift": 0.249,
+   "start": 26.249,
+   "end": 32.095,
+   "duration": 5.846
+  },
+  {
+   "id": "c2",
+   "scene": 3,
+   "at": 32.6,
+   "text": "Su vida pasa por varias fases: larva, pólipo fijo al fondo y medusa libre.",
+   "highlight": [
+    "larva, pólipo",
+    "medusa libre"
+   ],
+   "drift": 0.0,
+   "start": 32.6,
+   "end": 38.452,
+   "duration": 5.852
+  },
+  {
+   "id": "c3",
+   "scene": 3,
+   "at": 38.2,
+   "text": "Pero ante condiciones adversas puede hacer algo extraordinario: regresar a una etapa anterior de su desarrollo.",
+   "highlight": [
+    "regresar a una etapa anterior"
+   ],
+   "drift": 0.502,
+   "start": 38.702,
+   "end": 45.218,
+   "duration": 6.516
+  },
+  {
+   "id": "d1",
+   "scene": 4,
+   "at": 45.8,
+   "text": "El hambre, un daño físico o un cambio brusco de temperatura pueden desencadenarlo.",
+   "highlight": [
+    "desencadenarlo"
+   ],
+   "drift": 0.0,
+   "start": 45.8,
+   "end": 51.331,
+   "duration": 5.531
+  },
+  {
+   "id": "d2",
+   "scene": 4,
+   "at": 51.4,
+   "text": "La medusa se encoge, reabsorbe sus tentáculos y su campana se repliega hasta formar una pequeña masa de tejido.",
+   "highlight": [
+    "pequeña masa de tejido"
+   ],
+   "drift": 0.181,
+   "start": 51.581,
+   "end": 58.716,
+   "duration": 7.135
+  },
+  {
+   "id": "d3",
+   "scene": 4,
+   "at": 59.0,
+   "text": "En lugar de continuar solo hacia el final de su ciclo de vida, reorganiza sus células y regresa a una fase juvenil.",
+   "highlight": [
+    "reorganiza sus células"
+   ],
+   "drift": 0.0,
+   "start": 59.0,
+   "end": 66.255,
+   "duration": 7.255
+  },
+  {
+   "id": "d4",
+   "scene": 4,
+   "at": 66.6,
+   "text": "Los biólogos llaman a este cambio transdiferenciación.",
+   "highlight": [
+    "transdiferenciación"
+   ],
+   "drift": 0.0,
+   "start": 66.6,
+   "end": 69.77,
+   "duration": 3.17
+  },
+  {
+   "id": "e1",
+   "scene": 5,
+   "at": 71.0,
+   "text": "Esa masa se adhiere a una roca y forma un estolón, un tallo que se extiende por la superficie.",
+   "highlight": [
+    "estolón"
+   ],
+   "drift": 0.0,
+   "start": 71.0,
+   "end": 76.979,
+   "duration": 5.979
+  },
+  {
+   "id": "e2",
+   "scene": 5,
+   "at": 77.4,
+   "text": "De él brotan nuevos pólipos, que se alimentan y crecen como una pequeña colonia.",
+   "highlight": [
+    "nuevos pólipos"
+   ],
+   "drift": 0.0,
+   "start": 77.4,
+   "end": 82.36,
+   "duration": 4.96
+  },
+  {
+   "id": "e3",
+   "scene": 5,
+   "at": 83.0,
+   "text": "Con el tiempo, esos pólipos liberan nuevas medusas, genéticamente idénticas a la original.",
+   "highlight": [
+    "genéticamente idénticas"
+   ],
+   "drift": 0.0,
+   "start": 83.0,
+   "end": 89.396,
+   "duration": 6.396
+  },
+  {
+   "id": "e4",
+   "scene": 5,
+   "at": 89.0,
+   "text": "Desde esa etapa puede desarrollarse de nuevo. Es como si su historia biológica pudiera comenzar otra vez.",
+   "highlight": [
+    "comenzar otra vez"
+   ],
+   "drift": 0.646,
+   "start": 89.646,
+   "end": 95.726,
+   "duration": 6.08
+  },
+  {
+   "id": "f1",
+   "scene": 6,
+   "at": 96.6,
+   "text": "Por eso se la conoce como la medusa inmortal.",
+   "highlight": [
+    "medusa inmortal"
+   ],
+   "drift": 0.0,
+   "start": 96.6,
+   "end": 99.248,
+   "duration": 2.648
+  },
+  {
+   "id": "f2",
+   "scene": 6,
+   "at": 100.0,
+   "text": "Pero eso no significa que sea imposible matarla.",
+   "highlight": [
+    "imposible matarla"
+   ],
+   "drift": 0.0,
+   "start": 100.0,
+   "end": 103.248,
+   "duration": 3.248
+  },
+  {
+   "id": "f3",
+   "scene": 6,
+   "at": 103.6,
+   "text": "Los depredadores, las enfermedades y otros peligros siguen existiendo.",
+   "highlight": [
+    "depredadores"
+   ],
+   "drift": 0.0,
+   "start": 103.6,
+   "end": 108.196,
+   "duration": 4.596
+  },
+  {
+   "id": "f4",
+   "scene": 6,
+   "at": 108.4,
+   "text": "En la naturaleza, muchas de estas medusas terminan como alimento de otros animales antes de poder rejuvenecer.",
+   "highlight": [
+    "alimento"
+   ],
+   "drift": 0.046,
+   "start": 108.446,
+   "end": 115.121,
+   "duration": 6.675
+  },
+  {
+   "id": "f5",
+   "scene": 6,
+   "at": 115.8,
+   "text": "Su capacidad es real, pero no la protege de todo.",
+   "highlight": [
+    "no la protege de todo"
+   ],
+   "drift": 0.0,
+   "start": 115.8,
+   "end": 118.893,
+   "duration": 3.093
+  },
+  {
+   "id": "g1",
+   "scene": 7,
+   "at": 120.4,
+   "text": "A finales de los años ochenta, se observó este comportamiento en ejemplares de Italia.",
+   "highlight": [
+    "Italia"
+   ],
+   "drift": 0.0,
+   "start": 120.4,
+   "end": 125.903,
+   "duration": 5.503
+  },
+  {
+   "id": "g2",
+   "scene": 7,
+   "at": 126.0,
+   "text": "En 1996, un equipo de investigadores describió en detalle cómo revierte su desarrollo.",
+   "highlight": [
+    "1996"
+   ],
+   "drift": 0.153,
+   "start": 126.153,
+   "end": 132.469,
+   "duration": 6.316
+  },
+  {
+   "id": "g3",
+   "scene": 7,
+   "at": 131.8,
+   "text": "Hoy la estudian para comprender cómo cambian las células y cómo se regula el desarrollo de los organismos.",
+   "highlight": [
+    "cómo cambian las células"
+   ],
+   "drift": 0.919,
+   "start": 132.719,
+   "end": 138.824,
+   "duration": 6.105
+  },
+  {
+   "id": "g4",
+   "scene": 7,
+   "at": 138.3,
+   "text": "En 2022, el análisis de su genoma mostró diferencias en genes relacionados con la reparación del ADN.",
+   "highlight": [
+    "reparación del ADN"
+   ],
+   "drift": 0.774,
+   "start": 139.074,
+   "end": 146.123,
+   "duration": 7.049
+  },
+  {
+   "id": "h1",
+   "scene": 8,
+   "at": 146.0,
+   "text": "Eso no significa que tenga la clave para detener el envejecimiento humano: no existe ninguna cura demostrada.",
+   "highlight": [
+    "ninguna cura demostrada"
+   ],
+   "drift": 0.373,
+   "start": 146.373,
+   "end": 153.656,
+   "duration": 7.283
+  },
+  {
+   "id": "h2",
+   "scene": 8,
+   "at": 153.5,
+   "text": "En un planeta donde todos los seres vivos enfrentan el paso del tiempo, esta pequeña medusa nos recuerda cuánto queda por descubrir.",
+   "highlight": [
+    "cuánto queda por descubrir"
+   ],
+   "drift": 0.406,
+   "start": 153.906,
+   "end": 161.747,
+   "duration": 7.841
+  },
+  {
+   "id": "i1",
+   "scene": 9,
+   "at": 165.6,
+   "text": "Y pensar que uno de los secretos más sorprendentes de la vida se esconde en un animal diminuto.",
+   "highlight": [
+    "animal diminuto"
+   ],
+   "drift": 0.0,
+   "start": 165.6,
+   "end": 171.038,
+   "duration": 5.438
+  },
+  {
+   "id": "i2",
+   "scene": 9,
+   "at": 172.6,
+   "text": "¿Qué otro misterio del océano te gustaría descubrir?",
+   "highlight": [
+    "misterio del océano"
+   ],
+   "drift": 0.0,
+   "start": 172.6,
+   "end": 175.522,
+   "duration": 2.922
+  }
+ ]
+}

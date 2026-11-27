@@ -1,0 +1,285 @@
+{
+ "voice": {
+  "engine": "piper",
+  "model": "es_MX-claude-high",
+  "lengthScale": 0.93,
+  "noiseScale": 0.62,
+  "noiseW": 0.55
+ },
+ "lines": 20,
+ "speechSeconds": 107.41,
+ "coverage": 0.767,
+ "problems": [],
+ "timing": [
+  {
+   "id": "e1l1",
+   "scene": 1,
+   "at": 0.3,
+   "text": "¿Qué pasaría si estos dos gigantes del océano se enfrentaran?",
+   "highlight": [
+    "dos gigantes"
+   ],
+   "drift": 0.0,
+   "start": 0.3,
+   "end": 4.069,
+   "duration": 3.769
+  },
+  {
+   "id": "e1l2",
+   "scene": 1,
+   "at": 4.6,
+   "text": "El tiburón blanco tiene dientes diseñados para cortar. La orca combina una enorme fuerza física con extraordinarias capacidades cognitivas.",
+   "highlight": [
+    "dientes diseñados para cortar",
+    "capacidades cognitivas"
+   ],
+   "drift": 0.0,
+   "start": 4.6,
+   "end": 13.3,
+   "duration": 8.7
+  },
+  {
+   "id": "e1l3",
+   "scene": 1,
+   "at": 13.73,
+   "text": "Aquí, la orca tiene ventaja de tamaño. Pero el tiburón posee una poderosa mandíbula y una sorprendente aceleración.",
+   "highlight": [
+    "ventaja de tamaño",
+    "aceleración"
+   ],
+   "drift": 0.0,
+   "start": 13.73,
+   "end": 21.613,
+   "duration": 7.883
+  },
+  {
+   "id": "e1l4",
+   "scene": 1,
+   "at": 22.5,
+   "text": "Los dos se aproximan. Antes del primer movimiento, tienes que decidir.",
+   "highlight": [
+    "tienes que decidir"
+   ],
+   "drift": 0.0,
+   "start": 22.5,
+   "end": 26.671,
+   "duration": 4.171
+  },
+  {
+   "id": "e1l5",
+   "scene": 1,
+   "at": 29.5,
+   "text": "¿Quién dará el primer paso? Observa con atención.",
+   "highlight": [
+    "Equipo orca",
+    "equipo tiburón",
+    "primer paso"
+   ],
+   "drift": 0.0,
+   "start": 29.5,
+   "end": 32.498,
+   "duration": 2.998
+  },
+  {
+   "id": "e2l1",
+   "scene": 2,
+   "at": 35.3,
+   "text": "¡El tiburón blanco ataca primero!",
+   "highlight": [
+    "ataca primero"
+   ],
+   "drift": 0.0,
+   "start": 35.3,
+   "end": 37.348,
+   "duration": 2.048
+  },
+  {
+   "id": "e2l2",
+   "scene": 2,
+   "at": 38.3,
+   "text": "Su cuerpo hidrodinámico le permite acelerar rápidamente, y sus dientes son una seria amenaza.",
+   "highlight": [
+    "acelerar rápidamente"
+   ],
+   "drift": 0.0,
+   "start": 38.3,
+   "end": 44.682,
+   "duration": 6.382
+  },
+  {
+   "id": "e2l3",
+   "scene": 2,
+   "at": 46.5,
+   "text": "Pero la orca no se queda inmóvil: con sus aletas y su poderosa cola cambia de trayectoria y evita el choque.",
+   "highlight": [
+    "cambia de trayectoria"
+   ],
+   "drift": 0.0,
+   "start": 46.5,
+   "end": 53.227,
+   "duration": 6.727
+  },
+  {
+   "id": "e2l4",
+   "scene": 2,
+   "at": 56.5,
+   "text": "El tiburón conserva su capacidad de ataque, pero la orca tiene una ventaja que podría cambiarlo todo.",
+   "highlight": [
+    "una ventaja"
+   ],
+   "drift": 0.0,
+   "start": 56.5,
+   "end": 62.919,
+   "duration": 6.419
+  },
+  {
+   "id": "e2l5",
+   "scene": 2,
+   "at": 64.5,
+   "text": "¿Bastaría una sola mordida? La orca prepara su estrategia.",
+   "highlight": [
+    "una mordida",
+    "estrategia"
+   ],
+   "drift": 0.0,
+   "start": 64.5,
+   "end": 68.183,
+   "duration": 3.683
+  },
+  {
+   "id": "e3l1",
+   "scene": 3,
+   "at": 70.3,
+   "text": "La orca tiene una ventaja que el tiburón no puede ignorar.",
+   "highlight": [
+    "una ventaja"
+   ],
+   "drift": 0.0,
+   "start": 70.3,
+   "end": 73.948,
+   "duration": 3.648
+  },
+  {
+   "id": "e3l2",
+   "scene": 3,
+   "at": 74.35,
+   "text": "Es muy inteligente, y usa la ecolocalización para obtener información de lo que la rodea.",
+   "highlight": [
+    "ecolocalización"
+   ],
+   "drift": 0.0,
+   "start": 74.35,
+   "end": 80.046,
+   "duration": 5.696
+  },
+  {
+   "id": "e3l3",
+   "scene": 3,
+   "at": 82.0,
+   "text": "Algunos tiburones pueden quedar inmóviles temporalmente en ciertas posiciones. Y se han observado orcas cazando tiburones blancos.",
+   "highlight": [
+    "inmóviles temporalmente",
+    "se han observado"
+   ],
+   "drift": 0.0,
+   "start": 82.0,
+   "end": 90.026,
+   "duration": 8.026
+  },
+  {
+   "id": "e3l4",
+   "scene": 3,
+   "at": 92.0,
+   "text": "Llega el momento decisivo: la potencia del tiburón contra la mayor masa y maniobrabilidad de la orca.",
+   "highlight": [
+    "momento decisivo"
+   ],
+   "drift": 0.0,
+   "start": 92.0,
+   "end": 98.367,
+   "duration": 6.367
+  },
+  {
+   "id": "e3l5",
+   "scene": 3,
+   "at": 100.0,
+   "text": "Los dos aceleran. El choque es inevitable.",
+   "highlight": [
+    "Última oportunidad",
+    "inevitable"
+   ],
+   "drift": 0.0,
+   "start": 100.0,
+   "end": 102.801,
+   "duration": 2.801
+  },
+  {
+   "id": "e4l1",
+   "scene": 4,
+   "at": 105.3,
+   "text": "¡Llegó el momento de descubrir al vencedor!",
+   "highlight": [
+    "vencedor"
+   ],
+   "drift": 0.0,
+   "start": 105.3,
+   "end": 107.649,
+   "duration": 2.349
+  },
+  {
+   "id": "e4l2",
+   "scene": 4,
+   "at": 109.14,
+   "text": "La orca embiste con su enorme masa y desvía al tiburón.",
+   "highlight": [
+    "enorme masa"
+   ],
+   "drift": 0.0,
+   "start": 109.14,
+   "end": 113.047,
+   "duration": 3.907
+  },
+  {
+   "id": "e4l3",
+   "scene": 4,
+   "at": 114.64,
+   "text": "En nuestra simulación, el tiburón se retira. La mayor masa de la orca y su maniobrabilidad inclinan el resultado a su favor.",
+   "highlight": [
+    "se retira",
+    "a su favor"
+   ],
+   "drift": 0.0,
+   "start": 114.64,
+   "end": 122.594,
+   "duration": 7.954
+  },
+  {
+   "id": "e4l4",
+   "scene": 4,
+   "at": 124.13,
+   "text": "Existen casos reales de orcas cazando tiburones blancos. Cada encuentro es distinto, pero la orca sería la favorita.",
+   "highlight": [
+    "casos reales",
+    "la favorita"
+   ],
+   "drift": 0.0,
+   "start": 124.13,
+   "end": 132.076,
+   "duration": 7.946
+  },
+  {
+   "id": "e4l5",
+   "scene": 4,
+   "at": 133.47,
+   "text": "¿Acertaste? Elige la próxima batalla: ¿león contra tigre, o cocodrilo contra anaconda?",
+   "highlight": [
+    "león contra tigre",
+    "cocodrilo contra anaconda"
+   ],
+   "drift": 0.0,
+   "start": 133.47,
+   "end": 139.408,
+   "duration": 5.938
+  }
+ ]
+}

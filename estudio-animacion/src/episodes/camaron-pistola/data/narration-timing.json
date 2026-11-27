@@ -1,0 +1,184 @@
+{
+ "voice": {
+  "engine": "piper",
+  "model": "es_MX-claude-high",
+  "lengthScale": 0.98,
+  "noiseScale": 0.62,
+  "noiseW": 0.55
+ },
+ "lines": 13,
+ "speechSeconds": 43.17,
+ "coverage": 0.72,
+ "problems": [],
+ "timing": [
+  {
+   "id": "c0100",
+   "scene": 1,
+   "at": 0.15,
+   "text": "¡Este pequeño camarón crea una onda de choque bajo el agua!",
+   "highlight": [
+    "onda de choque"
+   ],
+   "drift": 0.1,
+   "start": 0.25,
+   "end": 3.97,
+   "duration": 3.72
+  },
+  {
+   "id": "c0200",
+   "scene": 2,
+   "at": 5.2,
+   "text": "Es el camarón pistola.",
+   "highlight": [
+    "camarón pistola"
+   ],
+   "drift": 0.0,
+   "start": 5.2,
+   "end": 6.672,
+   "duration": 1.472
+  },
+  {
+   "id": "c0201",
+   "scene": 2,
+   "at": 7.0,
+   "text": "Una pinza es mucho más grande que la otra: un arma extraordinaria.",
+   "highlight": [
+    "mucho más grande"
+   ],
+   "drift": 0.0,
+   "start": 7.0,
+   "end": 11.771,
+   "duration": 4.771
+  },
+  {
+   "id": "c0300",
+   "scene": 3,
+   "at": 12.4,
+   "text": "Cuando detecta una presa, abre su enorme pinza…",
+   "highlight": [
+    "abre su enorme pinza"
+   ],
+   "drift": 0.0,
+   "start": 12.4,
+   "end": 15.263,
+   "duration": 2.863
+  },
+  {
+   "id": "c0301",
+   "scene": 3,
+   "at": 15.5,
+   "text": "y la cierra a gran velocidad, lanzando un chorro de agua.",
+   "highlight": [
+    "chorro de agua"
+   ],
+   "drift": 0.013,
+   "start": 15.513,
+   "end": 19.041,
+   "duration": 3.528
+  },
+  {
+   "id": "c0400",
+   "scene": 4,
+   "at": 20.3,
+   "text": "Esa caída de presión forma una burbuja de cavitación.",
+   "highlight": [
+    "burbuja de cavitación"
+   ],
+   "drift": 0.0,
+   "start": 20.3,
+   "end": 23.835,
+   "duration": 3.535
+  },
+  {
+   "id": "c0401",
+   "scene": 4,
+   "at": 24.6,
+   "text": "Al colapsar, libera una poderosa onda de choque.",
+   "highlight": [
+    "onda de choque"
+   ],
+   "drift": 0.0,
+   "start": 24.6,
+   "end": 27.943,
+   "duration": 3.343
+  },
+  {
+   "id": "c0500",
+   "scene": 5,
+   "at": 30.3,
+   "text": "Por un instante, dentro de la burbuja se alcanzan miles de grados…",
+   "highlight": [
+    "miles de grados"
+   ],
+   "drift": 0.0,
+   "start": 30.3,
+   "end": 34.315,
+   "duration": 4.015
+  },
+  {
+   "id": "c0501",
+   "scene": 5,
+   "at": 35.4,
+   "text": "y hasta un diminuto destello de luz.",
+   "highlight": [
+    "destello de luz"
+   ],
+   "drift": 0.0,
+   "start": 35.4,
+   "end": 37.536,
+   "duration": 2.136
+  },
+  {
+   "id": "c0600",
+   "scene": 6,
+   "at": 40.3,
+   "text": "La onda puede aturdir a pequeñas presas.",
+   "highlight": [
+    "aturdir"
+   ],
+   "drift": 0.0,
+   "start": 40.3,
+   "end": 42.684,
+   "duration": 2.384
+  },
+  {
+   "id": "c0601",
+   "scene": 6,
+   "at": 43.6,
+   "text": "Todo gracias a una pinza… y a la física del agua.",
+   "highlight": [
+    "física del agua"
+   ],
+   "drift": 0.0,
+   "start": 43.6,
+   "end": 46.505,
+   "duration": 2.905
+  },
+  {
+   "id": "c0700",
+   "scene": 7,
+   "at": 50.3,
+   "text": "Un animal de pocos centímetros que usa la física como arma.",
+   "highlight": [
+    "física como arma"
+   ],
+   "drift": 0.0,
+   "start": 50.3,
+   "end": 54.832,
+   "duration": 4.532
+  },
+  {
+   "id": "c0800",
+   "scene": 8,
+   "at": 55.2,
+   "text": "¿Conocías este animal? Mira lo que pasa cuando cierra su pinza.",
+   "highlight": [
+    "cierra su pinza"
+   ],
+   "drift": 0.0,
+   "start": 55.2,
+   "end": 59.171,
+   "duration": 3.971
+  }
+ ]
+}

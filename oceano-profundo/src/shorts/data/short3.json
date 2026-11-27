@@ -1,0 +1,64 @@
+{
+ "title": "short3",
+ "voice": {
+  "engine": "piper",
+  "model": "es_MX-claude-high",
+  "lengthScale": 0.97,
+  "noiseScale": 0.6,
+  "noiseW": 0.6
+ },
+ "durationSec": 67,
+ "gap": 0.65,
+ "scenes": [
+  {
+   "n": 1,
+   "start": 0,
+   "end": 67,
+   "lead": 0.25,
+   "lines": [
+    {
+     "id": "300",
+     "text": "Estos son algunos de los ojos más grandes del reino animal."
+    },
+    {
+     "id": "301",
+     "text": "Pertenecen al calamar gigante, que vive a cientos de metros de profundidad."
+    },
+    {
+     "id": "302",
+     "text": "Es un animal real, aunque durante siglos inspiró leyendas de monstruos marinos."
+    },
+    {
+     "id": "303",
+     "text": "Pueden medir alrededor de veintisiete centímetros de diámetro: más que un balón de fútbol."
+    },
+    {
+     "id": "304",
+     "text": "¿Para qué necesita unos ojos tan grandes, en un lugar casi sin luz?",
+     "pause": 1.0
+    },
+    {
+     "id": "305",
+     "text": "Algunos investigadores proponen que le servirían para detectar a gran distancia el brillo que provoca un gran depredador, como el cachalote, al moverse entre organismos luminosos."
+    },
+    {
+     "id": "306",
+     "text": "Ver ese destello a tiempo podría darle la oportunidad de escapar."
+    },
+    {
+     "id": "307",
+     "text": "Y su cuerpo es igual de impresionante: los ejemplares mejor medidos rondan los doce o trece metros, incluidos sus largos tentáculos."
+    },
+    {
+     "id": "308",
+     "text": "Aún sabemos muy poco de su vida, porque rara vez se le ha observado vivo en su hábitat."
+    },
+    {
+     "id": "309",
+     "text": "Descubre más sobre este gigante en nuestro documental completo.",
+     "pause": 0.6
+    }
+   ]
+  }
+ ]
+}

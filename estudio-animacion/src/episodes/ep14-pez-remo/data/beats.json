@@ -1,0 +1,214 @@
+{
+ "duration": 180,
+ "hook": {
+  "action": [
+   0,
+   1
+  ],
+  "question": [
+   0.6,
+   3.4
+  ],
+  "promise": [
+   2.9,
+   5.5
+  ]
+ },
+ "segments": [
+  [
+   0,
+   15
+  ],
+  [
+   15,
+   30
+  ],
+  [
+   30,
+   45
+  ],
+  [
+   45,
+   60
+  ],
+  [
+   60,
+   75
+  ],
+  [
+   75,
+   90
+  ],
+  [
+   90,
+   105
+  ],
+  [
+   105,
+   120
+  ],
+  [
+   120,
+   135
+  ],
+  [
+   135,
+   150
+  ],
+  [
+   150,
+   165
+  ],
+  [
+   165,
+   180
+  ]
+ ],
+ "beats": [
+  {
+   "t": 0,
+   "kind": "action",
+   "note": "silueta que cruza en la oscuridad"
+  },
+  {
+   "t": 2.9,
+   "kind": "discovery",
+   "note": "destello: escamas plateadas"
+  },
+  {
+   "t": 5.5,
+   "kind": "anatomy",
+   "note": "cresta roja ondulante"
+  },
+  {
+   "t": 8,
+   "kind": "scale",
+   "note": "la cámara retrocede: el cuerpo sigue fuera del encuadre"
+  },
+  {
+   "t": 12,
+   "kind": "transition",
+   "note": "hacia la zona iluminada"
+  },
+  {
+   "t": 15.5,
+   "kind": "anatomy",
+   "note": "travelling lateral: cabeza y ojo"
+  },
+  {
+   "t": 21,
+   "kind": "anatomy",
+   "note": "boca, cuerpo, aleta"
+  },
+  {
+   "t": 26,
+   "kind": "perspective",
+   "note": "cuerpo completo"
+  },
+  {
+   "t": 30.5,
+   "kind": "comparison",
+   "note": "comparación con una persona"
+  },
+  {
+   "t": 38,
+   "kind": "perspective",
+   "note": "la cámara recorre el cuerpo"
+  },
+  {
+   "t": 45.5,
+   "kind": "transition",
+   "note": "descenso vertical"
+  },
+  {
+   "t": 52,
+   "kind": "discovery",
+   "note": "oscuridad y bioluminiscencia"
+  },
+  {
+   "t": 60.5,
+   "kind": "science",
+   "note": "primer plano de la aleta: ondas"
+  },
+  {
+   "t": 66,
+   "kind": "perspective",
+   "note": "toma amplia nadando"
+  },
+  {
+   "t": 71,
+   "kind": "action",
+   "note": "giro y aceleración suave"
+  },
+  {
+   "t": 75.5,
+   "kind": "action",
+   "note": "enjambre de kril"
+  },
+  {
+   "t": 81,
+   "kind": "action",
+   "note": "se alimenta"
+  },
+  {
+   "t": 90.5,
+   "kind": "transition",
+   "note": "leyenda: velero de noche"
+  },
+  {
+   "t": 97,
+   "kind": "discovery",
+   "note": "silueta junto al barco"
+  },
+  {
+   "t": 105.5,
+   "kind": "transition",
+   "note": "costa estilizada"
+  },
+  {
+   "t": 111,
+   "kind": "science",
+   "note": "ondas sísmicas simbólicas"
+  },
+  {
+   "t": 120.5,
+   "kind": "science",
+   "note": "mito frente a evidencia"
+  },
+  {
+   "t": 127,
+   "kind": "comparison",
+   "note": "gráfico ilustrativo"
+  },
+  {
+   "t": 135.5,
+   "kind": "action",
+   "note": "ROV en la oscuridad"
+  },
+  {
+   "t": 140.5,
+   "kind": "discovery",
+   "note": "el pez casi vertical en los focos"
+  },
+  {
+   "t": 150.5,
+   "kind": "perspective",
+   "note": "plano majestuoso"
+  },
+  {
+   "t": 158,
+   "kind": "perspective",
+   "note": "la cámara se aleja"
+  },
+  {
+   "t": 165.5,
+   "kind": "action",
+   "note": "cruza el haz de luz"
+  },
+  {
+   "t": 173.6,
+   "kind": "transition",
+   "note": "texto final y despedida"
+  }
+ ]
+}

@@ -1,0 +1,265 @@
+{
+ "episode": "ep20-pez-erizo",
+ "durationSec": 180,
+ "voice": {
+  "engine": "piper",
+  "model": "es_MX-claude-high",
+  "lengthScale": 1.0,
+  "noiseScale": 0.62,
+  "noiseW": 0.55
+ },
+ "lines": [
+  {
+   "id": "p0100",
+   "scene": 1,
+   "at": 0.3,
+   "text": "¡Este pez puede transformarse en una bola de espinas para sobrevivir!",
+   "highlight": [
+    "bola de espinas"
+   ]
+  },
+  {
+   "id": "p0101",
+   "scene": 1,
+   "at": 5.4,
+   "text": "Cuando aparece un depredador, convierte su cuerpo en una esfera cubierta de espinas.",
+   "highlight": [
+    "esfera cubierta de espinas"
+   ]
+  },
+  {
+   "id": "p0102",
+   "scene": 1,
+   "at": 11.0,
+   "text": "Y no necesita ningún truco: utiliza su propia anatomía.",
+   "highlight": [
+    "su propia anatomía"
+   ]
+  },
+  {
+   "id": "p0203",
+   "scene": 2,
+   "at": 15.5,
+   "text": "Nuestro protagonista es el pez erizo de espinas largas, un pariente cercano de los peces globo.",
+   "highlight": [
+    "pez erizo de espinas largas"
+   ]
+  },
+  {
+   "id": "p0204",
+   "scene": 2,
+   "at": 22.6,
+   "text": "En condiciones normales nada con un cuerpo compacto. Pero cuando se siente amenazado, su apariencia cambia por completo.",
+   "highlight": [
+    "cambia por completo"
+   ]
+  },
+  {
+   "id": "p0305",
+   "scene": 3,
+   "at": 30.5,
+   "text": "Para inflarse, bombea agua por la boca hacia una región muy expansible de su sistema digestivo.",
+   "highlight": [
+    "bombea agua"
+   ]
+  },
+  {
+   "id": "p0306",
+   "scene": 3,
+   "at": 37.6,
+   "text": "Así aumenta rápidamente su volumen, y una presa aparentemente fácil se convierte en un objetivo mucho más difícil.",
+   "highlight": [
+    "mucho más difícil"
+   ]
+  },
+  {
+   "id": "p0407",
+   "scene": 4,
+   "at": 45.5,
+   "text": "Su organismo posee adaptaciones especiales que permiten esa expansión.",
+   "highlight": [
+    "adaptaciones especiales"
+   ]
+  },
+  {
+   "id": "p0408",
+   "scene": 4,
+   "at": 50.4,
+   "text": "El estómago soporta cambios de volumen enormes, mientras todo el cuerpo adopta una forma redondeada.",
+   "highlight": [
+    "estómago"
+   ]
+  },
+  {
+   "id": "p0509",
+   "scene": 5,
+   "at": 60.5,
+   "text": "Pero hacerse grande no es su única defensa.",
+   "highlight": [
+    "no es su única defensa"
+   ]
+  },
+  {
+   "id": "p0510",
+   "scene": 5,
+   "at": 64.0,
+   "text": "En esta especie, las espinas se levantan cuando el cuerpo se infla: una barrera que puede hacer que el depredador renuncie a tragárselo.",
+   "highlight": [
+    "las espinas se levantan"
+   ]
+  },
+  {
+   "id": "p0611",
+   "scene": 6,
+   "at": 75.5,
+   "text": "En un arrecife, el peligro puede aparecer desde cualquier dirección.",
+   "highlight": [
+    "cualquier dirección"
+   ]
+  },
+  {
+   "id": "p0612",
+   "scene": 6,
+   "at": 80.8,
+   "text": "Frente a un depredador grande, el pez erizo aumenta su tamaño aparente y despliega sus espinas.",
+   "highlight": [
+    "tamaño aparente"
+   ]
+  },
+  {
+   "id": "p0713",
+   "scene": 7,
+   "at": 90.5,
+   "text": "Su expansión puede ser considerable.",
+   "highlight": [
+    "considerable"
+   ]
+  },
+  {
+   "id": "p0714",
+   "scene": 7,
+   "at": 93.6,
+   "text": "No se trata de hinchar las mejillas: el cambio afecta a buena parte del cuerpo.",
+   "highlight": [
+    "buena parte del cuerpo"
+   ]
+  },
+  {
+   "id": "p0715",
+   "scene": 7,
+   "at": 99.8,
+   "text": "La forma que le servía para nadar se convierte en una defensa extraordinaria.",
+   "highlight": [
+    "defensa extraordinaria"
+   ]
+  },
+  {
+   "id": "p0816",
+   "scene": 8,
+   "at": 105.5,
+   "text": "Pero esta defensa no es algo que pueda usar constantemente.",
+   "highlight": [
+    "constantemente"
+   ]
+  },
+  {
+   "id": "p0817",
+   "scene": 8,
+   "at": 110.2,
+   "text": "Inflarse exige un esfuerzo importante. Cuando la amenaza desaparece, expulsa el agua acumulada.",
+   "highlight": [
+    "expulsa el agua"
+   ]
+  },
+  {
+   "id": "p0918",
+   "scene": 9,
+   "at": 120.5,
+   "text": "Ahora ocurre otra transformación fascinante.",
+   "highlight": [
+    "otra transformación"
+   ]
+  },
+  {
+   "id": "p0919",
+   "scene": 9,
+   "at": 124.2,
+   "text": "Poco a poco el cuerpo se desinfla, las espinas vuelven a plegarse, y la silueta vuelve a ser la de un pez.",
+   "highlight": [
+    "se desinfla"
+   ]
+  },
+  {
+   "id": "p1020",
+   "scene": 10,
+   "at": 135.5,
+   "text": "Fuera del peligro, lleva una vida muy distinta.",
+   "highlight": [
+    "vida muy distinta"
+   ]
+  },
+  {
+   "id": "p1021",
+   "scene": 10,
+   "at": 139.4,
+   "text": "Explora el arrecife en busca de invertebrados de concha dura, como caracoles y cangrejos.",
+   "highlight": [
+    "concha dura"
+   ]
+  },
+  {
+   "id": "p1022",
+   "scene": 10,
+   "at": 145.8,
+   "text": "Su pico de dientes fusionados le permite triturarlos.",
+   "highlight": [
+    "dientes fusionados"
+   ]
+  },
+  {
+   "id": "p1123",
+   "scene": 11,
+   "at": 150.5,
+   "text": "Su defensa es el resultado de adaptaciones extraordinarias: cuerpo, piel y espinas funcionan juntos.",
+   "highlight": [
+    "funcionan juntos"
+   ]
+  },
+  {
+   "id": "p1124",
+   "scene": 11,
+   "at": 157.8,
+   "text": "Parece una defensa imposible, pero es completamente natural.",
+   "highlight": [
+    "completamente natural"
+   ]
+  },
+  {
+   "id": "p1225",
+   "scene": 12,
+   "at": 165.5,
+   "text": "Un pez pequeño que puede convertirse en una esfera cubierta de espinas.",
+   "highlight": [
+    "esfera cubierta de espinas"
+   ]
+  },
+  {
+   "id": "p1226",
+   "scene": 12,
+   "at": 170.6,
+   "text": "La naturaleza no necesita magia para crear algo extraordinario.",
+   "highlight": [
+    "no necesita magia"
+   ]
+  },
+  {
+   "id": "p1227",
+   "scene": 12,
+   "at": 175.0,
+   "text": "¿Conocías esta increíble defensa?",
+   "highlight": [
+    "increíble defensa"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,64 @@
+{
+ "title": "short2",
+ "voice": {
+  "engine": "piper",
+  "model": "es_MX-claude-high",
+  "lengthScale": 0.97,
+  "noiseScale": 0.6,
+  "noiseW": 0.6
+ },
+ "durationSec": 65,
+ "gap": 0.65,
+ "scenes": [
+  {
+   "n": 1,
+   "start": 0,
+   "end": 65,
+   "lead": 0.25,
+   "lines": [
+    {
+     "id": "200",
+     "text": "Este pez tiene colmillos tan largos que no caben dentro de su boca."
+    },
+    {
+     "id": "201",
+     "text": "Es el pez víbora, un cazador de la zona de medianoche."
+    },
+    {
+     "id": "202",
+     "text": "Mide hasta unos treinta centímetros, pero su arma principal está en la cabeza."
+    },
+    {
+     "id": "203",
+     "text": "Con la boca cerrada, sus colmillos sobresalen por fuera de la cabeza."
+    },
+    {
+     "id": "204",
+     "text": "Cuando ataca, levanta la cabeza y abre la mandíbula de forma extrema."
+    },
+    {
+     "id": "205",
+     "text": "Los colmillos funcionan como una jaula: la presa ya no puede escapar.",
+     "pause": 1.0
+    },
+    {
+     "id": "206",
+     "text": "Además, tiene hileras de órganos luminosos en el vientre, que pueden ayudarle a disimular su silueta, y un pequeño señuelo en la punta de una espina dorsal."
+    },
+    {
+     "id": "207",
+     "text": "Muchos suben de noche a aguas menos profundas para alimentarse, y regresan a la oscuridad durante el día."
+    },
+    {
+     "id": "208",
+     "text": "En un mundo donde la comida escasea, no puede dejar escapar ninguna oportunidad."
+    },
+    {
+     "id": "209",
+     "text": "¿Quieres conocer a los otros cazadores de las profundidades? Mira el documental completo.",
+     "pause": 0.6
+    }
+   ]
+  }
+ ]
+}

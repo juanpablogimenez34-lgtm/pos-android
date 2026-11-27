@@ -1,0 +1,71 @@
+{
+  "composition": "EP-Cachalote",
+  "quality": "draft",
+  "scale": 0.5,
+  "crf": "24",
+  "concurrency": 4,
+  "segmentSeconds": 30,
+  "segments": [
+    {
+      "start": 0,
+      "end": 899,
+      "secs": 63.9,
+      "peakMB": 2749
+    },
+    {
+      "start": 900,
+      "end": 1799,
+      "secs": 51,
+      "peakMB": 2642
+    },
+    {
+      "start": 1800,
+      "end": 2699,
+      "secs": 58.1,
+      "peakMB": 2693
+    },
+    {
+      "start": 2700,
+      "end": 3599,
+      "secs": 57.6,
+      "peakMB": 2656
+    },
+    {
+      "start": 3600,
+      "end": 4499,
+      "secs": 41.7,
+      "peakMB": 2673
+    },
+    {
+      "start": 4500,
+      "end": 5399,
+      "secs": 30.3,
+      "peakMB": 2772
+    }
+  ],
+  "startedAt": "2026-11-24T14:23:41.173Z",
+  "audio": {
+    "secs": 275.1,
+    "peakMB": 2372
+  },
+  "loudness": {
+    "inputLUFS": -16.39,
+    "inputTruePeak": -1.91,
+    "targetLUFS": -14
+  },
+  "wallSecondsThisRun": 595.3,
+  "totalSeconds": 577.7,
+  "peakRssMB": 2772,
+  "output": {
+    "file": "out/ep-cachalote-borrador-540x960.mp4",
+    "sizeMB": 10.69,
+    "width": 540,
+    "height": 960,
+    "fps": "30/1",
+    "videoFrames": 5400,
+    "durationSec": 180,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "framesOk": true
+}

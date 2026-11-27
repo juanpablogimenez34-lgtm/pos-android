@@ -1,0 +1,71 @@
+{
+  "composition": "EP-AnimalesVenenosos",
+  "quality": "final",
+  "scale": 1,
+  "crf": "20",
+  "concurrency": 4,
+  "segmentSeconds": 30,
+  "segments": [
+    {
+      "start": 0,
+      "end": 899,
+      "secs": 98.9,
+      "peakMB": 3940
+    },
+    {
+      "start": 900,
+      "end": 1799,
+      "secs": 61.8,
+      "peakMB": 3518
+    },
+    {
+      "start": 1800,
+      "end": 2699,
+      "secs": 65.1,
+      "peakMB": 2983
+    },
+    {
+      "start": 2700,
+      "end": 3599,
+      "secs": 174.1,
+      "peakMB": 3535
+    },
+    {
+      "start": 3600,
+      "end": 4499,
+      "secs": 191.4,
+      "peakMB": 3696
+    },
+    {
+      "start": 4500,
+      "end": 5399,
+      "secs": 116.5,
+      "peakMB": 3563
+    }
+  ],
+  "startedAt": "2026-11-24T17:35:53.314Z",
+  "audio": {
+    "secs": 284.2,
+    "peakMB": 2571
+  },
+  "loudness": {
+    "inputLUFS": -16.98,
+    "inputTruePeak": -2.23,
+    "targetLUFS": -14
+  },
+  "wallSecondsThisRun": 1011.3,
+  "totalSeconds": 992,
+  "peakRssMB": 3940,
+  "output": {
+    "file": "out/ep20-animales-venenosos-final-1080x1920.mp4",
+    "sizeMB": 58.37,
+    "width": 1080,
+    "height": 1920,
+    "fps": "30/1",
+    "videoFrames": 5400,
+    "durationSec": 180,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "framesOk": true
+}

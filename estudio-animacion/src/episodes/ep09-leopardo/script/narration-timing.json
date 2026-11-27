@@ -1,0 +1,486 @@
+{
+ "voice": {
+  "engine": "piper",
+  "model": "es_MX-claude-high",
+  "lengthScale": 1.02,
+  "noiseScale": 0.62,
+  "noiseW": 0.5
+ },
+ "lines": 36,
+ "speechSeconds": 154.26,
+ "coverage": 0.857,
+ "problems": [],
+ "timing": [
+  {
+   "id": "s011",
+   "scene": 1,
+   "at": 0.8,
+   "text": "Hay un cazador que puede estar a pocos metros de ti sin que lo veas.",
+   "highlight": [
+    "sin que lo veas"
+   ],
+   "drift": 0.0,
+   "start": 0.8,
+   "end": 4.699,
+   "duration": 3.899
+  },
+  {
+   "id": "s012",
+   "scene": 1,
+   "at": 5.4,
+   "text": "No necesita rugir para imponer respeto: se mueve en silencio y se confunde con las sombras.",
+   "highlight": [
+    "en silencio"
+   ],
+   "drift": 0.0,
+   "start": 5.4,
+   "end": 11.938,
+   "duration": 6.538
+  },
+  {
+   "id": "s013",
+   "scene": 1,
+   "at": 11.2,
+   "text": "Desaparece como un fantasma. Es el leopardo.",
+   "highlight": [
+    "leopardo"
+   ],
+   "drift": 0.988,
+   "start": 12.188,
+   "end": 15.301,
+   "duration": 3.113
+  },
+  {
+   "id": "s021",
+   "scene": 2,
+   "at": 15.6,
+   "text": "Su pelaje no es solamente hermoso.",
+   "highlight": [
+    "hermoso"
+   ],
+   "drift": 0.0,
+   "start": 15.6,
+   "end": 18.062,
+   "duration": 2.462
+  },
+  {
+   "id": "s022",
+   "scene": 2,
+   "at": 18.4,
+   "text": "Las manchas en forma de roseta rompen el contorno de su cuerpo entre ramas, hierbas y sombras.",
+   "highlight": [
+    "roseta"
+   ],
+   "drift": 0.0,
+   "start": 18.4,
+   "end": 24.615,
+   "duration": 6.215
+  },
+  {
+   "id": "s023",
+   "scene": 2,
+   "at": 25.0,
+   "text": "Incluso a plena luz del día puede ser muy difícil distinguirlo.",
+   "highlight": [
+    "difícil distinguirlo"
+   ],
+   "drift": 0.0,
+   "start": 25.0,
+   "end": 28.937,
+   "duration": 3.937
+  },
+  {
+   "id": "s031",
+   "scene": 3,
+   "at": 30.6,
+   "text": "A diferencia de los cazadores que dependen de largas persecuciones, el leopardo aprovecha el sigilo.",
+   "highlight": [
+    "sigilo"
+   ],
+   "drift": 0.0,
+   "start": 30.6,
+   "end": 36.402,
+   "duration": 5.802
+  },
+  {
+   "id": "s032",
+   "scene": 3,
+   "at": 37.4,
+   "text": "Avanza despacio, calcula la distancia y espera el momento adecuado.",
+   "highlight": [
+    "calcula la distancia"
+   ],
+   "drift": 0.0,
+   "start": 37.4,
+   "end": 42.155,
+   "duration": 4.755
+  },
+  {
+   "id": "s033",
+   "scene": 3,
+   "at": 42.2,
+   "text": "Cada paso lo acerca a su presa.",
+   "highlight": [
+    "presa"
+   ],
+   "drift": 0.205,
+   "start": 42.405,
+   "end": 44.649,
+   "duration": 2.244
+  },
+  {
+   "id": "s041",
+   "scene": 4,
+   "at": 45.6,
+   "text": "En el instante decisivo, toda esa paciencia se convierte en una explosión de velocidad.",
+   "highlight": [
+    "explosión de velocidad"
+   ],
+   "drift": 0.0,
+   "start": 45.6,
+   "end": 51.337,
+   "duration": 5.737
+  },
+  {
+   "id": "s042",
+   "scene": 4,
+   "at": 51.4,
+   "text": "Sus músculos lo impulsan en un salto poderoso.",
+   "highlight": [
+    "salto poderoso"
+   ],
+   "drift": 0.187,
+   "start": 51.587,
+   "end": 54.582,
+   "duration": 2.995
+  },
+  {
+   "id": "s043",
+   "scene": 4,
+   "at": 54.8,
+   "text": "Pero la cacería no siempre termina bien: muchas veces la presa escapa.",
+   "highlight": [
+    "la presa escapa"
+   ],
+   "drift": 0.032,
+   "start": 54.832,
+   "end": 59.935,
+   "duration": 5.103
+  },
+  {
+   "id": "s051",
+   "scene": 5,
+   "at": 60.6,
+   "text": "Una de sus habilidades más impresionantes aparece cuando abandona el suelo.",
+   "highlight": [
+    "abandona el suelo"
+   ],
+   "drift": 0.0,
+   "start": 60.6,
+   "end": 65.351,
+   "duration": 4.751
+  },
+  {
+   "id": "s052",
+   "scene": 5,
+   "at": 65.8,
+   "text": "El leopardo es un escalador extraordinario.",
+   "highlight": [
+    "escalador extraordinario"
+   ],
+   "drift": 0.0,
+   "start": 65.8,
+   "end": 68.518,
+   "duration": 2.718
+  },
+  {
+   "id": "s053",
+   "scene": 5,
+   "at": 69.0,
+   "text": "Sube a los árboles para descansar, vigilar su territorio o poner su comida a salvo.",
+   "highlight": [
+    "descansar",
+    "vigilar"
+   ],
+   "drift": 0.0,
+   "start": 69.0,
+   "end": 74.12,
+   "duration": 5.12
+  },
+  {
+   "id": "s061",
+   "scene": 6,
+   "at": 75.6,
+   "text": "Su fuerza sorprende incluso a quienes conocen a los grandes felinos.",
+   "highlight": [
+    "fuerza"
+   ],
+   "drift": 0.0,
+   "start": 75.6,
+   "end": 79.389,
+   "duration": 3.789
+  },
+  {
+   "id": "s062",
+   "scene": 6,
+   "at": 80.4,
+   "text": "Puede subir a las ramas presas muy pesadas, a veces más que su propio cuerpo.",
+   "highlight": [
+    "más que su propio cuerpo"
+   ],
+   "drift": 0.0,
+   "start": 80.4,
+   "end": 85.529,
+   "duration": 5.129
+  },
+  {
+   "id": "s063",
+   "scene": 6,
+   "at": 86.0,
+   "text": "Allí las protege de leones y hienas, que intentan robárselas.",
+   "highlight": [
+    "leones y hienas"
+   ],
+   "drift": 0.0,
+   "start": 86.0,
+   "end": 89.903,
+   "duration": 3.903
+  },
+  {
+   "id": "s071",
+   "scene": 7,
+   "at": 90.6,
+   "text": "Cuando cae la noche, el leopardo sigue cazando.",
+   "highlight": [
+    "cae la noche"
+   ],
+   "drift": 0.0,
+   "start": 90.6,
+   "end": 94.038,
+   "duration": 3.438
+  },
+  {
+   "id": "s072",
+   "scene": 7,
+   "at": 93.8,
+   "text": "Tras la retina tiene una capa reflectante, el tapetum lucidum, que aprovecha la poca luz.",
+   "highlight": [
+    "tapetum lucidum"
+   ],
+   "drift": 0.488,
+   "start": 94.288,
+   "end": 100.342,
+   "duration": 6.054
+  },
+  {
+   "id": "s073",
+   "scene": 7,
+   "at": 99.6,
+   "text": "Por eso sus ojos brillan en la oscuridad y detectan movimientos que nosotros no veríamos.",
+   "highlight": [
+    "brillan en la oscuridad"
+   ],
+   "drift": 0.992,
+   "start": 100.592,
+   "end": 105.957,
+   "duration": 5.365
+  },
+  {
+   "id": "s081",
+   "scene": 8,
+   "at": 105.6,
+   "text": "Los leopardos adultos suelen vivir solos.",
+   "highlight": [
+    "solos"
+   ],
+   "drift": 0.607,
+   "start": 106.207,
+   "end": 108.728,
+   "duration": 2.521
+  },
+  {
+   "id": "s082",
+   "scene": 8,
+   "at": 108.6,
+   "text": "Recorren su territorio y se comunican con olores, arañazos en los troncos y vocalizaciones.",
+   "highlight": [
+    "olores",
+    "arañazos"
+   ],
+   "drift": 0.378,
+   "start": 108.978,
+   "end": 114.805,
+   "duration": 5.827
+  },
+  {
+   "id": "s083",
+   "scene": 8,
+   "at": 115.0,
+   "text": "Aunque no los veamos, dejan señales que otros leopardos reconocen.",
+   "highlight": [
+    "señales"
+   ],
+   "drift": 0.055,
+   "start": 115.055,
+   "end": 119.488,
+   "duration": 4.433
+  },
+  {
+   "id": "s091",
+   "scene": 9,
+   "at": 120.6,
+   "text": "Pero hay una etapa en la que la soledad desaparece.",
+   "highlight": [
+    "la soledad desaparece"
+   ],
+   "drift": 0.0,
+   "start": 120.6,
+   "end": 123.901,
+   "duration": 3.301
+  },
+  {
+   "id": "s092",
+   "scene": 9,
+   "at": 124.2,
+   "text": "La madre esconde a sus cachorros y les enseña lo necesario para sobrevivir.",
+   "highlight": [
+    "les enseña"
+   ],
+   "drift": 0.0,
+   "start": 124.2,
+   "end": 128.765,
+   "duration": 4.565
+  },
+  {
+   "id": "s093",
+   "scene": 9,
+   "at": 129.6,
+   "text": "Para los pequeños, cada juego también es una lección.",
+   "highlight": [
+    "cada juego"
+   ],
+   "drift": 0.0,
+   "start": 129.6,
+   "end": 132.995,
+   "duration": 3.395
+  },
+  {
+   "id": "s101",
+   "scene": 10,
+   "at": 135.6,
+   "text": "Pocos grandes felinos son tan adaptables.",
+   "highlight": [
+    "adaptables"
+   ],
+   "drift": 0.0,
+   "start": 135.6,
+   "end": 138.344,
+   "duration": 2.744
+  },
+  {
+   "id": "s102",
+   "scene": 10,
+   "at": 138.8,
+   "text": "Viven en gran parte de África y en zonas de Asia: selvas tropicales, sabanas, montañas y regiones áridas.",
+   "highlight": [
+    "África",
+    "Asia"
+   ],
+   "drift": 0.0,
+   "start": 138.8,
+   "end": 146.662,
+   "duration": 7.862
+  },
+  {
+   "id": "s103",
+   "scene": 10,
+   "at": 146.0,
+   "text": "Esa capacidad es una de las claves de su supervivencia.",
+   "highlight": [
+    "supervivencia"
+   ],
+   "drift": 0.912,
+   "start": 146.912,
+   "end": 150.298,
+   "duration": 3.386
+  },
+  {
+   "id": "s111",
+   "scene": 11,
+   "at": 150.6,
+   "text": "Sin embargo, su fuerza no lo protege de todas las amenazas.",
+   "highlight": [
+    "amenazas"
+   ],
+   "drift": 0.0,
+   "start": 150.6,
+   "end": 154.203,
+   "duration": 3.603
+  },
+  {
+   "id": "s112",
+   "scene": 11,
+   "at": 154.6,
+   "text": "La pérdida de hábitat, la disminución de presas y los conflictos con las personas ponen en riesgo a muchas poblaciones.",
+   "highlight": [
+    "pérdida de hábitat"
+   ],
+   "drift": 0.0,
+   "start": 154.6,
+   "end": 161.788,
+   "duration": 7.188
+  },
+  {
+   "id": "s113",
+   "scene": 11,
+   "at": 161.6,
+   "text": "Hoy está clasificado como especie vulnerable.",
+   "highlight": [
+    "vulnerable"
+   ],
+   "drift": 0.438,
+   "start": 162.038,
+   "end": 164.995,
+   "duration": 2.957
+  },
+  {
+   "id": "s121",
+   "scene": 12,
+   "at": 165.4,
+   "text": "El leopardo nos recuerda que la naturaleza todavía guarda secretos extraordinarios.",
+   "highlight": [
+    "secretos extraordinarios"
+   ],
+   "drift": 0.0,
+   "start": 165.4,
+   "end": 170.184,
+   "duration": 4.784
+  },
+  {
+   "id": "s122",
+   "scene": 12,
+   "at": 170.8,
+   "text": "¿Qué otro animal te gustaría descubrir?",
+   "highlight": [
+    "te gustaría descubrir"
+   ],
+   "drift": 0.0,
+   "start": 170.8,
+   "end": 173.201,
+   "duration": 2.401
+  },
+  {
+   "id": "s123",
+   "scene": 12,
+   "at": 174.0,
+   "text": "Esto es Mundo Insólito Documentales.",
+   "highlight": [
+    "Mundo Insólito"
+   ],
+   "drift": 0.0,
+   "start": 174.0,
+   "end": 176.223,
+   "duration": 2.223
+  }
+ ]
+}

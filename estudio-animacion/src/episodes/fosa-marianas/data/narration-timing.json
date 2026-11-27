@@ -1,0 +1,820 @@
+{
+ "voice": {
+  "engine": "piper",
+  "model": "es_MX-claude-high",
+  "lengthScale": 0.97,
+  "noiseScale": 0.62,
+  "noiseW": 0.55
+ },
+ "lines": 63,
+ "speechSeconds": 493.34,
+ "coverage": 0.822,
+ "problems": [],
+ "timing": [
+  {
+   "id": "s1l1",
+   "scene": 1,
+   "at": 0.8,
+   "text": "Imagina un lugar tan profundo que incluso el monte Everest desaparecería completamente bajo el agua.",
+   "highlight": [
+    "monte Everest"
+   ],
+   "drift": 0.0,
+   "start": 0.8,
+   "end": 7.687,
+   "duration": 6.887
+  },
+  {
+   "id": "s1l2",
+   "scene": 1,
+   "at": 8.48,
+   "text": "En el Pacífico occidental, cerca de las islas Marianas, se encuentra una enorme fosa que alcanza casi once kilómetros de profundidad.",
+   "highlight": [
+    "islas Marianas",
+    "once kilómetros"
+   ],
+   "drift": 0.0,
+   "start": 8.48,
+   "end": 16.833,
+   "duration": 8.353
+  },
+  {
+   "id": "s1l3",
+   "scene": 1,
+   "at": 17.64,
+   "text": "El Everest mide unos ocho mil ochocientos cuarenta y nueve metros: en el fondo de la fosa, su cumbre quedaría a unos dos kilómetros bajo el agua.",
+   "highlight": [
+    "dos kilómetros"
+   ],
+   "drift": 0.0,
+   "start": 17.64,
+   "end": 27.149,
+   "duration": 9.509
+  },
+  {
+   "id": "s1l4",
+   "scene": 1,
+   "at": 28.02,
+   "text": "Hoy descenderemos hasta su punto más profundo, descubriendo las criaturas que habitan cada zona del océano.",
+   "highlight": [
+    "punto más profundo"
+   ],
+   "drift": 0.0,
+   "start": 28.02,
+   "end": 34.106,
+   "duration": 6.086
+  },
+  {
+   "id": "s1l5",
+   "scene": 1,
+   "at": 35.1,
+   "text": "Comenzamos en la zona iluminada: en los primeros doscientos metros, la luz permite la fotosíntesis del fitoplancton, base de casi toda la vida marina.",
+   "highlight": [
+    "zona iluminada",
+    "fitoplancton"
+   ],
+   "drift": 0.0,
+   "start": 35.1,
+   "end": 44.468,
+   "duration": 9.368
+  },
+  {
+   "id": "s1l6",
+   "scene": 1,
+   "at": 45.46,
+   "text": "Delfines, atunes, tiburones y bancos de peces aprovechan esta abundancia.",
+   "highlight": [],
+   "drift": 0.0,
+   "start": 45.46,
+   "end": 50.693,
+   "duration": 5.233
+  },
+  {
+   "id": "s1l7",
+   "scene": 1,
+   "at": 51.48,
+   "text": "Pero el agua absorbe la luz: primero desaparece el rojo, luego el amarillo, y al final solo queda el azul.",
+   "highlight": [
+    "solo queda el azul"
+   ],
+   "drift": 0.0,
+   "start": 51.48,
+   "end": 58.671,
+   "duration": 7.191
+  },
+  {
+   "id": "s2l1",
+   "scene": 2,
+   "at": 60.8,
+   "text": "A partir de los doscientos metros comienza la zona crepuscular. La luz del sol se debilita y las condiciones cambian por completo.",
+   "highlight": [
+    "zona crepuscular"
+   ],
+   "drift": 0.0,
+   "start": 60.8,
+   "end": 68.766,
+   "duration": 7.966
+  },
+  {
+   "id": "s2l2",
+   "scene": 2,
+   "at": 69.58,
+   "text": "Aquí encontramos peces linterna, capaces de producir luz mediante órganos especializados llamados fotóforos.",
+   "highlight": [
+    "peces linterna",
+    "fotóforos"
+   ],
+   "drift": 0.0,
+   "start": 69.58,
+   "end": 77.108,
+   "duration": 7.528
+  },
+  {
+   "id": "s2l3",
+   "scene": 2,
+   "at": 77.79,
+   "text": "Muchos suben cada noche hacia la superficie para alimentarse y regresan a la profundidad al amanecer: es una de las mayores migraciones diarias del planeta.",
+   "highlight": [
+    "migraciones diarias"
+   ],
+   "drift": 0.0,
+   "start": 77.79,
+   "end": 88.023,
+   "duration": 10.233
+  },
+  {
+   "id": "s2l4",
+   "scene": 2,
+   "at": 88.71,
+   "text": "Otros poseen ojos extraordinarios. El pez de cabeza transparente, del Pacífico Norte, tiene ojos tubulares dentro de un escudo transparente lleno de líquido, y puede girarlos para mirar hacia arriba o hacia delante.",
+   "highlight": [
+    "ojos tubulares"
+   ],
+   "drift": 0.0,
+   "start": 88.71,
+   "end": 102.189,
+   "duration": 13.479
+  },
+  {
+   "id": "s2l5",
+   "scene": 2,
+   "at": 103.03,
+   "text": "Las dos manchas sobre su boca no son ojos: son sus órganos olfativos.",
+   "highlight": [
+    "órganos olfativos"
+   ],
+   "drift": 0.0,
+   "start": 103.03,
+   "end": 107.516,
+   "duration": 4.486
+  },
+  {
+   "id": "s2l6",
+   "scene": 2,
+   "at": 108.35,
+   "text": "Cerca de los mil metros, la última luz solar se apaga. Algunas medusas, como la medusa corona, producen destellos azules cuando se sienten amenazadas.",
+   "highlight": [
+    "medusa corona"
+   ],
+   "drift": 0.0,
+   "start": 108.35,
+   "end": 118.447,
+   "duration": 10.097
+  },
+  {
+   "id": "s3l1",
+   "scene": 3,
+   "at": 120.8,
+   "text": "Al superar aproximadamente los mil metros, entramos en la zona de medianoche, un mundo donde la luz solar ya no llega.",
+   "highlight": [
+    "zona de medianoche"
+   ],
+   "drift": 0.0,
+   "start": 120.8,
+   "end": 128.336,
+   "duration": 7.536
+  },
+  {
+   "id": "s3l2",
+   "scene": 3,
+   "at": 129.93,
+   "text": "Aquí, muchos animales producen su propia luz. La bioluminiscencia es una reacción química: una molécula llamada luciferina se oxida con ayuda de una enzima, la luciferasa, y libera energía en forma de luz.",
+   "highlight": [
+    "luciferina",
+    "luciferasa"
+   ],
+   "drift": 0.0,
+   "start": 129.93,
+   "end": 144.363,
+   "duration": 14.433
+  },
+  {
+   "id": "s3l3",
+   "scene": 3,
+   "at": 146.09,
+   "text": "Puede servir para atraer presas, comunicarse, defenderse o evitar ser detectado.",
+   "highlight": [],
+   "drift": 0.0,
+   "start": 146.09,
+   "end": 151.392,
+   "duration": 5.302
+  },
+  {
+   "id": "s3l4",
+   "scene": 3,
+   "at": 153.01,
+   "text": "El rape abisal lleva sobre la cabeza un señuelo iluminado por bacterias. Una presa curiosa se acerca, y su enorme boca hace el resto.",
+   "highlight": [
+    "señuelo"
+   ],
+   "drift": 0.0,
+   "start": 153.01,
+   "end": 162.37,
+   "duration": 9.36
+  },
+  {
+   "id": "s3l5",
+   "scene": 3,
+   "at": 163.97,
+   "text": "El pez dragón tiene dientes largos y afilados, una barbilla luminosa y filas de fotóforos a lo largo del cuerpo.",
+   "highlight": [
+    "pez dragón"
+   ],
+   "drift": 0.0,
+   "start": 163.97,
+   "end": 170.692,
+   "duration": 6.722
+  },
+  {
+   "id": "s3l6",
+   "scene": 3,
+   "at": 172.4,
+   "text": "En esta oscuridad permanente, cada adaptación puede marcar la diferencia entre sobrevivir y desaparecer.",
+   "highlight": [],
+   "drift": 0.0,
+   "start": 172.4,
+   "end": 178.645,
+   "duration": 6.245
+  },
+  {
+   "id": "s4l1",
+   "scene": 4,
+   "at": 180.8,
+   "text": "Entre los animales asociados con las profundidades encontramos criaturas de proporciones impresionantes.",
+   "highlight": [],
+   "drift": 0.0,
+   "start": 180.8,
+   "end": 186.779,
+   "duration": 5.979
+  },
+  {
+   "id": "s4l2",
+   "scene": 4,
+   "at": 188.41,
+   "text": "El calamar gigante tiene ojos de hasta unos veintisiete centímetros, entre los más grandes del reino animal, y dos largos tentáculos para capturar alimento.",
+   "highlight": [
+    "calamar gigante",
+    "veintisiete centímetros"
+   ],
+   "drift": 0.0,
+   "start": 188.41,
+   "end": 198.116,
+   "duration": 9.706
+  },
+  {
+   "id": "s4l3",
+   "scene": 4,
+   "at": 199.74,
+   "text": "Fue fotografiado vivo por primera vez en 2004, a unos novecientos metros de profundidad, cerca de las islas Ogasawara, al norte de las Marianas.",
+   "highlight": [
+    "novecientos metros"
+   ],
+   "drift": 0.0,
+   "start": 199.74,
+   "end": 209.351,
+   "duration": 9.611
+  },
+  {
+   "id": "s4l4",
+   "scene": 4,
+   "at": 211.01,
+   "text": "El cachalote suele bucear entre cuatrocientos y mil metros, y se han registrado inmersiones de unos dos mil metros.",
+   "highlight": [
+    "cachalote",
+    "dos mil metros"
+   ],
+   "drift": 0.0,
+   "start": 211.01,
+   "end": 218.441,
+   "duration": 7.431
+  },
+  {
+   "id": "s4l5",
+   "scene": 4,
+   "at": 219.81,
+   "text": "Utiliza la ecolocalización para explorar donde la luz resulta insuficiente, y en el estómago de muchos cachalotes se han encontrado picos de calamares.",
+   "highlight": [
+    "ecolocalización"
+   ],
+   "drift": 0.0,
+   "start": 219.81,
+   "end": 229.414,
+   "duration": 9.604
+  },
+  {
+   "id": "s4l6",
+   "scene": 4,
+   "at": 231.07,
+   "text": "Esta escena es una reconstrucción: nadie ha filmado todavía un enfrentamiento entre ambos en las profundidades.",
+   "highlight": [
+    "reconstrucción"
+   ],
+   "drift": 0.0,
+   "start": 231.07,
+   "end": 238.731,
+   "duration": 7.661
+  },
+  {
+   "id": "s5l1",
+   "scene": 5,
+   "at": 240.8,
+   "text": "Cuanto más descendemos, más difícil resulta encontrar alimento.",
+   "highlight": [],
+   "drift": 0.0,
+   "start": 240.8,
+   "end": 244.826,
+   "duration": 4.026
+  },
+  {
+   "id": "s5l2",
+   "scene": 5,
+   "at": 246.58,
+   "text": "Gran parte de la materia orgánica que llega hasta aquí procede de las capas superiores: restos de organismos, excrementos y mucosidades que caen lentamente como copos. Es la nieve marina.",
+   "highlight": [
+    "nieve marina"
+   ],
+   "drift": 0.0,
+   "start": 246.58,
+   "end": 257.727,
+   "duration": 11.147
+  },
+  {
+   "id": "s5l3",
+   "scene": 5,
+   "at": 259.41,
+   "text": "Algunas partículas tardan semanas en llegar al fondo.",
+   "highlight": [],
+   "drift": 0.0,
+   "start": 259.41,
+   "end": 262.94,
+   "duration": 3.53
+  },
+  {
+   "id": "s5l4",
+   "scene": 5,
+   "at": 264.64,
+   "text": "El pez pelícano tiene una boca enorme, con una mandíbula que se abre como una bolsa, y se alimenta sobre todo de pequeños crustáceos.",
+   "highlight": [
+    "pez pelícano"
+   ],
+   "drift": 0.0,
+   "start": 264.64,
+   "end": 273.189,
+   "duration": 8.549
+  },
+  {
+   "id": "s5l5",
+   "scene": 5,
+   "at": 274.94,
+   "text": "El pulpo dumbo nada agitando dos aletas que recuerdan a orejas, y planea con la membrana que une sus ocho brazos.",
+   "highlight": [
+    "pulpo dumbo"
+   ],
+   "drift": 0.0,
+   "start": 274.94,
+   "end": 281.942,
+   "duration": 7.002
+  },
+  {
+   "id": "s5l6",
+   "scene": 5,
+   "at": 283.53,
+   "text": "Se ha observado a casi siete mil metros, más profundo que cualquier otro pulpo conocido.",
+   "highlight": [
+    "siete mil metros"
+   ],
+   "drift": 0.0,
+   "start": 283.53,
+   "end": 289.012,
+   "duration": 5.482
+  },
+  {
+   "id": "s5l7",
+   "scene": 5,
+   "at": 290.71,
+   "text": "Ahorrar energía es la clave: muchos animales profundos se mueven poco y aprovechan cada oportunidad de alimentarse.",
+   "highlight": [
+    "Ahorrar energía"
+   ],
+   "drift": 0.0,
+   "start": 290.71,
+   "end": 298.611,
+   "duration": 7.901
+  },
+  {
+   "id": "s6l1",
+   "scene": 6,
+   "at": 300.8,
+   "text": "Entre los cuatro mil y los seis mil metros se extiende la zona abisal. Aunque parece un desierto oscuro y silencioso, alberga numerosos organismos adaptados.",
+   "highlight": [
+    "zona abisal"
+   ],
+   "drift": 0.0,
+   "start": 300.8,
+   "end": 310.297,
+   "duration": 9.497
+  },
+  {
+   "id": "s6l2",
+   "scene": 6,
+   "at": 312.09,
+   "text": "El agua está a uno o dos grados, y la presión es cientos de veces mayor que en la superficie.",
+   "highlight": [
+    "cientos de veces"
+   ],
+   "drift": 0.0,
+   "start": 312.09,
+   "end": 317.536,
+   "duration": 5.446
+  },
+  {
+   "id": "s6l3",
+   "scene": 6,
+   "at": 319.28,
+   "text": "Los pepinos de mar recorren los sedimentos y se alimentan de las partículas orgánicas que se depositan en el fondo.",
+   "highlight": [
+    "pepinos de mar"
+   ],
+   "drift": 0.0,
+   "start": 319.28,
+   "end": 325.705,
+   "duration": 6.425
+  },
+  {
+   "id": "s6l4",
+   "scene": 6,
+   "at": 327.36,
+   "text": "Aquí también viven los xenofióforos. Aunque pueden medir más de diez centímetros, cada uno es una sola célula que construye su caparazón pegando granos de sedimento.",
+   "highlight": [
+    "xenofióforos",
+    "una sola célula"
+   ],
+   "drift": 0.0,
+   "start": 327.36,
+   "end": 337.674,
+   "duration": 10.314
+  },
+  {
+   "id": "s6l5",
+   "scene": 6,
+   "at": 339.42,
+   "text": "No son animales: pertenecen a los foraminíferos, un grupo de organismos unicelulares.",
+   "highlight": [
+    "No son animales"
+   ],
+   "drift": 0.0,
+   "start": 339.42,
+   "end": 344.971,
+   "duration": 5.551
+  },
+  {
+   "id": "s6l6",
+   "scene": 6,
+   "at": 346.82,
+   "text": "Las marcas del sedimento son huellas y madrigueras de animales que rara vez vemos.",
+   "highlight": [],
+   "drift": 0.0,
+   "start": 346.82,
+   "end": 351.607,
+   "duration": 4.787
+  },
+  {
+   "id": "s6l7",
+   "scene": 6,
+   "at": 353.44,
+   "text": "Más adelante, el fondo comienza a inclinarse. Estamos al borde de la fosa.",
+   "highlight": [],
+   "drift": 0.0,
+   "start": 353.44,
+   "end": 358.528,
+   "duration": 5.088
+  },
+  {
+   "id": "s7l1",
+   "scene": 7,
+   "at": 360.8,
+   "text": "Al superar los seis mil metros entramos en la zona hadal, una región formada principalmente por las grandes fosas oceánicas.",
+   "highlight": [
+    "zona hadal"
+   ],
+   "drift": 0.0,
+   "start": 360.8,
+   "end": 368.395,
+   "duration": 7.595
+  },
+  {
+   "id": "s7l2",
+   "scene": 7,
+   "at": 369.96,
+   "text": "La fosa de las Marianas mide unos dos mil quinientos cincuenta kilómetros de largo y, en promedio, unos sesenta y nueve de ancho.",
+   "highlight": [
+    "dos mil quinientos cincuenta kilómetros"
+   ],
+   "drift": 0.0,
+   "start": 369.96,
+   "end": 378.125,
+   "duration": 8.165
+  },
+  {
+   "id": "s7l3",
+   "scene": 7,
+   "at": 379.63,
+   "text": "La fosa de las Marianas existe porque la placa del Pacífico, más antigua y densa, se hunde bajo la placa de las Marianas. Este proceso se llama subducción.",
+   "highlight": [
+    "subducción"
+   ],
+   "drift": 0.0,
+   "start": 379.63,
+   "end": 389.336,
+   "duration": 9.706
+  },
+  {
+   "id": "s7l4",
+   "scene": 7,
+   "at": 390.84,
+   "text": "La presión aumenta aproximadamente una atmósfera por cada diez metros de profundidad. A siete mil metros, ronda las setecientas atmósferas.",
+   "highlight": [
+    "setecientas atmósferas"
+   ],
+   "drift": 0.0,
+   "start": 390.84,
+   "end": 399.619,
+   "duration": 8.779
+  },
+  {
+   "id": "s7l5",
+   "scene": 7,
+   "at": 401.17,
+   "text": "Aun así, los animales no se aplastan: sus cuerpos están llenos de agua, que casi no se comprime, y no tienen cavidades de aire.",
+   "highlight": [
+    "no se aplastan"
+   ],
+   "drift": 0.0,
+   "start": 401.17,
+   "end": 409.768,
+   "duration": 8.598
+  },
+  {
+   "id": "s7l6",
+   "scene": 7,
+   "at": 411.23,
+   "text": "Los anfípodos hadales, pequeños crustáceos parientes de las pulgas de mar, llegan en grupos en cuanto detectan alimento.",
+   "highlight": [
+    "anfípodos hadales"
+   ],
+   "drift": 0.0,
+   "start": 411.23,
+   "end": 418.543,
+   "duration": 7.313
+  },
+  {
+   "id": "s8l1",
+   "scene": 8,
+   "at": 420.8,
+   "text": "En las profundidades de las Marianas vive un pez que desafía nuestra imaginación: el pez caracol de las Marianas.",
+   "highlight": [
+    "pez caracol de las Marianas"
+   ],
+   "drift": 0.0,
+   "start": 420.8,
+   "end": 427.255,
+   "duration": 6.455
+  },
+  {
+   "id": "s8l2",
+   "scene": 8,
+   "at": 429.29,
+   "text": "Fue descrito en 2017 a partir de ejemplares capturados entre unos seis mil novecientos y casi ocho mil metros.",
+   "highlight": [
+    "2017"
+   ],
+   "drift": 0.0,
+   "start": 429.29,
+   "end": 437.598,
+   "duration": 8.308
+  },
+  {
+   "id": "s8l3",
+   "scene": 8,
+   "at": 439.55,
+   "text": "Su cuerpo es blando y translúcido, sin escamas, y su cráneo no está completamente osificado.",
+   "highlight": [
+    "sin escamas"
+   ],
+   "drift": 0.0,
+   "start": 439.55,
+   "end": 445.631,
+   "duration": 6.081
+  },
+  {
+   "id": "s8l4",
+   "scene": 8,
+   "at": 447.6,
+   "text": "Sus tejidos acumulan una molécula llamada óxido de trimetilamina, que ayuda a estabilizar las proteínas frente a la presión.",
+   "highlight": [
+    "óxido de trimetilamina"
+   ],
+   "drift": 0.0,
+   "start": 447.6,
+   "end": 455.187,
+   "duration": 7.587
+  },
+  {
+   "id": "s8l5",
+   "scene": 8,
+   "at": 457.26,
+   "text": "Se alimenta de pequeños crustáceos, como los anfípodos, que succiona cerca del fondo.",
+   "highlight": [],
+   "drift": 0.0,
+   "start": 457.26,
+   "end": 462.721,
+   "duration": 5.461
+  },
+  {
+   "id": "s8l6",
+   "scene": 8,
+   "at": 464.81,
+   "text": "Pero incluso los peces más especializados parecen tener un límite. El récord lo tiene otro pez caracol, filmado a unos ocho mil trescientos metros en la fosa de Izu-Ogasawara.",
+   "highlight": [
+    "ocho mil trescientos metros"
+   ],
+   "drift": 0.0,
+   "start": 464.81,
+   "end": 476.046,
+   "duration": 11.236
+  },
+  {
+   "id": "s9l1",
+   "scene": 9,
+   "at": 480.8,
+   "text": "Más allá de las mayores profundidades donde se han observado peces, la vida no desaparece.",
+   "highlight": [
+    "la vida no desaparece"
+   ],
+   "drift": 0.0,
+   "start": 480.8,
+   "end": 486.328,
+   "duration": 5.528
+  },
+  {
+   "id": "s9l2",
+   "scene": 9,
+   "at": 488.14,
+   "text": "Los anfípodos Hirondellea gigas viven incluso cerca del fondo del abismo Challenger, y producen enzimas capaces de digerir la celulosa de restos vegetales que llegan desde la superficie.",
+   "highlight": [
+    "Hirondellea gigas",
+    "celulosa"
+   ],
+   "drift": 0.0,
+   "start": 488.14,
+   "end": 499.021,
+   "duration": 10.881
+  },
+  {
+   "id": "s9l3",
+   "scene": 9,
+   "at": 500.94,
+   "text": "En los sedimentos viven bacterias y arqueas piezófilas, microorganismos que crecen mejor bajo presiones enormes.",
+   "highlight": [
+    "piezófilas"
+   ],
+   "drift": 0.0,
+   "start": 500.94,
+   "end": 507.803,
+   "duration": 6.863
+  },
+  {
+   "id": "s9l4",
+   "scene": 9,
+   "at": 509.58,
+   "text": "Sus membranas contienen más grasas insaturadas, que las mantienen flexibles, y sus proteínas siguen funcionando donde otras dejarían de hacerlo.",
+   "highlight": [
+    "grasas insaturadas"
+   ],
+   "drift": 0.0,
+   "start": 509.58,
+   "end": 518.296,
+   "duration": 8.716
+  },
+  {
+   "id": "s9l5",
+   "scene": 9,
+   "at": 520.25,
+   "text": "En el fondo de la fosa, la actividad microbiana es incluso mayor que en las llanuras abisales cercanas, porque allí se acumula la materia orgánica.",
+   "highlight": [
+    "actividad microbiana"
+   ],
+   "drift": 0.0,
+   "start": 520.25,
+   "end": 529.858,
+   "duration": 9.608
+  },
+  {
+   "id": "s9l6",
+   "scene": 9,
+   "at": 531.34,
+   "text": "Aquí, la oscuridad es permanente, y la presión ya supera unas mil veces la que sentimos en la superficie.",
+   "highlight": [
+    "mil veces"
+   ],
+   "drift": 0.0,
+   "start": 531.34,
+   "end": 538.495,
+   "duration": 7.155
+  },
+  {
+   "id": "s10l1",
+   "scene": 10,
+   "at": 540.8,
+   "text": "Hemos llegado al abismo Challenger, el punto más profundo conocido de los océanos.",
+   "highlight": [
+    "abismo Challenger"
+   ],
+   "drift": 0.0,
+   "start": 540.8,
+   "end": 546.079,
+   "duration": 5.279
+  },
+  {
+   "id": "s10l2",
+   "scene": 10,
+   "at": 547.85,
+   "text": "Una medición de 2021 lo situó en unos diez mil novecientos treinta y cinco metros; otras expediciones han obtenido valores ligeramente distintos.",
+   "highlight": [
+    "diez mil novecientos treinta y cinco"
+   ],
+   "drift": 0.0,
+   "start": 547.85,
+   "end": 557.613,
+   "duration": 9.763
+  },
+  {
+   "id": "s10l3",
+   "scene": 10,
+   "at": 559.54,
+   "text": "Bajo casi once kilómetros de agua, la presión supera aproximadamente mil veces la de la superficie. Y, aun así, la vida ha encontrado una manera de existir.",
+   "highlight": [
+    "la vida"
+   ],
+   "drift": 0.0,
+   "start": 559.54,
+   "end": 570.958,
+   "duration": 11.418
+  },
+  {
+   "id": "s10l4",
+   "scene": 10,
+   "at": 572.75,
+   "text": "En 1960, Jacques Piccard y Don Walsh llegaron al fondo a bordo del batiscafo Trieste. En 2012, James Cameron descendió en solitario, y desde 2019 varios sumergibles han regresado.",
+   "highlight": [
+    "Trieste"
+   ],
+   "drift": 0.0,
+   "start": 572.75,
+   "end": 586.845,
+   "duration": 14.095
+  },
+  {
+   "id": "s10l5",
+   "scene": 10,
+   "at": 588.62,
+   "text": "Cada expedición nos recuerda cuánto desconocemos todavía de nuestro propio planeta.",
+   "highlight": [],
+   "drift": 0.0,
+   "start": 588.62,
+   "end": 593.223,
+   "duration": 4.603
+  },
+  {
+   "id": "s10l6",
+   "scene": 10,
+   "at": 595.2,
+   "text": "¿Qué otros secretos podrían esconderse en las profundidades?",
+   "highlight": [],
+   "drift": 0.0,
+   "start": 595.2,
+   "end": 598.599,
+   "duration": 3.399
+  }
+ ]
+}

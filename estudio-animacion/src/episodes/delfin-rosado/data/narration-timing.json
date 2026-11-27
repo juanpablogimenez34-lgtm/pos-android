@@ -1,0 +1,139 @@
+{
+ "voice": {
+  "engine": "piper",
+  "model": "es_MX-claude-high",
+  "lengthScale": 0.95,
+  "noiseScale": 0.62,
+  "noiseW": 0.55
+ },
+ "lines": 10,
+ "speechSeconds": 51.66,
+ "coverage": 0.861,
+ "problems": [],
+ "timing": [
+  {
+   "id": "d0100",
+   "scene": 1,
+   "at": 0.15,
+   "text": "¡Existe un delfín rosado que nada entre los árboles de la selva!",
+   "highlight": [
+    "delfín rosado"
+   ],
+   "drift": 0.1,
+   "start": 0.25,
+   "end": 3.939,
+   "duration": 3.689
+  },
+  {
+   "id": "d0200",
+   "scene": 2,
+   "at": 5.0,
+   "text": "Vive en ríos de Sudamérica y, cuando el Amazonas se desborda, explora auténticos bosques sumergidos.",
+   "highlight": [
+    "Amazonas",
+    "bosques sumergidos"
+   ],
+   "drift": 0.0,
+   "start": 5.0,
+   "end": 11.4,
+   "duration": 6.4
+  },
+  {
+   "id": "d0300",
+   "scene": 3,
+   "at": 12.0,
+   "text": "Al nacer suele ser gris.",
+   "highlight": [],
+   "drift": 0.0,
+   "start": 12.0,
+   "end": 13.569,
+   "duration": 1.569
+  },
+  {
+   "id": "d0301",
+   "scene": 3,
+   "at": 14.2,
+   "text": "Al crecer, muchos ejemplares adquieren tonos rosados, relacionados con la edad, la pigmentación y las cicatrices.",
+   "highlight": [
+    "tonos rosados"
+   ],
+   "drift": 0.0,
+   "start": 14.2,
+   "end": 21.429,
+   "duration": 7.229
+  },
+  {
+   "id": "d0400",
+   "scene": 4,
+   "at": 22.1,
+   "text": "A diferencia de muchos delfines oceánicos, tiene un cuello muy flexible: puede mover la cabeza y maniobrar entre raíces sumergidas.",
+   "highlight": [
+    "cuello muy flexible"
+   ],
+   "drift": 0.0,
+   "start": 22.1,
+   "end": 31.064,
+   "duration": 8.964
+  },
+  {
+   "id": "d0500",
+   "scene": 5,
+   "at": 32.1,
+   "text": "En aguas turbias, sus ojos no bastan.",
+   "highlight": [],
+   "drift": 0.0,
+   "start": 32.1,
+   "end": 34.803,
+   "duration": 2.703
+  },
+  {
+   "id": "d0501",
+   "scene": 5,
+   "at": 34.6,
+   "text": "Usa la ecolocalización: emite sonidos y analiza sus ecos para detectar obstáculos y localizar peces.",
+   "highlight": [
+    "ecolocalización"
+   ],
+   "drift": 0.453,
+   "start": 35.053,
+   "end": 41.39,
+   "duration": 6.337
+  },
+  {
+   "id": "d0600",
+   "scene": 6,
+   "at": 42.4,
+   "text": "Su largo hocico y su gran movilidad le permiten buscar alimento donde otros grandes animales tendrían dificultades para entrar.",
+   "highlight": [],
+   "drift": 0.0,
+   "start": 42.4,
+   "end": 50.227,
+   "duration": 7.827
+  },
+  {
+   "id": "d0700",
+   "scene": 7,
+   "at": 51.1,
+   "text": "Un mamífero de agua dulce que parece de leyenda, pero existe.",
+   "highlight": [],
+   "drift": 0.0,
+   "start": 51.1,
+   "end": 54.852,
+   "duration": 3.752
+  },
+  {
+   "id": "d0800",
+   "scene": 8,
+   "at": 56.0,
+   "text": "¿Sabías que existía un delfín rosado en el Amazonas?",
+   "highlight": [
+    "delfín rosado",
+    "Amazonas"
+   ],
+   "drift": 0.0,
+   "start": 56.0,
+   "end": 59.19,
+   "duration": 3.19
+  }
+ ]
+}

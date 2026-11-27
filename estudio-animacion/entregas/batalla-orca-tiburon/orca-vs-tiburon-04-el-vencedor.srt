@@ -1,0 +1,42 @@
+1
+00:00:00,300 --> 00:00:02,807
+¡Llegó el momento de descubrir
+al vencedor!
+
+2
+00:00:04,130 --> 00:00:08,308
+La orca embiste con su enorme
+masa y desvía al tiburón.
+
+3
+00:00:09,570 --> 00:00:13,357
+En nuestra simulación, el
+tiburón se retira. La mayor masa
+
+4
+00:00:13,357 --> 00:00:17,143
+de la orca y su maniobrabilidad
+inclinan el resultado a su
+
+5
+00:00:17,143 --> 00:00:17,785
+favor.
+
+6
+00:00:19,060 --> 00:00:23,249
+Existen casos reales de orcas
+cazando tiburones blancos. Cada
+
+7
+00:00:23,249 --> 00:00:27,208
+encuentro es distinto, pero la
+orca sería la favorita.
+
+8
+00:00:28,470 --> 00:00:32,639
+¿Acertaste? Elige la próxima
+batalla: ¿león contra tigre, o
+
+9
+00:00:32,639 --> 00:00:34,726
+cocodrilo contra anaconda?

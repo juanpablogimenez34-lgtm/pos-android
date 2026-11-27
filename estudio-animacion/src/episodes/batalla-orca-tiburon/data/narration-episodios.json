@@ -1,0 +1,202 @@
+{
+ "voice": {
+  "engine": "piper",
+  "model": "es_MX-claude-high",
+  "lengthScale": 0.93,
+  "noiseScale": 0.62,
+  "noiseW": 0.55
+ },
+ "durationSec": 140,
+ "lines": [
+  {
+   "id": "e1l1",
+   "scene": 1,
+   "at": 0.3,
+   "text": "¿Qué pasaría si estos dos gigantes del océano se enfrentaran?",
+   "highlight": [
+    "dos gigantes"
+   ]
+  },
+  {
+   "id": "e1l2",
+   "scene": 1,
+   "at": 4.6,
+   "text": "El tiburón blanco tiene dientes diseñados para cortar. La orca combina una enorme fuerza física con extraordinarias capacidades cognitivas.",
+   "highlight": [
+    "dientes diseñados para cortar",
+    "capacidades cognitivas"
+   ]
+  },
+  {
+   "id": "e1l3",
+   "scene": 1,
+   "at": 13.68,
+   "text": "Aquí, la orca tiene ventaja de tamaño. Pero el tiburón posee una poderosa mandíbula y una sorprendente aceleración.",
+   "highlight": [
+    "ventaja de tamaño",
+    "aceleración"
+   ]
+  },
+  {
+   "id": "e1l4",
+   "scene": 1,
+   "at": 22.5,
+   "text": "Los dos se aproximan. Antes del primer movimiento, tienes que decidir.",
+   "highlight": [
+    "tienes que decidir"
+   ]
+  },
+  {
+   "id": "e1l5",
+   "scene": 1,
+   "at": 29.5,
+   "text": "¿Equipo orca o equipo tiburón? Deja tu predicción antes de la segunda parte.",
+   "highlight": [
+    "Equipo orca",
+    "equipo tiburón",
+    "primer paso"
+   ]
+  },
+  {
+   "id": "e2l1",
+   "scene": 2,
+   "at": 35.3,
+   "text": "¡El tiburón blanco ataca primero!",
+   "highlight": [
+    "ataca primero"
+   ]
+  },
+  {
+   "id": "e2l2",
+   "scene": 2,
+   "at": 39.2,
+   "text": "Su cuerpo hidrodinámico le permite acelerar rápidamente, y sus dientes son una seria amenaza.",
+   "highlight": [
+    "acelerar rápidamente"
+   ]
+  },
+  {
+   "id": "e2l3",
+   "scene": 2,
+   "at": 47.35,
+   "text": "Pero la orca no se queda inmóvil: con sus aletas y su poderosa cola cambia de trayectoria y evita el choque.",
+   "highlight": [
+    "cambia de trayectoria"
+   ]
+  },
+  {
+   "id": "e2l4",
+   "scene": 2,
+   "at": 55.74,
+   "text": "El tiburón conserva su capacidad de ataque, pero la orca tiene una ventaja que podría cambiarlo todo.",
+   "highlight": [
+    "una ventaja"
+   ]
+  },
+  {
+   "id": "e2l5",
+   "scene": 2,
+   "at": 63.98,
+   "text": "¿Bastaría una mordida para vencer a la orca? Descubre su estrategia en la tercera parte.",
+   "highlight": [
+    "una mordida",
+    "estrategia"
+   ]
+  },
+  {
+   "id": "e3l1",
+   "scene": 3,
+   "at": 70.3,
+   "text": "La orca tiene una ventaja que el tiburón no puede ignorar.",
+   "highlight": [
+    "una ventaja"
+   ]
+  },
+  {
+   "id": "e3l2",
+   "scene": 3,
+   "at": 74.19,
+   "text": "Es muy inteligente, y usa la ecolocalización para obtener información de lo que la rodea.",
+   "highlight": [
+    "ecolocalización"
+   ]
+  },
+  {
+   "id": "e3l3",
+   "scene": 3,
+   "at": 82.0,
+   "text": "Algunos tiburones pueden quedar inmóviles temporalmente en ciertas posiciones. Y se han observado orcas cazando tiburones blancos.",
+   "highlight": [
+    "inmóviles temporalmente",
+    "se han observado"
+   ]
+  },
+  {
+   "id": "e3l4",
+   "scene": 3,
+   "at": 92.0,
+   "text": "Llega el momento decisivo: la potencia del tiburón contra la mayor masa y maniobrabilidad de la orca.",
+   "highlight": [
+    "momento decisivo"
+   ]
+  },
+  {
+   "id": "e3l5",
+   "scene": 3,
+   "at": 100.0,
+   "text": "Última oportunidad: ¿mantienes tu predicción o cambias de equipo?",
+   "highlight": [
+    "Última oportunidad",
+    "inevitable"
+   ]
+  },
+  {
+   "id": "e4l1",
+   "scene": 4,
+   "at": 105.3,
+   "text": "¡Llegó el momento de descubrir al vencedor!",
+   "highlight": [
+    "vencedor"
+   ]
+  },
+  {
+   "id": "e4l2",
+   "scene": 4,
+   "at": 109.13,
+   "text": "La orca embiste con su enorme masa y desvía al tiburón.",
+   "highlight": [
+    "enorme masa"
+   ]
+  },
+  {
+   "id": "e4l3",
+   "scene": 4,
+   "at": 114.57,
+   "text": "En nuestra simulación, el tiburón se retira. La mayor masa de la orca y su maniobrabilidad inclinan el resultado a su favor.",
+   "highlight": [
+    "se retira",
+    "a su favor"
+   ]
+  },
+  {
+   "id": "e4l4",
+   "scene": 4,
+   "at": 124.06,
+   "text": "Existen casos reales de orcas cazando tiburones blancos. Cada encuentro es distinto, pero la orca sería la favorita.",
+   "highlight": [
+    "casos reales",
+    "la favorita"
+   ]
+  },
+  {
+   "id": "e4l5",
+   "scene": 4,
+   "at": 133.47,
+   "text": "¿Acertaste? Elige la próxima batalla: ¿león contra tigre, o cocodrilo contra anaconda?",
+   "highlight": [
+    "león contra tigre",
+    "cocodrilo contra anaconda"
+   ]
+  }
+ ]
+}

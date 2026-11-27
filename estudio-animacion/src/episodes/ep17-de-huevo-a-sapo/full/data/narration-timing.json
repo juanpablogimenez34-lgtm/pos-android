@@ -1,0 +1,395 @@
+{
+ "voice": {
+  "engine": "piper",
+  "model": "es_MX-claude-high",
+  "lengthScale": 1.0,
+  "noiseScale": 0.62,
+  "noiseW": 0.55
+ },
+ "lines": 29,
+ "speechSeconds": 119.91,
+ "coverage": 0.666,
+ "problems": [],
+ "timing": [
+  {
+   "id": "s100",
+   "scene": 1,
+   "at": 0.5,
+   "text": "Este pequeño animal comenzará su vida nadando como un pez…",
+   "highlight": [
+    "nadando como un pez"
+   ],
+   "drift": 0.0,
+   "start": 0.5,
+   "end": 4.667,
+   "duration": 4.167
+  },
+  {
+   "id": "s101",
+   "scene": 1,
+   "at": 4.6,
+   "text": "…pero terminará caminando sobre la tierra.",
+   "highlight": [
+    "caminando sobre la tierra"
+   ],
+   "drift": 0.317,
+   "start": 4.917,
+   "end": 7.315,
+   "duration": 2.398
+  },
+  {
+   "id": "s102",
+   "scene": 1,
+   "at": 8.8,
+   "text": "Para conseguirlo, su cuerpo tendrá que transformarse por completo.",
+   "highlight": [
+    "transformarse"
+   ],
+   "drift": 0.0,
+   "start": 8.8,
+   "end": 12.521,
+   "duration": 3.721
+  },
+  {
+   "id": "s103",
+   "scene": 1,
+   "at": 13.6,
+   "text": "Esta es la increíble historia de cómo nace y crece un sapo.",
+   "highlight": [
+    "nace y crece"
+   ],
+   "drift": 0.0,
+   "start": 13.6,
+   "end": 17.899,
+   "duration": 4.299
+  },
+  {
+   "id": "s204",
+   "scene": 2,
+   "at": 20.5,
+   "text": "Todo comienza en el agua.",
+   "highlight": [
+    "agua"
+   ],
+   "drift": 0.0,
+   "start": 20.5,
+   "end": 22.462,
+   "duration": 1.962
+  },
+  {
+   "id": "s205",
+   "scene": 2,
+   "at": 23.2,
+   "text": "Los sapos depositan sus huevos en ambientes acuáticos, y muchas especies los organizan en largas cadenas gelatinosas.",
+   "highlight": [
+    "cadenas gelatinosas"
+   ],
+   "drift": 0.0,
+   "start": 23.2,
+   "end": 30.946,
+   "duration": 7.746
+  },
+  {
+   "id": "s206",
+   "scene": 2,
+   "at": 31.6,
+   "text": "Protegido por esa cubierta, un embrión comienza a desarrollarse.",
+   "highlight": [
+    "embrión"
+   ],
+   "drift": 0.0,
+   "start": 31.6,
+   "end": 35.703,
+   "duration": 4.103
+  },
+  {
+   "id": "s207",
+   "scene": 2,
+   "at": 37.6,
+   "text": "Poco a poco aparecen las estructuras que necesitará para iniciar su vida.",
+   "highlight": [
+    "estructuras"
+   ],
+   "drift": 0.0,
+   "start": 37.6,
+   "end": 42.492,
+   "duration": 4.892
+  },
+  {
+   "id": "s308",
+   "scene": 3,
+   "at": 45.5,
+   "text": "Cuando llega el momento de salir del huevo, aparece una criatura muy distinta del sapo que conocemos.",
+   "highlight": [
+    "muy distinta"
+   ],
+   "drift": 0.0,
+   "start": 45.5,
+   "end": 51.35,
+   "duration": 5.85
+  },
+  {
+   "id": "s309",
+   "scene": 3,
+   "at": 52.4,
+   "text": "Es un renacuajo.",
+   "highlight": [
+    "renacuajo"
+   ],
+   "drift": 0.0,
+   "start": 52.4,
+   "end": 53.631,
+   "duration": 1.231
+  },
+  {
+   "id": "s310",
+   "scene": 3,
+   "at": 55.0,
+   "text": "Tiene una cola que utiliza para nadar y, durante esta etapa, obtiene oxígeno principalmente mediante estructuras branquiales.",
+   "highlight": [
+    "cola",
+    "branquiales"
+   ],
+   "drift": 0.0,
+   "start": 55.0,
+   "end": 62.972,
+   "duration": 7.972
+  },
+  {
+   "id": "s311",
+   "scene": 3,
+   "at": 64.6,
+   "text": "Su vida transcurre bajo el agua.",
+   "highlight": [
+    "bajo el agua"
+   ],
+   "drift": 0.0,
+   "start": 64.6,
+   "end": 66.699,
+   "duration": 2.099
+  },
+  {
+   "id": "s412",
+   "scene": 4,
+   "at": 70.5,
+   "text": "Con el paso del tiempo comienza una transformación extraordinaria.",
+   "highlight": [
+    "transformación"
+   ],
+   "drift": 0.0,
+   "start": 70.5,
+   "end": 74.376,
+   "duration": 3.876
+  },
+  {
+   "id": "s413",
+   "scene": 4,
+   "at": 75.6,
+   "text": "Primero se desarrollan las patas posteriores.",
+   "highlight": [
+    "patas posteriores"
+   ],
+   "drift": 0.0,
+   "start": 75.6,
+   "end": 78.521,
+   "duration": 2.921
+  },
+  {
+   "id": "s414",
+   "scene": 4,
+   "at": 80.6,
+   "text": "Más adelante aparecen las delanteras.",
+   "highlight": [
+    "delanteras"
+   ],
+   "drift": 0.0,
+   "start": 80.6,
+   "end": 82.915,
+   "duration": 2.315
+  },
+  {
+   "id": "s415",
+   "scene": 4,
+   "at": 84.4,
+   "text": "Al mismo tiempo, su cuerpo cambia y sus órganos se adaptan a una nueva forma de vida.",
+   "highlight": [
+    "nueva forma de vida"
+   ],
+   "drift": 0.0,
+   "start": 84.4,
+   "end": 90.16,
+   "duration": 5.76
+  },
+  {
+   "id": "s416",
+   "scene": 4,
+   "at": 90.6,
+   "text": "Este proceso recibe el nombre de metamorfosis.",
+   "highlight": [
+    "metamorfosis"
+   ],
+   "drift": 0.0,
+   "start": 90.6,
+   "end": 93.912,
+   "duration": 3.312
+  },
+  {
+   "id": "s517",
+   "scene": 5,
+   "at": 95.5,
+   "text": "Ahora sucede uno de los cambios más sorprendentes.",
+   "highlight": [
+    "sorprendentes"
+   ],
+   "drift": 0.0,
+   "start": 95.5,
+   "end": 98.449,
+   "duration": 2.949
+  },
+  {
+   "id": "s518",
+   "scene": 5,
+   "at": 99.6,
+   "text": "La larga cola que le permitía nadar comienza a reabsorberse.",
+   "highlight": [
+    "reabsorberse"
+   ],
+   "drift": 0.0,
+   "start": 99.6,
+   "end": 103.225,
+   "duration": 3.625
+  },
+  {
+   "id": "s519",
+   "scene": 5,
+   "at": 105.2,
+   "text": "Sus patas adquieren mayor protagonismo y su organismo se prepara para desplazarse fuera del agua.",
+   "highlight": [
+    "fuera del agua"
+   ],
+   "drift": 0.0,
+   "start": 105.2,
+   "end": 111.069,
+   "duration": 5.869
+  },
+  {
+   "id": "s520",
+   "scene": 5,
+   "at": 113.4,
+   "text": "El antiguo renacuajo está convirtiéndose en un pequeño sapo.",
+   "highlight": [
+    "pequeño sapo"
+   ],
+   "drift": 0.0,
+   "start": 113.4,
+   "end": 117.312,
+   "duration": 3.912
+  },
+  {
+   "id": "s621",
+   "scene": 6,
+   "at": 120.5,
+   "text": "Fuera del agua comienza una nueva etapa.",
+   "highlight": [
+    "nueva etapa"
+   ],
+   "drift": 0.0,
+   "start": 120.5,
+   "end": 122.953,
+   "duration": 2.453
+  },
+  {
+   "id": "s622",
+   "scene": 6,
+   "at": 124.2,
+   "text": "El pequeño sapo debe evitar la deshidratación, encontrar refugio y conseguir alimento.",
+   "highlight": [
+    "deshidratación",
+    "refugio",
+    "alimento"
+   ],
+   "drift": 0.0,
+   "start": 124.2,
+   "end": 129.983,
+   "duration": 5.783
+  },
+  {
+   "id": "s623",
+   "scene": 6,
+   "at": 131.6,
+   "text": "Su cuerpo ya está adaptado a una vida muy diferente de la que llevaba como renacuajo.",
+   "highlight": [
+    "muy diferente"
+   ],
+   "drift": 0.0,
+   "start": 131.6,
+   "end": 136.528,
+   "duration": 4.928
+  },
+  {
+   "id": "s624",
+   "scene": 6,
+   "at": 138.0,
+   "text": "Aunque todavía es diminuto, seguirá creciendo hasta alcanzar la madurez.",
+   "highlight": [
+    "madurez"
+   ],
+   "drift": 0.0,
+   "start": 138.0,
+   "end": 142.456,
+   "duration": 4.456
+  },
+  {
+   "id": "s725",
+   "scene": 7,
+   "at": 150.5,
+   "text": "De un pequeño huevo a un renacuajo, y de un nadador acuático a un animal terrestre.",
+   "highlight": [
+    "animal terrestre"
+   ],
+   "drift": 0.0,
+   "start": 150.5,
+   "end": 155.567,
+   "duration": 5.067
+  },
+  {
+   "id": "s726",
+   "scene": 7,
+   "at": 157.6,
+   "text": "La vida del sapo es una historia de cambios extraordinarios.",
+   "highlight": [
+    "cambios extraordinarios"
+   ],
+   "drift": 0.0,
+   "start": 157.6,
+   "end": 161.213,
+   "duration": 3.613
+  },
+  {
+   "id": "s727",
+   "scene": 7,
+   "at": 162.6,
+   "text": "Una transformación que ocurre en la naturaleza y que demuestra lo sorprendente que puede ser el mundo animal.",
+   "highlight": [
+    "mundo animal"
+   ],
+   "drift": 0.0,
+   "start": 162.6,
+   "end": 168.766,
+   "duration": 6.166
+  },
+  {
+   "id": "s728",
+   "scene": 7,
+   "at": 171.2,
+   "text": "¿Conocías esta increíble metamorfosis?",
+   "highlight": [
+    "metamorfosis"
+   ],
+   "drift": 0.0,
+   "start": 171.2,
+   "end": 173.66,
+   "duration": 2.46
+  }
+ ]
+}

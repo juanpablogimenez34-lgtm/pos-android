@@ -1,0 +1,130 @@
+{
+ "episode": "camaron-pistola",
+ "durationSec": 60,
+ "voice": {
+  "engine": "piper",
+  "model": "es_MX-claude-high",
+  "lengthScale": 0.98,
+  "noiseScale": 0.62,
+  "noiseW": 0.55
+ },
+ "lines": [
+  {
+   "id": "c0100",
+   "scene": 1,
+   "at": 0.15,
+   "text": "¡Este pequeño camarón crea una onda de choque bajo el agua!",
+   "highlight": [
+    "onda de choque"
+   ]
+  },
+  {
+   "id": "c0200",
+   "scene": 2,
+   "at": 5.2,
+   "text": "Es el camarón pistola.",
+   "highlight": [
+    "camarón pistola"
+   ]
+  },
+  {
+   "id": "c0201",
+   "scene": 2,
+   "at": 7.0,
+   "text": "Una pinza es mucho más grande que la otra: un arma extraordinaria.",
+   "highlight": [
+    "mucho más grande"
+   ]
+  },
+  {
+   "id": "c0300",
+   "scene": 3,
+   "at": 12.4,
+   "text": "Cuando detecta una presa, abre su enorme pinza…",
+   "highlight": [
+    "abre su enorme pinza"
+   ]
+  },
+  {
+   "id": "c0301",
+   "scene": 3,
+   "at": 15.5,
+   "text": "y la cierra a gran velocidad, lanzando un chorro de agua.",
+   "highlight": [
+    "chorro de agua"
+   ]
+  },
+  {
+   "id": "c0400",
+   "scene": 4,
+   "at": 20.3,
+   "text": "Esa caída de presión forma una burbuja de cavitación.",
+   "highlight": [
+    "burbuja de cavitación"
+   ]
+  },
+  {
+   "id": "c0401",
+   "scene": 4,
+   "at": 24.6,
+   "text": "Al colapsar, libera una poderosa onda de choque.",
+   "highlight": [
+    "onda de choque"
+   ]
+  },
+  {
+   "id": "c0500",
+   "scene": 5,
+   "at": 30.3,
+   "text": "Por un instante, dentro de la burbuja se alcanzan miles de grados…",
+   "highlight": [
+    "miles de grados"
+   ]
+  },
+  {
+   "id": "c0501",
+   "scene": 5,
+   "at": 35.4,
+   "text": "y hasta un diminuto destello de luz.",
+   "highlight": [
+    "destello de luz"
+   ]
+  },
+  {
+   "id": "c0600",
+   "scene": 6,
+   "at": 40.3,
+   "text": "La onda puede aturdir a pequeñas presas.",
+   "highlight": [
+    "aturdir"
+   ]
+  },
+  {
+   "id": "c0601",
+   "scene": 6,
+   "at": 43.6,
+   "text": "Todo gracias a una pinza… y a la física del agua.",
+   "highlight": [
+    "física del agua"
+   ]
+  },
+  {
+   "id": "c0700",
+   "scene": 7,
+   "at": 50.3,
+   "text": "Un animal de pocos centímetros que usa la física como arma.",
+   "highlight": [
+    "física como arma"
+   ]
+  },
+  {
+   "id": "c0800",
+   "scene": 8,
+   "at": 55.2,
+   "text": "¿Conocías este animal? Mira lo que pasa cuando cierra su pinza.",
+   "highlight": [
+    "cierra su pinza"
+   ]
+  }
+ ]
+}

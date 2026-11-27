@@ -1,0 +1,175 @@
+{
+  "composition": "Documental",
+  "quality": "premium",
+  "scale": 1,
+  "crf": "20",
+  "concurrency": 4,
+  "segmentSeconds": 30,
+  "segments": [
+    {
+      "start": 0,
+      "end": 899,
+      "secs": 213.1,
+      "peakMB": 3362,
+      "reused": true
+    },
+    {
+      "start": 900,
+      "end": 1799,
+      "secs": 199.9,
+      "peakMB": 3089,
+      "reused": true
+    },
+    {
+      "start": 1800,
+      "end": 2699,
+      "secs": 152.8,
+      "peakMB": 3838
+    },
+    {
+      "start": 2700,
+      "end": 3599,
+      "secs": 145.7,
+      "peakMB": 3252,
+      "reused": true
+    },
+    {
+      "start": 3600,
+      "end": 4499,
+      "secs": 149.6,
+      "peakMB": 3013,
+      "reused": true
+    },
+    {
+      "start": 4500,
+      "end": 5399,
+      "secs": 143.4,
+      "peakMB": 3286,
+      "reused": true
+    },
+    {
+      "start": 5400,
+      "end": 6299,
+      "secs": 100.8,
+      "peakMB": 3076,
+      "reused": true
+    },
+    {
+      "start": 6300,
+      "end": 7199,
+      "secs": 148.4,
+      "peakMB": 3288,
+      "reused": true
+    },
+    {
+      "start": 7200,
+      "end": 8099,
+      "secs": 140.3,
+      "peakMB": 3167,
+      "reused": true
+    },
+    {
+      "start": 8100,
+      "end": 8999,
+      "secs": 114.7,
+      "peakMB": 3128,
+      "reused": true
+    },
+    {
+      "start": 9000,
+      "end": 9899,
+      "secs": 125.4,
+      "peakMB": 3290,
+      "reused": true
+    },
+    {
+      "start": 9900,
+      "end": 10799,
+      "secs": 171.3,
+      "peakMB": 2991,
+      "reused": true
+    },
+    {
+      "start": 10800,
+      "end": 11699,
+      "secs": 133,
+      "peakMB": 3332,
+      "reused": true
+    },
+    {
+      "start": 11700,
+      "end": 12599,
+      "secs": 146.4,
+      "peakMB": 3434,
+      "reused": true
+    },
+    {
+      "start": 12600,
+      "end": 13499,
+      "secs": 129.8,
+      "peakMB": 3146,
+      "reused": true
+    },
+    {
+      "start": 13500,
+      "end": 14399,
+      "secs": 129.1,
+      "peakMB": 3313,
+      "reused": true
+    },
+    {
+      "start": 14400,
+      "end": 15299,
+      "secs": 148.1,
+      "peakMB": 3653,
+      "reused": true
+    },
+    {
+      "start": 15300,
+      "end": 16199,
+      "secs": 193.9,
+      "peakMB": 3559,
+      "reused": true
+    },
+    {
+      "start": 16200,
+      "end": 17099,
+      "secs": 177.8,
+      "peakMB": 3679,
+      "reused": true
+    },
+    {
+      "start": 17100,
+      "end": 17999,
+      "secs": 160.5,
+      "peakMB": 3143,
+      "reused": true
+    }
+  ],
+  "startedAt": "2026-11-24T23:43:41.154Z",
+  "audio": {
+    "secs": 956.9,
+    "peakMB": 2107,
+    "reused": true
+  },
+  "loudness": {
+    "inputLUFS": -17.25,
+    "inputTruePeak": -2.86,
+    "targetLUFS": -14
+  },
+  "wallSecondsThisRun": 203,
+  "totalSeconds": 3980.9,
+  "peakRssMB": 3838,
+  "output": {
+    "file": "out/oceano-profundo-documental-10min-1080p.mp4",
+    "sizeMB": 210.31,
+    "width": 1920,
+    "height": 1080,
+    "fps": "30/1",
+    "videoFrames": 18000,
+    "durationSec": 600,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "framesOk": true
+}

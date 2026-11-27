@@ -1,0 +1,390 @@
+{
+ "voice": {
+  "engine": "piper",
+  "model": "es_MX-claude-high",
+  "lengthScale": 0.95,
+  "noiseScale": 0.62,
+  "noiseW": 0.55
+ },
+ "lines": 29,
+ "speechSeconds": 147.34,
+ "coverage": 0.819,
+ "problems": [],
+ "timing": [
+  {
+   "id": "o01",
+   "scene": 1,
+   "at": 0.4,
+   "text": "En los océanos de nuestro planeta vive un animal tan poderoso que incluso algunos grandes tiburones pueden convertirse en sus presas.",
+   "highlight": [
+    "grandes tiburones"
+   ],
+   "drift": 0.0,
+   "start": 0.4,
+   "end": 8.585,
+   "duration": 8.185
+  },
+  {
+   "id": "o02",
+   "scene": 1,
+   "at": 9.2,
+   "text": "Es inteligente, vive en grupos familiares y ha desarrollado técnicas de caza sorprendentes.",
+   "highlight": [
+    "grupos familiares"
+   ],
+   "drift": 0.0,
+   "start": 9.2,
+   "end": 15.28,
+   "duration": 6.08
+  },
+  {
+   "id": "o03",
+   "scene": 1,
+   "at": 15.0,
+   "text": "Esta es la orca, una de las grandes depredadoras del océano.",
+   "highlight": [
+    "orca"
+   ],
+   "drift": 0.53,
+   "start": 15.53,
+   "end": 19.509,
+   "duration": 3.979
+  },
+  {
+   "id": "o04",
+   "scene": 2,
+   "at": 20.5,
+   "text": "Aunque de adulta es una formidable depredadora, la orca comienza su vida dependiendo de su madre.",
+   "highlight": [
+    "su madre"
+   ],
+   "drift": 0.0,
+   "start": 20.5,
+   "end": 26.522,
+   "duration": 6.022
+  },
+  {
+   "id": "o05",
+   "scene": 2,
+   "at": 26.6,
+   "text": "La cría nace bajo el agua y, como todos los cetáceos, debe subir a la superficie para respirar aire.",
+   "highlight": [
+    "respirar aire"
+   ],
+   "drift": 0.172,
+   "start": 26.772,
+   "end": 33.273,
+   "duration": 6.501
+  },
+  {
+   "id": "o06",
+   "scene": 2,
+   "at": 33.4,
+   "text": "Durante sus primeros meses se alimenta de leche materna y nada pegada a su madre.",
+   "highlight": [
+    "leche materna"
+   ],
+   "drift": 0.123,
+   "start": 33.523,
+   "end": 38.419,
+   "duration": 4.896
+  },
+  {
+   "id": "o07",
+   "scene": 2,
+   "at": 39.4,
+   "text": "Su familia será su escuela durante toda la vida.",
+   "highlight": [
+    "familia"
+   ],
+   "drift": 0.0,
+   "start": 39.4,
+   "end": 43.109,
+   "duration": 3.709
+  },
+  {
+   "id": "o08",
+   "scene": 3,
+   "at": 45.4,
+   "text": "Las orcas pertenecen a la familia de los delfines y poseen extraordinarias capacidades cognitivas.",
+   "highlight": [
+    "delfines"
+   ],
+   "drift": 0.0,
+   "start": 45.4,
+   "end": 51.07,
+   "duration": 5.67
+  },
+  {
+   "id": "o09",
+   "scene": 3,
+   "at": 51.6,
+   "text": "Emiten clics y escuchan sus ecos: así obtienen información sobre su entorno. Es la ecolocalización.",
+   "highlight": [
+    "ecolocalización"
+   ],
+   "drift": 0.0,
+   "start": 51.6,
+   "end": 58.243,
+   "duration": 6.643
+  },
+  {
+   "id": "o10",
+   "scene": 3,
+   "at": 58.8,
+   "text": "Además, se comunican con silbidos y llamadas.",
+   "highlight": [
+    "se comunican"
+   ],
+   "drift": 0.0,
+   "start": 58.8,
+   "end": 61.789,
+   "duration": 2.989
+  },
+  {
+   "id": "o11",
+   "scene": 3,
+   "at": 62.4,
+   "text": "Algunos grupos tienen dialectos propios que se transmiten entre generaciones, como verdaderas tradiciones familiares.",
+   "highlight": [
+    "dialectos"
+   ],
+   "drift": 0.0,
+   "start": 62.4,
+   "end": 69.301,
+   "duration": 6.901
+  },
+  {
+   "id": "o12",
+   "scene": 4,
+   "at": 70.5,
+   "text": "Su cuerpo está perfectamente adaptado a la vida acuática.",
+   "highlight": [
+    "adaptado"
+   ],
+   "drift": 0.0,
+   "start": 70.5,
+   "end": 74.058,
+   "duration": 3.558
+  },
+  {
+   "id": "o13",
+   "scene": 4,
+   "at": 74.2,
+   "text": "Potentes músculos impulsan una cola horizontal que se mueve hacia arriba y hacia abajo.",
+   "highlight": [
+    "hacia arriba y hacia abajo"
+   ],
+   "drift": 0.108,
+   "start": 74.308,
+   "end": 79.523,
+   "duration": 5.215
+  },
+  {
+   "id": "o14",
+   "scene": 4,
+   "at": 79.8,
+   "text": "Las aletas pectorales controlan la dirección, y su forma hidrodinámica reduce la resistencia del agua.",
+   "highlight": [
+    "aletas pectorales"
+   ],
+   "drift": 0.0,
+   "start": 79.8,
+   "end": 85.699,
+   "duration": 5.899
+  },
+  {
+   "id": "o15",
+   "scene": 4,
+   "at": 86.2,
+   "text": "Pero no tiene branquias: respira por el espiráculo, en lo alto de la cabeza, y debe volver a la superficie.",
+   "highlight": [
+    "espiráculo"
+   ],
+   "drift": 0.0,
+   "start": 86.2,
+   "end": 93.168,
+   "duration": 6.968
+  },
+  {
+   "id": "o16",
+   "scene": 5,
+   "at": 95.4,
+   "text": "Una de sus habilidades más sorprendentes es la cooperación.",
+   "highlight": [
+    "cooperación"
+   ],
+   "drift": 0.0,
+   "start": 95.4,
+   "end": 99.115,
+   "duration": 3.715
+  },
+  {
+   "id": "o17",
+   "scene": 5,
+   "at": 99.2,
+   "text": "Algunas poblaciones de orcas antárticas nadan juntas hacia un témpano de hielo para crear una ola.",
+   "highlight": [
+    "crear una ola"
+   ],
+   "drift": 0.165,
+   "start": 99.365,
+   "end": 105.561,
+   "duration": 6.196
+  },
+  {
+   "id": "o18",
+   "scene": 5,
+   "at": 105.6,
+   "text": "La ola barre la plataforma y puede desplazar a la foca que descansa sobre ella.",
+   "highlight": [
+    "foca"
+   ],
+   "drift": 0.211,
+   "start": 105.811,
+   "end": 110.842,
+   "duration": 5.031
+  },
+  {
+   "id": "o19",
+   "scene": 5,
+   "at": 111.4,
+   "text": "Esta técnica requiere coordinación y experiencia, y se aprende dentro del grupo.",
+   "highlight": [
+    "se aprende"
+   ],
+   "drift": 0.0,
+   "start": 111.4,
+   "end": 116.052,
+   "duration": 4.652
+  },
+  {
+   "id": "o20",
+   "scene": 6,
+   "at": 121.2,
+   "text": "El tiburón blanco es uno de los depredadores más conocidos del océano.",
+   "highlight": [
+    "tiburón blanco"
+   ],
+   "drift": 0.0,
+   "start": 121.2,
+   "end": 125.475,
+   "duration": 4.275
+  },
+  {
+   "id": "o21",
+   "scene": 6,
+   "at": 125.8,
+   "text": "Mueve la cola de lado a lado; la orca, de arriba abajo.",
+   "highlight": [
+    "de lado a lado"
+   ],
+   "drift": 0.0,
+   "start": 125.8,
+   "end": 129.941,
+   "duration": 4.141
+  },
+  {
+   "id": "o22",
+   "scene": 6,
+   "at": 130.2,
+   "text": "Algunas orcas han aprendido a cazar incluso a estos grandes tiburones.",
+   "highlight": [
+    "algunas orcas"
+   ],
+   "drift": 0.0,
+   "start": 130.2,
+   "end": 134.5,
+   "duration": 4.3
+  },
+  {
+   "id": "o23",
+   "scene": 6,
+   "at": 135.2,
+   "text": "Se han documentado casos en los que consumen principalmente su hígado, un órgano muy rico en grasas.",
+   "highlight": [
+    "hígado"
+   ],
+   "drift": 0.0,
+   "start": 135.2,
+   "end": 141.804,
+   "duration": 6.604
+  },
+  {
+   "id": "o24",
+   "scene": 6,
+   "at": 142.4,
+   "text": "No todas las orcas lo hacen: cada población tiene sus propias presas.",
+   "highlight": [
+    "No todas"
+   ],
+   "drift": 0.0,
+   "start": 142.4,
+   "end": 146.639,
+   "duration": 4.239
+  },
+  {
+   "id": "o25",
+   "scene": 7,
+   "at": 150.6,
+   "text": "Fuerza, inteligencia, comunicación y cooperación.",
+   "highlight": [
+    "cooperación"
+   ],
+   "drift": 0.0,
+   "start": 150.6,
+   "end": 154.281,
+   "duration": 3.681
+  },
+  {
+   "id": "o26",
+   "scene": 7,
+   "at": 154.6,
+   "text": "Las orcas demuestran que sobrevivir no depende solo del tamaño o de los músculos.",
+   "highlight": [
+    "no depende solo"
+   ],
+   "drift": 0.0,
+   "start": 154.6,
+   "end": 159.17,
+   "duration": 4.57
+  },
+  {
+   "id": "o27",
+   "scene": 7,
+   "at": 160.2,
+   "text": "En muchas poblaciones, los conocimientos se transmiten dentro de la familia durante generaciones.",
+   "highlight": [
+    "dentro de la familia"
+   ],
+   "drift": 0.0,
+   "start": 160.2,
+   "end": 165.832,
+   "duration": 5.632
+  },
+  {
+   "id": "o28",
+   "scene": 7,
+   "at": 166.4,
+   "text": "Son animales extraordinarios que todavía tienen mucho que enseñarnos.",
+   "highlight": [],
+   "drift": 0.0,
+   "start": 166.4,
+   "end": 170.573,
+   "duration": 4.173
+  },
+  {
+   "id": "o29",
+   "scene": 7,
+   "at": 171.4,
+   "text": "¿Qué otro animal sorprendente te gustaría descubrir?",
+   "highlight": [
+    "te gustaría descubrir"
+   ],
+   "drift": 0.0,
+   "start": 171.4,
+   "end": 174.311,
+   "duration": 2.911
+  }
+ ]
+}

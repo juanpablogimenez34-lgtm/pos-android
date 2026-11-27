@@ -1,0 +1,211 @@
+{
+ "episode": "ep04-camaron-mantis",
+ "durationSec": 180,
+ "voice": {
+  "engine": "piper",
+  "model": "es_MX-claude-high",
+  "lengthScale": 1.0,
+  "noiseScale": 0.62,
+  "noiseW": 0.5
+ },
+ "lines": [
+  {
+   "id": "q011",
+   "scene": 1,
+   "at": 0.6,
+   "text": "En lo profundo de los arrecifes tropicales se esconde una criatura tan extraordinaria que parece de otro mundo.",
+   "highlight": [
+    "otro mundo"
+   ]
+  },
+  {
+   "id": "q021",
+   "scene": 2,
+   "at": 9.4,
+   "text": "Algo nos observa desde una grieta.",
+   "highlight": [
+    "nos observa"
+   ]
+  },
+  {
+   "id": "q022",
+   "scene": 2,
+   "at": 12.2,
+   "text": "Sus ojos son sorprendentes, pero su gran secreto está en sus extremidades.",
+   "highlight": [
+    "gran secreto"
+   ]
+  },
+  {
+   "id": "q031",
+   "scene": 3,
+   "at": 18.4,
+   "text": "Este es el camarón mantis pavo real, un pequeño depredador con una visión extraordinaria y un arma natural poderosa.",
+   "highlight": [
+    "camarón mantis pavo real"
+   ]
+  },
+  {
+   "id": "q041",
+   "scene": 4,
+   "at": 27.4,
+   "text": "No es un camarón verdadero: es un estomatópodo, un crustáceo que suele medir entre diez y dieciocho centímetros.",
+   "highlight": [
+    "estomatópodo"
+   ]
+  },
+  {
+   "id": "q051",
+   "scene": 5,
+   "at": 36.4,
+   "text": "Cada ojo, sobre un pedúnculo móvil, se mueve por separado: uno vigila un rincón mientras el otro explora.",
+   "highlight": [
+    "se mueve por separado"
+   ]
+  },
+  {
+   "id": "q061",
+   "scene": 6,
+   "at": 45.4,
+   "text": "Cada ojo tiene tres regiones y muchos tipos de fotorreceptores. Además, detecta la luz polarizada, que nosotros no percibimos.",
+   "highlight": [
+    "luz polarizada"
+   ]
+  },
+  {
+   "id": "q071",
+   "scene": 7,
+   "at": 54.4,
+   "text": "Eso no significa que distinga mejor los colores. Su visión está adaptada a reconocer señales y movimientos.",
+   "highlight": [
+    "no significa"
+   ]
+  },
+  {
+   "id": "q081",
+   "scene": 8,
+   "at": 63.4,
+   "text": "Ante una presa de caparazón duro, como un caracol, se detiene. Prepara uno de los ataques más rápidos que existen.",
+   "highlight": [
+    "más rápidos"
+   ]
+  },
+  {
+   "id": "q091",
+   "scene": 9,
+   "at": 72.4,
+   "text": "Su apéndice actúa como un resorte: una pieza en forma de silla almacena energía y un cierre la retiene.",
+   "highlight": [
+    "resorte"
+   ]
+  },
+  {
+   "id": "q101",
+   "scene": 10,
+   "at": 81.4,
+   "text": "Al liberarse, el golpe dura milésimas de segundo. A cámara lenta vemos que el mazo supera los veinte metros por segundo.",
+   "highlight": [
+    "milésimas de segundo"
+   ]
+  },
+  {
+   "id": "q111",
+   "scene": 11,
+   "at": 90.4,
+   "text": "Es tan rápido que forma burbujas de cavitación; al colapsar, generan una segunda onda de presión sobre la presa.",
+   "highlight": [
+    "burbujas de cavitación"
+   ]
+  },
+  {
+   "id": "q121",
+   "scene": 12,
+   "at": 99.4,
+   "text": "Tras varios golpes, la concha se agrieta. Caracoles, cangrejos y almejas forman parte de su dieta.",
+   "highlight": [
+    "se agrieta"
+   ]
+  },
+  {
+   "id": "q131",
+   "scene": 13,
+   "at": 108.4,
+   "text": "Lo asombroso no es solo la fuerza del golpe, sino que su mazo soporta miles de impactos sin romperse.",
+   "highlight": [
+    "miles de impactos"
+   ]
+  },
+  {
+   "id": "q141",
+   "scene": 14,
+   "at": 117.4,
+   "text": "Por dentro tiene una capa mineral muy dura y, debajo, fibras ordenadas en espiral que frenan las grietas.",
+   "highlight": [
+    "fibras ordenadas en espiral"
+   ]
+  },
+  {
+   "id": "q151",
+   "scene": 15,
+   "at": 126.4,
+   "text": "Investigadores de materiales estudian esta estructura para diseñar compuestos más resistentes a los impactos. Son trabajos aún en desarrollo.",
+   "highlight": [
+    "aún en desarrollo"
+   ]
+  },
+  {
+   "id": "q161",
+   "scene": 16,
+   "at": 135.4,
+   "text": "Pero esta ingeniería no nació en un laboratorio: es fruto de cientos de millones de años de evolución.",
+   "highlight": [
+    "evolución"
+   ]
+  },
+  {
+   "id": "q171",
+   "scene": 17,
+   "at": 144.4,
+   "text": "En su territorio busca alimento, vigila a los intrusos y defiende su espacio, siempre con antenas y ojos alerta.",
+   "highlight": [
+    "defiende su espacio"
+   ]
+  },
+  {
+   "id": "q181",
+   "scene": 18,
+   "at": 153.4,
+   "text": "Su madriguera es su refugio: una galería entre arena y coral desde la que observa, descansa y se protege.",
+   "highlight": [
+    "refugio"
+   ]
+  },
+  {
+   "id": "q191",
+   "scene": 19,
+   "at": 162.4,
+   "text": "En un océano de gigantes, este pequeño animal demuestra que las adaptaciones más asombrosas caben en criaturas diminutas.",
+   "highlight": [
+    "criaturas diminutas"
+   ]
+  },
+  {
+   "id": "q201",
+   "scene": 20,
+   "at": 171.2,
+   "text": "Aún quedan innumerables secretos por descubrir.",
+   "highlight": [
+    "secretos"
+   ]
+  },
+  {
+   "id": "q202",
+   "scene": 20,
+   "at": 174.4,
+   "text": "¿Qué criatura extraordinaria conoceremos en nuestra próxima aventura?",
+   "highlight": [
+    "próxima aventura"
+   ]
+  }
+ ]
+}

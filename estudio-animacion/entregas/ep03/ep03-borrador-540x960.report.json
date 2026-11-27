@@ -1,0 +1,71 @@
+{
+  "composition": "Ep03Full",
+  "quality": "draft",
+  "scale": 0.5,
+  "crf": "24",
+  "concurrency": 4,
+  "segmentSeconds": 30,
+  "segments": [
+    {
+      "start": 0,
+      "end": 899,
+      "secs": 25.6,
+      "peakMB": 2886
+    },
+    {
+      "start": 900,
+      "end": 1799,
+      "secs": 24.9,
+      "peakMB": 2516
+    },
+    {
+      "start": 1800,
+      "end": 2699,
+      "secs": 21.3,
+      "peakMB": 2495
+    },
+    {
+      "start": 2700,
+      "end": 3599,
+      "secs": 21.6,
+      "peakMB": 2244
+    },
+    {
+      "start": 3600,
+      "end": 4499,
+      "secs": 23.3,
+      "peakMB": 2714
+    },
+    {
+      "start": 4500,
+      "end": 5399,
+      "secs": 25.6,
+      "peakMB": 2941
+    }
+  ],
+  "startedAt": "2026-11-18T23:57:11.701Z",
+  "audio": {
+    "secs": 64,
+    "peakMB": 2176
+  },
+  "loudness": {
+    "inputLUFS": -16.28,
+    "inputTruePeak": -0.82,
+    "targetLUFS": -14
+  },
+  "wallSecondsThisRun": 222.8,
+  "totalSeconds": 206.3,
+  "peakRssMB": 2941,
+  "output": {
+    "file": "out/ep03-borrador-540x960.mp4",
+    "sizeMB": 13.66,
+    "width": 540,
+    "height": 960,
+    "fps": "30/1",
+    "videoFrames": 5400,
+    "durationSec": 180,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "framesOk": true
+}

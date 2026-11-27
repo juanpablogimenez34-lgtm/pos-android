@@ -1,0 +1,332 @@
+{
+ "voice": {
+  "engine": "piper",
+  "model": "es_MX-claude-high",
+  "lengthScale": 1.0,
+  "noiseScale": 0.62,
+  "noiseW": 0.55
+ },
+ "lines": 24,
+ "speechSeconds": 133.75,
+ "coverage": 0.743,
+ "problems": [],
+ "timing": [
+  {
+   "id": "g011",
+   "scene": 1,
+   "at": 0.9,
+   "text": "Este tiburón lanza sus mandíbulas hacia delante para atrapar a sus presas.",
+   "highlight": [
+    "lanza sus mandíbulas"
+   ],
+   "drift": 0.0,
+   "start": 0.9,
+   "end": 5.126,
+   "duration": 4.226
+  },
+  {
+   "id": "g012",
+   "scene": 1,
+   "at": 5.4,
+   "text": "Y es completamente real.",
+   "highlight": [
+    "completamente real"
+   ],
+   "drift": 0.0,
+   "start": 5.4,
+   "end": 7.129,
+   "duration": 1.729
+  },
+  {
+   "id": "g021",
+   "scene": 2,
+   "at": 8.6,
+   "text": "Su nombre es tiburón duende.",
+   "highlight": [
+    "tiburón duende"
+   ],
+   "drift": 0.0,
+   "start": 8.6,
+   "end": 10.304,
+   "duration": 1.704
+  },
+  {
+   "id": "g022",
+   "scene": 2,
+   "at": 11.2,
+   "text": "Vive sobre todo en aguas profundas, donde la luz del sol casi no llega y encontrar alimento puede ser todo un desafío.",
+   "highlight": [
+    "aguas profundas",
+    "desafío"
+   ],
+   "drift": 0.0,
+   "start": 11.2,
+   "end": 18.9,
+   "duration": 7.7
+  },
+  {
+   "id": "g031",
+   "scene": 3,
+   "at": 22.6,
+   "text": "Su largo hocico, su piel de tonos rosados y sus dientes finos le dan un aspecto casi prehistórico.",
+   "highlight": [
+    "largo hocico",
+    "tonos rosados"
+   ],
+   "drift": 0.0,
+   "start": 22.6,
+   "end": 28.962,
+   "duration": 6.362
+  },
+  {
+   "id": "g032",
+   "scene": 3,
+   "at": 30.4,
+   "text": "Pero cada una de estas características forma parte de un animal perfectamente adaptado a su entorno.",
+   "highlight": [
+    "adaptado"
+   ],
+   "drift": 0.0,
+   "start": 30.4,
+   "end": 36.573,
+   "duration": 6.173
+  },
+  {
+   "id": "g041",
+   "scene": 4,
+   "at": 38.6,
+   "text": "En su hocico posee órganos sensoriales llamados ampollas de Lorenzini.",
+   "highlight": [
+    "ampollas de Lorenzini"
+   ],
+   "drift": 0.0,
+   "start": 38.6,
+   "end": 43.024,
+   "duration": 4.424
+  },
+  {
+   "id": "g042",
+   "scene": 4,
+   "at": 43.8,
+   "text": "Le permiten detectar las débiles señales eléctricas que producen otros animales, incluso cuando resulta difícil verlos.",
+   "highlight": [
+    "señales eléctricas"
+   ],
+   "drift": 0.0,
+   "start": 43.8,
+   "end": 51.151,
+   "duration": 7.351
+  },
+  {
+   "id": "g051",
+   "scene": 5,
+   "at": 54.6,
+   "text": "En un ambiente donde cada oportunidad de alimentarse cuenta, detectar una presa es solo el comienzo.",
+   "highlight": [
+    "solo el comienzo"
+   ],
+   "drift": 0.0,
+   "start": 54.6,
+   "end": 60.631,
+   "duration": 6.031
+  },
+  {
+   "id": "g052",
+   "scene": 5,
+   "at": 61.4,
+   "text": "El tiburón necesita acercarse lo suficiente para usar su mecanismo más sorprendente.",
+   "highlight": [
+    "más sorprendente"
+   ],
+   "drift": 0.0,
+   "start": 61.4,
+   "end": 66.192,
+   "duration": 4.792
+  },
+  {
+   "id": "g061",
+   "scene": 6,
+   "at": 70.4,
+   "text": "Cuando llega el momento, sus mandíbulas se proyectan rápidamente hacia delante y alcanzan a la presa que aún está frente a su boca.",
+   "highlight": [
+    "se proyectan"
+   ],
+   "drift": 0.0,
+   "start": 70.4,
+   "end": 78.204,
+   "duration": 7.804
+  },
+  {
+   "id": "g062",
+   "scene": 6,
+   "at": 79.6,
+   "text": "A cámara lenta se aprecia cómo la boca avanza, se cierra y vuelve a su lugar.",
+   "highlight": [
+    "cámara lenta"
+   ],
+   "drift": 0.0,
+   "start": 79.6,
+   "end": 85.002,
+   "duration": 5.402
+  },
+  {
+   "id": "g071",
+   "scene": 7,
+   "at": 88.6,
+   "text": "A diferencia de lo que parece, no lanza toda su cabeza.",
+   "highlight": [
+    "toda su cabeza"
+   ],
+   "drift": 0.0,
+   "start": 88.6,
+   "end": 92.087,
+   "duration": 3.487
+  },
+  {
+   "id": "g072",
+   "scene": 7,
+   "at": 92.6,
+   "text": "Son sus mandíbulas, unidas a músculos, ligamentos y articulaciones, las que se desplazan hacia delante durante el ataque.",
+   "highlight": [
+    "ligamentos",
+    "mandíbulas"
+   ],
+   "drift": 0.0,
+   "start": 92.6,
+   "end": 100.68,
+   "duration": 8.08
+  },
+  {
+   "id": "g081",
+   "scene": 8,
+   "at": 104.6,
+   "text": "El tiburón duende se alimenta de animales marinos, entre ellos peces, cefalópodos y crustáceos.",
+   "highlight": [
+    "peces",
+    "cefalópodos"
+   ],
+   "drift": 0.0,
+   "start": 104.6,
+   "end": 111.196,
+   "duration": 6.596
+  },
+  {
+   "id": "g082",
+   "scene": 8,
+   "at": 111.4,
+   "text": "Su sistema de detección y su mandíbula extensible le ayudan a capturar alimento en las profundidades.",
+   "highlight": [
+    "mandíbula extensible"
+   ],
+   "drift": 0.046,
+   "start": 111.446,
+   "end": 117.262,
+   "duration": 5.816
+  },
+  {
+   "id": "g091",
+   "scene": 9,
+   "at": 120.6,
+   "text": "Su aspecto puede resultar aterrador, pero no es una amenaza habitual para las personas.",
+   "highlight": [
+    "no es una amenaza"
+   ],
+   "drift": 0.0,
+   "start": 120.6,
+   "end": 126.106,
+   "duration": 5.506
+  },
+  {
+   "id": "g092",
+   "scene": 9,
+   "at": 127.4,
+   "text": "Vive principalmente en aguas profundas, y los encuentros con seres humanos son poco frecuentes.",
+   "highlight": [
+    "poco frecuentes"
+   ],
+   "drift": 0.0,
+   "start": 127.4,
+   "end": 133.671,
+   "duration": 6.271
+  },
+  {
+   "id": "g101",
+   "scene": 10,
+   "at": 136.6,
+   "text": "El tiburón duende pertenece a un linaje de tiburones con una historia evolutiva muy antigua.",
+   "highlight": [
+    "linaje",
+    "muy antigua"
+   ],
+   "drift": 0.0,
+   "start": 136.6,
+   "end": 141.673,
+   "duration": 5.073
+  },
+  {
+   "id": "g102",
+   "scene": 10,
+   "at": 143.6,
+   "text": "Por eso su apariencia despierta comparaciones con criaturas de otros tiempos, aunque la especie actual no es idéntica a sus antepasados.",
+   "highlight": [
+    "no es idéntica"
+   ],
+   "drift": 0.0,
+   "start": 143.6,
+   "end": 151.346,
+   "duration": 7.746
+  },
+  {
+   "id": "g111",
+   "scene": 11,
+   "at": 152.6,
+   "text": "Aunque conocemos algunas de sus adaptaciones, observarlo en su hábitat natural sigue siendo difícil.",
+   "highlight": [
+    "sigue siendo difícil"
+   ],
+   "drift": 0.0,
+   "start": 152.6,
+   "end": 158.772,
+   "duration": 6.172
+  },
+  {
+   "id": "g112",
+   "scene": 11,
+   "at": 159.6,
+   "text": "Las profundidades del océano todavía guardan muchos secretos sobre esta extraordinaria criatura.",
+   "highlight": [
+    "muchos secretos"
+   ],
+   "drift": 0.0,
+   "start": 159.6,
+   "end": 165.094,
+   "duration": 5.494
+  },
+  {
+   "id": "g121",
+   "scene": 12,
+   "at": 168.4,
+   "text": "Bajo la superficie existen animales que parecen imposibles.",
+   "highlight": [
+    "parecen imposibles"
+   ],
+   "drift": 0.0,
+   "start": 168.4,
+   "end": 172.319,
+   "duration": 3.919
+  },
+  {
+   "id": "g122",
+   "scene": 12,
+   "at": 171.8,
+   "text": "¿Qué otra criatura extraordinaria te gustaría descubrir? Suscríbete a Mundo Insólito Documentales.",
+   "highlight": [
+    "Suscríbete"
+   ],
+   "drift": 0.769,
+   "start": 172.569,
+   "end": 178.464,
+   "duration": 5.895
+  }
+ ]
+}

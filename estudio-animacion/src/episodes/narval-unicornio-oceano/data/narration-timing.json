@@ -1,0 +1,391 @@
+{
+ "voice": {
+  "engine": "piper",
+  "model": "es_MX-claude-high",
+  "lengthScale": 0.95,
+  "noiseScale": 0.62,
+  "noiseW": 0.55
+ },
+ "lines": 29,
+ "speechSeconds": 140.6,
+ "coverage": 0.781,
+ "problems": [],
+ "timing": [
+  {
+   "id": "n01",
+   "scene": 1,
+   "at": 0.4,
+   "text": "Durante siglos, los humanos imaginaron criaturas con poderes extraordinarios.",
+   "highlight": [],
+   "drift": 0.0,
+   "start": 0.4,
+   "end": 5.234,
+   "duration": 4.834
+  },
+  {
+   "id": "n02",
+   "scene": 1,
+   "at": 5.0,
+   "text": "Pero en las heladas aguas del Ártico vive un animal que parece salido de una leyenda.",
+   "highlight": [
+    "Ártico"
+   ],
+   "drift": 0.484,
+   "start": 5.484,
+   "end": 10.27,
+   "duration": 4.786
+  },
+  {
+   "id": "n03",
+   "scene": 1,
+   "at": 10.4,
+   "text": "Tiene un enorme colmillo en espiral, y ha sido observado usándolo para golpear peces.",
+   "highlight": [
+    "colmillo en espiral"
+   ],
+   "drift": 0.12,
+   "start": 10.52,
+   "end": 15.801,
+   "duration": 5.281
+  },
+  {
+   "id": "n04",
+   "scene": 1,
+   "at": 15.8,
+   "text": "Este es el narval, el verdadero unicornio del océano.",
+   "highlight": [
+    "narval"
+   ],
+   "drift": 0.251,
+   "start": 16.051,
+   "end": 19.475,
+   "duration": 3.424
+  },
+  {
+   "id": "n05",
+   "scene": 2,
+   "at": 20.5,
+   "text": "El narval nace sin el enorme colmillo que distingue a muchos adultos.",
+   "highlight": [
+    "sin el enorme colmillo"
+   ],
+   "drift": 0.0,
+   "start": 20.5,
+   "end": 24.469,
+   "duration": 3.969
+  },
+  {
+   "id": "n06",
+   "scene": 2,
+   "at": 25.4,
+   "text": "La cría depende de su madre para alimentarse y sobrevivir en las aguas heladas.",
+   "highlight": [
+    "su madre"
+   ],
+   "drift": 0.0,
+   "start": 25.4,
+   "end": 30.069,
+   "duration": 4.669
+  },
+  {
+   "id": "n07",
+   "scene": 2,
+   "at": 31.0,
+   "text": "Con los años, su piel pasa de un gris azulado a un tono moteado.",
+   "highlight": [
+    "moteado"
+   ],
+   "drift": 0.0,
+   "start": 31.0,
+   "end": 35.27,
+   "duration": 4.27
+  },
+  {
+   "id": "n08",
+   "scene": 2,
+   "at": 36.4,
+   "text": "Y en la mayoría de los machos, un diente comienza a crecer de una forma extraordinaria.",
+   "highlight": [
+    "un diente"
+   ],
+   "drift": 0.0,
+   "start": 36.4,
+   "end": 41.602,
+   "duration": 5.202
+  },
+  {
+   "id": "n09",
+   "scene": 3,
+   "at": 45.4,
+   "text": "Aunque parece un cuerno, es un diente: el canino izquierdo de la mandíbula superior, que crece hacia delante.",
+   "highlight": [
+    "es un diente"
+   ],
+   "drift": 0.0,
+   "start": 45.4,
+   "end": 52.381,
+   "duration": 6.981
+  },
+  {
+   "id": "n10",
+   "scene": 3,
+   "at": 52.8,
+   "text": "Puede superar los dos metros de longitud.",
+   "highlight": [
+    "dos metros"
+   ],
+   "drift": 0.0,
+   "start": 52.8,
+   "end": 55.167,
+   "duration": 2.367
+  },
+  {
+   "id": "n11",
+   "scene": 3,
+   "at": 56.0,
+   "text": "Su superficie contiene millones de diminutos conductos conectados con nervios, y se ha propuesto que detecta cambios en el agua.",
+   "highlight": [
+    "conductos",
+    "nervios"
+   ],
+   "drift": 0.0,
+   "start": 56.0,
+   "end": 63.517,
+   "duration": 7.517
+  },
+  {
+   "id": "n12",
+   "scene": 3,
+   "at": 64.0,
+   "text": "También interviene en la interacción social, y su función aún se investiga.",
+   "highlight": [
+    "aún se investiga"
+   ],
+   "drift": 0.0,
+   "start": 64.0,
+   "end": 68.29,
+   "duration": 4.29
+  },
+  {
+   "id": "n13",
+   "scene": 4,
+   "at": 70.5,
+   "text": "Durante mucho tiempo, los científicos se preguntaron si el colmillo servía para conseguir alimento.",
+   "highlight": [
+    "alimento"
+   ],
+   "drift": 0.0,
+   "start": 70.5,
+   "end": 76.867,
+   "duration": 6.367
+  },
+  {
+   "id": "n14",
+   "scene": 4,
+   "at": 76.6,
+   "text": "Grabaciones aéreas con drones documentaron narvales golpeando peces con él.",
+   "highlight": [
+    "drones"
+   ],
+   "drift": 0.517,
+   "start": 77.117,
+   "end": 81.571,
+   "duration": 4.454
+  },
+  {
+   "id": "n15",
+   "scene": 4,
+   "at": 81.6,
+   "text": "Parece servirles para aturdir algunas presas antes de comerlas, aunque no todos lo hacen.",
+   "highlight": [
+    "aturdir"
+   ],
+   "drift": 0.221,
+   "start": 81.821,
+   "end": 87.255,
+   "duration": 5.434
+  },
+  {
+   "id": "n16",
+   "scene": 4,
+   "at": 88.0,
+   "text": "Esta escena es una reconstrucción animada de ese comportamiento.",
+   "highlight": [
+    "reconstrucción animada"
+   ],
+   "drift": 0.0,
+   "start": 88.0,
+   "end": 91.856,
+   "duration": 3.856
+  },
+  {
+   "id": "n17",
+   "scene": 5,
+   "at": 95.4,
+   "text": "El narval es además un extraordinario buceador.",
+   "highlight": [
+    "buceador"
+   ],
+   "drift": 0.0,
+   "start": 95.4,
+   "end": 98.409,
+   "duration": 3.009
+  },
+  {
+   "id": "n18",
+   "scene": 5,
+   "at": 99.0,
+   "text": "Desciende a grandes profundidades en busca de bacalaos, fletanes y calamares.",
+   "highlight": [
+    "grandes profundidades"
+   ],
+   "drift": 0.0,
+   "start": 99.0,
+   "end": 103.907,
+   "duration": 4.907
+  },
+  {
+   "id": "n19",
+   "scene": 5,
+   "at": 104.6,
+   "text": "Donde apenas llega la luz, utiliza la ecolocalización para explorar su entorno.",
+   "highlight": [
+    "ecolocalización"
+   ],
+   "drift": 0.0,
+   "start": 104.6,
+   "end": 110.313,
+   "duration": 5.713
+  },
+  {
+   "id": "n20",
+   "scene": 5,
+   "at": 110.2,
+   "text": "Pero respira aire: no tiene branquias y siempre debe volver a la superficie.",
+   "highlight": [
+    "respira aire"
+   ],
+   "drift": 0.363,
+   "start": 110.563,
+   "end": 115.827,
+   "duration": 5.264
+  },
+  {
+   "id": "n21",
+   "scene": 6,
+   "at": 121.2,
+   "text": "Vivir en el Ártico significa enfrentarse a condiciones extremas.",
+   "highlight": [
+    "condiciones extremas"
+   ],
+   "drift": 0.0,
+   "start": 121.2,
+   "end": 125.077,
+   "duration": 3.877
+  },
+  {
+   "id": "n22",
+   "scene": 6,
+   "at": 125.4,
+   "text": "Los narvales buscan grietas y aberturas en el hielo para respirar.",
+   "highlight": [
+    "aberturas en el hielo"
+   ],
+   "drift": 0.0,
+   "start": 125.4,
+   "end": 129.581,
+   "duration": 4.181
+  },
+  {
+   "id": "n23",
+   "scene": 6,
+   "at": 130.4,
+   "text": "También deben evitar a depredadores como las orcas, y a menudo se refugian cerca del hielo.",
+   "highlight": [
+    "orcas"
+   ],
+   "drift": 0.0,
+   "start": 130.4,
+   "end": 135.992,
+   "duration": 5.592
+  },
+  {
+   "id": "n24",
+   "scene": 6,
+   "at": 137.6,
+   "text": "Además, los cambios en el hielo marino están transformando su hogar.",
+   "highlight": [
+    "hielo marino"
+   ],
+   "drift": 0.0,
+   "start": 137.6,
+   "end": 141.808,
+   "duration": 4.208
+  },
+  {
+   "id": "n24b",
+   "scene": 6,
+   "at": 142.6,
+   "text": "Por eso, estudiar a los narvales también ayuda a comprender cómo está cambiando el Ártico.",
+   "highlight": [
+    "cómo está cambiando"
+   ],
+   "drift": 0.0,
+   "start": 142.6,
+   "end": 148.041,
+   "duration": 5.441
+  },
+  {
+   "id": "n25",
+   "scene": 7,
+   "at": 150.6,
+   "text": "Un diente que supera los dos metros, una enorme capacidad para bucear y una vida adaptada a uno de los lugares más extremos del planeta.",
+   "highlight": [
+    "dos metros"
+   ],
+   "drift": 0.0,
+   "start": 150.6,
+   "end": 158.879,
+   "duration": 8.279
+  },
+  {
+   "id": "n26",
+   "scene": 7,
+   "at": 160.4,
+   "text": "El narval demuestra que la realidad puede superar a las leyendas.",
+   "highlight": [
+    "la realidad"
+   ],
+   "drift": 0.0,
+   "start": 160.4,
+   "end": 164.197,
+   "duration": 3.797
+  },
+  {
+   "id": "n26b",
+   "scene": 7,
+   "at": 164.6,
+   "text": "Y mientras la ciencia descubre sus secretos, el unicornio del océano sigue recorriendo el Ártico.",
+   "highlight": [
+    "unicornio del océano"
+   ],
+   "drift": 0.0,
+   "start": 164.6,
+   "end": 170.195,
+   "duration": 5.595
+  },
+  {
+   "id": "n27",
+   "scene": 7,
+   "at": 171.2,
+   "text": "¿Qué otro animal extraordinario te gustaría descubrir?",
+   "highlight": [
+    "te gustaría descubrir"
+   ],
+   "drift": 0.0,
+   "start": 171.2,
+   "end": 174.238,
+   "duration": 3.038
+  }
+ ]
+}

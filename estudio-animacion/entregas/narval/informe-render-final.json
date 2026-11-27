@@ -1,0 +1,72 @@
+{
+  "composition": "EP-Narval",
+  "quality": "final",
+  "scale": 1,
+  "crf": "20",
+  "concurrency": 4,
+  "segmentSeconds": 30,
+  "segments": [
+    {
+      "start": 0,
+      "end": 899,
+      "secs": 91.3,
+      "peakMB": 3821
+    },
+    {
+      "start": 900,
+      "end": 1799,
+      "secs": 117.4,
+      "peakMB": 4137
+    },
+    {
+      "start": 1800,
+      "end": 2699,
+      "secs": 102.4,
+      "peakMB": 4038
+    },
+    {
+      "start": 2700,
+      "end": 3599,
+      "secs": 129.2,
+      "peakMB": 4101
+    },
+    {
+      "start": 3600,
+      "end": 4499,
+      "secs": 88.5,
+      "peakMB": 3944
+    },
+    {
+      "start": 4500,
+      "end": 5399,
+      "secs": 82.6,
+      "peakMB": 4153
+    }
+  ],
+  "startedAt": "2026-11-26T14:08:31.368Z",
+  "audio": {
+    "secs": 0,
+    "peakMB": 0,
+    "reused": true
+  },
+  "loudness": {
+    "inputLUFS": -16.85,
+    "inputTruePeak": -2.52,
+    "targetLUFS": -14
+  },
+  "wallSecondsThisRun": 630,
+  "totalSeconds": 611.4,
+  "peakRssMB": 4153,
+  "output": {
+    "file": "out/narval-unicornio-oceano-180s-1080x1920.mp4",
+    "sizeMB": 62.45,
+    "width": 1080,
+    "height": 1920,
+    "fps": "30/1",
+    "videoFrames": 5400,
+    "durationSec": 180,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "framesOk": true
+}

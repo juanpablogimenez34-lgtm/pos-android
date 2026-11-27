@@ -1,0 +1,393 @@
+{
+ "voice": {
+  "engine": "piper",
+  "model": "es_MX-claude-high",
+  "lengthScale": 0.95,
+  "noiseScale": 0.62,
+  "noiseW": 0.55
+ },
+ "lines": 29,
+ "speechSeconds": 144.06,
+ "coverage": 0.8,
+ "problems": [],
+ "timing": [
+  {
+   "id": "c01",
+   "scene": 1,
+   "at": 0.3,
+   "text": "Existe un animal capaz de mirar en dos direcciones a la vez, transformar los colores de su piel y capturar una presa en una fracción de segundo.",
+   "highlight": [
+    "dos direcciones",
+    "colores"
+   ],
+   "drift": 0.0,
+   "start": 0.3,
+   "end": 8.954,
+   "duration": 8.654
+  },
+  {
+   "id": "c02",
+   "scene": 1,
+   "at": 9.6,
+   "text": "Parece tener superpoderes, pero todos ellos son reales.",
+   "highlight": [
+    "superpoderes"
+   ],
+   "drift": 0.0,
+   "start": 9.6,
+   "end": 13.168,
+   "duration": 3.568
+  },
+  {
+   "id": "c03",
+   "scene": 1,
+   "at": 13.6,
+   "text": "Este es el extraordinario camaleón pantera.",
+   "highlight": [
+    "camaleón pantera"
+   ],
+   "drift": 0.0,
+   "start": 13.6,
+   "end": 16.467,
+   "duration": 2.867
+  },
+  {
+   "id": "c04",
+   "scene": 2,
+   "at": 20.4,
+   "text": "El camaleón pantera nace de un huevo que su madre entierra en un túnel bajo el suelo.",
+   "highlight": [
+    "huevo"
+   ],
+   "drift": 0.0,
+   "start": 20.4,
+   "end": 25.546,
+   "duration": 5.146
+  },
+  {
+   "id": "c05",
+   "scene": 2,
+   "at": 26.4,
+   "text": "Allí pasa meses, hasta que la cría rompe la cáscara.",
+   "highlight": [
+    "meses"
+   ],
+   "drift": 0.0,
+   "start": 26.4,
+   "end": 29.662,
+   "duration": 3.262
+  },
+  {
+   "id": "c06",
+   "scene": 2,
+   "at": 31.0,
+   "text": "Al nacer, debe enfrentarse al mundo sin la protección de sus padres.",
+   "highlight": [
+    "sin la protección"
+   ],
+   "drift": 0.0,
+   "start": 31.0,
+   "end": 34.879,
+   "duration": 3.879
+  },
+  {
+   "id": "c07",
+   "scene": 2,
+   "at": 36.2,
+   "text": "Desde el primer momento, sus patas, sus ojos y su lengua le permiten explorar y buscar alimento.",
+   "highlight": [
+    "explorar"
+   ],
+   "drift": 0.0,
+   "start": 36.2,
+   "end": 42.37,
+   "duration": 6.17
+  },
+  {
+   "id": "c08",
+   "scene": 3,
+   "at": 45.2,
+   "text": "A diferencia de nosotros, los camaleones pueden mover sus ojos de manera ampliamente independiente.",
+   "highlight": [
+    "independiente"
+   ],
+   "drift": 0.0,
+   "start": 45.2,
+   "end": 51.93,
+   "duration": 6.73
+  },
+  {
+   "id": "c09",
+   "scene": 3,
+   "at": 52.4,
+   "text": "Cada ojo gira dentro de una torreta de escamas, con una pequeña abertura para la pupila.",
+   "highlight": [
+    "torreta"
+   ],
+   "drift": 0.0,
+   "start": 52.4,
+   "end": 58.622,
+   "duration": 6.222
+  },
+  {
+   "id": "c10",
+   "scene": 3,
+   "at": 58.8,
+   "text": "Así pueden vigilar casi todo su alrededor sin mover la cabeza.",
+   "highlight": [
+    "casi todo su alrededor"
+   ],
+   "drift": 0.072,
+   "start": 58.872,
+   "end": 62.658,
+   "duration": 3.786
+  },
+  {
+   "id": "c11",
+   "scene": 3,
+   "at": 62.9,
+   "text": "Cuando localizan una presa, coordinan ambos ojos y enfocan para calcular la distancia.",
+   "highlight": [
+    "ambos ojos"
+   ],
+   "drift": 0.008,
+   "start": 62.908,
+   "end": 68.608,
+   "duration": 5.7
+  },
+  {
+   "id": "c12",
+   "scene": 4,
+   "at": 70.4,
+   "text": "Su lengua es una herramienta de caza extraordinaria.",
+   "highlight": [
+    "lengua"
+   ],
+   "drift": 0.0,
+   "start": 70.4,
+   "end": 73.724,
+   "duration": 3.324
+  },
+  {
+   "id": "c13",
+   "scene": 4,
+   "at": 74.2,
+   "text": "En reposo está comprimida sobre un hueso de la garganta, como un resorte.",
+   "highlight": [
+    "resorte"
+   ],
+   "drift": 0.0,
+   "start": 74.2,
+   "end": 78.595,
+   "duration": 4.395
+  },
+  {
+   "id": "c14",
+   "scene": 4,
+   "at": 79.4,
+   "text": "Un músculo la tensa y unas fundas elásticas acumulan energía que se libera de golpe, como una catapulta.",
+   "highlight": [
+    "energía",
+    "catapulta"
+   ],
+   "drift": 0.0,
+   "start": 79.4,
+   "end": 86.549,
+   "duration": 7.149
+  },
+  {
+   "id": "c15",
+   "scene": 4,
+   "at": 86.6,
+   "text": "Puede superar la longitud de su cuerpo, y su punta pegajosa atrapa al insecto en un instante.",
+   "highlight": [
+    "punta pegajosa"
+   ],
+   "drift": 0.199,
+   "start": 86.799,
+   "end": 92.271,
+   "duration": 5.472
+  },
+  {
+   "id": "c16",
+   "scene": 5,
+   "at": 95.0,
+   "text": "Pero su habilidad más famosa es el color.",
+   "highlight": [
+    "color"
+   ],
+   "drift": 0.0,
+   "start": 95.0,
+   "end": 97.913,
+   "duration": 2.913
+  },
+  {
+   "id": "c17",
+   "scene": 5,
+   "at": 98.0,
+   "text": "Bajo su piel, células llamadas iridóforos contienen diminutos cristales ordenados.",
+   "highlight": [
+    "iridóforos",
+    "cristales"
+   ],
+   "drift": 0.163,
+   "start": 98.163,
+   "end": 103.485,
+   "duration": 5.322
+  },
+  {
+   "id": "c18",
+   "scene": 5,
+   "at": 103.73,
+   "text": "Relajado, los cristales están muy juntos y reflejan sobre todo luz azul.",
+   "highlight": [
+    "luz azul"
+   ],
+   "drift": 0.535,
+   "start": 103.735,
+   "end": 108.67,
+   "duration": 4.935
+  },
+  {
+   "id": "c19",
+   "scene": 5,
+   "at": 108.92,
+   "text": "Excitado, la red se expande y la piel refleja amarillos, naranjas o rojos.",
+   "highlight": [
+    "se expande"
+   ],
+   "drift": 0.62,
+   "start": 108.92,
+   "end": 114.691,
+   "duration": 5.771
+  },
+  {
+   "id": "c20",
+   "scene": 5,
+   "at": 114.94,
+   "text": "Así se comunica, responde a la temperatura y expresa su estado: no es solo camuflaje.",
+   "highlight": [
+    "no es solo camuflaje"
+   ],
+   "drift": 1.041,
+   "start": 114.941,
+   "end": 120.899,
+   "duration": 5.958
+  },
+  {
+   "id": "c21",
+   "scene": 6,
+   "at": 121.0,
+   "text": "Sus dedos forman dos grupos opuestos que funcionan como pinzas sobre las ramas.",
+   "highlight": [
+    "pinzas"
+   ],
+   "drift": 0.149,
+   "start": 121.149,
+   "end": 125.616,
+   "duration": 4.467
+  },
+  {
+   "id": "c22",
+   "scene": 6,
+   "at": 125.9,
+   "text": "Su cola prensil se enrolla como un apoyo adicional.",
+   "highlight": [
+    "cola prensil"
+   ],
+   "drift": 0.0,
+   "start": 125.9,
+   "end": 129.072,
+   "duration": 3.172
+  },
+  {
+   "id": "c23",
+   "scene": 6,
+   "at": 130.4,
+   "text": "Avanza despacio, balanceándose; algunos investigadores creen que así imita una hoja movida por el viento.",
+   "highlight": [
+    "balanceándose"
+   ],
+   "drift": 0.0,
+   "start": 130.4,
+   "end": 137.974,
+   "duration": 7.574
+  },
+  {
+   "id": "c24",
+   "scene": 6,
+   "at": 137.8,
+   "text": "Si aparece un ave, se desliza al lado oculto de la rama y permanece inmóvil.",
+   "highlight": [
+    "lado oculto"
+   ],
+   "drift": 0.424,
+   "start": 138.224,
+   "end": 144.029,
+   "duration": 5.805
+  },
+  {
+   "id": "c25",
+   "scene": 6,
+   "at": 144.2,
+   "text": "Cada detalle de su cuerpo está relacionado con la supervivencia.",
+   "highlight": [
+    "supervivencia"
+   ],
+   "drift": 0.079,
+   "start": 144.279,
+   "end": 147.885,
+   "duration": 3.606
+  },
+  {
+   "id": "c26",
+   "scene": 7,
+   "at": 150.6,
+   "text": "Ojos independientes, una lengua relámpago y una piel que transforma sus colores.",
+   "highlight": [
+    "lengua relámpago"
+   ],
+   "drift": 0.0,
+   "start": 150.6,
+   "end": 156.039,
+   "duration": 5.439
+  },
+  {
+   "id": "c27",
+   "scene": 7,
+   "at": 156.4,
+   "text": "El camaleón demuestra que la naturaleza ha creado mecanismos dignos de la ciencia ficción.",
+   "highlight": [
+    "ciencia ficción"
+   ],
+   "drift": 0.0,
+   "start": 156.4,
+   "end": 161.533,
+   "duration": 5.133
+  },
+  {
+   "id": "c28",
+   "scene": 7,
+   "at": 163.0,
+   "text": "Y mientras lo observamos, sus ojos siguen buscando la próxima presa.",
+   "highlight": [],
+   "drift": 0.0,
+   "start": 163.0,
+   "end": 167.567,
+   "duration": 4.567
+  },
+  {
+   "id": "c29",
+   "scene": 7,
+   "at": 170.4,
+   "text": "¿Qué otro animal extraordinario te gustaría descubrir?",
+   "highlight": [
+    "te gustaría descubrir"
+   ],
+   "drift": 0.0,
+   "start": 170.4,
+   "end": 173.473,
+   "duration": 3.073
+  }
+ ]
+}

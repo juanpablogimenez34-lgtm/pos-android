@@ -1,0 +1,71 @@
+{
+  "composition": "EP-Orca",
+  "quality": "draft",
+  "scale": 0.5,
+  "crf": "24",
+  "concurrency": 4,
+  "segmentSeconds": 30,
+  "segments": [
+    {
+      "start": 0,
+      "end": 899,
+      "secs": 47.8,
+      "peakMB": 3624
+    },
+    {
+      "start": 900,
+      "end": 1799,
+      "secs": 48.4,
+      "peakMB": 3628
+    },
+    {
+      "start": 1800,
+      "end": 2699,
+      "secs": 43.9,
+      "peakMB": 3405
+    },
+    {
+      "start": 2700,
+      "end": 3599,
+      "secs": 31.2,
+      "peakMB": 2922
+    },
+    {
+      "start": 3600,
+      "end": 4499,
+      "secs": 43.7,
+      "peakMB": 2974
+    },
+    {
+      "start": 4500,
+      "end": 5399,
+      "secs": 43.1,
+      "peakMB": 3297
+    }
+  ],
+  "startedAt": "2026-11-26T12:40:55.017Z",
+  "audio": {
+    "secs": 154.5,
+    "peakMB": 3716
+  },
+  "loudness": {
+    "inputLUFS": -16.46,
+    "inputTruePeak": -1.51,
+    "targetLUFS": -14
+  },
+  "wallSecondsThisRun": 429.3,
+  "totalSeconds": 412.6,
+  "peakRssMB": 3716,
+  "output": {
+    "file": "out/orca-borrador-540x960.mp4",
+    "sizeMB": 15.21,
+    "width": 540,
+    "height": 960,
+    "fps": "30/1",
+    "videoFrames": 5400,
+    "durationSec": 180,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "framesOk": true
+}

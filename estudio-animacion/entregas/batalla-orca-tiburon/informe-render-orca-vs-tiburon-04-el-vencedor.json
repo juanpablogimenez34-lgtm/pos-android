@@ -1,0 +1,41 @@
+{
+  "composition": "Battle01Episode04",
+  "quality": "final",
+  "scale": 1,
+  "crf": "20",
+  "concurrency": 4,
+  "segmentSeconds": 35,
+  "segments": [
+    {
+      "start": 0,
+      "end": 1049,
+      "secs": 143.2,
+      "peakMB": 4139
+    }
+  ],
+  "startedAt": "2026-11-26T22:10:50.389Z",
+  "audio": {
+    "secs": 49.7,
+    "peakMB": 3456
+  },
+  "loudness": {
+    "inputLUFS": -16.12,
+    "inputTruePeak": -2.63,
+    "targetLUFS": -14
+  },
+  "wallSecondsThisRun": 200.3,
+  "totalSeconds": 192.9,
+  "peakRssMB": 4139,
+  "output": {
+    "file": "out/orca-vs-tiburon-04-el-vencedor.mp4",
+    "sizeMB": 13.39,
+    "width": 1080,
+    "height": 1920,
+    "fps": "30/1",
+    "videoFrames": 1050,
+    "durationSec": 35,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "framesOk": true
+}

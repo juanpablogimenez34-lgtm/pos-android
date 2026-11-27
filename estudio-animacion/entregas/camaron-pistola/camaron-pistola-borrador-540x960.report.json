@@ -1,0 +1,48 @@
+{
+  "composition": "EP-CamaronPistola",
+  "quality": "draft",
+  "scale": 0.5,
+  "crf": "24",
+  "concurrency": 4,
+  "segmentSeconds": 30,
+  "segments": [
+    {
+      "start": 0,
+      "end": 899,
+      "secs": 81.4,
+      "peakMB": 2831
+    },
+    {
+      "start": 900,
+      "end": 1799,
+      "secs": 86.3,
+      "peakMB": 3086,
+      "reused": true
+    }
+  ],
+  "startedAt": "2026-11-24T20:31:45.800Z",
+  "audio": {
+    "secs": 212.8,
+    "peakMB": 2442
+  },
+  "loudness": {
+    "inputLUFS": -17.26,
+    "inputTruePeak": -1.35,
+    "targetLUFS": -14
+  },
+  "wallSecondsThisRun": 302.4,
+  "totalSeconds": 380.5,
+  "peakRssMB": 3086,
+  "output": {
+    "file": "out/camaron-pistola-draft-540x960.mp4",
+    "sizeMB": 6.44,
+    "width": 540,
+    "height": 960,
+    "fps": "30/1",
+    "videoFrames": 1800,
+    "durationSec": 60,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "framesOk": true
+}

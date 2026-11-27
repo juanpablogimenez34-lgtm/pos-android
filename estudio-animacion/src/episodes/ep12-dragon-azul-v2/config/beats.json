@@ -1,0 +1,187 @@
+{
+ "duration": 180,
+ "hook": {
+  "action": [
+   0,
+   1
+  ],
+  "question": [
+   1,
+   3
+  ],
+  "promise": [
+   3,
+   5.2
+  ]
+ },
+ "segments": [
+  [
+   0,
+   5
+  ],
+  [
+   5,
+   20
+  ],
+  [
+   20,
+   45
+  ],
+  [
+   45,
+   70
+  ],
+  [
+   70,
+   95
+  ],
+  [
+   95,
+   120
+  ],
+  [
+   120,
+   145
+  ],
+  [
+   145,
+   165
+  ],
+  [
+   165,
+   180
+  ]
+ ],
+ "beats": [
+  {
+   "t": 0.0,
+   "kind": "action",
+   "note": "muerde un tentáculo de carabela (primer fotograma en movimiento)"
+  },
+  {
+   "t": 3.1,
+   "kind": "discovery",
+   "note": "macro de las puntas de las ceratas cargadas"
+  },
+  {
+   "t": 5.2,
+   "kind": "scale",
+   "note": "cortina de burbujas → revelación de escala (3 cm)"
+  },
+  {
+   "t": 9.4,
+   "kind": "perspective",
+   "note": "plano partido: flota boca abajo; carabela al fondo"
+  },
+  {
+   "t": 15.5,
+   "kind": "action",
+   "note": "la carabela deriva hacia él; acercamiento"
+  },
+  {
+   "t": 20.4,
+   "kind": "anatomy",
+   "note": "lámina anatómica viva"
+  },
+  {
+   "t": 28.6,
+   "kind": "science",
+   "note": "rayos X: burbuja de aire en el estómago"
+  },
+  {
+   "t": 36.8,
+   "kind": "perspective",
+   "note": "giro: azul hacia el cielo, plateado hacia el fondo"
+  },
+  {
+   "t": 45.5,
+   "kind": "action",
+   "note": "aproximación lenta a la carabela"
+  },
+  {
+   "t": 49.5,
+   "kind": "action",
+   "note": "mordisco a los tentáculos"
+  },
+  {
+   "t": 55.5,
+   "kind": "science",
+   "note": "hipótesis (rotulada): mucosa y tejidos"
+  },
+  {
+   "t": 64.4,
+   "kind": "transition",
+   "note": "inmersión hacia el interior del cuerpo"
+  },
+  {
+   "t": 70.5,
+   "kind": "discovery",
+   "note": "nematocistos intactos"
+  },
+  {
+   "t": 75.0,
+   "kind": "science",
+   "note": "transporte por el sistema digestivo"
+  },
+  {
+   "t": 83.0,
+   "kind": "anatomy",
+   "note": "cnidosacos en las puntas de las ceratas"
+  },
+  {
+   "t": 95.5,
+   "kind": "science",
+   "note": "nematocisto en corte"
+  },
+  {
+   "t": 101.0,
+   "kind": "action",
+   "note": "disparo del filamento a cámara lenta"
+  },
+  {
+   "t": 107.8,
+   "kind": "comparison",
+   "note": "nematocistos grandes vs pequeños (estudios)"
+  },
+  {
+   "t": 120.5,
+   "kind": "perspective",
+   "note": "plano cenital muy abierto: la flota azul"
+  },
+  {
+   "t": 131.0,
+   "kind": "action",
+   "note": "el viento empuja a la flota hacia la costa"
+  },
+  {
+   "t": 137.0,
+   "kind": "transition",
+   "note": "lengua de espuma → playa con ejemplares varados"
+  },
+  {
+   "t": 145.5,
+   "kind": "discovery",
+   "note": "revelación final"
+  },
+  {
+   "t": 150.0,
+   "kind": "comparison",
+   "note": "el arma pasa de la carabela al dragón"
+  },
+  {
+   "t": 157.0,
+   "kind": "action",
+   "note": "mano que se detiene: observar sin tocar"
+  },
+  {
+   "t": 165.5,
+   "kind": "perspective",
+   "note": "la cámara se aleja; atardecer"
+  },
+  {
+   "t": 170.5,
+   "kind": "discovery",
+   "note": "pregunta final natural"
+  }
+ ]
+}

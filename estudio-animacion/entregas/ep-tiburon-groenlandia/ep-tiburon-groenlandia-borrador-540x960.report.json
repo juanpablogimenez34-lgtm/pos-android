@@ -1,0 +1,71 @@
+{
+  "composition": "EP-TiburonGroenlandia",
+  "quality": "draft",
+  "scale": 0.5,
+  "crf": "24",
+  "concurrency": 4,
+  "segmentSeconds": 30,
+  "segments": [
+    {
+      "start": 0,
+      "end": 899,
+      "secs": 48,
+      "peakMB": 3152
+    },
+    {
+      "start": 900,
+      "end": 1799,
+      "secs": 45.3,
+      "peakMB": 2660
+    },
+    {
+      "start": 1800,
+      "end": 2699,
+      "secs": 62.9,
+      "peakMB": 2686
+    },
+    {
+      "start": 2700,
+      "end": 3599,
+      "secs": 59.2,
+      "peakMB": 2676
+    },
+    {
+      "start": 3600,
+      "end": 4499,
+      "secs": 26,
+      "peakMB": 2470
+    },
+    {
+      "start": 4500,
+      "end": 5399,
+      "secs": 62.7,
+      "peakMB": 2850
+    }
+  ],
+  "startedAt": "2026-11-24T15:53:47.451Z",
+  "audio": {
+    "secs": 297.7,
+    "peakMB": 2483
+  },
+  "loudness": {
+    "inputLUFS": -16.28,
+    "inputTruePeak": -2.44,
+    "targetLUFS": -14
+  },
+  "wallSecondsThisRun": 621.2,
+  "totalSeconds": 601.8,
+  "peakRssMB": 3152,
+  "output": {
+    "file": "out/ep-tiburon-groenlandia-borrador-540x960.mp4",
+    "sizeMB": 12.32,
+    "width": 540,
+    "height": 960,
+    "fps": "30/1",
+    "videoFrames": 5400,
+    "durationSec": 180,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "framesOk": true
+}

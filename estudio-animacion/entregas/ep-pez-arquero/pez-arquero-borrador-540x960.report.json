@@ -1,0 +1,71 @@
+{
+  "composition": "EP-PezArquero",
+  "quality": "draft",
+  "scale": 0.5,
+  "crf": "24",
+  "concurrency": 4,
+  "segmentSeconds": 30,
+  "segments": [
+    {
+      "start": 0,
+      "end": 899,
+      "secs": 50.5,
+      "peakMB": 2862
+    },
+    {
+      "start": 900,
+      "end": 1799,
+      "secs": 54.3,
+      "peakMB": 2718
+    },
+    {
+      "start": 1800,
+      "end": 2699,
+      "secs": 55.3,
+      "peakMB": 2746
+    },
+    {
+      "start": 2700,
+      "end": 3599,
+      "secs": 59,
+      "peakMB": 2569
+    },
+    {
+      "start": 3600,
+      "end": 4499,
+      "secs": 60.6,
+      "peakMB": 2766
+    },
+    {
+      "start": 4500,
+      "end": 5399,
+      "secs": 60.5,
+      "peakMB": 2747
+    }
+  ],
+  "startedAt": "2026-11-23T18:22:28.779Z",
+  "audio": {
+    "secs": 508.7,
+    "peakMB": 2209
+  },
+  "loudness": {
+    "inputLUFS": -16.88,
+    "inputTruePeak": -1.79,
+    "targetLUFS": -14
+  },
+  "wallSecondsThisRun": 865,
+  "totalSeconds": 848.9,
+  "peakRssMB": 2862,
+  "output": {
+    "file": "out/pez-arquero-borrador-540x960.mp4",
+    "sizeMB": 14.89,
+    "width": 540,
+    "height": 960,
+    "fps": "30/1",
+    "videoFrames": 5400,
+    "durationSec": 180,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "framesOk": true
+}

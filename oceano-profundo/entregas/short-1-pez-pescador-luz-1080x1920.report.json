@@ -1,0 +1,53 @@
+{
+  "composition": "Short1",
+  "quality": "premium",
+  "scale": 1,
+  "crf": "20",
+  "concurrency": 4,
+  "segmentSeconds": 30,
+  "segments": [
+    {
+      "start": 0,
+      "end": 899,
+      "secs": 146,
+      "peakMB": 3341
+    },
+    {
+      "start": 900,
+      "end": 1799,
+      "secs": 144.3,
+      "peakMB": 3092
+    },
+    {
+      "start": 1800,
+      "end": 2129,
+      "secs": 49.7,
+      "peakMB": 2996
+    }
+  ],
+  "startedAt": "2026-11-24T23:50:00.774Z",
+  "audio": {
+    "secs": 95.5,
+    "peakMB": 1699
+  },
+  "loudness": {
+    "inputLUFS": -17.07,
+    "inputTruePeak": -3.21,
+    "targetLUFS": -14
+  },
+  "wallSecondsThisRun": 444.7,
+  "totalSeconds": 435.5,
+  "peakRssMB": 3341,
+  "output": {
+    "file": "out/short-1-pez-pescador-luz-1080x1920.mp4",
+    "sizeMB": 23.45,
+    "width": 1080,
+    "height": 1920,
+    "fps": "30/1",
+    "videoFrames": 2130,
+    "durationSec": 71,
+    "videoCodec": "h264",
+    "audioCodec": "aac"
+  },
+  "framesOk": true
+}
